@@ -1,154 +1,166 @@
-# MCP Server Template
+# Swedish Law MCP Server
 
-> Production-ready template for building MCP servers in the Ansvar ecosystem
+> Query Swedish statutes and regulations directly from Claude
 
+[![npm version](https://img.shields.io/npm/v/@ansvar/swedish-law-mcp)](https://www.npmjs.com/package/@ansvar/swedish-law-mcp)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 ---
 
-## What is this?
+## Overview
 
-This is a **GitHub template repository** for creating new MCP (Model Context Protocol) servers. It provides a complete, production-ready foundation including:
+This MCP (Model Context Protocol) server gives AI assistants direct access to Swedish law from Riksdagen's official database. No more switching between tabs or searching through PDF documents.
 
-- **TypeScript** source with full type safety
-- **SQLite FTS5** for fast full-text search
-- **4 tool templates** (search, get-item, list, definitions)
-- **Test suite** with in-memory database fixtures
-- **CI/CD workflows** for testing and npm publishing
-- **Docker support** for self-hosted deployment
-- **Comprehensive documentation**
+### What's Included
+
+| Source | Description | Status |
+|--------|-------------|--------|
+| **SFS** (Svensk Forfattningssamling) | Swedish Code of Statutes | Planned |
+| **Key Regulations** | GDPR implementation, PuL, etc. | Planned |
+
+### Use Cases
+
+- "What does the Swedish GDPR implementation say about data breaches?"
+- "Show me the requirements for arbetsmiljo (workplace safety)"
+- "What are the penalties under Swedish criminal law for fraud?"
+- "Compare Swedish and EU data protection requirements"
 
 ---
 
-## Quick Start
+## Installation
 
-### 1. Use This Template
+### Claude Desktop
 
-Click **"Use this template"** → **"Create a new repository"**
+Add to your config (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
-Or clone directly:
+```json
+{
+  "mcpServers": {
+    "swedish-law": {
+      "command": "npx",
+      "args": ["-y", "@ansvar/swedish-law-mcp"]
+    }
+  }
+}
+```
+
+### Cursor / VS Code
+
+```json
+{
+  "mcp.servers": {
+    "swedish-law": {
+      "command": "npx",
+      "args": ["-y", "@ansvar/swedish-law-mcp"]
+    }
+  }
+}
+```
+
+---
+
+## Available Tools
+
+### `search_laws`
+
+Full-text search across all Swedish statutes.
+
+```
+"Search for data protection requirements in Swedish law"
+-> Returns matching sections with context
+```
+
+### `get_section`
+
+Retrieve a specific section from a statute.
+
+```
+"Get SFS 2018:218 Chapter 3 Section 5"
+-> Returns the full text of that section
+```
+
+### `list_statutes`
+
+List available statutes or show structure of a specific law.
+
+```
+"List all statutes related to arbetsmiljo"
+-> Returns overview of workplace safety laws
+```
+
+### `get_definitions`
+
+Look up official definitions from Swedish law.
+
+```
+"What is the Swedish legal definition of personuppgift?"
+-> Returns the official definition
+```
+
+---
+
+## Data Sources
+
+All content is sourced from official Swedish government sources:
+
+- **[Riksdagen](https://riksdagen.se/)** - Swedish Parliament's legal database
+- **[Svensk Forfattningssamling](https://svenskforfattningssamling.se/)** - Official statute collection
+
+---
+
+## Development
 
 ```bash
-gh repo create ansvar-systems/my-new-mcp --template ansvar-systems/mcp-server-template --public --clone
-cd my-new-mcp
+git clone https://github.com/Ansvar-Systems/swedish-law-mcp
+cd swedish-law-mcp
+npm install
+npm run build
+npm test
 ```
 
-### 2. Follow the Checklist
+### Running Locally
 
-Open [CHECKLIST.md](CHECKLIST.md) and work through each phase:
-
-1. **Setup** — Update package identity and configuration
-2. **Data Model** — Design your schema and create sample data
-3. **Ingestion** — Implement source ingestion
-4. **Tools** — Customize tools for your domain
-5. **Documentation** — Complete README and COVERAGE
-6. **Quality** — Test and verify
-7. **Deployment** — Configure CI/CD
-8. **Release** — Publish and announce
-
-### 3. Read the Full Guide
-
-For detailed architecture and customization instructions, see [SKELETON.md](SKELETON.md).
-
----
-
-## What's Included
-
+```bash
+npm run dev
 ```
-mcp-server-template/
-├── .github/workflows/     # CI/CD (test, publish)
-├── scripts/
-│   ├── build-db.ts        # Database builder
-│   ├── ingest-source.ts   # Data ingestion template
-│   └── check-updates.ts   # Update checker
-├── src/
-│   ├── index.ts           # MCP server entry point
-│   └── tools/
-│       ├── search.ts      # Full-text search tool
-│       ├── get-item.ts    # Item retrieval tool
-│       ├── list.ts        # Listing tool
-│       └── definitions.ts # Definition lookup tool
-├── tests/
-│   ├── fixtures/          # In-memory test database
-│   └── tools/             # Tool tests
-├── CHECKLIST.md           # Step-by-step setup guide
-├── SKELETON.md            # Detailed architecture docs
-├── PATTERNS.md            # Code patterns and conventions
-├── PUBLISHING.md          # npm, Docker, registry guide
-├── CONTRIBUTING.md        # Contribution guidelines
-├── COVERAGE.md            # Source coverage template
-├── Dockerfile             # Production Docker image
-├── smithery.yaml          # Smithery registry config
-└── package.json           # npm configuration
+
+### Testing with MCP Inspector
+
+```bash
+npx @anthropic/mcp-inspector node dist/index.js
 ```
 
 ---
 
-## Documentation
+## Contributing
 
-| Document | Purpose |
-|----------|---------|
-| [CHECKLIST.md](CHECKLIST.md) | Step-by-step setup guide |
-| [SKELETON.md](SKELETON.md) | Detailed architecture and customization |
-| [PATTERNS.md](PATTERNS.md) | Code patterns and conventions |
-| [PUBLISHING.md](PUBLISHING.md) | Publishing to npm, Docker, registries |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
----
-
-## The Ansvar MCP Ecosystem
-
-Servers built with this template:
-
-| Server | Description | Status |
-|--------|-------------|--------|
-| [@ansvar/eu-regulations-mcp](https://github.com/ansvar-systems/EU_compliance_MCP) | GDPR, NIS2, DORA, AI Act, CRA | Live |
-| @ansvar/swedish-law-mcp | Swedish statutes and regulations | Coming |
-| @ansvar/nordic-law-mcp | Nordic legal frameworks | Coming |
-
----
-
-## Features
-
-### SQLite FTS5 Search
-
-Built-in full-text search with BM25 ranking for fast, relevant results.
-
-### Type-Safe Tools
-
-Full TypeScript with JSON Schema validation for tool inputs.
-
-### In-Memory Test Database
-
-Fast, isolated tests with fixtures for rapid development.
-
-### CI/CD Ready
-
-GitHub Actions for testing on every push and npm release on version tags.
-
----
-
-## Requirements
-
-- Node.js 20+
-- npm 9+
+Priority areas:
+- Additional statute coverage
+- Swedish legal term definitions
+- Cross-references between laws
+- Historical versions
 
 ---
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE)
+Apache 2.0 - see [LICENSE](LICENSE)
 
 ---
 
 ## About
 
-Built by [**Ansvar Systems AB**](https://ansvar.ai) — Stockholm, Sweden
+Built by [**Ansvar Systems AB**](https://ansvar.ai) - Stockholm, Sweden
 
-Building the compliance infrastructure for Nordic AI.
+Part of the [Ansvar MCP Ecosystem](https://github.com/Ansvar-Systems):
+- [@ansvar/eu-regulations-mcp](https://github.com/Ansvar-Systems/EU_compliance_MCP) - EU regulations
+- @ansvar/swedish-law-mcp - Swedish law (this server)
+- @ansvar/nordic-law-mcp - Nordic legal frameworks
 
 ---
 
 <p align="center">
-  <sub>Use this template to build your own MCP server</sub>
+  <sub>Built with care in Stockholm</sub>
 </p>

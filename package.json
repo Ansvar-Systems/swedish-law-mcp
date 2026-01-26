@@ -1,11 +1,11 @@
 {
-  "name": "@ansvar/your-mcp-server",
+  "name": "@ansvar/swedish-law-mcp",
   "version": "0.1.0",
-  "description": "MCP server for [Your Content Domain] - Ansvar Systems AB",
+  "description": "MCP server for Swedish statutes and regulations - Query Swedish law directly from Claude",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "your-mcp-server": "dist/index.js"
+    "swedish-law-mcp": "dist/index.js"
   },
   "files": [
     "dist",
@@ -43,19 +43,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansvar-systems/your-mcp-server"
+    "url": "git+https://github.com/Ansvar-Systems/swedish-law-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/ansvar-systems/your-mcp-server/issues"
+    "url": "https://github.com/Ansvar-Systems/swedish-law-mcp/issues"
   },
-  "homepage": "https://github.com/ansvar-systems/your-mcp-server#readme",
+  "homepage": "https://github.com/Ansvar-Systems/swedish-law-mcp#readme",
   "keywords": [
     "mcp",
     "model-context-protocol",
     "ai",
     "claude",
-    "compliance",
+    "swedish-law",
+    "sweden",
     "legal",
+    "compliance",
+    "riksdagen",
+    "sfs",
     "ansvar"
   ],
   "author": "Ansvar Systems AB <hello@ansvar.ai>",
