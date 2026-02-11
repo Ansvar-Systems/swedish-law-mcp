@@ -1,0 +1,56 @@
+{
+  "id": "2018:218",
+  "type": "statute",
+  "title": "Dataskyddslagen",
+  "title_en": "Data Protection Act",
+  "short_name": "DSL",
+  "status": "in_force",
+  "issued_date": "2018-05-24",
+  "in_force_date": "2018-05-25",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2018-05/SFS2018-218.pdf",
+  "description": "Swedish implementation of GDPR (EU 2016/679)",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Lagens syfte",
+      "content": "Denna lag kompletterar Europaparlamentets och rådets förordning (EU) 2016/679 av den 27 april 2016 om skydd för fysiska personer med avseende på behandling av personuppgifter och om det fria flödet av sådana uppgifter och om upphävande av direktiv 95/46/EG (allmän dataskyddsförordning), i denna lag kallad EU:s dataskyddsförordning. GDPR data protection personal data regulation EU",
+      "metadata": {
+        "keywords_en": "GDPR, data protection, personal data, regulation, EU, purpose, scope"
+      }
+    },
+    {
+      "provision_ref": "3:5",
+      "chapter": "3",
+      "section": "5",
+      "title": "Samtycke",
+      "content": "Ett samtycke ska vara frivilligt, specifikt, informerat och otvetydigt. För att samtycket ska vara giltigt krävs att den registrerade genom en handling eller ett tydligt bekräftande uttrycker att han eller hon samtycker till behandling av personuppgifter som rör honom eller henne. consent voluntary specific informed unambiguous valid agreement",
+      "metadata": {
+        "keywords_en": "consent, voluntary, specific, informed, unambiguous, valid, agreement, approval"
+      }
+    },
+    {
+      "provision_ref": "5:2",
+      "chapter": "5",
+      "section": "2",
+      "title": "Information vid insamling",
+      "content": "När personuppgifter samlas in ska den registeransvarige tillhandahålla den registrerade information om identiteten, kontaktuppgifter, ändamål, rättslig grund, mottagare av uppgifterna och lagringstid. information collection controller identity contact purpose legal basis recipients storage",
+      "metadata": {
+        "keywords_en": "information, collection, controller, identity, contact, purpose, legal basis, recipients, storage period"
+      }
+    }
+  ],
+  "definitions": [
+    {
+      "term": "personuppgift",
+      "definition": "Varje upplysning som avser en identifierad eller identifierbar fysisk person (den registrerade)",
+      "provision_ref": "1:2"
+    },
+    {
+      "term": "samtycke",
+      "definition": "Varje fritt givet, specifik, informerad och otvetydig viljeyttring genom vilken den registrerade genom ett uttalande eller en tydlig bekräftande handling godtar behandling av personuppgifter",
+      "provision_ref": "3:5"
+    }
+  ]
+}

@@ -19,7 +19,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "ingest": "tsx scripts/ingest-source.ts",
+    "ingest": "tsx scripts/ingest-riksdagen.ts",
     "check-updates": "tsx scripts/check-updates.ts",
     "lint": "eslint src tests",
     "prepublishOnly": "npm run build",
@@ -30,7 +30,7 @@
     "better-sqlite3": "^12.6.2"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.14",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.15.29",
     "jsdom": "^27.4.0",

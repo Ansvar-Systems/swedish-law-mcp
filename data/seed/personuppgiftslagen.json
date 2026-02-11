@@ -1,0 +1,32 @@
+{
+  "id": "1998:204",
+  "type": "statute",
+  "title": "Personuppgiftslagen",
+  "title_en": "Personal Data Act",
+  "short_name": "PUL",
+  "status": "repealed",
+  "issued_date": "1998-04-29",
+  "in_force_date": "1998-10-24",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2018-05/SFS1998-204.pdf",
+  "description": "Swedish data protection law (repealed 2018-05-25, replaced by Dataskyddslagen)",
+  "provisions": [
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "title": "Samtycke",
+      "content": "Behandling av personuppgifter får ske om den registrerade lämnat sitt samtycke till behandlingen. consent personal data processing",
+      "metadata": {
+        "keywords_en": "consent, personal data, processing, data subject"
+      }
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "title": "Känsliga personuppgifter",
+      "content": "Känsliga personuppgifter får inte behandlas. Med känsliga personuppgifter avses uppgifter om ras, etniskt ursprung, politiska åsikter, religiös eller filosofisk övertygelse, medlemskap i fackförening samt uppgifter om hälsa eller sexualliv. sensitive personal data race ethnic origin political opinions religious beliefs health sex life",
+      "metadata": {
+        "keywords_en": "sensitive data, special categories, race, ethnic origin, political opinions, religious beliefs, trade union, health, sex life"
+      }
+    }
+  ]
+}

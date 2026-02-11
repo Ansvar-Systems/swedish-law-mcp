@@ -1,76 +1,10 @@
 #!/usr/bin/env tsx
 /**
- * ═══════════════════════════════════════════════════════════════════════════
- * DATABASE BUILDER
- * ═══════════════════════════════════════════════════════════════════════════
+ * Database builder for Swedish Legal Citation MCP server.
  *
- * Builds the SQLite database from seed JSON files.
+ * Builds the SQLite database from seed JSON files in data/seed/.
  *
- * This script is run during development and before releases to create
- * the pre-built database that ships with the package.
- *
- * ───────────────────────────────────────────────────────────────────────────
- * USAGE
- * ───────────────────────────────────────────────────────────────────────────
- *
- *   npm run build:db
- *
- * ───────────────────────────────────────────────────────────────────────────
- * WORKFLOW
- * ───────────────────────────────────────────────────────────────────────────
- *
- *   1. Delete existing database (if any)
- *   2. Create new database with schema
- *   3. Load all seed JSON files from data/seed/
- *   4. Insert data with relationships
- *   5. Create FTS5 full-text search indexes
- *   6. Update source registry metadata
- *
- * ───────────────────────────────────────────────────────────────────────────
- * CUSTOMIZATION
- * ───────────────────────────────────────────────────────────────────────────
- *
- * To adapt for your server:
- *
- *   1. Update SCHEMA to match your data model
- *   2. Update seed file interfaces (SourceSeed, ItemSeed, etc.)
- *   3. Update loading logic in buildDatabase()
- *   4. Add any additional tables or indexes you need
- *
- * ───────────────────────────────────────────────────────────────────────────
- * SEED FILE FORMAT
- * ───────────────────────────────────────────────────────────────────────────
- *
- * Each seed file should be a JSON file with this structure:
- *
- *   {
- *     "id": "SOURCE_ID",
- *     "full_name": "Full Name of Source",
- *     "identifier": "official-id-123",
- *     "effective_date": "2024-01-01",
- *     "source_url": "https://...",
- *     "items": [
- *       {
- *         "item_id": "1",
- *         "title": "Item Title",
- *         "text": "Full text content...",
- *         "parent": "Chapter I"
- *       }
- *     ],
- *     "definitions": [
- *       {
- *         "term": "defined term",
- *         "definition": "The official definition...",
- *         "defining_item": "4"
- *       }
- *     ]
- *   }
- *
- * ═══════════════════════════════════════════════════════════════════════════
- *
- * @module scripts/build-db
- * @author Ansvar Systems AB
- * @license Apache-2.0
+ * Usage: npm run build:db
  */
 
 import Database from 'better-sqlite3';
@@ -78,747 +12,404 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
-// ═══════════════════════════════════════════════════════════════════════════
-// CONFIGURATION
-// ═══════════════════════════════════════════════════════════════════════════
-
-// Path resolution for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/** Directory containing seed JSON files */
 const SEED_DIR = path.resolve(__dirname, '../data/seed');
-
-/** Output database path */
 const DB_PATH = path.resolve(__dirname, '../data/database.db');
 
-/** Subdirectory for control mapping files */
-const MAPPINGS_DIR = path.join(SEED_DIR, 'mappings');
+// ─────────────────────────────────────────────────────────────────────────────
+// Seed file types
+// ─────────────────────────────────────────────────────────────────────────────
 
-/** Subdirectory for applicability rule files */
-const APPLICABILITY_DIR = path.join(SEED_DIR, 'applicability');
-
-// ═══════════════════════════════════════════════════════════════════════════
-// TYPES - Seed File Formats
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Seed file for a source (regulation, statute, standard)
- *
- * This is the expected format for files in data/seed/*.json
- */
-interface SourceSeed {
-  /** Unique identifier (e.g., "GDPR", "NIS2", "BrB") */
+interface DocumentSeed {
   id: string;
-
-  /** Full official name */
-  full_name: string;
-
-  /** Official identifier (CELEX number, SFS number, etc.) */
-  identifier?: string;
-
-  /** Date when the source became effective (ISO 8601) */
-  effective_date?: string;
-
-  /** URL to official publication */
-  source_url?: string;
-
-  /** Items (articles, sections, clauses) */
-  items: ItemSeed[];
-
-  /** Defined terms */
+  type: 'statute' | 'bill' | 'sou' | 'ds' | 'case_law';
+  title: string;
+  title_en?: string;
+  short_name?: string;
+  status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
+  issued_date?: string;
+  in_force_date?: string;
+  url?: string;
+  description?: string;
+  provisions?: ProvisionSeed[];
   definitions?: DefinitionSeed[];
+  preparatory_works?: PrepWorkSeed[];
+  case_law?: CaseLawSeed;
 }
 
-/**
- * Seed data for an item (article, section, clause)
- */
-interface ItemSeed {
-  /** Identifier within the source (e.g., "25", "4:9c") */
-  item_id: string;
-
-  /** Title of the item */
+interface ProvisionSeed {
+  provision_ref: string;
+  chapter?: string;
+  section: string;
   title?: string;
-
-  /** Full text content */
-  text: string;
-
-  /** Parent element (chapter, part, etc.) */
-  parent?: string;
-
-  /** Additional metadata as JSON object */
+  content: string;
   metadata?: Record<string, unknown>;
-
-  /** Related items as array of references */
-  related?: Array<{
-    type: string;
-    source: string;
-    item_id: string;
-  }>;
 }
 
-/**
- * Seed data for a definition
- */
 interface DefinitionSeed {
-  /** The defined term */
   term: string;
-
-  /** Official definition text */
+  term_en?: string;
   definition: string;
-
-  /** Item that contains this definition (e.g., "4") */
-  defining_item?: string;
+  source_provision?: string;
 }
 
-/**
- * Seed file for control mappings (e.g., ISO 27001 → GDPR)
- *
- * Expected format for files in data/seed/mappings/*.json
- */
-interface MappingSeed {
-  /** Framework being mapped from (e.g., "ISO27001") */
-  framework: string;
-
-  /** Target source being mapped to (e.g., "GDPR") */
-  target_source: string;
-
-  /** Individual control mappings */
-  mappings: Array<{
-    control_id: string;
-    control_name: string;
-    target_items: string[];
-    coverage: 'full' | 'partial' | 'related';
-    notes?: string;
-  }>;
+interface PrepWorkSeed {
+  prep_document_id: string;
+  title: string;
+  summary?: string;
 }
 
-/**
- * Seed file for applicability rules
- *
- * Expected format for files in data/seed/applicability/*.json
- */
-interface ApplicabilitySeed {
-  /** Source these rules apply to */
-  source: string;
-
-  /** Applicability rules by sector */
-  rules: Array<{
-    sector: string;
-    subsector?: string;
-    applies: boolean;
-    confidence: 'definite' | 'likely' | 'possible';
-    basis_item?: string;
-    conditions?: Record<string, unknown>;
-    notes?: string;
-  }>;
+interface CaseLawSeed {
+  court: string;
+  case_number?: string;
+  decision_date?: string;
+  summary?: string;
+  keywords?: string;
+  cited_statutes?: string[];
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// DATABASE SCHEMA
-// ═══════════════════════════════════════════════════════════════════════════
+interface CrossRefSeed {
+  source_document_id: string;
+  source_provision_ref?: string;
+  target_document_id: string;
+  target_provision_ref?: string;
+  ref_type: string;
+}
 
-/**
- * Complete database schema
- *
- * Customize this for your specific data model. The schema includes:
- *
- *   - sources: Top-level containers (regulations, statutes, etc.)
- *   - items: Individual items (articles, sections, clauses)
- *   - items_fts: Full-text search index for items
- *   - definitions: Defined terms
- *   - mappings: Cross-framework mappings
- *   - applicability_rules: Sector applicability
- *   - source_registry: Metadata for update tracking
- */
+// ─────────────────────────────────────────────────────────────────────────────
+// Database schema
+// ─────────────────────────────────────────────────────────────────────────────
+
 const SCHEMA = `
--- ═══════════════════════════════════════════════════════════════════════════
--- SOURCES TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Top-level containers for your data (regulations, statutes, standards)
---
--- Examples:
---   - EU Regulations: GDPR, NIS2, DORA, AI_ACT
---   - Swedish Laws: BrB (Brottsbalken), OSL, DSL
---   - Standards: ISO27001, NIST_CSF
--- ═══════════════════════════════════════════════════════════════════════════
-
-CREATE TABLE sources (
-  -- Unique identifier (short code)
-  -- Examples: "GDPR", "NIS2", "BrB"
+-- Legal documents (statutes, bills, SOUs, case law)
+CREATE TABLE legal_documents (
   id TEXT PRIMARY KEY,
-
-  -- Full official name
-  -- Example: "General Data Protection Regulation"
-  full_name TEXT NOT NULL,
-
-  -- Official identifier from source system
-  -- Examples: CELEX "32016R0679", SFS "2018:218"
-  identifier TEXT UNIQUE,
-
-  -- Date when source became effective (ISO 8601)
-  effective_date TEXT,
-
-  -- Date of last amendment (ISO 8601)
-  last_amended TEXT,
-
-  -- URL to official publication
-  source_url TEXT
+  type TEXT NOT NULL CHECK(type IN ('statute', 'bill', 'sou', 'ds', 'case_law')),
+  title TEXT NOT NULL,
+  title_en TEXT,
+  short_name TEXT,
+  status TEXT NOT NULL DEFAULT 'in_force'
+    CHECK(status IN ('in_force', 'amended', 'repealed', 'not_yet_in_force')),
+  issued_date TEXT,
+  in_force_date TEXT,
+  url TEXT,
+  description TEXT,
+  last_updated TEXT DEFAULT (datetime('now'))
 );
 
--- ═══════════════════════════════════════════════════════════════════════════
--- ITEMS TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Individual items within sources (articles, sections, clauses)
---
--- The rowid is used by FTS5 for content sync.
--- ═══════════════════════════════════════════════════════════════════════════
-
-CREATE TABLE items (
-  -- SQLite rowid (auto-generated, used by FTS5)
-  rowid INTEGER PRIMARY KEY,
-
-  -- Reference to parent source
-  source TEXT NOT NULL REFERENCES sources(id),
-
-  -- Identifier within the source
-  -- Examples: "25" (Article 25), "4:9c" (Chapter 4, Section 9c)
-  item_id TEXT NOT NULL,
-
-  -- Item title (may be null for untitled items)
+-- Individual provisions from statutes
+CREATE TABLE legal_provisions (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  provision_ref TEXT NOT NULL,
+  chapter TEXT,
+  section TEXT NOT NULL,
   title TEXT,
-
-  -- Full text content
-  text TEXT NOT NULL,
-
-  -- Parent element (chapter, part, section heading)
-  parent TEXT,
-
-  -- Additional metadata as JSON
-  -- May include: effective_date, amended_by, version, notes
+  content TEXT NOT NULL,
   metadata TEXT,
-
-  -- Related items as JSON array
-  -- Format: [{"type": "references", "source": "X", "item_id": "Y"}, ...]
-  related TEXT,
-
-  -- Ensure unique source + item_id combinations
-  UNIQUE(source, item_id)
+  UNIQUE(document_id, provision_ref)
 );
 
--- Index for efficient source + parent queries
-CREATE INDEX idx_items_source_parent ON items(source, parent);
+CREATE INDEX idx_provisions_doc ON legal_provisions(document_id);
+CREATE INDEX idx_provisions_chapter ON legal_provisions(document_id, chapter);
 
--- ═══════════════════════════════════════════════════════════════════════════
--- FULL-TEXT SEARCH (FTS5)
--- ═══════════════════════════════════════════════════════════════════════════
--- Virtual table for full-text search using SQLite FTS5
---
--- Features:
---   - BM25 relevance ranking
---   - Snippet extraction
---   - Boolean queries (AND, OR, NOT)
---   - Phrase search ("exact phrase")
---   - Prefix matching (cyber*)
---
--- The content='items' and content_rowid='rowid' options make this a
--- "content-less" FTS table that references the items table.
--- ═══════════════════════════════════════════════════════════════════════════
-
-CREATE VIRTUAL TABLE items_fts USING fts5(
-  source,
-  item_id,
-  title,
-  text,
-  content='items',
-  content_rowid='rowid',
-  tokenize='unicode61'  -- Good for European languages
+-- FTS5 for provision search
+CREATE VIRTUAL TABLE provisions_fts USING fts5(
+  content, title,
+  content='legal_provisions',
+  content_rowid='id',
+  tokenize='unicode61'
 );
 
--- ─────────────────────────────────────────────────────────────────────────
--- FTS5 Synchronization Triggers
--- ─────────────────────────────────────────────────────────────────────────
--- These triggers keep the FTS index in sync with the items table.
--- Required when using content= option.
--- ─────────────────────────────────────────────────────────────────────────
-
--- After INSERT: Add to FTS index
-CREATE TRIGGER items_ai AFTER INSERT ON items BEGIN
-  INSERT INTO items_fts(rowid, source, item_id, title, text)
-  VALUES (new.rowid, new.source, new.item_id, new.title, new.text);
+CREATE TRIGGER provisions_ai AFTER INSERT ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
 END;
 
--- After DELETE: Remove from FTS index
-CREATE TRIGGER items_ad AFTER DELETE ON items BEGIN
-  INSERT INTO items_fts(items_fts, rowid, source, item_id, title, text)
-  VALUES ('delete', old.rowid, old.source, old.item_id, old.title, old.text);
+CREATE TRIGGER provisions_ad AFTER DELETE ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(provisions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
 END;
 
--- After UPDATE: Update FTS index
-CREATE TRIGGER items_au AFTER UPDATE ON items BEGIN
-  INSERT INTO items_fts(items_fts, rowid, source, item_id, title, text)
-  VALUES ('delete', old.rowid, old.source, old.item_id, old.title, old.text);
-  INSERT INTO items_fts(rowid, source, item_id, title, text)
-  VALUES (new.rowid, new.source, new.item_id, new.title, new.text);
+CREATE TRIGGER provisions_au AFTER UPDATE ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(provisions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+  INSERT INTO provisions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
 END;
 
--- ═══════════════════════════════════════════════════════════════════════════
--- DEFINITIONS TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Official definitions of terms from your sources
--- ═══════════════════════════════════════════════════════════════════════════
+-- Case law metadata
+CREATE TABLE case_law (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL UNIQUE REFERENCES legal_documents(id),
+  court TEXT NOT NULL,
+  case_number TEXT,
+  decision_date TEXT,
+  summary TEXT,
+  keywords TEXT
+);
 
+-- FTS5 for case law search
+CREATE VIRTUAL TABLE case_law_fts USING fts5(
+  summary, keywords,
+  content='case_law',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER case_law_ai AFTER INSERT ON case_law BEGIN
+  INSERT INTO case_law_fts(rowid, summary, keywords)
+  VALUES (new.id, new.summary, new.keywords);
+END;
+
+CREATE TRIGGER case_law_ad AFTER DELETE ON case_law BEGIN
+  INSERT INTO case_law_fts(case_law_fts, rowid, summary, keywords)
+  VALUES ('delete', old.id, old.summary, old.keywords);
+END;
+
+CREATE TRIGGER case_law_au AFTER UPDATE ON case_law BEGIN
+  INSERT INTO case_law_fts(case_law_fts, rowid, summary, keywords)
+  VALUES ('delete', old.id, old.summary, old.keywords);
+  INSERT INTO case_law_fts(rowid, summary, keywords)
+  VALUES (new.id, new.summary, new.keywords);
+END;
+
+-- Preparatory works (forarbeten) linking statutes to bills/SOUs
+CREATE TABLE preparatory_works (
+  id INTEGER PRIMARY KEY,
+  statute_id TEXT NOT NULL REFERENCES legal_documents(id),
+  prep_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  title TEXT,
+  summary TEXT
+);
+
+CREATE INDEX idx_prep_statute ON preparatory_works(statute_id);
+
+-- FTS5 for preparatory works search
+CREATE VIRTUAL TABLE prep_works_fts USING fts5(
+  title, summary,
+  content='preparatory_works',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER prep_works_ai AFTER INSERT ON preparatory_works BEGIN
+  INSERT INTO prep_works_fts(rowid, title, summary)
+  VALUES (new.id, new.title, new.summary);
+END;
+
+CREATE TRIGGER prep_works_ad AFTER DELETE ON preparatory_works BEGIN
+  INSERT INTO prep_works_fts(prep_works_fts, rowid, title, summary)
+  VALUES ('delete', old.id, old.title, old.summary);
+END;
+
+CREATE TRIGGER prep_works_au AFTER UPDATE ON preparatory_works BEGIN
+  INSERT INTO prep_works_fts(prep_works_fts, rowid, title, summary)
+  VALUES ('delete', old.id, old.title, old.summary);
+  INSERT INTO prep_works_fts(rowid, title, summary)
+  VALUES (new.id, new.title, new.summary);
+END;
+
+-- Cross-references between provisions/documents
+CREATE TABLE cross_references (
+  id INTEGER PRIMARY KEY,
+  source_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  source_provision_ref TEXT,
+  target_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  target_provision_ref TEXT,
+  ref_type TEXT NOT NULL DEFAULT 'references'
+    CHECK(ref_type IN ('references', 'amended_by', 'implements', 'see_also'))
+);
+
+CREATE INDEX idx_xref_source ON cross_references(source_document_id);
+CREATE INDEX idx_xref_target ON cross_references(target_document_id);
+
+-- Legal term definitions
 CREATE TABLE definitions (
   id INTEGER PRIMARY KEY,
-
-  -- Source that defines this term
-  source TEXT NOT NULL REFERENCES sources(id),
-
-  -- The defined term (as written in source)
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
   term TEXT NOT NULL,
-
-  -- Official definition text
+  term_en TEXT,
   definition TEXT NOT NULL,
-
-  -- Item that contains this definition (e.g., "4" for Article 4)
-  defining_item TEXT,
-
-  -- Each source can only define a term once
-  UNIQUE(source, term)
+  source_provision TEXT,
+  UNIQUE(document_id, term)
 );
 
--- Index for case-insensitive term lookups
-CREATE INDEX idx_definitions_term ON definitions(term COLLATE NOCASE);
-
--- ═══════════════════════════════════════════════════════════════════════════
--- CONTROL MAPPINGS TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Maps controls from frameworks (ISO 27001, NIST) to your sources
---
--- Enables questions like:
---   "Which GDPR articles implement ISO 27001 control A.5.1?"
--- ═══════════════════════════════════════════════════════════════════════════
-
-CREATE TABLE mappings (
-  id INTEGER PRIMARY KEY,
-
-  -- Framework being mapped from
-  -- Examples: "ISO27001", "NIST_CSF", "CIS"
-  framework TEXT NOT NULL,
-
-  -- Control identifier in the framework
-  -- Examples: "A.5.1", "PR.AC-1", "1.1"
-  control_id TEXT NOT NULL,
-
-  -- Human-readable control name
-  control_name TEXT,
-
-  -- Target source being mapped to
-  target_source TEXT NOT NULL REFERENCES sources(id),
-
-  -- Target items as JSON array
-  -- Example: ["25", "32", "35"]
-  target_items TEXT NOT NULL,
-
-  -- Coverage level
-  -- full: Control fully addressed by these items
-  -- partial: Control partially addressed
-  -- related: Items are related but don't fully address
-  coverage TEXT CHECK(coverage IN ('full', 'partial', 'related')),
-
-  -- Additional notes about the mapping
-  notes TEXT
+-- FTS5 for definition search
+CREATE VIRTUAL TABLE definitions_fts USING fts5(
+  term, definition,
+  content='definitions',
+  content_rowid='id',
+  tokenize='unicode61'
 );
 
--- Indexes for common queries
-CREATE INDEX idx_mappings_framework ON mappings(framework);
-CREATE INDEX idx_mappings_control ON mappings(framework, control_id);
-CREATE INDEX idx_mappings_target ON mappings(target_source);
+CREATE TRIGGER definitions_ai AFTER INSERT ON definitions BEGIN
+  INSERT INTO definitions_fts(rowid, term, definition)
+  VALUES (new.id, new.term, new.definition);
+END;
 
--- ═══════════════════════════════════════════════════════════════════════════
--- APPLICABILITY RULES TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Rules for determining if a source applies to an entity
---
--- Enables questions like:
---   "Does NIS2 apply to a financial services company?"
--- ═══════════════════════════════════════════════════════════════════════════
+CREATE TRIGGER definitions_ad AFTER DELETE ON definitions BEGIN
+  INSERT INTO definitions_fts(definitions_fts, rowid, term, definition)
+  VALUES ('delete', old.id, old.term, old.definition);
+END;
 
-CREATE TABLE applicability_rules (
-  id INTEGER PRIMARY KEY,
-
-  -- Source this rule is about
-  source TEXT NOT NULL REFERENCES sources(id),
-
-  -- Sector the rule applies to
-  -- Examples: "financial", "healthcare", "energy"
-  sector TEXT NOT NULL,
-
-  -- More specific subsector (optional)
-  -- Examples: "banking", "insurance", "hospitals"
-  subsector TEXT,
-
-  -- Does the source apply? (1 = yes, 0 = no)
-  applies INTEGER NOT NULL CHECK(applies IN (0, 1)),
-
-  -- Confidence level
-  -- definite: Clearly stated in source
-  -- likely: Strongly implied
-  -- possible: May apply depending on specifics
-  confidence TEXT CHECK(confidence IN ('definite', 'likely', 'possible')),
-
-  -- Item that establishes this rule
-  basis_item TEXT,
-
-  -- Additional conditions as JSON
-  -- Example: {"employee_count": ">250", "turnover": ">50M EUR"}
-  conditions TEXT,
-
-  -- Notes explaining the rule
-  notes TEXT
-);
-
--- Index for sector lookups
-CREATE INDEX idx_applicability_sector ON applicability_rules(sector);
-CREATE INDEX idx_applicability_source ON applicability_rules(source);
-
--- ═══════════════════════════════════════════════════════════════════════════
--- SOURCE REGISTRY TABLE
--- ═══════════════════════════════════════════════════════════════════════════
--- Metadata for tracking source updates and data quality
--- ═══════════════════════════════════════════════════════════════════════════
-
-CREATE TABLE source_registry (
-  -- Reference to source
-  source TEXT PRIMARY KEY REFERENCES sources(id),
-
-  -- Official identifier from source system
-  official_id TEXT,
-
-  -- Version string from source (for change detection)
-  official_version TEXT,
-
-  -- When we last fetched from source (ISO 8601)
-  last_fetched TEXT,
-
-  -- Expected number of items
-  items_expected INTEGER,
-
-  -- Actually parsed number of items
-  items_parsed INTEGER,
-
-  -- Data quality status
-  -- complete: All items parsed successfully
-  -- review: Some items need manual review
-  -- incomplete: Missing items or parsing failures
-  quality_status TEXT CHECK(quality_status IN ('complete', 'review', 'incomplete')),
-
-  -- Notes about this source's data
-  notes TEXT
-);
+CREATE TRIGGER definitions_au AFTER UPDATE ON definitions BEGIN
+  INSERT INTO definitions_fts(definitions_fts, rowid, term, definition)
+  VALUES ('delete', old.id, old.term, old.definition);
+  INSERT INTO definitions_fts(rowid, term, definition)
+  VALUES (new.id, new.term, new.definition);
+END;
 `;
 
-// ═══════════════════════════════════════════════════════════════════════════
-// MAIN BUILD FUNCTION
-// ═══════════════════════════════════════════════════════════════════════════
+// ─────────────────────────────────────────────────────────────────────────────
+// Build
+// ─────────────────────────────────────────────────────────────────────────────
 
-/**
- * Build the SQLite database from seed files
- *
- * This is the main function that orchestrates the build process:
- *
- *   1. Delete existing database
- *   2. Create new database with schema
- *   3. Load seed files
- *   4. Insert data
- *   5. Load mappings and applicability rules
- */
 function buildDatabase(): void {
-  console.log('═══════════════════════════════════════════════════════════════');
-  console.log(' DATABASE BUILDER');
-  console.log('═══════════════════════════════════════════════════════════════');
-  console.log('');
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 1: Delete existing database
-  // ─────────────────────────────────────────────────────────────────────────
+  console.log('Building Swedish Legal Citation database...\n');
 
   if (fs.existsSync(DB_PATH)) {
-    console.log('🗑️  Deleting existing database...');
     fs.unlinkSync(DB_PATH);
   }
 
-  // Ensure data directory exists
   const dataDir = path.dirname(DB_PATH);
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
   }
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 2: Create new database
-  // ─────────────────────────────────────────────────────────────────────────
-
-  console.log('📦 Creating new database...');
   const db = new Database(DB_PATH);
-
-  // Enable foreign keys and WAL mode for better performance
   db.pragma('foreign_keys = ON');
   db.pragma('journal_mode = WAL');
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 3: Create schema
-  // ─────────────────────────────────────────────────────────────────────────
-
-  console.log('📐 Creating schema...');
   db.exec(SCHEMA);
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 4: Prepare insert statements
-  // ─────────────────────────────────────────────────────────────────────────
-
-  const insertSource = db.prepare(`
-    INSERT INTO sources (id, full_name, identifier, effective_date, source_url)
-    VALUES (?, ?, ?, ?, ?)
+  // Prepared statements
+  const insertDoc = db.prepare(`
+    INSERT INTO legal_documents (id, type, title, title_en, short_name, status, issued_date, in_force_date, url, description)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
-  const insertItem = db.prepare(`
-    INSERT INTO items (source, item_id, title, text, parent, metadata, related)
+  const insertProvision = db.prepare(`
+    INSERT INTO legal_provisions (document_id, provision_ref, chapter, section, title, content, metadata)
     VALUES (?, ?, ?, ?, ?, ?, ?)
   `);
 
-  const insertDefinition = db.prepare(`
-    INSERT INTO definitions (source, term, definition, defining_item)
-    VALUES (?, ?, ?, ?)
-  `);
-
-  const insertMapping = db.prepare(`
-    INSERT INTO mappings (framework, control_id, control_name, target_source, target_items, coverage, notes)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  const insertApplicability = db.prepare(`
-    INSERT INTO applicability_rules (source, sector, subsector, applies, confidence, basis_item, conditions, notes)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  const insertRegistry = db.prepare(`
-    INSERT INTO source_registry (source, official_id, last_fetched, items_expected, items_parsed, quality_status)
+  const insertCaseLaw = db.prepare(`
+    INSERT INTO case_law (document_id, court, case_number, decision_date, summary, keywords)
     VALUES (?, ?, ?, ?, ?, ?)
   `);
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 5: Load and insert seed files
-  // ─────────────────────────────────────────────────────────────────────────
+  const insertPrepWork = db.prepare(`
+    INSERT INTO preparatory_works (statute_id, prep_document_id, title, summary)
+    VALUES (?, ?, ?, ?)
+  `);
 
-  console.log('');
-  console.log('📂 Loading seed files...');
+  const insertDefinition = db.prepare(`
+    INSERT INTO definitions (document_id, term, term_en, definition, source_provision)
+    VALUES (?, ?, ?, ?, ?)
+  `);
 
-  // Find all JSON files in seed directory (excluding subdirectories)
-  const seedFiles = fs.readdirSync(SEED_DIR)
-    .filter(f => f.endsWith('.json'))
-    .filter(f => !f.startsWith('.'));
+  const insertCrossRef = db.prepare(`
+    INSERT INTO cross_references (source_document_id, source_provision_ref, target_document_id, target_provision_ref, ref_type)
+    VALUES (?, ?, ?, ?, ?)
+  `);
 
-  if (seedFiles.length === 0) {
-    console.log('⚠️  No seed files found in', SEED_DIR);
-    console.log('   Create JSON files following the seed format.');
+  // Load seed files
+  if (!fs.existsSync(SEED_DIR)) {
+    console.log(`No seed directory at ${SEED_DIR} — creating empty database.`);
     db.close();
     return;
   }
 
-  // Statistics
-  let totalSources = 0;
-  let totalItems = 0;
-  let totalDefinitions = 0;
+  const seedFiles = fs.readdirSync(SEED_DIR)
+    .filter(f => f.endsWith('.json') && !f.startsWith('.') && !f.startsWith('_'));
 
-  // Process each seed file in a transaction
-  const loadSources = db.transaction(() => {
+  if (seedFiles.length === 0) {
+    console.log('No seed files found. Database created with empty schema.');
+    db.close();
+    return;
+  }
+
+  let totalDocs = 0;
+  let totalProvisions = 0;
+  let totalDefs = 0;
+
+  const loadAll = db.transaction(() => {
     for (const file of seedFiles) {
       const filePath = path.join(SEED_DIR, file);
-      console.log(`   📄 ${file}`);
+      console.log(`  Loading ${file}...`);
 
-      // Load and parse JSON
       const content = fs.readFileSync(filePath, 'utf-8');
-      const seed = JSON.parse(content) as SourceSeed;
+      const seed = JSON.parse(content) as DocumentSeed;
 
-      // Insert source
-      insertSource.run(
-        seed.id,
-        seed.full_name,
-        seed.identifier ?? null,
-        seed.effective_date ?? null,
-        seed.source_url ?? null
+      insertDoc.run(
+        seed.id, seed.type, seed.title, seed.title_en ?? null,
+        seed.short_name ?? null, seed.status,
+        seed.issued_date ?? null, seed.in_force_date ?? null,
+        seed.url ?? null, seed.description ?? null
       );
-      totalSources++;
+      totalDocs++;
 
-      // Insert items
-      for (const item of seed.items) {
-        insertItem.run(
-          seed.id,
-          item.item_id,
-          item.title ?? null,
-          item.text,
-          item.parent ?? null,
-          item.metadata ? JSON.stringify(item.metadata) : null,
-          item.related ? JSON.stringify(item.related) : null
+      for (const prov of seed.provisions ?? []) {
+        insertProvision.run(
+          seed.id, prov.provision_ref, prov.chapter ?? null,
+          prov.section, prov.title ?? null, prov.content,
+          prov.metadata ? JSON.stringify(prov.metadata) : null
         );
-        totalItems++;
+        totalProvisions++;
       }
 
-      // Insert definitions
       for (const def of seed.definitions ?? []) {
         insertDefinition.run(
-          seed.id,
-          def.term,
-          def.definition,
-          def.defining_item ?? null
+          seed.id, def.term, def.term_en ?? null,
+          def.definition, def.source_provision ?? null
         );
-        totalDefinitions++;
+        totalDefs++;
       }
 
-      // Insert registry entry
-      insertRegistry.run(
-        seed.id,
-        seed.identifier ?? null,
-        new Date().toISOString(),
-        seed.items.length,
-        seed.items.length,
-        'complete'
-      );
+      if (seed.case_law) {
+        insertCaseLaw.run(
+          seed.id, seed.case_law.court,
+          seed.case_law.case_number ?? null,
+          seed.case_law.decision_date ?? null,
+          seed.case_law.summary ?? null,
+          seed.case_law.keywords ?? null
+        );
+      }
 
-      console.log(`      └─ ${seed.items.length} items, ${seed.definitions?.length ?? 0} definitions`);
+      for (const pw of seed.preparatory_works ?? []) {
+        insertPrepWork.run(seed.id, pw.prep_document_id, pw.title, pw.summary ?? null);
+      }
+
+      console.log(`    ${seed.provisions?.length ?? 0} provisions, ${seed.definitions?.length ?? 0} definitions`);
+    }
+
+    // Load cross-references file if it exists
+    const xrefPath = path.join(SEED_DIR, '_cross_references.json');
+    if (fs.existsSync(xrefPath)) {
+      const xrefs = JSON.parse(fs.readFileSync(xrefPath, 'utf-8')) as CrossRefSeed[];
+      for (const xref of xrefs) {
+        insertCrossRef.run(
+          xref.source_document_id, xref.source_provision_ref ?? null,
+          xref.target_document_id, xref.target_provision_ref ?? null,
+          xref.ref_type
+        );
+      }
+      console.log(`  Loaded ${xrefs.length} cross-references`);
     }
   });
 
-  loadSources();
+  loadAll();
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 6: Load mappings (if any)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  let totalMappings = 0;
-
-  if (fs.existsSync(MAPPINGS_DIR)) {
-    console.log('');
-    console.log('🔗 Loading control mappings...');
-
-    const mappingFiles = fs.readdirSync(MAPPINGS_DIR)
-      .filter(f => f.endsWith('.json'));
-
-    const loadMappings = db.transaction(() => {
-      for (const file of mappingFiles) {
-        const filePath = path.join(MAPPINGS_DIR, file);
-        console.log(`   📄 ${file}`);
-
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const seed = JSON.parse(content) as MappingSeed;
-
-        for (const mapping of seed.mappings) {
-          insertMapping.run(
-            seed.framework,
-            mapping.control_id,
-            mapping.control_name,
-            seed.target_source,
-            JSON.stringify(mapping.target_items),
-            mapping.coverage,
-            mapping.notes ?? null
-          );
-          totalMappings++;
-        }
-
-        console.log(`      └─ ${seed.mappings.length} mappings`);
-      }
-    });
-
-    loadMappings();
-  }
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 7: Load applicability rules (if any)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  let totalRules = 0;
-
-  if (fs.existsSync(APPLICABILITY_DIR)) {
-    console.log('');
-    console.log('📋 Loading applicability rules...');
-
-    const ruleFiles = fs.readdirSync(APPLICABILITY_DIR)
-      .filter(f => f.endsWith('.json'));
-
-    const loadRules = db.transaction(() => {
-      for (const file of ruleFiles) {
-        const filePath = path.join(APPLICABILITY_DIR, file);
-        console.log(`   📄 ${file}`);
-
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const seed = JSON.parse(content) as ApplicabilitySeed;
-
-        for (const rule of seed.rules) {
-          insertApplicability.run(
-            seed.source,
-            rule.sector,
-            rule.subsector ?? null,
-            rule.applies ? 1 : 0,
-            rule.confidence,
-            rule.basis_item ?? null,
-            rule.conditions ? JSON.stringify(rule.conditions) : null,
-            rule.notes ?? null
-          );
-          totalRules++;
-        }
-
-        console.log(`      └─ ${seed.rules.length} rules`);
-      }
-    });
-
-    loadRules();
-  }
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // STEP 8: Finalize
-  // ─────────────────────────────────────────────────────────────────────────
-
-  // Optimize database
   db.pragma('wal_checkpoint(TRUNCATE)');
   db.exec('ANALYZE');
-
   db.close();
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // SUMMARY
-  // ─────────────────────────────────────────────────────────────────────────
-
-  console.log('');
-  console.log('═══════════════════════════════════════════════════════════════');
-  console.log(' BUILD COMPLETE');
-  console.log('═══════════════════════════════════════════════════════════════');
-  console.log('');
-  console.log(`   📊 Sources:     ${totalSources}`);
-  console.log(`   📄 Items:       ${totalItems}`);
-  console.log(`   📖 Definitions: ${totalDefinitions}`);
-  console.log(`   🔗 Mappings:    ${totalMappings}`);
-  console.log(`   📋 Rules:       ${totalRules}`);
-  console.log('');
-  console.log(`   📦 Output: ${DB_PATH}`);
-  console.log(`   📏 Size:   ${formatFileSize(fs.statSync(DB_PATH).size)}`);
-  console.log('');
+  const size = fs.statSync(DB_PATH).size;
+  console.log(`\nBuild complete: ${totalDocs} documents, ${totalProvisions} provisions, ${totalDefs} definitions`);
+  console.log(`Output: ${DB_PATH} (${(size / 1024).toFixed(1)} KB)`);
 }
-
-// ═══════════════════════════════════════════════════════════════════════════
-// UTILITY FUNCTIONS
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Format file size in human-readable form
- */
-function formatFileSize(bytes: number): string {
-  if (bytes < 1024) return `${bytes} B`;
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
-  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
-}
-
-// ═══════════════════════════════════════════════════════════════════════════
-// RUN
-// ═══════════════════════════════════════════════════════════════════════════
 
 buildDatabase();

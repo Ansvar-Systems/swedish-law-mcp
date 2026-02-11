@@ -1,0 +1,67 @@
+import { describe, it, expect, beforeAll, afterAll } from 'vitest';
+import type { Database } from 'better-sqlite3';
+import { searchLegislation } from '../../src/tools/search-legislation.js';
+import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db.js';
+
+describe('search_legislation', () => {
+  let db: Database;
+
+  beforeAll(() => {
+    db = createTestDatabase();
+  });
+
+  afterAll(() => {
+    closeTestDatabase(db);
+  });
+
+  it('should find provisions by keyword', async () => {
+    const results = await searchLegislation(db, { query: 'personuppgifter' });
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0]).toHaveProperty('document_id');
+    expect(results[0]).toHaveProperty('provision_ref');
+    expect(results[0]).toHaveProperty('snippet');
+  });
+
+  it('should filter by document_id', async () => {
+    const results = await searchLegislation(db, {
+      query: 'personuppgifter',
+      document_id: '2018:218',
+    });
+    expect(results.length).toBeGreaterThan(0);
+    for (const r of results) {
+      expect(r.document_id).toBe('2018:218');
+    }
+  });
+
+  it('should filter by status', async () => {
+    const results = await searchLegislation(db, {
+      query: 'personuppgifter',
+      status: 'repealed',
+    });
+    // PUL (1998:204) is repealed and mentions personuppgifter
+    for (const r of results) {
+      expect(r.document_id).toBe('1998:204');
+    }
+  });
+
+  it('should respect limit', async () => {
+    const results = await searchLegislation(db, {
+      query: 'personuppgifter',
+      limit: 2,
+    });
+    expect(results.length).toBeLessThanOrEqual(2);
+  });
+
+  it('should return empty array for empty query', async () => {
+    const results = await searchLegislation(db, { query: '' });
+    expect(results).toEqual([]);
+  });
+
+  it('should cap limit at MAX_LIMIT', async () => {
+    const results = await searchLegislation(db, {
+      query: 'personuppgifter',
+      limit: 100, // exceeds MAX_LIMIT of 50
+    });
+    expect(results.length).toBeLessThanOrEqual(50);
+  });
+});
