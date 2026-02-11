@@ -1,0 +1,27 @@
+{
+  "id": "NJA_2020_s45",
+  "type": "case_law",
+  "title": "NJA 2020 s. 45 - Personuppgiftsbehandling och samtycke",
+  "status": "in_force",
+  "issued_date": "2020-03-15",
+  "url": "https://lagen.nu/dom/nja/2020s45",
+  "description": "Högsta domstolen om tolkning av samtycke enligt dataskyddsförordningen",
+  "case_law": {
+    "court": "Högsta domstolen",
+    "citation": "NJA 2020 s. 45",
+    "decision_date": "2020-03-15",
+    "summary": "HD fastställde att samtycke enligt GDPR måste vara specifikt och informerat. Ett blankt samtycke till all framtida behandling är inte giltigt. consent GDPR specific informed valid agreement data protection",
+    "keywords": "GDPR, consent, specific, informed, valid, data protection, personal data, blanket consent",
+    "legal_issues": [
+      "Tolkning av samtycke enligt GDPR artikel 6",
+      "Kravet på specifikt och informerat samtycke"
+    ],
+    "references": [
+      {
+        "document_id": "2018:218",
+        "provision_ref": "3:5",
+        "note": "Tillämpning av DSL 3 kap. 5 §"
+      }
+    ]
+  }
+}

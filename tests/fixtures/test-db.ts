@@ -1,610 +1,248 @@
 /**
- * ═══════════════════════════════════════════════════════════════════════════
- * TEST DATABASE FIXTURE
- * ═══════════════════════════════════════════════════════════════════════════
- *
- * Creates an in-memory SQLite database with sample data for testing.
- *
- * ───────────────────────────────────────────────────────────────────────────
- * WHY IN-MEMORY?
- * ───────────────────────────────────────────────────────────────────────────
- *
- * Using an in-memory database (':memory:') for tests provides:
- *
- *   1. SPEED - No disk I/O, tests run much faster
- *   2. ISOLATION - Each test suite gets a fresh database
- *   3. REPRODUCIBILITY - Same sample data every time
- *   4. NO CLEANUP - Database disappears when connection closes
- *
- * ───────────────────────────────────────────────────────────────────────────
- * USAGE
- * ───────────────────────────────────────────────────────────────────────────
- *
- * In your test files:
- *
- *   ```typescript
- *   import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db';
- *   import type { Database } from 'better-sqlite3';
- *
- *   describe('myTool', () => {
- *     let db: Database;
- *
- *     beforeAll(() => {
- *       db = createTestDatabase();
- *     });
- *
- *     afterAll(() => {
- *       closeTestDatabase(db);
- *     });
- *
- *     it('should work', async () => {
- *       const result = await myTool(db, { query: 'test' });
- *       expect(result).toBeDefined();
- *     });
- *   });
- *   ```
- *
- * ───────────────────────────────────────────────────────────────────────────
- * CUSTOMIZATION
- * ───────────────────────────────────────────────────────────────────────────
- *
- * Update the sample data to match your domain:
- *
- *   1. Update SAMPLE_SOURCES with relevant sources
- *   2. Update SAMPLE_ITEMS with representative items
- *   3. Update SAMPLE_DEFINITIONS with key terms
- *   4. Add any additional sample data (mappings, rules, etc.)
- *
- * The sample data should:
- *   - Cover all common scenarios
- *   - Include edge cases (null values, special characters)
- *   - Be small enough to understand easily
- *   - Be large enough to test filtering and pagination
- *
- * ═══════════════════════════════════════════════════════════════════════════
- *
- * @module tests/fixtures/test-db
- * @author Ansvar Systems AB
- * @license Apache-2.0
+ * Test database fixture with Swedish law sample data.
  */
 
 import Database from 'better-sqlite3';
 
-// ═══════════════════════════════════════════════════════════════════════════
-// SAMPLE DATA
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Sample sources for testing
- *
- * Include at least 2-3 sources to test filtering.
- */
-const SAMPLE_SOURCES = [
-  {
-    id: 'SOURCE_A',
-    full_name: 'Test Source Alpha',
-    identifier: 'TEST-A-001',
-    effective_date: '2020-01-01',
-    source_url: 'https://example.com/source-a',
-  },
-  {
-    id: 'SOURCE_B',
-    full_name: 'Test Source Beta',
-    identifier: 'TEST-B-002',
-    effective_date: '2022-06-15',
-    source_url: 'https://example.com/source-b',
-  },
-  {
-    id: 'SOURCE_C',
-    full_name: 'Test Source Gamma (No Items)',
-    identifier: 'TEST-C-003',
-    effective_date: null,  // Test null handling
-    source_url: null,
-  },
-];
-
-/**
- * Sample items for testing
- *
- * Include various scenarios:
- *   - Items with/without titles
- *   - Items with/without parents
- *   - Items with searchable terms
- *   - Items with special characters
- */
-const SAMPLE_ITEMS = [
-  // SOURCE_A items
-  {
-    source: 'SOURCE_A',
-    item_id: '1',
-    title: 'Subject Matter and Scope',
-    text: 'This source establishes rules for data protection and privacy. It applies to all processing of personal data.',
-    parent: 'Chapter I',
-  },
-  {
-    source: 'SOURCE_A',
-    item_id: '2',
-    title: 'Definitions',
-    text: 'For the purposes of this source, the following definitions apply.',
-    parent: 'Chapter I',
-  },
-  {
-    source: 'SOURCE_A',
-    item_id: '3',
-    title: 'Principles',
-    text: 'Personal data shall be processed lawfully, fairly and in a transparent manner.',
-    parent: 'Chapter II',
-  },
-  {
-    source: 'SOURCE_A',
-    item_id: '4',
-    title: null,  // Test null title
-    text: 'The controller shall implement appropriate security measures to protect personal data.',
-    parent: 'Chapter II',
-  },
-  {
-    source: 'SOURCE_A',
-    item_id: '5',
-    title: 'Breach Notification',
-    text: 'In the case of a personal data breach, the controller shall notify the supervisory authority without undue delay.',
-    parent: 'Chapter III',
-  },
-
-  // SOURCE_B items
-  {
-    source: 'SOURCE_B',
-    item_id: '1',
-    title: 'Objective',
-    text: 'This source aims to achieve a high common level of cybersecurity across the Union.',
-    parent: 'Part I',
-  },
-  {
-    source: 'SOURCE_B',
-    item_id: '2',
-    title: 'Scope of Application',
-    text: 'This source applies to essential and important entities operating in critical sectors.',
-    parent: 'Part I',
-  },
-  {
-    source: 'SOURCE_B',
-    item_id: '3',
-    title: 'Security Requirements',
-    text: 'Entities shall take appropriate and proportionate technical and organisational measures to manage the risks posed to the security of network and information systems.',
-    parent: 'Part II',
-  },
-  {
-    source: 'SOURCE_B',
-    item_id: '4',
-    title: 'Incident Reporting',
-    text: 'Significant incidents shall be reported to the competent authority within 24 hours of becoming aware of the incident.',
-    parent: 'Part II',
-  },
-  {
-    source: 'SOURCE_B',
-    item_id: '4(1)',  // Test subsection format
-    title: 'Initial Notification',
-    text: 'The initial notification shall include an assessment of whether the incident is suspected to be caused by unlawful or malicious activity.',
-    parent: 'Part II',
-  },
-
-  // Item with special characters for search testing
-  {
-    source: 'SOURCE_A',
-    item_id: '99',
-    title: 'Special Cases',
-    text: 'This section covers edge cases including: quotes "like this", apostrophes (it\'s important), and symbols & special characters (§, ©, ®).',
-    parent: null,  // Test null parent
-  },
-];
-
-/**
- * Sample definitions for testing
- */
-const SAMPLE_DEFINITIONS = [
-  {
-    source: 'SOURCE_A',
-    term: 'personal data',
-    definition: 'any information relating to an identified or identifiable natural person',
-    defining_item: '2',
-  },
-  {
-    source: 'SOURCE_A',
-    term: 'processing',
-    definition: 'any operation performed on personal data, whether or not by automated means',
-    defining_item: '2',
-  },
-  {
-    source: 'SOURCE_A',
-    term: 'controller',
-    definition: 'the natural or legal person which determines the purposes and means of the processing',
-    defining_item: '2',
-  },
-  {
-    source: 'SOURCE_B',
-    term: 'cybersecurity',
-    definition: 'the activities necessary to protect network and information systems, their users, and affected persons from cyber threats',
-    defining_item: '1',
-  },
-  {
-    source: 'SOURCE_B',
-    term: 'incident',
-    definition: 'an event compromising the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data',
-    defining_item: '1',
-  },
-  {
-    source: 'SOURCE_B',
-    term: 'essential entity',
-    definition: 'an entity that provides services essential to the maintenance of critical societal or economic activities',
-    defining_item: '2',
-  },
-];
-
-/**
- * Sample control mappings for testing
- */
-const SAMPLE_MAPPINGS = [
-  {
-    framework: 'ISO27001',
-    control_id: 'A.5.1',
-    control_name: 'Policies for information security',
-    target_source: 'SOURCE_A',
-    target_items: JSON.stringify(['1', '3']),
-    coverage: 'partial',
-    notes: 'Addresses policy requirements',
-  },
-  {
-    framework: 'ISO27001',
-    control_id: 'A.8.2',
-    control_name: 'Information classification',
-    target_source: 'SOURCE_A',
-    target_items: JSON.stringify(['3', '4']),
-    coverage: 'full',
-    notes: null,
-  },
-  {
-    framework: 'ISO27001',
-    control_id: 'A.12.1',
-    control_name: 'Operational procedures',
-    target_source: 'SOURCE_B',
-    target_items: JSON.stringify(['3']),
-    coverage: 'related',
-    notes: 'Related to operational security',
-  },
-];
-
-/**
- * Sample applicability rules for testing
- */
-const SAMPLE_APPLICABILITY = [
-  {
-    source: 'SOURCE_A',
-    sector: 'financial',
-    subsector: 'banking',
-    applies: 1,
-    confidence: 'definite',
-    basis_item: '1',
-    conditions: null,
-    notes: 'All financial institutions are covered',
-  },
-  {
-    source: 'SOURCE_A',
-    sector: 'healthcare',
-    subsector: null,
-    applies: 1,
-    confidence: 'likely',
-    basis_item: '1',
-    conditions: JSON.stringify({ processing_health_data: true }),
-    notes: 'Applies when processing health data',
-  },
-  {
-    source: 'SOURCE_B',
-    sector: 'energy',
-    subsector: 'electricity',
-    applies: 1,
-    confidence: 'definite',
-    basis_item: '2',
-    conditions: null,
-    notes: 'Energy sector is explicitly covered',
-  },
-  {
-    source: 'SOURCE_B',
-    sector: 'retail',
-    subsector: null,
-    applies: 0,
-    confidence: 'likely',
-    basis_item: '2',
-    conditions: null,
-    notes: 'Retail generally not in scope unless critical',
-  },
-];
-
-// ═══════════════════════════════════════════════════════════════════════════
-// DATABASE SCHEMA
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Test database schema
- *
- * This should match your production schema in build-db.ts
- */
 const SCHEMA = `
-  -- Sources
-  CREATE TABLE sources (
-    id TEXT PRIMARY KEY,
-    full_name TEXT NOT NULL,
-    identifier TEXT UNIQUE,
-    effective_date TEXT,
-    source_url TEXT
-  );
+CREATE TABLE legal_documents (
+  id TEXT PRIMARY KEY,
+  type TEXT NOT NULL CHECK(type IN ('statute', 'bill', 'sou', 'ds', 'case_law')),
+  title TEXT NOT NULL,
+  title_en TEXT,
+  short_name TEXT,
+  status TEXT NOT NULL DEFAULT 'in_force'
+    CHECK(status IN ('in_force', 'amended', 'repealed', 'not_yet_in_force')),
+  issued_date TEXT,
+  in_force_date TEXT,
+  url TEXT,
+  description TEXT,
+  last_updated TEXT DEFAULT (datetime('now'))
+);
 
-  -- Items
-  CREATE TABLE items (
-    rowid INTEGER PRIMARY KEY,
-    source TEXT NOT NULL,
-    item_id TEXT NOT NULL,
-    title TEXT,
-    text TEXT NOT NULL,
-    parent TEXT,
-    metadata TEXT,
-    related TEXT,
-    UNIQUE(source, item_id)
-  );
+CREATE TABLE legal_provisions (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  provision_ref TEXT NOT NULL,
+  chapter TEXT,
+  section TEXT NOT NULL,
+  title TEXT,
+  content TEXT NOT NULL,
+  metadata TEXT,
+  UNIQUE(document_id, provision_ref)
+);
 
-  -- FTS5 Index
-  CREATE VIRTUAL TABLE items_fts USING fts5(
-    source, item_id, title, text,
-    content='items', content_rowid='rowid'
-  );
+CREATE INDEX idx_provisions_doc ON legal_provisions(document_id);
+CREATE INDEX idx_provisions_chapter ON legal_provisions(document_id, chapter);
 
-  -- FTS Triggers
-  CREATE TRIGGER items_ai AFTER INSERT ON items BEGIN
-    INSERT INTO items_fts(rowid, source, item_id, title, text)
-    VALUES (new.rowid, new.source, new.item_id, new.title, new.text);
-  END;
+CREATE VIRTUAL TABLE provisions_fts USING fts5(
+  content, title,
+  content='legal_provisions',
+  content_rowid='id',
+  tokenize='unicode61'
+);
 
-  CREATE TRIGGER items_ad AFTER DELETE ON items BEGIN
-    INSERT INTO items_fts(items_fts, rowid, source, item_id, title, text)
-    VALUES ('delete', old.rowid, old.source, old.item_id, old.title, old.text);
-  END;
+CREATE TRIGGER provisions_ai AFTER INSERT ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
 
-  -- Definitions
-  CREATE TABLE definitions (
-    id INTEGER PRIMARY KEY,
-    source TEXT NOT NULL,
-    term TEXT NOT NULL,
-    definition TEXT NOT NULL,
-    defining_item TEXT,
-    UNIQUE(source, term)
-  );
+CREATE TRIGGER provisions_ad AFTER DELETE ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(provisions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+END;
 
-  -- Mappings
-  CREATE TABLE mappings (
-    id INTEGER PRIMARY KEY,
-    framework TEXT NOT NULL,
-    control_id TEXT NOT NULL,
-    control_name TEXT,
-    target_source TEXT NOT NULL,
-    target_items TEXT NOT NULL,
-    coverage TEXT,
-    notes TEXT
-  );
+CREATE TABLE case_law (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL UNIQUE REFERENCES legal_documents(id),
+  court TEXT NOT NULL,
+  case_number TEXT,
+  decision_date TEXT,
+  summary TEXT,
+  keywords TEXT
+);
 
-  -- Applicability Rules
-  CREATE TABLE applicability_rules (
-    id INTEGER PRIMARY KEY,
-    source TEXT NOT NULL,
-    sector TEXT NOT NULL,
-    subsector TEXT,
-    applies INTEGER NOT NULL,
-    confidence TEXT,
-    basis_item TEXT,
-    conditions TEXT,
-    notes TEXT
-  );
+CREATE VIRTUAL TABLE case_law_fts USING fts5(
+  summary, keywords,
+  content='case_law',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER case_law_ai AFTER INSERT ON case_law BEGIN
+  INSERT INTO case_law_fts(rowid, summary, keywords)
+  VALUES (new.id, new.summary, new.keywords);
+END;
+
+CREATE TRIGGER case_law_ad AFTER DELETE ON case_law BEGIN
+  INSERT INTO case_law_fts(case_law_fts, rowid, summary, keywords)
+  VALUES ('delete', old.id, old.summary, old.keywords);
+END;
+
+CREATE TABLE preparatory_works (
+  id INTEGER PRIMARY KEY,
+  statute_id TEXT NOT NULL REFERENCES legal_documents(id),
+  prep_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  title TEXT,
+  summary TEXT
+);
+
+CREATE INDEX idx_prep_statute ON preparatory_works(statute_id);
+
+CREATE VIRTUAL TABLE prep_works_fts USING fts5(
+  title, summary,
+  content='preparatory_works',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER prep_works_ai AFTER INSERT ON preparatory_works BEGIN
+  INSERT INTO prep_works_fts(rowid, title, summary)
+  VALUES (new.id, new.title, new.summary);
+END;
+
+CREATE TRIGGER prep_works_ad AFTER DELETE ON preparatory_works BEGIN
+  INSERT INTO prep_works_fts(prep_works_fts, rowid, title, summary)
+  VALUES ('delete', old.id, old.title, old.summary);
+END;
+
+CREATE TABLE cross_references (
+  id INTEGER PRIMARY KEY,
+  source_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  source_provision_ref TEXT,
+  target_document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  target_provision_ref TEXT,
+  ref_type TEXT NOT NULL DEFAULT 'references'
+    CHECK(ref_type IN ('references', 'amended_by', 'implements', 'see_also'))
+);
+
+CREATE INDEX idx_xref_source ON cross_references(source_document_id);
+CREATE INDEX idx_xref_target ON cross_references(target_document_id);
+
+CREATE TABLE definitions (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  term TEXT NOT NULL,
+  term_en TEXT,
+  definition TEXT NOT NULL,
+  source_provision TEXT,
+  UNIQUE(document_id, term)
+);
+
+CREATE VIRTUAL TABLE definitions_fts USING fts5(
+  term, definition,
+  content='definitions',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER definitions_ai AFTER INSERT ON definitions BEGIN
+  INSERT INTO definitions_fts(rowid, term, definition)
+  VALUES (new.id, new.term, new.definition);
+END;
+
+CREATE TRIGGER definitions_ad AFTER DELETE ON definitions BEGIN
+  INSERT INTO definitions_fts(definitions_fts, rowid, term, definition)
+  VALUES ('delete', old.id, old.term, old.definition);
+END;
 `;
 
-// ═══════════════════════════════════════════════════════════════════════════
-// PUBLIC API
-// ═══════════════════════════════════════════════════════════════════════════
+const SAMPLE_DOCUMENTS = [
+  { id: '2018:218', type: 'statute', title: 'Lag med kompletterande bestämmelser till EU:s dataskyddsförordning', title_en: 'Act with supplementary provisions to the EU GDPR', short_name: 'DSL', status: 'in_force', issued_date: '2018-04-19', in_force_date: '2018-05-25', url: 'https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/', description: 'Kompletterande bestämmelser till GDPR' },
+  { id: '1998:204', type: 'statute', title: 'Personuppgiftslag', title_en: 'Personal Data Act', short_name: 'PUL', status: 'repealed', issued_date: '1998-04-29', in_force_date: '1998-10-24', url: null, description: 'Ersatt av dataskyddslagen och GDPR' },
+  { id: '2017/18:105', type: 'bill', title: 'Ny dataskyddslag', title_en: 'New Data Protection Act', short_name: null, status: 'in_force', issued_date: '2018-02-15', in_force_date: null, url: null, description: 'Proposition om kompletterande bestämmelser till GDPR' },
+  { id: '2017:39', type: 'sou', title: 'Ny dataskyddslag - Kompletterande bestämmelser till EU:s dataskyddsförordning', title_en: null, short_name: null, status: 'in_force', issued_date: '2017-05-12', in_force_date: null, url: null, description: 'Utredning om kompletterande dataskyddsbestämmelser' },
+  { id: 'NJA 2020', type: 'case_law', title: 'NJA 2020 s. 45', title_en: null, short_name: null, status: 'in_force', issued_date: '2020-03-15', in_force_date: null, url: null, description: 'Avgörande om personuppgiftsbehandling' },
+  { id: 'HFD 2019', type: 'case_law', title: 'HFD 2019 ref. 12', title_en: null, short_name: null, status: 'in_force', issued_date: '2019-06-20', in_force_date: null, url: null, description: 'Avgörande om tillsyn enligt dataskyddslagen' },
+];
 
-/**
- * Create a test database with sample data
- *
- * Creates an in-memory SQLite database, applies the schema,
- * and populates it with sample data.
- *
- * @returns Database connection (remember to close it!)
- *
- * @example
- * ```typescript
- * const db = createTestDatabase();
- *
- * // Run your tests...
- * const result = await myTool(db, input);
- *
- * // Clean up
- * closeTestDatabase(db);
- * ```
- */
+const SAMPLE_PROVISIONS = [
+  { document_id: '2018:218', provision_ref: '1:1', chapter: '1', section: '1', title: 'Lagens syfte', content: 'Denna lag kompletterar Europaparlamentets och rådets förordning (EU) 2016/679 av den 27 april 2016 om skydd för fysiska personer med avseende på behandling av personuppgifter och om det fria flödet av sådana uppgifter och om upphävande av direktiv 95/46/EG (allmän dataskyddsförordning).' },
+  { document_id: '2018:218', provision_ref: '1:2', chapter: '1', section: '2', title: 'Lagens tillämpningsområde', content: 'Denna lag gäller vid behandling av personuppgifter som helt eller delvis företas på automatisk väg och vid annan behandling av personuppgifter som ingår i eller kommer att ingå i ett register.' },
+  { document_id: '2018:218', provision_ref: '1:3', chapter: '1', section: '3', title: null, content: 'Lagen gäller inte för behandling av personuppgifter som en fysisk person utför som ett led i verksamhet av rent privat natur.' },
+  { document_id: '2018:218', provision_ref: '2:1', chapter: '2', section: '1', title: 'Rättslig grund för behandling av personuppgifter', content: 'Personuppgifter får behandlas med stöd av artikel 6.1 e i EU:s dataskyddsförordning, om behandlingen är nödvändig för att utföra en uppgift av allmänt intresse.' },
+  { document_id: '2018:218', provision_ref: '2:2', chapter: '2', section: '2', title: 'Behandling som rör ett viktigt allmänt intresse', content: 'Personuppgifter som avses i artikel 9.1 i EU:s dataskyddsförordning (känsliga personuppgifter) får behandlas av en myndighet med stöd av artikel 9.2 g i förordningen under förutsättning att behandlingen är nödvändig med hänsyn till ett viktigt allmänt intresse.' },
+  { document_id: '2018:218', provision_ref: '3:1', chapter: '3', section: '1', title: 'Tillsynsmyndighet', content: 'Integritetsskyddsmyndigheten är tillsynsmyndighet enligt EU:s dataskyddsförordning.' },
+  { document_id: '2018:218', provision_ref: '3:2', chapter: '3', section: '2', title: 'Sanktionsavgifter', content: 'Integritetsskyddsmyndigheten får besluta om administrativa sanktionsavgifter enligt artiklarna 83 och 84 i EU:s dataskyddsförordning.' },
+  { document_id: '2018:218', provision_ref: '4:1', chapter: '4', section: '1', title: 'Skadestånd', content: 'Den personuppgiftsansvarige eller personuppgiftsbiträdet ska ersätta den registrerade för den skada och kränkning av den personliga integriteten som en behandling i strid med denna lag har orsakat.' },
+  { document_id: '1998:204', provision_ref: '1', chapter: null, section: '1', title: 'Lagens syfte', content: 'Syftet med denna lag är att skydda människor mot att deras personliga integritet kränks genom behandling av personuppgifter.' },
+  { document_id: '1998:204', provision_ref: '3', chapter: null, section: '3', title: 'Definitioner', content: 'I denna lag används följande beteckningar med den betydelse som här anges: personuppgifter - all slags information som direkt eller indirekt kan hänföras till en fysisk person som är i livet.' },
+  { document_id: '1998:204', provision_ref: '5 a', chapter: null, section: '5 a', title: 'Missbruksregeln', content: 'Behandling av personuppgifter som inte ingår i eller är avsedda att ingå i en samling av personuppgifter som har strukturerats för att påtagligt underlätta sökning efter eller sammanställning av personuppgifter är tillåten om behandlingen inte innebär en kränkning av den registrerades personliga integritet.' },
+];
+
+const SAMPLE_CASE_LAW = [
+  { document_id: 'NJA 2020', court: 'HD', case_number: 'T 1234-19', decision_date: '2020-03-15', summary: 'Högsta domstolen prövade frågan om skadestånd vid otillåten behandling av personuppgifter. Domstolen fann att den registrerade hade rätt till ersättning för den kränkning som behandlingen inneburit.', keywords: 'personuppgifter skadestånd kränkning dataskydd GDPR' },
+  { document_id: 'HFD 2019', court: 'HFD', case_number: '5765-18', decision_date: '2019-06-20', summary: 'Högsta förvaltningsdomstolen fastställde Integritetsskyddsmyndighetens beslut om sanktionsavgift för bristfällig behandling av känsliga personuppgifter inom hälso- och sjukvården.', keywords: 'tillsyn sanktionsavgift känsliga personuppgifter hälso- och sjukvård' },
+];
+
+const SAMPLE_PREPARATORY_WORKS = [
+  { statute_id: '2018:218', prep_document_id: '2017/18:105', title: 'Ny dataskyddslag', summary: 'Propositionen föreslår en ny lag med kompletterande bestämmelser till EU:s dataskyddsförordning. Lagen ersätter personuppgiftslagen (1998:204).' },
+  { statute_id: '2018:218', prep_document_id: '2017:39', title: 'Ny dataskyddslag - SOU', summary: 'Utredningen föreslår kompletterande bestämmelser till EU:s dataskyddsförordning med fokus på anpassning av svensk rätt.' },
+];
+
+const SAMPLE_DEFINITIONS = [
+  { document_id: '2018:218', term: 'personuppgift', term_en: 'personal data', definition: 'Varje upplysning som avser en identifierad eller identifierbar fysisk person.', source_provision: '1:1' },
+  { document_id: '2018:218', term: 'behandling', term_en: 'processing', definition: 'En åtgärd eller kombination av åtgärder beträffande personuppgifter.', source_provision: '1:1' },
+  { document_id: '2018:218', term: 'personuppgiftsansvarig', term_en: 'controller', definition: 'En fysisk eller juridisk person som bestämmer ändamålen och medlen för behandlingen av personuppgifter.', source_provision: '1:1' },
+  { document_id: '2018:218', term: 'tillsynsmyndighet', term_en: 'supervisory authority', definition: 'Integritetsskyddsmyndigheten (IMY) är tillsynsmyndighet.', source_provision: '3:1' },
+  { document_id: '1998:204', term: 'personuppgift', term_en: 'personal data', definition: 'All slags information som direkt eller indirekt kan hänföras till en fysisk person som är i livet.', source_provision: '3' },
+];
+
+const SAMPLE_CROSS_REFS = [
+  { source_document_id: '2018:218', source_provision_ref: '1:1', target_document_id: '1998:204', target_provision_ref: null, ref_type: 'amended_by' },
+  { source_document_id: '2018:218', source_provision_ref: '3:2', target_document_id: '2018:218', target_provision_ref: '3:1', ref_type: 'references' },
+  { source_document_id: 'NJA 2020', source_provision_ref: null, target_document_id: '2018:218', target_provision_ref: '4:1', ref_type: 'references' },
+];
+
 export function createTestDatabase(): Database.Database {
-  // Create in-memory database
   const db = new Database(':memory:');
-
-  // Enable foreign keys
   db.pragma('foreign_keys = ON');
-
-  // Create schema
   db.exec(SCHEMA);
-
-  // Insert sample data
   insertSampleData(db);
-
   return db;
 }
 
-/**
- * Close the test database
- *
- * Always call this in your afterAll() hook to release resources.
- *
- * @param db - Database connection to close
- */
 export function closeTestDatabase(db: Database.Database): void {
-  if (db) {
-    db.close();
-  }
+  if (db) db.close();
 }
 
-/**
- * Get a specific sample source by ID
- *
- * Useful for verifying test results match expected data.
- *
- * @param sourceId - Source ID to find
- * @returns Sample source or undefined
- */
-export function getSampleSource(sourceId: string) {
-  return SAMPLE_SOURCES.find(s => s.id === sourceId);
-}
-
-/**
- * Get a specific sample item
- *
- * @param source - Source ID
- * @param itemId - Item ID
- * @returns Sample item or undefined
- */
-export function getSampleItem(source: string, itemId: string) {
-  return SAMPLE_ITEMS.find(i => i.source === source && i.item_id === itemId);
-}
-
-/**
- * Get sample items for a source
- *
- * @param source - Source ID
- * @returns All sample items for the source
- */
-export function getSampleItemsForSource(source: string) {
-  return SAMPLE_ITEMS.filter(i => i.source === source);
-}
-
-/**
- * Get sample definitions for a source
- *
- * @param source - Source ID
- * @returns All sample definitions for the source
- */
-export function getSampleDefinitionsForSource(source: string) {
-  return SAMPLE_DEFINITIONS.filter(d => d.source === source);
-}
-
-// ═══════════════════════════════════════════════════════════════════════════
-// INTERNAL FUNCTIONS
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Insert all sample data into the database
- */
 function insertSampleData(db: Database.Database): void {
-  // Insert sources
-  const insertSource = db.prepare(`
-    INSERT INTO sources (id, full_name, identifier, effective_date, source_url)
-    VALUES (?, ?, ?, ?, ?)
-  `);
-
-  for (const source of SAMPLE_SOURCES) {
-    insertSource.run(
-      source.id,
-      source.full_name,
-      source.identifier,
-      source.effective_date,
-      source.source_url
-    );
+  const insertDoc = db.prepare(`INSERT INTO legal_documents (id, type, title, title_en, short_name, status, issued_date, in_force_date, url, description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+  for (const doc of SAMPLE_DOCUMENTS) {
+    insertDoc.run(doc.id, doc.type, doc.title, doc.title_en, doc.short_name, doc.status, doc.issued_date, doc.in_force_date, doc.url, doc.description);
   }
 
-  // Insert items
-  const insertItem = db.prepare(`
-    INSERT INTO items (source, item_id, title, text, parent)
-    VALUES (?, ?, ?, ?, ?)
-  `);
-
-  for (const item of SAMPLE_ITEMS) {
-    insertItem.run(
-      item.source,
-      item.item_id,
-      item.title,
-      item.text,
-      item.parent
-    );
+  const insertProv = db.prepare(`INSERT INTO legal_provisions (document_id, provision_ref, chapter, section, title, content) VALUES (?, ?, ?, ?, ?, ?)`);
+  for (const prov of SAMPLE_PROVISIONS) {
+    insertProv.run(prov.document_id, prov.provision_ref, prov.chapter, prov.section, prov.title, prov.content);
   }
 
-  // Insert definitions
-  const insertDef = db.prepare(`
-    INSERT INTO definitions (source, term, definition, defining_item)
-    VALUES (?, ?, ?, ?)
-  `);
+  const insertCL = db.prepare(`INSERT INTO case_law (document_id, court, case_number, decision_date, summary, keywords) VALUES (?, ?, ?, ?, ?, ?)`);
+  for (const cl of SAMPLE_CASE_LAW) {
+    insertCL.run(cl.document_id, cl.court, cl.case_number, cl.decision_date, cl.summary, cl.keywords);
+  }
 
+  const insertPW = db.prepare(`INSERT INTO preparatory_works (statute_id, prep_document_id, title, summary) VALUES (?, ?, ?, ?)`);
+  for (const pw of SAMPLE_PREPARATORY_WORKS) {
+    insertPW.run(pw.statute_id, pw.prep_document_id, pw.title, pw.summary);
+  }
+
+  const insertDef = db.prepare(`INSERT INTO definitions (document_id, term, term_en, definition, source_provision) VALUES (?, ?, ?, ?, ?)`);
   for (const def of SAMPLE_DEFINITIONS) {
-    insertDef.run(
-      def.source,
-      def.term,
-      def.definition,
-      def.defining_item
-    );
+    insertDef.run(def.document_id, def.term, def.term_en, def.definition, def.source_provision);
   }
 
-  // Insert mappings
-  const insertMapping = db.prepare(`
-    INSERT INTO mappings (framework, control_id, control_name, target_source, target_items, coverage, notes)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  for (const mapping of SAMPLE_MAPPINGS) {
-    insertMapping.run(
-      mapping.framework,
-      mapping.control_id,
-      mapping.control_name,
-      mapping.target_source,
-      mapping.target_items,
-      mapping.coverage,
-      mapping.notes
-    );
-  }
-
-  // Insert applicability rules
-  const insertRule = db.prepare(`
-    INSERT INTO applicability_rules (source, sector, subsector, applies, confidence, basis_item, conditions, notes)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  for (const rule of SAMPLE_APPLICABILITY) {
-    insertRule.run(
-      rule.source,
-      rule.sector,
-      rule.subsector,
-      rule.applies,
-      rule.confidence,
-      rule.basis_item,
-      rule.conditions,
-      rule.notes
-    );
+  const insertXRef = db.prepare(`INSERT INTO cross_references (source_document_id, source_provision_ref, target_document_id, target_provision_ref, ref_type) VALUES (?, ?, ?, ?, ?)`);
+  for (const xref of SAMPLE_CROSS_REFS) {
+    insertXRef.run(xref.source_document_id, xref.source_provision_ref, xref.target_document_id, xref.target_provision_ref, xref.ref_type);
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// EXPORTS FOR DIRECT DATA ACCESS IN TESTS
-// ═══════════════════════════════════════════════════════════════════════════
-
-/**
- * Export sample data for use in tests
- *
- * This allows tests to verify results against expected data
- * without hardcoding values.
- */
 export const sampleData = {
-  sources: SAMPLE_SOURCES,
-  items: SAMPLE_ITEMS,
+  documents: SAMPLE_DOCUMENTS,
+  provisions: SAMPLE_PROVISIONS,
+  caseLaw: SAMPLE_CASE_LAW,
+  preparatoryWorks: SAMPLE_PREPARATORY_WORKS,
   definitions: SAMPLE_DEFINITIONS,
-  mappings: SAMPLE_MAPPINGS,
-  applicability: SAMPLE_APPLICABILITY,
+  crossRefs: SAMPLE_CROSS_REFS,
 };
