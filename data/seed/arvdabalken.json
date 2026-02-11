@@ -1,0 +1,64 @@
+{
+  "id": "1958:637",
+  "type": "statute",
+  "title": "Ärvdabalken",
+  "title_en": "Inheritance Code",
+  "short_name": "ÄB",
+  "status": "in_force",
+  "issued_date": "1958-12-18",
+  "in_force_date": "1959-01-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2018-07/SFS1958-637.pdf",
+  "description": "Swedish law governing inheritance, wills, and estate distribution",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Arvsrätt",
+      "content": "När någon dör, övergår hans kvarlåtenskap genom arv till dödsbodelägare enligt denna balk. inheritance estate succession heirs legal heirs testamentary heirs",
+      "metadata": {
+        "keywords_en": "inheritance, estate, succession, heirs, death, deceased, legacy"
+      }
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Bröstarvingar",
+      "content": "Den som är efterlevd av avkomling ärves av denne med fri förfoganderätt. Alla barn ärva lika. children descendants inheritance equal shares forced heirship",
+      "metadata": {
+        "keywords_en": "children, descendants, inheritance rights, equal shares, forced heirship"
+      }
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Efterarvingar",
+      "content": "Den som inte är efterlevd av bröstarvinge ärves av sina föräldrar och deras avkomlingar. parents siblings inheritance intestate succession",
+      "metadata": {
+        "keywords_en": "parents, siblings, inheritance, intestate succession, next of kin"
+      }
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Makars arvsrätt",
+      "content": "Efterlevande make ärver den andra maken framför gemensamma bröstarvingar. spouse inheritance marital property surviving spouse",
+      "metadata": {
+        "keywords_en": "spouse, inheritance, marital property, surviving spouse, widow, widower"
+      }
+    },
+    {
+      "provision_ref": "9:1",
+      "chapter": "9",
+      "section": "1",
+      "title": "Testamente",
+      "content": "Genom testamente kan någon förordna om sin egendom för tiden efter sin död. will testament testamentary disposition bequest legacy",
+      "metadata": {
+        "keywords_en": "will, testament, testamentary disposition, bequest, legacy, devise"
+      }
+    }
+  ]
+}

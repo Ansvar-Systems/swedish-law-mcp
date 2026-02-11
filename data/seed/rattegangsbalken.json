@@ -1,0 +1,54 @@
+{
+  "id": "1942:740",
+  "type": "statute",
+  "title": "Rättegångsbalken",
+  "title_en": "Code of Judicial Procedure",
+  "short_name": "RB",
+  "status": "in_force",
+  "issued_date": "1942-07-18",
+  "in_force_date": "1948-01-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2020-06/SFS1942-740.pdf",
+  "description": "Swedish procedural law governing civil and criminal court proceedings",
+  "provisions": [
+    {
+      "provision_ref": "17:2",
+      "chapter": "17",
+      "section": "2",
+      "title": "Bevisbörda",
+      "content": "Part som åberopar visst förhållande till stöd för sin talan skall bevisa förhållandet. burden of proof evidence onus probandi civil procedure",
+      "metadata": {
+        "keywords_en": "burden of proof, evidence, onus probandi, civil procedure, proving facts"
+      }
+    },
+    {
+      "provision_ref": "23:4",
+      "chapter": "23",
+      "section": "4",
+      "title": "Oskyldighetspresumtionen",
+      "content": "Åklagaren skall bevisa att tilltalad är skyldig. presumption of innocence criminal procedure prosecution burden",
+      "metadata": {
+        "keywords_en": "presumption of innocence, criminal procedure, prosecution, burden of proof, innocent until proven guilty"
+      }
+    },
+    {
+      "provision_ref": "30:3",
+      "chapter": "30",
+      "section": "3",
+      "title": "Rätten att överklaga",
+      "content": "Dom i tvistemål eller mål om försäkran av testamente eller annat förordnande för framtiden får överklagas av den som var part i målet i den rätt som meddelade domen. appeal right to appeal judicial review appellate court",
+      "metadata": {
+        "keywords_en": "appeal, right to appeal, judicial review, appellate court, appellate procedure"
+      }
+    },
+    {
+      "provision_ref": "36:5",
+      "chapter": "36",
+      "section": "5",
+      "title": "Rättegångskostnader",
+      "content": "Part som förlorar mål skall ersätta motparten dennes rättegångskostnader. legal costs court costs litigation expenses loser pays",
+      "metadata": {
+        "keywords_en": "legal costs, court costs, litigation expenses, loser pays, costs award"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "2009:400",
+  "type": "statute",
+  "title": "Offentlighets- och sekretesslagen",
+  "title_en": "Public Access to Information and Secrecy Act",
+  "short_name": "OSL",
+  "status": "in_force",
+  "issued_date": "2009-06-11",
+  "in_force_date": "2009-10-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2020-06/SFS2009-400.pdf",
+  "description": "Swedish law governing public access to government documents and secrecy",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Offentlighetsprincipen",
+      "content": "Denna lag begränsar rätten enligt 2 kap. tryckfrihetsförordningen att ta del av allmänna handlingar. public access freedom of information transparency government documents",
+      "metadata": {
+        "keywords_en": "public access, freedom of information, transparency, government documents, official records"
+      }
+    },
+    {
+      "provision_ref": "18:1",
+      "chapter": "18",
+      "section": "1",
+      "title": "Sekretess för att skydda enskild",
+      "content": "Sekretess gäller i verksamhet som avser hälso- och sjukvård för uppgift om en enskilds hälsotillstånd eller andra personliga förhållanden. secrecy confidentiality privacy health records personal information",
+      "metadata": {
+        "keywords_en": "secrecy, confidentiality, privacy, health records, personal information, medical records"
+      }
+    },
+    {
+      "provision_ref": "21:1",
+      "chapter": "21",
+      "section": "1",
+      "title": "Personuppgiftssekretess",
+      "content": "Sekretess gäller i verksamhet som avser automated behandling av personuppgifter för uppgift om en enskilds personliga förhållanden, om det kan antas att den enskilde eller någon närstående lider men om uppgiften röjs. personal data secrecy privacy protection sensitive information",
+      "metadata": {
+        "keywords_en": "personal data, secrecy, privacy, protection, sensitive information, data protection"
+      }
+    },
+    {
+      "provision_ref": "25:1",
+      "chapter": "25",
+      "section": "1",
+      "title": "Affärssekretess",
+      "content": "Sekretess gäller i verksamhet som avser tillsyn över näringsverksamhet för uppgift om affärs- eller driftsförhållanden som rör den som utövar näringsverksamheten. business secrecy trade secrets commercial information confidential",
+      "metadata": {
+        "keywords_en": "business secrecy, trade secrets, commercial information, confidential, proprietary"
+      }
+    }
+  ]
+}

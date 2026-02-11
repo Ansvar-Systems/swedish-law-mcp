@@ -1,0 +1,64 @@
+{
+  "id": "1977:1160",
+  "type": "statute",
+  "title": "Arbetsmiljölagen",
+  "title_en": "Work Environment Act",
+  "short_name": "AML",
+  "status": "in_force",
+  "issued_date": "1977-12-19",
+  "in_force_date": "1978-07-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2018-07/SFS1977-1160.pdf",
+  "description": "Swedish law governing workplace safety, health, and working conditions",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Lagens syfte",
+      "content": "Lagen syftar till att förebygga ohälsa och olycksfall i arbetet samt att även i övrigt uppnå en god arbetsmiljö. workplace safety health working conditions prevention occupational health",
+      "metadata": {
+        "keywords_en": "workplace safety, health, working conditions, prevention, occupational health, work environment"
+      }
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Arbetsmiljöns beskaffenhet",
+      "content": "Arbetsförhållandena skall anpassas till människors olika fysiska och psykiska förutsättningar. work conditions ergonomics physical psychological adaptation",
+      "metadata": {
+        "keywords_en": "work conditions, ergonomics, physical, psychological, adaptation, reasonable accommodation"
+      }
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Arbetsgivarens ansvar",
+      "content": "Arbetsgivaren skall vidta alla åtgärder som behövs för att förebygga att arbetstagaren utsätts för ohälsa eller olycksfall. employer responsibility duty of care safety measures prevention",
+      "metadata": {
+        "keywords_en": "employer responsibility, duty of care, safety measures, prevention, workplace hazards"
+      }
+    },
+    {
+      "provision_ref": "6:1",
+      "chapter": "6",
+      "section": "1",
+      "title": "Skyddsombud",
+      "content": "Arbetstagarna har rätt att utse skyddsombud. safety representative worker representative occupational health safety",
+      "metadata": {
+        "keywords_en": "safety representative, worker representative, occupational health, safety committee"
+      }
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Tillsyn",
+      "content": "Arbetsmiljöverket utövar tillsyn över att denna lag och föreskrifter som har meddelats med stöd av lagen följs. supervision enforcement inspection labor inspectorate compliance",
+      "metadata": {
+        "keywords_en": "supervision, enforcement, inspection, labor inspectorate, compliance, oversight"
+      }
+    }
+  ]
+}

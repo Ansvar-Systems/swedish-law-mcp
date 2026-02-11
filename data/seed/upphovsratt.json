@@ -1,0 +1,50 @@
+{
+  "id": "1960:729",
+  "type": "statute",
+  "title": "Lag om upphovsrätt till litterära och konstnärliga verk",
+  "title_en": "Copyright Act",
+  "short_name": "URL",
+  "status": "in_force",
+  "issued_date": "1960-12-30",
+  "in_force_date": "1961-01-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2020-06/SFS1960-729.pdf",
+  "description": "Swedish copyright law protecting literary and artistic works",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Upphovsrättens innehåll",
+      "content": "Den som har skapat ett litterärt eller konstnärligt verk har upphovsrätt till verket oavsett om det är skönlitterär eller beskrivande framställning i skrift eller tal, datorprogram, musikaliskt eller sceniskt verk, filmverk, fotografiskt verk, alster av bildkonst, byggnadskonst eller brukskonst eller uttryckt på annat sätt. copyright author creator intellectual property",
+      "metadata": {
+        "keywords_en": "copyright, author, creator, intellectual property, literary work, artistic work, original work"
+      }
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "title": "Ekonomiska rättigheter",
+      "content": "Upphovsrätt innefattar rätt att förfoga över verket genom att framställa exemplar av det och genom att göra det tillgängligt för allmänheten. economic rights reproduction distribution publication",
+      "metadata": {
+        "keywords_en": "economic rights, reproduction, distribution, publication, exploitation rights"
+      }
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "title": "Ideella rättigheter",
+      "content": "Upphovsrätt innefattar också rätt för upphovsmannen att bli namngiven och att motsätta sig kränkande ändringar av verket. moral rights attribution integrity alterations",
+      "metadata": {
+        "keywords_en": "moral rights, attribution, integrity, right to be named, alterations, modifications"
+      }
+    },
+    {
+      "provision_ref": "43",
+      "section": "43",
+      "title": "Upphovsrättens giltighetstid",
+      "content": "Upphovsrätten gäller till utgången av det sjuttionde året efter det år då upphovsmannen avled. duration copyright term 70 years death author",
+      "metadata": {
+        "keywords_en": "duration, copyright term, 70 years, death of author, expiration, public domain"
+      }
+    }
+  ]
+}

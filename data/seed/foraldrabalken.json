@@ -1,0 +1,54 @@
+{
+  "id": "1949:381",
+  "type": "statute",
+  "title": "Föräldrabalken",
+  "title_en": "Parents and Children Code",
+  "short_name": "FB",
+  "status": "in_force",
+  "issued_date": "1949-06-15",
+  "in_force_date": "1950-01-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2019-06/SFS1949-381.pdf",
+  "description": "Swedish law governing family law, parental responsibility, custody, and child support",
+  "provisions": [
+    {
+      "provision_ref": "6:1",
+      "chapter": "6",
+      "section": "1",
+      "title": "Vårdnad",
+      "content": "Barn står under vårdnad av båda föräldrarna, om de är gifta med varandra, eller av en av dem. custody parental responsibility guardianship children",
+      "metadata": {
+        "keywords_en": "custody, parental responsibility, guardianship, children, joint custody, sole custody"
+      }
+    },
+    {
+      "provision_ref": "6:2a",
+      "chapter": "6",
+      "section": "2a",
+      "title": "Barnets bästa",
+      "content": "Vid alla beslut som rör vårdnad, boende och umgänge skall barnets bästa vara avgörande. best interests of the child welfare children rights",
+      "metadata": {
+        "keywords_en": "best interests of the child, welfare, children rights, child-centered"
+      }
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Underhållsskyldighet",
+      "content": "Föräldrar svarar för underhållet av sina barn. child support maintenance alimony parental obligation",
+      "metadata": {
+        "keywords_en": "child support, maintenance, alimony, parental obligation, financial support"
+      }
+    },
+    {
+      "provision_ref": "15:1",
+      "chapter": "15",
+      "section": "1",
+      "title": "Bodelning",
+      "content": "När äktenskap upplöses genom äktenskapsskillnad eller genom ena makens död skall bodelning ske. division of property marital property divorce dissolution",
+      "metadata": {
+        "keywords_en": "division of property, marital property, divorce, dissolution, community property"
+      }
+    }
+  ]
+}

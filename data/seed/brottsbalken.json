@@ -1,0 +1,64 @@
+{
+  "id": "1962:700",
+  "type": "statute",
+  "title": "Brottsbalken",
+  "title_en": "Criminal Code",
+  "short_name": "BrB",
+  "status": "in_force",
+  "issued_date": "1962-12-21",
+  "in_force_date": "1965-01-01",
+  "url": "https://svenskforfattningssamling.se/sites/default/files/sfs/2020-06/SFS1962-700.pdf",
+  "description": "Swedish Criminal Code - defines criminal offenses and penalties",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Legalitetsprincipen",
+      "content": "Brott är en gärning som är beskriven i denna balk eller i annan lag eller författning och för vilken straff som anges nedan är föreskrivet. crime criminal offense legality principle nullum crimen sine lege",
+      "metadata": {
+        "keywords_en": "crime, criminal offense, legality principle, nullum crimen sine lege, no crime without law"
+      }
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Mord",
+      "content": "Den som berövar annan livet döms för mord till fängelse på viss tid, lägst tio och högst arton år, eller på livstid. murder homicide killing life imprisonment",
+      "metadata": {
+        "keywords_en": "murder, homicide, killing, life imprisonment, capital offense"
+      }
+    },
+    {
+      "provision_ref": "8:1",
+      "chapter": "8",
+      "section": "1",
+      "title": "Stöld",
+      "content": "Den som olovligen tager vad annan tillhör, i avsikt att tillägna sig det, döms för stöld till fängelse i högst två år. theft larceny stealing unlawful taking property",
+      "metadata": {
+        "keywords_en": "theft, larceny, stealing, unlawful taking, property crime"
+      }
+    },
+    {
+      "provision_ref": "9:1",
+      "chapter": "9",
+      "section": "1",
+      "title": "Bedrägeri",
+      "content": "Den som genom vilseledande förmår någon till handling eller underlåtenhet, som innebär vinning för gärningsmannen och skada för den vilseledde eller någon i vars ställe denne är, döms för bedrägeri till fängelse i högst två år. fraud deception deceit misrepresentation financial crime",
+      "metadata": {
+        "keywords_en": "fraud, deception, deceit, misrepresentation, financial crime, embezzlement"
+      }
+    },
+    {
+      "provision_ref": "16:1",
+      "chapter": "16",
+      "section": "1",
+      "title": "Ärekränkning",
+      "content": "Den som utpekar någon såsom brottslig eller klandervärd i sitt levnadssätt eller eljest lämnar uppgift som är ägnad att utsätta denne för andras missaktning, döms för ärekränkning till böter. defamation libel slander reputation honor insult",
+      "metadata": {
+        "keywords_en": "defamation, libel, slander, reputation, honor, insult, false accusation"
+      }
+    }
+  ]
+}
