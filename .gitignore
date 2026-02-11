@@ -92,3 +92,4 @@ pnpm-lock.yaml
 tmp/
 temp/
 *.tmp
+.serena/
