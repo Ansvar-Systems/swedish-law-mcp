@@ -3,6 +3,7 @@
  */
 
 import type { Database } from 'better-sqlite3';
+import { buildFtsQueryVariants } from '../utils/fts-query.js';
 
 export interface SearchCaseLawInput {
   query: string;
@@ -35,7 +36,7 @@ export async function searchCaseLaw(
   }
 
   const limit = Math.min(Math.max(input.limit ?? DEFAULT_LIMIT, 1), MAX_LIMIT);
-  const safeQuery = input.query.replace(/[()^*:]/g, (char) => `"${char}"`);
+  const queryVariants = buildFtsQueryVariants(input.query);
 
   let sql = `
     SELECT
@@ -53,7 +54,7 @@ export async function searchCaseLaw(
     WHERE case_law_fts MATCH ?
   `;
 
-  const params: (string | number)[] = [safeQuery];
+  const params: (string | number)[] = [];
 
   if (input.court) {
     sql += ` AND cl.court = ?`;
@@ -73,5 +74,15 @@ export async function searchCaseLaw(
   sql += ` ORDER BY relevance LIMIT ?`;
   params.push(limit);
 
-  return db.prepare(sql).all(...params) as CaseLawResult[];
+  const runQuery = (ftsQuery: string): CaseLawResult[] => {
+    const bound = [ftsQuery, ...params];
+    return db.prepare(sql).all(...bound) as CaseLawResult[];
+  };
+
+  const primaryResults = runQuery(queryVariants.primary);
+  if (primaryResults.length > 0 || !queryVariants.fallback) {
+    return primaryResults;
+  }
+
+  return runQuery(queryVariants.fallback);
 }

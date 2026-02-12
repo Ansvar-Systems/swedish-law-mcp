@@ -1,0 +1,29 @@
+{
+  "description": "Curated high-relevance statutes for private law, family law, procedure, criminal law, labor, public access, and core compliance.",
+  "statutes": [
+    { "id": "1915:218", "slug": "avtalslagen" },
+    { "id": "1936:81", "slug": "skuldebrevslagen" },
+    { "id": "1936:83", "slug": "gavolagen" },
+    { "id": "1937:81", "slug": "internationella-dodsbo" },
+    { "id": "1942:740", "slug": "rattegangsbalken" },
+    { "id": "1949:381", "slug": "foraldrabalken" },
+    { "id": "1958:637", "slug": "arvdabalken" },
+    { "id": "1960:729", "slug": "upphovsratt" },
+    { "id": "1962:700", "slug": "brottsbalken" },
+    { "id": "1970:994", "slug": "jordabalken" },
+    { "id": "1977:1160", "slug": "arbetsmiljolagen" },
+    { "id": "1981:774", "slug": "utsokningsbalken" },
+    { "id": "1987:230", "slug": "aktenskapsbalken" },
+    { "id": "1990:931", "slug": "koplagen" },
+    { "id": "1991:614", "slug": "bostadsrattslagen" },
+    { "id": "1998:204", "slug": "personuppgiftslagen" },
+    { "id": "1999:1229", "slug": "inkomstskattelagen" },
+    { "id": "2001:453", "slug": "socialtjanstlagen" },
+    { "id": "2003:376", "slug": "sambolagen" },
+    { "id": "2005:551", "slug": "aktiebolagslagen" },
+    { "id": "2009:400", "slug": "offentlighets-sekretesslagen" },
+    { "id": "2010:110", "slug": "socialforsakringsbalken" },
+    { "id": "2011:1244", "slug": "skatteforfarandelagen" },
+    { "id": "2018:218", "slug": "dataskyddslagen" }
+  ]
+}

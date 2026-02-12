@@ -34,6 +34,7 @@ interface DocumentSeed {
   url?: string;
   description?: string;
   provisions?: ProvisionSeed[];
+  provision_versions?: ProvisionVersionSeed[];
   definitions?: DefinitionSeed[];
   preparatory_works?: PrepWorkSeed[];
   case_law?: CaseLawSeed;
@@ -46,6 +47,19 @@ interface ProvisionSeed {
   title?: string;
   content: string;
   metadata?: Record<string, unknown>;
+  valid_from?: string;
+  valid_to?: string;
+}
+
+interface ProvisionVersionSeed {
+  provision_ref: string;
+  chapter?: string;
+  section: string;
+  title?: string;
+  content: string;
+  metadata?: Record<string, unknown>;
+  valid_from?: string;
+  valid_to?: string;
 }
 
 interface DefinitionSeed {
@@ -76,6 +90,18 @@ interface CrossRefSeed {
   target_document_id: string;
   target_provision_ref?: string;
   ref_type: string;
+}
+
+interface ProvisionDedupStats {
+  duplicate_refs: number;
+  conflicting_duplicates: number;
+}
+
+interface PendingPrepWork {
+  statute_id: string;
+  prep_document_id: string;
+  title: string;
+  summary?: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -137,6 +163,49 @@ CREATE TRIGGER provisions_au AFTER UPDATE ON legal_provisions BEGIN
   INSERT INTO provisions_fts(provisions_fts, rowid, content, title)
   VALUES ('delete', old.id, old.content, old.title);
   INSERT INTO provisions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
+
+-- Historical provision versions for date-aware lookups
+CREATE TABLE legal_provision_versions (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  provision_ref TEXT NOT NULL,
+  chapter TEXT,
+  section TEXT NOT NULL,
+  title TEXT,
+  content TEXT NOT NULL,
+  metadata TEXT,
+  valid_from TEXT,
+  valid_to TEXT
+);
+
+CREATE INDEX idx_provision_versions_doc_ref
+  ON legal_provision_versions(document_id, provision_ref);
+CREATE INDEX idx_provision_versions_window
+  ON legal_provision_versions(valid_from, valid_to);
+
+CREATE VIRTUAL TABLE provision_versions_fts USING fts5(
+  content, title,
+  content='legal_provision_versions',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER provision_versions_ai AFTER INSERT ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
+
+CREATE TRIGGER provision_versions_ad AFTER DELETE ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(provision_versions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+END;
+
+CREATE TRIGGER provision_versions_au AFTER UPDATE ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(provision_versions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+  INSERT INTO provision_versions_fts(rowid, content, title)
   VALUES (new.id, new.content, new.title);
 END;
 
@@ -263,6 +332,108 @@ CREATE TRIGGER definitions_au AFTER UPDATE ON definitions BEGIN
 END;
 `;
 
+function normalizeWhitespace(text: string): string {
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+function extractRepealDateFromDescription(description: string | undefined): string | undefined {
+  if (!description) {
+    return undefined;
+  }
+  const match = description.match(/Upphävd\s+(\d{4}-\d{2}-\d{2})/i);
+  return match?.[1];
+}
+
+function deriveDocumentValidityWindow(seed: DocumentSeed): { validFrom: string | null; validTo: string | null } {
+  return {
+    validFrom: seed.in_force_date ?? seed.issued_date ?? null,
+    validTo: seed.status === 'repealed' ? extractRepealDateFromDescription(seed.description) ?? null : null,
+  };
+}
+
+function isoDateValue(date: string | undefined): number {
+  if (!date) {
+    return Number.NEGATIVE_INFINITY;
+  }
+  return Date.parse(`${date}T00:00:00Z`);
+}
+
+function selectLatestProvisionVersions(versions: ProvisionVersionSeed[]): ProvisionSeed[] {
+  const byRef = new Map<string, ProvisionVersionSeed>();
+
+  for (const version of versions) {
+    const existing = byRef.get(version.provision_ref);
+    if (!existing || isoDateValue(version.valid_from) > isoDateValue(existing.valid_from)) {
+      byRef.set(version.provision_ref, version);
+    }
+  }
+
+  return Array.from(byRef.values()).map(v => ({
+    provision_ref: v.provision_ref,
+    chapter: v.chapter,
+    section: v.section,
+    title: v.title,
+    content: v.content,
+    metadata: v.metadata,
+    valid_from: v.valid_from,
+    valid_to: v.valid_to,
+  }));
+}
+
+function pickPreferredProvision(existing: ProvisionSeed, incoming: ProvisionSeed): ProvisionSeed {
+  const existingContent = normalizeWhitespace(existing.content);
+  const incomingContent = normalizeWhitespace(incoming.content);
+
+  if (incomingContent.length > existingContent.length) {
+    return {
+      ...incoming,
+      title: incoming.title ?? existing.title,
+    };
+  }
+
+  return {
+    ...existing,
+    title: existing.title ?? incoming.title,
+  };
+}
+
+function dedupeProvisions(provisions: ProvisionSeed[]): { deduped: ProvisionSeed[]; stats: ProvisionDedupStats } {
+  const byRef = new Map<string, ProvisionSeed>();
+  const stats: ProvisionDedupStats = {
+    duplicate_refs: 0,
+    conflicting_duplicates: 0,
+  };
+
+  for (const provision of provisions) {
+    const ref = provision.provision_ref.trim();
+    const existing = byRef.get(ref);
+
+    if (!existing) {
+      byRef.set(ref, {
+        ...provision,
+        provision_ref: ref,
+      });
+      continue;
+    }
+
+    stats.duplicate_refs++;
+
+    const existingContent = normalizeWhitespace(existing.content);
+    const incomingContent = normalizeWhitespace(provision.content);
+
+    if (existingContent !== incomingContent) {
+      stats.conflicting_duplicates++;
+    }
+
+    byRef.set(ref, pickPreferredProvision(existing, provision));
+  }
+
+  return {
+    deduped: Array.from(byRef.values()),
+    stats,
+  };
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Build
 // ─────────────────────────────────────────────────────────────────────────────
@@ -294,6 +465,13 @@ function buildDatabase(): void {
   const insertProvision = db.prepare(`
     INSERT INTO legal_provisions (document_id, provision_ref, chapter, section, title, content, metadata)
     VALUES (?, ?, ?, ?, ?, ?, ?)
+  `);
+
+  const insertProvisionVersion = db.prepare(`
+    INSERT INTO legal_provision_versions (
+      document_id, provision_ref, chapter, section, title, content, metadata, valid_from, valid_to
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   const insertCaseLaw = db.prepare(`
@@ -334,7 +512,11 @@ function buildDatabase(): void {
 
   let totalDocs = 0;
   let totalProvisions = 0;
+  let totalProvisionVersions = 0;
   let totalDefs = 0;
+  let totalDuplicateRefs = 0;
+  let totalConflictingDuplicates = 0;
+  const pendingPrepWorks: PendingPrepWork[] = [];
 
   const loadAll = db.transaction(() => {
     for (const file of seedFiles) {
@@ -352,13 +534,46 @@ function buildDatabase(): void {
       );
       totalDocs++;
 
-      for (const prov of seed.provisions ?? []) {
+      const { deduped, stats } = dedupeProvisions(seed.provisions ?? []);
+      totalDuplicateRefs += stats.duplicate_refs;
+      totalConflictingDuplicates += stats.conflicting_duplicates;
+      if (stats.duplicate_refs > 0) {
+        console.log(
+          `    WARNING: ${stats.duplicate_refs} duplicate refs in ${seed.id} ` +
+          `(${stats.conflicting_duplicates} with different text).`
+        );
+      }
+
+      const documentWindow = deriveDocumentValidityWindow(seed);
+      const versionCandidates = seed.provision_versions ?? deduped;
+      const { deduped: dedupedVersions } = dedupeProvisions(versionCandidates);
+      const currentProvisions = deduped.length > 0
+        ? deduped
+        : selectLatestProvisionVersions(dedupedVersions);
+
+      for (const prov of currentProvisions) {
+
         insertProvision.run(
           seed.id, prov.provision_ref, prov.chapter ?? null,
           prov.section, prov.title ?? null, prov.content,
           prov.metadata ? JSON.stringify(prov.metadata) : null
         );
         totalProvisions++;
+      }
+
+      for (const version of dedupedVersions) {
+        insertProvisionVersion.run(
+          seed.id,
+          version.provision_ref,
+          version.chapter ?? null,
+          version.section,
+          version.title ?? null,
+          version.content,
+          version.metadata ? JSON.stringify(version.metadata) : null,
+          version.valid_from ?? documentWindow.validFrom,
+          version.valid_to ?? documentWindow.validTo
+        );
+        totalProvisionVersions++;
       }
 
       for (const def of seed.definitions ?? []) {
@@ -380,10 +595,22 @@ function buildDatabase(): void {
       }
 
       for (const pw of seed.preparatory_works ?? []) {
-        insertPrepWork.run(seed.id, pw.prep_document_id, pw.title, pw.summary ?? null);
+        pendingPrepWorks.push({
+          statute_id: seed.id,
+          prep_document_id: pw.prep_document_id,
+          title: pw.title,
+          summary: pw.summary,
+        });
       }
 
-      console.log(`    ${seed.provisions?.length ?? 0} provisions, ${seed.definitions?.length ?? 0} definitions`);
+      console.log(
+        `    ${currentProvisions.length} provisions, ${dedupedVersions.length} provision versions, ` +
+        `${seed.definitions?.length ?? 0} definitions`
+      );
+    }
+
+    for (const pw of pendingPrepWorks) {
+      insertPrepWork.run(pw.statute_id, pw.prep_document_id, pw.title, pw.summary ?? null);
     }
 
     // Load cross-references file if it exists
@@ -408,7 +635,16 @@ function buildDatabase(): void {
   db.close();
 
   const size = fs.statSync(DB_PATH).size;
-  console.log(`\nBuild complete: ${totalDocs} documents, ${totalProvisions} provisions, ${totalDefs} definitions`);
+  console.log(
+    `\nBuild complete: ${totalDocs} documents, ${totalProvisions} provisions, ` +
+    `${totalProvisionVersions} provision versions, ${totalDefs} definitions`
+  );
+  if (totalDuplicateRefs > 0) {
+    console.log(
+      `Data quality: ${totalDuplicateRefs} duplicate refs detected ` +
+      `(${totalConflictingDuplicates} with conflicting text).`
+    );
+  }
   console.log(`Output: ${DB_PATH} (${(size / 1024).toFixed(1)} KB)`);
 }
 

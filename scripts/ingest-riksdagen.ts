@@ -18,6 +18,8 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { pathToFileURL } from 'url';
+import { parseRiksdagenProvisions } from '../src/parsers/riksdagen-provision-parser.js';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Configuration
@@ -54,6 +56,7 @@ const KNOWN_STATUTES: Record<string, StatuteMetadata> = {
     short_name: 'PUL',
     title_en: 'Personal Data Act',
     in_force_date: '1998-10-24',
+    status: 'repealed',
   },
 };
 
@@ -65,6 +68,7 @@ interface StatuteMetadata {
   short_name?: string;
   title_en?: string;
   in_force_date?: string;
+  status?: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
 }
 
 interface RiksdagenDocument {
@@ -75,10 +79,20 @@ interface RiksdagenDocument {
   doktyp: string;
   titel: string;
   undertitel?: string;
+  subtitel?: string;
   datum: string;
   publicerad?: string;
   html_url?: string;
+  html?: string;
   text?: string;
+}
+
+function extractSfsId(value: string | undefined): string | undefined {
+  if (!value) {
+    return undefined;
+  }
+  const match = value.match(/(\d{4}:\d+)/);
+  return match?.[1];
 }
 
 interface SeedOutput {
@@ -94,6 +108,7 @@ interface SeedOutput {
   description?: string;
   provisions?: ProvisionOutput[];
   definitions?: DefinitionOutput[];
+  preparatory_works?: PrepWorkOutput[];
 }
 
 interface ProvisionOutput {
@@ -108,6 +123,72 @@ interface DefinitionOutput {
   term: string;
   definition: string;
   source_provision?: string;
+}
+
+interface PrepWorkOutput {
+  prep_document_id: string;
+  title: string;
+  summary?: string;
+}
+
+const KNOWN_PREPARATORY_WORKS: Record<string, PrepWorkOutput[]> = {
+  '2018:218': [
+    {
+      prep_document_id: '2017/18:105',
+      title: 'Proposition 2017/18:105 Ny dataskyddslag',
+    },
+    {
+      prep_document_id: '2017:39',
+      title: 'SOU 2017:39 Dataskydd inom socialtjänst, tillsyn och arbetslöshetsförsäkring',
+    },
+  ],
+};
+
+function normalizeWhitespace(text: string): string {
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+function extractHtmlMetadata(html: string | undefined): Record<string, string> {
+  if (!html) {
+    return {};
+  }
+
+  const header = html.slice(0, 3000);
+  const pairs = Array.from(header.matchAll(/<b>\s*([^<:]+?)\s*<\/b>\s*:\s*([^<]+)\s*(?:<br|$)/giu));
+  const metadata: Record<string, string> = {};
+
+  for (const [, rawKey, rawValue] of pairs) {
+    const key = normalizeWhitespace(rawKey);
+    const value = normalizeWhitespace(rawValue);
+    if (key && value) {
+      metadata[key] = value;
+    }
+  }
+
+  return metadata;
+}
+
+function deriveStatus(
+  known: StatuteMetadata | undefined,
+  metadata: Record<string, string>
+): 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force' {
+  if (known?.status) {
+    return known.status;
+  }
+
+  if (metadata['Upphävd']) {
+    return 'repealed';
+  }
+
+  return 'in_force';
+}
+
+function normalizeDate(value: string | undefined): string | undefined {
+  if (!value) {
+    return undefined;
+  }
+  const match = value.match(/\d{4}-\d{2}-\d{2}/);
+  return match?.[0];
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -134,78 +215,10 @@ function delay(ms: number): Promise<void> {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Parsing
-// ─────────────────────────────────────────────────────────────────────────────
-
-const CHAPTER_PATTERN = /^(\d+)\s*kap\.\s*(.*)/;
-const SECTION_PATTERN = /^(\d+\s*[a-z]?)\s*\u00a7\s*(.*)/;
-
-function parseProvisions(text: string): ProvisionOutput[] {
-  const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-  const provisions: ProvisionOutput[] = [];
-
-  let currentChapter: string | undefined;
-  let currentSection: string | undefined;
-  let currentTitle: string | undefined;
-  let currentContent: string[] = [];
-
-  function flush(): void {
-    if (currentSection && currentContent.length > 0) {
-      const section = currentSection.replace(/\s+/g, ' ').trim();
-      const provisionRef = currentChapter ? `${currentChapter}:${section}` : section;
-
-      provisions.push({
-        provision_ref: provisionRef,
-        chapter: currentChapter,
-        section,
-        title: currentTitle,
-        content: currentContent.join(' '),
-      });
-    }
-    currentSection = undefined;
-    currentTitle = undefined;
-    currentContent = [];
-  }
-
-  for (const line of lines) {
-    const chapterMatch = line.match(CHAPTER_PATTERN);
-    if (chapterMatch) {
-      flush();
-      currentChapter = chapterMatch[1];
-      continue;
-    }
-
-    const sectionMatch = line.match(SECTION_PATTERN);
-    if (sectionMatch) {
-      flush();
-      currentSection = sectionMatch[1];
-      const remainder = sectionMatch[2].trim();
-      if (remainder) {
-        currentContent.push(remainder);
-      }
-      continue;
-    }
-
-    // Rubrik detection: short line, starts with uppercase, no section content yet
-    if (currentSection && currentContent.length === 0 && /^[A-Z\u00C0-\u00D6\u00D8-\u00DE]/.test(line) && line.length < 80) {
-      currentTitle = line;
-      continue;
-    }
-
-    if (currentSection) {
-      currentContent.push(line);
-    }
-  }
-
-  flush();
-  return provisions;
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
 // Main ingestion
 // ─────────────────────────────────────────────────────────────────────────────
 
-async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
+export async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
   console.log('Riksdagen Data Ingestion');
   console.log(`  SFS: ${sfsNumber}`);
   console.log(`  Output: ${outputPath}`);
@@ -223,7 +236,15 @@ async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
     process.exit(1);
   }
 
-  const doc = documents[0];
+  const requestedSfs = extractSfsId(sfsNumber) ?? sfsNumber;
+  const doc = documents.find(d => extractSfsId(d.beteckning) === requestedSfs)
+    ?? documents.find(d => extractSfsId(d.titel) === requestedSfs)
+    ?? documents[0];
+
+  if ((extractSfsId(doc.beteckning) ?? extractSfsId(doc.titel)) !== requestedSfs) {
+    console.log(`  WARNING: Exact SFS match not found; using closest hit ${doc.beteckning}`);
+  }
+
   console.log(`  Found: ${doc.titel}`);
 
   await delay(REQUEST_DELAY_MS);
@@ -244,23 +265,44 @@ async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
 
   // Step 3: Parse provisions
   console.log('Parsing provisions...');
-  const provisions = parseProvisions(rawText);
-  console.log(`  Found ${provisions.length} provisions`);
+  const parseResult = parseRiksdagenProvisions(rawText);
+  const provisions = parseResult.provisions as ProvisionOutput[];
+  const withTitles = provisions.filter(p => p.title).length;
+  console.log(`  Found ${provisions.length} provisions (${withTitles} with titles)`);
+  if (parseResult.diagnostics.ignored_chapter_markers > 0 || parseResult.diagnostics.suppressed_section_candidates > 0) {
+    console.log(
+      `  Parser diagnostics: ignored chapters=${parseResult.diagnostics.ignored_chapter_markers}, ` +
+      `suppressed section candidates=${parseResult.diagnostics.suppressed_section_candidates}`
+    );
+  }
 
   // Step 4: Build seed output
-  const known = KNOWN_STATUTES[sfsNumber];
+  const known = KNOWN_STATUTES[requestedSfs];
+  const htmlMetadata = extractHtmlMetadata(fullDoc.html);
+  const status = deriveStatus(known, htmlMetadata);
+  const repealDate = normalizeDate(htmlMetadata['Upphävd']);
+  const repealedBy = htmlMetadata['Författningen har upphävts genom'];
+  const issuedDate = normalizeDate(htmlMetadata['Utfärdad'] ?? doc.datum);
+  const inForceDate = normalizeDate(htmlMetadata['Ikraft']) ?? known?.in_force_date;
+  const baseTitle = normalizeWhitespace(doc.titel || `SFS ${requestedSfs}`);
 
   const seed: SeedOutput = {
-    id: sfsNumber,
+    id: requestedSfs,
     type: 'statute',
-    title: doc.titel || `SFS ${sfsNumber}`,
+    title: baseTitle,
     title_en: known?.title_en,
     short_name: known?.short_name,
-    status: 'in_force',
-    issued_date: doc.datum,
-    in_force_date: known?.in_force_date,
-    url: doc.html_url || `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-${sfsNumber.replace(':', '-')}`,
+    status,
+    issued_date: issuedDate,
+    in_force_date: inForceDate,
+    url: doc.html_url || `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-${requestedSfs.replace(':', '-')}`,
+    description: status === 'repealed'
+      ? [repealDate ? `Upphävd ${repealDate}` : 'Upphävd', repealedBy ? `genom ${repealedBy}` : null]
+          .filter((part): part is string => part != null)
+          .join(' ')
+      : undefined,
     provisions: provisions.length > 0 ? provisions : undefined,
+    preparatory_works: KNOWN_PREPARATORY_WORKS[requestedSfs],
   };
 
   // Step 5: Write output
@@ -285,23 +327,27 @@ async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
 // CLI
 // ─────────────────────────────────────────────────────────────────────────────
 
-const args = process.argv.slice(2);
+const isMainModule = process.argv[1] != null && pathToFileURL(process.argv[1]).href === import.meta.url;
 
-if (args.length < 2) {
-  console.log('Usage: npm run ingest -- <sfs-number> <output-path>');
-  console.log('');
-  console.log('Examples:');
-  console.log('  npm run ingest -- 2018:218 data/seed/2018_218.json');
-  console.log('  npm run ingest -- 1998:204 data/seed/1998_204.json');
-  console.log('');
-  console.log('Known statutes:');
-  for (const [sfs, meta] of Object.entries(KNOWN_STATUTES)) {
-    console.log(`  ${sfs} (${meta.short_name || 'no short name'})`);
+if (isMainModule) {
+  const args = process.argv.slice(2);
+
+  if (args.length < 2) {
+    console.log('Usage: npm run ingest -- <sfs-number> <output-path>');
+    console.log('');
+    console.log('Examples:');
+    console.log('  npm run ingest -- 2018:218 data/seed/2018_218.json');
+    console.log('  npm run ingest -- 1998:204 data/seed/1998_204.json');
+    console.log('');
+    console.log('Known statutes:');
+    for (const [sfs, meta] of Object.entries(KNOWN_STATUTES)) {
+      console.log(`  ${sfs} (${meta.short_name || 'no short name'})`);
+    }
+    process.exit(1);
   }
-  process.exit(1);
-}
 
-ingest(args[0], args[1]).catch(error => {
-  console.error('Ingestion failed:', error.message);
-  process.exit(1);
-});
+  ingest(args[0], args[1]).catch(error => {
+    console.error('Ingestion failed:', error.message);
+    process.exit(1);
+  });
+}

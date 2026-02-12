@@ -15,8 +15,8 @@ This MCP (Model Context Protocol) server gives AI assistants direct access to Sw
 
 | Source | Description | Status |
 |--------|-------------|--------|
-| **SFS** (Svensk Forfattningssamling) | Swedish Code of Statutes | Planned |
-| **Key Regulations** | GDPR implementation, PuL, etc. | Planned |
+| **SFS** (Svensk Forfattningssamling) | Curated high-relevance statutes (family, civil, criminal, tax, procedure, public law) | Available |
+| **Key Regulations** | GDPR implementation, PuL, labor, secrecy, tax and social insurance laws | Available |
 
 ### Use Cases
 
@@ -61,41 +61,53 @@ Add to your config (`~/Library/Application Support/Claude/claude_desktop_config.
 
 ## Available Tools
 
-### `search_laws`
+### `search_legislation`
 
-Full-text search across all Swedish statutes.
+Full-text search across all Swedish statutes. Supports optional `as_of_date` (`YYYY-MM-DD`) for historical lookups.
 
 ```
 "Search for data protection requirements in Swedish law"
 -> Returns matching sections with context
 ```
 
-### `get_section`
+### `get_provision`
 
-Retrieve a specific section from a statute.
+Retrieve a specific section from a statute. Supports optional `as_of_date` (`YYYY-MM-DD`) to return the version valid on that date.
 
 ```
 "Get SFS 2018:218 Chapter 3 Section 5"
 -> Returns the full text of that section
 ```
 
-### `list_statutes`
+### `search_case_law`
 
-List available statutes or show structure of a specific law.
+Search Swedish case law (rattsfall) by query, court, and date.
 
-```
-"List all statutes related to arbetsmiljo"
--> Returns overview of workplace safety laws
-```
+### `get_preparatory_works`
 
-### `get_definitions`
+Get linked propositions/SOU documents for a statute (when available in seed data).
 
-Look up official definitions from Swedish law.
+### `validate_citation`
 
-```
-"What is the Swedish legal definition of personuppgift?"
--> Returns the official definition
-```
+Validate a citation against the local database and return warnings.
+
+### `build_legal_stance`
+
+Aggregate citations across legislation, case law, and preparatory works. Supports optional `as_of_date` for time-aware retrieval.
+
+### `format_citation`
+
+Format a citation in full, short, or pinpoint style.
+
+### `check_currency`
+
+Check if a statute is in force, amended, or repealed. Supports optional `as_of_date` for historical in-force status.
+
+### Historical Coverage Note
+
+- Historical queries are supported through provision validity windows.
+- If a statute only has one consolidated provision version in seed data, `as_of_date` can still determine in-force status windows but may return current consolidated wording.
+- Add explicit `provision_versions` in seed files to provide exact historical wording changes.
 
 ---
 
@@ -122,6 +134,19 @@ npm test
 
 ```bash
 npm run dev
+```
+
+### Refreshing Legal Data
+
+```bash
+# Re-ingest curated relevant statutes from Riksdagen
+node --import tsx scripts/ingest-relevant-laws.ts
+
+# Optional: inspect seed quality (duplicates/collisions)
+node --import tsx scripts/audit-seeds.ts
+
+# Rebuild SQLite database from seed files
+node --import tsx scripts/build-db.ts
 ```
 
 ### Testing with MCP Inspector
