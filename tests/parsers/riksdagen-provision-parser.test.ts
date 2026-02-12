@@ -73,5 +73,21 @@ fortsatt text i samma paragraf.
     expect(result.provisions[2].provision_ref).toBe('1:3');
     expect(result.diagnostics.suppressed_section_candidates).toBe(1);
   });
-});
 
+  it('suppresses suspicious large section jumps in flat statutes', () => {
+    const text = `
+1 § Första paragraf.
+2 § Andra paragraf.
+3 § Vid tillämpning av 5 a, 6 h, 7 a, 11, 15, 22, 25, 26 och
+39 § gäller följande särskilda bestämmelser om beräkning av anställningstid.
+4 § Fjärde paragraf.
+`;
+
+    const result = parseRiksdagenProvisions(text);
+    const refs = result.provisions.map(p => p.provision_ref);
+
+    expect(refs).toEqual(['1', '2', '3', '4']);
+    expect(result.provisions[2].content).toContain('39 § gäller följande särskilda bestämmelser');
+    expect(result.diagnostics.suppressed_section_candidates).toBe(1);
+  });
+});

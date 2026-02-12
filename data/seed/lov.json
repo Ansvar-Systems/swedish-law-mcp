@@ -1,0 +1,248 @@
+{
+  "id": "2008:962",
+  "type": "statute",
+  "title": "Lag (2008:962) om valfrihetssystem",
+  "status": "in_force",
+  "issued_date": "2008-11-20",
+  "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2008-962",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Lagens omfattning",
+      "content": "Denna lag gäller när en upphandlande myndighet beslutat att tillämpa valfrihetssystem vad gäller tjänster inom hälsovård och socialtjänster, som omfattas av CPV-kod 79611000-0 eller 85000000-9 till 85323000-9 enligt Europaparlamentets och rådets förordning (EEG) nr 2195/2002 av den 5 november 2002 om en gemensam terminologi vid offentlig upphandling, i lydelsen enligt Europeiska kommissionens förordning (EG) nr 213/2008. Lagen gäller dock inte tjänster som omfattas av CPV-kod 85311300-5, 85321000-5 eller 85322000-2. Med valfrihetssystem enligt denna lag avses ett förfarande där den enskilde har rätt att välja den leverantör som ska utföra tjänsten och som en upphandlande myndighet godkänt och tecknat kontrakt med. Den upphandlande myndigheten behöver inte tillämpa samma valfrihetssystem inom alla berörda områden. Lag (2016:1153). Principerna för valfrihetssystem"
+    },
+    {
+      "provision_ref": "1:2",
+      "chapter": "1",
+      "section": "2",
+      "content": "Den upphandlande myndigheten ska behandla leverantörer på ett likvärdigt och icke-diskriminerande sätt. Den upphandlande myndigheten ska iaktta principerna om öppenhet, ömsesidigt erkännande och proportionalitet när den tillämpar valfrihetssystem."
+    },
+    {
+      "provision_ref": "1:2 a",
+      "chapter": "1",
+      "section": "2 a",
+      "content": "En upphandlande myndighet får reservera deltagandet i ett valfrihetssystem för idéburna organisationer vars allmännyttiga syfte bidrar till att uppnå ändamålet med den tjänst som ska tillhandahållas. Detta gäller dock inte i fråga om sådana vårdvalssystem som avses i 7 kap. 3 § hälso- och sjukvårdslagen (2017:30). För att kunna delta i ett reserverat valfrihetssystem får den idéburna organisationen endast göra sådana värdeöverföringar som är tillåtna enligt 8 § första stycket lagen (2022:900) om registrering av idéburna organisationer. Vidare får staten, en region eller en kommun inte ha ett rättsligt bestämmande inflytande över den idéburna organisationen. Lag (2022:901). Förvaltningslagens tillämpning"
+    },
+    {
+      "provision_ref": "1:3",
+      "chapter": "1",
+      "section": "3",
+      "content": "Förvaltningslagen (2017:900) tillämpas inte vid handläggningen av ärenden enligt denna lag. Lag (2018:831)."
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "content": "Med förfrågningsunderlag avses sådant underlag för ansökan om att delta i ett valfrihetssystem som en upphandlande myndighet tillhandahåller."
+    },
+    {
+      "provision_ref": "2:2",
+      "chapter": "2",
+      "section": "2",
+      "content": "Med kontrakt avses ett skriftligt avtal med ekonomiska villkor som 1. sluts mellan en eller flera upphandlande myndigheter och en eller flera leverantörer, 2. avser tillhandahållandet av tjänster, och 3. undertecknas av parterna eller skrivs under av dem med en elektronisk underskrift. Kontraktet kan även innehålla andra villkor än ekonomiska. Lag (2016:572)."
+    },
+    {
+      "provision_ref": "2:3",
+      "chapter": "2",
+      "section": "3",
+      "content": "Med leverantör avses den som på marknaden tillhandahåller tjänster som avses i 1 kap. 1 § första stycket. Med leverantör avses också en grupp av leverantörer."
+    },
+    {
+      "provision_ref": "2:4",
+      "chapter": "2",
+      "section": "4",
+      "content": "Med löpande annonsering avses en annons som gäller tills vidare och där det inte anges något sista datum för att komma in med ansökan."
+    },
+    {
+      "provision_ref": "2:5",
+      "chapter": "2",
+      "section": "5",
+      "content": "Med offentligt styrda organ avses sådana bolag och stiftelser som tillgodoser behov i det allmännas intresse, under förutsättning att behovet inte är av kommersiell karaktär, och 1. som till största delen finansieras av en kommun, en region eller en upphandlande myndighet, 2. vars verksamhet står under kontroll av en kommun, en region eller en upphandlande myndighet, eller 3. i vars styrelse eller motsvarande ledningsorgan mer än hälften av antalet ledamöter är utsedda av en kommun, en region eller en upphandlande myndighet. Lag (2019:934)."
+    },
+    {
+      "provision_ref": "2:6",
+      "chapter": "2",
+      "section": "6",
+      "content": "Med tjänst avses sådan tjänst som framgår av 1 kap. 1 § första stycket."
+    },
+    {
+      "provision_ref": "2:7",
+      "chapter": "2",
+      "section": "7",
+      "content": "Med upphandlande myndighet avses en kommunal myndighet. Vid tillämpningen av denna lag ska med upphandlande myndigheter likställas 1. beslutande församlingar i kommuner och regioner, 2. offentligt styrda organ som avses i 5 §, 3. sammanslutningar av en eller flera myndigheter enligt första stycket eller församlingar enligt 1, och 4. sammanslutningar av flera organ enligt 2. Lag (2019:934)."
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Skyldighet att annonsera på nationell webbplats",
+      "content": "En upphandlande myndighet som beslutat att inrätta eller förändra ett valfrihetssystem ska annonsera på den nationella webbplats som upprättats för ändamålet. Förfrågningsunderlag ska tillsammans med annonsen finnas tillgängligt på webbplatsen. Löpande annonsering"
+    },
+    {
+      "provision_ref": "3:2",
+      "chapter": "3",
+      "section": "2",
+      "content": "Den upphandlande myndigheten ska löpande begära in ansökningar genom annons på den nationella webbplatsen."
+    },
+    {
+      "provision_ref": "4:1",
+      "chapter": "4",
+      "section": "1",
+      "title": "Ekonomisk ersättning",
+      "content": "Grunderna för den ekonomiska ersättningen till en leverantör ska framgå av förfrågningsunderlaget. Särskilda kontraktsvillkor"
+    },
+    {
+      "provision_ref": "4:2",
+      "chapter": "4",
+      "section": "2",
+      "content": "Den upphandlande myndigheten får ställa särskilda sociala, miljömässiga och andra villkor för hur ett kontrakt ska fullgöras. Samtliga villkor ska anges i annonsen om valfrihetssystem eller i förfrågningsunderlaget. Ingivande och handläggningstid av ansökan"
+    },
+    {
+      "provision_ref": "4:3",
+      "chapter": "4",
+      "section": "3",
+      "content": "I annonsen eller förfrågningsunderlaget ska anges på vilket sätt ansökan ska ges in."
+    },
+    {
+      "provision_ref": "4:4",
+      "chapter": "4",
+      "section": "4",
+      "content": "I förfrågningsunderlaget ska anges inom vilken tid den upphandlande myndigheten kommer att fatta beslut om godkännande."
+    },
+    {
+      "provision_ref": "4:5",
+      "chapter": "4",
+      "section": "5",
+      "content": "Vid bedömningen av när en handling ska anses inkommen till den upphandlande myndigheten tillämpas 22 § förvaltningslagen (2017:900). Lag (2018:831)."
+    },
+    {
+      "provision_ref": "5:1",
+      "chapter": "5",
+      "section": "1",
+      "title": "Rätten att få delta i ett valfrihetssystem",
+      "content": "Fysiska eller juridiska personer kan var för sig eller tillsammans med andra leverantörer lämna en ansökan. Den upphandlande myndigheten får inte ställa upp villkor om att en grupp ska ha en bestämd juridisk form för att få lämna en ansökan. Den upphandlande myndigheten får dock begära att en grupp ska ha en viss juridisk form när den blivit tilldelad kontraktet, om det krävs för att kontraktet ska kunna fullgöras på ett godtagbart sätt. Tillgång till andra företags kapacitet"
+    },
+    {
+      "provision_ref": "5:2",
+      "chapter": "5",
+      "section": "2",
+      "content": "En sökande får vid behov åberopa andra företags ekonomiska, tekniska och yrkesmässiga kapacitet i ansökan. Sökanden ska genom att tillhandahålla ett åtagande från företagen i fråga eller på annat sätt kunna visa att han eller hon kommer att förfoga över nödvändiga resurser när kontraktet ska fullgöras."
+    },
+    {
+      "provision_ref": "6:1",
+      "chapter": "6",
+      "section": "1",
+      "title": "Kommunikation med elektroniska medel",
+      "content": "Vid kommunikation med elektroniska medel ska medlen vara icke-diskriminerande, allmänt tillgängliga och möjliga att använda tillsammans med sådan maskin- och programvara som i allmänhet används. Rättelse av fel, förtydligande och komplettering"
+    },
+    {
+      "provision_ref": "6:2",
+      "chapter": "6",
+      "section": "2",
+      "content": "Den upphandlande myndigheten får medge att en sökande rättar en felskrivning eller något annat uppenbart fel i ansökan. Den upphandlande myndigheten får begära att en ansökan förtydligas eller kompletteras."
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Omständigheter som får medföra uteslutning av sökande",
+      "content": "Den upphandlande myndigheten får utesluta en sökande som 1. är i konkurs eller likvidation, är under tvångsförvaltning, är föremål för ackord, genomgår företagsrekonstruktion, tills vidare har inställt sina betalningar eller är underkastad näringsförbud, 2. är föremål för ansökan om konkurs, tvångslikvidation, ackord, företagsrekonstruktion eller något annat liknande förfarande, 3. genom en dom som fått laga kraft är dömd för brott som avser yrkesutövningen, 4. har gjort sig skyldig till allvarligt fel i yrkesutövningen och den upphandlande myndigheten kan visa detta, 5. inte har fullgjort sina skyldigheter i fråga om socialförsäkringsavgifter eller skatt i hemlandet eller annan stat inom EES-området, eller 6. i något väsentligt hänseende har låtit bli att lämna begärda upplysningar eller lämnat felaktiga upplysningar som begärts med stöd av denna paragraf. Om sökanden är en juridisk person, får sökanden uteslutas om en företrädare för den juridiska personen har dömts för sådant brott som avses i första stycket 3 eller gjort sig skyldig till sådant fel som avses i första stycket 4. Den upphandlande myndigheten får begära att en sökande visar att det inte finns någon grund för att utesluta sökanden med stöd av första stycket 1, 2, 3 eller 5. Lag (2022:992). Intyg och bevis som gäller sökande"
+    },
+    {
+      "provision_ref": "7:2",
+      "chapter": "7",
+      "section": "2",
+      "content": "Den upphandlande myndigheten ska som bevis för att det inte finns grund för att utesluta en sökande godta utdrag ur ett officiellt register eller annan likvärdig handling när det gäller ett förhållande som avses i 1 § första stycket 1, 2 eller 3 och intyg från behörig myndighet när det gäller ett förhållande som avses i 1 § första stycket 5. Om sådana handlingar eller intyg som avses i första stycket inte utfärdas i sökandens hemland eller ursprungsland eller inte omfattar samtliga de fall som avses i 1 § första stycket 1-3 kan de ersättas med en utsaga som har avgetts på heder och samvete eller av en liknande försäkran. Om en sökande är registrerad i en officiell förteckning över godkända leverantörer i ett land inom EES, ska den upphandlande myndigheten utgå från att sökanden inte kan uteslutas som leverantör enligt 1 § första stycket 1-5."
+    },
+    {
+      "provision_ref": "8:1",
+      "chapter": "8",
+      "section": "1",
+      "title": "Beslut om godkännande",
+      "content": "Den upphandlande myndigheten ska godkänna samtliga sökande som uppfyller de krav som angetts i annonsen och förfrågningsunderlaget och som inte har uteslutits med stöd av"
+    },
+    {
+      "provision_ref": "8:2",
+      "chapter": "8",
+      "section": "2",
+      "title": "Underrättelse om beslut",
+      "content": "När beslut fattats om huruvida en sökande får delta i valfrihetssystemet ska den upphandlande myndigheten snarast möjligt lämna underrättelse till sökanden om beslutet och skälen för det. En sådan underrättelse ska lämnas till sökandena även när den upphandlande myndigheten beslutar att avbryta inrättandet av valfrihetssystemet. Om den upphandlande myndigheten beslutar att inte godkänna sökanden som leverantör i valfrihetssystemet ska den upphandlande myndigheten lämna upplysningar om hur rättelse söks. Tecknande av kontrakt"
+    },
+    {
+      "provision_ref": "8:3",
+      "chapter": "8",
+      "section": "3",
+      "content": "Sedan den upphandlande myndigheten lämnat sitt godkännande, ska myndigheten utan dröjsmål teckna kontrakt med leverantören."
+    },
+    {
+      "provision_ref": "9:1",
+      "chapter": "9",
+      "section": "1",
+      "title": "Den upphandlande myndighetens informationsansvar",
+      "content": "Den upphandlande myndigheten ska till enskilda lämna information om samtliga leverantörer som myndigheten tecknat kontrakt med inom ramen för valfrihetssystemet. Informationen ska vara saklig, relevant, jämförbar, lättförståelig och lättillgänglig. Ickevalsalternativ"
+    },
+    {
+      "provision_ref": "9:2",
+      "chapter": "9",
+      "section": "2",
+      "content": "För den enskilde som inte väljer leverantör ska den upphandlande myndigheten tillhandahålla ett ickevalsalternativ."
+    },
+    {
+      "provision_ref": "10:1",
+      "chapter": "10",
+      "section": "1",
+      "title": "Rättelse",
+      "content": "En leverantör, som gör gällande att en upphandlande myndighet brutit mot en bestämmelse i denna lag, får ansöka om rättelse hos allmän förvaltningsdomstol. Endast den sökande som inte godkänts får ansöka om rättelse av den upphandlande myndighetens beslut enligt 8 kap. 1 §. En ansökan om rättelse ska inges skriftligen."
+    },
+    {
+      "provision_ref": "10:2",
+      "chapter": "10",
+      "section": "2",
+      "content": "Om den upphandlande myndigheten brutit mot någon bestämmelse i denna lag och detta medfört att en leverantör lidit eller kan komma att lida skada, ska rätten besluta om att den upphandlande myndigheten ska vidta rättelse. Behörig domstol"
+    },
+    {
+      "provision_ref": "10:3",
+      "chapter": "10",
+      "section": "3",
+      "content": "En ansökan om rättelse enligt 1 § ska göras hos den förvaltningsrätt i vars domkrets den upphandlande myndigheten har sitt hemvist. En ansökan enligt 1 § andra stycket ska ha kommit in till allmän förvaltningsdomstol inom tre veckor från det att underrättelse lämnats enligt 8 kap. 2 §. Prövningstillstånd krävs vid överklagande till kammarrätten. Lag (2009:856). Förbud mot överklagande"
+    },
+    {
+      "provision_ref": "10:4",
+      "chapter": "10",
+      "section": "4",
+      "content": "Ett beslut som denna lag är tillämplig på får inte överklagas med stöd av 13 kap. kommunallagen (2017:725). Lag (2017:754). Skadestånd"
+    },
+    {
+      "provision_ref": "10:5",
+      "chapter": "10",
+      "section": "5",
+      "content": "En upphandlande myndighet som inte följt bestämmelserna i denna lag ska ersätta sökanden för därigenom uppkommen skada. Skadeståndstalan som grundar sig på beslut enligt 8 kap. 1 § ska väckas inom ett år från det att den upphandlande myndigheten beslutat att inte godkänna sökanden. Talan om skadestånd ska väckas vid allmän domstol. Väcks inte talan i tid, är rätten till skadestånd förlorad. Undantag från rättelse och skadestånd"
+    },
+    {
+      "provision_ref": "10:6",
+      "chapter": "10",
+      "section": "6",
+      "content": "Bestämmelserna i detta kapitel om rättelse eller skadestånd gäller inte den upphandlande myndighetens beslut om information och ickevalsalternativ. Tillsyn"
+    },
+    {
+      "provision_ref": "10:7",
+      "chapter": "10",
+      "section": "7",
+      "content": "Regeringen utser en myndighet att utöva tillsyn över valfrihetssystem enligt denna lag."
+    },
+    {
+      "provision_ref": "10:8",
+      "chapter": "10",
+      "section": "8",
+      "content": "Tillsynsmyndigheten får inhämta sådana upplysningar från de upphandlande myndigheterna som är nödvändiga för tillsynen. Upplysningarna ska i första hand inhämtas genom ett skriftligt förfarande. Om det på grund av materialets omfång, brådska eller något annat förhållande är lämpligare, får upplysningarna i stället inhämtas genom besök hos den upphandlande myndigheten eller muntligen."
+    },
+    {
+      "provision_ref": "10:9",
+      "chapter": "10",
+      "section": "9",
+      "content": "En upphandlande myndighet är skyldig att tillhandahålla de upplysningar som tillsynsmyndigheten begär för sin tillsyn."
+    }
+  ]
+}

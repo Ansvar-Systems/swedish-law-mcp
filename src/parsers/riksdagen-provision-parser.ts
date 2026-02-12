@@ -162,6 +162,8 @@ export function parseRiksdagenProvisions(text: string): RiksdagenParseResult {
       const candidateOrdinal = sectionOrdinal(normalizedSection);
       const currentOrdinal = currentSection ? sectionOrdinal(currentSection) : undefined;
       const lastOrdinal = chapterForSection ? lastOrdinalByChapter.get(chapterForSection) : undefined;
+      const candidateNumber = sectionNumber(normalizedSection);
+      const currentNumber = currentSection ? sectionNumber(currentSection) : undefined;
 
       const isDuplicateRef = seenProvisionRefs.has(provisionRef);
       const isOutOfOrderFromCurrent = (
@@ -181,8 +183,22 @@ export function parseRiksdagenProvisions(text: string): RiksdagenParseResult {
         currentContent.length > 0 &&
         startsWithLowercase(remainder)
       );
+      const isSuspiciousFlatJump = (
+        !chapterActivated &&
+        !chapterForSection &&
+        currentNumber !== undefined &&
+        candidateNumber !== undefined &&
+        candidateNumber - currentNumber >= 8 &&
+        currentContent.length > 0
+      );
 
-      if (isDuplicateRef || isOutOfOrderFromCurrent || isOutOfOrderFromHistory || isLikelyInlineReference) {
+      if (
+        isDuplicateRef ||
+        isOutOfOrderFromCurrent ||
+        isOutOfOrderFromHistory ||
+        isLikelyInlineReference ||
+        isSuspiciousFlatJump
+      ) {
         diagnostics.suppressed_section_candidates++;
         if (currentSection) {
           currentContent.push(line);
@@ -223,4 +239,3 @@ export function parseRiksdagenProvisions(text: string): RiksdagenParseResult {
 
   return { provisions, diagnostics };
 }
-

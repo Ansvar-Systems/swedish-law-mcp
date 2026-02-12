@@ -192,6 +192,88 @@ function normalizeDate(value: string | undefined): string | undefined {
   return match?.[0];
 }
 
+function startsLikeProvisionContent(content: string): boolean {
+  return /^[A-ZÅÄÖ0-9]/u.test(content);
+}
+
+function looksLikeContinuation(content: string): boolean {
+  return /^[a-zåäö§,.;:\)\]-]/u.test(content);
+}
+
+function qualityScore(provision: ProvisionOutput): number {
+  const content = provision.content.trim();
+  let score = 0;
+
+  if (startsLikeProvisionContent(content)) {
+    score += 4;
+  }
+
+  if (looksLikeContinuation(content)) {
+    score -= 4;
+  }
+
+  if (content.length >= 40) {
+    score += 1;
+  }
+  if (content.length >= 120) {
+    score += 1;
+  }
+
+  if (/Lag \(\d{4}:\d+\)\.?$/u.test(content)) {
+    score += 1;
+  }
+
+  return score;
+}
+
+function selectPreferredProvision(a: ProvisionOutput, b: ProvisionOutput): ProvisionOutput {
+  const scoreA = qualityScore(a);
+  const scoreB = qualityScore(b);
+
+  if (scoreA !== scoreB) {
+    return scoreB > scoreA ? b : a;
+  }
+
+  if (b.content.length !== a.content.length) {
+    return b.content.length > a.content.length ? b : a;
+  }
+
+  return a;
+}
+
+function dedupeByProvisionRef(provisions: ProvisionOutput[]): {
+  provisions: ProvisionOutput[];
+  duplicateRefs: number;
+  replacements: number;
+} {
+  const byRef = new Map<string, ProvisionOutput>();
+  const order: string[] = [];
+  let duplicateRefs = 0;
+  let replacements = 0;
+
+  for (const provision of provisions) {
+    const existing = byRef.get(provision.provision_ref);
+    if (!existing) {
+      byRef.set(provision.provision_ref, provision);
+      order.push(provision.provision_ref);
+      continue;
+    }
+
+    duplicateRefs++;
+    const preferred = selectPreferredProvision(existing, provision);
+    if (preferred !== existing) {
+      byRef.set(provision.provision_ref, preferred);
+      replacements++;
+    }
+  }
+
+  return {
+    provisions: order.map(ref => byRef.get(ref)!),
+    duplicateRefs,
+    replacements,
+  };
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Fetching
 // ─────────────────────────────────────────────────────────────────────────────
@@ -267,30 +349,41 @@ export async function ingest(sfsNumber: string, outputPath: string): Promise<voi
   // Step 3: Parse provisions
   console.log('Parsing provisions...');
   const parseResult = parseRiksdagenProvisions(rawText);
+  const strictParsed = parseResult.provisions as ProvisionOutput[];
+  const strictDeduped = dedupeByProvisionRef(strictParsed);
+
   const fallbackProvisions = parseStatuteText(rawText) as ProvisionOutput[];
+  const fallbackDeduped = dedupeByProvisionRef(fallbackProvisions);
 
   // If the strict parser suppresses many candidates and the generic parser yields
   // materially better coverage, prefer the generic result for this statute.
   const shouldUseFallback = (
     parseResult.diagnostics.ignored_chapter_markers === 0 &&
     parseResult.diagnostics.suppressed_section_candidates >= 20 &&
-    fallbackProvisions.length >= parseResult.provisions.length + 10 &&
-    fallbackProvisions.length >= Math.ceil(parseResult.provisions.length * 1.25)
+    fallbackDeduped.provisions.length >= strictDeduped.provisions.length + 10 &&
+    fallbackDeduped.provisions.length >= Math.ceil(strictDeduped.provisions.length * 1.25)
   );
 
-  const provisions = (shouldUseFallback ? fallbackProvisions : parseResult.provisions) as ProvisionOutput[];
+  const deduped = shouldUseFallback ? fallbackDeduped : strictDeduped;
+  const provisions = deduped.provisions;
   const withTitles = provisions.filter(p => p.title).length;
   console.log(`  Found ${provisions.length} provisions (${withTitles} with titles)`);
   if (shouldUseFallback) {
     console.log(
-      `  Parser fallback activated: strict=${parseResult.provisions.length}, ` +
-      `fallback=${fallbackProvisions.length}, suppressed=${parseResult.diagnostics.suppressed_section_candidates}`
+      `  Parser fallback activated: strict=${strictDeduped.provisions.length}, ` +
+      `fallback=${fallbackDeduped.provisions.length}, suppressed=${parseResult.diagnostics.suppressed_section_candidates}`
     );
   }
   if (parseResult.diagnostics.ignored_chapter_markers > 0 || parseResult.diagnostics.suppressed_section_candidates > 0) {
     console.log(
       `  Parser diagnostics: ignored chapters=${parseResult.diagnostics.ignored_chapter_markers}, ` +
       `suppressed section candidates=${parseResult.diagnostics.suppressed_section_candidates}`
+    );
+  }
+  if (deduped.duplicateRefs > 0) {
+    console.log(
+      `  De-duplicated ${deduped.duplicateRefs} duplicate refs ` +
+      `(replaced ${deduped.replacements} with better candidates)`
     );
   }
 
