@@ -1,0 +1,587 @@
+{
+  "id": "2018:585",
+  "type": "statute",
+  "title": "Säkerhetsskyddslag (2018:585)",
+  "status": "in_force",
+  "issued_date": "2018-05-24",
+  "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2018-585",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Lagen gäller för utövare av säkerhetskänslig verksamhet",
+      "content": "Denna lag gäller för den som till någon del bedriver verksamhet som är av betydelse för Sveriges säkerhet eller som omfattas av ett för Sverige förpliktande internationellt åtagande om säkerhetsskydd (säkerhetskänslig verksamhet). I lagen finns också bestämmelser som gäller den som avser att överlåta aktier eller andelar i säkerhetskänslig verksamhet och om internationell samverkan på säkerhetsskyddsområdet. Lag (2020:1007). Vad som avses med säkerhetsskydd"
+    },
+    {
+      "provision_ref": "1:2",
+      "chapter": "1",
+      "section": "2",
+      "content": "Med säkerhetsskydd avses skydd av säkerhetskänslig verksamhet mot spioneri, sabotage, terroristbrott och andra brott som kan hota verksamheten samt skydd i andra fall av säkerhetsskyddsklassificerade uppgifter. Med säkerhetsskyddsklassificerade uppgifter avses uppgifter som rör säkerhetskänslig verksamhet och som därför omfattas av sekretess enligt offentlighets- och sekretesslagen (2009:400) eller som skulle ha omfattats av sekretess enligt den lagen, om den hade varit tillämplig. Undantag från bestämmelserna om säkerhetsskydd"
+    },
+    {
+      "provision_ref": "1:3",
+      "chapter": "1",
+      "section": "3",
+      "content": "För riksdagen och dess myndigheter gäller endast bestämmelserna om säkerhetsskyddsklasser i 2 kap. 5 §, säkerhetsprövning i 3 kap. och säkerhetsintyg i 5 kap. I övrigt gäller lagen (2019:109) om säkerhetsskydd i riksdagen och dess myndigheter. Regeringen får i fråga om Regeringskansliet, utlandsmyndigheterna och kommittéväsendet meddela föreskrifter om undantag från andra bestämmelser i lagen än de som anges i första stycket. Lag (2021:952). Särskilda bestämmelser om statsministerns tjänstebostäder och skyddsobjekt"
+    },
+    {
+      "provision_ref": "1:4",
+      "chapter": "1",
+      "section": "4",
+      "content": "I lagen (2014:514) om ansvar för vissa säkerhetsfrågor vid statsministerns tjänstebostäder finns bestämmelser om ansvar för fysisk säkerhet och om samrådsskyldighet inför att säkerhetsskyddsavtal ska träffas och inför beslut om placering i säkerhetsklass."
+    },
+    {
+      "provision_ref": "1:5",
+      "chapter": "1",
+      "section": "5",
+      "content": "I skyddslagen (2010:305) finns bestämmelser om förbud mot tillträde till vissa byggnader, andra anläggningar, områden och andra objekt."
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Skyldigheter för den som bedriver säkerhetskänslig",
+      "content": "Den som till någon del bedriver säkerhetskänslig verksamhet (verksamhetsutövare) ska utreda behovet av säkerhetsskydd (säkerhetsskyddsanalys). Säkerhetsskyddsanalysen ska dokumenteras. Med utgångspunkt i analysen ska verksamhetsutövaren planera och vidta de säkerhetsskyddsåtgärder som behövs med hänsyn till verksamhetens art och omfattning, förekomst av säkerhetsskyddsklassificerade uppgifter och övriga omständigheter. Verksamhetsutövaren ska även kontrollera säkerhetsskyddet i den egna verksamheten, anmäla och rapportera sådant som är av vikt för säkerhetsskyddet och i övrigt vidta de åtgärder som krävs enligt denna lag. Så långt det är möjligt ska säkerhetsskyddsåtgärderna utformas så att de inte medför någon skada eller annan olägenhet för andra allmänna eller enskilda intressen. Lag (2021:952). Säkerhetsskyddsåtgärder"
+    },
+    {
+      "provision_ref": "2:2",
+      "chapter": "2",
+      "section": "2",
+      "content": "Informationssäkerhet ska 1. förebygga att säkerhetsskyddsklassificerade uppgifter obehörigen röjs, ändras, görs otillgängliga eller förstörs, och 2. förebygga skadlig inverkan i övrigt på uppgifter och informationssystem som gäller säkerhetskänslig verksamhet."
+    },
+    {
+      "provision_ref": "2:3",
+      "chapter": "2",
+      "section": "3",
+      "content": "Fysisk säkerhet ska 1. förebygga att obehöriga får tillträde till områden, byggnader och andra anläggningar eller objekt där de kan få tillgång till säkerhetsskyddsklassificerade uppgifter eller där säkerhetskänslig verksamhet i övrigt bedrivs, och 2. förebygga skadlig inverkan på sådana områden, byggnader, anläggningar eller objekt som avses i 1."
+    },
+    {
+      "provision_ref": "2:4",
+      "chapter": "2",
+      "section": "4",
+      "content": "Personalsäkerhet ska 1. förebygga att personer som inte är pålitliga från säkerhetssynpunkt deltar i en verksamhet där de kan få tillgång till säkerhetsskyddsklassificerade uppgifter eller i en verksamhet som av någon annan anledning är säkerhetskänslig, och 2. säkerställa att de som deltar i säkerhetskänslig verksamhet har tillräcklig kunskap om säkerhetsskydd. Säkerhetsskyddsklassificering"
+    },
+    {
+      "provision_ref": "2:5",
+      "chapter": "2",
+      "section": "5",
+      "content": "Säkerhetsskyddsklassificerade uppgifter ska delas in i säkerhetsskyddsklasser utifrån den skada som ett röjande av uppgiften kan medföra för Sveriges säkerhet. Indelningen i säkerhetsskyddsklasser ska göras enligt följande: 1. kvalificerat hemlig vid en synnerligen allvarlig skada, 2. hemlig vid en allvarlig skada, 3. konfidentiell vid en inte obetydlig skada, eller 4. begränsat hemlig vid endast ringa skada. Säkerhetsskyddsklassificerade uppgifter som omfattas av ett internationellt åtagande om säkerhetsskydd ska på motsvarande sätt delas in i säkerhetsskyddsklass, om de inte redan har klassificerats av en annan stat eller en mellanfolklig organisation. Indelningen i säkerhetsskyddsklass ska i sådant fall göras utifrån den skada som ett röjande av uppgiften kan medföra för Sveriges förhållande till annan stat eller mellanfolklig organisation. Anmälningsplikt"
+    },
+    {
+      "provision_ref": "2:6",
+      "chapter": "2",
+      "section": "6",
+      "content": "En verksamhetsutövare ska utan dröjsmål anmäla att den bedriver säkerhetskänslig verksamhet till tillsynsmyndigheten. När den säkerhetskänsliga verksamheten har upphört ska verksamhetsutövaren utan dröjsmål anmäla detta till tillsynsmyndigheten. Lag (2021:952). Säkerhetsskyddschef"
+    },
+    {
+      "provision_ref": "2:7",
+      "chapter": "2",
+      "section": "7",
+      "content": "Vid verksamhet som omfattas av denna lag ska det finnas en säkerhetsskyddschef, om det inte är uppenbart obehövligt. Säkerhetsskyddschefen ska leda och samordna säkerhetsskyddsarbetet samt kontrollera att verksamheten bedrivs enligt lagen och de föreskrifter som har meddelats i anslutning till lagen. Detta ansvar kan inte delegeras. Säkerhetsskyddschefen ska vara direkt underställd chefen för verksamhetsutövarens verksamhet, om en sådan chef finns, och annars verksamhetsutövarens ledning. Lag (2021:952). Bemyndigande"
+    },
+    {
+      "provision_ref": "2:8",
+      "chapter": "2",
+      "section": "8",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela ytterligare föreskrifter om säkerhetsskyddsanalys samt anmälnings- och rapporteringsskyldighet enligt 1 §, säkerhetsskyddsåtgärder enligt 2-4 §§ och säkerhetsskyddsklassificering enligt 5 §. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:9",
+      "chapter": "2",
+      "section": "9",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:10",
+      "chapter": "2",
+      "section": "10",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:11",
+      "chapter": "2",
+      "section": "11",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:12",
+      "chapter": "2",
+      "section": "12",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:13",
+      "chapter": "2",
+      "section": "13",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:14",
+      "chapter": "2",
+      "section": "14",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:15",
+      "chapter": "2",
+      "section": "15",
+      "content": "Har betecknats 2 kap. 8 § genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "2:16",
+      "chapter": "2",
+      "section": "16",
+      "content": "Har upphävts genom lag (2021:952)."
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Vem som ska säkerhetsprövas",
+      "content": "Den som genom en anställning eller på något annat sätt ska delta i säkerhetskänslig verksamhet ska säkerhetsprövas. Säkerhetsprövning ska dock inte göras när det gäller 1. uppdrag som statsråd, ledamot av Europaparlamentet, riksdagen eller kommun- och regionfullmäktige, eller 2. annat uppdrag som offentlig försvarare eller ombud inför domstol än sådant som avser offentligt ombud enligt 27 kap. 27 § rättegångsbalken eller integritetsskyddsombud enligt 6 § lagen (2009:966) om Försvarsunderrättelsedomstol. Lag (2019:985). Säkerhetsprövningens syfte och innehåll"
+    },
+    {
+      "provision_ref": "3:2",
+      "chapter": "3",
+      "section": "2",
+      "content": "Säkerhetsprövningen syftar till att klarlägga om en person kan antas vara lojal mot de intressen som skyddas i denna lag och i övrigt pålitlig från säkerhetssynpunkt. Vid säkerhetsprövningen ska sådana omständigheter beaktas som kan antas innebära sårbarheter i säkerhetshänseende."
+    },
+    {
+      "provision_ref": "3:3",
+      "chapter": "3",
+      "section": "3",
+      "content": "Säkerhetsprövningen ska göras innan deltagandet i den säkerhetskänsliga verksamheten påbörjas och ska innefatta en grundutredning samt registerkontroll och särskild personutredning i den omfattning som anges i 13, 14 och 17 §§. Om det finns särskilda skäl får säkerhetsprövningen göras mindre omfattande. Säkerhetsprövningen ska följas upp under den tid som deltagandet i den säkerhetskänsliga verksamheten pågår."
+    },
+    {
+      "provision_ref": "3:3 a",
+      "chapter": "3",
+      "section": "3 a",
+      "content": "En totalförsvarspliktig som efter avslutad grundutbildning med värnplikt har krigsplacerats enligt 3 kap. 12 § lagen (1994:1809) om totalförsvarsplikt i en befattning placerad i säkerhetsklass i Försvarsmaktens verksamhet ska anses delta i säkerhetskänslig verksamhet under den tid som beslutet om krigsplacering kvarstår. Lag (2023:390). Ansvar för säkerhetsprövningen"
+    },
+    {
+      "provision_ref": "3:4",
+      "chapter": "3",
+      "section": "4",
+      "content": "Säkerhetsprövningen ska utgå från uppgifter som kommit fram när grundutredningen gjordes och den kännedom som i övrigt finns om den som ska prövas, uppgifter som har lämnats ut efter registerkontroll och särskild personutredning, arten av den verksamhet som prövningen gäller samt omständigheterna i övrigt. Bedömningen görs av den som beslutar om anställning eller annat deltagande i den säkerhetskänsliga verksamheten, om inte annat följer av tredje stycket, 4 a, 4 b, 4 c eller 4 d §. Om en myndighet har det bestämmande inflytandet över den prövades lämplighet att delta i säkerhetskänslig verksamhet hos en enskild verksamhetsutövare, är det i stället myndigheten som gör den slutliga bedömningen. Om det finns anledning till det, ska en tidigare gjord bedömning av en persons lämplighet att delta i den säkerhetskänsliga verksamheten omprövas. Lag (2023:390)."
+    },
+    {
+      "provision_ref": "3:4 a",
+      "chapter": "3",
+      "section": "4 a",
+      "content": "Bedömningen enligt 4 § görs av Domarnämnden när det gäller den som är chef för 1. en allmän domstol eller allmän förvaltningsdomstol, 2. Arbetsdomstolen, eller 3. hyres- och arrendenämnderna i Stockholm, Göteborg eller Malmö. För övriga ordinarie domare i allmänna domstolar, allmänna förvaltningsdomstolar och Arbetsdomstolen och hyresråd i hyres- och arrendenämnder görs bedömningen av respektive domstol eller nämnd. Lag (2021:76)."
+    },
+    {
+      "provision_ref": "3:4 b",
+      "chapter": "3",
+      "section": "4 b",
+      "content": "Den slutliga bedömningen enligt 4 § görs av Transportstyrelsen när det gäller den som ska genomgå säkerhetsprövning till följd av ett internationellt säkerhetsskyddsåtagande på området luftfartsskydd. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "3:4 c",
+      "chapter": "3",
+      "section": "4 c",
+      "content": "Den slutliga bedömningen enligt 4 § görs av Riksdagsförvaltningen när det gäller anställda vid sådana kanslier som avses i 3 kap. 6 § lagen (2016:1109) om stöd till partigrupperna för riksdagsledamöternas arbete i riksdagen som har placerats i säkerhetsklass för deltagande i riksdagens eller Riksdagsförvaltningens verksamhet. Lag (2022:443)."
+    },
+    {
+      "provision_ref": "3:4 d",
+      "chapter": "3",
+      "section": "4 d",
+      "content": "Bedömningen enligt 4 § görs av Försvarsmakten när det gäller totalförsvarspliktiga inför inskrivning för värnplikt och totalförsvarspliktiga som efter avslutad grundutbildning med värnplikt har krigsplacerats enligt 3 kap. 12 § lagen (1994:1809) om totalförsvarsplikt i en befattning placerad i säkerhetsklass i Försvarsmaktens verksamhet. Lag (2023:390). Placering i säkerhetsklass"
+    },
+    {
+      "provision_ref": "3:5",
+      "chapter": "3",
+      "section": "5",
+      "content": "En anställning eller något annat deltagande i säkerhetskänslig verksamhet ska placeras i säkerhetsklass i den utsträckning som följer av 6-10 §§."
+    },
+    {
+      "provision_ref": "3:6",
+      "chapter": "3",
+      "section": "6",
+      "content": "En anställning eller något annat deltagande i säkerhetskänslig verksamhet ska placeras i säkerhetsklass 1, om den anställde eller den som på annat sätt deltar i verksamheten 1. i en omfattning som inte är ringa får del av uppgifter i säkerhetsskyddsklassen kvalificerat hemlig, eller 2. till följd av sitt deltagande i verksamheten har möjlighet att orsaka synnerligen allvarlig skada för Sveriges säkerhet."
+    },
+    {
+      "provision_ref": "3:7",
+      "chapter": "3",
+      "section": "7",
+      "content": "En anställning eller något annat deltagande i säkerhetskänslig verksamhet ska placeras i säkerhetsklass 2, om den anställde eller den som på annat sätt deltar i verksamheten 1. i en omfattning som inte är ringa får del av uppgifter i säkerhetsskyddsklassen hemlig, 2. i ringa omfattning får del av uppgifter i säkerhetsskyddsklassen kvalificerat hemlig, eller 3. till följd av sitt deltagande i verksamheten har möjlighet att orsaka allvarlig skada för Sveriges säkerhet."
+    },
+    {
+      "provision_ref": "3:8",
+      "chapter": "3",
+      "section": "8",
+      "content": "En anställning eller något annat deltagande i säkerhetskänslig verksamhet ska placeras i säkerhetsklass 3, om den anställde eller den som på annat sätt deltar i verksamheten 1. får del av uppgifter i säkerhetsskyddsklassen konfidentiell, 2. i ringa omfattning får del av uppgifter i säkerhetsskyddsklassen hemlig, eller 3. till följd av sitt deltagande i verksamheten har möjlighet att orsaka en inte obetydlig skada för Sveriges säkerhet."
+    },
+    {
+      "provision_ref": "3:9",
+      "chapter": "3",
+      "section": "9",
+      "content": "En anställning eller något annat deltagande i säkerhetskänslig verksamhet ska också i andra fall än sådana som följer av 6-8 §§ placeras i en säkerhetsklass som motsvarar de krav på säkerhetsprövning som följer av ett internationellt åtagande om säkerhetsskydd."
+    },
+    {
+      "provision_ref": "3:10",
+      "chapter": "3",
+      "section": "10",
+      "content": "En anställning eller något annat deltagande får placeras i säkerhetsklass endast om behovet av säkerhetsskydd inte kan tillgodoses på något annat sätt."
+    },
+    {
+      "provision_ref": "3:11",
+      "chapter": "3",
+      "section": "11",
+      "content": "En anställning i staten, en kommun eller en region som är placerad i säkerhetsklass 1 eller 2 får endast innehas av den som är svensk medborgare. Om det finns särskilda skäl får regeringen i enskilda fall medge undantag från kravet på svenskt medborgarskap. Lag (2019:985). Beslut om placering i säkerhetsklass"
+    },
+    {
+      "provision_ref": "3:12",
+      "chapter": "3",
+      "section": "12",
+      "content": "Riksdagen och dess myndigheter beslutar om placering i säkerhetsklass när det gäller riksdagens förvaltningsområde. I övrigt beslutar regeringen om placering i säkerhetsklass. Regeringen får meddela föreskrifter om att myndigheter och andra får besluta om placering i säkerhetsklass. Sådan beslutanderätt får överlåtas till enskilda endast om det finns särskilda skäl. Registerkontroll"
+    },
+    {
+      "provision_ref": "3:13",
+      "chapter": "3",
+      "section": "13",
+      "content": "Med registerkontroll avses att uppgifter hämtas från ett register som omfattas av lagen (1998:620) om belastningsregister eller lagen (1998:621) om misstankeregister. Med registerkontroll avses också att uppgifter hämtas som behandlas med stöd av 1. lagen (2018:1693) om polisens behandling av personuppgifter inom brottsdatalagens område, eller 2. lagen (2019:1182) om Säkerhetspolisens behandling av personuppgifter. Lag (2019:1187)."
+    },
+    {
+      "provision_ref": "3:14",
+      "chapter": "3",
+      "section": "14",
+      "content": "Registerkontroll ska göras om anställningen eller deltagandet i verksamheten har placerats i säkerhetsklass. Uppgifter ska löpande hämtas under den tid deltagandet i den säkerhetskänsliga verksamheten pågår. För säkerhetsklass 1 eller 2 får uppgifter om den kontrollerade som finns i belastningsregistret eller misstankeregistret eller som behandlas med stöd av lagen (2018:1693) om polisens behandling av personuppgifter inom brottsdatalagens område eller lagen (2019:1182) om Säkerhetspolisens behandling av personuppgifter hämtas. Motsvarande uppgifter får även hämtas om den kontrollerades make eller sambo. För säkerhetsklass 3 får sådana uppgifter om den kontrollerade som finns i belastningsregistret eller misstankeregistret eller som behandlas hos Säkerhetspolisen med stöd av lagen om polisens behandling av personuppgifter inom brottsdatalagens område eller lagen om Säkerhetspolisens behandling av personuppgifter hämtas. Om det finns synnerliga skäl får även andra uppgifter än sådana som anges i andra och tredje styckena hämtas. Lag (2019:1187)."
+    },
+    {
+      "provision_ref": "3:15",
+      "chapter": "3",
+      "section": "15",
+      "content": "Om det finns särskilda skäl, får registerkontroll av någon som ska delta i säkerhetskänslig verksamhet göras utan föregående placering i säkerhetsklass. Vid en sådan kontroll får de uppgifter om den kontrollerade som anges i 14 § tredje stycket hämtas. Regeringen får meddela föreskrifter om sådan registerkontroll som avses i första stycket. Föreskrifterna får dock inte gälla för riksdagen och dess myndigheter."
+    },
+    {
+      "provision_ref": "3:16",
+      "chapter": "3",
+      "section": "16",
+      "content": "Bestämmelser om registerkontroll finns också i 5 kap. om internationell säkerhetsskyddssamverkan och säkerhetsintyg. Lag (2021:952). Särskild personutredning"
+    },
+    {
+      "provision_ref": "3:17",
+      "chapter": "3",
+      "section": "17",
+      "content": "En särskild personutredning ska göras vid en registerkontroll som avser sådan anställning eller annat deltagande i verksamhet som har placerats i säkerhetsklass 1 eller 2. Utredningen ska omfatta en undersökning av den kontrollerades ekonomiska förhållanden. I övrigt ska utredningen ha den omfattning som behövs. Krav på samtycke"
+    },
+    {
+      "provision_ref": "3:18",
+      "chapter": "3",
+      "section": "18",
+      "content": "Registerkontroll och särskild personutredning får göras endast om den som säkerhetsprövningen gäller har lämnat sitt samtycke. Samtycket ska anses gälla också kontroller och utredningar under den tid som deltagandet i den säkerhetskänsliga verksamheten pågår."
+    },
+    {
+      "provision_ref": "3:18 a",
+      "chapter": "3",
+      "section": "18 a",
+      "content": "Kravet på samtycke till registerkontroll i 18 § gäller inte en totalförsvarspliktig som skrivs in för värnplikt enligt lagen (1994:1809) om totalförsvarsplikt. Kravet gäller inte heller en totalförsvarspliktig som efter avslutad grundutbildning med värnplikt har krigsplacerats enligt den lagen. Undantaget från kravet på samtycke gäller under den tid som deltagandet i den säkerhetskänsliga verksamheten pågår. Undantaget gäller endast för sådan registerkontroll som ska göras för placering i säkerhetsklass 3. Lag (2023:390). Utlämnande av uppgifter för säkerhetsprövning"
+    },
+    {
+      "provision_ref": "3:19",
+      "chapter": "3",
+      "section": "19",
+      "content": "/Upphör att gälla U:2026-03-01/ En uppgift som har kommit fram vid en registerkontroll eller särskild personutredning får lämnas ut för säkerhetsprövning endast om uppgiften i det enskilda fallet kan antas ha betydelse för prövningen enligt 3 kap. 2 §. För att en uppgift som gäller den kontrollerades make eller sambo ska lämnas ut krävs därutöver att utlämnandet är absolut nödvändigt. Säkerhets- och integritetsskyddsnämnden beslutar om huruvida uppgifter som kommit fram vid en registerkontroll och särskild personutredning ska lämnas ut för säkerhetsprövning. 19 § /Träder i kraft I:2026-03-01/ En uppgift som har kommit fram vid en registerkontroll eller särskild personutredning får lämnas ut för säkerhetsprövning endast om uppgiften i det enskilda fallet kan antas ha betydelse för prövningen enligt 3 kap. 2 §. För att en uppgift som gäller den kontrollerades make eller sambo ska lämnas ut krävs därutöver att utlämnandet är absolut nödvändigt. Registerkontrolldelegationen vid Myndigheten för säkerhet och integritetsskydd beslutar om huruvida uppgifter som kommit fram vid en registerkontroll och särskild personutredning ska lämnas ut för säkerhetsprövning. Lag (2025:1472)."
+    },
+    {
+      "provision_ref": "3:20",
+      "chapter": "3",
+      "section": "20",
+      "content": "Innan en uppgift lämnas ut för säkerhetsprövning ska den som uppgiften gäller ges tillfälle att yttra sig över uppgiften. Detta gäller dock inte om uppgiften omfattas av sekretess i förhållande till den enskilde enligt någon annan bestämmelse i offentlighets- och sekretesslagen (2009:400) än"
+    },
+    {
+      "provision_ref": "3:21",
+      "chapter": "3",
+      "section": "21",
+      "title": "Även om uppgiften omfattas av sådan sekretess ska den som",
+      "content": "Sedan ett beslut har fattats med anledning av en säkerhetsprövning ska de handlingar som överlämnats snarast återställas till den överlämnande myndigheten, om inte den har beslutat något annat."
+    },
+    {
+      "provision_ref": "4:1",
+      "chapter": "4",
+      "section": "1",
+      "title": "Säkerhetsskyddsavtal",
+      "content": "En verksamhetsutövare som avser att genomföra en upphandling, ingå ett avtal eller inleda en samverkan eller ett samarbete med en annan aktör ska ingå ett säkerhetsskyddsavtal med aktören, om aktören genom förfarandet kan få tillgång till 1. säkerhetsskyddsklassificerade uppgifter i säkerhetsskyddsklassen konfidentiell eller högre, eller 2. annan säkerhetskänslig verksamhet av motsvarande betydelse för Sveriges säkerhet. Verksamhetsutövaren ska även ingå ett säkerhetsskyddsavtal med en underleverantör som anlitas för att fullgöra den andra aktörens förpliktelse, om underleverantören genom sitt uppdrag kan få en sådan tillgång till den säkerhetskänsliga verksamheten som anges i första stycket. Ett säkerhetsskyddsavtal ska ingås innan motparten kan få tillgång till den säkerhetskänsliga verksamheten. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:2",
+      "chapter": "4",
+      "section": "2",
+      "content": "Mellan statliga myndigheter gäller kravet på säkerhetsskyddsavtal enligt 1 § endast vid anskaffning av en vara, tjänst eller byggentreprenad. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:3",
+      "chapter": "4",
+      "section": "3",
+      "content": "Ett säkerhetsskyddsavtal ska innehålla de krav på motparten som behövs för att kraven på säkerhetsskydd enligt"
+    },
+    {
+      "provision_ref": "4:4",
+      "chapter": "4",
+      "section": "4",
+      "title": "Ett säkerhetsskyddsavtal ska även reglera hur",
+      "content": "Vid säkerhetsprövning enligt ett säkerhetsskyddsavtal tillämpas bestämmelserna i 3 kap. och föreskrifter som har meddelats i anslutning till de bestämmelserna. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:5",
+      "chapter": "4",
+      "section": "5",
+      "content": "Verksamhetsutövaren ska kontrollera att motparten följer säkerhetsskyddsavtalet och revidera avtalet om det krävs på grund av ändrade förhållanden. Om motparten inte följer säkerhetsskyddsavtalet, ska verksamhetsutövaren vidta de åtgärder som behövs för att tillgodose kraven på säkerhetsskydd. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:6",
+      "chapter": "4",
+      "section": "6",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela ytterligare föreskrifter om säkerhetsskyddsavtal enligt 1 och 3-5 §§. Regeringen får meddela föreskrifter om undantag från skyldigheten att ingå säkerhetsskyddsavtal. Om det finns särskilda skäl får regeringen också besluta om sådana undantag i enskilda fall. Lag (2021:952). Skyldigheter inför förfaranden som kräver säkerhetsskyddsavtal"
+    },
+    {
+      "provision_ref": "4:7",
+      "chapter": "4",
+      "section": "7",
+      "content": "En verksamhetsutövare som avser att genomföra ett förfarande som innebär ett krav på säkerhetsskyddsavtal enligt 1 § första stycket ska göra en särskild säkerhetsskyddsbedömning och lämplighetsprövning enligt 8 §. Verksamhetsutövaren ska också samråda enligt 9 §. Regeringen får meddela föreskrifter om undantag från första stycket. Om det finns särskilda skäl får regeringen också besluta om sådana undantag i enskilda fall. För överlåtelser av säkerhetskänslig verksamhet och viss egendom gäller i stället 13-20 §§. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:8",
+      "chapter": "4",
+      "section": "8",
+      "content": "Innan ett sådant förfarande som avses i 1 § första stycket inleds ska verksamhetsutövaren genom en särskild säkerhetsskyddsbedömning identifiera vilka säkerhetsskyddsklassificerade uppgifter eller vilken säkerhetskänslig verksamhet i övrigt som den andra aktören kan få tillgång till och som kräver säkerhetsskydd. Med utgångspunkt i den särskilda säkerhetsskyddsbedömningen och övriga omständigheter ska verksamhetsutövaren pröva om det planerade förfarandet är lämpligt från säkerhetsskyddssynpunkt. Den särskilda säkerhetsskyddsbedömningen och lämplighetsprövningen ska dokumenteras. Om lämplighetsprövningen leder till bedömningen att det planerade förfarandet är olämpligt från säkerhetsskyddssynpunkt, får det inte inledas. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:9",
+      "chapter": "4",
+      "section": "9",
+      "content": "Om lämplighetsprövningen enligt 8 § leder till bedömningen att det planerade förfarandet inte är olämpligt från säkerhetsskyddssynpunkt, ska verksamhetsutövaren innan den inleder förfarandet samråda med tillsynsmyndigheten, om det planerade förfarandet innebär att den andra aktören kan få tillgång till 1. säkerhetsskyddsklassificerade uppgifter i säkerhetsskyddsklassen hemlig eller högre, eller 2. annan säkerhetskänslig verksamhet av motsvarande betydelse för Sveriges säkerhet. Tillsynsmyndigheten får besluta att förelägga verksamhetsutövaren att vidta åtgärder enligt denna lag och föreskrifter som har meddelats i anslutning till lagen. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:10",
+      "chapter": "4",
+      "section": "10",
+      "content": "Om verksamhetsutövaren inte samråder med tillsynsmyndigheten trots att det finns en skyldighet att göra det, får tillsynsmyndigheten inleda samrådet. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:11",
+      "chapter": "4",
+      "section": "11",
+      "content": "Om ett beslut om föreläggande enligt 9 § inte följs eller om det planerade förfarandet är olämpligt från säkerhetsskyddssynpunkt även om ytterligare åtgärder vidtas, får tillsynsmyndigheten besluta att det planerade förfarandet inte får genomföras (förbud). Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:12",
+      "chapter": "4",
+      "section": "12",
+      "content": "Om ett pågående förfarande som omfattas av ett krav på säkerhetsskyddsavtal enligt 1 § är olämpligt från säkerhetsskyddssynpunkt, får tillsynsmyndigheten besluta om de förelägganden mot verksamhetsutövaren och den andra aktören i förfarandet som behövs för att förhindra skada för Sveriges säkerhet. Ett sådant beslut om föreläggande får förenas med vite. Lag (2021:952). Skyldigheter inför överlåtelse av säkerhetskänslig verksamhet och viss egendom"
+    },
+    {
+      "provision_ref": "4:13",
+      "chapter": "4",
+      "section": "13",
+      "content": "En verksamhetsutövare ska göra en särskild säkerhetsskyddsbedömning och lämplighetsprövning enligt 14 § och samråda enligt 15 §, om verksamhetsutövaren avser att överlåta 1. hela eller någon del av den säkerhetskänsliga verksamheten, eller 2. egendom som har betydelse för Sveriges säkerhet eller ett för Sverige förpliktande internationellt åtagande om säkerhetsskydd. Första stycket gäller inte för överlåtelser av fast egendom. Regeringen får meddela föreskrifter om ytterligare undantag från första stycket. Om det finns särskilda skäl får regeringen också besluta om sådana undantag i enskilda fall. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:14",
+      "chapter": "4",
+      "section": "14",
+      "content": "Innan ett förfarande för sådan överlåtelse som avses i 13 § inleds ska verksamhetsutövaren genom en särskild säkerhetsskyddsbedömning identifiera vilka säkerhetsskyddsklassificerade uppgifter eller vilken säkerhetskänslig verksamhet i övrigt som förvärvaren kan få tillgång till och som kräver säkerhetsskydd. Med utgångspunkt i den särskilda säkerhetsskyddsbedömningen och övriga omständigheter ska verksamhetsutövaren pröva om överlåtelsen är lämplig från säkerhetsskyddssynpunkt. Den särskilda säkerhetsskyddsbedömningen och lämplighetsprövningen ska dokumenteras. Om lämplighetsprövningen leder till bedömningen att överlåtelsen är olämplig från säkerhetsskyddssynpunkt, får överlåtelsen inte genomföras. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:15",
+      "chapter": "4",
+      "section": "15",
+      "content": "Om lämplighetsprövningen enligt 14 § leder till bedömningen att överlåtelsen inte är olämplig från säkerhetsskyddssynpunkt, ska verksamhetsutövaren samråda med tillsynsmyndigheten. Tillsynsmyndigheten får besluta att förelägga verksamhetsutövaren att vidta åtgärder för att fullgöra sina skyldigheter enligt denna lag och föreskrifter som har meddelats i anslutning till lagen. Skyldigheten att samråda och det som anges i andra stycket om verksamhetsutövaren gäller även den som avser att överlåta aktier eller andelar i säkerhetskänslig verksamhet, dock inte aktier i aktiebolag som är publika enligt aktiebolagslagen (2005:551). Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:16",
+      "chapter": "4",
+      "section": "16",
+      "content": "Om överlåtaren inte samråder med tillsynsmyndigheten trots att det finns en skyldighet att göra det, får tillsynsmyndigheten inleda samrådet. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:17",
+      "chapter": "4",
+      "section": "17",
+      "content": "Om ett beslut om föreläggande enligt 15 § inte följs eller om överlåtelsen är olämplig från säkerhetsskyddssynpunkt även om ytterligare åtgärder vidtas, får tillsynsmyndigheten besluta att överlåtelsen inte får genomföras (förbud). Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:18",
+      "chapter": "4",
+      "section": "18",
+      "content": "En överlåtelse i strid med ett förbud enligt 17 § är ogiltig. Om en överlåtelse har genomförts utan samråd enligt 15 eller 16 § och förutsättningarna för ett förbud enligt 17 § är uppfyllda, får tillsynsmyndigheten i efterhand besluta om ett sådant förbud. Överlåtelsen är då ogiltig. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:19",
+      "chapter": "4",
+      "section": "19",
+      "content": "Om en överlåtelse är ogiltig enligt 18 § får tillsynsmyndigheten besluta om de förelägganden mot överlåtaren och förvärvaren som behövs för att förhindra skada för Sveriges säkerhet. Ett sådant beslut om föreläggande får förenas med vite. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "4:20",
+      "chapter": "4",
+      "section": "20",
+      "content": "En verksamhetsutövare som avser att överlåta hela eller någon del av den säkerhetskänsliga verksamheten ska upplysa förvärvaren om att denna lag gäller för verksamheten. En sådan upplysning ska innehålla information om de skyldigheter som enligt 2 kap. 1 § gäller för en verksamhetsutövare. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "5:1",
+      "chapter": "5",
+      "section": "1",
+      "title": "Säkerhetsintyg",
+      "content": "Ett säkerhetsintyg får utfärdas för personer som har hemvist i Sverige och leverantörer med säte i Sverige när en annan stat eller en mellanfolklig organisation har ansökt om ett sådant intyg, om 1. behov av ett sådant intyg finns vid internationell samverkan om säkerhetskänslig verksamhet enligt denna lag, eller 2. intyget, utöver vad som följer av 1, kan underlätta för en person eller för en leverantör att delta i en verksamhet som en annan stat eller en mellanfolklig organisation bedömer vara i behov av säkerhetsskydd. Ett intyg enligt första stycket får utfärdas endast om deltagandet avser verksamhet i eller för en stat eller en mellanfolklig organisation som omfattas av ett internationellt åtagande om säkerhetsskydd. Om det finns särskilda skäl får regeringen besluta att ett intyg får utfärdas trots att det inte finns något internationellt åtagande om säkerhetsskydd. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "5:2",
+      "chapter": "5",
+      "section": "2",
+      "content": "Om det behövs för att ett säkerhetsintyg ska kunna utfärdas får det göras en säkerhetsprövning som innefattar registerkontroll enligt 3 kap. 13 §. Vid en sådan registerkontroll får också en särskild personutredning enligt"
+    },
+    {
+      "provision_ref": "5:3",
+      "chapter": "5",
+      "section": "3",
+      "content": "För ärenden om säkerhetsintyg gäller bestämmelserna om säkerhetsprövning i 3 kap. 2 §, 4 § första stycket, 13 §, 14 § andra-fjärde styckena och 17-21 §§. Lag (2021:952). Registerkontroll på ansökan av en annan stat eller en mellanfolklig organisation"
+    },
+    {
+      "provision_ref": "5:4",
+      "chapter": "5",
+      "section": "4",
+      "content": "Registerkontroll enligt 3 kap. 13 § får göras när en annan stat eller en mellanfolklig organisation har ansökt om ett sådant underlag, om 1. den person som ansökan gäller har eller har haft hemvist i Sverige, och 2. personen genom anställning eller på annat sätt ska delta i en verksamhet där det för deltagandet ställs krav som motsvarar bestämmelserna i denna lag om registerkontroll vid säkerhetsprövning. Vid registerkontroll enligt första stycket får också en särskild personutredning enligt 3 kap. 17 § göras. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "5:5",
+      "chapter": "5",
+      "section": "5",
+      "content": "Vid ärenden enligt 4 § gäller bestämmelserna om registerkontroll, särskild personutredning och samtycke i"
+    },
+    {
+      "provision_ref": "5:6",
+      "chapter": "5",
+      "section": "6",
+      "title": "Vem som beslutar om registerkontroll och utfärdar intyg",
+      "content": "Regeringen kan med stöd av 8 kap. 7 § regeringsformen meddela föreskrifter om vilken myndighet som beslutar om registerkontroll enligt 2 och 4 §§, utfärdar intyg enligt 1 § och lämnar underlag enligt 4 §. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "6:1",
+      "chapter": "6",
+      "section": "1",
+      "title": "Tillsynsmyndighetens uppdrag",
+      "content": "Den myndighet som regeringen bestämmer ska vara tillsynsmyndighet. Tillsynsmyndigheten ska utöva tillsyn över att verksamhetsutövare följer lagen och de föreskrifter som har meddelats i anslutning till lagen. I det syftet får tillsynsmyndigheten även utöva tillsyn hos de aktörer som verksamhetsutövare har ingått säkerhetsskyddsavtal med. Lag (2021:952). Tillsynsmyndighetens undersökningsbefogenheter"
+    },
+    {
+      "provision_ref": "6:2",
+      "chapter": "6",
+      "section": "2",
+      "content": "Den som står under tillsyn ska på begäran tillhandahålla tillsynsmyndigheten den information som behövs för tillsynen. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "6:3",
+      "chapter": "6",
+      "section": "3",
+      "content": "Tillsynsmyndigheten har i den omfattning som det behövs för tillsynen rätt att få tillträde till områden, lokaler och andra utrymmen, dock inte bostäder, som används i verksamhet som omfattas av tillsyn. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "6:4",
+      "chapter": "6",
+      "section": "4",
+      "content": "Tillsynsmyndigheten får besluta att förelägga den som står under tillsyn att tillhandahålla information och ge tillträde enligt 2 och 3 §§. Ett sådant beslut om föreläggande får förenas med vite. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "6:5",
+      "chapter": "6",
+      "section": "5",
+      "content": "Tillsynsmyndigheten får begära handräckning av Kronofogdemyndigheten för att genomföra de åtgärder som avses i 2 och 3 §§. Vid handräckning gäller bestämmelserna i utsökningsbalken om verkställighet av förpliktelser som inte avser betalningsskyldighet, avhysning eller avlägsnande. Lag (2021:952). Åtgärdsförelägganden"
+    },
+    {
+      "provision_ref": "6:6",
+      "chapter": "6",
+      "section": "6",
+      "content": "Tillsynsmyndigheten får besluta att förelägga en verksamhetsutövare att vidta åtgärder för att fullgöra sina skyldigheter enligt denna lag och föreskrifter som har meddelats i anslutning till lagen. Ett sådant beslut om föreläggande får förenas med vite. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Överträdelser som kan leda till sanktionsavgift",
+      "content": "Tillsynsmyndigheten får besluta att ta ut en sanktionsavgift av en verksamhetsutövare som 1. har åsidosatt sina skyldigheter enligt någon av a) 2 kap. 1 § första eller andra stycket, 5 §, 6 § första stycket eller 7 § eller föreskrifter som har meddelats i anslutning till de bestämmelserna, b) 3 kap. 1-4 eller 6-9 §§ eller 11 § första stycket eller föreskrifter som har meddelats i anslutning till de bestämmelserna, c) 4 kap. 1 eller 3 §, 9 § första stycket eller 15 § första stycket eller föreskrifter som har meddelats i anslutning till de bestämmelserna, 2. inte har kontrollerat säkerhetsskyddet i den egna verksamheten enligt 2 kap. 1 § tredje stycket eller föreskrifter som har meddelats i anslutning till den bestämmelsen, 3. inte har kontrollerat att motparten följer säkerhetsskyddsavtalet enligt 4 kap. 5 § första stycket eller föreskrifter som har meddelats i anslutning till den bestämmelsen, 4. har inlett ett förfarande i strid med ett förbud som har meddelats med stöd av 4 kap. 11 § eller har genomfört en överlåtelse i strid med ett förbud som har meddelats med stöd av 4 kap. 17 §, eller 5. har lämnat oriktiga uppgifter i samband med samråd enligt"
+    },
+    {
+      "provision_ref": "7:2",
+      "chapter": "7",
+      "section": "2",
+      "content": "Tillsynsmyndigheten får besluta att ta ut en sanktionsavgift av en aktie- eller andelsägare som 1. inte har samrått enligt 4 kap. 15 § eller föreskrifter som har meddelats i anslutning till den bestämmelsen, 2. har genomfört en överlåtelse i strid med ett förbud som har meddelats med stöd av 4 kap. 17 §, eller 3. har lämnat oriktiga uppgifter i samband med samråd enligt"
+    },
+    {
+      "provision_ref": "7:3",
+      "chapter": "7",
+      "section": "3",
+      "title": "När sanktionsavgift ska tas ut",
+      "content": "Vid bedömningen av om en sanktionsavgift ska tas ut ska särskild hänsyn tas till 1. den skada eller sårbarhet för Sveriges säkerhet som uppstått till följd av överträdelsen, 2. om överträdelsen har varit uppsåtlig eller berott på oaktsamhet, 3. vad verksamhetsutövaren eller aktie- eller andelsägaren har gjort för att överträdelsen ska upphöra och för att begränsa dess verkningar, och 4. om verksamhetsutövaren eller aktie- eller andelsägaren tidigare har begått en överträdelse. Lag (2021:952). Hur sanktionsavgiften ska bestämmas"
+    },
+    {
+      "provision_ref": "7:4",
+      "chapter": "7",
+      "section": "4",
+      "content": "En sanktionsavgift ska bestämmas till lägst 25 000 kronor och högst 50 000 000 kronor. Sanktionsavgiften för en statlig myndighet, kommun eller region ska dock bestämmas till högst 10 000 000 kronor. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "7:5",
+      "chapter": "7",
+      "section": "5",
+      "content": "När sanktionsavgiftens storlek bestäms ska särskild hänsyn tas till de omständigheter som anges i 3 § och till den vinst som den avgiftsskyldige gjort till följd av överträdelsen. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "7:6",
+      "chapter": "7",
+      "section": "6",
+      "content": "En sanktionsavgift får efterges helt eller delvis om överträdelsen är ringa eller ursäktlig eller om det annars med hänsyn till omständigheterna skulle vara oskäligt att ta ut avgiften. Lag (2021:952). Beslut om sanktionsavgift"
+    },
+    {
+      "provision_ref": "7:7",
+      "chapter": "7",
+      "section": "7",
+      "content": "En sanktionsavgift får inte beslutas om överträdelsen omfattas av ett föreläggande om vite och överträdelsen ligger till grund för en ansökan om utdömande av vitet. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "7:8",
+      "chapter": "7",
+      "section": "8",
+      "content": "En sanktionsavgift får endast beslutas om den som avgiften ska tas ut av har fått tillfälle att yttra sig inom två år från det att överträdelsen ägde rum. Ett beslut om sanktionsavgift ska delges. Lag (2021:952). Betalning av sanktionsavgift"
+    },
+    {
+      "provision_ref": "7:9",
+      "chapter": "7",
+      "section": "9",
+      "content": "En sanktionsavgift ska betalas till tillsynsmyndigheten inom 30 dagar från det att beslutet om att ta ut avgiften har fått laga kraft eller inom den längre tid som anges i beslutet. Om sanktionsavgiften inte betalas inom den tid som anges i första stycket, ska myndigheten lämna den obetalda avgiften för indrivning. Bestämmelser om indrivning finns i lagen (1993:891) om indrivning av statliga fordringar m.m. Vid indrivning får verkställighet ske enligt utsökningsbalken. En sanktionsavgift tillfaller staten. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "7:10",
+      "chapter": "7",
+      "section": "10",
+      "content": "En beslutad sanktionsavgift faller bort till den del beslutet om avgiften inte har verkställts inom fem år från det att beslutet fick laga kraft. Lag (2021:952)."
+    },
+    {
+      "provision_ref": "8:1",
+      "chapter": "8",
+      "section": "1",
+      "title": "Tystnadsplikt",
+      "content": "Den som med stöd av denna lag har fått del av uppgifter som förekommer i angelägenhet som avser säkerhetsprövning får inte obehörigen röja eller utnyttja dessa uppgifter. I det allmännas verksamhet tillämpas i stället bestämmelserna i offentlighets- och sekretesslagen (2009:400). Lag (2021:952)."
+    },
+    {
+      "provision_ref": "8:2",
+      "chapter": "8",
+      "section": "2",
+      "content": "Den som på grund av anställning eller på annat sätt deltar eller har deltagit i säkerhetskänslig verksamhet får inte obehörigen röja eller utnyttja säkerhetsskyddsklassificerade uppgifter. I det allmännas verksamhet tillämpas i stället bestämmelserna i offentlighets- och sekretesslagen (2009:400). Lag (2021:952). Sekretessbrytande bestämmelse"
+    },
+    {
+      "provision_ref": "8:3",
+      "chapter": "8",
+      "section": "3",
+      "content": "Sekretess hindrar inte att den myndighet som avses i"
+    },
+    {
+      "provision_ref": "8:4",
+      "chapter": "8",
+      "section": "4",
+      "title": "Överklagande",
+      "content": "Beslut om föreläggande enligt 4 kap. 9 och 15 §§ och"
+    }
+  ]
+}
