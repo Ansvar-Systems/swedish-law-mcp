@@ -178,7 +178,7 @@ if (prepDocId.includes('/')) {
 }
 ```
 
-## Zero-Hallucination Guarantee
+## Data Verification
 
 All preparatory works ingested are:
 1. **Scraped from lagen.nu** - a verified legal information source

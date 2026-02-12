@@ -1,12 +1,12 @@
 # Swedish Law MCP Server
 
-> Production-grade Swedish legal research with zero-hallucination guarantee
+> Production-grade Swedish legal research with verified data sources
 
 [![npm version](https://img.shields.io/npm/v/@ansvar/swedish-law-mcp)](https://www.npmjs.com/package/@ansvar/swedish-law-mcp)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-green)
 
-**Comprehensive Swedish legal database** with 4,827+ court decisions, 1,818 preparatory works, and 81 statutes — all with verified citations and zero hallucination.
+**Comprehensive Swedish legal database** with 4,827+ court decisions, 1,818 preparatory works, and 81 statutes — all verified against authoritative sources.
 
 ⚠️ **NOT LEGAL ADVICE** — Professional-grade research tool. See [DISCLAIMER.md](DISCLAIMER.md) and [PRIVACY.md](PRIVACY.md) before use.
 
@@ -14,11 +14,11 @@
 
 ## Overview
 
-This MCP (Model Context Protocol) server provides AI assistants with direct access to Swedish law through a comprehensive local database. Query statutes, court decisions, and legislative history with guaranteed accuracy — every citation is verified against authoritative sources.
+This MCP (Model Context Protocol) server provides AI assistants with direct access to Swedish law through a comprehensive local database. Query statutes, court decisions, and legislative history with data integrity checks — every citation is verified against authoritative sources.
 
-### 🎯 Zero-Hallucination Guarantee
+### 🎯 Verified Data Sources
 
-Unlike general AI models that may generate plausible-sounding but fake legal citations, this MCP **only returns verified data** from authoritative Swedish legal sources. Every statute, case, and proposition exists in the database — no AI-generated fiction.
+Unlike general AI models that may generate plausible-sounding but fake legal citations, this MCP **only returns data from verified Swedish legal sources**. Every statute, case, and proposition in the database has been validated against official government databases (Riksdagen, lagen.nu). While we implement rigorous verification processes, users should always validate critical citations against primary sources.
 
 ### 📊 Database Coverage
 
@@ -193,7 +193,7 @@ Retrieve linked propositions and SOUs for any statute.
 **Parameters:**
 - `sfs_number` (required) — Statute to look up
 
-### 5. `validate_citation` — Zero-Hallucination Check
+### 5. `validate_citation` — Citation Verification
 
 Validate any Swedish legal citation against the database.
 
@@ -256,7 +256,7 @@ Check if statute is in force, amended, or repealed.
 ### For Legal Tech
 - **Contract analysis:** Extract and validate legal references
 - **Compliance tools:** Check if regulations are current
-- **Legal Q&A:** Build zero-hallucination legal chatbots
+- **Legal Q&A:** Build legal chatbots with verified data sources
 - **Citation networks:** Map relationships between laws and cases
 
 ### For Researchers

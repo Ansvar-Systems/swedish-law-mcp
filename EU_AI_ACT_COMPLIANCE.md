@@ -135,7 +135,7 @@ Even though not legally required for general-purpose AI, this Tool implements:
 
 ### Accuracy and Robustness (Article 15 Principles)
 
-✅ **Zero-Hallucination Design**: Never generates fake citations (all data from verified database)
+✅ **Verified Data Sources**: Minimizes hallucination risk by returning only verified database entries (all data validated against official sources)
 ✅ **Source Verification**: All provisions and cases mapped to official sources
 ✅ **Error Boundaries**: Returns `null` or empty results rather than guessing
 ✅ **Metadata Transparency**: Every response includes data freshness and source authority

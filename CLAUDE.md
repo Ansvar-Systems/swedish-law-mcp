@@ -6,7 +6,7 @@
 
 This is an MCP server providing Swedish legal citation tools — searching statutes, case law, preparatory works, and validating citations. Built with TypeScript and SQLite FTS5 for full-text search.
 
-**Core constraint: Zero hallucination** — the server NEVER generates citations, only returns verified database entries.
+**Core principle: Verified data only** — the server NEVER generates citations, only returns data verified against authoritative Swedish legal sources (Riksdagen, lagen.nu). All database entries are validated during ingestion.
 
 **Data Sources:**
 - Riksdagen (Swedish Parliament) legal database
@@ -63,7 +63,7 @@ data/
 | `get_provision` | Retrieve specific provision by SFS + chapter/section |
 | `search_case_law` | FTS5 search on case law with court/date filters |
 | `get_preparatory_works` | Get linked propositions and SOUs for a statute |
-| `validate_citation` | Validate citation against database (zero-hallucination) |
+| `validate_citation` | Validate citation against database (verification check) |
 | `build_legal_stance` | Aggregate citations from statutes, case law, prep works |
 | `format_citation` | Format citations (full/short/pinpoint) |
 | `check_currency` | Check if statute is in force, amended, or repealed |

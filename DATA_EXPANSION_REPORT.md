@@ -290,7 +290,7 @@ All new data indexed in FTS5 tables for fast retrieval:
 
 ---
 
-## 🎓 Zero-Hallucination Guarantee Maintained
+## 🎓 Data Verification Maintained
 
 **Critical Constraint:** Server NEVER generates citations, only returns verified database entries
 

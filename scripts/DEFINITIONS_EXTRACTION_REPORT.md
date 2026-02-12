@@ -179,4 +179,4 @@ The definitions are now available through the Swedish Law MCP server and can be 
 - FTS5 full-text search
 - Future MCP tool: `search_definitions`
 
-This zero-hallucination approach ensures all definitions are verified against actual statute text.
+This verification approach ensures all definitions are extracted from actual statute text, not AI-generated.
