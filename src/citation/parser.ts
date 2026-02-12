@@ -14,8 +14,10 @@
 
 import type { ParsedCitation, DocumentType } from '../types/index.js';
 
-/** SFS statute pattern: SFS 2018:218 [3 kap.] [5 [a] §] */
+/** SFS statute pattern: SFS 2018:218 [3 kap.] [5 [a] §] or short form [3:5] */
 const SFS_PATTERN = /^(?:SFS\s+)?(\d{4}:\d+)\s*(?:(\d+)\s*kap\.\s*)?(?:(\d+\s*[a-z]?)\s*§)?/i;
+/** Short form statute pattern: 2018:218 3:5 */
+const SFS_SHORT_PATTERN = /^(?:SFS\s+)?(\d{4}:\d+)\s+(\d+):(\d+\s*[a-z]?)\s*$/i;
 
 /** Proposition pattern: Prop. 2017/18:105 */
 const PROP_PATTERN = /^Prop\.\s*(\d{4}\/\d{2}:\d+)/i;
@@ -91,7 +93,20 @@ export function parseCitation(citation: string): ParsedCitation {
     }
   }
 
-  // Try SFS statute (with or without "SFS" prefix)
+  // Try SFS statute short form first (2018:218 3:5)
+  const sfsShortMatch = trimmed.match(SFS_SHORT_PATTERN);
+  if (sfsShortMatch && sfsShortMatch[1]) {
+    return {
+      raw: citation,
+      type: 'statute',
+      document_id: sfsShortMatch[1],
+      chapter: sfsShortMatch[2],
+      section: sfsShortMatch[3].replace(/\s+/g, ' ').trim(),
+      valid: true,
+    };
+  }
+
+  // Try SFS statute long form (with or without "SFS" prefix)
   const sfsMatch = trimmed.match(SFS_PATTERN);
   if (sfsMatch && sfsMatch[1]) {
     const result: ParsedCitation = {

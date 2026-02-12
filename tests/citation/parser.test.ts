@@ -49,6 +49,23 @@ describe('parseCitation', () => {
       expect(result.chapter).toBe('1');
       expect(result.section).toBeUndefined();
     });
+
+    it('should parse SFS in short form with chapter:section', () => {
+      const result = parseCitation('2018:218 3:2');
+      expect(result.valid).toBe(true);
+      expect(result.type).toBe('statute');
+      expect(result.document_id).toBe('2018:218');
+      expect(result.chapter).toBe('3');
+      expect(result.section).toBe('2');
+    });
+
+    it('should parse SFS in short form with SFS prefix', () => {
+      const result = parseCitation('SFS 2018:218 3:5');
+      expect(result.valid).toBe(true);
+      expect(result.document_id).toBe('2018:218');
+      expect(result.chapter).toBe('3');
+      expect(result.section).toBe('5');
+    });
   });
 
   describe('propositions', () => {
