@@ -20,7 +20,9 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "ingest": "tsx scripts/ingest-riksdagen.ts",
+    "ingest:relevant": "tsx scripts/ingest-relevant-laws.ts",
     "check-updates": "tsx scripts/check-updates.ts",
+    "audit:seeds": "tsx scripts/audit-seeds.ts",
     "lint": "eslint src tests",
     "prepublishOnly": "npm run build",
     "postinstall": "test -d dist || npm run build || true"

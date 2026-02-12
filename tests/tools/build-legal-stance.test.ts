@@ -73,4 +73,18 @@ describe('build_legal_stance', () => {
     expect(result.preparatory_works).toEqual([]);
     expect(result.total_citations).toBe(0);
   });
+
+  it('should apply as_of_date to historical retrieval', async () => {
+    const result = await buildLegalStance(db, {
+      query: 'Datainspektionen',
+      document_id: '2018:218',
+      as_of_date: '2019-06-01',
+      include_case_law: false,
+      include_preparatory_works: false,
+    });
+
+    expect(result.as_of_date).toBe('2019-06-01');
+    expect(result.provisions.length).toBeGreaterThan(0);
+    expect(result.provisions[0].provision_ref).toBe('3:1');
+  });
 });

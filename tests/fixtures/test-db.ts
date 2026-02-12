@@ -52,6 +52,52 @@ CREATE TRIGGER provisions_ad AFTER DELETE ON legal_provisions BEGIN
   VALUES ('delete', old.id, old.content, old.title);
 END;
 
+CREATE TRIGGER provisions_au AFTER UPDATE ON legal_provisions BEGIN
+  INSERT INTO provisions_fts(provisions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+  INSERT INTO provisions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
+
+CREATE TABLE legal_provision_versions (
+  id INTEGER PRIMARY KEY,
+  document_id TEXT NOT NULL REFERENCES legal_documents(id),
+  provision_ref TEXT NOT NULL,
+  chapter TEXT,
+  section TEXT NOT NULL,
+  title TEXT,
+  content TEXT NOT NULL,
+  metadata TEXT,
+  valid_from TEXT,
+  valid_to TEXT
+);
+
+CREATE INDEX idx_provision_versions_doc_ref ON legal_provision_versions(document_id, provision_ref);
+
+CREATE VIRTUAL TABLE provision_versions_fts USING fts5(
+  content, title,
+  content='legal_provision_versions',
+  content_rowid='id',
+  tokenize='unicode61'
+);
+
+CREATE TRIGGER provision_versions_ai AFTER INSERT ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
+
+CREATE TRIGGER provision_versions_ad AFTER DELETE ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(provision_versions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+END;
+
+CREATE TRIGGER provision_versions_au AFTER UPDATE ON legal_provision_versions BEGIN
+  INSERT INTO provision_versions_fts(provision_versions_fts, rowid, content, title)
+  VALUES ('delete', old.id, old.content, old.title);
+  INSERT INTO provision_versions_fts(rowid, content, title)
+  VALUES (new.id, new.content, new.title);
+END;
+
 CREATE TABLE case_law (
   id INTEGER PRIMARY KEY,
   document_id TEXT NOT NULL UNIQUE REFERENCES legal_documents(id),
@@ -149,7 +195,7 @@ END;
 
 const SAMPLE_DOCUMENTS = [
   { id: '2018:218', type: 'statute', title: 'Lag med kompletterande bestämmelser till EU:s dataskyddsförordning', title_en: 'Act with supplementary provisions to the EU GDPR', short_name: 'DSL', status: 'in_force', issued_date: '2018-04-19', in_force_date: '2018-05-25', url: 'https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2018218-med-kompletterande-bestammelser_sfs-2018-218/', description: 'Kompletterande bestämmelser till GDPR' },
-  { id: '1998:204', type: 'statute', title: 'Personuppgiftslag', title_en: 'Personal Data Act', short_name: 'PUL', status: 'repealed', issued_date: '1998-04-29', in_force_date: '1998-10-24', url: null, description: 'Ersatt av dataskyddslagen och GDPR' },
+  { id: '1998:204', type: 'statute', title: 'Personuppgiftslag', title_en: 'Personal Data Act', short_name: 'PUL', status: 'repealed', issued_date: '1998-04-29', in_force_date: '1998-10-24', url: null, description: 'Upphävd 2018-05-25 genom SFS 2018:218' },
   { id: '2017/18:105', type: 'bill', title: 'Ny dataskyddslag', title_en: 'New Data Protection Act', short_name: null, status: 'in_force', issued_date: '2018-02-15', in_force_date: null, url: null, description: 'Proposition om kompletterande bestämmelser till GDPR' },
   { id: '2017:39', type: 'sou', title: 'Ny dataskyddslag - Kompletterande bestämmelser till EU:s dataskyddsförordning', title_en: null, short_name: null, status: 'in_force', issued_date: '2017-05-12', in_force_date: null, url: null, description: 'Utredning om kompletterande dataskyddsbestämmelser' },
   { id: 'NJA 2020', type: 'case_law', title: 'NJA 2020 s. 45', title_en: null, short_name: null, status: 'in_force', issued_date: '2020-03-15', in_force_date: null, url: null, description: 'Avgörande om personuppgiftsbehandling' },
@@ -168,6 +214,21 @@ const SAMPLE_PROVISIONS = [
   { document_id: '1998:204', provision_ref: '1', chapter: null, section: '1', title: 'Lagens syfte', content: 'Syftet med denna lag är att skydda människor mot att deras personliga integritet kränks genom behandling av personuppgifter.' },
   { document_id: '1998:204', provision_ref: '3', chapter: null, section: '3', title: 'Definitioner', content: 'I denna lag används följande beteckningar med den betydelse som här anges: personuppgifter - all slags information som direkt eller indirekt kan hänföras till en fysisk person som är i livet.' },
   { document_id: '1998:204', provision_ref: '5 a', chapter: null, section: '5 a', title: 'Missbruksregeln', content: 'Behandling av personuppgifter som inte ingår i eller är avsedda att ingå i en samling av personuppgifter som har strukturerats för att påtagligt underlätta sökning efter eller sammanställning av personuppgifter är tillåten om behandlingen inte innebär en kränkning av den registrerades personliga integritet.' },
+];
+
+const SAMPLE_PROVISION_VERSIONS = [
+  { document_id: '2018:218', provision_ref: '1:1', chapter: '1', section: '1', title: 'Lagens syfte', content: 'Denna lag kompletterar Europaparlamentets och rådets förordning (EU) 2016/679 av den 27 april 2016 om skydd för fysiska personer med avseende på behandling av personuppgifter och om det fria flödet av sådana uppgifter och om upphävande av direktiv 95/46/EG (allmän dataskyddsförordning).', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '1:2', chapter: '1', section: '2', title: 'Lagens tillämpningsområde', content: 'Denna lag gäller vid behandling av personuppgifter som helt eller delvis företas på automatisk väg och vid annan behandling av personuppgifter som ingår i eller kommer att ingå i ett register.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '1:3', chapter: '1', section: '3', title: null, content: 'Lagen gäller inte för behandling av personuppgifter som en fysisk person utför som ett led i verksamhet av rent privat natur.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '2:1', chapter: '2', section: '1', title: 'Rättslig grund för behandling av personuppgifter', content: 'Personuppgifter får behandlas med stöd av artikel 6.1 e i EU:s dataskyddsförordning, om behandlingen är nödvändig för att utföra en uppgift av allmänt intresse.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '2:2', chapter: '2', section: '2', title: 'Behandling som rör ett viktigt allmänt intresse', content: 'Personuppgifter som avses i artikel 9.1 i EU:s dataskyddsförordning (känsliga personuppgifter) får behandlas av en myndighet med stöd av artikel 9.2 g i förordningen under förutsättning att behandlingen är nödvändig med hänsyn till ett viktigt allmänt intresse.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '3:1', chapter: '3', section: '1', title: 'Tillsynsmyndighet', content: 'Datainspektionen är tillsynsmyndighet enligt EU:s dataskyddsförordning.', valid_from: '2018-05-25', valid_to: '2021-01-01' },
+  { document_id: '2018:218', provision_ref: '3:1', chapter: '3', section: '1', title: 'Tillsynsmyndighet', content: 'Integritetsskyddsmyndigheten är tillsynsmyndighet enligt EU:s dataskyddsförordning.', valid_from: '2021-01-01', valid_to: null },
+  { document_id: '2018:218', provision_ref: '3:2', chapter: '3', section: '2', title: 'Sanktionsavgifter', content: 'Integritetsskyddsmyndigheten får besluta om administrativa sanktionsavgifter enligt artiklarna 83 och 84 i EU:s dataskyddsförordning.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '2018:218', provision_ref: '4:1', chapter: '4', section: '1', title: 'Skadestånd', content: 'Den personuppgiftsansvarige eller personuppgiftsbiträdet ska ersätta den registrerade för den skada och kränkning av den personliga integriteten som en behandling i strid med denna lag har orsakat.', valid_from: '2018-05-25', valid_to: null },
+  { document_id: '1998:204', provision_ref: '1', chapter: null, section: '1', title: 'Lagens syfte', content: 'Syftet med denna lag är att skydda människor mot att deras personliga integritet kränks genom behandling av personuppgifter.', valid_from: '1998-10-24', valid_to: '2018-05-25' },
+  { document_id: '1998:204', provision_ref: '3', chapter: null, section: '3', title: 'Definitioner', content: 'I denna lag används följande beteckningar med den betydelse som här anges: personuppgifter - all slags information som direkt eller indirekt kan hänföras till en fysisk person som är i livet.', valid_from: '1998-10-24', valid_to: '2018-05-25' },
+  { document_id: '1998:204', provision_ref: '5 a', chapter: null, section: '5 a', title: 'Missbruksregeln', content: 'Behandling av personuppgifter som inte ingår i eller är avsedda att ingå i en samling av personuppgifter som har strukturerats för att påtagligt underlätta sökning efter eller sammanställning av personuppgifter är tillåten om behandlingen inte innebär en kränkning av den registrerades personliga integritet.', valid_from: '1998-10-24', valid_to: '2018-05-25' },
 ];
 
 const SAMPLE_CASE_LAW = [
@@ -217,6 +278,24 @@ function insertSampleData(db: Database.Database): void {
     insertProv.run(prov.document_id, prov.provision_ref, prov.chapter, prov.section, prov.title, prov.content);
   }
 
+  const insertProvVersion = db.prepare(`
+    INSERT INTO legal_provision_versions (
+      document_id, provision_ref, chapter, section, title, content, valid_from, valid_to
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  for (const version of SAMPLE_PROVISION_VERSIONS) {
+    insertProvVersion.run(
+      version.document_id,
+      version.provision_ref,
+      version.chapter,
+      version.section,
+      version.title,
+      version.content,
+      version.valid_from,
+      version.valid_to
+    );
+  }
+
   const insertCL = db.prepare(`INSERT INTO case_law (document_id, court, case_number, decision_date, summary, keywords) VALUES (?, ?, ?, ?, ?, ?)`);
   for (const cl of SAMPLE_CASE_LAW) {
     insertCL.run(cl.document_id, cl.court, cl.case_number, cl.decision_date, cl.summary, cl.keywords);
@@ -241,6 +320,7 @@ function insertSampleData(db: Database.Database): void {
 export const sampleData = {
   documents: SAMPLE_DOCUMENTS,
   provisions: SAMPLE_PROVISIONS,
+  provisionVersions: SAMPLE_PROVISION_VERSIONS,
   caseLaw: SAMPLE_CASE_LAW,
   preparatoryWorks: SAMPLE_PREPARATORY_WORKS,
   definitions: SAMPLE_DEFINITIONS,

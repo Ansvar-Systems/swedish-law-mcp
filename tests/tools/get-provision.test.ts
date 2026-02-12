@@ -88,4 +88,27 @@ describe('get_provision', () => {
       getProvision(db, { document_id: '' })
     ).rejects.toThrow('document_id is required');
   });
+
+  it('should return historical text when as_of_date is provided', async () => {
+    const result = await getProvision(db, {
+      document_id: '2018:218',
+      provision_ref: '3:1',
+      as_of_date: '2019-06-01',
+    });
+
+    expect(result).not.toBeNull();
+    const prov = result as Exclude<typeof result, null | Array<unknown>>;
+    expect(prov.content).toContain('Datainspektionen');
+    expect(prov.valid_to).toBe('2021-01-01');
+  });
+
+  it('should return null when provision is outside historical validity window', async () => {
+    const result = await getProvision(db, {
+      document_id: '1998:204',
+      provision_ref: '1',
+      as_of_date: '2020-01-01',
+    });
+
+    expect(result).toBeNull();
+  });
 });

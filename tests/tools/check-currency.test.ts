@@ -64,4 +64,26 @@ describe('check_currency', () => {
       checkCurrency(db, { document_id: '' })
     ).rejects.toThrow('document_id is required');
   });
+
+  it('should compute historical status for as_of_date', async () => {
+    const result = await checkCurrency(db, {
+      document_id: '1998:204',
+      as_of_date: '2007-01-01',
+    });
+
+    expect(result).not.toBeNull();
+    expect(result!.status_as_of).toBe('in_force');
+    expect(result!.is_in_force_as_of).toBe(true);
+  });
+
+  it('should compute historical repeal for as_of_date after repeal date', async () => {
+    const result = await checkCurrency(db, {
+      document_id: '1998:204',
+      as_of_date: '2020-01-01',
+    });
+
+    expect(result).not.toBeNull();
+    expect(result!.status_as_of).toBe('repealed');
+    expect(result!.is_in_force_as_of).toBe(false);
+  });
 });

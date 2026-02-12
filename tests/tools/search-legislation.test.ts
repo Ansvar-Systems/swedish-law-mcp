@@ -64,4 +64,23 @@ describe('search_legislation', () => {
     });
     expect(results.length).toBeLessThanOrEqual(50);
   });
+
+  it('should return historical provision versions for as_of_date', async () => {
+    const results = await searchLegislation(db, {
+      query: 'Datainspektionen',
+      as_of_date: '2019-06-01',
+      document_id: '2018:218',
+    });
+    expect(results.length).toBeGreaterThan(0);
+    expect(results[0].provision_ref).toBe('3:1');
+  });
+
+  it('should reject invalid as_of_date', async () => {
+    await expect(
+      searchLegislation(db, {
+        query: 'personuppgifter',
+        as_of_date: '2019/06/01',
+      })
+    ).rejects.toThrow('as_of_date must be an ISO date');
+  });
 });

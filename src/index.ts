@@ -93,6 +93,10 @@ Returns matched provisions with snippets, relevance scores, and document metadat
           enum: ['in_force', 'amended', 'repealed'],
           description: 'Filter by document status',
         },
+        as_of_date: {
+          type: 'string',
+          description: 'Optional historical date filter (YYYY-MM-DD). Returns versions valid on that date.',
+        },
         limit: {
           type: 'number',
           description: 'Maximum results (default: 10, max: 50)',
@@ -130,6 +134,10 @@ Omit chapter/section/provision_ref to get all provisions in the statute.`,
         provision_ref: {
           type: 'string',
           description: 'Direct provision reference (e.g., "3:5" for Kap 3 § 5)',
+        },
+        as_of_date: {
+          type: 'string',
+          description: 'Optional historical date (YYYY-MM-DD). Returns the provision text valid on that date.',
         },
       },
       required: ['document_id'],
@@ -231,6 +239,10 @@ Searches across statutes, case law, and preparatory works simultaneously to aggr
           type: 'boolean',
           description: 'Include preparatory works results (default: true)',
         },
+        as_of_date: {
+          type: 'string',
+          description: 'Optional historical date (YYYY-MM-DD) for time-aware retrieval.',
+        },
         limit: {
           type: 'number',
           description: 'Max results per category (default: 5, max: 20)',
@@ -265,9 +277,9 @@ Formats:
   },
   {
     name: 'check_currency',
-    description: `Check if a Swedish statute or provision is currently in force.
+    description: `Check if a Swedish statute or provision is in force (current or historical).
 
-Returns the document's status (in_force, amended, repealed, not_yet_in_force), dates, and any warnings.`,
+Returns the document's status (in_force, amended, repealed, not_yet_in_force), dates, and warnings. Provide as_of_date for historical evaluation.`,
     inputSchema: {
       type: 'object',
       properties: {
@@ -278,6 +290,10 @@ Returns the document's status (in_force, amended, repealed, not_yet_in_force), d
         provision_ref: {
           type: 'string',
           description: 'Optional provision reference to check (e.g., "3:5")',
+        },
+        as_of_date: {
+          type: 'string',
+          description: 'Optional historical date (YYYY-MM-DD). Computes in-force status as of that date.',
         },
       },
       required: ['document_id'],
