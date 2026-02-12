@@ -171,6 +171,64 @@ Sample data includes: DSL (2018:218), PUL (1998:204), 2 court decisions, 2 prepa
 4. **Brottsbalken (1962:700)** - Criminal code
 5. **Personuppgiftslagen (1998:204)** - Personal data (historical, repealed)
 
+## Case Law Data
+
+The MCP server includes Swedish court decisions (rättsfall) from lagen.nu, providing comprehensive case law coverage across multiple courts.
+
+**Data Source:**
+- **Provider:** [lagen.nu](https://lagen.nu)
+- **License:** Creative Commons Attribution (CC-BY Domstolsverket)
+- **Attribution:** All case law results include attribution metadata
+- **Coverage:** 10,000+ cases from 1993-present (varies by court)
+
+**Courts Covered:**
+- **HFD** (Högsta förvaltningsdomstolen) - Supreme Administrative Court
+- **HD** (Högsta domstolen) - Supreme Court
+- **AD** (Arbetsdomstolen) - Labour Court
+- **MÖD** (Mark- och miljööverdomstolen) - Land and Environment Court of Appeal
+- **MIG** (Migrationsöverdomstolen) - Migration Court of Appeal
+- **RH** (Riksdagens ombudsmän) - Parliamentary Ombudsmen
+- **NJA** (Nytt Juridiskt Arkiv) - Supreme Court Reports
+
+**Data Freshness:**
+- **Update Frequency:** Weekly scheduled sync
+- **Transparency:** Case law statistics available via MCP resource `case-law-stats://swedish-law-mcp/metadata`
+- **Last Sync Check:** Use `check_currency` tool to see `case_law_stats` field
+- **Search Results:** All results include `_metadata` field with source attribution
+
+**Ingestion Commands:**
+```bash
+# Initial ingestion (fetch all cases)
+npm run sync:cases
+
+# Incremental sync (fetch only new cases since last sync)
+npm run sync:cases
+
+# Full refresh (re-fetch all cases)
+npm run sync:cases -- --full
+
+# Dry run (preview changes without writing to database)
+npm run sync:cases -- --dry-run
+
+# JSON output for automation
+npm run sync:cases -- --json
+```
+
+**Data Quality:**
+- Zero-hallucination constraint applies to case law
+- All case IDs, dates, and references verified from RDF metadata
+- Automatic cross-referencing to cited statutes
+- FTS5 full-text search on case summaries and keywords
+
+**MCP Resource:**
+The server exposes a `case-law-stats` resource providing:
+- Last sync timestamp
+- Latest decision date in database
+- Total case count
+- Cases breakdown by court
+- Source attribution and license information
+- Update frequency and coverage details
+
 ## Ingestion from Riksdagen
 
 API endpoints:
@@ -184,3 +242,4 @@ Rate limit: 0.5s between requests.
 - [Riksdagen Open Data](https://data.riksdagen.se/)
 - [Svensk Forfattningssamling](https://svenskforfattningssamling.se/)
 - [Lagrummet](https://lagrummet.se/) - Legal information system
+- [Lagen.nu](https://lagen.nu) - Case law and legal information (CC-BY Domstolsverket)

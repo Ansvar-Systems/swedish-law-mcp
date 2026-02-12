@@ -86,4 +86,12 @@ describe('check_currency', () => {
     expect(result!.status_as_of).toBe('repealed');
     expect(result!.is_in_force_as_of).toBe(false);
   });
+
+  it('should not include case_law_stats if sync metadata table does not exist', async () => {
+    const result = await checkCurrency(db, { document_id: '2018:218' });
+
+    expect(result).not.toBeNull();
+    // Test database doesn't have case_law_sync_metadata table, so stats should be undefined
+    expect(result!.case_law_stats).toBeUndefined();
+  });
 });

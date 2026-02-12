@@ -12,7 +12,9 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
   CallToolRequestSchema,
+  ListResourcesRequestSchema,
   ListToolsRequestSchema,
+  ReadResourceRequestSchema,
   Tool,
 } from '@modelcontextprotocol/sdk/types.js';
 import Database from 'better-sqlite3';
@@ -307,12 +309,147 @@ Returns the document's status (in_force, amended, repealed, not_yet_in_force), d
 
 const server = new Server(
   { name: SERVER_NAME, version: SERVER_VERSION },
-  { capabilities: { tools: {} } }
+  { capabilities: { tools: {}, resources: {} } }
 );
 
 server.setRequestHandler(ListToolsRequestSchema, async () => {
   console.error(`[${SERVER_NAME}] ListTools request received`);
   return { tools: TOOLS };
+});
+
+server.setRequestHandler(ListResourcesRequestSchema, async () => {
+  console.error(`[${SERVER_NAME}] ListResources request received`);
+  return {
+    resources: [
+      {
+        uri: 'case-law-stats://swedish-law-mcp/metadata',
+        name: 'Case Law Statistics',
+        description: 'Metadata about case law data freshness and coverage',
+        mimeType: 'application/json',
+      },
+    ],
+  };
+});
+
+server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
+  const { uri } = request.params;
+  console.error(`[${SERVER_NAME}] ReadResource: ${uri}`);
+
+  if (uri === 'case-law-stats://swedish-law-mcp/metadata') {
+    try {
+      const db = getDb();
+
+      // Check if sync metadata table exists
+      const tableExists = db.prepare(`
+        SELECT name FROM sqlite_master
+        WHERE type='table' AND name='case_law_sync_metadata'
+      `).get();
+
+      if (!tableExists) {
+        return {
+          contents: [
+            {
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(
+                {
+                  status: 'no_data',
+                  message: 'No case law data has been synced yet. Run npm run sync:cases to fetch case law from lagen.nu.',
+                  last_sync_date: null,
+                  last_decision_date: null,
+                  total_cases: 0,
+                  cases_by_court: {},
+                  source: {
+                    name: 'lagen.nu',
+                    url: 'https://lagen.nu',
+                    license: 'Creative Commons Attribution',
+                    attribution: 'Case law from lagen.nu, licensed CC-BY Domstolsverket',
+                  },
+                  update_frequency: 'weekly',
+                  coverage: '1993-present (varies by court)',
+                },
+                null,
+                2
+              ),
+            },
+          ],
+        };
+      }
+
+      // Get sync metadata
+      const syncMeta = db.prepare(`
+        SELECT last_sync_date, last_decision_date, cases_count, source
+        FROM case_law_sync_metadata
+        WHERE id = 1
+      `).get() as
+        | { last_sync_date: string; last_decision_date: string | null; cases_count: number; source: string }
+        | undefined;
+
+      // Get total case count
+      const totalRow = db.prepare('SELECT COUNT(*) as count FROM case_law').get() as { count: number };
+      const totalCases = totalRow.count;
+
+      // Get cases by court
+      const courtCounts = db.prepare(`
+        SELECT court, COUNT(*) as count
+        FROM case_law
+        GROUP BY court
+        ORDER BY count DESC
+      `).all() as { court: string; count: number }[];
+
+      const casesByCourt: Record<string, number> = {};
+      for (const row of courtCounts) {
+        casesByCourt[row.court] = row.count;
+      }
+
+      const stats = {
+        last_sync_date: syncMeta?.last_sync_date || new Date().toISOString(),
+        last_decision_date: syncMeta?.last_decision_date || null,
+        total_cases: totalCases,
+        cases_by_court: casesByCourt,
+        source: {
+          name: syncMeta?.source || 'lagen.nu',
+          url: 'https://lagen.nu',
+          license: 'Creative Commons Attribution',
+          attribution: 'Case law from lagen.nu, licensed CC-BY Domstolsverket',
+        },
+        update_frequency: 'weekly',
+        coverage: '1993-present (varies by court)',
+      };
+
+      return {
+        contents: [
+          {
+            uri,
+            mimeType: 'application/json',
+            text: JSON.stringify(stats, null, 2),
+          },
+        ],
+      };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[${SERVER_NAME}] ReadResource failed: ${message}`);
+      return {
+        contents: [
+          {
+            uri,
+            mimeType: 'application/json',
+            text: JSON.stringify({ error: `Failed to read case law stats: ${message}` }, null, 2),
+          },
+        ],
+      };
+    }
+  }
+
+  return {
+    contents: [
+      {
+        uri,
+        mimeType: 'text/plain',
+        text: `Error: Unknown resource URI "${uri}"`,
+      },
+    ],
+  };
 });
 
 server.setRequestHandler(CallToolRequestSchema, async (request) => {

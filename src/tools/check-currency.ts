@@ -11,6 +11,14 @@ export interface CheckCurrencyInput {
   as_of_date?: string;
 }
 
+export interface CaseLawStats {
+  last_updated: string;
+  total_cases: number;
+  source: string;
+  source_url: string;
+  attribution: string;
+}
+
 export interface CurrencyResult {
   document_id: string;
   title: string;
@@ -25,6 +33,7 @@ export interface CurrencyResult {
   is_in_force_as_of?: boolean;
   provision_exists?: boolean;
   warnings: string[];
+  case_law_stats?: CaseLawStats;
 }
 
 interface DocumentRow {
@@ -104,6 +113,28 @@ export async function checkCurrency(
     }
   }
 
+  // Get case law statistics if the sync metadata table exists
+  let caseLawStats: CaseLawStats | undefined;
+  try {
+    const syncMeta = db.prepare(`
+      SELECT last_sync_date, cases_count, source
+      FROM case_law_sync_metadata
+      WHERE id = 1
+    `).get() as { last_sync_date: string; cases_count: number; source: string } | undefined;
+
+    if (syncMeta) {
+      caseLawStats = {
+        last_updated: syncMeta.last_sync_date,
+        total_cases: syncMeta.cases_count || 0,
+        source: syncMeta.source || 'lagen.nu',
+        source_url: 'https://lagen.nu',
+        attribution: 'Case law data from lagen.nu, licensed CC-BY Domstolsverket',
+      };
+    }
+  } catch (error) {
+    // Table doesn't exist or query failed - silently skip
+  }
+
   return {
     document_id: doc.id,
     title: doc.title,
@@ -118,5 +149,6 @@ export async function checkCurrency(
     is_in_force_as_of: isInForceAsOf,
     provision_exists: provisionExists,
     warnings,
+    case_law_stats: caseLawStats,
   };
 }

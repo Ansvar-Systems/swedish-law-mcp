@@ -56,4 +56,17 @@ describe('search_case_law', () => {
     });
     expect(results.length).toBeLessThanOrEqual(1);
   });
+
+  it('should include attribution metadata in all results', async () => {
+    const results = await searchCaseLaw(db, { query: 'personuppgifter' });
+    expect(results.length).toBeGreaterThan(0);
+
+    for (const result of results) {
+      expect(result).toHaveProperty('_metadata');
+      expect(result._metadata).toHaveProperty('source');
+      expect(result._metadata).toHaveProperty('attribution');
+      expect(result._metadata.source).toBe('lagen.nu');
+      expect(result._metadata.attribution).toContain('CC-BY Domstolsverket');
+    }
+  });
 });

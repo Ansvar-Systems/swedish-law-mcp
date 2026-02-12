@@ -1,0 +1,63 @@
+[2026-02-12T11:39:45.796Z] Lagen.nu Case Law Ingestion
+[2026-02-12T11:39:45.798Z]   Database: /Users/jeffreyvonrotz/Projects/swedish-law-mcp/data/database.db
+[2026-02-12T11:39:45.798Z]   Limit: 50
+[2026-02-12T11:39:45.798Z] 
+[2026-02-12T11:39:45.801Z] Fetching case list from HTML feed...
+[2026-02-12T11:39:46.228Z]   Found 187 case IDs in feed
+[2026-02-12T11:39:46.228Z] Processing 50 cases...
+[2026-02-12T11:39:46.228Z] 
+[2026-02-12T11:40:14.537Z] ERROR: Failed to insert/update case AD 2023 nr 53
+  Error: FOREIGN KEY constraint failed
+  Stack: SqliteError: FOREIGN KEY constraint failed
+    at insertOrUpdateCase (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:452:20)
+    at <anonymous> (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:542:26)
+    at <anonymous> (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:551:15)
+    at sqliteTransaction (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/node_modules/better-sqlite3/lib/methods/transaction.js:65:24)
+    at ingestCaseLaw (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:554:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-02-12T11:40:14.540Z] ERROR: Failed to process AD 2023 nr 28
+  Error: FOREIGN KEY constraint failed
+  Stack: SqliteError: FOREIGN KEY constraint failed
+    at insertOrUpdateCase (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:452:20)
+    at <anonymous> (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:542:26)
+    at <anonymous> (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:551:15)
+    at sqliteTransaction (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/node_modules/better-sqlite3/lib/methods/transaction.js:65:24)
+    at ingestCaseLaw (/Users/jeffreyvonrotz/Projects/swedish-law-mcp/scripts/ingest-lagennu-cases.ts:554:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-02-12T11:40:14.541Z] 
+[2026-02-12T11:40:14.541Z] Optimizing database...
+[2026-02-12T11:40:14.658Z] 
+[2026-02-12T11:40:14.658Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:40:14.658Z] Ingestion Complete
+[2026-02-12T11:40:14.658Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:40:14.658Z]   Total fetched:  50
+[2026-02-12T11:40:14.658Z]   Inserted:       4
+[2026-02-12T11:40:14.658Z]   Updated:        0
+[2026-02-12T11:40:14.658Z]   Failed:         1
+[2026-02-12T11:40:14.658Z]   Skipped:        0
+[2026-02-12T11:40:14.658Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:40:14.658Z]   Log file: /Users/jeffreyvonrotz/Projects/swedish-law-mcp/logs/ingest-lagennu.log
+[2026-02-12T11:40:14.658Z] 
+[2026-02-12T11:40:42.279Z] Lagen.nu Case Law Ingestion
+[2026-02-12T11:40:42.280Z]   Database: /Users/jeffreyvonrotz/Projects/swedish-law-mcp/data/database.db
+[2026-02-12T11:40:42.280Z]   Limit: 50
+[2026-02-12T11:40:42.280Z] 
+[2026-02-12T11:40:42.284Z] Fetching case list from HTML feed...
+[2026-02-12T11:40:42.752Z]   Found 187 case IDs in feed
+[2026-02-12T11:40:42.752Z] Processing 50 cases...
+[2026-02-12T11:40:42.753Z] 
+[2026-02-12T11:41:11.813Z]   [50/50] Processed AD 2023 nr 28 (inserted: 50, updated: 0, failed: 0)
+[2026-02-12T11:41:11.814Z] 
+[2026-02-12T11:41:11.814Z] Optimizing database...
+[2026-02-12T11:41:11.918Z] 
+[2026-02-12T11:41:11.918Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:41:11.918Z] Ingestion Complete
+[2026-02-12T11:41:11.918Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:41:11.918Z]   Total fetched:  50
+[2026-02-12T11:41:11.918Z]   Inserted:       50
+[2026-02-12T11:41:11.918Z]   Updated:        0
+[2026-02-12T11:41:11.918Z]   Failed:         0
+[2026-02-12T11:41:11.918Z]   Skipped:        0
+[2026-02-12T11:41:11.918Z] ═══════════════════════════════════════════════════════════════
+[2026-02-12T11:41:11.918Z]   Log file: /Users/jeffreyvonrotz/Projects/swedish-law-mcp/logs/ingest-lagennu.log
+[2026-02-12T11:41:11.918Z] 
