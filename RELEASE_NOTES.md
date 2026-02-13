@@ -67,7 +67,7 @@ This release elevates the MCP server from pilot/research status to a **productio
 **Impact:**
 - Comprehensive förarbeten research
 - Legislative intent analysis for all statutes
-- Zero-hallucination guarantee maintained
+- Verified-data-only approach maintained
 
 **Delivery:** Agent 2 - Riksdagen API validation and ingestion
 
@@ -187,7 +187,7 @@ CREATE TABLE eu_reference_keywords (
 **Schema Changes:**
 - No breaking changes to existing tables
 - All new tables with proper foreign key constraints
-- Maintains zero-hallucination guarantee
+- Maintains verified-data-only approach
 
 ---
 
@@ -420,7 +420,7 @@ Result: Prop. 2017/18:105 with explanation (from 3,625 documents)
 
 ## Data Quality Guarantee
 
-### Zero-Hallucination Commitment
+### Verified-Data-Only Commitment
 
 ✅ **Maintained in v1.1.0**
 

@@ -34,10 +34,6 @@ export interface ProvisionAmendment {
   amendments: AmendmentReference[];
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Patterns
-// ─────────────────────────────────────────────────────────────────────────────
-
 /** Standard amendment suffix: "Lag (YYYY:NNN)." at end of provision */
 const SUFFIX_PATTERN = /Lag\s*\((\d{4}:\d+)\)\.\s*$/u;
 
@@ -55,10 +51,6 @@ const FORCE_PATTERN = /[Tt]räder\s+i\s+kraft/u;
 
 /** Generic SFS reference: fallback for any "YYYY:NNN" pattern */
 const SFS_PATTERN = /(\d{4}:\d+)/gu;
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Extraction
-// ─────────────────────────────────────────────────────────────────────────────
 
 /**
  * Extract amendment references from provision text.
@@ -157,10 +149,6 @@ export function parseStatuteAmendments(
   return results;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Metadata extraction
-// ─────────────────────────────────────────────────────────────────────────────
-
 export interface StatuteMetadataAmendments {
   /** SFS number of statute that repealed this one, if any */
   repealed_by_sfs?: string;
@@ -221,10 +209,6 @@ export function extractMetadataAmendments(
   return result;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Amending statute parsing
-// ─────────────────────────────────────────────────────────────────────────────
-
 export interface AmendmentSection {
   /** Section number in amending statute, e.g., "1 §", "2 §" */
   section_ref: string;
@@ -256,10 +240,8 @@ export interface AmendmentSection {
  *   1 kap. 3 § ska ha följande lydelse:
  *   [new text]
  *
- * This function is a PROTOTYPE - full implementation would require:
- * - Advanced Swedish legal NLP
- * - Understanding of "ska ha följande lydelse" constructions
- * - Handling of complex amendment structures
+ * Note: Full implementation requires advanced Swedish legal NLP and
+ * understanding of "ska ha följande lydelse" constructions.
  */
 export function parseAmendingStatute(text: string): AmendmentSection[] {
   const sections: AmendmentSection[] = [];
@@ -289,10 +271,6 @@ export function parseAmendingStatute(text: string): AmendmentSection[] {
 
   return sections;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Utility
-// ─────────────────────────────────────────────────────────────────────────────
 
 /**
  * Validate that an SFS number has correct format.

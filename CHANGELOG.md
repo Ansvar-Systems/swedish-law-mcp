@@ -71,7 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Extraction method:** Automated pattern recognition with manual validation
 - **Coverage:** All 83 statutes in database scanned for EU references
 - **Validation:** CELEX number format verification
-- **Zero-hallucination guarantee:** Only verified references from statute text
+- **Verified-data-only:** Only verified references from statute text
 
 ### Future Enhancements (Planned)
 - EUR-Lex metadata fetching (official EU titles, adoption dates)
@@ -116,7 +116,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Production-ready status** with verified data sources
 
 ### Data Quality
-- **Zero hallucination guarantee:** All data verified against authoritative sources
+- **Verified data only:** All data verified against authoritative sources
 - **100% ingestion success rate:** 0 failures, 0 hallucinated entries
 - **Database size:** 37 MB (efficient SQLite with FTS5 indexes)
 - **Search performance:** <100ms for most queries

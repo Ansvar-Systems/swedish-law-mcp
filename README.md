@@ -29,7 +29,7 @@ Unlike general AI models that may generate plausible-sounding but fake legal cit
 | **Preparatory Works** | 3,625 documents | Propositions (Prop.) and SOUs |
 | **EU Cross-References** | 668 references | 228 EU directives and regulations |
 | **Legal Definitions** | 615 terms | Extracted from statute text |
-| **Database Size** | 64.8 MB | Optimized SQLite with FTS5 |
+| **Database Size** | ~70 MB | Optimized SQLite with FTS5 |
 
 ### 🇪🇺 EU Law Integration
 
@@ -103,13 +103,13 @@ npm run build
 # Use absolute path to your local installation
 ```
 
-Claude Desktop config for local setup:
+Claude Desktop config for local setup (adjust `node` path for your platform):
 
 ```json
 {
   "mcpServers": {
     "swedish-law": {
-      "command": "/opt/homebrew/bin/node",
+      "command": "node",
       "args": [
         "/absolute/path/to/swedish-law-mcp/dist/index.js"
       ]
@@ -218,7 +218,7 @@ EU cross-references are extracted directly from Swedish statute text using patte
 - **Extraction:** Automated parser with 95%+ accuracy
 - **Validation:** Cross-referenced with EUR-Lex CELEX numbers
 - **Coverage:** All 83 statutes in database scanned for EU references
-- **Zero-hallucination guarantee:** Only verified references included
+- **Verified-data-only approach:** Only references extracted from statute text are included
 
 See [EU_INTEGRATION_GUIDE.md](docs/EU_INTEGRATION_GUIDE.md) for detailed documentation and [EU_USAGE_EXAMPLES.md](docs/EU_USAGE_EXAMPLES.md) for practical examples.
 
@@ -439,14 +439,48 @@ All content is sourced from authoritative Swedish legal databases:
 
 ### Data Freshness
 
-- **Statutes:** 717 laws ingested from Riksdagen, updated as needed
-- **EU References:** 668 cross-references extracted from statute text, validated with EUR-Lex
-- **Prep Works:** 3,625 documents validated against Riksdagen API during ingestion
-- **Case Law:** Limited coverage, supplementary research tool
+A [daily GitHub Actions workflow](.github/workflows/check-updates.yml) monitors all data sources and creates issues when updates are available.
+
+#### Automated Detection (daily)
+
+| Source | Check | Method |
+|--------|-------|--------|
+| **Statute amendments** | Riksdagen API date comparison | All 717 statutes checked against API |
+| **New statutes** | Riksdagen SFS publications (90-day window) | Diffed against database |
+| **Case law** | lagen.nu feed entry count | Compared to `case_law` table |
+| **Preparatory works** | Riksdagen proposition API (30-day window) | New props detected |
+| **EU reference staleness** | Git commit timestamps on EU scripts/data | Flagged if >90 days old |
+
+#### Manual Review (surfaced as issue checkboxes)
+
+These items cannot be auto-detected and are included as checklist items in the data freshness issue:
+
+- **EU reference re-extraction** after statute amendments
+- **Cross-reference integrity** verification after updates
+- **Repealed statute check** for status changes
+- **New EU legislation** from EUR-Lex affecting Swedish law
+
+#### Auto-Update
+
+The workflow supports a manual `auto_update: true` dispatch that syncs case law, re-extracts definitions, rebuilds the database, bumps the version, and tags for npm publishing.
 
 ### Attribution
 
 Case law data is provided by [lagen.nu](https://lagen.nu) under Creative Commons Attribution (CC-BY Domstolsverket). All case law results include source attribution metadata.
+
+---
+
+## Security
+
+This project uses multiple layers of automated security scanning. See [SECURITY.md](SECURITY.md) for the full policy.
+
+- **Gitleaks** — Secret detection on every push
+- **CodeQL** — Static analysis for security vulnerabilities (weekly + PRs)
+- **Semgrep** — SAST scanning (OWASP top 10, secrets, TypeScript)
+- **Trivy** — CVE scanning on filesystem and npm dependencies (daily)
+- **Socket.dev** — Supply chain attack detection on PRs
+- **OSSF Scorecard** — OpenSSF best practices scoring
+- **Dependabot** — Automated weekly dependency updates
 
 ---
 
@@ -520,7 +554,7 @@ definitions_fts      -- Full-text search on definitions
 ## Performance
 
 - **Search Speed:** <100ms for most FTS5 queries
-- **Database Size:** 64.8 MB (efficient, portable)
+- **Database Size:** ~70 MB (efficient, portable)
 - **Coverage:** 717 statutes with 31,198 provisions, 668 EU cross-references
 - **Reliability:** 100% ingestion success rate (0 failures, 0 hallucinated entries)
 
@@ -601,5 +635,5 @@ Part of the [Ansvar MCP Ecosystem](https://github.com/Ansvar-Systems):
 
 <p align="center">
   <sub>Built with care in Stockholm 🇸🇪</sub><br>
-  <sub>Production-ready Swedish legal research • Zero-hallucination guarantee • 717 verified statutes • EU law integration</sub>
+  <sub>Production-ready Swedish legal research • Verified data only • 717 verified statutes • EU law integration</sub>
 </p>

@@ -69,7 +69,7 @@
 - ✅ **Legislative intent research** — Understand government's reasoning behind laws
 - ✅ **Historical context** — Access to original policy discussions
 - ✅ **Multi-source aggregation** — Combine with statutes and case law
-- ✅ **Zero hallucination** — Every proposition verified to exist in Riksdagen
+- ✅ **Verified data only** — Every proposition verified to exist in Riksdagen
 
 ### Preparatory Works Limitations
 
@@ -110,7 +110,7 @@
 - ✅ **Source-tracked** — Each definition linked to specific provision
 - ✅ **Full-text search** — FTS5 on term and definition text
 - ✅ **Contextual** — Includes surrounding legal text
-- ✅ **Zero hallucination** — Extracted directly from statute text
+- ✅ **Verified data only** — Extracted directly from statute text
 
 ### Definition Limitations
 
@@ -211,7 +211,7 @@
 - ✅ **Implementation metadata** — Primary vs supplementary implementation tracking
 - ✅ **CELEX numbers** — Official EU document identifiers for all 228 documents
 - ✅ **Community designation** — Tracks EU, EG, EEG for historical directives
-- ✅ **Zero hallucination** — All references extracted from verified statute text
+- ✅ **Verified data only** — All references extracted from verified statute text
 - ✅ **EUR-Lex integration** — Automatic metadata fetching from EUR-Lex API for missing EU documents
 - ✅ **97.95% coverage** — 668/682 references imported (14 duplicates skipped by design)
 
@@ -329,9 +329,9 @@ All data sourced from authoritative Swedish legal databases:
 | **EU cross-refs** | 668 (metadata) | ✅ Full text | ✅ Full text | ✅ Full text | ✅ Full text |
 | **Free/Open** | ✅ | Limited | ❌ | ❌ | ❌ |
 | **MCP/AI access** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Zero hallucination** | ✅ | N/A | N/A | N/A | N/A |
+| **Verified data only** | ✅ | N/A | N/A | N/A | N/A |
 
-**Key Advantage:** Zero-hallucination AI-powered search on verified data, completely free and open-source.
+**Key Advantage:** Verified-data AI-powered search, completely free and open-source.
 
 ---
 
