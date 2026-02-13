@@ -1,22 +1,24 @@
 # ═══════════════════════════════════════════════════════════════════════════
-# NPM PUBLISH WORKFLOW
+# NPM & MCP REGISTRY PUBLISH WORKFLOW
 # ═══════════════════════════════════════════════════════════════════════════
 #
-# Automatically publishes to npm when a version tag is pushed.
+# Automatically publishes to npm and MCP Registry when a version tag is pushed.
 #
 # To trigger:
 #   1. Update version in package.json
-#   2. Commit: git commit -am "Release v0.2.0"
-#   3. Tag: git tag v0.2.0
+#   2. Commit: git commit -am "Release v1.2.0"
+#   3. Tag: git tag v1.2.0
 #   4. Push: git push origin main --tags
 #
 # Requirements:
 #   - NPM_TOKEN secret configured in repository settings
+#   - AZURE_CREDENTIALS secret with Key Vault Secrets User role for kv-ansvar-dev
+#   - Azure Key Vault 'kv-ansvar-dev' must contain secret 'mcp-publisher-private-key'
 #   - Repository has id-token: write permission for provenance
 #
 # ═══════════════════════════════════════════════════════════════════════════
 
-name: Publish to npm
+name: Publish to npm & MCP Registry
 
 on:
   push:
@@ -55,7 +57,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   # PUBLISH JOB
   # ─────────────────────────────────────────────────────────────────────────
-  # Publish to npm with provenance
+  # Publish to npm and MCP Registry with provenance
   # ─────────────────────────────────────────────────────────────────────────
 
   publish:
@@ -77,6 +79,20 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
 
+      - name: Get version from tag
+        id: version
+        env:
+          GIT_REF: ${{ github.ref }}
+        run: |
+          VERSION=${GIT_REF#refs/tags/v}
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update server.json version
+        env:
+          PKG_VERSION: ${{ steps.version.outputs.VERSION }}
+        run: |
+          sed -i "s/\"version\": \"[^\"]*\"/\"version\": \"$PKG_VERSION\"/g" server.json
+
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
@@ -84,10 +100,7 @@ jobs:
         run: npm run build
 
       # ─────────────────────────────────────────────────────────────────────
-      # PUBLISH
-      # ─────────────────────────────────────────────────────────────────────
-      # --access public: Publish as public package
-      # --provenance: Include build provenance (requires id-token permission)
+      # NPM PUBLISH
       # ─────────────────────────────────────────────────────────────────────
 
       - name: Publish to npm
@@ -95,35 +108,55 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-  # ─────────────────────────────────────────────────────────────────────────
-  # DOCKER JOB (OPTIONAL)
-  # ─────────────────────────────────────────────────────────────────────────
-  # Uncomment to also publish to Docker Hub
-  # Requires DOCKER_USERNAME and DOCKER_TOKEN secrets
-  # ─────────────────────────────────────────────────────────────────────────
+      # ─────────────────────────────────────────────────────────────────────
+      # MCP REGISTRY PUBLISH
+      # ─────────────────────────────────────────────────────────────────────
 
-  # docker:
-  #   needs: test
-  #   runs-on: ubuntu-latest
-  #
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4
-  #
-  #     - name: Get version from tag
-  #       id: version
-  #       run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
-  #
-  #     - name: Login to Docker Hub
-  #       uses: docker/login-action@v3
-  #       with:
-  #         username: ${{ secrets.DOCKER_USERNAME }}
-  #         password: ${{ secrets.DOCKER_TOKEN }}
-  #
-  #     - name: Build and push
-  #       uses: docker/build-push-action@v5
-  #       with:
-  #         push: true
-  #         tags: |
-  #           ansvar/your-mcp-server:latest
-  #           ansvar/your-mcp-server:${{ steps.version.outputs.VERSION }}
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Get MCP Publisher Private Key from Key Vault
+        id: mcp-key
+        run: |
+          PRIVATE_KEY=$(az keyvault secret show \
+            --vault-name kv-ansvar-dev \
+            --name mcp-publisher-private-key \
+            --query value -o tsv)
+          echo "::add-mask::$PRIVATE_KEY"
+          echo "PRIVATE_KEY=$PRIVATE_KEY" >> $GITHUB_OUTPUT
+
+      - name: Install MCP Publisher
+        run: |
+          curl -L -o mcp-publisher.tar.gz \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.4.0/mcp-publisher_linux_amd64.tar.gz
+          tar -xzf mcp-publisher.tar.gz
+          chmod +x mcp-publisher
+          sudo mv mcp-publisher /usr/local/bin/
+          mcp-publisher --version
+
+      - name: Authenticate with MCP Registry
+        env:
+          PRIVATE_KEY: ${{ steps.mcp-key.outputs.PRIVATE_KEY }}
+        run: |
+          mcp-publisher login dns -domain ansvar.eu -private-key "$PRIVATE_KEY"
+
+      - name: Publish to MCP Registry
+        run: mcp-publisher publish
+
+      # ─────────────────────────────────────────────────────────────────────
+      # DEPLOYMENT SUMMARY
+      # ─────────────────────────────────────────────────────────────────────
+
+      - name: Deployment Summary
+        env:
+          PKG_VERSION: ${{ steps.version.outputs.VERSION }}
+        run: |
+          echo "## Publication Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** \`$PKG_VERSION\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Published To:" >> $GITHUB_STEP_SUMMARY
+          echo "- npm: https://www.npmjs.com/package/@ansvar/swedish-law-mcp/v/$PKG_VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "- MCP Registry: https://registry.modelcontextprotocol.io" >> $GITHUB_STEP_SUMMARY
