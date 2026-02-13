@@ -104,9 +104,18 @@ jobs:
       # ─────────────────────────────────────────────────────────────────────
 
       - name: Publish to npm
-        run: npm publish --access public --provenance
+        id: npm-publish
+        run: npm publish --access public --provenance 2>&1 || echo "NPM_PUBLISH_FAILED=true" >> $GITHUB_OUTPUT
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Check npm publish result
+        env:
+          NPM_FAILED: ${{ steps.npm-publish.outputs.NPM_PUBLISH_FAILED }}
+        run: |
+          if [ "$NPM_FAILED" = "true" ]; then
+            echo "::warning::npm publish failed (version may already exist). Continuing to MCP Registry..."
+          fi
 
       # ─────────────────────────────────────────────────────────────────────
       # MCP REGISTRY PUBLISH
