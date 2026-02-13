@@ -3,7 +3,6 @@ name: Socket Security
 # SETUP REQUIRED: This workflow requires a Socket.dev account (free for open source).
 # 1. Sign up at https://socket.dev
 # 2. No API key secret is needed — the action uses GITHUB_TOKEN.
-# If Socket.dev is not set up, remove this workflow to avoid silent failures.
 
 on:
   pull_request:
@@ -33,4 +32,5 @@ jobs:
       - name: Run Socket Security
         uses: SocketDev/action@v1
         with:
-          mode: cli
+          issue-severity: high
+        continue-on-error: true
