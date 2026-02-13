@@ -21,8 +21,13 @@ This project uses multiple layers of automated security scanning:
 ### Code Analysis
 - **CodeQL**: Static analysis for security vulnerabilities (weekly + on PRs)
 - **Semgrep**: SAST scanning for OWASP top 10, secrets, and TypeScript-specific issues
-- **Trivy**: Filesystem and dependency vulnerability scanning
+- **Trivy**: Filesystem, dependency, and container image vulnerability scanning
 - **Gitleaks**: Secret detection across git history
+
+### Container Security
+- **Docker Security Scan**: Daily container image scanning via Trivy
+- **SBOM Generation**: CycloneDX and SPDX format (365-day retention)
+- **OSSF Scorecard**: OpenSSF best practices scoring
 
 ### What We Scan For
 - Known CVEs in dependencies
@@ -71,7 +76,7 @@ The legal database (`data/database.db`) is:
 ## Third-Party Dependencies
 
 We minimize dependencies and regularly audit:
-- Core runtime: Node.js, TypeScript, better-sqlite3
+- Core runtime: Node.js, TypeScript, @ansvar/mcp-sqlite
 - MCP SDK: Official Anthropic package
 - No unnecessary dependencies
 

@@ -50,9 +50,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install production dependencies only
-# Then rebuild better-sqlite3 for Alpine Linux
-RUN npm ci --omit=dev && \
-    npm rebuild better-sqlite3
+RUN npm ci --omit=dev
 
 # Copy compiled JavaScript from builder stage
 COPY --from=builder /app/dist ./dist
@@ -78,8 +76,7 @@ USER nodejs
 ENV NODE_ENV=production
 
 # Database path (matches the COPY destination above)
-# Customize this env var name for your server
-ENV YOUR_MCP_DB_PATH=/app/data/database.db
+ENV SWEDISH_LAW_DB_PATH=/app/data/database.db
 
 # ───────────────────────────────────────────────────────────────────────────
 # ENTRY POINT

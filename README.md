@@ -1,75 +1,48 @@
 # Swedish Law MCP Server
 
-> Production-grade Swedish legal research with verified data sources
+**The Riksdagen alternative for the AI age.**
 
-[![npm version](https://img.shields.io/npm/v/@ansvar/swedish-law-mcp)](https://www.npmjs.com/package/@ansvar/swedish-law-mcp)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-green)
+[![npm version](https://badge.fury.io/js/@ansvar%2Fswedish-law-mcp.svg)](https://www.npmjs.com/package/@ansvar/swedish-law-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub stars](https://img.shields.io/github/stars/Ansvar-Systems/swedish-law-mcp?style=social)](https://github.com/Ansvar-Systems/swedish-law-mcp)
+[![CI](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/ci.yml)
+[![Daily Data Check](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/check-updates.yml/badge.svg)](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/check-updates.yml)
+[![Database](https://img.shields.io/badge/database-pre--built-green)](docs/EU_INTEGRATION_GUIDE.md)
+[![Provisions](https://img.shields.io/badge/provisions-31%2C198-blue)](docs/EU_INTEGRATION_GUIDE.md)
 
-**Comprehensive Swedish legal database** with 717 statutes (31,198 provisions), 3,625 preparatory works, and EU law cross-references linking Swedish → EU law — all verified against authoritative sources.
+Query **717 Swedish statutes** -- from Dataskyddslagen and Brottsbalken to Aktiebolagslagen, Miljöbalken, and more -- directly from Claude, Cursor, or any MCP-compatible client.
 
-⚠️ **NOT LEGAL ADVICE** — Professional-grade research tool. See [DISCLAIMER.md](DISCLAIMER.md) and [PRIVACY.md](PRIVACY.md) before use.
+If you're building legal tech, compliance tools, or doing Swedish legal research, this is your verified reference database.
 
----
-
-## Overview
-
-This MCP (Model Context Protocol) server provides AI assistants with direct access to Swedish law through a comprehensive local database. Query statutes, court decisions, and legislative history with data integrity checks — every citation is verified against authoritative sources.
-
-### 🎯 Verified Data Sources
-
-Unlike general AI models that may generate plausible-sounding but fake legal citations, this MCP **only returns data from verified Swedish legal sources**. Every statute, case, and proposition in the database has been validated against official government databases (Riksdagen, lagen.nu). While we implement rigorous verification processes, users should always validate critical citations against primary sources.
-
-### 📊 Database Coverage
-
-| Category | Count | Coverage |
-|----------|-------|----------|
-| **Statutes** | 717 laws | Comprehensive Swedish legislation |
-| **Provisions** | 31,198 sections | Full-text searchable |
-| **Preparatory Works** | 3,625 documents | Propositions (Prop.) and SOUs |
-| **EU Cross-References** | 668 references | 228 EU directives and regulations |
-| **Legal Definitions** | 615 terms | Extracted from statute text |
-| **Database Size** | ~70 MB | Optimized SQLite with FTS5 |
-
-### 🇪🇺 EU Law Integration
-
-- **668 cross-references** linking 49 Swedish statutes (68% of database) to EU law
-- **228 EU documents** (89 directives, 139 regulations) from EUR-Lex
-- **Bi-directional lookup**: Find EU basis for Swedish law AND Swedish implementations of EU law
-- **5 specialized tools**: `get_eu_basis`, `get_swedish_implementations`, and more
-- **Provision-level granularity**: Many references linked to specific statute sections
-
-### ⚠️ Professional Use Notices
-
-**Before using this tool professionally, you MUST read:**
-
-- **[DISCLAIMER.md](DISCLAIMER.md)** — Legal disclaimers, professional liability, data limitations
-- **[PRIVACY.md](PRIVACY.md)** — Client confidentiality, Advokatsamfundet compliance, on-premise deployment
-
-**Key Limitations:**
-- ❌ **Not legal advice** — Research tool only, not a substitute for professional legal counsel
-- ✅ **Production-grade data** — Verified against official sources (Riksdagen, lagen.nu)
-- ⚠️ **Verify critical citations** — While data is verified, always check official sources for court filings
-- 🔒 **Client confidentiality** — Queries through Claude API; use on-premise for privileged matters
-- 📅 **Coverage gaps** — Court cases limited, no full EU law text (only metadata), no CJEU case law
-
-### What's Included
-
-| Source | Description | Coverage |
-|--------|-------------|----------|
-| **Swedish Statutes** | Family, civil, criminal, tax, administrative, labor law | 717 laws, 31,198 provisions |
-| **Preparatory Works** | Legislative history (förarbeten) | 3,625 Prop./SOUs |
-| **EU Cross-References** | Swedish-EU law links with EUR-Lex metadata | 668 references, 228 EU docs |
-| **Legal Definitions** | Terminology extracted from statutes | 615 defined terms |
-| **Case Law** | Multi-court precedents (limited coverage) | Supplementary research tool |
+Built by [Ansvar Systems](https://ansvar.eu) -- Stockholm, Sweden
 
 ---
 
-## Installation
+## Why This Exists
 
-### Option 1: Published Package (Recommended for Users)
+Swedish legal research is scattered across Riksdagen, SFS publications, lagen.nu, and EUR-Lex. Whether you're:
+- A **lawyer** validating citations in a brief or contract
+- A **compliance officer** checking if a statute is still in force
+- A **legal tech developer** building tools on Swedish law
+- A **researcher** tracing legislative history from proposition to statute
 
-Add to Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+...you shouldn't need 47 browser tabs and manual PDF cross-referencing. Ask Claude. Get the exact provision. With context.
+
+This MCP server makes Swedish law **searchable, cross-referenceable, and AI-readable**.
+
+---
+
+## Quick Start
+
+### Installation
+
+**Option 1: Claude Desktop (Recommended)**
+
+Add to your `claude_desktop_config.json`:
+
+**macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+**Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
@@ -82,43 +55,9 @@ Add to Claude Desktop config (`~/Library/Application Support/Claude/claude_deskt
 }
 ```
 
-**Note:** Published package may not include the latest database expansion. For full production data (717 statutes, 668 EU references), use Option 2.
+Restart Claude Desktop. Done!
 
-### Option 2: Local Development Setup (Recommended for Full Data)
-
-For access to the complete production database with 717 statutes and EU cross-references:
-
-```bash
-# Clone repository
-git clone https://github.com/Ansvar-Systems/swedish-law-mcp
-cd swedish-law-mcp
-
-# Install dependencies
-npm install
-
-# Build the MCP server
-npm run build
-
-# Add to Claude Desktop config
-# Use absolute path to your local installation
-```
-
-Claude Desktop config for local setup (adjust `node` path for your platform):
-
-```json
-{
-  "mcpServers": {
-    "swedish-law": {
-      "command": "node",
-      "args": [
-        "/absolute/path/to/swedish-law-mcp/dist/index.js"
-      ]
-    }
-  }
-}
-```
-
-### Cursor / VS Code
+**Option 2: Cursor / VS Code**
 
 ```json
 {
@@ -131,356 +70,226 @@ Claude Desktop config for local setup (adjust `node` path for your platform):
 }
 ```
 
+**Option 3: Local Development Setup (Full Data)**
+
+For access to the complete production database:
+
+```bash
+git clone https://github.com/Ansvar-Systems/swedish-law-mcp
+cd swedish-law-mcp
+npm install
+npm run build
+```
+
+Then in Claude Desktop config:
+
+```json
+{
+  "mcpServers": {
+    "swedish-law": {
+      "command": "node",
+      "args": ["/absolute/path/to/swedish-law-mcp/dist/index.js"]
+    }
+  }
+}
+```
+
 ---
 
-## EU Law Integration
+## Example Queries
 
-This MCP server includes comprehensive cross-referencing between Swedish law and EU directives/regulations, enabling bi-directional legal research across Swedish and European legal frameworks.
+Once connected, just ask naturally:
 
-### Coverage
+- *"What does Dataskyddslagen 3 kap. 5 § say about consent?"*
+- *"Is PUL (1998:204) still in force?"*
+- *"Find provisions about personuppgifter in Swedish law"*
+- *"What EU directives does DSL implement?"*
+- *"Which Swedish laws implement the GDPR?"*
+- *"Get the preparatory works for Dataskyddslagen"*
+- *"Compare incident reporting requirements across NIS2 Swedish implementations"*
+- *"Validate the citation NJA 2020 s. 45"*
+- *"Find Labour Court cases about discrimination from 2020-2023"*
 
-| Metric | Value | Details |
-|--------|-------|---------|
-| **EU References** | 668 | Cross-references from Swedish → EU law |
-| **EU Documents** | 228 | Unique EU directives and regulations |
-| **Swedish Statutes with EU Refs** | 49 | 68% of database (49/717 statutes) |
-| **Coverage** | 97.95% | 668/682 seed references imported |
-| **Directives** | 89 | EU directives referenced in Swedish law |
-| **Regulations** | 139 | EU regulations referenced in Swedish law |
-| **EUR-Lex Integration** | ✅ | Automated metadata fetching from EUR-Lex API |
+---
 
-### Most Referenced EU Acts
+## What's Included
 
-1. **eIDAS Regulation** (regulation:910/2014) - 20 references
-   - Electronic identification and trust services
-2. **E-Signatures Directive** (directive:1999/93) - 15 references
-   - Digital signatures (repealed by eIDAS)
-3. **GDPR** (regulation:2016/679) - 15 references
-   - General Data Protection Regulation
-4. **Data Protection Directive** (directive:1995/46) - 14 references
-   - Repealed by GDPR in 2018
-5. **Market Surveillance Regulation** (regulation:2019/1020) - 14 references
-   - Product safety and compliance
+| Category | Count | Details |
+|----------|-------|---------|
+| **Statutes** | 717 laws | Comprehensive Swedish legislation |
+| **Provisions** | 31,198 sections | Full-text searchable with FTS5 |
+| **Preparatory Works** | 3,625 documents | Propositions (Prop.) and SOUs |
+| **EU Cross-References** | 668 references | 228 EU directives and regulations |
+| **Legal Definitions** | 615 terms | Extracted from statute text |
+| **Database Size** | ~70 MB | Optimized SQLite, portable |
+| **Daily Updates** | Automated | Freshness checks against Riksdagen |
 
-### Swedish Statutes with Most EU References
+**Verified data only** -- every citation is validated against official sources (Riksdagen, lagen.nu, EUR-Lex). Zero LLM-generated content.
 
-1. **Miljöbalken (1998:808)** - 71 references - Environmental law
-2. **Årsredovisningslagen (1995:1554)** - 45 references - Annual reports
-3. **Offentlighets- och sekretesslagen (2009:400)** - 44 references - Public access
-4. **Upphandlingslag försörjningssektorn (2016:1146)** - 36 references - Procurement
-5. **Aktiebolagslagen (2005:551)** - 35 references - Companies Act
+---
 
-### Example Queries
+## See It In Action
 
-Find EU basis for Swedish GDPR implementation:
+### Why This Works
+
+**Verbatim Source Text (No LLM Processing):**
+- All statute text is ingested from Riksdagen/SFS official sources
+- Provisions are returned **unchanged** from SQLite FTS5 database rows
+- Zero LLM summarization or paraphrasing -- the database contains regulation text, not AI interpretations
+
+**Smart Context Management:**
+- Search returns ranked provisions with BM25 scoring (safe for context)
+- Provision retrieval gives exact text by SFS number + chapter/section
+- Cross-references help navigate without loading everything at once
+
+**Technical Architecture:**
 ```
-"Which EU directives does Dataskyddslagen (DSL) implement?"
-→ Returns: GDPR (regulation:2016/679) as primary basis
-```
-
-Reverse lookup - Swedish implementations of EU law:
-```
-"Which Swedish laws implement the GDPR?"
-→ Returns: DSL 2018:218 (primary), OSL 2009:400 (supplementary)
-```
-
-Provision-level research:
-```
-"What EU law is the basis for DSL 3 kap. 5 § about consent?"
-→ Returns: GDPR Article 6.1.a and 7
+Riksdagen API → Parse → SQLite → FTS5 snippet() → MCP response
+                  ↑                      ↑
+           Provision parser       Verbatim database query
 ```
 
-### Use Cases for EU Integration
+### Traditional Research vs. This MCP
 
-**For Legal Professionals:**
-- Verify Swedish compliance with EU directives
-- Research transposition deadlines and implementation gaps
-- Compare Swedish law with source EU requirements
-- Find preparatory works explaining EU directive choices
+| Traditional Approach | This MCP Server |
+|---------------------|-----------------|
+| Search Riksdagen by SFS number | Search by plain Swedish: *"personuppgifter samtycke"* |
+| Navigate multi-chapter statutes manually | Get the exact provision with context |
+| Manual cross-referencing between laws | `build_legal_stance` aggregates across sources |
+| "Is this statute still in force?" → check manually | `check_currency` tool → answer in seconds |
+| Find EU basis → dig through EUR-Lex | `get_eu_basis` → linked EU directives instantly |
+| Check 5+ sites for updates | Daily automated freshness checks |
+| No API, no integration | MCP protocol → AI-native |
 
-**For Policy Analysts:**
-- Track Sweden's implementation of EU legislation
-- Identify gold-plating (Swedish provisions exceeding EU requirements)
-- Map EU law influence across Swedish legal domains
-- Monitor amendment correlations (EU changes → Swedish updates)
+**Traditional:** Search Riksdagen → Download SFS PDF → Ctrl+F → Cross-reference with proposition → Check EUR-Lex for EU basis → Repeat
 
-**For Researchers:**
-- Comparative legal research (Swedish vs EU frameworks)
-- Citation network analysis across legal systems
-- Implementation timeline studies
-- Cross-border legal harmonization research
-
-### Data Sources & Attribution
-
-EU cross-references are extracted directly from Swedish statute text using pattern recognition and validated against authoritative sources:
-
-- **Source:** Swedish statute text (Riksdagen, SFS)
-- **Extraction:** Automated parser with 95%+ accuracy
-- **Validation:** Cross-referenced with EUR-Lex CELEX numbers
-- **Coverage:** All 83 statutes in database scanned for EU references
-- **Verified-data-only approach:** Only references extracted from statute text are included
-
-See [EU_INTEGRATION_GUIDE.md](docs/EU_INTEGRATION_GUIDE.md) for detailed documentation and [EU_USAGE_EXAMPLES.md](docs/EU_USAGE_EXAMPLES.md) for practical examples.
+**This MCP:** *"What EU law is the basis for DSL 3 kap. 5 § about consent?"* → Done.
 
 ---
 
 ## Available Tools (13)
 
-### EU Law Tools (5 New)
-
-#### 9. `get_eu_basis` — EU Directives/Regulations for Swedish Statute
-
-Get all EU directives and regulations that a Swedish statute implements or references.
-
-```
-"What EU law does DSL implement?"
-→ Returns: GDPR (regulation:2016/679) with implementation metadata
-```
-
-**Parameters:**
-- `sfs_number` (required) — Swedish statute (e.g., "2018:218")
-- `include_articles` (optional) — Include specific EU article references
-
-#### 10. `get_swedish_implementations` — Swedish Laws Implementing EU Act
-
-Find all Swedish statutes that implement or reference a specific EU directive/regulation.
-
-```
-"Which Swedish laws implement directive 1995/46/EG?"
-→ Returns: PUL 1998:204 (historical, repealed), DSL 2018:218 (current)
-```
-
-**Parameters:**
-- `eu_document_id` (required) — EU act ID (e.g., "regulation:2016/679")
-- `primary_only` (optional) — Show only primary implementations
-- `in_force_only` (optional) — Exclude repealed Swedish laws
-
-#### 11. `search_eu_implementations` — Search EU Documents
-
-Search EU directives and regulations by keyword, with Swedish implementation statistics.
-
-```
-"Find EU directives about data protection"
-→ Returns: GDPR, Data Protection Directive, with Swedish implementation counts
-```
-
-**Parameters:**
-- `query` (required) — Search keywords
-- `type` (optional) — Filter by "directive" or "regulation"
-- `year_from` (optional) — Filter by year range
-- `year_to` (optional)
-
-#### 12. `get_provision_eu_basis` — EU Basis for Specific Provision
-
-Get EU law references for a specific Swedish statute provision.
-
-```
-"What EU law is referenced in DSL 3 kap. 5 §?"
-→ Returns: GDPR Article 6.1.a (legal basis for processing)
-```
-
-**Parameters:**
-- `sfs_number` (required) — Swedish statute
-- `chapter` (optional) — Chapter number
-- `section` (required) — Section reference
-
-#### 13. `validate_eu_compliance` — Check Implementation Status (Future)
-
-Validate Swedish implementation against EU requirements (requires integration with @ansvar/eu-regulations-mcp).
-
-**Parameters:**
-- `sfs_number` (required) — Swedish statute to check
-- `eu_document_id` (required) — EU act to validate against
-
----
-
 ### Core Legal Research Tools (8)
 
-### 1. `search_legislation` — Full-Text Statute Search
+| Tool | Description |
+|------|-------------|
+| `search_legislation` | FTS5 search on 31,198 provisions with BM25 ranking |
+| `get_provision` | Retrieve specific provision by SFS + chapter/section |
+| `search_case_law` | FTS5 search on case law with court/date filters |
+| `get_preparatory_works` | Get linked propositions and SOUs for a statute |
+| `validate_citation` | Validate citation against database (zero-hallucination check) |
+| `build_legal_stance` | Aggregate citations from statutes, case law, prep works |
+| `format_citation` | Format citations per Swedish conventions (full/short/pinpoint) |
+| `check_currency` | Check if statute is in force, amended, or repealed |
 
-Search across 31,198 provisions using SQLite FTS5 with BM25 ranking.
+### EU Law Integration Tools (5)
 
-```
-"Find provisions about personal data processing consent in Swedish law"
-→ Returns ranked DSL provisions with exact text
-```
-
-**Parameters:**
-- `query` (required) — Search terms
-- `document_id` (optional) — Limit to specific statute (e.g., "2018:218")
-- `chapter` (optional) — Filter by chapter
-- `status` (optional) — Filter by in_force, repealed, amended
-- `limit` (optional) — Max results (default: 10)
-
-### 2. `get_provision` — Retrieve Specific Provision
-
-Get exact provision text by SFS number and location.
-
-```
-"Get Dataskyddslagen 3 kap. 5 §"
-→ Returns full text of DSL 2018:218 3:5
-```
-
-**Parameters:**
-- `sfs_number` (required) — e.g., "2018:218"
-- `chapter` (optional) — Chapter number
-- `section` (required) — Section/paragraph reference
-
-### 3. `search_case_law` — Multi-Court Case Search
-
-Search court decisions with filters by court and date (limited coverage).
-
-```
-"Find Labour Court cases about discrimination from 2020-2023"
-→ Returns AD cases with summaries, citations, and dates
-```
-
-**Parameters:**
-- `query` (required) — Search terms
-- `court` (optional) — Filter by NJA, HFD, AD, RH, MÖD, MIG
-- `start_date` (optional) — YYYY-MM-DD
-- `end_date` (optional) — YYYY-MM-DD
-- `limit` (optional) — Max results (default: 10)
-
-### 4. `get_preparatory_works` — Legislative History
-
-Retrieve linked propositions and SOUs for any statute.
-
-```
-"What was the government's intent behind DSL's consent requirements?"
-→ Returns Prop. 2017/18:105 with explanation
-```
-
-**Parameters:**
-- `sfs_number` (required) — Statute to look up
-
-### 5. `validate_citation` — Citation Verification
-
-Validate any Swedish legal citation against the database.
-
-```
-"Is 'NJA 2020 s. 45' a valid citation?"
-→ Returns: Valid ✓, exists in database, normalized format
-```
-
-**Parameters:**
-- `citation` (required) — Citation string to validate
-
-### 6. `build_legal_stance` — Multi-Source Aggregation
-
-Combine statutes, case law, and preparatory works for comprehensive research.
-
-```
-"Research GDPR consent requirements in Swedish law"
-→ Returns: DSL provisions + HFD/NJA cases + Prop. 2017/18:105
-```
-
-**Parameters:**
-- `query` (required) — Legal question
-- `include_sources` (optional) — Array: ["legislation", "case_law", "preparatory_works"]
-
-### 7. `format_citation` — Swedish Legal Formatting
-
-Format citations per Swedish legal conventions.
-
-```
-"Format '2018:218 3:5' as full citation"
-→ Returns: "SFS 2018:218 3 kap. 5 §"
-```
-
-**Parameters:**
-- `citation` (required) — Citation to format
-- `format` (required) — "full", "short", or "pinpoint"
-
-### 8. `check_currency` — Law Validity Check
-
-Check if statute is in force, amended, or repealed.
-
-```
-"Is PUL (1998:204) still in force?"
-→ Returns: Repealed ❌ (replaced by DSL 2018:218 on 2018-08-01)
-```
-
-**Parameters:**
-- `sfs_number` (required) — Statute to check
+| Tool | Description |
+|------|-------------|
+| `get_eu_basis` | Get EU directives/regulations for Swedish statute |
+| `get_swedish_implementations` | Find Swedish laws implementing EU act |
+| `search_eu_implementations` | Search EU documents with Swedish implementation counts |
+| `get_provision_eu_basis` | Get EU law references for specific provision |
+| `validate_eu_compliance` | Check implementation status (future, requires EU MCP) |
 
 ---
 
-## Use Cases
+## EU Law Integration
 
-### For Law Firms
-- **Due diligence:** Validate citations in contracts and briefs
-- **Legal research:** Find precedents across specialized courts
-- **Drafting:** Ensure correct citation formatting
-- **Legislative history:** Understand intent behind provisions
+**668 cross-references** linking 49 Swedish statutes to EU law, with bi-directional lookup.
 
-### For Legal Tech
-- **Contract analysis:** Extract and validate legal references
-- **Compliance tools:** Check if regulations are current
-- **Legal Q&A:** Build legal chatbots with verified data sources
-- **Citation networks:** Map relationships between laws and cases
+| Metric | Value |
+|--------|-------|
+| **EU References** | 668 cross-references |
+| **EU Documents** | 228 unique directives and regulations |
+| **Swedish Statutes with EU Refs** | 49 (68% of database) |
+| **Directives** | 89 |
+| **Regulations** | 139 |
+| **EUR-Lex Integration** | Automated metadata fetching |
 
-### For Researchers
-- **Academic research:** Access comprehensive Swedish legal corpus
-- **Comparative law:** Compare Swedish and EU legal frameworks
-- **Terminology:** Query legal definitions and usage
-- **Historical analysis:** Track case law evolution (2011-2023)
+### Most Referenced EU Acts
+
+1. **eIDAS Regulation** (910/2014) - 20 references
+2. **E-Signatures Directive** (1999/93) - 15 references
+3. **GDPR** (2016/679) - 15 references
+4. **Data Protection Directive** (1995/46) - 14 references
+5. **Market Surveillance Regulation** (2019/1020) - 14 references
+
+See [EU_INTEGRATION_GUIDE.md](docs/EU_INTEGRATION_GUIDE.md) for detailed documentation and [EU_USAGE_EXAMPLES.md](docs/EU_USAGE_EXAMPLES.md) for practical examples.
 
 ---
 
-## Data Sources
+## Data Sources & Freshness
 
 All content is sourced from authoritative Swedish legal databases:
 
-- **[Riksdagen](https://riksdagen.se/)** — Swedish Parliament's official legal database (statutes, propositions)
-- **[Svensk Forfattningssamling](https://svenskforfattningssamling.se/)** — Official statute collection
-- **[Lagen.nu](https://lagen.nu)** — Curated case law database (CC-BY Domstolsverket, limited coverage)
-- **[EUR-Lex](https://eur-lex.europa.eu/)** — Official EU law database (metadata only)
+- **[Riksdagen](https://riksdagen.se/)** -- Swedish Parliament's official legal database
+- **[Svensk Forfattningssamling](https://svenskforfattningssamling.se/)** -- Official statute collection
+- **[Lagen.nu](https://lagen.nu)** -- Case law database (CC-BY Domstolsverket)
+- **[EUR-Lex](https://eur-lex.europa.eu/)** -- Official EU law database (metadata only)
 
-### Data Freshness
+### Automated Freshness Checks (Daily)
 
-A [daily GitHub Actions workflow](.github/workflows/check-updates.yml) monitors all data sources and creates issues when updates are available.
-
-#### Automated Detection (daily)
+A [daily GitHub Actions workflow](.github/workflows/check-updates.yml) monitors all data sources:
 
 | Source | Check | Method |
 |--------|-------|--------|
-| **Statute amendments** | Riksdagen API date comparison | All 717 statutes checked against API |
+| **Statute amendments** | Riksdagen API date comparison | All 717 statutes checked |
 | **New statutes** | Riksdagen SFS publications (90-day window) | Diffed against database |
-| **Case law** | lagen.nu feed entry count | Compared to `case_law` table |
+| **Case law** | lagen.nu feed entry count | Compared to database |
 | **Preparatory works** | Riksdagen proposition API (30-day window) | New props detected |
-| **EU reference staleness** | Git commit timestamps on EU scripts/data | Flagged if >90 days old |
+| **EU reference staleness** | Git commit timestamps | Flagged if >90 days old |
 
-#### Manual Review (surfaced as issue checkboxes)
-
-These items cannot be auto-detected and are included as checklist items in the data freshness issue:
-
-- **EU reference re-extraction** after statute amendments
-- **Cross-reference integrity** verification after updates
-- **Repealed statute check** for status changes
-- **New EU legislation** from EUR-Lex affecting Swedish law
-
-#### Auto-Update
-
-The workflow supports a manual `auto_update: true` dispatch that syncs case law, re-extracts definitions, rebuilds the database, bumps the version, and tags for npm publishing.
-
-### Attribution
-
-Case law data is provided by [lagen.nu](https://lagen.nu) under Creative Commons Attribution (CC-BY Domstolsverket). All case law results include source attribution metadata.
+The workflow supports `auto_update: true` dispatch for automated sync, rebuild, version bump, and npm publishing.
 
 ---
 
 ## Security
 
-This project uses multiple layers of automated security scanning. See [SECURITY.md](SECURITY.md) for the full policy.
+This project uses multiple layers of automated security scanning:
 
-- **Gitleaks** — Secret detection on every push
-- **CodeQL** — Static analysis for security vulnerabilities (weekly + PRs)
-- **Semgrep** — SAST scanning (OWASP top 10, secrets, TypeScript)
-- **Trivy** — CVE scanning on filesystem and npm dependencies (daily)
-- **Socket.dev** — Supply chain attack detection on PRs
-- **OSSF Scorecard** — OpenSSF best practices scoring
-- **Dependabot** — Automated weekly dependency updates
+| Scanner | What It Does | Schedule |
+|---------|-------------|----------|
+| **CodeQL** | Static analysis for security vulnerabilities | Weekly + PRs |
+| **Semgrep** | SAST scanning (OWASP top 10, secrets, TypeScript) | Every push |
+| **Gitleaks** | Secret detection across git history | Every push |
+| **Trivy** | CVE scanning on filesystem and npm dependencies | Daily |
+| **Docker Security** | Container image scanning + SBOM generation | Daily |
+| **Socket.dev** | Supply chain attack detection | PRs |
+| **OSSF Scorecard** | OpenSSF best practices scoring | Weekly |
+| **Dependabot** | Automated dependency updates | Weekly |
+
+See [SECURITY.md](SECURITY.md) for the full policy and vulnerability reporting.
+
+---
+
+## Important Disclaimers
+
+### Legal Advice
+
+> **THIS TOOL IS NOT LEGAL ADVICE**
+>
+> Statute text is sourced from official Riksdagen/SFS publications. However:
+> - This is a **research tool**, not a substitute for professional legal counsel
+> - **Court case coverage is limited** -- do not rely solely on this for case law research
+> - **Verify critical citations** against primary sources for court filings
+> - **EU cross-references** are extracted from Swedish statute text, not EUR-Lex full text
+
+**Before using professionally, read:** [DISCLAIMER.md](DISCLAIMER.md) | [PRIVACY.md](PRIVACY.md)
+
+### Client Confidentiality
+
+Queries go through the Claude API. For privileged or confidential matters, use on-premise deployment. See [PRIVACY.md](PRIVACY.md) for Advokatsamfundet compliance guidance.
+
+---
+
+## Documentation
+
+- **[EU Integration Guide](docs/EU_INTEGRATION_GUIDE.md)** -- Detailed EU cross-reference documentation
+- **[EU Usage Examples](docs/EU_USAGE_EXAMPLES.md)** -- Practical EU lookup examples
+- **[Security Policy](SECURITY.md)** -- Vulnerability reporting and scanning details
+- **[Disclaimer](DISCLAIMER.md)** -- Legal disclaimers and professional use notices
+- **[Privacy](PRIVACY.md)** -- Client confidentiality and data handling
 
 ---
 
@@ -499,64 +308,51 @@ npm test
 ### Running Locally
 
 ```bash
-# Start MCP server
-npm run dev
-
-# Test with MCP Inspector
-npx @anthropic/mcp-inspector node dist/index.js
+npm run dev                                       # Start MCP server
+npx @anthropic/mcp-inspector node dist/index.js   # Test with MCP Inspector
 ```
 
 ### Data Management
 
 ```bash
-# Ingest new statute from Riksdagen
-npm run ingest -- <sfs-number> <output.json>
-
-# Ingest case law (full archive, all courts from 2011+)
-npm run ingest:cases:full-archive
-
-# Ingest case law (incremental sync)
-npm run sync:cases
-
-# Ingest preparatory works (validate all statute references)
-npm run sync:prep-works
-
-# Extract legal definitions from statutes
-npm run extract:definitions
-
-# Rebuild SQLite database from seed files
-npm run build:db
-
-# Check for statute amendments
-npm run check-updates
+npm run ingest -- <sfs-number> <output.json>   # Ingest statute from Riksdagen
+npm run ingest:cases:full-archive              # Ingest case law (full archive)
+npm run sync:cases                             # Ingest case law (incremental)
+npm run sync:prep-works                        # Sync preparatory works
+npm run extract:definitions                    # Extract legal definitions
+npm run build:db                               # Rebuild SQLite database
+npm run check-updates                          # Check for amendments
 ```
 
-### Database Schema
-
-```sql
--- Core tables
-legal_documents      -- All documents (statutes, bills, SOUs, cases)
-legal_provisions     -- Individual statute provisions
-case_law             -- Court decisions with metadata
-preparatory_works    -- Legislative history documents
-definitions          -- Legal term definitions
-cross_references     -- Links between provisions
-
--- FTS5 search indexes (auto-synced)
-provisions_fts       -- Full-text search on provisions
-case_law_fts         -- Full-text search on case summaries
-prep_works_fts       -- Full-text search on propositions
-definitions_fts      -- Full-text search on definitions
-```
-
----
-
-## Performance
+### Performance
 
 - **Search Speed:** <100ms for most FTS5 queries
 - **Database Size:** ~70 MB (efficient, portable)
-- **Coverage:** 717 statutes with 31,198 provisions, 668 EU cross-references
-- **Reliability:** 100% ingestion success rate (0 failures, 0 hallucinated entries)
+- **Reliability:** 100% ingestion success rate
+
+---
+
+## Related Projects: Complete Compliance Suite
+
+This server is part of **Ansvar's Compliance Suite** -- MCP servers that work together for end-to-end compliance coverage:
+
+### [@ansvar/eu-regulations-mcp](https://github.com/Ansvar-Systems/EU_compliance_MCP)
+**Query 49 EU regulations directly from Claude** -- GDPR, AI Act, DORA, NIS2, MiFID II, eIDAS, and more. Full regulatory text with article-level search. `npx @ansvar/eu-regulations-mcp`
+
+### @ansvar/swedish-law-mcp (This Project)
+**Query 717 Swedish statutes directly from Claude** -- DSL, BrB, ABL, MB, and more. Full provision text with EU cross-references. `npx @ansvar/swedish-law-mcp`
+
+### [@ansvar/us-regulations-mcp](https://github.com/Ansvar-Systems/US_Compliance_MCP)
+**Query US federal and state compliance laws** -- HIPAA, CCPA, SOX, GLBA, FERPA, and more. `npm install @ansvar/us-regulations-mcp`
+
+### [@ansvar/ot-security-mcp](https://github.com/Ansvar-Systems/ot-security-mcp)
+**Query IEC 62443, NIST 800-82/53, and MITRE ATT&CK for ICS** -- Specialized for OT/ICS environments. `npx @ansvar/ot-security-mcp`
+
+### [@ansvar/automotive-cybersecurity-mcp](https://github.com/Ansvar-Systems/Automotive-MCP)
+**Query UNECE R155/R156 and ISO 21434** -- Automotive cybersecurity compliance. `npx @ansvar/automotive-cybersecurity-mcp`
+
+### [@ansvar/sanctions-mcp](https://github.com/Ansvar-Systems/Sanctions-MCP)
+**Offline-capable sanctions screening** -- OFAC, EU, UN sanctions lists. `pip install ansvar-sanctions-mcp`
 
 ---
 
@@ -568,15 +364,14 @@ Priority areas:
 - Court case law expansion (currently limited coverage)
 - EU Regulations MCP integration (full EU law text, CJEU case law)
 - Historical statute versions and amendment tracking
-- Cross-reference extraction improvements
 - Lower court decisions (Tingsrätt, Hovrätt)
 
 ---
 
 ## Roadmap
 
-- [x] **Statute expansion** — 785% growth from 81 to 717 statutes (v1.1.0)
-- [x] **EU law integration** — 668 cross-references to 228 EU directives/regulations (v1.1.0)
+- [x] **Statute expansion** -- 785% growth from 81 to 717 statutes (v1.1.0)
+- [x] **EU law integration** -- 668 cross-references to 228 EU directives/regulations (v1.1.0)
 - [ ] Court case law expansion (comprehensive archive)
 - [ ] Full EU text integration (via @ansvar/eu-regulations-mcp)
 - [ ] Lower court coverage (Tingsrätt, Hovrätt archives)
@@ -604,36 +399,26 @@ If you use this MCP server in academic research:
 
 ## License
 
-Apache 2.0 - see [LICENSE](LICENSE)
+Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 ### Data Licenses
 
 - **Statutes & Propositions:** Swedish Government (public domain)
 - **Case Law:** CC-BY Domstolsverket (via lagen.nu)
+- **EU Metadata:** EUR-Lex (EU public domain)
 
 ---
 
-## Support
+## About Ansvar Systems
 
-- **Issues:** [GitHub Issues](https://github.com/Ansvar-Systems/swedish-law-mcp/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Ansvar-Systems/swedish-law-mcp/discussions)
-- **Email:** contact@ansvar.ai
+We build AI-accelerated compliance and legal research tools for the European market. This MCP server started as our internal reference tool for Swedish law -- turns out everyone building for the Swedish market has the same research frustrations.
 
----
+So we're open-sourcing it. Navigating 717 statutes shouldn't require a law degree.
 
-## About
-
-Built by [**Ansvar Systems AB**](https://ansvar.ai) — Stockholm, Sweden
-
-Part of the [Ansvar MCP Ecosystem](https://github.com/Ansvar-Systems):
-- [@ansvar/eu-regulations-mcp](https://github.com/Ansvar-Systems/EU_compliance_MCP) — EU regulations and directives
-- **@ansvar/swedish-law-mcp** — Swedish law (this server)
-- [@ansvar/us-regulations-mcp](https://github.com/Ansvar-Systems/us-regulations-mcp) — US federal regulations
-- [@ansvar/ot-security-mcp](https://github.com/Ansvar-Systems/ot-security-mcp) — ICS/SCADA security standards
+**[ansvar.eu](https://ansvar.eu)** -- Stockholm, Sweden
 
 ---
 
 <p align="center">
-  <sub>Built with care in Stockholm 🇸🇪</sub><br>
-  <sub>Production-ready Swedish legal research • Verified data only • 717 verified statutes • EU law integration</sub>
+  <sub>Built with care in Stockholm, Sweden</sub>
 </p>

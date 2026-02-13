@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "eu.ansvar/swedish-law-mcp",
+  "description": "Query 717 Swedish statutes (31,198 provisions) - DSL, BrB, ABL, EU cross-references, case law, preparatory works",
+  "repository": {
+    "url": "https://github.com/Ansvar-Systems/swedish-law-mcp",
+    "source": "github"
+  },
+  "homepage": "https://ansvar.eu",
+  "version": "1.1.0",
+  "license": "Apache-2.0",
+  "keywords": [
+    "swedish-law",
+    "sweden",
+    "legal",
+    "riksdagen",
+    "sfs",
+    "compliance",
+    "gdpr",
+    "eu-law",
+    "dataskyddslagen",
+    "mcp"
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/swedish-law-mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
