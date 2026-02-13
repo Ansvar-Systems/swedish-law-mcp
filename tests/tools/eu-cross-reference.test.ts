@@ -3,7 +3,7 @@
  */
 
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
-import type { Database } from 'better-sqlite3';
+import type { Database } from '@ansvar/mcp-sqlite';
 import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db.js';
 import { getEUBasis } from '../../src/tools/get-eu-basis.js';
 import { getSwedishImplementations } from '../../src/tools/get-swedish-implementations.js';

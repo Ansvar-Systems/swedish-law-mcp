@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
-import type { Database } from 'better-sqlite3';
+import type { Database } from '@ansvar/mcp-sqlite';
 import { searchCaseLaw } from '../../src/tools/search-case-law.js';
 import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db.js';
 

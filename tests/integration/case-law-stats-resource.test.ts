@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import Database from 'better-sqlite3';
+import Database from '@ansvar/mcp-sqlite';
 
 describe('Case Law Stats Resource Integration', () => {
   it('should handle missing sync metadata table gracefully', () => {

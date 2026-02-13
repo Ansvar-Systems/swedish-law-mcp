@@ -2,7 +2,7 @@
  * Test database fixture with Swedish law sample data.
  */
 
-import Database from 'better-sqlite3';
+import Database from '@ansvar/mcp-sqlite';
 
 const SCHEMA = `
 CREATE TABLE legal_documents (

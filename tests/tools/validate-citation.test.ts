@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
-import type { Database } from 'better-sqlite3';
+import type { Database } from '@ansvar/mcp-sqlite';
 import { validateCitationTool } from '../../src/tools/validate-citation.js';
 import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db.js';
 
