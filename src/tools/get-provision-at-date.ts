@@ -9,10 +9,6 @@
 
 import type { Database } from 'better-sqlite3';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Types
-// ─────────────────────────────────────────────────────────────────────────────
-
 export interface GetProvisionAtDateParams {
   /** SFS number of statute, e.g., "2018:218" */
   sfs: string;
@@ -69,10 +65,6 @@ export interface AmendmentRecord {
   /** Summary of changes */
   change_summary?: string;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Implementation
-// ─────────────────────────────────────────────────────────────────────────────
 
 export function getProvisionAtDate(
   db: Database,
@@ -196,10 +188,6 @@ export function getProvisionAtDate(
   return result;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// MCP Tool Definition
-// ─────────────────────────────────────────────────────────────────────────────
-
 export const toolDefinition = {
   name: 'get_provision_at_date',
   description: `
@@ -248,10 +236,6 @@ amendment history showing what changed after the queried date.
     required: ['sfs', 'provision_ref', 'date'],
   },
 };
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Utility Functions
-// ─────────────────────────────────────────────────────────────────────────────
 
 /**
  * Get current version of a provision (as of today).
@@ -359,10 +343,6 @@ export function diffProvisionDates(
     amendments_between,
   };
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Error Handling
-// ─────────────────────────────────────────────────────────────────────────────
 
 export class ProvisionNotFoundError extends Error {
   constructor(sfs: string, provision_ref: string) {

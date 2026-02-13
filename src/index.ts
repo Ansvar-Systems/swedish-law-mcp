@@ -41,10 +41,6 @@ const SERVER_VERSION = '0.1.0';
 const DB_ENV_VAR = 'SWEDISH_LAW_DB_PATH';
 const DEFAULT_DB_PATH = '../data/database.db';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Database singleton
-// ─────────────────────────────────────────────────────────────────────────────
-
 let dbInstance: Database.Database | null = null;
 
 function getDb(): Database.Database {
@@ -71,10 +67,6 @@ function closeDb(): void {
     console.error(`[${SERVER_NAME}] Database closed`);
   }
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Tool definitions
-// ─────────────────────────────────────────────────────────────────────────────
 
 const TOOLS: Tool[] = [
   {
@@ -457,10 +449,6 @@ Note: This is Phase 1 validation. Full compliance checking against EU requiremen
   },
 ];
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Server setup
-// ─────────────────────────────────────────────────────────────────────────────
-
 const server = new Server(
   { name: SERVER_NAME, version: SERVER_VERSION },
   { capabilities: { tools: {}, resources: {} } }
@@ -672,10 +660,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     };
   }
 });
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Main
-// ─────────────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
   console.error(`[${SERVER_NAME}] Starting server v${SERVER_VERSION}...`);

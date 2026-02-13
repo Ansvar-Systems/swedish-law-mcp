@@ -444,7 +444,7 @@ CELEX numbers can be used to:
 - Consult preparatory works for implementation choices
 - Validate transposition deadlines and Swedish compliance
 
-**Zero-Hallucination Guarantee:**
+**Verified-Data-Only Approach:**
 - All 682 references extracted from verified Swedish statute text
 - No AI-generated or synthesized EU citations
 - All CELEX numbers follow official format

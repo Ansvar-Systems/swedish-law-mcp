@@ -88,8 +88,12 @@ Desktop.ini
 yarn.lock
 pnpm-lock.yaml
 
+# Logs
+logs/
+
 # Temporary files
 tmp/
 temp/
 *.tmp
 .serena/
+.claude/
