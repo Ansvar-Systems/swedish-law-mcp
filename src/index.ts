@@ -20,6 +20,9 @@ import {
 import Database from '@ansvar/mcp-sqlite';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+import { createHash } from 'crypto';
+import { readFileSync, statSync } from 'fs';
+import type { AboutContext } from './tools/about.js';
 
 import { searchLegislation, SearchLegislationInput } from './tools/search-legislation.js';
 import { getProvision, GetProvisionInput } from './tools/get-provision.js';
@@ -34,9 +37,13 @@ import { getSwedishImplementations, GetSwedishImplementationsInput } from './too
 import { searchEUImplementations, SearchEUImplementationsInput } from './tools/search-eu-implementations.js';
 import { getProvisionEUBasis, GetProvisionEUBasisInput } from './tools/get-provision-eu-basis.js';
 import { validateEUCompliance, ValidateEUComplianceInput } from './tools/validate-eu-compliance.js';
+import { getAbout } from './tools/about.js';
 
 const SERVER_NAME = 'swedish-legal-citations';
-const SERVER_VERSION = '0.1.0';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const PKG_PATH = path.join(__dirname, '..', 'package.json');
+const pkgVersion: string = JSON.parse(readFileSync(PKG_PATH, 'utf-8')).version;
 
 const DB_ENV_VAR = 'SWEDISH_LAW_DB_PATH';
 const DEFAULT_DB_PATH = '../data/database.db';
@@ -55,8 +62,6 @@ function getDb(): InstanceType<typeof Database> {
 }
 
 function getDefaultDbPath(): string {
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
   return path.resolve(__dirname, DEFAULT_DB_PATH);
 }
 
@@ -67,6 +72,23 @@ function closeDb(): void {
     console.error(`[${SERVER_NAME}] Database closed`);
   }
 }
+
+function computeAboutContext(): AboutContext {
+  let fingerprint = 'unknown';
+  let dbBuilt = new Date().toISOString();
+  try {
+    const dbPath = process.env[DB_ENV_VAR] || getDefaultDbPath();
+    const dbBuffer = readFileSync(dbPath);
+    fingerprint = createHash('sha256').update(dbBuffer).digest('hex').slice(0, 12);
+    const dbStat = statSync(dbPath);
+    dbBuilt = dbStat.mtime.toISOString();
+  } catch {
+    // Non-fatal
+  }
+  return { version: pkgVersion, fingerprint, dbBuilt };
+}
+
+const aboutContext = computeAboutContext();
 
 const TOOLS: Tool[] = [
   {
@@ -447,10 +469,20 @@ Note: This is Phase 1 validation. Full compliance checking against EU requiremen
       required: ['sfs_number'],
     },
   },
+  {
+    name: 'about',
+    description:
+      'Server metadata, dataset statistics, freshness, and provenance. ' +
+      'Call this to verify data coverage, currency, and content basis before relying on results.',
+    inputSchema: {
+      type: 'object',
+      properties: {},
+    },
+  },
 ];
 
 const server = new Server(
-  { name: SERVER_NAME, version: SERVER_VERSION },
+  { name: SERVER_NAME, version: pkgVersion },
   { capabilities: { tools: {}, resources: {} } }
 );
 
@@ -641,6 +673,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case 'validate_eu_compliance':
         result = await validateEUCompliance(getDb(), args as unknown as ValidateEUComplianceInput);
         break;
+      case 'about':
+        result = getAbout(getDb(), aboutContext);
+        break;
       default:
         return {
           content: [{ type: 'text', text: `Error: Unknown tool "${name}".` }],
@@ -662,7 +697,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 });
 
 async function main(): Promise<void> {
-  console.error(`[${SERVER_NAME}] Starting server v${SERVER_VERSION}...`);
+  console.error(`[${SERVER_NAME}] Starting server v${pkgVersion}...`);
 
   const transport = new StdioServerTransport();
 

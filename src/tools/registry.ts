@@ -24,6 +24,19 @@ import { getSwedishImplementations, GetSwedishImplementationsInput } from './get
 import { searchEUImplementations, SearchEUImplementationsInput } from './search-eu-implementations.js';
 import { getProvisionEUBasis, GetProvisionEUBasisInput } from './get-provision-eu-basis.js';
 import { validateEUCompliance, ValidateEUComplianceInput } from './validate-eu-compliance.js';
+import { getAbout, type AboutContext } from './about.js';
+export type { AboutContext } from './about.js';
+
+const ABOUT_TOOL: Tool = {
+  name: 'about',
+  description:
+    'Server metadata, dataset statistics, freshness, and provenance. ' +
+    'Call this to verify data coverage, currency, and content basis before relying on results.',
+  inputSchema: {
+    type: 'object',
+    properties: {},
+  },
+};
 
 export const TOOLS: Tool[] = [
   {
@@ -209,12 +222,19 @@ Specify the SFS number and either chapter+section or provision_ref directly.`,
   },
 ];
 
+export function buildTools(context?: AboutContext): Tool[] {
+  return context ? [...TOOLS, ABOUT_TOOL] : TOOLS;
+}
+
 export function registerTools(
   server: Server,
   db: InstanceType<typeof Database>,
+  context?: AboutContext,
 ): void {
+  const allTools = buildTools(context);
+
   server.setRequestHandler(ListToolsRequestSchema, async () => {
-    return { tools: TOOLS };
+    return { tools: allTools };
   });
 
   server.setRequestHandler(CallToolRequestSchema, async (request) => {
@@ -262,6 +282,16 @@ export function registerTools(
           break;
         case 'validate_eu_compliance':
           result = await validateEUCompliance(db, args as unknown as ValidateEUComplianceInput);
+          break;
+        case 'about':
+          if (context) {
+            result = getAbout(db, context);
+          } else {
+            return {
+              content: [{ type: 'text', text: 'About tool not configured.' }],
+              isError: true,
+            };
+          }
           break;
         default:
           return {
