@@ -24,14 +24,16 @@ yarn-error.log*
 # DATA
 # ───────────────────────────────────────────────────────────────────────────
 
-# Database file (regenerated from seed data)
-# Uncomment this line if you want to exclude the database from git
-# data/database.db
-
-# SQLite journal files
+# Database — build artifact, regenerated from seed data via `npm run build:db`
+data/*.db
 data/*.db-journal
 data/*.db-wal
 data/*.db-shm
+
+# Source data downloads (if any)
+data/*.csv
+data/*.json.gz
+data/*.zip
 
 # ───────────────────────────────────────────────────────────────────────────
 # ENVIRONMENT
