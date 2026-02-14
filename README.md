@@ -35,11 +35,52 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
 
 ## Quick Start
 
-### Installation
+### Use Remotely (No Install Needed)
 
-**Option 1: Claude Desktop (Recommended)**
+> Connect directly to the hosted version — zero dependencies, nothing to install.
 
-Add to your `claude_desktop_config.json`:
+**Endpoint:** `https://swedish-law-mcp.vercel.app/mcp`
+
+| Client | How to Connect |
+|--------|---------------|
+| **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
+| **Claude Code** | `claude mcp add swedish-law --transport http https://swedish-law-mcp.vercel.app/mcp` |
+| **Claude Desktop** | Add to config (see below) |
+| **GitHub Copilot** | Add to VS Code settings (see below) |
+
+**Claude Desktop** — add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "swedish-law": {
+      "type": "url",
+      "url": "https://swedish-law-mcp.vercel.app/mcp"
+    }
+  }
+}
+```
+
+**GitHub Copilot** — add to VS Code `settings.json`:
+
+```json
+{
+  "github.copilot.chat.mcp.servers": {
+    "swedish-law": {
+      "type": "http",
+      "url": "https://swedish-law-mcp.vercel.app/mcp"
+    }
+  }
+}
+```
+
+### Use Locally (npm)
+
+```bash
+npx @ansvar/swedish-law-mcp
+```
+
+**Claude Desktop** — add to `claude_desktop_config.json`:
 
 **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
 **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
@@ -55,9 +96,7 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-Restart Claude Desktop. Done!
-
-**Option 2: Cursor / VS Code**
+**Cursor / VS Code:**
 
 ```json
 {
@@ -69,32 +108,6 @@ Restart Claude Desktop. Done!
   }
 }
 ```
-
-**Option 3: Local Development Setup (Full Data)**
-
-For access to the complete production database:
-
-```bash
-git clone https://github.com/Ansvar-Systems/swedish-law-mcp
-cd swedish-law-mcp
-npm install
-npm run build
-```
-
-Then in Claude Desktop config:
-
-```json
-{
-  "mcpServers": {
-    "swedish-law": {
-      "command": "node",
-      "args": ["/absolute/path/to/swedish-law-mcp/dist/index.js"]
-    }
-  }
-}
-```
-
----
 
 ## Example Queries
 
