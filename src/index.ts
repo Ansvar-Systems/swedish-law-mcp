@@ -38,6 +38,12 @@ import { searchEUImplementations, SearchEUImplementationsInput } from './tools/s
 import { getProvisionEUBasis, GetProvisionEUBasisInput } from './tools/get-provision-eu-basis.js';
 import { validateEUCompliance, ValidateEUComplianceInput } from './tools/validate-eu-compliance.js';
 import { getAbout } from './tools/about.js';
+import {
+  detectCapabilities,
+  readDbMetadata,
+  type Capability,
+  type DbMetadata,
+} from './capabilities.js';
 
 const SERVER_NAME = 'swedish-legal-citations';
 const __filename = fileURLToPath(import.meta.url);
@@ -49,6 +55,8 @@ const DB_ENV_VAR = 'SWEDISH_LAW_DB_PATH';
 const DEFAULT_DB_PATH = '../data/database.db';
 
 let dbInstance: InstanceType<typeof Database> | null = null;
+let serverCapabilities: Set<Capability> | null = null;
+let serverMetadata: DbMetadata | null = null;
 
 function getDb(): InstanceType<typeof Database> {
   if (!dbInstance) {
@@ -57,8 +65,28 @@ function getDb(): InstanceType<typeof Database> {
     dbInstance = new Database(dbPath, { readonly: true });
     dbInstance.pragma('foreign_keys = ON');
     console.error(`[${SERVER_NAME}] Database opened successfully`);
+
+    // Detect capabilities on first open
+    serverCapabilities = detectCapabilities(dbInstance);
+    serverMetadata = readDbMetadata(dbInstance);
+    console.error(`[${SERVER_NAME}] Tier: ${serverMetadata.tier}`);
+    console.error(`[${SERVER_NAME}] Capabilities: ${[...serverCapabilities].join(', ')}`);
   }
   return dbInstance;
+}
+
+export function getCapabilities(): Set<Capability> {
+  if (!serverCapabilities) {
+    getDb(); // triggers detection
+  }
+  return serverCapabilities!;
+}
+
+export function getMetadata(): DbMetadata {
+  if (!serverMetadata) {
+    getDb(); // triggers detection
+  }
+  return serverMetadata!;
 }
 
 function getDefaultDbPath(): string {

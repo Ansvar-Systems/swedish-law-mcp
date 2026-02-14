@@ -4,9 +4,20 @@
 #
 # Multi-stage Dockerfile for building and running the MCP server.
 #
-# Usage:
-#   docker build -t your-mcp-server .
-#   docker run -i your-mcp-server
+# IMPORTANT: The database must be pre-built BEFORE running docker build.
+# It is NOT built during the Docker build because the full DB includes
+# ingested data (12K+ case law entries) that requires hours of network
+# scraping. Build it locally first, then bake it into the image.
+#
+# Free tier (seeds only, ~45 MB):
+#   npm run build:db
+#   docker build -t swedish-law-mcp .
+#
+# Full tier (seeds + ingested case law, ~80 MB):
+#   npm run build:db
+#   npm run ingest:cases:full-archive
+#   npm run build:db:paid
+#   docker build -t swedish-law-mcp .
 #
 # ═══════════════════════════════════════════════════════════════════════════
 
@@ -18,7 +29,6 @@
 
 FROM node:20-alpine AS builder
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files first (for better caching)
@@ -43,7 +53,6 @@ RUN npm run build
 
 FROM node:20-alpine AS production
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files
@@ -56,7 +65,7 @@ RUN npm ci --omit=dev
 COPY --from=builder /app/dist ./dist
 
 # Copy pre-built database
-# This file should already exist from running `npm run build:db`
+# This file MUST exist — run `npm run build:db` (or full pipeline) first
 COPY data/database.db ./data/database.db
 
 # ───────────────────────────────────────────────────────────────────────────

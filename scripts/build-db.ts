@@ -493,6 +493,12 @@ WHERE ld.type = 'statute'
 GROUP BY ld.id
 ORDER BY total_references DESC;
 
+-- Build metadata (tier, schema version, build timestamp)
+CREATE TABLE db_metadata (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+);
+
 -- View: GDPR implementations in Swedish law
 CREATE VIEW v_gdpr_implementations AS
 SELECT
@@ -1094,6 +1100,16 @@ function buildDatabase(): void {
   });
 
   loadAll();
+
+  // Write build metadata
+  const insertMeta = db.prepare('INSERT INTO db_metadata (key, value) VALUES (?, ?)');
+  const writeMeta = db.transaction(() => {
+    insertMeta.run('tier', 'free');
+    insertMeta.run('schema_version', '2');
+    insertMeta.run('built_at', new Date().toISOString());
+    insertMeta.run('builder', 'build-db.ts');
+  });
+  writeMeta();
 
   db.pragma('wal_checkpoint(TRUNCATE)');
   db.exec('ANALYZE');
