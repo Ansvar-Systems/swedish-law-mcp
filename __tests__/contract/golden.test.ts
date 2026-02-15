@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, rmdirSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
@@ -132,33 +132,36 @@ const isNightly = process.env['CONTRACT_MODE'] === 'nightly';
 let mcpClient: Client;
 let db: InstanceType<typeof Database>;
 
-beforeAll(async () => {
-  const dbPath =
-    process.env['SWEDISH_LAW_DB_PATH'] ?? join(__dirname, '..', '..', 'data', 'database.db');
-  db = new Database(dbPath, { readonly: true });
-  db.pragma('foreign_keys = ON');
-
-  const server = new Server(
-    { name: 'swedish-law-test', version: '0.0.0' },
-    { capabilities: { tools: {} } },
-  );
-  registerTools(server, db);
-
-  mcpClient = new Client({ name: 'test-client', version: '0.0.0' }, { capabilities: {} });
-  const [clientTransport, serverTransport] = InMemoryTransport.createLinkedPair();
-  await mcpClient.connect(clientTransport);
-  await server.connect(serverTransport);
-});
-
-afterAll(() => {
-  db?.close();
-});
-
 // ---------------------------------------------------------------------------
 // Contract test runner
 // ---------------------------------------------------------------------------
 
 describe(`Contract tests: ${fixture.mcp_name}`, () => {
+  beforeAll(async () => {
+    const dbPath =
+      process.env['SWEDISH_LAW_DB_PATH'] ?? join(__dirname, '..', '..', 'data', 'database.db');
+    // Clean up stale lock dir and WAL files (WASM SQLite can't handle WAL mode)
+    try { rmdirSync(dbPath + '.lock'); } catch { /* ignore */ }
+    try { rmSync(dbPath + '-wal', { force: true }); } catch { /* ignore */ }
+    try { rmSync(dbPath + '-shm', { force: true }); } catch { /* ignore */ }
+    db = new Database(dbPath, { readonly: true });
+    db.pragma('foreign_keys = ON');
+
+    const server = new Server(
+      { name: 'swedish-law-test', version: '0.0.0' },
+      { capabilities: { tools: {} } },
+    );
+    registerTools(server, db);
+
+    mcpClient = new Client({ name: 'test-client', version: '0.0.0' }, { capabilities: {} });
+    const [clientTransport, serverTransport] = InMemoryTransport.createLinkedPair();
+    await server.connect(serverTransport);
+    await mcpClient.connect(clientTransport);
+  }, 30_000);
+
+  afterAll(() => {
+    db?.close();
+  });
   for (const test of fixture.tests) {
     describe(`[${test.id}] ${test.description}`, () => {
       let result: ToolResult;
