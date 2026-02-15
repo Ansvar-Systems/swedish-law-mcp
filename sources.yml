@@ -1,0 +1,48 @@
+# sources.yml — Data provenance metadata
+# Reference: docs/mcp-infrastructure-blueprint.md §3
+
+schema_version: "1.0"
+mcp_name: "Swedish Law MCP"
+jurisdiction: "SE"
+
+sources:
+  - name: "Riksdagen Open Data"
+    authority: "Riksdagen (Swedish Parliament)"
+    official_portal: "https://data.riksdagen.se/"
+    canonical_identifier: "SFS (Svensk forfattningssamling)"
+    retrieval_method: "API"
+    api_documentation: "https://data.riksdagen.se/data/dokument/"
+    update_frequency: "on_change"
+    last_ingested: "2026-02-15"
+    license_or_terms:
+      type: "Government Open Data (Swedish PSI)"
+      url: "https://data.riksdagen.se/"
+      summary: "Swedish public sector information, free to reuse under PSI regulations"
+    coverage:
+      scope: "All consolidated Swedish statutes (SFS), including chapters, sections, and provision text"
+      limitations: "May lag official publication by 24-48 hours; no editorial annotations or commentary"
+    languages:
+      - "sv"
+
+  - name: "Lagen.nu"
+    authority: "Community-maintained (sources from Domstolsverket)"
+    official_portal: "https://lagen.nu/"
+    canonical_identifier: "N/A"
+    retrieval_method: "RDF"
+    api_documentation: "https://lagen.nu/om/rattsinformation.html"
+    update_frequency: "weekly"
+    last_ingested: "2026-02-15"
+    license_or_terms:
+      type: "CC-BY Domstolsverket"
+      url: "https://lagen.nu/om/rattsinformation.html"
+      summary: "Court decisions licensed CC-BY via Domstolsverket; community-maintained aggregation"
+    coverage:
+      scope: "Swedish court decisions (rattsfall) from HD, HFD, AD and other courts; case summaries and keywords"
+      limitations: "Not official; coverage varies by court and time period; volunteer-driven with no SLA"
+    languages:
+      - "sv"
+
+data_freshness:
+  automated_checks: false
+  check_frequency: "manual"
+  last_verified: "2026-02-15"

@@ -1,0 +1,171 @@
+{
+  "$schema": "./golden-tests.schema.json",
+  "version": "1.0",
+  "mcp_name": "Swedish Law MCP",
+  "description": "Golden contract tests for the Swedish Law MCP",
+  "tests": [
+    {
+      "id": "se-001",
+      "category": "article_retrieval",
+      "description": "Retrieve provision 1:1 from Dataskyddslagen (SFS 2018:218)",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "2018:218",
+        "chapter": "1",
+        "section": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-002",
+      "category": "article_retrieval",
+      "description": "Retrieve provision 2:1 from Dataskyddslagen (SFS 2018:218)",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "2018:218",
+        "chapter": "2",
+        "section": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-003",
+      "category": "article_retrieval",
+      "description": "Retrieve provision from Skollagen (SFS 2010:800)",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "2010:800",
+        "chapter": "1",
+        "section": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-004",
+      "category": "search",
+      "description": "Search for 'personuppgifter' returns GDPR-related results",
+      "tool": "search_legislation",
+      "input": {
+        "query": "personuppgifter"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["personuppgifter"]
+      }
+    },
+    {
+      "id": "se-005",
+      "category": "search",
+      "description": "Search for 'skadestand' returns relevant provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "skadestand"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1
+      }
+    },
+    {
+      "id": "se-006",
+      "category": "citation_roundtrip",
+      "description": "Validate SFS citation format for Dataskyddslagen",
+      "tool": "validate_citation",
+      "input": {
+        "citation": "SFS 2018:218"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-007",
+      "category": "citation_roundtrip",
+      "description": "Format citation for Skollagen",
+      "tool": "format_citation",
+      "input": {
+        "citation": "SFS 2010:800",
+        "format": "full"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-008",
+      "category": "eu_cross_reference",
+      "description": "Get EU basis for Dataskyddslagen returns GDPR reference",
+      "tool": "get_eu_basis",
+      "input": {
+        "sfs_number": "2018:218"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["GDPR", "2016/679"]
+      }
+    },
+    {
+      "id": "se-009",
+      "category": "article_retrieval",
+      "description": "Check currency of Dataskyddslagen returns status",
+      "tool": "check_currency",
+      "input": {
+        "document_id": "2018:218"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "se-010",
+      "category": "negative_test",
+      "description": "Non-existent statute returns gracefully",
+      "tool": "get_provision",
+      "input": {
+        "document_id": "9999:999",
+        "chapter": "1",
+        "section": "1"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    },
+    {
+      "id": "se-011",
+      "category": "negative_test",
+      "description": "Invalid citation format handled gracefully",
+      "tool": "validate_citation",
+      "input": {
+        "citation": "not-a-real-citation-xyz-999"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    },
+    {
+      "id": "se-012",
+      "category": "negative_test",
+      "description": "Search with empty results handled gracefully",
+      "tool": "search_legislation",
+      "input": {
+        "query": "xyznonexistentterm99999"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    }
+  ]
+}
