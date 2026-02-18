@@ -1,13 +1,13 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/swedish-law-mcp",
-  "description": "Query 717 Swedish statutes, EU cross-references, case law, and preparatory works",
+  "description": "Query 750+ Swedish statutes, EU cross-references, case law, and preparatory works",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/swedish-law-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "license": "Apache-2.0",
   "keywords": [
     "swedish-law",
@@ -25,9 +25,18 @@
     {
       "registryType": "npm",
       "identifier": "@ansvar/swedish-law-mcp",
-      "version": "1.2.0",
+      "version": "1.2.3",
       "transport": {
         "type": "stdio"
+      }
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/swedish-law-mcp",
+      "version": "1.2.3",
+      "transport": {
+        "type": "streamableHttp",
+        "url": "https://swedish-law-mcp.vercel.app/mcp"
       }
     }
   ]

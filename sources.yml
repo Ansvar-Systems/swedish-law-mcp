@@ -43,6 +43,8 @@ sources:
       - "sv"
 
 data_freshness:
-  automated_checks: false
-  check_frequency: "manual"
-  last_verified: "2026-02-15"
+  automated_checks: true
+  check_frequency: "daily"
+  check_workflow: ".github/workflows/check-updates.yml"
+  drift_detection_workflow: ".github/workflows/drift-detect.yml"
+  last_verified: "2026-02-17"
