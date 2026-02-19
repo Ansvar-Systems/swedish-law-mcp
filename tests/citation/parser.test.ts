@@ -66,6 +66,15 @@ describe('parseCitation', () => {
       expect(result.chapter).toBe('3');
       expect(result.section).toBe('5');
     });
+
+    it('should parse provision-first statute format', () => {
+      const result = parseCitation('3 kap. 5 § lag (2018:218)');
+      expect(result.valid).toBe(true);
+      expect(result.type).toBe('statute');
+      expect(result.document_id).toBe('2018:218');
+      expect(result.chapter).toBe('3');
+      expect(result.section).toBe('5');
+    });
   });
 
   describe('propositions', () => {
@@ -140,6 +149,7 @@ describe('detectDocumentType', () => {
   it('should detect statute', () => {
     expect(detectDocumentType('SFS 2018:218')).toBe('statute');
     expect(detectDocumentType('2018:218')).toBe('statute');
+    expect(detectDocumentType('3 kap. 5 § lag (2018:218)')).toBe('statute');
   });
 
   it('should detect bill', () => {

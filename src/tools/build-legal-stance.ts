@@ -56,6 +56,34 @@ export interface LegalStanceResult {
 
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 20;
+const MIN_FALLBACK_TOKEN_HITS = 2;
+
+function extractQueryTokens(query: string): string[] {
+  return (query.normalize('NFC').match(/[\p{L}\p{N}_]+/gu) ?? [])
+    .map(token => token.toLowerCase())
+    .filter(token => token.length > 1);
+}
+
+function hasMinimumTokenCoverage(text: string, tokens: string[]): boolean {
+  if (tokens.length <= 1) {
+    return true;
+  }
+
+  const minHits = Math.min(MIN_FALLBACK_TOKEN_HITS, tokens.length);
+  const haystack = text.toLowerCase();
+  let hits = 0;
+
+  for (const token of tokens) {
+    if (haystack.includes(token)) {
+      hits += 1;
+      if (hits >= minHits) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
 
 export async function buildLegalStance(
   db: Database,
@@ -70,6 +98,7 @@ export async function buildLegalStance(
 
   const limit = Math.min(Math.max(input.limit ?? DEFAULT_LIMIT, 1), MAX_LIMIT);
   const queryVariants = buildFtsQueryVariants(input.query);
+  const queryTokens = extractQueryTokens(input.query);
   const includeCaseLaw = input.include_case_law !== false;
   const includePrepWorks = input.include_preparatory_works !== false;
   const asOfDate = normalizeAsOfDate(input.as_of_date);
@@ -181,7 +210,9 @@ export async function buildLegalStance(
 
     caseLaw = runCaseLawQuery(queryVariants.primary);
     if (caseLaw.length === 0 && queryVariants.fallback) {
-      caseLaw = runCaseLawQuery(queryVariants.fallback);
+      caseLaw = runCaseLawQuery(queryVariants.fallback).filter(hit =>
+        hasMinimumTokenCoverage(`${hit.title} ${hit.summary_snippet}`, queryTokens)
+      );
     }
   }
 
@@ -212,7 +243,9 @@ export async function buildLegalStance(
 
     prepWorks = runPrepQuery(queryVariants.primary);
     if (prepWorks.length === 0 && queryVariants.fallback) {
-      prepWorks = runPrepQuery(queryVariants.fallback);
+      prepWorks = runPrepQuery(queryVariants.fallback).filter(hit =>
+        hasMinimumTokenCoverage(`${hit.title || ''} ${hit.summary_snippet}`, queryTokens)
+      );
     }
   }
 

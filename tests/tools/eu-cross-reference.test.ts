@@ -139,6 +139,39 @@ describe('EU Cross-Reference Tools', () => {
       expect(result.results.implementations[0].is_primary_implementation).toBe(true);
     });
 
+    it('should keep primary implementation true when both primary and non-primary refs exist', async () => {
+      db.prepare(`
+        INSERT INTO legal_documents (id, type, title, status)
+        VALUES ('2026:100', 'statute', 'Testlag för primär implementation', 'in_force')
+      `).run();
+
+      // Insert non-primary row first to reproduce grouping ambiguity.
+      db.prepare(`
+        INSERT INTO eu_references (
+          source_type, source_id, document_id, provision_id, eu_document_id, eu_article,
+          reference_type, full_citation, is_primary_implementation, implementation_status
+        ) VALUES ('provision', '2026:100:1', '2026:100', NULL, 'regulation:2016/679', '5.1.a',
+          'cites_article', 'GDPR Article 5.1.a', 0, NULL)
+      `).run();
+
+      db.prepare(`
+        INSERT INTO eu_references (
+          source_type, source_id, document_id, provision_id, eu_document_id, eu_article,
+          reference_type, full_citation, is_primary_implementation, implementation_status
+        ) VALUES ('document', '2026:100', '2026:100', NULL, 'regulation:2016/679', NULL,
+          'supplements', 'GDPR (EU) 2016/679', 1, 'complete')
+      `).run();
+
+      const result = await getSwedishImplementations(db, {
+        eu_document_id: 'regulation:2016/679',
+      });
+
+      const testStatute = result.results.implementations.find(i => i.sfs_number === '2026:100');
+      expect(testStatute).toBeDefined();
+      expect(testStatute?.is_primary_implementation).toBe(true);
+      expect(testStatute?.implementation_status).toBe('complete');
+    });
+
     it('should throw error for invalid EU document ID', async () => {
       await expect(
         getSwedishImplementations(db, { eu_document_id: 'invalid' })
@@ -264,6 +297,25 @@ describe('EU Cross-Reference Tools', () => {
 
       // 1:1 is a document-level reference, not provision-level
       expect(result.results.eu_references).toHaveLength(0);
+    });
+
+    it('should infer GDPR article references from inline provision text', async () => {
+      db.prepare(`
+        INSERT INTO legal_provisions (document_id, provision_ref, chapter, section, title, content)
+        VALUES ('2018:218', '3:5', '3', '5', 'Hälso- och sjukvård',
+          'Känsliga personuppgifter får behandlas med stöd av artikel 9.2(h) och 9.3 i EU:s dataskyddsförordning.')
+      `).run();
+
+      const result = await getProvisionEUBasis(db, {
+        sfs_number: '2018:218',
+        provision_ref: '3:5',
+      });
+
+      expect(result.results.eu_references.length).toBeGreaterThan(0);
+      const gdprRef = result.results.eu_references.find(ref => ref.id === 'regulation:2016/679');
+      expect(gdprRef).toBeDefined();
+      expect(gdprRef?.article).toContain('9.2.h');
+      expect(gdprRef?.article).toContain('9.3');
     });
 
     it('should throw error for invalid provision', async () => {

@@ -26,6 +26,17 @@ describe('validate_citation tool', () => {
     expect(response.results.warnings).toHaveLength(0);
   });
 
+  it('should validate provision-first Swedish citation format', async () => {
+    const response = await validateCitationTool(db, {
+      citation: '3 kap. 2 § lag (2018:218)',
+    });
+
+    expect(response.results.valid).toBe(true);
+    expect(response.results.document_exists).toBe(true);
+    expect(response.results.provision_exists).toBe(true);
+    expect(response.results.formatted_citation).toBe('SFS 2018:218 3 kap. 2 §');
+  });
+
   it('should return warnings for repealed statute', async () => {
     const response = await validateCitationTool(db, {
       citation: 'SFS 1998:204 1 §',

@@ -56,10 +56,23 @@ const PATTERNS = {
 
   // Article references: artikel 6.1.c, artiklarna 13-15, artikel 83.4, 83.5 och 83.6
   article: [
-    /artikel\s+([\d.]+(?:\s*,\s*[\d.]+)*(?:\s+och\s+[\d.]+)?)/gi,
+    /artikel\s+([\d.]+(?:\s*,\s*[\d.()a-z]+)*(?:\s+och\s+[\d.()a-z]+)?)/gi,
     /artiklarna\s+([\d\s-]+(?:,\s*[\d\s-]+)*(?:\s+och\s+[\d\s-]+)?)/gi,
   ],
 };
+
+const NAMED_EU_ACTS = [
+  {
+    pattern: /\b(?:EU:s\s+dataskyddsförordning|allmänna?\s+dataskyddsförordningen|dataskyddsförordningen|GDPR)\b/giu,
+    type: 'regulation' as const,
+    year: 2016,
+    number: 679,
+    community: 'EU' as const,
+  },
+];
+
+const ARTICLE_SEGMENT_PATTERN = /\bartik(?:el|larna)\s+([^;\n]+)/giu;
+const ARTICLE_LIST_SEPARATOR_PATTERN = /\s*(?:,|och|and)\s*/iu;
 
 /**
  * Implementation keywords that indicate reference type
@@ -105,6 +118,30 @@ export function extractEUReferences(text: string): EUReference[] {
         seen.add(ref.id + ':' + ref.community);
         references.push(ref);
       }
+    }
+  }
+
+  // Extract named EU acts where number is implied (e.g., "EU:s dataskyddsförordning")
+  for (const namedAct of NAMED_EU_ACTS) {
+    const matches = text.matchAll(namedAct.pattern);
+    for (const match of matches) {
+      const fullText = match[0];
+      const index = match.index || 0;
+      const id = `${namedAct.year}/${namedAct.number}`;
+      const dedupeKey = `${id}:${namedAct.community}`;
+      if (seen.has(dedupeKey)) {
+        continue;
+      }
+      seen.add(dedupeKey);
+      references.push({
+        type: namedAct.type,
+        id,
+        year: namedAct.year,
+        number: namedAct.number,
+        community: namedAct.community,
+        fullText,
+        context: extractContext(text, index, fullText.length),
+      });
     }
   }
 
@@ -248,15 +285,86 @@ function extractContext(text: string, index: number, matchLength: number): strin
   return text.substring(start, end).replace(/\s+/g, ' ').trim();
 }
 
+function normalizeArticleToken(value: string): string | null {
+  let normalized = value.trim();
+  if (!normalized) {
+    return null;
+  }
+
+  normalized = normalized.replace(/[–—]/g, '-');
+  normalized = normalized.replace(/\(([^)]+)\)/g, '.$1');
+  normalized = normalized.replace(/\s+/g, '');
+  normalized = normalized.replace(/^\.+|\.+$/g, '');
+
+  if (/^\d+(?:\.\d+)*[a-z]$/i.test(normalized)) {
+    normalized = normalized.replace(/([0-9])([a-z])$/i, '$1.$2');
+  }
+
+  normalized = normalized.toLowerCase();
+
+  if (/^\d+(?:\.\d+)*(?:\.[a-z])?$/.test(normalized)) {
+    return normalized;
+  }
+
+  if (/^\d+(?:\.\d+)*-\d+(?:\.\d+)*$/.test(normalized)) {
+    return normalized;
+  }
+
+  return null;
+}
+
+/**
+ * Extract article-level references from arbitrary text.
+ *
+ * Examples:
+ *   "artikel 9.2(h) och 9.3" -> ["9.2.h", "9.3"]
+ *   "artiklarna 83 och 84" -> ["83", "84"]
+ */
+export function extractInlineEUArticleReferences(text: string): string[] {
+  const found: string[] = [];
+  const seen = new Set<string>();
+
+  const matches = text.matchAll(ARTICLE_SEGMENT_PATTERN);
+  for (const match of matches) {
+    let segment = (match[1] || '').trim();
+    if (!segment) {
+      continue;
+    }
+
+    // Trim tail context such as "i EU:s dataskyddsförordning"
+    segment = segment
+      .split(/\s+i\s+(?:EU|EG|EEG|Euratom|dataskyddsförordning|förordningen|direktivet)\b/i)[0]
+      .trim();
+    if (!segment) {
+      continue;
+    }
+
+    segment = segment.replace(/\s+och\s+/giu, ',');
+    segment = segment.replace(/\s+and\s+/giu, ',');
+
+    const parts = segment.split(ARTICLE_LIST_SEPARATOR_PATTERN);
+    for (const part of parts) {
+      const normalized = normalizeArticleToken(part);
+      if (!normalized || seen.has(normalized)) {
+        continue;
+      }
+      seen.add(normalized);
+      found.push(normalized);
+    }
+  }
+
+  return found;
+}
+
 /**
  * Enhance reference with article citations and implementation keywords
  */
 function enhanceReference(ref: EUReference, _text: string): EUReference {
   // Look for article references near this EU reference
   const contextWindow = ref.context;
-  const articleMatches = contextWindow.match(/artikel\s+([\d.]+(?:\s*,\s*[\d.]+)*(?:\s+och\s+[\d.]+)?)/i);
-  if (articleMatches) {
-    ref.article = articleMatches[1].trim();
+  const articleMatches = extractInlineEUArticleReferences(contextWindow);
+  if (articleMatches.length > 0) {
+    ref.article = articleMatches.join(',');
     ref.referenceType = 'cites_article';
   }
 

@@ -12,6 +12,16 @@ describe('format_citation tool', () => {
     expect(response.results.formatted).toBe('SFS 2018:218 3 kap. 5 §');
   });
 
+  it('should format provision-first Swedish citation input', async () => {
+    const response = await formatCitationTool({
+      citation: '3 kap. 5 § lag (2018:218)',
+    });
+
+    expect(response.results.valid).toBe(true);
+    expect(response.results.type).toBe('statute');
+    expect(response.results.formatted).toBe('SFS 2018:218 3 kap. 5 §');
+  });
+
   it('should format in short mode', async () => {
     const response = await formatCitationTool({
       citation: 'SFS 2018:218 3 kap. 5 §',
