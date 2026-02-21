@@ -18,6 +18,8 @@ import type { ParsedCitation, DocumentType } from '../types/index.js';
 const SFS_PATTERN = /^(?:SFS\s+)?(\d{4}:\d+)\s*(?:(\d+)\s*kap\.\s*)?(?:(\d+\s*[a-z]?)\s*§)?/i;
 /** Short form statute pattern: 2018:218 3:5 */
 const SFS_SHORT_PATTERN = /^(?:SFS\s+)?(\d{4}:\d+)\s+(\d+):(\d+\s*[a-z]?)\s*$/i;
+/** Provision-first statute pattern: 3 kap. 5 § lag (2018:218) */
+const SFS_PROVISION_FIRST_PATTERN = /^(?:(\d+)\s*kap\.\s*)?(\d+\s*[a-z]?)\s*§\s+.+\((\d{4}:\d+)\)\s*$/iu;
 
 /** Proposition pattern: Prop. 2017/18:105 */
 const PROP_PATTERN = /^Prop\.\s*(\d{4}\/\d{2}:\d+)/i;
@@ -93,6 +95,26 @@ export function parseCitation(citation: string): ParsedCitation {
     }
   }
 
+  // Try provision-first statute form (3 kap. 5 § lag (2018:218))
+  const provisionFirstMatch = trimmed.match(SFS_PROVISION_FIRST_PATTERN);
+  if (provisionFirstMatch && provisionFirstMatch[3]) {
+    const result: ParsedCitation = {
+      raw: citation,
+      type: 'statute',
+      document_id: provisionFirstMatch[3],
+      valid: true,
+    };
+
+    if (provisionFirstMatch[1]) {
+      result.chapter = provisionFirstMatch[1];
+    }
+    if (provisionFirstMatch[2]) {
+      result.section = provisionFirstMatch[2].replace(/\s+/g, ' ').trim();
+    }
+
+    return result;
+  }
+
   // Try SFS statute short form first (2018:218 3:5)
   const sfsShortMatch = trimmed.match(SFS_SHORT_PATTERN);
   if (sfsShortMatch && sfsShortMatch[1]) {
@@ -139,11 +161,13 @@ export function parseCitation(citation: string): ParsedCitation {
  * Detect the document type from a citation string without full parsing.
  */
 export function detectDocumentType(citation: string): DocumentType | null {
-  const trimmed = citation.trim().toLowerCase();
-  if (trimmed.startsWith('prop.')) return 'bill';
-  if (trimmed.startsWith('sou ')) return 'sou';
-  if (trimmed.startsWith('ds ')) return 'ds';
-  if (/^(nja|hfd|ad|md|mig)\s/i.test(trimmed)) return 'case_law';
-  if (/^(?:sfs\s+)?\d{4}:\d+/.test(trimmed)) return 'statute';
+  const trimmed = citation.trim();
+  const lower = trimmed.toLowerCase();
+  if (lower.startsWith('prop.')) return 'bill';
+  if (lower.startsWith('sou ')) return 'sou';
+  if (lower.startsWith('ds ')) return 'ds';
+  if (/^(nja|hfd|ad|md|mig)\s/i.test(lower)) return 'case_law';
+  if (/^(?:sfs\s+)?\d{4}:\d+/i.test(trimmed)) return 'statute';
+  if (SFS_PROVISION_FIRST_PATTERN.test(trimmed)) return 'statute';
   return null;
 }

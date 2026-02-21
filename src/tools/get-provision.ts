@@ -69,10 +69,14 @@ export async function getProvision(
 
   const asOfDate = normalizeAsOfDate(input.as_of_date);
 
-  // If no specific provision, return all provisions for the document
+  // If no specific provision, return all provisions for the document (capped)
   if (!provisionRef) {
+    const MAX_ALL_PROVISIONS = 100;
+    const all = getAllProvisions(db, input.document_id, asOfDate, MAX_ALL_PROVISIONS + 1);
+    const truncated = all.length > MAX_ALL_PROVISIONS;
     return {
-      results: getAllProvisions(db, input.document_id, asOfDate),
+      results: truncated ? all.slice(0, MAX_ALL_PROVISIONS) : all,
+      ...(truncated && { _truncated: true, _hint: `Only first ${MAX_ALL_PROVISIONS} provisions returned. Use chapter+section to retrieve specific provisions.` }),
       _metadata: generateResponseMetadata(db)
     };
   }
@@ -146,7 +150,7 @@ export async function getProvision(
   };
 }
 
-function getAllProvisions(db: Database, documentId: string, asOfDate?: string): ProvisionResult[] {
+function getAllProvisions(db: Database, documentId: string, asOfDate?: string, limit?: number): ProvisionResult[] {
   let rows: ProvisionRow[];
 
   if (asOfDate) {
@@ -189,8 +193,9 @@ function getAllProvisions(db: Database, documentId: string, asOfDate?: string): 
       FROM ranked_versions
       WHERE version_rank = 1
       ORDER BY provision_ref
+      ${limit ? 'LIMIT ?' : ''}
     `;
-    rows = db.prepare(sql).all(documentId, asOfDate, asOfDate) as ProvisionRow[];
+    rows = db.prepare(sql).all(...[documentId, asOfDate, asOfDate, ...(limit ? [limit] : [])]) as ProvisionRow[];
   } else {
     const sql = `
       SELECT
@@ -209,8 +214,9 @@ function getAllProvisions(db: Database, documentId: string, asOfDate?: string): 
       JOIN legal_documents ld ON ld.id = lp.document_id
       WHERE lp.document_id = ?
       ORDER BY lp.id
+      ${limit ? 'LIMIT ?' : ''}
     `;
-    rows = db.prepare(sql).all(documentId) as ProvisionRow[];
+    rows = db.prepare(sql).all(...[documentId, ...(limit ? [limit] : [])]) as ProvisionRow[];
   }
 
   return rows.map(row => ({

@@ -65,9 +65,24 @@ export async function getSwedishImplementations(
       ld.title AS sfs_title,
       ld.short_name AS sfs_short_name,
       ld.status,
-      er.reference_type,
-      er.is_primary_implementation,
-      er.implementation_status,
+      CASE
+        WHEN SUM(CASE WHEN er.reference_type = 'implements' THEN 1 ELSE 0 END) > 0 THEN 'implements'
+        WHEN SUM(CASE WHEN er.reference_type = 'supplements' THEN 1 ELSE 0 END) > 0 THEN 'supplements'
+        WHEN SUM(CASE WHEN er.reference_type = 'applies' THEN 1 ELSE 0 END) > 0 THEN 'applies'
+        WHEN SUM(CASE WHEN er.reference_type = 'cites_article' THEN 1 ELSE 0 END) > 0 THEN 'cites_article'
+        ELSE 'references'
+      END AS reference_type,
+      MAX(
+        CASE
+          WHEN er.is_primary_implementation = 1 THEN 1
+          WHEN er.source_type = 'document' AND er.reference_type IN ('implements', 'supplements') THEN 1
+          ELSE 0
+        END
+      ) AS is_primary_implementation,
+      COALESCE(
+        MAX(CASE WHEN er.is_primary_implementation = 1 THEN er.implementation_status END),
+        MAX(er.implementation_status)
+      ) AS implementation_status,
       GROUP_CONCAT(DISTINCT er.eu_article) AS articles_referenced
     FROM legal_documents ld
     JOIN eu_references er ON ld.id = er.document_id
@@ -87,8 +102,16 @@ export async function getSwedishImplementations(
   }
 
   sql += `
-    GROUP BY ld.id
-    ORDER BY er.is_primary_implementation DESC, ld.id
+    GROUP BY ld.id, ld.title, ld.short_name, ld.status
+    ORDER BY
+      MAX(
+        CASE
+          WHEN er.is_primary_implementation = 1 THEN 1
+          WHEN er.source_type = 'document' AND er.reference_type IN ('implements', 'supplements') THEN 1
+          ELSE 0
+        END
+      ) DESC,
+      ld.id
   `;
 
   interface QueryRow {

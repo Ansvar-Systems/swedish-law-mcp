@@ -1,4 +1,5 @@
 import type Database from '@ansvar/mcp-sqlite';
+import { detectCapabilities, readDbMetadata, type Capability, type Tier } from '../capabilities.js';
 
 export interface AboutContext {
   version: string;
@@ -15,6 +16,8 @@ export interface AboutResult {
     repository: string;
   };
   dataset: {
+    tier: Tier;
+    capabilities: Capability[];
     fingerprint: string;
     built: string;
     jurisdiction: string;
@@ -62,6 +65,9 @@ export function getAbout(
     cross_references: safeCount(db, 'SELECT COUNT(*) as count FROM cross_references'),
   };
 
+  const capabilities = detectCapabilities(db);
+  const metadata = readDbMetadata(db);
+
   return {
     server: {
       name: 'Swedish Law MCP',
@@ -71,6 +77,8 @@ export function getAbout(
       repository: 'https://github.com/Ansvar-Systems/Swedish-Law-MCP',
     },
     dataset: {
+      tier: metadata.tier,
+      capabilities: [...capabilities].sort(),
       fingerprint: context.fingerprint,
       built: context.dbBuilt,
       jurisdiction: 'Sweden (SE)',

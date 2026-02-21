@@ -3,16 +3,25 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import Database from '@ansvar/mcp-sqlite';
 import { join } from 'path';
-import { existsSync, copyFileSync, rmSync } from 'fs';
+import { existsSync, copyFileSync, rmSync, readFileSync, statSync } from 'fs';
+import { createHash } from 'crypto';
 
 import { registerTools } from '../src/tools/registry.js';
+import type { AboutContext } from '../src/tools/about.js';
+
+const PKG_PATH = join(process.cwd(), 'package.json');
+const pkgVersion: string = JSON.parse(readFileSync(PKG_PATH, 'utf-8')).version;
 
 const SOURCE_DB = process.env.SWEDISH_LAW_DB_PATH
   || join(process.cwd(), 'data', 'database.db');
 const TMP_DB = '/tmp/database.db';
 const TMP_DB_LOCK = '/tmp/database.db.lock';
 
+// Cache DB connection and aboutContext across warm requests.
+// The Server itself MUST be created per-request because server.connect()
+// throws if the server is already connected to a transport.
 let db: InstanceType<typeof Database> | null = null;
+let aboutContext: AboutContext | null = null;
 
 function getDatabase(): InstanceType<typeof Database> {
   if (!db) {
@@ -29,6 +38,24 @@ function getDatabase(): InstanceType<typeof Database> {
   return db;
 }
 
+function getAboutContext(): AboutContext {
+  if (!aboutContext) {
+    let fingerprint = 'unknown';
+    let dbBuilt = new Date().toISOString();
+    try {
+      const dbPath = existsSync(TMP_DB) ? TMP_DB : SOURCE_DB;
+      const dbBuffer = readFileSync(dbPath);
+      fingerprint = createHash('sha256').update(dbBuffer).digest('hex').slice(0, 12);
+      const dbStat = statSync(dbPath);
+      dbBuilt = dbStat.mtime.toISOString();
+    } catch {
+      // Non-fatal
+    }
+    aboutContext = { version: pkgVersion, fingerprint, dbBuilt };
+  }
+  return aboutContext;
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
@@ -43,7 +70,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'GET') {
     res.status(200).json({
       name: 'swedish-legal-citations',
-      version: '1.2.0',
+      version: pkgVersion,
       protocol: 'mcp-streamable-http',
     });
     return;
@@ -57,12 +84,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const database = getDatabase();
 
+    // Fresh Server per request — required because server.connect() throws
+    // if already connected ("use a separate Protocol instance per connection")
     const server = new Server(
-      { name: 'swedish-legal-citations', version: '1.2.0' },
+      { name: 'swedish-legal-citations', version: pkgVersion },
       { capabilities: { tools: {} } }
     );
 
-    registerTools(server, database);
+    registerTools(server, database, getAboutContext());
 
     const transport = new StreamableHTTPServerTransport({
       sessionIdGenerator: undefined,

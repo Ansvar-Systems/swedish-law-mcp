@@ -61,8 +61,20 @@ export async function getEUBasis(
       ed.title,
       ed.short_name,
       ed.url_eur_lex,
-      er.reference_type,
-      er.is_primary_implementation,
+      CASE
+        WHEN SUM(CASE WHEN er.reference_type = 'implements' THEN 1 ELSE 0 END) > 0 THEN 'implements'
+        WHEN SUM(CASE WHEN er.reference_type = 'supplements' THEN 1 ELSE 0 END) > 0 THEN 'supplements'
+        WHEN SUM(CASE WHEN er.reference_type = 'applies' THEN 1 ELSE 0 END) > 0 THEN 'applies'
+        WHEN SUM(CASE WHEN er.reference_type = 'cites_article' THEN 1 ELSE 0 END) > 0 THEN 'cites_article'
+        ELSE 'references'
+      END AS reference_type,
+      MAX(
+        CASE
+          WHEN er.is_primary_implementation = 1 THEN 1
+          WHEN er.source_type = 'document' AND er.reference_type IN ('implements', 'supplements') THEN 1
+          ELSE 0
+        END
+      ) AS is_primary_implementation,
       GROUP_CONCAT(DISTINCT er.eu_article) AS articles
     FROM eu_documents ed
     JOIN eu_references er ON ed.id = er.eu_document_id
@@ -79,14 +91,21 @@ export async function getEUBasis(
   }
 
   sql += `
-    GROUP BY ed.id
+    GROUP BY ed.id, ed.type, ed.year, ed.number, ed.community, ed.celex_number, ed.title, ed.short_name, ed.url_eur_lex
     ORDER BY
-      er.is_primary_implementation DESC,
-      CASE er.reference_type
-        WHEN 'implements' THEN 1
-        WHEN 'supplements' THEN 2
-        WHEN 'applies' THEN 3
-        ELSE 4
+      MAX(
+        CASE
+          WHEN er.is_primary_implementation = 1 THEN 1
+          WHEN er.source_type = 'document' AND er.reference_type IN ('implements', 'supplements') THEN 1
+          ELSE 0
+        END
+      ) DESC,
+      CASE
+        WHEN SUM(CASE WHEN er.reference_type = 'implements' THEN 1 ELSE 0 END) > 0 THEN 1
+        WHEN SUM(CASE WHEN er.reference_type = 'supplements' THEN 1 ELSE 0 END) > 0 THEN 2
+        WHEN SUM(CASE WHEN er.reference_type = 'applies' THEN 1 ELSE 0 END) > 0 THEN 3
+        WHEN SUM(CASE WHEN er.reference_type = 'cites_article' THEN 1 ELSE 0 END) > 0 THEN 4
+        ELSE 5
       END,
       ed.year DESC
   `;

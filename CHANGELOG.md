@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.3] - 2026-02-17 - Production Hardening
+
+### Added
+- **Contract test runner** with golden tests (`fixtures/golden-tests.json`) — 12 tests covering article retrieval, search, citation roundtrip, EU cross-references, and negative tests
+- **Drift detection workflow** (`drift-detect.yml`) — daily SHA-256 comparison of constitutional provisions against `fixtures/golden-hashes.json`; auto-creates GitHub issue on mismatch
+- **SBOM generation** — CycloneDX SBOM attached to every GitHub Release via publish workflow
+- **MCP Infrastructure Blueprint** compliance files (`sources.yml`, `server.json`, security scanning workflows)
+- **30 new statutes** ingested from Riksdagen (v1.2.2 data update)
+
+### Fixed
+- **Version consistency**: `api/mcp.ts` and `api/health.ts` now read version from `package.json` (previously hardcoded, causing drift)
+- **WAL file cleanup** in golden tests — prevents WASM SQLite failures in CI
+- **Upgrade messaging**: replaced promotional upgrade prompts with honest size-constraint explanations
+- **sources.yml**: `automated_checks` now reflects actual CI workflow status
+
+### Changed
+- **SQLite driver**: migrated from `better-sqlite3` to `@ansvar/mcp-sqlite` (WASM-based, works in Vercel serverless)
+- **CI hardening**: Trivy, Gitleaks, Socket Security, OSSF Scorecard all configured and running
+- **Publish workflow**: npm provenance, MCP Registry publishing via Azure Key Vault, SBOM attachment
+
+---
+
+## [1.2.0] - 2026-02-12 - Public Release Preparation
+
+### Added
+- **Vercel Streamable HTTP deployment** (`api/mcp.ts`) — enables ChatGPT MCP access
+- **`about` tool** — structured server metadata, dataset statistics, freshness, and provenance
+- **Tiered build pipeline** with capability detection (`src/capabilities.ts`)
+- **Full court archive scraping** — expanded case law coverage including PMÖD
+- **6-layer security scanning**: CodeQL, Semgrep, Trivy, Gitleaks, Socket Security, OSSF Scorecard
+- **Automated `.mcpb` bundle creation** on release
+
+### Changed
+- **Replaced `better-sqlite3`** with `@ansvar/mcp-sqlite` for Vercel WASM compatibility
+- **Repository hardened** for public release (security workflows, CI fixes)
+- **`mcpName` field** added to `package.json` for MCP Registry validation
+
+---
+
 ## [1.1.0] - 2026-02-12 - Massive Expansion + EU Integration
 
 ### Added
@@ -169,7 +208,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Key Changes |
 |---------|------|-------------|
-| **1.1.0** | 2025-02-12 | EU Law Integration (682 refs, 227 docs, 5 tools) |
+| **1.2.3** | 2026-02-17 | Production hardening (contract tests, drift detection, SBOM, version fixes) |
+| **1.2.0** | 2026-02-12 | Public release (Vercel HTTP, about tool, WASM SQLite, security scanning) |
+| **1.1.0** | 2026-02-12 | EU Law Integration (668 refs, 228 docs, 5 tools) |
 | **1.0.0** | 2026-02-12 | Production release (4,827 cases, 1,818 prep works) |
 | **0.2.0** | 2025-01-15 | Case law integration (initial) |
 | **0.1.0** | 2024-12-01 | Initial release (8 tools, 81 statutes) |

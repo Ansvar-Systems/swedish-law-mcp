@@ -65,6 +65,28 @@ describe('build_legal_stance', () => {
     expect(response.results.case_law.length).toBeLessThanOrEqual(1);
   });
 
+  it('should suppress low-signal fallback matches for case law and preparatory works', async () => {
+    db.prepare(`
+      INSERT INTO legal_documents (id, type, title, status, issued_date)
+      VALUES ('2025/26:999', 'bill', 'Hamn- och vindkraftsfrågor', 'in_force', '2025-11-10')
+    `).run();
+
+    db.prepare(`
+      INSERT INTO preparatory_works (statute_id, prep_document_id, title, summary)
+      VALUES ('2018:218', '2025/26:999', 'Ändringsförslag',
+        'Propositionen behandlar personuppgifter i hamn- och vindkraftsprojekt.')
+    `).run();
+
+    const response = await buildLegalStance(db, {
+      query: 'cybersäkerhet personuppgifter',
+      include_case_law: true,
+      include_preparatory_works: true,
+    });
+
+    expect(response.results.case_law).toHaveLength(0);
+    expect(response.results.preparatory_works).toHaveLength(0);
+  });
+
   it('should return empty results for empty query', async () => {
     const response = await buildLegalStance(db, { query: '' });
 
