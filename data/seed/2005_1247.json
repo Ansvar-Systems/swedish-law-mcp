@@ -1,0 +1,21 @@
+{
+  "id": "2005:1247",
+  "type": "statute",
+  "title": "Lag (2005:1247) om kreditering på skattekonto av stöd för konvertering från oljeuppvärmningssystem i bostadshus",
+  "status": "repealed",
+  "issued_date": "2005-12-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-2005-1247.html",
+  "description": "Upphävd 2008-01-01 genom SFS 2007:1109",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stöd för konvertering från oljeuppvärmningssystem i bostadshus som har beslutats av Boverket eller en länsstyrelse får tillgodoföras den stödberättigade genom kreditering på sådant skattekonto som har upprättats för denne enligt 3 kap. 5 § skattebetalningslagen (1997:483). Krediteringen får endast avse stöd för åtgärder som har påbörjats och slutförts under perioden 1 januari 2006-31 december 2007. Lag (2006:1403)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Kreditering på skattekonto med stöd av denna lag får inte minska statens inkomst av skatter med ett större belopp än 161,467 miljoner kronor 2006 och 288,533 miljoner kronor 2007. Lag (2007:622)."
+    }
+  ]
+}

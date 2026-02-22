@@ -1,0 +1,41 @@
+{
+  "id": "1994:629",
+  "type": "statute",
+  "title": "Lag (1994:629) om jordbruksprodukter och livsmedel som är ekologiskt framställda",
+  "status": "repealed",
+  "issued_date": "1993-06-02",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-629.html",
+  "description": "Upphävd 1995-07-01 genom SFS 1995:551",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag gäller sådana jordbruksprodukter och livsmedel som marknadsförs som ekologiskt framställda."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För att jordbruksprodukter och livsmedel skall få marknadsföras som ekologiskt framställda gäller särskilda villkor för odling, hantering, lagring, förädling, märkning och marknadsföring. Villkoren anges i föreskrifter som meddelas av regeringen eller den myndighet som regeringen bestämmer. Den som producerar, bereder eller från länder utanför Europeiska ekonomiska samarbetsområdet importerar sådana produkter är skyldig att anmäla verksamheten till Statens jordbruksverk."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Jordbruksverket utövar tillsynen över att föreskrifter som meddelats med stöd av denna lag följs. Jordbruksverket får överlämna till ett enskilt kontrollorgan som är juridisk person att tillse att jordbruksprodukter och livsmedel produceras och hanteras i överensstämmelse med föreskrifter meddelade med stöd av lagen. Jordbruksverket skall godkänna och utöva tillsyn över enskilda kontrollorgan. Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om villkor för godkännande av kontrollorgan och om hur tillsynen skall bedrivas."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Jordbruksverket får meddela de förelägganden och förbud som behövs för att lagen och föreskrifter som har meddelats med stöd av lagen skall följas. För tillsynen har Jordbruksverket och godkända kontrollorgan rätt att få 1. tillträde till områden, lokaler och andra utrymmen där jordbruksprodukter och livsmedel framställs ekologiskt eller där sådana varor hanteras, 2. de upplysningar och handlingar som behövs för tillsynen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen eller, efter regeringens bemyndigande, Jordbruksverket får föreskriva att särskilda avgifter får tas ut för tillsynen."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Beslut av Jordbruksverket i enskilda fall enligt denna lag eller enligt föreskrifter som meddelats med stöd av lagen får överklagas hos länsrätten."
+    }
+  ]
+}

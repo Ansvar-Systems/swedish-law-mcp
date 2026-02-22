@@ -1,0 +1,31 @@
+{
+  "id": "1970:462",
+  "type": "statute",
+  "title": "Lag (1970:462) om vissa anslag på kommuns anslagstavla",
+  "status": "repealed",
+  "issued_date": "1970-06-29",
+  "url": "https://data.riksdagen.se/dokument/sfs-1970-462.html",
+  "description": "Upphävd 2018-01-01 genom SFS 2017:725",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Får myndighet eller enskild på grund av lag eller annan författning påkalla att handling anslås på kommuns anslagstavla, åligger det kommunen att verkställa åtgärden."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som påkallar att handling anslås, skall lämna handlingen till kommunstyrelsen med upplysning om den tid varunder handlingen skall vara anslagen. Innefattar denna ett meddelande om att annan handling hålles tillgänglig, skall meddelandet ange sistnämnda handlings huvudsakliga innehåll, den plats där den finns tillgänglig och tiden härför. Påkallar enskild att sådant meddelande anslås, skall den handling som nämnes i meddelandet hållas tillgänglig hos kommunstyrelsen."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Har enskild påkallat att handling anslås och finner kommunen att åtgärden bör företagas i annan kommun, hänskjutes frågan till länsstyrelsen för avgörande. Detsamma gäller om hinder mot åtgärden finnes föreligga av annan anledning."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Sedan handling varit anslagen under föreskriven tid, skall bevis härom tillställas den som påkallat åtgärden."
+    }
+  ]
+}

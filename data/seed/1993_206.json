@@ -1,0 +1,30 @@
+{
+  "id": "1993:206",
+  "type": "statute",
+  "title": "Lag (1993:206) om ansvarsfrihet vid olaga vapeninnehav",
+  "status": "in_force",
+  "issued_date": "1993-04-15",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-206.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som innehar ett skjutvapen eller ammunition utan att vara berättigad till det skall inte dömas till ansvar för brott mot 37 § första stycket 1 eller 38 § första stycket 4 vapenlagen (1973:1176) avseende det vapnet eller den ammunitionen, om innehavaren frivilligt lämnar eller låter lämna vapnet eller ammunitionen till en polismyndighet under tiden juli--september 1993."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som överlämnar egendom enligt 1 § behöver inte lämna uppgift om sin identitet."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Egendom som lämnas till polismyndigheten och vars ägare inte är känd tillfaller staten, om ägaren inte ger sig till känna inom tre månader från det att den lämnades in. Om ägaren är känd och inte kan anses ha avstått från sin rätt till egendomen, skall polismyndigheten ge ägaren tillfälle att inom en månad ta tillbaka egendomen. Egendomen tillfaller staten, om ägaren inte tar tillbaka den."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Egendom som har tillfallit staten skall förstöras, om den inte behövs för musealt, militärt eller annat liknande ändamål."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "1996:339",
+  "type": "statute",
+  "title": "Lag (1996:339) om en försöksverksamhet med viss kvalificerad yrkesutbildning",
+  "status": "repealed",
+  "issued_date": "1996-05-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1996-339.html",
+  "description": "Upphävd 2002-01-01 genom SFS 2001:239",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I denna lag ges bestämmelser om en försöksverksamhet med viss kvalificerad yrkesutbildning. Utbildningen kan anordnas av statliga universitet och högskolor, kommuner, landsting och enskilda utbildningsanordnare. Utbildningsanordnarna får anordna utbildningen själva eller i samverkan med andra. Utbildningen anordnas med särskilt statsbidrag, som fördelas efter ansökan."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Utbildningen skall ge sådana fördjupade teoretiska och praktiska kunskaper som krävs för att självständigt och i arbetslag utföra kvalificerade uppgifter i en modernt organiserad produktion av varor eller tjänster. Utbildningen skall präglas av såväl ämnesteoretiskt djup som en stark arbetsplatsintegrering."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Utbildningen skall väsentligen bygga på de kunskaper som eleverna får på nationella program i gymnasieskolan eller motsvarande kunskaper."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om organisationen av utbildningen hos kommuner och landsting samt om deras befattning i övrigt med utbildningen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om att enskilda utbildningsanordnare kan ges i uppgift att utfärda utbildningsbevis och examensbevis efter genomförd utbildning."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela ytterligare föreskrifter om försöksverksamheten."
+    }
+  ]
+}

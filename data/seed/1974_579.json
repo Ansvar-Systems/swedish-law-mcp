@@ -1,0 +1,20 @@
+{
+  "id": "1974:579",
+  "type": "statute",
+  "title": "Lag (1974:579) om handläggningen av nådeärenden",
+  "status": "in_force",
+  "issued_date": "1974-05-10",
+  "url": "https://data.riksdagen.se/dokument/sfs-1974-579.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Nådeärenden prövas av regeringen enligt 12 kap. 9 § första stycket regeringsformen. Lag (2010:1423)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Om det finns särskild anledning, ska regeringen, innan den avgör ett nådeärende, inhämta ett yttrande från Högsta domstolen eller, i mål där regeringen, en förvaltningsdomstol eller en förvaltningsmyndighet är sista instans, från Högsta förvaltningsdomstolen. Lag (2010:1502)."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "1975:424",
+  "type": "statute",
+  "title": "Lag (1975:424) om uppgiftsskyldighet vid grundvattentäktsundersökning och brunnsborrning",
+  "status": "in_force",
+  "issued_date": "1975-06-05",
+  "url": "https://data.riksdagen.se/dokument/sfs-1975-424.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som yrkesmässigt utför borrning, rördrivning, grävning eller liknande arbete i syfte att undersöka förekomst av grundvatten eller i syfte att tillgodogöra sig grundvatten eller värme ur berget är skyldig att till Sveriges geologiska undersökning skriftligen lämna redogörelse för arbetet och dess resultat. Lag (1985:245)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som yrkesmässigt utför grundvattentäktsundersökning och därvid skriftligen sammanställer resultat av undersökning för uppdragsgivares räkning är skyldig att till Sveriges geologiska undersökning lämna en kopia av sammanställningen. Vad som har sagts nu medför ej inskränkning i skyldighet att lämna redogörelse som avses i 1 §."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Redgörelse enligt 1 § skall innehålla uppgift om 1. tid och plats för arbetet, 2. ändamålet med arbetet samt dess omfattning och tekniska utförande, 3. jord- och bergarter som påträffats och dessas mäktighet. Har grundvatten påträffats skall redogörelsen även innehålla uppgift om 1. grundvattenytans nivå eller nivåer, 2. resultat av provpumpning, om sådan har skett, 3. resultat av vattenanalys, om sådan har företagits."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Redogörelse enligt 1 § skall lämnas inom tre månader efter det att arbete har avslutats. Sammanställning som avses i 2 § skall lämnas inom tre månader efter det att den har färdigställts."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen eller myndighet som regeringen bestämmer får för visst fall medge undantag från denna lag, om särskilda skäl föreligger."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Den som uppsåtligen eller av oaktsamhet underlåter att fullgöra uppgiftsskyldighet eller lämnar oriktig uppgift dömes, om ej gärningen är belagd med straff i brottsbalken, till böter. Allmänt åtal får väckas endast efter anmälan av Sveriges geologiska undersökning."
+    }
+  ]
+}

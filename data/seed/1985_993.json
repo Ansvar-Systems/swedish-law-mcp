@@ -1,0 +1,72 @@
+{
+  "id": "1985:993",
+  "type": "statute",
+  "title": "Lag (1985:993) om avgifter för granskning av filmer och videogram",
+  "status": "repealed",
+  "issued_date": "1985-12-12",
+  "url": "https://data.riksdagen.se/dokument/sfs-1985-993.html",
+  "description": "Upphävd 1991-01-01 genom SFS 1990:886",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inledande bestämmelse",
+      "content": "I denna lag finns bestämmelser om avgifter för granskning av filmer och videogram enligt förordningen (1959:348) med särskilda bestämmelser om biografföreställningar m. m. Avgiften skall betalas av den som anmäler en film eller ett videogram för granskning. Avgifter för granskning av film"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För granskning av filmer skall avgift betalas efter filmens längd räknad i meter."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För det först granskade exemplaret av en film (provkopian) betalas för varje påbörjat 50-tal meter 1. 15 kronor 25 öre för a) en film som till väsentlig del har undervisande, upplysande eller vetenskapligt innehåll och vars längd inte överstiger 1 600 meter, b) en film som till väsentlig del är upptagen efter verkligheten, 2. 74 kronor och 25 öre för andra filmer än sådana som avses i 1. Lag (1988:586)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "För de kopior av en film som är lika med provkopian betalas för varje påbörjat 50-tal meter 1. 3 kronor 75 öre, om avgiften för provkopian beräknats enligt 3 § 1, 2. 28 kronor 50 öre, om avgiften för provkopian beräknats enligt 3 § 2. Lag (1988:586)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "För film som är omkring 8 millimeter bred skall avgiften beräknas som om filmens längd vore fem gånger den verkliga längden. För annan film som är smalare än omkring 35 millimeter skall avgiften beräknas som om filmens längd vore två och en halv gånger den verkliga längden. Avgifter för granskning av videogram"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "För granskning av videogram skall avgift betalas efter videogrammets längd räknad i antalet spelminuter vid normal visningshastighet."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "För det först granskade exemplaret av ett videogram (provkopian) betalas för varje påbörjad spelminut 1. 8 kronor 30 öre för a) ett videogram som till väsentlig del har undervisande, upplysande eller vetenskapligt innehåll och vars speltid inte överstiger 60 minuter, b) ett videogram som till väsentlig del är upptaget efter verkligheten, 2. 40 kronor 50 öre för andra videogram än sådana som avses i 1. Lag (1988:586)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "För de kopior av ett videogram som är lika med provkopian betalas för varje påbörjad spelminut 1. 2 kronor 10 öre, om avgiften för provkopian beräknats enligt 7 § 1, 2. 15 kronor 45 öre, om avgiften för provkopian beräknats enligt 7 § 2. Lag (1988:586)."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Har någon fått ett tillståndsbevis som anger att endast vissa delar av ett videogram godkänts för offentlig förevisning, skall avgift inte tas ut för den första kopia av videogrammet som han därefter låter granska, om den kopian kan godkännas i sin helhet. Gemensamma bestämmelser"
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "Avgift för granskning av en film eller ett videogram skall inte tas ut, om 1. filmen eller videogrammet helt eller delvis kan godkännas för offentlig förevisning, 2. filmen eller videogrammet skall visas endast vid ett fåtal tillfällen vid film- eller videofestivaler eller andra arrangemang som inte har kommersiellt syfte, och 3. den tid under vilken filmen eller videogrammet skall visas omfattar en period om högst 30 dagar. Om avgift inte tas ut, skall godkännandet av filmen eller videogrammet begränsas till att avse visning uteslutande vid de tillfällen som anges i beslutet om avgiftsbefrielse. Har avgiftsbefrielse meddelats i fråga om en film eller ett videogram, får sådan befrielse inte åter meddelas i fråga om en film eller ett videogram med samma innehåll, förrän ett år förflutit från dagen för beslutet om befrielse."
+    },
+    {
+      "provision_ref": "11",
+      "section": "11",
+      "content": "Statens biografbyrå beslutar om avgifter för granskning. Avgifterna skall erläggas till byrån."
+    },
+    {
+      "provision_ref": "12",
+      "section": "12",
+      "content": "Biografbyråns beslut huruvida avgift skall tas ut eller inte vid prövning enligt 10 § får överklagas hos regeringen genom besvär. Övriga beslut enligt denna lag får överklagas hos kammarrätten genom besvär."
+    }
+  ]
+}

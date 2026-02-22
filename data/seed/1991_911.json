@@ -1,0 +1,36 @@
+{
+  "id": "1991:911",
+  "type": "statute",
+  "title": "/r1/ Lag (1991:911) om uppgiftsskyldighet för näringsidkare inom livsmedelsområdet;",
+  "status": "repealed",
+  "issued_date": "1991-06-13",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-911.html",
+  "description": "Upphävd 1993-01-01 genom SFS1992:888",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Med stöd av denna lag får uppgifter samlas in för att belysa förhållandena och följa effekterna av avregleringen på livsmedelsområdet."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen bemyndigas att föreskriva att uppgifter om verksamheten skall lämnas av näringsidkare som tar befattning med sådana varor som avses i 1--12, 15--25, 28, 31, 35 och 38 kap. tulltaxelagen (1987:1068) eller levererar varor som används vid framställning av sådana varor. Uppgifterna skall lämnas till den myndighet som regeringen bestämmer. Regeringen får överlåta åt en förvaltningsmyndighet att meddela föreskrifter om uppgiftsskyldigheten."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Uppgiftsskyldigheten får avse import, export, inköp och försäljning samt de uppgifter i övrigt som behövs för de ändamål som anges i 1 §."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Den myndighet som en uppgift skall lämnas till får meddela de förelägganden som behövs för att föreskrifter som har meddelats med stöd av lagen skall följas. I beslut om föreläggande får myndigheten sätta ut vite."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Till böter döms den som med uppsåt eller av oaktsamhet 1. inte lämnar uppgift enligt föreskrifter som meddelats med stöd av lagen, eller 2. lämnar oriktig uppgift. I ringa fall skall den skyldige inte dömas till ansvar. Detsamma gäller om den skyldige kan dömas till ansvar enligt brottsbalken. Om ett vitesföreläggande har överträtts, döms inte heller till ansvar för gärning som omfattas av föreläggandet. Allmänt åtal får väckas bara efter anmälan av den myndighet som uppgiften har eller skulle ha lämnats till."
+    }
+  ]
+}

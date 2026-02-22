@@ -1,0 +1,26 @@
+{
+  "id": "1998:1755",
+  "type": "statute",
+  "title": "Lag (1998:1755) om särskilda insatser för personer med tre fjärdedels sjukersättning eller aktivitetssersättning",
+  "status": "repealed",
+  "issued_date": "1998-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1998-1755.html",
+  "description": "Upphävd 2011-01-01 genom SFS 2010:111",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "För den som får tre fjärdedels sjukersättning eller aktivitetsersättning enligt lagen (1962:381) om allmän försäkring skall särskilda insatser göras för att han eller hon skall kunna få en anställning motsvarande den återstående arbetsförmågan. Lag (2001:490)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Försäkringskassan ansvarar för att särskilda insatser kommer till stånd för att bereda försäkrade med tre fjärdedels sjukersättning eller aktivitetsersättning en anställning motsvarande den återstående arbetsförmågan. Lag (2004:843)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För den som får tre fjärdedels sjukersättning eller aktivitetsersättning och som bereds en anställning med lönebidrag eller hos Samhall Aktiebolag motsvarande den återstående arbetsförmågan, betalas ersättning för kostnaderna för anställningen från den allmänna försäkringen enligt grunder som regeringen bestämmer. Lag (2001:490). Övergångsbestämmelser 2001:490 Denna lag träder i kraft den 1 januari 2003. Äldre bestämmelser tillämpas fortfarande för särskilda insatser som avser tid före ikraftträdandet."
+    }
+  ]
+}

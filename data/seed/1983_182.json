@@ -1,0 +1,30 @@
+{
+  "id": "1983:182",
+  "type": "statute",
+  "title": "Lag (1983:182) om dubbelbeskattningsavtal mellan Sverige och Italien",
+  "status": "in_force",
+  "issued_date": "1983-03-24",
+  "url": "https://data.riksdagen.se/dokument/sfs-1983-182.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning beträffande skatter på inkomst och förmögenhet och för att förhindra skatteflykt som Sverige och Italien undertecknade den 6 mars 1980 skall, tillsammans med det protokoll som är fogat till avtalet och som utgör en integrerande del av detta, gälla för Sveriges del. Avtalets och protokollets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en person anser att det vidtagits någon åtgärd som för honom medfört eller kommer att medföra en beskattning som strider mot bestämmelserna i avtalet, kan han ansöka om rättelse enligt artikel 26 punkt 1 i avtalet. Sådan ansökan skall göras hos regeringen och bör inges inom den tid som anges i nämnda bestämmelse."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Har upphävts genom lag (2011:1312)."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "1992:1140",
+  "type": "statute",
+  "title": "Lag (1992:1140) om Sveriges ekonomiska zon",
+  "status": "in_force",
+  "issued_date": "1992-12-03",
+  "url": "https://data.riksdagen.se/dokument/sfs-1992-1140.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Allmänna bestämmelser",
+      "content": "Sveriges ekonomiska zon omfattar de områden utanför sjöterritoriet som framgår av bilaga 4 till lagen (2017:1272) om Sveriges sjöterritorium och maritima zoner. Lag (2017:1278). Skydd för den marina miljön"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som bedriver sådan verksamhet som anges i 5 § skall iaktta bestämmelserna i 2 kap. miljöbalken. Även andra som färdas i den ekonomiska zonen eller som bedriver verksamhet där skall vidta sådana åtgärder som är nödvändiga för att undvika skador på den marina miljön. Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter för att skydda och bevara den marina miljön. Lag (1998:847)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Till skydd för den marina miljön finns det också bestämmelser om 1. geologisk lagring av koldioxid i 1 kap. 2 § och 4 kap. 9 § miljöbalken, 2. särskilda skyddade naturområden i 7 kap. 27-30 och 32 §§ miljöbalken, 3. allvarliga miljöskador i 10 kap. 18 a § miljöbalken, 4. dumpning i 15 kap. 27-29 §§ miljöbalken, 5. föroreningar från fartyg i lagen (1980:424) om åtgärder mot förorening från fartyg, och 6. hantering och kontroll av fartygs barlastvatten och sediment från sådant vatten i barlastvattenlagen (2009:1165). Lag (2019:495). Utnyttjande av naturtillgångar m.m."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "I fråga om fiske i den ekonomiska zonen gäller fiskelagen (1993:787). I fråga om rätten att i zonen utforska kontinentalsockeln och utvinna dess naturtillgångar gäller lagen (1966:314) om kontinentalsockeln. Lag (1993:789)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "I fråga om andra verksamheter och åtgärder än sådana som avses i 4 § krävs det tillstånd av regeringen eller den myndighet som regeringen bestämmer för att i den ekonomiska zonen 1. utforska, utvinna eller på annat sätt utnyttja naturtillgångar, 2. uppföra eller använda konstgjorda öar, och 3. i kommersiellt syfte uppföra eller använda anläggningar eller andra inrättningar. I ett tillståndsbeslut ska den verksamhet som tillståndet avser anges. Ett tillstånd får begränsas till viss tid. Ett tillstånd ska förenas med de villkor som behövs för att skydda allmänna intressen och enskild rätt, såsom att skydda människors hälsa och miljön mot skador och olägenheter, främja en långsiktigt god hushållning med mark och vatten och andra resurser samt trygga säkerheten. Lag (2008:832)."
+    },
+    {
+      "provision_ref": "5 a",
+      "section": "5 a",
+      "content": "Ett tillstånd får förenas med ytterligare eller ändrade villkor, om det genom verksamheten har uppkommit en olägenhet av någon betydelse som inte förutsågs när tillståndet meddelades eller om verksamheten med någon betydelse medverkar till att en miljökvalitetsnorm enligt 5 kap. miljöbalken inte följs. Med stöd av denna paragraf får inte meddelas så ingripande villkor att verksamheten inte längre kan bedrivas eller att den avsevärt försvåras. Lag (2010:891)."
+    },
+    {
+      "provision_ref": "5 b",
+      "section": "5 b",
+      "content": "Ett tillstånd får för sin giltighet göras beroende av att den som avser att bedriva verksamheten ställer säkerhet för kostnaderna för att ta bort anläggningar och andra inrättningar samt för andra åtgärder för återställning. Staten, kommuner, regioner och kommunalförbund behöver inte ställa säkerhet. Om det kan antas att den ställda säkerheten inte är tillräcklig, får tillståndsmyndigheten besluta om ytterligare säkerhet. I fråga om beskaffenheten av säkerheten gäller 2 kap. 25 § utsökningsbalken. Säkerheten ska prövas av tillståndsmyndigheten och förvaras av länsstyrelsen i det län som närmaste del av Sveriges sjöterritorium ligger i. Lag (2019:879)."
+    },
+    {
+      "provision_ref": "5 c",
+      "section": "5 c",
+      "content": "Tillstånd enligt 5 § krävs inte för geologisk lagring av koldioxid. Lag (2012:433)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Vid prövning av tillstånd ska 2-4 kap. och 5 kap. 3-5 och 18 §§ miljöbalken tillämpas. För verksamheter och åtgärder som ska prövas för ett tillstånd ska, på samma sätt som om ansökan avser en verksamhet i Sverige, 1. frågan om verksamheten eller åtgärden kan antas medföra en betydande miljöpåverkan avgöras i ett särskilt beslut enligt"
+    },
+    {
+      "provision_ref": "6:6 a",
+      "chapter": "6",
+      "section": "6 a",
+      "title": "Det som sägs om länsstyrelsen i 6 kap. miljöbalken ska gälla",
+      "content": "En ansökan om tillstånd ska innehålla den miljökonsekvensbeskrivning som krävs enligt 6 kap. miljöbalken. Lag (2017:962)."
+    },
+    {
+      "provision_ref": "6:7",
+      "chapter": "6",
+      "section": "7",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får till skydd för en konstgjord ö, anläggning eller annan inrättning som tillkommit med stöd av denna lag meddela föreskrifter om en säkerhetszon med en utsträckning av högst 500 meter från öns eller inrättningens yttersida."
+    },
+    {
+      "provision_ref": "6:8",
+      "chapter": "6",
+      "section": "8",
+      "content": "Ett tillstånd får återkallas, om tillståndshavaren åsidosätter sina skyldigheter enligt denna lag eller enligt föreskrifter eller villkor som har meddelats med stöd av lagen eller om det annars finns synnerliga skäl. Om ett tillstånd återkallas utan att tillståndshavaren åsidosatt sina skyldigheter, har han rätt till ersättning av staten för förlust till följd av åtgärd som han vidtagit med anledning av tillståndet."
+    },
+    {
+      "provision_ref": "6:8 a",
+      "chapter": "6",
+      "section": "8 a",
+      "content": "Om ett tillstånd upphör att gälla är den som har innehaft tillståndet skyldig att ta bort anläggningar och andra inrättningar samt vidta andra åtgärder för återställning, om inte detta är obehövligt från allmän eller enskild synpunkt. Om skyldigheten att vidta sådana åtgärder inte har bestämts genom villkor i tillståndet, skall frågan prövas av tillståndsmyndigheten i samband med att tillståndet upphör. Om den som har haft tillståndet inte iakttar sina skyldigheter, får tillsynsmyndigheten vid vite förelägga honom att fullgöra dessa. Lag (1998:847). Marinvetenskaplig forskning"
+    },
+    {
+      "provision_ref": "6:9",
+      "chapter": "6",
+      "section": "9",
+      "content": "Marinvetenskaplig forskning får inte bedrivas i den ekonomiska zonen av utländska medborgare utan tillstånd av regeringen eller den myndighet som regeringen bestämmer. Regeringen eller den myndighet som regeringen bestämmer får föreskriva att en ansökan om tillstånd skall ersättas av en anmälan eller att varken tillstånd eller anmälan behövs. Tillstånd får begränsas till viss tid och förenas med villkor. I fråga om återkallelse av tillstånd och rätt till ersättning i ett sådant fall gäller vad som sägs i 8 §. Folkrättsliga grundsatser"
+    },
+    {
+      "provision_ref": "6:10",
+      "chapter": "6",
+      "section": "10",
+      "content": "Tillämpningen av denna lag samt de föreskrifter och andra beslut som meddelas med stöd av lagen får inte medföra någon inskränkning av de enligt folkrätten gällande rättigheterna till fri sjöfart i den ekonomiska zonen och till överflygning av zonen och inte heller av några andra rättigheter som följer av allmänt erkända folkrättsliga grundsatser. Detsamma gäller i fråga om tillämpningen av de bestämmelser i miljöbalken som anges i 3 § och föreskrifter och andra beslut som meddelas med stöd eller för verkställighet av de bestämmelserna samt i fråga om tillsynen över att bestämmelserna och besluten följs. Lag (2008:832). Tillsyn m.m."
+    },
+    {
+      "provision_ref": "6:11",
+      "chapter": "6",
+      "section": "11",
+      "content": "Tillsynen över efterlevnaden av denna lag samt av föreskrifter och villkor som har meddelats med stöd av lagen skall utövas av den eller de myndigheter som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "6:12",
+      "chapter": "6",
+      "section": "12",
+      "content": "Den som bedriver verksamhet enligt denna lag är skyldig att på begäran lämna en tillsynsmyndighet de upplysningar och handlingar som behövs för tillsynen."
+    },
+    {
+      "provision_ref": "6:13",
+      "chapter": "6",
+      "section": "13",
+      "content": "En tillsynsmyndighet får meddela de förelägganden som behövs för att denna lag samt föreskrifter och villkor som har meddelats med stöd av lagen skall efterlevas. Ett föreläggande får förenas med vite."
+    },
+    {
+      "provision_ref": "6:14",
+      "chapter": "6",
+      "section": "14",
+      "content": "Om en verksamhet bedrivs på sådant sätt att den medför uppenbar fara för miljön eller något annat allmänt eller enskilt intresse, får en tillsynsmyndighet förbjuda verksamheten. Beslut om förbud gäller omedelbart och får verkställas utan hinder av att det inte vunnit laga kraft. Tillämplig lag, straff m.m."
+    },
+    {
+      "provision_ref": "6:15",
+      "chapter": "6",
+      "section": "15",
+      "content": "På en konstgjord ö, anläggning eller annan inrättning som tillkommit med stöd av denna lag tillämpas svensk lag på samma sätt som om inrättningen varit belägen inom riket. Inrättningen skall därvid anses vara belägen inom närmaste del av Sveriges sjöterritorium."
+    },
+    {
+      "provision_ref": "6:16",
+      "chapter": "6",
+      "section": "16",
+      "content": "Till böter döms den som med uppsåt eller av oaktsamhet 1. underlåter att iaktta en föreskrift som har meddelats med stöd av 2 eller 7 §, 2. bedriver verksamhet i strid mot 5 eller 9 § eller åsidosätter ett villkor som har meddelats med stöd av 5, 5 a eller 9 §, 3. fortsätter att bedriva en verksamhet efter det att tillsynsmyndigheten förbjudit verksamheten med stöd av 14 §. Lag (1998:847)."
+    },
+    {
+      "provision_ref": "6:17",
+      "chapter": "6",
+      "section": "17",
+      "content": "Svensk domstol är behörig att döma över brott som avses i 16 § även om det inte finns domsrätt enligt 2 kap. 3 § brottsbalken. Har ett brott mot denna lag eller mot föreskrift som har meddelats med stöd av lagen begåtts i den ekonomiska zonen, får åtal för brottet väckas vid den tingsrätt vars domkrets är närmast den plats där brottet begicks. Lag (2021:1027)."
+    },
+    {
+      "provision_ref": "6:18",
+      "chapter": "6",
+      "section": "18",
+      "content": "Andra beslut i särskilda fall än sådana som regeringen eller allmän domstol har meddelat enligt denna lag eller enligt föreskrifter som har meddelats med stöd av lagen får överklagas hos allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Lag (1995:94). Övergångsbestämmelser 1995:94 Denna lag träder i kraft den 1 april 1995. Beslut som har meddelats före ikraftträdandet överklagas enligt äldre bestämmelser. 1998:847 1. Denna lag träder i kraft den 1 januari 1999. 2. Ett ärende skall handläggas och bedömas enligt äldre bestämmelser, om ärendet har inletts före denna lags ikraftträdande. Bestämmelserna om miljökvalitetsnormer i miljöbalken skall dock tillämpas omedelbart. 3. Bestämmelsen i 8 a § skall tillämpas även när tillståndet har meddelats före denna lags ikraftträdande. 2017:962 1. Denna lag träder i kraft den 1 januari 2018. 2. Äldre föreskrifter gäller fortfarande för handläggningen och prövningen av ärenden som har inletts före ikraftträdandet. 3. Äldre föreskrifter gäller fortfarande i fråga om beslut att en verksamhet eller åtgärd inte kan antas medföra en betydande miljöpåverkan som har meddelats före ikraftträdandet och i fråga om samråd som har skett före ikraftträdandet."
+    }
+  ]
+}

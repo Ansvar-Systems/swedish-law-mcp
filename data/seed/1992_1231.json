@@ -1,0 +1,42 @@
+{
+  "id": "1992:1231",
+  "type": "statute",
+  "title": "Lag (1992:1231) om märkning av textilier",
+  "status": "repealed",
+  "issued_date": "1992-12-10",
+  "url": "https://data.riksdagen.se/dokument/sfs-1992-1231.html",
+  "description": "Upphävd 2014-08-01 genom SFS 2014:534",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Lagens tillämpningsområde",
+      "content": "Denna lag skall tillämpas på textilier som tillhandahålls i näringsverksamhet. Med textilier avses varor som helt eller delvis består av textila fibrer. Märkningsskyldighet m.m."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen får meddela föreskrifter om att textilier skall vara märkta med en uppgift om innehållet av textila fibrer eller att de på något annat sätt skall vara försedda med en sådan uppgift. Närmare föreskrifter om detta får meddelas av den myndighet som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om 1. hur textila fibrer får benämnas och beskrivas, 2. vilka metoder för kvantitativ analys av textila fiberblandningar som skall användas vid provning och kontroll. Tillsyn"
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Den myndighet som regeringen bestämmer skall se till att de föreskrifter följs som har meddelats med stöd av denna lag eller ett bemyndigande enligt lagen. Tillsynsmyndigheten får meddela de förelägganden och förbud som behövs för att se till att föreskrifterna följs."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen får meddela föreskrifter om 1. att en näringsidkare är skyldig att betala kostnader för provtagning och undersökning av textilier, 2. att en näringsidkare är skyldig att lämna sådana upplysningar, handlingar, varuprov och liknande som behövs för att tillsynsmyndigheten skall kunna se till att de föreskrifter följs som har meddelats med stöd av denna lag eller ett bemyndigande enligt lagen. Överklagande"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Tillsynsmyndighetens beslut i enskilda fall enligt denna lag eller enligt föreskrifter som har meddelats med stöd av lagen får överklagas hos allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Lag (1995:1720). Övergångsbestämmelser 1995:1720 Denna lag träder i kraft den 1 maj 1996 men tillämpas inte i de fall där det första beslutet i ärendet fattats dessförinnan."
+    }
+  ]
+}

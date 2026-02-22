@@ -1,0 +1,36 @@
+{
+  "id": "1973:650",
+  "type": "statute",
+  "title": "Lag (1973:650) om medling mellan samlevande",
+  "status": "repealed",
+  "issued_date": "1973-06-05",
+  "url": "https://data.riksdagen.se/dokument/sfs-1973-650.html",
+  "description": "Upphävd 1998-10-01 genom SFS 1998:322",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Medling enligt denna lag har till ändamål att utjämna motsättningar mellan man och kvinna som sammanlever eller har sammanlevt. Medlare skall på lämpligt sätt göra sig underrättad om anledningen till motsättningarna och, om fråga uppkommit att bryta samlevnaden, rådgöra med parterna om möjligheterna att fortsätta den."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För varje kommun skall utses minst två medlare. Om det är påkallat av särskilda skäl, kan samme person förordnas till medlare för mer än en kommun. Medlare utses av länsstyrelsen för två kalenderår efter hörande av kommunen. Är medlare ej lämplig för sitt uppdrag, skall han entledigas. Avgår medlare före utgången av den tid för vilken han blivit utsedd, skall annan förordnas för den återstående tiden. Lag (1979:711)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Medlare är skyldig att söka medla på begäran av mannen eller kvinnan, om någon av dem är bosatt i den kommun för vilken medlaren förordnats."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Ersättning till medlare betalas av kommunen. Lag (1979:711)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Medlare får ej obehörigen yppa vad han erfarit under medlingen. Övergångsbestämmelser 1998:322 Den upphävda lagen tillämpas fortfarande i fråga om medling som har inletts före utgången av september 1998."
+    }
+  ]
+}

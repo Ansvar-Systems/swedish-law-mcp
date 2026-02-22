@@ -1,0 +1,30 @@
+{
+  "id": "1987:103",
+  "type": "statute",
+  "title": "Lag (1987:103) om dubbelbeskattningsavtal mellan Sverige och Irland",
+  "status": "in_force",
+  "issued_date": "1987-03-12",
+  "url": "https://data.riksdagen.se/dokument/sfs-1987-103.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning och förhindra skatteflykt beträffande skatter på inkomst och realisationsvinst som Sverige och Irland undertecknade den 8 oktober 1986, i den lydelse detta erhållit genom det protokoll om ändring i avtalet som undertecknades den 1 juli 1993, skall gälla som lag här i landet. Avtalet i dess genom protokollet ändrade lydelse är intaget som bilaga till denna lag. Lag (1993:1275)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Har upphävts genom lag (2011.1325)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Har upphävts genom lag (1993:1275). Övergångsbestämmelser 1993:1275 1. Denna lag träder i kraft den dag regeringen bestämmer. 2. Genom lagen upphävs förordningen (1988:988) om dubbelbeskattningsavtal mellan Sverige och Irland."
+    }
+  ]
+}

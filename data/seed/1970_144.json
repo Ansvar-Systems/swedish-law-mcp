@@ -1,0 +1,16 @@
+{
+  "id": "1970:144",
+  "type": "statute",
+  "title": "Lag (1970:144) om fortsatt försäkring enligt lagen (1954:744) med särskilda bestämmelser om frivillig sjukpenningförsäkring i allmän sjukkassa",
+  "status": "in_force",
+  "issued_date": "1970-05-27",
+  "url": "https://data.riksdagen.se/dokument/sfs-1970-144.html",
+  "provisions": [
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "title": "Riksförsäkringsverket får medge befrielse från försäkringsavgift enligt",
+      "content": "första stycket lagen i den mån verket bedömer att statsbidrag och andra för försäkringsverksamheten tillgängliga medel kommer att förslå till täckande av kostnaderna för försäkringen under tid då lagen är i kraft."
+    }
+  ]
+}

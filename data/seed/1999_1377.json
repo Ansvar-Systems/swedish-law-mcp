@@ -1,0 +1,25 @@
+{
+  "id": "1999:1377",
+  "type": "statute",
+  "title": "Lag (1999:1377) om tillfällig avgift för stöd till småskalig elproduktion",
+  "status": "in_force",
+  "issued_date": "1999-12-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-1999-1377.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som innehar nätkoncession och vars ledning är ansluten till stamnätet skall till Affärsverket svenska kraftnät betala en tillfällig avgift för att finansiera statligt stöd till småskalig elproduktion. Utlandsförbindelse grundar dock ingen avgiftsskyldighet."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avgift som avses i 1 § uppgår till 0,2 öre för varje kilowattimme som under år 2000 tagits ut från stamnätet i koncessionshavarens anslutningspunkter."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Avgiften beräknas kvartalsvis och betalas i efterskott senast två månader efter utgången av det kalenderkvartal avgiften avser."
+    }
+  ]
+}

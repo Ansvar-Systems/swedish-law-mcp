@@ -1,0 +1,41 @@
+{
+  "id": "1993:802",
+  "type": "statute",
+  "title": "Lag (1993:802) om entreprenadförhållanden inom skolan",
+  "status": "repealed",
+  "issued_date": "1993-06-10",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-802.html",
+  "description": "Upphävd 2010-08-01 genom SFS 2010:801",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Kommuner och landsting får sluta avtal med en enskild fysisk eller juridisk person om att denne skall bedriva viss undervisning inom gymnasieskolan. Avtalet får endast avse undervisning i karaktärsämnen som har en yrkesinriktad eller estetisk profil. Lag (1999:888)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Om det finns särskilda skäl får regeringen på ansökan av en kommun eller ett landsting i andra fall än som anges i 1 § medge att kommunen eller landstinget får sluta avtal med någon annan om att bedriva undervisning inom det offentliga skolväsendet för barn och ungdom."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en kommun eller ett landsting med stöd av denna lag överlämnar uppgiften att bedriva undervisning till en enskild fysisk eller juridisk person, får kommunen eller landstinget till denne överlämna också den myndighetsutövning som hör till uppgiften."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "För undervisning som bedrivs med stöd av 1 eller 2 § gäller inte bestämmelserna i 2 kap. 3 § skollagen (1985:1100). I stället gäller att för undervisningen skall användas lärare som har kompetens för den undervisning de skall bedriva."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Den som är eller har varit verksam inom enskild verksamhet som bedrivs med stöd av 1 eller 2 § får inte obehörigen röja vad han i den elevvårdande verksamheten har fått veta om någons personliga förhållanden. Han får inte heller obehörigen röja uppgift i ärende om tillrättaförande av en elev eller om skiljande av en elev från vidare studier."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Regeringen eller den myndighet regeringen bestämmer får meddela ytterligare föreskrifter om undervisning som bedrivs enligt 1 och 2 §§."
+    }
+  ]
+}

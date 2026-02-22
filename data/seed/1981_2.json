@@ -1,0 +1,51 @@
+{
+  "id": "1981:2",
+  "type": "statute",
+  "title": "Lag (1981:2) om handel med skrot och begagnade varor",
+  "status": "repealed",
+  "issued_date": "1981-01-08",
+  "url": "https://data.riksdagen.se/dokument/sfs-1981-2.html",
+  "description": "Upphävd 1999-07-01 genom SFS 1999:271",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag har till ändamål att förebygga avsättning av stulet eller eljest olovligen åtkommet gods och att underlätta polisens efterspaning av sådant gods."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen får föreskriva att handel med järn- och annat metallskrot får drivas endast efter tillstånd av den myndighet som regeringen bestämmer och att det för sådan handel skall finnas en föreståndare som tillståndsmyndigheten har godkänt. Regeringen får föreskriva att handel med begagnade varor, i den omfattning som regeringen bestämmer, endast får drivas efter registrering hos den myndighet som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om skyldighet för den som har tillstånd eller är registrerad med stöd av denna lag att föra anteckningar som rör befattningen med förvärvat eller eljest mottaget gods och att tillhandahålla myndighet anteckningar, handlingar eller uppgifter därom. Regeringen eller den myndighet som regeringen bestämmer får meddela även andra föreskrifter för den som avses i första stycket."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Tillsynen över efterlevnaden av denna lag och de föreskrifter som har meddelats med stöd av lagen utövas av den myndighet som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Den som har tillstånd eller är registrerad med stöd av denna lag är skyldig att efter anmodan låta tillsynsmyndigheten undersöka område, lokal eller annat utrymme som används i verksamheten och granska den bokföring och övriga handlingar som hör till verksamheten."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Till böter eller fängelse i högst sex månader döms den som uppsåtligen eller av oaktsamhet 1. driver handel med skrot utan föreskrivet tillstånd eller utan att en föreskriven godkänd föreståndare finns, 2. driver handel med begagnade varor utan att på föreskrivet sätt vara registrerad, 3. underlåter att fullgöra skyldighet enligt 3§ första stycket eller lämnar oriktig uppgift vid fullgörandet. I ringa fall döms inte till straff."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Den som har underlåtit att fullgöra skyldighet enligt 3§ får inte dömas till straff enligt 6§ för underlåtenheten, om skyldigheten omfattas av ett vitesföreläggande."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Näringsidkare ansvarar för sådan gärning som avses i 6§ om den har begåtts i hans rörelse och han har haft eller borde ha haft vetskap om gärningen."
+    }
+  ]
+}

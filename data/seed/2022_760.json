@@ -1,0 +1,332 @@
+{
+  "id": "2022:760",
+  "type": "statute",
+  "title": "Lag (2022:760) om upphandling av fonder till premiepensionens fondtorg",
+  "status": "in_force",
+  "issued_date": "2022-06-02",
+  "url": "https://data.riksdagen.se/dokument/sfs-2022-760.html",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Innehåll",
+      "content": "I denna lag finns bestämmelser om upphandling av sådana fonder som anges i 64 kap. 3 a § andra stycket socialförsäkringsbalken och som får erbjudas på fondtorget för premiepensionen. Undantag från förvaltningslagen"
+    },
+    {
+      "provision_ref": "1:2",
+      "chapter": "1",
+      "section": "2",
+      "content": "Bestämmelserna i 10 och 25 §§ förvaltningslagen (2017:900) ska inte tillämpas vid upphandling enligt denna lag. Uttryck i lagen"
+    },
+    {
+      "provision_ref": "1:3",
+      "chapter": "1",
+      "section": "3",
+      "content": "I denna lag avses med 1. fond: sådana fonder som avses i 2 kap. 1 §, 2. fondavtal: ett avtal som ingås mellan Fondtorgsnämnden och en fondförvaltare och som avser erbjudande av en fond på fondtorget, 3. fondföretag: detsamma som i 1 kap. 1 § lagen (2004:46) om värdepappersfonder, 4. fondförvaltare: fondbolag, fondföretag eller förvaltningsbolag enligt 1 kap. 1 § lagen om värdepappersfonder, eller AIF-förvaltare enligt 1 kap. 3 § lagen (2013:561) om förvaltare av alternativa investeringsfonder, 5. specialfond: detsamma som i 1 kap. 11 § lagen om förvaltare av alternativa investeringsfonder, 6. upphandlingsdokument: varje dokument som Fondtorgsnämnden använder för att beskriva eller fastställa innehållet i upphandlingen, och 7. värdepappersfond: detsamma som i 1 kap. 1 § lagen om värdepappersfonder."
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Fonder som får upphandlas",
+      "content": "Endast följande fonder får upphandlas: 1. värdepappersfonder, 2. fondföretag, 3. specialfonder, och 4. utländska motsvarigheter till specialfonder, om de får marknadsföras till icke-professionella investerare i Sverige enligt 5 kap. 6 § första stycket 1 eller 11 § 1 lagen (2013:561) om förvaltare av alternativa investeringsfonder. Krav på de fonder som får upphandlas"
+    },
+    {
+      "provision_ref": "2:2",
+      "chapter": "2",
+      "section": "2",
+      "content": "De fonder som upphandlas ska vara lämpliga för premiepensionssystemet. Fonderna ska ha olika risknivå och placeringsinriktning."
+    },
+    {
+      "provision_ref": "2:3",
+      "chapter": "2",
+      "section": "3",
+      "content": "Fonderna enligt 2 § ska vara kostnadseffektiva, hållbara, kontrollerbara och av hög kvalitet."
+    },
+    {
+      "provision_ref": "2:4",
+      "chapter": "2",
+      "section": "4",
+      "content": "Fonderna enligt 2 § får inte ha fondbestämmelser som medger att medel kan delas ut till andra än andelsägarna. Antal fonder som ska upphandlas"
+    },
+    {
+      "provision_ref": "2:5",
+      "chapter": "2",
+      "section": "5",
+      "content": "Vid bedömningen av hur många fonder som ska upphandlas till fondtorget för premiepensionen ska Fondtorgsnämnden beakta 1. att urvalet av fonder på fondtorget ska ge pensionsspararna valfrihet avseende hur deras medel ska placeras på fondtorget, och 2. att fondförvaltarna och fonderna löpande ska kunna granskas på ett säkert och effektivt sätt. Principer för Fondtorgsnämndens upphandling"
+    },
+    {
+      "provision_ref": "2:6",
+      "chapter": "2",
+      "section": "6",
+      "content": "Vid upphandling ska Fondtorgsnämnden behandla fondförvaltare på ett likvärdigt och icke-diskriminerande sätt samt iaktta principerna om öppenhet, proportionalitet och ömsesidigt erkännande. Marknadsdialog"
+    },
+    {
+      "provision_ref": "2:7",
+      "chapter": "2",
+      "section": "7",
+      "content": "Fondtorgsnämnden ska kontinuerligt föra en dialog med fondförvaltare, branschorganisationer och andra marknadsaktörer. Annonsering"
+    },
+    {
+      "provision_ref": "2:8",
+      "chapter": "2",
+      "section": "8",
+      "content": "Fondtorgsnämnden ska begära in anbud genom en annons. Upphandlingsdokumenten"
+    },
+    {
+      "provision_ref": "2:9",
+      "chapter": "2",
+      "section": "9",
+      "content": "Fondtorgsnämnden ska ge direkt, fullständig och kostnadsfri tillgång till upphandlingsdokumenten från den dag när annonsen publiceras eller den senare dag som anges i annonsen enligt 8 §. Fondtorgsnämnden ska i ett upphandlingsdokument beskriva upphandlingen för att göra det möjligt för intresserade fondförvaltare att delta i upphandlingen och lämna anbud. Tidsfrister"
+    },
+    {
+      "provision_ref": "2:10",
+      "chapter": "2",
+      "section": "10",
+      "content": "Fondförvaltare ska ges skälig tid att komma in med anbudsansökningar respektive anbud. Kommunikation under en upphandling"
+    },
+    {
+      "provision_ref": "2:11",
+      "chapter": "2",
+      "section": "11",
+      "content": "Förfarandet är skriftligt. Muntlig kommunikation får dock användas som ett komplement i en upphandling när Fondtorgsnämnden finner det lämpligt. Kompletterande information om upphandlingsdokumenten"
+    },
+    {
+      "provision_ref": "2:12",
+      "chapter": "2",
+      "section": "12",
+      "content": "Om en fondförvaltare begär kompletterande upplysningar om innehållet i upphandlingsdokumenten, ska Fondtorgsnämnden lämna sådana upplysningar senast sex dagar före den sista anbudsdagen, förutsatt att fondförvaltaren har begärt upplysningarna i god tid. Samma tidsfrist gäller om myndigheten på eget initiativ vill lämna kompletterande upplysningar. Upplysningarna enligt första och andra styckena ska lämnas skriftligen på ett sådant sätt att alla fondförvaltare som deltar eller önskar delta i upphandlingen kan få del av dem. Förlängning av anbudstiden"
+    },
+    {
+      "provision_ref": "2:13",
+      "chapter": "2",
+      "section": "13",
+      "content": "Fondtorgsnämnden ska förlänga tidsfristen för att komma in med anbud, om det ska lämnas kompletterande upplysningar men det inte görs inom tidsfristen enligt 12 § eller om det görs väsentliga ändringar i upphandlingsdokumenten. Den förlängda tidsfristen ska bestämmas så att alla fondförvaltare som deltar eller önskar delta i upphandlingen kan få kännedom om den information som behövs för att utarbeta ett anbud. Dialog i en upphandling"
+    },
+    {
+      "provision_ref": "2:14",
+      "chapter": "2",
+      "section": "14",
+      "content": "Fondtorgsnämnden får föra en dialog med en eller flera fondförvaltare i en pågående upphandling. Med dialog avses ett skriftligt eller muntligt informationsutbyte mellan Fondtorgsnämnden och en fondförvaltare. En dialog får omfatta rättelser av fel samt förtydliganden och kompletteringar av anbud eller andra handlingar som fondförvaltaren har gett in. Om Fondtorgsnämnden tillåter en fondförvaltare att rätta, förtydliga eller komplettera, ska övriga fondförvaltare ges motsvarande möjlighet. Information om beslut"
+    },
+    {
+      "provision_ref": "2:15",
+      "chapter": "2",
+      "section": "15",
+      "content": "När Fondtorgsnämnden har fattat beslut om att tilldela ett fondavtal ska Fondtorgsnämnden skriftligen underrätta samtliga anbudsgivare om beslutet. Underrättelsen ska innehålla skälen för beslutet och uppgift om den period inom vilken avtal enligt 3 kap. 2 § inte får ingås (avtalsspärr). Underrättelsen innebär inte att ett anbud förfaller."
+    },
+    {
+      "provision_ref": "2:16",
+      "chapter": "2",
+      "section": "16",
+      "content": "Fondtorgsnämnden ska till den fondförvaltare som skriftligen begär det lämna upplysningar om skälen för att fondförvaltarens anbudsansökan har avslagits eller anbud förkastats, samt de relativa fördelarna med det valda anbudet. Upplysningarna ska lämnas snarast möjligt och senast inom fjorton dagar från det att begäran kom in."
+    },
+    {
+      "provision_ref": "2:17",
+      "chapter": "2",
+      "section": "17",
+      "content": "Om Fondtorgsnämnden beslutar att avbryta eller göra om en upphandling, ska Fondtorgsnämnden skriftligen lämna en underrättelse om detta till de fondförvaltare som har lämnat ett anbud eller en anbudsansökan. I underrättelsen ska skälen för beslutet anges. Dokumentation"
+    },
+    {
+      "provision_ref": "2:18",
+      "chapter": "2",
+      "section": "18",
+      "content": "Fondtorgsnämnden ska dokumentera genomförandet av en upphandling. Dokumentationen ska vara tillräcklig för att Fondtorgsnämnden ska kunna motivera sina beslut under upphandlingens samtliga skeden. Tilldelning av fondavtal"
+    },
+    {
+      "provision_ref": "2:19",
+      "chapter": "2",
+      "section": "19",
+      "content": "Fondtorgsnämnden ska tilldela fondavtal med användning av tilldelningskriterier. Tilldelningskriterierna ska ha anknytning till de fonder som ska anskaffas och ska formuleras utifrån de krav på kostnadseffektivitet och hög kvalitet som anges i 3 §. Tilldelningskriterierna ska viktas inbördes."
+    },
+    {
+      "provision_ref": "2:20",
+      "chapter": "2",
+      "section": "20",
+      "content": "Fondtorgsnämnden ska i ett upphandlingsdokument ange vilka tilldelningskriterier som kommer att användas och hur tilldelningskriterierna ska viktas inbördes. Bedömning av likvärdig fond"
+    },
+    {
+      "provision_ref": "2:21",
+      "chapter": "2",
+      "section": "21",
+      "content": "I 64 kap. 27 a § socialförsäkringsbalken finns bestämmelser om förutsättningarna för att premiepensionsmedel ska överföras till en fond som är likvärdig med en tidigare vald fond."
+    },
+    {
+      "provision_ref": "2:22",
+      "chapter": "2",
+      "section": "22",
+      "content": "Fondtorgsnämnden ska i samband med att den upphandlar fonder bedöma vilka fonder som i väsentliga avseenden är likvärdiga efter objektiva kriterier. De objektiva kriterierna ska anges i ett upphandlingsdokument."
+    },
+    {
+      "provision_ref": "2:23",
+      "chapter": "2",
+      "section": "23",
+      "content": "Fondtorgsnämnden ska i fondavtalet fastställa den ordning enligt vilken premiepensionsmedlen ska fördelas mellan likvärdiga fonder, om medel ska överföras enligt 64 kap. 27 a § andra stycket socialförsäkringsbalken. Fondtorgsnämnden ska tillämpa objektiva kriterier när den utformar fördelningsordningen. Dessa kriterier ska anges i ett upphandlingsdokument. Kompletterande upphandling Upphandling vid uppsägning av ett fondavtal"
+    },
+    {
+      "provision_ref": "2:24",
+      "chapter": "2",
+      "section": "24",
+      "content": "Kompletterande upphandling får användas, om 1. ett fondavtal har sagts upp i förtid eller hävts, och 2. uppsägningen eller hävningen leder till att urvalet av fonder på fondtorget för premiepensionen inte längre ger en tillräcklig valfrihet. Vid kompletterande upphandling tillämpas inte bestämmelserna i 8-23 §§. Fondtorgsnämnden ska besluta riktlinjer för kompletterande upphandling. Information om beslut"
+    },
+    {
+      "provision_ref": "2:25",
+      "chapter": "2",
+      "section": "25",
+      "content": "Om Fondtorgsnämnden vid en kompletterande upphandling enligt 24 § har begärt in anbud från fler än en fondförvaltare, ska Fondtorgsnämnden snarast möjligt skriftligen underrätta samtliga fondförvaltare som har lämnat anbud när beslut om tilldelning av fondavtal har fattats. Underrättelsen utlöser inte någon avtalsspärr enligt 3 kap. 2 §. Dokumentation"
+    },
+    {
+      "provision_ref": "2:26",
+      "chapter": "2",
+      "section": "26",
+      "content": "Fondtorgsnämnden ska dokumentera genomförandet av en kompletterande upphandling enligt 24 §. Dokumentationen ska vara tillräcklig för att Fondtorgsnämnden ska kunna motivera sina beslut under upphandlingens samtliga skeden. Fondavtalet Avtalsvillkor"
+    },
+    {
+      "provision_ref": "2:27",
+      "chapter": "2",
+      "section": "27",
+      "content": "Ett fondavtal ska vara affärsmässigt och i övrigt innehålla de villkor som krävs för att upprätthålla god sed på premiepensionsområdet."
+    },
+    {
+      "provision_ref": "2:28",
+      "chapter": "2",
+      "section": "28",
+      "content": "Ett fondavtal ska innehålla villkor om att fondförvaltaren 1. ska lämna Fondtorgsnämnden de uppgifter som krävs för tillämpningen av bestämmelserna i detta kapitel och 64 kap. socialförsäkringsbalken, 2. ska lämna och åta sig att till Pensionsmyndigheten lämna sådan information som avses i Europaparlamentets och rådets förordning (EU) 2019/2088 av den 27 november 2019 om hållbarhetsrelaterade upplysningar som ska lämnas inom den finansiella sektorn, och i artiklarna 5-7 i Europaparlamentets och rådets förordning (EU) 2020/852 av den 18 juni 2020 om inrättande av en ram för att underlätta hållbara investeringar och om ändring av förordning (EU) 2019/2088, och 3. på annat sätt ska medverka i gransknings- och uppföljningsarbete."
+    },
+    {
+      "provision_ref": "2:29",
+      "chapter": "2",
+      "section": "29",
+      "content": "Ett fondavtal ska innehålla villkor om i vilka avseenden fondförvaltaren ska samarbeta med Pensionsmyndigheten."
+    },
+    {
+      "provision_ref": "2:30",
+      "chapter": "2",
+      "section": "30",
+      "content": "Ett fondavtal ska innehålla villkor om att fondförvaltaren ska förvalta fondmedlen på ett föredömligt sätt i fråga om hållbarhet genom ansvarsfulla investeringar och ansvarsfullt ägande. Ett minimikrav ska vara att fondförvaltaren i förvaltningen ska iaktta vad som följer av sådana internationella överenskommelser som Sverige har ingått och som rör frågor om hållbarhet. Avtalets löptid"
+    },
+    {
+      "provision_ref": "2:31",
+      "chapter": "2",
+      "section": "31",
+      "content": "Löptiden för ett fondavtal får inte överstiga tolv år. Avtalsuppföljning"
+    },
+    {
+      "provision_ref": "2:32",
+      "chapter": "2",
+      "section": "32",
+      "content": "I 4 § lagen om (2022:759) om Fondtorgsnämnden finns bestämmelser om att Fondtorgsnämnden ska granska att fondförvaltare och fonder löpande uppfyller villkoren i fondavtalet. Begränsning av antal fondavtal"
+    },
+    {
+      "provision_ref": "2:33",
+      "chapter": "2",
+      "section": "33",
+      "content": "Fondtorgsnämnden får bestämma ett högsta antal fondavtal som en fondförvaltare får ingå."
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Innehåll",
+      "content": "Detta kapitel innehåller bestämmelser om avtalsspärr, överprövning och skadestånd när det gäller upphandlingar enligt denna lag. Avtalsspärr"
+    },
+    {
+      "provision_ref": "3:2",
+      "chapter": "3",
+      "section": "2",
+      "content": "Fondtorgsnämnden får inte ingå fondavtal innan tio dagar har gått från det att underrättelsen enligt 2 kap. 15 § skickades (avtalsspärr). Om underrättelsen har skickats på annat sätt än med ett elektroniskt medel till en fondförvaltare, får fondavtal inte ingås innan fjorton dagar har gått från det att utskicket gjordes. Överprövning Allmänna bestämmelser om överprövning"
+    },
+    {
+      "provision_ref": "3:3",
+      "chapter": "3",
+      "section": "3",
+      "content": "Efter ansökan av en fondförvaltare som anser sig ha lidit eller kunna komma att lida skada får allmän förvaltningsdomstol överpröva 1. en upphandling, och 2. giltigheten av ett fondavtal som har slutits mellan Fondtorgsnämnden och en fondförvaltare. Behörig domstol"
+    },
+    {
+      "provision_ref": "3:4",
+      "chapter": "3",
+      "section": "4",
+      "content": "En ansökan om överprövning ska göras hos den förvaltningsrätt inom vars domkrets Fondtorgsnämnden har sin hemvist. Prövningstillstånd krävs vid överklagande till kammarrätten. Domstolens åtgärder"
+    },
+    {
+      "provision_ref": "3:5",
+      "chapter": "3",
+      "section": "5",
+      "content": "Om Fondtorgsnämnden har brutit mot någon bestämmelse i"
+    },
+    {
+      "provision_ref": "3:6",
+      "chapter": "3",
+      "section": "6",
+      "title": "En upphandling får inte överprövas efter det att fondavtal har",
+      "content": "Om Fondtorgsnämnden under pågående överprövning av en upphandling ingår ett fondavtal i strid med 2, 7, 8 eller 9 §, ska rätten, på yrkande av fondförvaltaren, överpröva avtalets giltighet i enlighet med 12 och 13 §§. Förlängd avtalsspärr"
+    },
+    {
+      "provision_ref": "3:7",
+      "chapter": "3",
+      "section": "7",
+      "content": "Om en ansökan om överprövning av en upphandling har gjorts, fortsätter avtalsspärren enligt 2 § att gälla under handläggningen i förvaltningsrätten (förlängd avtalsspärr). Rätten får besluta att någon förlängd avtalsspärr inte ska gälla. Interimistiskt beslut vid överprövning av en upphandling"
+    },
+    {
+      "provision_ref": "3:8",
+      "chapter": "3",
+      "section": "8",
+      "content": "När avtalsspärr enligt 2 eller 7 § inte gäller, får rätten besluta att Fondtorgsnämnden inte får ingå fondavtal innan något annat har bestämts. Rätten ska avstå från att fatta ett sådant beslut, om den skada eller olägenhet som beslutet skulle kunna medföra är större än den skada som skulle kunna drabba fondförvaltaren. Rätten ska vid bedömningen ta hänsyn till pensionsspararnas intresse, allmänintresset och övriga berörda intressen. Tiodagarsfrist"
+    },
+    {
+      "provision_ref": "3:9",
+      "chapter": "3",
+      "section": "9",
+      "content": "När en förlängd avtalsspärr gäller enligt 7 §, får Fondtorgsnämnden inte ingå fondavtal innan det har gått tio dagar från det att förvaltningsrätten har avgjort målet. När en förvaltningsrätt eller en kammarrätt har fattat ett beslut enligt 8 §, får fondavtal inte ingås innan det har gått tio dagar från det att rätten har avgjort målet eller upphävt beslutet. När Högsta förvaltningsdomstolen har fattat ett beslut enligt 8 § och återförvisat målet till lägre instans, får fondavtal inte ingås innan det har gått tio dagar från beslutet om återförvisning. Rätten får besluta att någon tiodagarsfrist inte ska gälla. Tidsfrister för ansökan om överprövning av en upphandling"
+    },
+    {
+      "provision_ref": "3:10",
+      "chapter": "3",
+      "section": "10",
+      "content": "En ansökan om överprövning av en upphandling ska ha kommit in till förvaltningsrätten före utgången av en sådan avtalsspärr som avses i 2 §."
+    },
+    {
+      "provision_ref": "3:11",
+      "chapter": "3",
+      "section": "11",
+      "content": "En ansökan om överprövning av ett beslut att avbryta en upphandling ska ha kommit in till förvaltningsrätten innan det har gått tio dagar från det att Fondtorgsnämnden med ett elektroniskt medel har skickat en underrättelse om beslutet och angett skälen för beslutet. Om underrättelsen har skickats på annat sätt än med ett elektroniskt medel till en eller flera fondförvaltare, ska en ansökan om överprövning ha kommit in till förvaltningsrätten innan det har gått fjorton dagar från det att underrättelsen skickades ut. Överprövning av ett fondavtals giltighet"
+    },
+    {
+      "provision_ref": "3:12",
+      "chapter": "3",
+      "section": "12",
+      "content": "Rätten ska besluta att ett fondavtal som har slutits mellan Fondtorgsnämnden och en fondförvaltare är ogiltigt, om det har slutits 1. utan föregående annonsering enligt 2 kap. 8 §, när kompletterande upphandling enligt 2 kap. 24 § inte har fått användas, 2. i strid med bestämmelserna om avtalsspärr i 2 eller 7 §, ett interimistiskt beslut enligt 8 § eller tiodagarsfristen i 9 §, eller 3. innan det har lämnats en underrättelse om tilldelningsbeslut enligt 2 kap. 15 §. För ogiltighet i de fall som anges i första stycket 2 och 3 krävs dessutom att Fondtorgsnämnden har överträtt någon annan av de bestämmelser som anges i 5 § och att detta har medfört att fondförvaltaren har lidit eller kan komma att lida skada. Interimistiskt beslut vid överprövning av ett fondavtals giltighet"
+    },
+    {
+      "provision_ref": "3:13",
+      "chapter": "3",
+      "section": "13",
+      "content": "Rätten får besluta att ett fondavtal inte får fullgöras innan något annat har bestämts. Rätten ska avstå från att fatta ett sådant beslut, om den skada eller olägenhet som beslutet skulle kunna medföra är större än den skada som skulle kunna drabba fondförvaltaren. Rätten ska vid bedömningen ta hänsyn till pensionsspararnas intresse, allmänintresset och övriga berörda intressen. Tidsfrister för ansökan om överprövning av ett avtals giltighet"
+    },
+    {
+      "provision_ref": "3:14",
+      "chapter": "3",
+      "section": "14",
+      "content": "En ansökan om överprövning av ett fondavtals giltighet ska, om inte annat följer av andra stycket, ha kommit in till förvaltningsrätten inom sex månader från det att avtalet slöts. Ansökan ska dock ha kommit in till förvaltningsrätten innan det har gått trettio dagar från det att Fondtorgsnämnden skriftligen har underrättat de fondförvaltare som har lämnat anbudsansökan eller anbud om att fondavtalet har slutits och har lämnat en sammanfattning av sådana upplysningar som avses i 2 kap. 16 §. Beräkning av vissa tider"
+    },
+    {
+      "provision_ref": "3:15",
+      "chapter": "3",
+      "section": "15",
+      "content": "Vid beräkningen av längden av en avtalsspärr samt av tiodagarsfrister enligt 9 § och tidsfrister för ansökan om överprövning ska 2 § lagen (1930:173) om beräkning av lagstadgad tid tillämpas. Skadestånd"
+    },
+    {
+      "provision_ref": "3:16",
+      "chapter": "3",
+      "section": "16",
+      "content": "Om Fondtorgsnämnden inte har följt en bestämmelse som anges i 5 §, ska Fondtorgsnämnden ersätta den skada som därigenom har uppkommit för en fondförvaltare. Rätten till skadestånd inbegriper även ersättning till en fondförvaltare som har deltagit i en upphandling för kostnader som fondförvaltaren har haft för att förbereda anbud och i övrigt för att delta i upphandlingen, om åsidosättandet av bestämmelsen menligt har påverkat fondförvaltarens möjligheter att tilldelas fondavtalet."
+    },
+    {
+      "provision_ref": "3:17",
+      "chapter": "3",
+      "section": "17",
+      "content": "Talan om skadestånd får väckas vid allmän domstol inom ett år från den tidpunkt då fondavtal har slutits mellan Fondtorgsnämnden och en fondförvaltare eller har förklarats ogiltigt enligt 12 § genom ett avgörande som har fått laga kraft. Väcks inte talan inom denna tid, är rätten till skadestånd förlorad."
+    }
+  ]
+}

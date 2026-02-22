@@ -1,0 +1,31 @@
+{
+  "id": "1988:1495",
+  "type": "statute",
+  "title": "Lag (1988:1495) om dubbelbeskattningsavtal mellan Sverige och Indien",
+  "status": "repealed",
+  "issued_date": "1988-12-08",
+  "url": "https://data.riksdagen.se/dokument/sfs-1988-1495.html",
+  "description": "Upphävd 1997-12-31 genom SFS 1997:918",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning beträffande skatter på inkomst och förmögenhet som Sverige och Indien undertecknade den 7 juni 1988 skall, tillsammans med det protokoll som är fogat till avtalet och som utgör en del av detta, gälla för Sveriges del. Avtalets och protokollets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en person anser att det vidtagits någon åtgärd som för honom medfört eller kommer att medföra en beskattning som strider mot bestämmelserna i avtalet, kan han ansöka om rättelse enligt artikel 27 punkt 1 i avtalet."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Även om en skattskyldigs inkomst eller förmögenhet enligt avtalet skall vara helt eller delvis undantagen från beskattning i Sverige, skall den skattskyldige lämna alla de uppgifter till ledning för taxeringen som han annars skulle ha varit skyldig att lämna."
+    }
+  ]
+}

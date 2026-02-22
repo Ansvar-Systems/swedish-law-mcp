@@ -1,0 +1,36 @@
+{
+  "id": "1986:3",
+  "type": "statute",
+  "title": "Lag (1986:3) om rundradiosändning av finländska televisionsprogram",
+  "status": "repealed",
+  "issued_date": "1986-01-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1986-3.html",
+  "description": "Upphävd 1996-12-01 genom SFS 1996:844",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen får för tiden intill utgången av år 1996 medge rätt till rundradiosändning från radiosändare av televisionsprogram i radio- eller trådsändning från Finland. Med rundradiosändning, radiosändning och trådsändning förstås detsamma som i radiolagen (1966:755). Lag (1995:563)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Sändningen skall bestå av vidaresändning av program som samtidigt sänds eller kort tid dessförinnan har sänts i Finland med stöd av tillstånd från Finlands regering. Lag (1993:378)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För sändningen gäller inte 6 -18 §§ radiolagen (1966:755). Lag (1991:1569)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Ett sändningstillstånd får förenas med särskilda villkor. Dessa får avse vilka radiosändare som får användas och sändningens räckvidd ävensom program- verksamhetens omfattning och förbud mot eller föreskrifter om kommersiell reklam. Lag (1993:378)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Sändningstillståndet får återkallas, om tillståndshavaren bryter mot villkor som avser förbud mot eller föreskrifter om reklam. Lag (1993:378). Övergångsbestämmelser 1991:1569 Denna lag träder i kraft den 1 januari 1992. Äldre föreskrifter gäller fortfarande i fråga om radioprogram som har sänts före ikraftträdandet."
+    }
+  ]
+}

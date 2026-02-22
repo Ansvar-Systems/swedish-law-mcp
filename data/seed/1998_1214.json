@@ -1,0 +1,21 @@
+{
+  "id": "1998:1214",
+  "type": "statute",
+  "title": "Lag (1998:1214) om överlämnande av vissa förvaltningsuppgifter till Hjälpmedelsinstitutet, ideell förening",
+  "status": "repealed",
+  "issued_date": "1998-09-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1998-1214.html",
+  "description": "Upphävd 2014-05-01 genom SFS 2013:1138",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen får överlämna till Hjälpmedelsinstitutet, ideell förening, att pröva frågor om fördelning av sådant bidrag och annat stöd som gäller verksamhet med hjälpmedel för personer med funktionshinder, och som skall lämnas till sjukvårds- huvudman, handikapporganisationer eller andra organisationer som företräder brukarnas intressen, företag med verksamhet inom hjälpmedelsområdet eller andra med sådan verksamhet."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För utövande av förvaltningsuppgifter enligt denna lag gäller de föreskrifter som meddelas av regeringen."
+    }
+  ]
+}

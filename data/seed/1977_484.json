@@ -1,0 +1,21 @@
+{
+  "id": "1977:484",
+  "type": "statute",
+  "title": "Lag (1977:484) med bemyndigande att meddela föreskrifter om hissar och andra lyft- eller transportanordningar m.m.",
+  "status": "repealed",
+  "issued_date": "1977-06-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1977-484.html",
+  "description": "Upphävd 1999-07-01 genom SFS 1999:366",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen bemyndigas att i fråga om dels hissar och andra lyft- eller transportanordningar, dels portar och liknande anordningar meddela föreskrifter som gäller utförande, användande, besiktning eller tillsyn eller som i övrigt är påkallade från säkerhetssynpunkt. Regeringen bemyndigas att meddela föreskrifter om avgifter för prov ning, kontroll eller besiktning eller annan verksamhet enligt bestämmelse som avses i första stycket. Lag (1977:1179)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen får överlåta åt förvaltningsmyndighet att meddela sådana föreskrifter som avses i 1 § och åt kommun att meddela sådana föreskrifter som avses i 1 § andra stycket."
+    }
+  ]
+}

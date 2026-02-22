@@ -1,0 +1,25 @@
+{
+  "id": "2005:900",
+  "type": "statute",
+  "title": "Lag (2005:900) om förbud mot maskering i vissa fall",
+  "status": "in_force",
+  "issued_date": "2005-12-01",
+  "url": "https://data.riksdagen.se/dokument/sfs-2005-900.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som på allmän plats deltar i en allmän sammankomst enligt ordningslagen (1993:1617), som utgör demonstration eller som annars hålls för överläggning, opinionsyttring eller upplysning i allmän eller enskild angelägenhet, får inte helt eller delvis täcka ansiktet på ett sätt som försvårar identifikation, om det vid sammankomsten uppkommer en störning av den allmänna ordningen eller en omedelbar fara för en sådan störning. Detsamma gäller den som på allmän plats deltar i en folksamling, som inte utgör allmän sammankomst eller offentlig tillställning enligt ordningslagen, om folksamlingen genom sitt uppträdande stör den allmänna ordningen eller utgör en omedelbar fara för denna. Förbudet gäller inte den som täcker ansiktet av religiösa skäl. Det gäller inte heller i den utsträckning deltagare i en allmän sammankomst, som avses i första stycket, med stöd av 2 kap. 11 a § ordningslagen fått tillstånd att helt eller delvis täcka ansiktet."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som uppsåtligen bryter mot 1 § första stycket skall dömas till böter eller fängelse i högst sex månader. I ringa fall skall inte dömas till ansvar."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Har upphävts genom lag (2024:848)."
+    }
+  ]
+}

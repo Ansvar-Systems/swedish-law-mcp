@@ -1,0 +1,45 @@
+{
+  "id": "2003:821",
+  "type": "statute",
+  "title": "Lag (2003:821) om särskild skattereduktion vid 2005 års taxering",
+  "status": "in_force",
+  "issued_date": "2003-11-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-2003-821.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Särskild skattereduktion enligt denna lag medges vid 2005 års taxering."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Särskild skattereduktion medges fysisk person vars beskattningsbara förvärvsinkomst enligt 1 kap. 5 § inkomstskattelagen (1999:1229) uppgår till minst 100 kronor. Avlider den skattskyldige under beskattningsåret skall bestämmelserna i 4 kap. 1 § inkomstskattelagen om dödsbon tillämpas på motsvarande sätt vid beräkning av skattereduktion."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Särskild skattereduktion uppgår till 200 kronor."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Bestämmelser om att hänsyn skall tas till särskild skattereduktion vid beslut om slutlig skatt finns i 11 kap. 9 § skattebetalningslagen (1997:483)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Skattetabellerna skall, förutom vad som framgår av 8 kap. skattebetalningslagen (1997:483), grundas på att den skattskyldige har rätt till särskild skattereduktion enligt denna lag. Vid beräkning av F-skatt enligt 6 kap. skattebetalningslagen skall om möjligt hänsyn tas till särskild skattereduktion enligt denna lag."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Särskild skattereduktion enligt denna lag räknas av mot kommunal och statlig inkomstskatt enligt inkomstskattelagen (1999:1229) samt mot statlig fastighetsskatt enligt lagen (1984:1052) om statlig fastighetsskatt."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Särskild skattereduktion skall inte beaktas vid beräkning av skattebelopp enligt 4 § lagen (1997:324) om begränsning av skatt."
+    }
+  ]
+}

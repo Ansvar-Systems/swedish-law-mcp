@@ -1,0 +1,65 @@
+{
+  "id": "2000:171",
+  "type": "statute",
+  "title": "Lag (2000:171) om förbud beträffande viss avkodningsutrustning",
+  "status": "in_force",
+  "issued_date": "2000-04-06",
+  "url": "https://data.riksdagen.se/dokument/sfs-2000-171.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I denna lag finns bestämmelser som avser att förhindra obehörig tillgång till vissa tjänster."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Med tjänst avses i denna lag 1. en ljudradio- eller TV-sändning som är riktad till allmänheten, 2. varje annan tjänst som utförs elektroniskt, på distans och på begäran av mottagaren, och 3. tillhandahållandet av villkorad tillgång till en tjänst som avses i 1 och 2, betraktat som en tjänst i sig, om tjänsten är föremål för villkorad tillgång och tillhandahålls mot betalning."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Med villkorad tillgång till en tjänst avses att en användare eller en mottagare av tjänsten till följd av tekniska åtgärder eller arrangemang kan få tillgång till tjänsten i tolkningsbar form först sedan de har blivit personligt godkända som behöriga."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Med avkodningsutrustning avses utrustning eller programvara som utformats eller anpassats för att göra en tjänst som omfattas av lagen tillgänglig i tolkningsbar form."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Avkodningsutrustning får inte tillverkas, importeras, distribueras, säljas, hyras ut eller installeras och inte heller yrkesmässigt eller i förvärvssyfte innehas, underhållas eller bytas ut i syfte att göra en tjänst som omfattas av lagen tillgänglig i tolkningsbar form utan tjänsteleverantörens godkännande. Avkodningsutrustning får inte heller anskaffas eller användas för privat bruk i syfte att göra en tjänst som omfattas av lagen tillgänglig i tolkningsbar form utan tjänsteleverantörens godkännande. Med import avses införsel av en vara till Sverige från en plats utanför Europeiska unionen. Lag (2014:818)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Den som på annat sätt än genom import bryter mot 5 § första stycket ska dömas till böter eller fängelse i högst två år. Den som bryter mot 5 § andra stycket ska dömas till böter. I ringa fall ska det inte dömas till ansvar enligt första eller andra stycket. Om straff för olovlig införsel finns bestämmelser i lagen (2000:1225) om straff för smuggling. Lag (2014:818)."
+    },
+    {
+      "provision_ref": "6 a",
+      "section": "6 a",
+      "content": "Till ansvar enligt denna lag ska det inte dömas om gärningen är belagd med straff i brottsbalken. Lag (2014:818)."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "För försök till ett sådant brott enligt 6 § första stycket som om det fullbordats inte skulle ha varit att anse som ringa, ska det dömas till ansvar enligt 23 kap. brottsbalken. Lag (2014:818)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Har upphävts genom lag (2024:838)."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Den som uppsåtligen bryter mot 5 § skall betala skälig ersättning för att den tjänst som gjorts tillgänglig genom gärningen har utnyttjats samt ersättning för den ytterligare ekonomiska skada som gärningen har medfört."
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "Åklagaren får väcka åtal för brott mot denna lag endast om målsäganden anger brottet till åtal eller åtal är motiverat från allmän synpunkt."
+    }
+  ]
+}

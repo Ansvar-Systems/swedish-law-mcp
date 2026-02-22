@@ -1,0 +1,32 @@
+{
+  "id": "1993:16",
+  "type": "statute",
+  "title": "Lag (1993:16) om försäkring mot vissa semesterlönekostnader",
+  "status": "repealed",
+  "issued_date": "1993-01-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-16.html",
+  "description": "Upphävd 2008-01-01 genom SFS 2007:1005",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En arbetsgivare kan försäkra sig hos Försäkringskassan för kostnader för den del av en arbetstagares semesterlön som grundar sig på frånvaro enligt 17 § semesterlagen (1977:480) om de sammanlagda lönekostnaderna under ett kalenderår inte beräknas överstiga 90 gånger det för året gällande prisbasbeloppet enligt 1 kap. 6 § lagen (1962:381) om allmän försäkring. Vid beräkningen bortses från avgifter enligt socialavgiftslagen (2000:980) och lagen (1994:1920) om allmän löneavgift samt från skatt enligt lagen (1990:659) om särskild löneskatt på vissa förvärvsinkomster. Regeringen får meddela ytterligare föreskrifter rörande villkoren för försäkringen. Lag (2004:825)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Har upphävts genom lag (2004:825)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "I fråga om Försäkringskassans handläggning av ärenden enligt denna lag tillämpas följande föreskrifter i lagen (1962:381) om allmän försäkring:"
+    },
+    {
+      "provision_ref": "20:4",
+      "chapter": "20",
+      "section": "4",
+      "content": "De föreskrifter om omprövning och ändring av Försäkringskassans beslut som finns i 2 kap. 10 och 10 a §§ lagen (1962:381) om allmän försäkring skall också tillämpas på beslut enligt denna lag. Föreskrifterna i 20 kap. 11-13 §§ samma lag om överklagande av Försäkringskassans eller domstols beslut skall också tillämpas på beslut enligt denna lag, om beslutet innebär att arbetsgivaren inte får teckna försäkring. I övrigt får Försäkringskassans beslut enligt denna lag inte överklagas. Lag (2004:825). Övergångsbestämmelser 2000:994 Denna lag träder i kraft den 1 januari 2001. Äldre bestämmelser gäller fortfarande i fråga om avgifter på ersättningar som betalas ut före ikraftträdandet. 2004:825 1. Denna lag träder i kraft den 1 januari 2005. 2. Beträffande omprövning eller överklagande av beslut som har meddelats av en allmän försäkringskassa tillämpas föreskrifterna i punkt 4 ikraftträdande- och övergångsbestämmelserna till lagen (2004:781) om ändring i lagen (1962:381) om allmän försäkring. Vidare tillämpas föreskriften i punkt 5 samma ikraftträdande- och övergångsbestämmelser om avvisningsbeslut har meddelats av en allmän försäkringskassa. 2007:202 1. Denna lag träder i kraft den 1 juli 2007. 2. De nya bestämmelserna tillämpas första gången på sådana återkrav som har beslutats av Försäkringskassan efter ikraftträdandet. 2007:1005 Den upphävda lagen gäller dock fortfarande för kostnader som hänför sig till semesterlönegrundande frånvaro som avser tid före upphävandet."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "1981:1354",
+  "type": "statute",
+  "title": "Lag (1981:1354) om allmänna värmesystem",
+  "status": "repealed",
+  "issued_date": "1981-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1981-1354.html",
+  "description": "Upphävd 2007-01-01 genom SFS 2006:417",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inledande bestämmelser",
+      "content": "Denna lag är tillämplig på allmänna värmesystem. Ett allmänt värmesystem är en fjärrvärmeanläggning eller ett naturgasnät som har allmänförklarats enligt denna lag. Den som driver ett allmänt värmesystem är systemets huvudman."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer (tillsynsmyndigheten) skall på ansökan av den som driver eller skall driva en fjärrvärmeanläggning eller ett naturgasnät förklara fjärrvärmeanläggningen eller naturgasnätet som allmänt värmesystem, om 1. ändamålet är att bereda bostadshus eller annan bebyggelse värmeförsörjning genom fjärrvärme eller eldning med naturgas, 2. det finns behov av värmesystemet från allmän synpunkt och 3. huvudmannen såväl i ekonomiskt avseende som i övrigt har förutsättningar att driva värmesystemet. Vid allmänförklaring skall bestämmas ett visst område, utöver vilket värmesystemets verksamhetsområde inte får utsträckas."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Bestämmelserna i denna lag tillämpas såvitt avser naturgasnät inte på sådana leveranser av gas i nätet som sker 1. till fastigheter med industribyggnader eller byggnader inrättade för trädgårdsnäringen eller 2. till andra fastigheter i den mån leveransen gäller annat ändamål än värmeförsörjning av bostadshus eller annan bebyggelse."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Bestämmelserna i 1 kap. 5 § fastighetstaxeringslagen (1979:1152) om vem som i vissa fall skall anses som ägare av fastighet gäller också vid tillämpningen av denna lag. Har huvudmannen för ett allmänt värmesystem träffat avtal med någon annan än fastighetsägaren om brukande av systemet gäller för denne vad som i lagen föreskrivs om fastighetsägare. När omständigheterna föranleder det tillämpas bestämmelser om fastighet i denna lag på byggnad eller annan anläggning som inte tillhör ägaren till marken. Vad som i lagen föreskrivs om ägaren av fastighet skall därvid gälla anläggningens ägare. Lag (1986:1130). Verksamhetsområde"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Ett allmänt värmesystems verksamhetsområde är det område inom vilket värmeförsörjningen har ordnats eller skall ordnas genom värme systemet. Verksamhetsområdet skall vara fastställt till sina gränser. Det får ej omfatta endast vissa av de fastigheter som ingår i en sådan samfällighet för värmeförsörjningen som bildats i särskild ordning."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Huvudmannen för ett allmänt värmesystem bestämmer värmesystemets verksamhetsområde med tillämpning av denna lag och de föreskrifter som har meddelats med stöd av lagen. Utan hinder av denna lag kan huvudmannen efter avtal med ägaren av fastighet utanför värmesystemets verksamhetsområde låta denne bruka värmesystemet."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Önskar huvudmannen att verksamhetsområdet för hans allmänna värmesystem skall omfatta område som ingår eller avses ingå i verksamhetsområdet för ett annat befintligt eller planerat värmesystem, skall tillsynsmyndigheten, om överenskommelse ej kan träffas, bestämma till vilket värmesystem området skall hänföras. I samband härmed kan myndigheten ändra vad som bestämts enligt 2 § andra stycket."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Huvudmannen för ett allmänt värmesystem skall meddela tillsynsmyndigheten vad han bestämt om systemets verksamhetsområde. Försummas det, kan tillsynsmyndigheten vid vite ålägga huvudmannen att fullgöra vad som åligger honom. Uppgifter om allmänna värmesystems verksamhetsområden skall finnas tillgängliga hos tillsynsmyndigheten. Brukningsrätt och avgiftsskyldighet"
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Huvudmannen för ett allmänt värmesystem är skyldig att tillåta ägare av fastigheter inom värmesystemets verksamhetsområde som inte är undantagna enligt 3 § bruka systemet, om fastigheten behöver anordningar för värme och behovet inte med större fördel kan tillgodoses på annat sätt. Huvudmannen är dock berättigad till anstånd med att utföra arbeten som är nödvändiga för brukandet, om anståndet behövs för att samordningen med andra arbeten inte skall väsentligt försvåras. En huvudman som är berättigad till anstånd enligt första stycket skall i skälig omfattning medverka till att behövliga provisoriska anordningar för värmeförsörjning inrättas. Han skall även utge skälig ersättning till fastighetsägaren för ökade kostnader till följd av anståndet."
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "Ägare av fastigheter inom ett allmänt värmesystems verksamhetsområde som ej är undantagna enligt 3 § skall betala avgifter till huvudmannen, om fastigheten behöver anordningar för värme och om behovet ej med större fördel kan tillgodoses på annat sätt än genom värmesystemet. För obebyggda fastigheter, som enligt en detaljplan är avsedda för bebyggande, skall behovet av anordningar för värme bedömas som om fastigheten var bebyggd enligt planen, om inte särskilda skäl föranleder annat. Avgiftsskyldighet inträder, när huvudmannen har upprättat förbindelsepunkt som anges i 14 § och underrättat fastighetsägaren om det. Lag (1987:135)."
+    },
+    {
+      "provision_ref": "11",
+      "section": "11",
+      "content": "En ny ägare av fastighet svarar inte gentemot huvudmannen för avgifter som förfaller till betalning före tillträdesdagen. Leveransskyldighet"
+    },
+    {
+      "provision_ref": "12",
+      "section": "12",
+      "content": "Huvudmannen för ett allmänt värmesystem är skyldig att tillhandahålla energi för erforderlig uppvärmning av fastigheter som avses i 10 §. Leveransskyldighet enligt första stycket föreligger inte när huvudmannen är ur stånd att fullgöra leveransen till följd av omständigheter som han inte kan råda över. Huvudmannen är vidare berättigad att avbryta leveransen vid fara för personskada eller väsentlig egendomsskada eller när det behövs för sådana arbeten som är nödvändiga för att leveransskyldigheten skall kunna fullgöras. Anläggningen"
+    },
+    {
+      "provision_ref": "13",
+      "section": "13",
+      "content": "Ett allmänt värmesystem skall vara försett med de anordningar som krävs för att det skall fylla sitt ändamål och tillgodose skäliga anspråk på säkerhet. Ett allmänt värmesystem får inte inrättas i strid mot detaljplan, områdesbestämmelser eller andra bestämmelser för markens bebyggande eller så att ändamålsenlig bebyggelse eller lämplig planläggning försvåras. Om syftet med planen eller bestämmelserna inte motverkas, får dock mindre avvikelser göras. Så länge ett allmänt värmesystem behövs skall huvudmannen underhålla systemet och i övrigt sörja för att det på tillfredsställande sätt fyller sitt ändamål. Lag (1987:135)."
+    },
+    {
+      "provision_ref": "14",
+      "section": "14",
+      "content": "Det åligger huvudmannen för ett allmänt värmesystem att för varje fastighet som avses i 10 § bestämma en punkt, där inkoppling av fastighetens ledningar till systemet skall ske (förbindelsepunkt). En sådan punkt skall vara belägen i eller i omedelbar närhet av den byggnad som skall uppvärmas genom värmesystemet, om inte särskilda skäl föranleder annat. Uppgift om punktens läge skall lämnas till fastighetsägaren inom den tid som är skälig med hänsyn till dennes intresse att kunna planera för fastighetens utnyttjande."
+    },
+    {
+      "provision_ref": "15",
+      "section": "15",
+      "content": "I ett allmänt värmesystem ingår sådana ledningar och andra anordningar fram till förbindelsepunkterna som tillhör huvudmannen. Inlösen av värmeanordningar m.m."
+    },
+    {
+      "provision_ref": "16",
+      "section": "16",
+      "content": "Om det för en fastighet som avses i 10 § finns anordningar för värmeförsörjning som kan användas för det allmänna värmesystemet, är ägaren av anordningen skyldig att på begäran av huvudmannen låta dem införlivas med värmesystemet mot skälig ersättning."
+    },
+    {
+      "provision_ref": "17",
+      "section": "17",
+      "content": "Anordningar för värmeförsörjning, som blir onyttiga till följd av att ett allmänt värmesystem kommer till stånd eller utvidgas, skall ersättas av huvudmannen i den mån det är skäligt med hänsyn till anordningens art, ålder och skick, den fördel ägaren får av det allmänna värmesystemet och övriga omständigheter. Installationer"
+    },
+    {
+      "provision_ref": "18",
+      "section": "18",
+      "content": "Med fjärrvärmeinstallation förstås ledning för fjärrvärme som för fastighet dragits från förbindelsepunkten samt värmeväxlare eller annan anordning som står i direkt förbindelse med den allmänna fjärrvärmeanläggningen. Med naturgasinstallation förstås naturgasledning som för fastighet dragits från förbindelsepunkten, avstängningsventiler samt säkerhets-, regler- och mätutrustning."
+    },
+    {
+      "provision_ref": "19",
+      "section": "19",
+      "content": "Fastighetsägare får inte utan huvudmannens medgivande anordna eller förändra fjärrvärmeeller naturgasinstallationer."
+    },
+    {
+      "provision_ref": "20",
+      "section": "20",
+      "content": "Huvudmannen får i allmänna bestämmelser som avses i 23 § ange tekniska förutsättningar för fjärrvärme- eller naturgasinstallationer."
+    },
+    {
+      "provision_ref": "21",
+      "section": "21",
+      "content": "När det behövs, får huvudmannen låta undersöka fjärrvärme- eller naturgasinstallationer och deras brukande. Brukande av ett allmänt värmesystem"
+    },
+    {
+      "provision_ref": "22",
+      "section": "22",
+      "content": "Ett allmänt värmesystem skall brukas så att olägenhet för huvudmannen eller någon annan såvitt möjligt undviks."
+    },
+    {
+      "provision_ref": "23",
+      "section": "23",
+      "content": "Huvudmannen för ett allmänt värmesystem meddelar allmänna be stämmelser för värmesystemets brukande. En fastighetsägares möjlighet ett utnyttja värmesystemet för dess ändamål får inte oskäligt begränsas eller försvåras genom sådana bestämmelser."
+    },
+    {
+      "provision_ref": "24",
+      "section": "24",
+      "content": "Om huvudmannen ändrar de allmänna bestämmelserna, skall berörda fastighetsägare skriftligen underrättas om ändringens innebörd och tidpunkten för ikraftträdandet. Underrättelsen skall göras i skälig tid innan ändringen träder i kraft. Motsvarande gäller när huvudmannen i annat avseende ändrar förutsättningarna för värmesystemets brukande. Avgifter och taxa"
+    },
+    {
+      "provision_ref": "25",
+      "section": "25",
+      "content": "Avgifter som huvudmannen för ett allmänt värmesystem tar ut får inte överskrida vad som behövs för att täcka nödvändiga kostnader för värmesystemet och den tillhandahållna energin."
+    },
+    {
+      "provision_ref": "26",
+      "section": "26",
+      "content": "Avgiftsskyldigheten skall fördelas mellan fastigheterna efter skälig och rättvis grund."
+    },
+    {
+      "provision_ref": "27",
+      "section": "27",
+      "content": "Avgifterna skall tas ut enligt en taxa som huvudmannen utformar i överensstämmelse med de grunder som anges i 25 och 26 §§. De kan tas ut som engångsavgifter och som periodiska avgifter. En engångsavgift får ej sättas högre än att den svarar mot fastighetens andel i kostnaden för det allmänna värmesystemets utförande. Uppgår engångsavgiften till belopp som är betungande med hänsyn till fastighetens ekonomiska bärkraft och övriga omständigheter, skall, om fastighetens ägare begär det och godtagbar säkerhet ställs, avgiften fördelas på årliga inbetalningar under viss tid, högst tio år."
+    },
+    {
+      "provision_ref": "28",
+      "section": "28",
+      "content": "Avgifter skall betalas vid anfordran. På obetalt belopp utgår ränta enligt 6 § räntelagen (1975:635) från dagen för anfordran. Om en engångsavgift skall fördelas på årliga inbetalningar, utgår ränta enligt 5 § räntelagen på varje del av avgiften som förfaller till betalning från den dag då den första inbetalningen skall ske till dess den ifrågavarande delen av avgiften betalas. På de delar av avgiften som förfallit till betalning men ännu ej betalts utgår ränta enligt första stycket. Avtal om värmefrågor"
+    },
+    {
+      "provision_ref": "29",
+      "section": "29",
+      "content": "Huvudmannen kan träffa avtal med fastighetsägare om sådana frågor som inte regleras i allmänna bestämmelser eller taxa. Skadeståndsskyldighet m.m."
+    },
+    {
+      "provision_ref": "30",
+      "section": "30",
+      "content": "Har huvudmannen eller någon annan fastighetsägare överskridit sin rätt eller åsidosatt sin skyldighet i förhållande till den andre, skall han återställa vad som rubbats eller fullgöra vad som eftersatts samt ersätta skadan."
+    },
+    {
+      "provision_ref": "30 a",
+      "section": "30 a",
+      "content": "Om avgift har betalats för inrättande av ett allmänt värmesystem enligt denna lag eller enligt motsvarande äldre bestämmelser, är kommunen skyldig att betala tillbaka avgiften i den mån skada uppkommer för ägaren av fastigheten genom att han, på grund av att bygglov vägras, inte kan använda fastigheten så som förutsattes när avgiften betalades. Kommunen är också skyldig att betala ränta enligt 5 § räntelagen (1975:635) från den dag fastighetsägaren betalade avgiften. Lag (1987:135). Avstängning av energitillförsel"
+    },
+    {
+      "provision_ref": "31",
+      "section": "31",
+      "content": "Försummar någon fastighetsägare att betala avgift som avses i denna lag eller att i annat hänseende iaktta vad som åligger honom och är försummelsen väsentlig, får huvudmannen stänga av energitillförseln till fastigheten, om han inte genom anmaning har kunnat åstadkomma rättelse och avstängning kan ske utan att olägenhet för människors hälsa uppkommer. Kostnad för stängningsåtgärd får påföras fastighetsägaren. Lag (1998:838). Särskilda bestämmelser om vissa allmänna värmesystem"
+    },
+    {
+      "provision_ref": "32",
+      "section": "32",
+      "content": "För ett allmänt värmesystem som drivs av någon annan än en kommun gäller 33 och 34 §§."
+    },
+    {
+      "provision_ref": "33",
+      "section": "33",
+      "content": "Den kommun inom vars område värmesystemet har sitt verksamhetsområde får utse tillsynsman för värmesystemet. Tillsynsmannen har tillträde till alla delar av värmesystemet. Han får granska räkenskaper och övriga handlingar rörande detta. Han skall årligen ge berättelse över sin tillsyn till kommunen. Förhållande som påkallar ingripande av kommunen, tillsynsmyndigheten eller annan myndighet skall av tillsynsmannen anmälas till kommunen."
+    },
+    {
+      "provision_ref": "34",
+      "section": "34",
+      "content": "Kan det med skäl antas att huvudmannen åsidosätter viss eller vissa fastigheters intressen eller annars driver värmesystemet på mindre lämpligt sätt, kan tillsynsmyndigheten förordna en syssloman att i huvudmannens ställe och för hans räkning driva värmesystemet. Sysslomannen kan entledigas av tillsynsmyndigheten när förhållandena föranleder det. Sysslomannen har rätt till arvode av huvudmannen. Tillsynsmyndigheten bestämmer arvodets belopp. Tystnadsplikt"
+    },
+    {
+      "provision_ref": "35",
+      "section": "35",
+      "content": "Den som deltar eller har deltagit i en undersökning enligt 21 § får inte obehörigen röja eller utnyttja vad han därvid har fått veta om enskildas affärs- eller driftförhållanden. Vad nu har sagts gäller även en syssloman med avseende på vad han har erfarit på grund av sitt uppdrag. I det allmännas verksamhet tillämpas i stället bestämmelserna i sekretesslagen (1980:100). Prövning av värmefrågor"
+    },
+    {
+      "provision_ref": "36",
+      "section": "36",
+      "content": "Tillsynsmyndigheten kan i ärenden enligt denna lag vid behov anlita sakkunniga. Den sakkunnige har rätt till ersättning med det belopp som tillsynsmyndigheten bestämmer. Huvudmannen för det värmesystem som ärendet rör betalar ersättningen. Beslut av tillsynsmyndigheten enligt 8 eller 34 § eller om ersättning till sakkunnig som avses i första stycket överklagas hos kammarrätten genom besvär. Annat beslut av tillsynsmyndigheten enligt denna lag överklagas hos regeringen genom besvär. Föreskrifter om avgifter i ärenden hos tillsynsmyndigheten enligt denna lag meddelas av regeringen eller, efter regeringens bemyndigande, av tillsynsmyndigheten."
+    },
+    {
+      "provision_ref": "37",
+      "section": "37",
+      "content": "Mål som anges i 38 § prövas av statens va-nämnd. Bestämmelser om nämnden finns i lagen (1976:839) om statens va-nämnd."
+    },
+    {
+      "provision_ref": "38",
+      "section": "38",
+      "content": "Va-nämnden prövar mål angående inlösen eller ersättning enligt 16 eller 17 § samt mål som rör tvist mellan huvudmannen och fastighetsägare om 1. rätt att bruka ett allmänt värmesystem eller skyldighet att genom avgift bidra till kostnaderna för sådant värmesystem, 2. tillämpning eller tolkning av allmänna bestämmelser eller taxa, 3. giltigheten, beståndet eller rätta innebörden av avtal mellan huvudmannen och fastighetsägare, 4. villkor för brukande av ett allmänt värmesystem i den mån allmänna bestämmelser och taxa ej är tillämpliga samt avtal inte har kunnat träffas, 5. fordran på avgift till huvudmannen för ett allmänt värmesystem, 6. skadestånd eller annan påföljd enligt 30, 30 a eller 31 §, 7. skyldighet enligt 9 § andra stycket att medverka till att provisorisk anordning för värmeförsörjning inrättas eller att utge ersättning, 8. andra frågor som avses i denna lag. Lag (1987:135)."
+    },
+    {
+      "provision_ref": "39",
+      "section": "39",
+      "content": "Talan om återbetalning enligt 30 a § skall väckas inom två år från det att beslutet på vilket talan grundas vann laga kraft. Talan får dock väckas senare, om skadan inte rimligen kunde förutses inom angiven tid. Lag (1987:135)."
+    }
+  ]
+}

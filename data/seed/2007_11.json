@@ -1,0 +1,35 @@
+{
+  "id": "2007:11",
+  "type": "statute",
+  "title": "Lag (2007:11) om ansvarsfrihet vid vissa vapenbrott",
+  "status": "in_force",
+  "issued_date": "2007-01-25",
+  "url": "https://data.riksdagen.se/dokument/sfs-2007-11.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som innehar ett skjutvapen eller ammunition utan att ha rätt till det skall inte dömas till ansvar för detta enligt 9 kap. 1 § eller 2 § första stycket d vapenlagen (1996:67), om han eller hon frivilligt lämnar in eller låter lämna in vapnet eller ammunitionen till en polismyndighet under tiden mars-maj 2007."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som lämnar in skjutvapen eller ammunition enligt 1 § behöver inte lämna uppgift om sin identitet."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Skjutvapen och ammunition som har lämnats in enligt 1 § tillfaller staten. Första stycket gäller inte om egendomen har lämnats in utan ägarens samtycke och ägaren gör anspråk på egendomen. Om egendomens ägare är känd, skall ett sådant anspråk göras inom en månad från det att ägaren fick del av en underrättelse från polismyndigheten om att egendomen lämnats in till myndigheten. Om ägaren inte är känd, skall anspråket göras inom tre månader från det att egendomen lämnades in."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Skjutvapen och ammunition som har tillfallit staten enligt 3 § skall förstöras, om egendomen inte behövs för musealt eller militärt ändamål eller för Statens kriminaltekniska laboratoriums verksamhet."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer meddelar föreskrifter om hanteringen av skjutvapen och ammunition som har lämnats in enligt denna lag."
+    }
+  ]
+}

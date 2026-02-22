@@ -1,0 +1,31 @@
+{
+  "id": "1978:764",
+  "type": "statute",
+  "title": "Lag (1978:764) med vissa bestämmelser om marknadsföring av tobaksvaror;",
+  "status": "repealed",
+  "issued_date": "1978-11-30",
+  "url": "https://data.riksdagen.se/dokument/sfs-1978-764.html",
+  "description": "Upphävd 1993-07-01 genom SFS 1993:581",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag gäller näringsidkares marknadsföring som avser tobaksvaror och som vänder sig till konsumenter."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Med hänsyn till de hälsorisker som är förbundna med bruk av tobak skall särskild måttfullhet iakttas vid marknadsföring av tobaksvara. Därvid gäller särskilt att reklam- eller annan marknadsföringsåtgärd inte får företas som är påträngande eller uppsökande eller som uppmanar till bruk av tobak. Vid marknadsföring av tobaksvara får inte användas kommersiell annons i ljudradio- eller televisionsprogram. Detta gäller även för sådana televisionssändningar som omfattas av lagen (1992:1356) om satellitsändningar av televisionsprogram till allmänheten och som kan tas emot endast i något annat land som är bundet av avtalet om Europeiska ekonomiska samarbetsområdet (EES-avtalet). Lag (1992:1360)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Användes vid marknadsföring av tobaksvara kommersiell annons i periodisk skrift eller i annan skrift på vilken tryckfrihetsförordningen är tillämplig och som med avseende på ordningen för dess utgivning är jämförbar med periodisk skrift, skall annonsen återge sådan varningstext och innehållsdeklaration som enligt lagen (1975:1154) om varningstext och innehållsdeklaration på tobaksvaror skall finnas på varans förpackning. Har flera varningstexter fastställts för varan, skall minst en av dem återges. Vid upprepad annonsering skall de olika varningstexterna användas omväxlande och såvitt möjligt i lika stor omfattning. Varningstext och innehållsdeklaration skall i annonsen framträda tydligt och återges i ändamålsenlig form."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Handling som strider mot 2 eller 3 § skall vid tillämpning av marknadsföringslagen (1975:1418) anses vara otillbörlig mot konsumenter."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1986:753",
+  "type": "statute",
+  "title": "Lag (1986:753) om kommunal tjänsteexport",
+  "status": "repealed",
+  "issued_date": "1986-10-31",
+  "url": "https://data.riksdagen.se/dokument/sfs-1986-753.html",
+  "description": "Upphävd 2001-07-01 genom SFS 2001:151",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Kommuner och landstingskommuner får tillhandahålla kommunala tjänster för export enligt föreskrifterna i denna lag. Med kommunala tjänster avses i lagen sådana nyttigheter i form av kunskaper och erfarenheter som finns i kommunernas och landstings- kommunernas verksamhet."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Kommunerna och landstingskommunerna får tillhandahålla tjänsterna åt företag i Sverige eller åt staten, om de inte gör andra åtaganden än att lämna dem sina tjänster. Kommunernas och landstingskommunernas medverkan skall ske på affärsmässiga grunder."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om det finns särskilda skäl till det, får regeringen för visst fall medge att kommunerna och landstingskommunerna tillhandahåller tjänsterna under andra förutsättningar än dem som anges i 2 § första stycket. Regeringen skall därvid ange de villkor som behövs för att begränsa det kommunala risktagandet."
+    }
+  ]
+}

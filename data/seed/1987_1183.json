@@ -1,0 +1,31 @@
+{
+  "id": "1987:1183",
+  "type": "statute",
+  "title": "Lag (1987:1183) om dubbelbeskattningsavtal mellan Sverige och Filippinerna",
+  "status": "repealed",
+  "issued_date": "1987-12-10",
+  "url": "https://data.riksdagen.se/dokument/sfs-1987-1183.html",
+  "description": "Upphävd 2003-12-31 genom SFS 1999:638",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning och förhindra skatteflykt beträffande inkomstskatter som Sverige och Filippinerna undertecknade den 7 maj 1987 skall gälla för Sveriges del. Avtalets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en person anser att det vidtagits någon åtgärd som för honom medfört eller kommer att medföra en beskattning som strider mot bestämmelserna i avtalet, kan han ansöka om rättelse enligt artikel 23 punkt 1 i avtalet."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Även om en skattskyldigs inkomst enligt avtalet skall vara helt eller delvis undantagen från beskattning i Sverige, skall den skattskyldige lämna alla de uppgifter till ledning för taxeringen som han annars skulle ha varit skyldig att lämna."
+    }
+  ]
+}

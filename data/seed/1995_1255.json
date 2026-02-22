@@ -1,0 +1,35 @@
+{
+  "id": "1995:1255",
+  "type": "statute",
+  "title": "Lag (1995:1255) om mästarbrev för hantverkare",
+  "status": "in_force",
+  "issued_date": "1995-11-30",
+  "url": "https://data.riksdagen.se/dokument/sfs-1995-1255.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Mästarbrev är ett kompetensbevis som efter ansökan får tilldelas förtjänta och skickliga hantverkare i ett visst yrke."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om mästarbrev."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen får överlämna till en eller flera hantverksorganisationer att pröva frågor om att utfärda och återkalla mästarbrev. Uppgiften får överlämnas endast till organisationer som bedöms kunna utföra den sakligt och opartiskt samt även i övrigt på ett sådant sätt att mästarbrevens anseende som kompetensbevis upprätthålls."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "En hantverksorganisation som har rätt att utfärda och återkalla mästarbrev skall lämna den myndighet som regeringen bestämmer de upplysningar om sin verksamhet som myndigheten begär."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "En hantverksorganisations beslut om att inte tilldela en sökande mästarbrev eller att återkalla ett mästarbrev får överklagas till allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. I fråga om överklagande av en hantverksorganisations beslut tillämpas 43-47 §§ förvaltningslagen (2017:900). Lag (2018:802)."
+    }
+  ]
+}

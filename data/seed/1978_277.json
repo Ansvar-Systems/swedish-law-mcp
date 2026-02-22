@@ -1,0 +1,21 @@
+{
+  "id": "1978:277",
+  "type": "statute",
+  "title": "Lag (1978:277) med bemyndigande att meddela föreskrifter i fråga om anordning för förbrukningsmätning av elektrisk energi, vatten eller värmeenergi, m.m.",
+  "status": "repealed",
+  "issued_date": "1978-05-25",
+  "url": "https://data.riksdagen.se/dokument/sfs-1978-277.html",
+  "description": "Upphävd 1994-07-01 genom SFS 1994:792",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen bemyndigas att i fråga om anordning som leverantör använder för att mäta lågspänningsabonnenters förbrukning av elektrisk energi eller hushållsförbrukning av vatten eller värmeenergi meddela föreskrifter som gäller utförande, beskaffenhet, egenskaper, användning, överlåtelse, provning, kontroll eller besiktning. Regeringen bemyndigas att meddela föreskrifter om avgifter för prov ning, kontroll eller besiktning enligt föreskrift som avses i första stycket. Regeringen får överlåta åt förvaltningsmyndighet att meddela föreskrifter som avses i första och andra styckena."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som på grund av föreskrift som har meddelats med stöd av 1 § har att utföra provning, kontroll eller besiktning äger tillträde till lokal eller område, där mätanordning, som skall provas, kontrolleras eller besiktigas, är uppsatt. Den hos vilken provning, kontroll eller besiktning sker är skyldig att därvid lämna erforderligt biträde. Det åligger polismyndighet att lämna den handräckning som behövs med anledning av bestämmelsen i första stycket. 3 § har upphört att gälla genom SFS1980:249."
+    }
+  ]
+}

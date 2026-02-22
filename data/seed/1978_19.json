@@ -1,0 +1,21 @@
+{
+  "id": "1978:19",
+  "type": "statute",
+  "title": "Lag (1978:19) om beslutanderätt för stiftelse som har bildats för att på regional nivå främja näringslivets utveckling",
+  "status": "repealed",
+  "issued_date": "1978-01-26",
+  "url": "https://data.riksdagen.se/dokument/sfs-1978-19.html",
+  "description": "Upphävd 1994-07-01 genom SFS 1994:77",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Enligt de närmare föreskrifter som beslutas av regeringen eller myndighet som regeringen bestämmer får stiftelse, som har bildats för att på regional nivå främja näringslivets utveckling, pröva fråga om bidrag eller annat stöd till näringsidkare inom stiftelsens verksamhetsområde."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som hos stiftelse som avses i 1 § har tagit befattning med fråga som anges i paragrafen får ej obehörigen yppa vad han därvid har erfarit om affärs- eller driftförhållanden."
+    }
+  ]
+}

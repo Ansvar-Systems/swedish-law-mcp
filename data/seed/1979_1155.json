@@ -1,0 +1,36 @@
+{
+  "id": "1979:1155",
+  "type": "statute",
+  "title": "Lag (1979:1155) om insamling av uppgifter för kommunal och statlig planering;",
+  "status": "repealed",
+  "issued_date": "1979-12-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-1979-1155.html",
+  "description": "Upphävd 1994-04-01 genom SFS 1994:103",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "För kommunal och statlig energiplanering skall ägare av byggnadstyperna småhus, hyreshus och övriga byggnadstyper som innehåller bostäder lämna uppgifter enligt denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Uppgifter skall lämnas om byggnads uppvärmningssätt, isolering och därmed jämförlig omständighet som har betydelse för kommunal och statlig energiplanering."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Uppgifter enligt 2 § skall lämnas senast den 18 september 1980 på blanketten för allmän fastighetsdeklaration."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "För kommunal och statlig energiplanering och annan därmed jämförlig planering får kommun och statlig myndighet från länsstyrelsens register över fastighetstaxeringen, förutom de uppgifter som avses i 2 §, inhämta uppgifter om byggnads standard. 5 § har upphört att gälla genom lag (1980:256)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Anvisningar om förfarandet vid länsstyrelserna och skattemyndigheterna lämnas av regeringen eller myndighet som regeringen bestämmer. Lag (1990:380)."
+    }
+  ]
+}

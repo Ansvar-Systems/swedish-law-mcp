@@ -1,0 +1,26 @@
+{
+  "id": "1974:525",
+  "type": "statute",
+  "title": "Lag (1974:525) om ersättning för viss födelsekontrollerande verksamhet m.m.",
+  "status": "repealed",
+  "issued_date": "1974-06-07",
+  "url": "https://data.riksdagen.se/dokument/sfs-1974-525.html",
+  "description": "Upphävd 2011-01-01 genom SFS 2010:1218",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Staten, landsting och kommun erhåller ersättning från sjukför- säkringen enligt lagen (1962:381) om allmän försäkring för rådgivning som lämnas i födelsekontrollerande syfte eller om abort eller sterilisering. Lag (1993:1655)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Ersättningen utges enligt grunder som regeringen fastställer. Ersättningen omfattar även kostnaderna för preventivmedel som utlämnas i samband med rådgivningen. Ersättning enligt denna lag utges endast om rådgivning och i anslutning därtill utlämnade preventivmedel tillhandahålls kostnadsfritt. Lag (1984:687)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Ersättning enligt denna lag för rådgivning och i anslutning därtill utlämnade preventivmedel utges av Försäkringskassan. Om ersättning för resekostnader i samband med rådgivning enligt denna lag finns föreskrifter i lagen (1991:419) om resekostnadsersättning vid sjukresor. Lag (2004:806). Övergångsbestämmelser 1991:422 Denna lag träder i kraft den 1 januari 1992. Äldre föreskrifter skall fortfarande gälla i fråga om ersättning för kostnader för resa som har påbörjats före ikraftträdandet. 1993:1655 1. Denna lag träder i kraft den 1 januari 1994. 2. Äldre bestämmelser gäller fortfarande för tid före ikraftträdandet."
+    }
+  ]
+}

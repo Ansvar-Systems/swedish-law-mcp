@@ -1,0 +1,31 @@
+{
+  "id": "1991:1483",
+  "type": "statute",
+  "title": "Lag (1991:1483) om skatt på vinstsparande m.m.",
+  "status": "repealed",
+  "issued_date": "1991-11-21",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-1483.html",
+  "description": "Upphävd 2019-01-01 genom SFS 2018:1139",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Skatt betalas enligt denna lag till staten för penningvinst vid vinstdragning i sådant vinstsparande anordnat av bank eller sparkassa som utgör svenskt lotteri och för penningvinst i sådant lotteri som avses i 21 § lotterilagen (1994:1000). Skatten utgör 30 procent av vinstens värde. För vinst i lotteri som anordnas med stöd av 21 § lotterilagen skall skatt dock inte betalas med högre belopp än att etthundra kronor återstår av vinsten. Vid beräkning av skattebeloppet skall i vinstens värde inräknas den skatt som skall betalas för vinsten. Skatt skall inte betalas för vinster som inte tagits ut av vinnaren. Lag (1995:764)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Skattskyldig är den som anordnar lotteriet. Skattskyldigheten inträder vid vinstdragningen."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om den skattskyldige visar att en vinnare inte har tagit ut sin vinst inom föreskriven tid är den skattskyldige berättigad att få tillbaka den skatt som betalats för vinsten. Beskattningsmyndigheten beslutar om återbetalning efter ansökan av den skattskyldige. Ränta lämnas inte på återbetalat belopp."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Bestämmelser om förfarandet vid uttag av skatten finns i skatteförfarandelagen (2011:1244). Lag (2011:1346). Övergångsbestämmelser 2002:415 Denna lag träder i kraft den 1 januari 2003. Äldre föreskrifter gäller fortfarande för förhållanden som hänför sig till tiden före ikraftträdandet."
+    }
+  ]
+}

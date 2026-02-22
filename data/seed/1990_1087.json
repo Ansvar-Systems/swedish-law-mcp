@@ -1,0 +1,41 @@
+{
+  "id": "1990:1087",
+  "type": "statute",
+  "title": "Lag (1990:1087) om lagerskatt på vissa oljeprodukter",
+  "status": "repealed",
+  "issued_date": "1990-11-29",
+  "url": "https://data.riksdagen.se/dokument/sfs-1990-1087.html",
+  "description": "Upphävd 2000-07-01 genom SFS 2000:491",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som vid ikraftträdandet av denna lag inte är registrerad som skattskyldig enligt 7 § lagen (1957:262) om allmän energiskatt och som då innehar oljeprodukter som blir skattepliktiga enligt nämnda lag den 1 januari 1991 skall till staten betala lagerskatt enligt denna lag. Även den som är registrerad enligt lagen om allmän energiskatt och som innehar sådana oljeprodukter skall betala lagerskatt enligt denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Skatt tas ut för oljeprodukter som blir skattepliktiga enligt lagen (1990:1085) om ändring i lagen (1990:583) om ändring i lagen (1957:262) om allmän energiskatt och för vilka skattskyldighet inte kommer att inträda enligt 8 § första stycket 1 lagen om allmän energiskatt. Skatt tas inte ut för oljeprodukter som är avsedda att förbrukas för annat ändamål än energialstring."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Lagerskatt tas ut endast för den del av den innehavda mängden oljeprodukter som omfattar mer än 5 000 liter eller, i fråga om den som driver detaljhandel med skattepliktiga oljeprodukter, 5 000 liter för varje särskilt försäljningsställe."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Lagerskatt tas ut med 1 078 kronor per kubikmeter."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Den som är skyldig att betala lagerskatt skall lämna en deklaration till riksskatteverket om sitt innehav av skattepliktiga oljeprodukter. Deklarationen skall ta upp de lagrade oljeprodukternas art och kvantitet, lagringsplatserna, den använda mätningsmetoden och lagerskattens belopp. Deklaration skall ha kommit in till riksskatteverket senast den 25 februari 1991. Lagerskatten skall senast samma dag vara inbetald till verket. Deklaration skall avges på heder och samvete samt upprättas på blankett enligt formulär som fastställs av riksskatteverket."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Lagen (1984:151) om punktskatter och prisregleringsavgifter gäller i fråga om lagerskatt. Därvid iakttas följande. 2 kap. 1--9 §§, 5 kap. 1 § första och andra styckena, 3--5 §§ och 9 §, 6 kap. samt 7 kap. 5 § skall inte tillämpas. Vad som föreskrivs i 4 kap. 2 § första stycket skall gälla om deklarationen har kommit in senast den 25 februari 1991. Restavgift enligt 5 kap. 8 § 1 skall tas ut om skattebeloppet inte har betalats senast den 25 februari 1991. Ränta enligt 5 kap. 12 § första stycket 1 utgår från den 25 februari 1991. Övergångsbestämmelser 2000:491 Den upphävda lagen gäller fortfarande i fråga om förhållanden som hänför sig till tiden före den 1 juli 2000."
+    }
+  ]
+}

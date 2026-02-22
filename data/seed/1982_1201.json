@@ -1,0 +1,51 @@
+{
+  "id": "1982:1201",
+  "type": "statute",
+  "title": "Lag (1982:1201) om skatt på viss elektrisk kraft",
+  "status": "repealed",
+  "issued_date": "1982-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1982-1201.html",
+  "description": "Upphävd 1997-01-01 genom SFS 1996:1221",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Skatt skall erläggas till staten enligt denna lag för elektrisk kraft som inom landet framställs i ett vattenkraftverk med en installerad generatoreffekt av minst 1 500 kilowatt. Skatteplikt föreligger inte för elektrisk kraft som framställs i ett pumpkraftverk."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regler för förfarandet vid beskattningen finns i lagen (1984:151) om punktskatter och prisregleringsavgifter. Lag (1984:163)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Den som framställer elektrisk kraft som avses i 1 § (skattepliktig kraft) är skattskyldig och skall vara registrerad hos beskattningsmyndigheten. Lag (1993:482)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Skyldighet att erlägga skatt enligt denna lag inträder när kraften levereras från kraftverket. Lag (1984:997)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Skatten tas ut med sex öre per kilowattimme. Skatten sätts ned med tre öre per kilowattimme om kraften har producerats i ett kraftverk som har tagits i drift under åren 1973-1977 och med sex öre per kilowattimme om den har producerats i ett kraftverk som har tagits i drift senare. Den skattepliktiga kraften skall mätas vid varje kraftverk. Lag (1996:689)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Vid beräkning av skatt enligt 5 § skall den producerade kraften i förekommande fall fördelas på anläggningar som har tagits i drift före år 1973, under tiden 1973--1977 och efter år 1977 med ledning av den generatoreffekt som har börjat utnyttjas under var och en av dessa tidsperioder."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "I deklaration får den skattskyldige göra avdrag från den skattepliktiga kraften med för kraftverk och kalenderår räknat sex miljoner kilowattimmar minskat med fyrtio procent av skillnaden mellan medelårsproduktionen av skattepliktig kraft och sex miljoner kilowattimmar. Avdraget fastställs vid ingången av kalenderåret. Lag (1984:997). 8 § har upphävts genom lag (1984:163)."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Om synnerliga skäl föreligger får regeringen medge nedsättning av eller befrielse från skatt för kraft som förbrukas i en industriell verksamhet som drivs av den skattskyldige eller av ett honom närstående företag. Övergångsbestämmelser 1995:913 Denna lag träder i kraft den 1 januari 1996. Äldre föreskrifter gäller fortfarande i fråga om förhållanden som hänför sig till tiden före ikraftträdandet. 1996:689 Denna lag träder i kraft den 1 september 1996. Äldre föreskrifter gäller fortfarande i fråga om förhållanden som hänför sig till tiden före ikraftträdandet. Under tiden 1 september 1996-30 juni 1997 skall skatt enligt 5 § dock tas ut med 5 öre per kilowattimme och nedsättning ske med 2,5 öre om kraften producerats i ett kraftverk som har tagits i drift under åren 1973-1977 och med 5 öre per kilowattimme om den producerats i ett kraftverk som har tagits i drift senare. 1996:1221 Den upphävda lagen tillämpas dock alltjämt i fråga om förhållanden som hänför sig till tiden före den 1 januari 1997."
+    }
+  ]
+}

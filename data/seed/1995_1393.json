@@ -1,0 +1,51 @@
+{
+  "id": "1995:1393",
+  "type": "statute",
+  "title": "Lag (1995:1393) om kommunal lantmäterimyndighet",
+  "status": "in_force",
+  "issued_date": "1995-12-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1995-1393.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inrättande av en kommunal lantmäterimyndighet",
+      "content": "Regeringen får meddela tillstånd för en kommun att inrätta en kommunal lantmäterimyndighet och att svara för verksamheten vid myndigheten."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För tillstånd krävs att kommunen visar att 1. myndigheten kommer att få hela kommunen som sitt verksamhetsområde, 2. myndighetens arbetsuppgifter väsentligen kommer att begränsas till förrättningsverksamhet och myndighetsservice i anslutning till förrättningsverksamheten, 3. myndigheten kommer att få en för ändamålet lämplig organisation och en verksamhet som kan beräknas få tillräcklig omfattning för att nödvändig kompetens skall kunna upprätthållas, 4. minst två tjänstemän inom myndigheten kommer att ha den kompetens och erfarenhet som krävs för att handlägga förrättningar, 5. myndighetens informationssystem kommer att få en sådan teknisk standard som säkerställer det informationsutbyte mellan stat och kommun som behövs inom lantmäteriområdet."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "En kommun som vill inrätta en kommunal lantmäterimyndighet ska ge in en ansökan om tillstånd till den statliga lantmäterimyndigheten. Ansökan ska vara skriftlig och innehålla den utredning som behövs för ärendets prövning. Lag (2008:532)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "En kommunal lantmäterimyndighet ska börja sin verksamhet vid det årsskifte som infaller närmast efter det att ett år förflutit sedan tillståndet meddelades. Verksamheten får påbörjas tidigare än vad som framgår av första stycket, om den statliga lantmäterimyndigheten i det enskilda fallet beslutar om det. Lag (2008:532). Myndighetens verksamhet"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Den kommunala lantmäterimyndigheten handlägger ärenden om fastighetsbildning, fastighetsbestämning, särskild gränsutmärkning och fastighetsregistrering inom kommunen. Till den statliga lantmäterimyndigheten ska dock överlämnas 1. förrättningar som avses i 4 kap. 7 a § andra stycket fastighetsbildningslagen (1970:988), 2. förrättningar som avser flera lantmäterimyndigheters verksamhetsområden, 3. stora jord- och skogsbruksförrättningar som inte omfattar ny bebyggelse, och 4. andra särskilda förrättningar som av kompetens- eller resursskäl inte bör handläggas hos myndigheten. Beslut av den kommunala lantmäterimyndigheten att överlämna en förrättning får inte överklagas. Lag (2009:563). Tillsyn"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Den statliga lantmäterimyndigheten utövar tillsyn över verksamheten vid de kommunala lantmäterimyndigheterna. Lag (2008:532). Myndighetens upphörande"
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Om en kommun inte längre vill svara för verksamheten vid en kommunal lantmäterimyndighet, ska kommunen anmäla detta till den statliga lantmäterimyndigheten. Kommunens tillstånd upphör att gälla vid det årsskifte som infaller närmast efter det att ett år förflutit sedan anmälan kom in till den statliga lantmäterimyndigheten. Verksamheten får upphöra tidigare än vad som framgår av första stycket, om den statliga lantmäterimyndigheten i det enskilda fallet beslutar om det. Lag (2008:532)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Om verksamheten vid den kommunala lantmäterimyndigheten inte uppfyller de förutsättningar som anges i 2 § eller om myndigheten i något väsentligt hänseende brister i sin myndighetsfunktion, får kommunens tillstånd återkallas av regeringen efter anmälan från den statliga lantmäterimyndigheten. Lag (2008:532). Övergångsbestämmelser 1995:1393 1. Denna lag träder i kraft den 1 januari 1996, då lagen (1971:133) om kommunal fastighetsbildningsmyndighet och fastighetsregistermyndighet upphör att gälla. 2. Beslut om inrättande av kommunal fastighetsbildningsmyndighet och fastighetsregistermyndighet som meddelats enligt lagen (1971:133) om kommunal fastighetsbildningsmyndighet och fastighetsregistermyndighet skall gälla till utgången av år 1997, om inte annat förordnas. För sådana myndigheter skall äldre bestämmelser tillämpas. 3. En kommun som den 31 december 1995 inte har en egen fastighetsbildningsmyndighet får inrätta en kommunal lantmäterimyndighet tidigast den 1 januari 1999, om inte Lantmäteriverket medger annat."
+    }
+  ]
+}

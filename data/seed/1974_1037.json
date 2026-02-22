@@ -1,0 +1,51 @@
+{
+  "id": "1974:1037",
+  "type": "statute",
+  "title": "Lag (1974:1037) med instruktion för Valprövningsnämnden",
+  "status": "repealed",
+  "issued_date": "1974-12-13",
+  "url": "https://data.riksdagen.se/dokument/sfs-1974-1037.html",
+  "description": "Upphävd 2013-01-01 genom SFS 2012:880",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Om valprövningsnämndens sammansättning och uppgifter föreskrives i regeringsformen, riksdagsordningen och annan lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Nämnden sammanträder på kallelse av ordföranden så ofta göromålen påfordrar det."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Nämnden förordnar sekreterare åt sig och äger härutöver anlita särskilda föredragande och experter i övrigt. Ersättning till sekreterare, föredragande och experter bestämmes av nämnden."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Nämnden äger enligt vad som prövas skäligt besluta om ersättning av allmänna medel till den som enligt nämndens beslut kallats att höras i ärende vid nämnden."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "I fråga om omröstning i nämnden gäller bestämmelserna i 16 kap. rättegångsbalken i tillämpliga delar."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Nämnden skall i arbetsordning eller eljest besluta om förande av diarium och protokoll, om rätt för ordföranden eller dennes ersättare eller för sekreteraren eller anlitad föredragande att vidtaga för ärendenas beredande erforderliga åtgärder, om expeditioners undertecknande ävensom om vad som i övrigt skall iakttagas vid ärendenas beredande och avgörande utöver vad som följer av denna instruktion eller andra i lag givna förfaranderegler."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Av nämnden beslutade ersättningar betalas ut av Riksdagsförvaltningen. Lag (2011:780)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Särskilda föreskrifter om arvoden till Valprövningsnämndens ordförande, dennes ersättare, ledamöter och suppleanter finns i lagen (1989:185) om arvoden m.m. för uppdrag inom riksdagen, dess myndigheter och organ. Lag (2000:549)."
+    }
+  ]
+}

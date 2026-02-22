@@ -2,17 +2,19 @@
 
 > Comprehensive breakdown of Swedish legal data in this MCP server
 
+> Latest corpus rebuild: **2026-02-22**. The overview table below reflects current database totals; deeper sections are legacy snapshots and will be refreshed.
+
 ## Overview
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| **Statutes** | 717 | Comprehensive Swedish legislation |
-| **Provisions** | 31,198 | Individual statute sections |
-| **Preparatory Works** | 3,625 | Propositions and SOUs |
+| **Statutes** | 2,415 | Comprehensive Swedish legislation |
+| **Provisions** | 58,570 | Individual statute sections |
+| **Preparatory Works** | 6,735 | Propositions and SOUs |
 | **EU Cross-References** | 668 | 228 EU directives and regulations |
-| **Legal Definitions** | 615 | Extracted from statute text |
-| **Database Size** | 64.8 MB | SQLite with FTS5 indexes |
-| **Last Major Update** | 2026-02-12 | Statute expansion + EU integration |
+| **Legal Definitions** | 0 | Table reserved in free-tier build |
+| **Database Size** | 124.9 MB | SQLite with FTS5 indexes |
+| **Last Major Update** | 2026-02-22 | Full-corpus statute ingestion refresh |
 
 ---
 

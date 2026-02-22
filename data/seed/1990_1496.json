@@ -1,0 +1,26 @@
+{
+  "id": "1990:1496",
+  "type": "statute",
+  "title": "Lag (1990:1496) om hur ledamöter i skogsvårdsstyrelserna utses",
+  "status": "repealed",
+  "issued_date": "1991-12-06",
+  "url": "https://data.riksdagen.se/dokument/sfs-1990-1496.html",
+  "description": "Upphävd 1997-01-01 genom SFS 1996:1491",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I varje län skall det finnas en skogsvårdsstyrelse."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Skogsvårdsstyrelsen består av sju ledamöter."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Tre av ledamöterna och en personlig ersättare för var och en av dem förordnas av regeringen. Tre av ledamöterna och lika många ersättare väljs av landstinget i länet. I Gotlands län väljs de dock av kommunfullmäktige i Gotlands kommun. Länsjägmästaren är självskriven ledamot i styrelsen."
+    }
+  ]
+}

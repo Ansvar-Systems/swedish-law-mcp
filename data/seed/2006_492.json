@@ -1,0 +1,31 @@
+{
+  "id": "2006:492",
+  "type": "statute",
+  "title": "Lag (2006:492) om kommnal befogenhet att tillhandahålla servicetjänster åt äldre",
+  "status": "repealed",
+  "issued_date": "2006-06-01",
+  "url": "https://data.riksdagen.se/dokument/sfs-2006-492.html",
+  "description": "Upphävd 2009-03-01 genom SFS 2009:47",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En kommun får utan föregående individuell behovsprövning tillhandahålla servicetjänster åt personer som fyllt 67 år. Med servicetjänster avses tjänster som är avsedda att förebygga skador, olycksfall eller ohälsa och som inte utgör personlig omvårdnad."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För servicetjänster åt äldre personer får kommunen ta ut skäliga avgifter enligt grunder som kommunen bestämmer. Avgifterna får dock inte överstiga kommunens självkostnader."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Denna lag inskränker inte de skyldigheter som en kommun har enligt socialtjänstlagen (2001:453)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Den eller de nämnder som avses i 2 kap. 4 § första stycket socialtjänstlagen (2001:453) skall ha hand om verksamhet enligt denna lag."
+    }
+  ]
+}

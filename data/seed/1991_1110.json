@@ -1,0 +1,30 @@
+{
+  "id": "1991:1110",
+  "type": "statute",
+  "title": "Lag (1991:1110) om kommunernas skyldighet att svara för vissa elevresor",
+  "status": "in_force",
+  "issued_date": "1991-06-13",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-1110.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Kommunerna skall svara för kostnaderna för elevresor enligt vad som framgår av denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För en elev som har rätt till studiehjälp enligt studiestödslagen (1999:1395), ska den kommun som enligt 29 kap. 6 § skollagen (2010:800) är elevens hemkommun, ansvara för elevens kostnader för dagliga resor mellan bostaden och skolan. Ansvaret gäller för sådana resor där färdvägen är minst sex kilometer. Stödet ska ges kontant eller på annat lämpligt sätt enligt kommunens bestämmande. Om stödet ges kontant är kommunen inte skyldig att ge högre ersättning än vad som motsvarar 1/30 av prisbasbeloppet enligt 2 kap. 6 och 7 §§ socialförsäkringsbalken för varje hel kalendermånad som eleven har kostnader för resor mellan bostaden och skolan. Lag (2010:1250)."
+    },
+    {
+      "provision_ref": "2 a",
+      "section": "2 a",
+      "content": "En elev som inte har uppnått åldern för rätt till studiehjälp i form av studiebidrag enligt studiestödslagen (1999:1395), men som i övrigt uppfyller villkoren för bidraget, ska när det gäller rätt till stöd enligt denna lag jämställas med en elev som har rätt till studiehjälp. Lag (2022:1091)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen får meddela ytterligare föreskrifter för tillämpningen av denna lag. Sådana föreskrifter får innebära att kommunens ansvar för elevens resor begränsas."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1981:1114",
+  "type": "statute",
+  "title": "Lag (1981:1114) om utseende av ledamöter i lantbruksnämnderna och skogsvårdsstyrelserna",
+  "status": "repealed",
+  "issued_date": "1981-11-12",
+  "url": "https://data.riksdagen.se/dokument/sfs-1981-1114.html",
+  "description": "Upphävd 1991-07-01 genom SFS 1990:1496",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I varje län skall det finnas en lantbruksnämnd och en skogsvårdsstyrelse."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Lantbruksnämnden skall bestå av nio ledamöter. Fyra ledamöter och en suppleant för var och en av dem skall utses av regeringen. Fyra ledamöter och lika många suppleanter skall väljas av landstinget eller, i Gotlands län, av kommunfullmäktige i Gotlands kommun. Lantbruksdirektören är självskriven ledamot i nämnden. Inom var och en av lantbruksnämnderna i Jämtlands, Västerbottens och Norrbottens län skall det finnas en rennäringsdelegation. Landstinget skall välja en ledamot i delegationen och en suppleant för denne ledamot."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Skogsvårdsstyrelsen skall bestå av sju ledamöter. Tre ledamöter och en suppleant för var och en av dem skall utses av regeringen. Tre ledamöter och lika många suppleanter skall väljas av landstinget eller, i Gotlands län, av kommunfullmäktige i Gotlands kommun. Länsjägmästaren är självskriven ledamot i styrelsen."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "2002:1024",
+  "type": "statute",
+  "title": "Lag (2002:1024) om lön till riksdagens ombudsmän och riksrevisorerna",
+  "status": "repealed",
+  "issued_date": "2002-12-05",
+  "url": "https://data.riksdagen.se/dokument/sfs-2002-1024.html",
+  "description": "Upphävd 2013-01-01 genom SFS 2012:882",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Uppgifter, m.m.",
+      "content": "Det belopp som månadsvis skall betalas i lön till riksdagens ombudsmän och riksrevisorerna skall bestämmas av Nämnden för lön till riksdagens ombudsmän och riksrevisorerna. Nämnden skall också besluta om avgångsersättning och om övriga anställningsförmåner för riksdagens ombudsmän och riksrevisorerna. Nämnden är en myndighet under riksdagen. Lag (2007:344). Sammansättning"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Enligt 8 kap. 5 § riksdagsordningen består nämnden av ordförande och två andra ledamöter. Organisation"
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Nämnden har en sekreterare som nämnden utser. Ärendenas handläggning"
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Nämnden sammanträder på kallelse av ordföranden. I ärende som avses i 1 § är nämnden beslutför när alla ledamöter är närvarande. Nämnden får i arbetsordning eller i särskilda beslut lämna över till ordföranden eller någon annan som tjänstgör hos nämnden att avgöra ärenden som är av det slaget att de inte behöver prövas av nämnden. Överklagande"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Nämndens beslut får inte överklagas. Arvoden för uppdrag i nämnden"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Riksdagsförvaltningen bestämmer arvoden till nämndens ledamöter och sekreterare."
+    }
+  ]
+}

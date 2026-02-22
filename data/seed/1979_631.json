@@ -1,0 +1,20 @@
+{
+  "id": "1979:631",
+  "type": "statute",
+  "title": "Lag (1979:631) om beslutanderätt för stiftelse som har bildats för att främja industriellt utvecklingsarbete",
+  "status": "in_force",
+  "issued_date": "1979-06-21",
+  "url": "https://data.riksdagen.se/dokument/sfs-1979-631.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen eller myndighet som regeringen bestämmer får överlämna till stiftelse, som har bildats för att främja industriellt utvecklingsarbete, att pröva fråga om bidrag eller annat stöd inom stiftelsens verksamhetsområde."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som hos stiftelse som avses i 1 § har tagit befattning med fråga som anges i paragrafen får ej obehörigen yppa vad han därvid har erfarit om affärs- eller driftförhållanden."
+    }
+  ]
+}

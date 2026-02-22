@@ -1,0 +1,41 @@
+{
+  "id": "1989:829",
+  "type": "statute",
+  "title": "Lag (1989:829) om Värdepapperscentralen VPC Aktiebolag",
+  "status": "repealed",
+  "issued_date": "1989-11-23",
+  "url": "https://data.riksdagen.se/dokument/sfs-1989-829.html",
+  "description": "Upphävd 1999-01-01 genom SFS 1998:1479",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Värdepapperscentralen VPC Aktiebolag (värdepapperscentralen) skall fullgöra uppgifter för aktiebolag, bankaktiebolag, försäkringsaktiebolag och andra enligt vad som föreskrivs i aktiebolagslagen (1975:1385), bankaktiebolagslagen (1987:618), försäkringsrörelselagen (1982:713) och aktiekontolagen (1989:827)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Aktiebolagslagen (1975:1385) är tillämplig på värdepapperscentralen, om något annat inte följer av 3 eller 4 §."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Bolagsordningen för värdepapperscentralen skall fastställas av regeringen och får inte ändras utan regeringens godkännande."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Värdepapperscentralen står under tillsyn av bankinspektionen. Bankinspektionen kan förelägga vite vid meddelande av föreskrift eller förbud i samband med tillsynen. Bankinspektionens beslut enligt denna lag får överklagas hos regeringen. Beslut i frågor som rör tillsynen skall verkställas även om beslutet har överklagats, såvida inte regeringen förordnar något annat. Ytterligare bestämmelser om tillsynsverksamheten meddelas av regeringen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Värdepapperscentralen skall med en årlig avgift bekosta Finansinspektionens verksamhet enligt de närmare föreskrifter som regeringen meddelar. Värdepapperscentralen skall med belopp som Finansinspektionen bestämmer betala ersättning till en revisor som Finansinspektionen förordnat enligt bolagsordningen. Om Finansinspektionen för bedömning av viss fråga vid den löpande tillsynen behöver anlita någon med särskild fackkunskap, skall kostnaden för detta betalas av Värdepapperscentralen. Lag (1996:188)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Styrelseledamot, verkställande direktör eller någon annan tjänsteman hos värdepapperscentralen som uppsåtligen eller av grov oaktsamhet till bankinspektionen lämnar oriktiga eller vilseledande uppgifter om centralen eller dess verksamhet döms till böter eller fängelse i högst sex månader, om gärningen inte är belagd med straff i brottsbalken. 1989:829 Denna lag träder i kraft den dag regeringen bestämmer. Regeringen får därvid bestämma att lagen skall träda i kraft vid skilda tidpunkter för olika emittenter och rättigheter. 1998:1479 Bestämmelserna i aktiekontolagen och lagen om Värdepapperscentralen VPC gäller dock fortfarande i fråga om överklagande av beslut som har meddelats enligt någon av de lagarna före den 1 januari 1999."
+    }
+  ]
+}

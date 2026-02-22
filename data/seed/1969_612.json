@@ -1,0 +1,31 @@
+{
+  "id": "1969:612",
+  "type": "statute",
+  "title": "Lag (1969:612) om förbud mot professionell boxning",
+  "status": "repealed",
+  "issued_date": "1969-11-28",
+  "url": "https://data.riksdagen.se/dokument/sfs-1969-612.html",
+  "description": "Upphävd 2007-01-01 genom SFS 2006:1006",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som här i riket deltager i tävlings-, uppvisnings- eller träningsmatch i professionell boxning dömes till böter eller fängelse i högst sex månader."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Till böter eller fängelse i högst sex månader dömes också den som i fråga om match som avses i 1 § 1. anordnar eller ekonomiskt understödjer matchen eller upplåter lokal för den, 2. i egenskap av manager ingår avtal om matchen eller främjar tillkomsten av sådant avtal, 3. tjänstgör som domare eller sekond."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För medverkan till brott mot denna lag dömes ej till ansvar."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Utbyte av brott som avses i denna lag skall förklaras förverkat, om det ej är uppenbart obilligt."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "2003:886",
+  "type": "statute",
+  "title": "Lag (2003:886) om utjämningsavgift för kommuner för kostnader enligt lagen (1993:387) om stöd och service till vissa funktionshindrade",
+  "status": "repealed",
+  "issued_date": "2003-11-27",
+  "url": "https://data.riksdagen.se/dokument/sfs-2003-886.html",
+  "description": "Upphävd 2009-01-01 genom SFS 2008:342",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Kommuner skall under de förutsättningar som anges i denna lag betala en utjämningsavgift till staten för kostnader enligt lagen (1993:387) om stöd och service till vissa funktionshindrade. Beräkning av verksamhetskostnader och avgifter"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För varje kommun beräknas en standardkostnad för verksamheter enligt 9 § 2-10 lagen (1993:387) om stöd och service till vissa funktionshindrade samt för den ersättning varje kommun betalar till försäkringskassan enligt 20 § lagen (1993:389) om assistansersättning. Med standardkostnad avses en för varje kommun beräknad teoretisk kostnad för de verksamheter och den ersättning som anges i första stycket."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "En kommun vars standardkostnad per invånare understiger den för landet genomsnittliga standardkostnaden per invånare skall betala en avgift som motsvarar mellanskillnaden, multiplicerad med antalet invånare i kommunen den 1 november året före det år avgiften skall betalas. Regeringen eller den myndighet regeringen bestämmer meddelar närmare föreskrifter om beräkningen av avgiften."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Avgiften beräknas på grundval av den indelning av kommuner som gäller vid början av det år avgiften skall betalas (avgiftsåret). Hur avgiften fastställs"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Skatteverket beslutar preliminärt avgiftens storlek samt lämnar senast den 20 januari under avgiftsåret uppgift till varje kommun om detta. Kommunerna får senast den 15 februari under avgiftsåret till Skatteverket påtala brister och oriktiga uppgifter i underlaget för beslutet. Skatteverket fastställer avgifternas storlek samt lämnar senast den 15 april under avgiftsåret uppgift till varje kommun om storleken av dess avgift. Betalning"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Avgiften skall betalas genom avräkning i samband med och på motsvarande sätt som vid utbetalning av kommunalskattemedel enligt 4 § lagen (1965:269) med särskilda bestämmelser om kommuns och annan menighets utdebitering av skatt, m.m. Överklagande"
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Skatteverkets beslut enligt denna lag får överklagas hos regeringen. Vid prövningen av ett beslut enligt 5 § tredje stycket får sådana fel och brister i underlaget för beslutet som har påtalats först efter den tidpunkt som anges i 5 § andra stycket, beaktas endast om det finns synnerliga skäl. Lag (2005:805). Övergångsbestämmelser 2003:886 1. Denna lag träder i kraft den 1 mars 2004 och tillämpas första gången för avgiftsåret 2004. För avgiftsåret 2004 skall i stället för vad som sägs i 5 § följande gälla: - Skatteverket skall senast den 19 mars lämna uppgift till varje kommun om storleken av dess preliminära avgift, - kommunerna får senast den 19 april påtala brister och oriktiga uppgifter i underlaget för beslutet, och - Skatteverket skall senast den 10 maj lämna uppgift till varje kommun om storleken av dess avgift. 2. Från och med 2004 till och med 2008 skall den avgift som en kommun skall betala enligt lagen utgå med högst - 250 kronor per invånare för 2004, - 550 kronor per invånare för 2005, - 850 kronor per invånare för 2006, - 1 150 kronor per invånare för 2007, och - 1 450 kronor per invånare för 2008."
+    }
+  ]
+}

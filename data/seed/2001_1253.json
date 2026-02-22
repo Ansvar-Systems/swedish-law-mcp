@@ -1,0 +1,72 @@
+{
+  "id": "2001:1253",
+  "type": "statute",
+  "title": "Lag (2001:1253) om energieffektivitetskrav för förkopplingsdon till lysrör",
+  "status": "repealed",
+  "issued_date": "2001-12-13",
+  "url": "https://data.riksdagen.se/dokument/sfs-2001-1253.html",
+  "description": "Upphävd 2008-05-01 genom SFS 2008:114",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Lagens tillämpningsområde m.m.",
+      "content": "Denna lag skall tillämpas på elektriska nätanslutna förkopplingsdon till lysrörsbelysning (förkopplingsdon)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Lagen tillämpas inte på förkopplingsdon som 1. är inbyggda i lampor, 2. är särskilt konstruerade för armatur avsedd att monteras in i möbler och som utgör en icke utbytbar del av armaturen och inte kan provas åtskilt från armaturen, eller 3. skall exporteras från Europeiska gemenskapen, antingen som separata komponenter eller inbyggda i armatur."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela närmare föreskrifter om definition och indelning i kategorier av förkopplingsdon."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Förkopplingsdon som omfattas av lagen får släppas ut på marknaden endast om de uppfyller de krav och villkor som ställs i 5 § eller i föreskrifter som meddelats med stöd av denna lag. De skall även vara CE-märkta. Den som tillverkar eller importerar förkopplingsdon ansvarar för att de uppfyller kraven enligt första stycket. Elförbrukning"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "En maximal tillförd effekt för kretsar förkopplingsdon - lampor skall gälla för olika kategorier av förkopplingsdon. Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om sådan maximieffekt för olika kategorier och hur den skall beräknas. Märkning"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Förkopplingsdon får CE-märkas endast om de uppfyller de krav och villkor som ställs upp i 5 § eller i föreskrifter som har meddelats med stöd av denna lag. Regeringen eller den myndighet som regeringen bestämmer får meddela närmare föreskrifter om bedömning av överensstämmelse och märkning av förkopplingsdon. För CE-märkning gäller vidare bestämmelserna i lagen (1992:1534) om CE-märkning. Tillsyn m.m."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Den myndighet som regeringen bestämmer (tillsynsmyndigheten) skall se till att denna lag och de föreskrifter som har meddelats med stöd av lagen följs."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Tillsynsmyndigheten får meddela de förelägganden och förbud som behövs för att lagen och föreskrifter som har meddelats med stöd av lagen skall följas. Ett föreläggande eller förbud får förenas med vite."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Tillsynsmyndigheten har rätt att på begäran få de upplysningar, handlingar, varuprover eller liknande som behövs för myndighetens tillsyn enligt denna lag."
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "För att fullgöra sina uppgifter enligt denna lag har tillsynsmyndigheten rätt att få tillträde till områden, lokaler och andra utrymmen, dock inte bostäder."
+    },
+    {
+      "provision_ref": "11",
+      "section": "11",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om skyldighet för näringsidkare att ersätta tillsynsmyndighetens kostnader för provtagning och undersökning av prov. Överklagande"
+    },
+    {
+      "provision_ref": "12",
+      "section": "12",
+      "content": "Tillsynsmyndighetens beslut i enskilda fall enligt denna lag eller enligt föreskrifter som har meddelats med stöd av lagen får överklagas hos allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Övergångsbestämmelser 2001:1253 1. Denna lag träder i kraft den 1 januari 2002. 2. Förkopplingsdon till lysrör som omfattas av denna lag får släppas ut på marknaden till och med den 21 maj 2002 även om de inte uppfyller de krav som ställs i lagen eller i föreskrifter som meddelats med stöd av lagen. 2008:114 Enligt riksdagens beslut föreskrivs att lagen (2001:1253) om energieffektivitetskrav för förkopplingsdon till lysrör ska upphöra att gälla vid utgången av april 2008. Den upphävda lagen ska fortfarande tillämpas beträffande förkopplingsdon till lysrör som släppts ut på gemenskapens marknad eller tagits i bruk inom gemenskapen före ikraftträdandet."
+    }
+  ]
+}

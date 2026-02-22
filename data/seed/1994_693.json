@@ -1,0 +1,31 @@
+{
+  "id": "1994:693",
+  "type": "statute",
+  "title": "Lag (1994:693) om rätt för kommuner och landsting att lämna internationell katastrofhjälp och annat bistånd",
+  "status": "repealed",
+  "issued_date": "1994-06-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-693.html",
+  "description": "Upphävd 2001-07-01 genom SFS 2001:151",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Kommuner och landsting får lämna katastrofhjälp eller annat humanitärt bistånd till ett annat land, om det där inträffar en katastrof eller på något annat sätt uppstår en nödsituation. Biståndet får ges i form av utrustning som de kan avvara. Utrustningen skall lämnas direkt till det andra landet eller skickas genom en internationell hjälporganisation. Den får också lämnas till en internationell hjälporganisation för att användas om en nödsituation senare skulle inträffa. Lag (1999:948)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Till ett land som avses i 1 § och som får svenskt statligt bistånd får kommuner och landsting ge bistånd också i form av utrustning, rådgivning, utbildning eller på annat sätt under förutsättning att regeringen lämnar tillstånd till det. Sådant bistånd kan även ges i form av ekonomiskt stöd för att genomföra utbildning och rådgivning. Biståndet skall lämnas direkt till det andra landet eller skickas genom en internationell hjälporganisation. Lag (1999:948)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "När kommuner eller landsting lämnar sådant bistånd som avses i 2 §, skall de förvissa sig om att biståndet kommer till avsedd användning. Lag (1999:948)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Kommuner eller landsting som har beslutat att lämna bistånd i form av utrustning får i skälig omfattning anvisa medel som behövs för att transportera och ställa i ordning utrustningen. De får också tillhandahålla och svara för ersättning till personal som behövs för att utrustningen skall kunna tas i bruk. Lag (1999:948)."
+    }
+  ]
+}

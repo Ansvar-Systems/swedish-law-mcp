@@ -1,0 +1,26 @@
+{
+  "id": "1973:981",
+  "type": "statute",
+  "title": "Lag (1973:981) om frihet från införselavgift",
+  "status": "repealed",
+  "issued_date": "1973-12-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1973-981.html",
+  "description": "Upphävd 1988-01-01 genom SFS 1987:1070",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Sker förtullning av vara under sådana omständigheter som för tullpliktig vara medför tullfrihet enligt 5 a, 7, 8, 11 eller 12 §, 13 § 1 eller 14 § tullförordningen (1973:979) skall, i den mån regeringen förordnar, ej heller utgå skatt eller annan införselavgift för varan. Bestämmelser om frihet från införselavgift som avses i lagen (1984:355) om skatt på vissa dryckesförpackningar finns i nämnda lag. Lag (1984:356)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Bestämmelserna i tullförordningen (1973:979) om industrirestitution, handelsrestitution, reducerad restitution och, i den mån regeringen förordnar, särskild restitution har motsvarande tillämpning i fråga om skatt och annan införselavgift som betalas till tullmyndighet vid förtullning, om återbäring av avgiften ej kan medges i annan ordning. Därvid gäller ej förordnande om inskränkning i restitutionsrätten som regeringen meddelat med stöd av 4 § samma förordning. Lag (1978:70)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Denna lag gäller ej försäljningsskatt på motorfordon, skrotningsavgift, införsel-, fettvaru-, kompensations- eller prisregleringsavgifter på jordbrukets eller fiskets område. Lag (1978:70)."
+    }
+  ]
+}

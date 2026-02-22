@@ -1,0 +1,26 @@
+{
+  "id": "1995:706",
+  "type": "statute",
+  "title": "Lag (1995:706) om kommuners ansvar för ungdomar",
+  "status": "repealed",
+  "issued_date": "1995-06-08",
+  "url": "https://data.riksdagen.se/dokument/sfs-1995-706.html",
+  "description": "Upphävd 2000-08-01 genom SFS 2000:625",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En kommun får anordna praktik eller annan verksamhet på heltid för arbetslösa ungdomar som inte genomgår gymnasieskola eller liknande utbildning till dess de fyller 20 år. Lag (1998:566)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Kommunen har rätt till ersättning från staten för sådan verksamhet som anges i 1 § för de ungdomar som deltar i verksamhet enligt denna lag. Rätten till ersättning gäller under förutsättning att avtal träffas med regeringen eller den myndighet som regeringen bestämmer. I ett sådant avtal skall anges de villkor som skall gälla för att ersättning skall lämnas. Kommunen beslutar om vilken ersättning som skall lämnas till den som deltar i verksamhet som avses i 1 §."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Ungdomar som deltar i verksamhet enligt denna lag skall inte anses som arbetstagare när de deltar i verksamheten. När sådan verksamhet bedrivs på en arbetsplats, skall deltagaren dock likställas med arbetstagare vid tillämpning av 2 kap. 1-9§§,"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "1984:283",
+  "type": "statute",
+  "title": "Lag (1984:283) med vissa bestämmelser för Scandinavian Airlines Systems flygpassagerarterminal i Malmö",
+  "status": "repealed",
+  "issued_date": "1984-05-24",
+  "url": "https://data.riksdagen.se/dokument/sfs-1984-283.html",
+  "description": "Upphävd 2005-01-01 genom SFS 2004:1094",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "På den i Malmö av Scandinavian Airlines System anordnade terminalen för passagerare och gods, som befordras direkt till eller från ett luftfartyg i internationell trafik vid Kastrups flygplats i Danmark, får särskild kontroll äga rum till förekommande av brott som utgör allvarlig fara för säkerheten vid luftfart. Beträffande sådan kontroll gäller lagen (1970:926) om särskild kontroll på flygplats i tillämpliga delar. 2 § har upphävts genom lag (1999:453)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen får besluta om avgifter till staten som ersättning för kostnaderna för särskild kontroll samt tull- och passkontroll på terminalen."
+    }
+  ]
+}

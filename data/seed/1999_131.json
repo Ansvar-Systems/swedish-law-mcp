@@ -1,0 +1,36 @@
+{
+  "id": "1999:131",
+  "type": "statute",
+  "title": "Lag (1999:131) om Ombudsmannen mot etnisk diskriminering",
+  "status": "repealed",
+  "issued_date": "1999-03-11",
+  "url": "https://data.riksdagen.se/dokument/sfs-1999-131.html",
+  "description": "Upphävd 2009-01-01 genom SFS 2008:568",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag har till ändamål att motverka diskriminering som har samband med etnisk tillhörighet, religion eller annan trosuppfattning. Lag (2003:313)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen utser en ombudsman som skall verka för att diskriminering som har samband med etnisk tillhörighet, religion eller annan trosuppfattning inte förekommer i arbetslivet eller på andra områden av samhällslivet. Lag (2003:313)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Ombudsmannen skall genom råd och på annat sätt medverka till att den som utsatts för diskriminering kan ta till vara sina rättigheter. Ombudsmannen skall vidare genom överläggningar med myndigheter, företag och organisationer samt genom opinionsbildning, information och på annat liknande sätt ta initiativ till åtgärder mot diskriminering. Lag (2003:313)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Ombudsmannen skall särskilt motverka att arbetssökande utsätts för diskriminering. Ombudsmannen skall också i kontakt med arbetsgivare och berörda arbetstagarorganisationer främja ett gott förhållande mellan olika etniska grupper i arbetslivet. Lag (2003:313)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Ombudsmannen skall utöva tillsyn över efterlevnaden av lagen (1999:130) om åtgärder mot diskriminering i arbetslivet på grund av etnisk tillhörighet, religion eller annan trosuppfattning, lagen (2001:1286) om likabehandling av studenter i högskolan, lagen (2003:307) om förbud mot diskriminering och lagen (2006:67) om förbud mot diskriminering och annan kränkande behandling av barn och elever i enlighet med bestämmelserna i lagarna. Lag (2006:71)."
+    }
+  ]
+}

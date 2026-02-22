@@ -1,0 +1,21 @@
+{
+  "id": "1979:545",
+  "type": "statute",
+  "title": "Lag (1979:545) om beslutanderätt för Sveriges exportråd beträffande projektexport",
+  "status": "repealed",
+  "issued_date": "1979-06-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1979-545.html",
+  "description": "Upphävd 1992-07-01 genom SFS 1992:421",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen får överlämna till Sveriges exportråd att pröva fråga om stöd till systemleveranser till stora industri- och anläggningsprojekt utomlands (projektexport)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som hos Sveriges exportråd har tagit befattning med fråga som anges i 1 § får ej obehörigen yppa vad han därvid har erfarit om affärs- eller driftförhållanden."
+    }
+  ]
+}

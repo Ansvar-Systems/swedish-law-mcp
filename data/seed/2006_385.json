@@ -1,0 +1,15 @@
+{
+  "id": "2006:385",
+  "type": "statute",
+  "title": "Lag (2006:385) om avgift för annonsering i Post- och Inrikes Tidningar",
+  "status": "in_force",
+  "issued_date": "2006-05-11",
+  "url": "https://data.riksdagen.se/dokument/sfs-2006-385.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som enligt lag eller förordning kungör ett visst förhållande i Post- och Inrikes Tidningar skall betala en annonsavgift till den som verkställer kungörandet. Om det av en särskild föreskrift framgår att någon annan skall stå för kostnaden för kungörande, skall den personen i stället betala avgiften. Regeringen får meddela föreskrifter om avgiftens storlek."
+    }
+  ]
+}

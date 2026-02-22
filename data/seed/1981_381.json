@@ -1,0 +1,25 @@
+{
+  "id": "1981:381",
+  "type": "statute",
+  "title": "Lag (1981:381) om fastighetsreglering i samband med ändring av riksgränsen",
+  "status": "in_force",
+  "issued_date": "1981-05-21",
+  "url": "https://data.riksdagen.se/dokument/sfs-1981-381.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Fastighetsreglering får ske för att ge staten möjlighet att förfoga över mark som genom en förestående ändring av riksgränsen skall föras över till det andra landet. I fråga om en sådan fastighetsreglering gäller fastighetsbildningslagen (1970:988), om inte något annat föreskrivs i denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Fastighetsregleringen får ske utan hinder av 3 kap. samt 5 kap. 4, 5 och 8 §§ fastighetsbildningslagen (1970:988)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Kostnaderna för fastighetsregleringen betalas av staten."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1981:333",
+  "type": "statute",
+  "title": "Lag (1981:333) om förnyelse av vissa inskrivningar för nyttjanderätt och servitut",
+  "status": "repealed",
+  "issued_date": "1981-04-30",
+  "url": "https://data.riksdagen.se/dokument/sfs-1981-333.html",
+  "description": "Upphävd 2013-07-01 genom SFS 2013:488",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Inskrivningar för nyttjanderätt och servitut, som har beviljats eller förklarats vilande i en stamfastighet till en fastighet som har bildats av samfälld mark och avskilts före den 1 juli 1968, förfaller sista inskrivningsdagen år 1982 i vad avser den nybildade fastigheten och andra fastigheter till vilka inskrivningen kan ha förts över från denna, om inte inskrivningen förnyas. Vad som har sagts nu gäller dock endast om den samfällda marken före fastighetsbildningen hörde till fastigheter med i övrigt skilda ägor. Första stycket gäller också fastigheter som har bildats före den 1 juli 1968 genom att ett område från samfälld mark har sammanlagts med en fastighet eller fastighetsdel."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Anmälan om förnyelse skall göras hos inskrivningsmyndigheten senast på sista inskrivningsdagen år 1982. Anmälan får göras av rättighetshavare eller andra vars rätt berörs. Den som gör anmälan skall lämna uppgift om inskrivningen och de fastigheter i vilka inskrivningen skall förnyas. Anteckning om anmälningen skall göras i fastighetsboken."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Inskrivningar som har förnyats enligt lagen (1968:278) om förnyelse av vissa inteckningar för nyttjanderätt, avkomsträtt och servitut behöver inte förnyas enligt denna lag."
+    }
+  ]
+}

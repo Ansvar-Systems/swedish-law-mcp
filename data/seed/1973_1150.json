@@ -1,0 +1,404 @@
+{
+  "id": "1973:1150",
+  "type": "statute",
+  "title": "Lag (1973:1150) om förvaltning av samfälligheter",
+  "status": "in_force",
+  "issued_date": "1973-12-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1973-1150.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inledande bestämmelser",
+      "content": "Vid tillämpningen av denna lag ska som samfällighet anses 1. samfällighet enligt fastighetsbildningslagen (1970:988), 2. annan mark som gemensamt tillhör ägarna av de mantalssatta fastigheterna i en socken, 3. servitut eller annan särskild rättighet som hör till flera fastigheter gemensamt, 4. samfällighet enligt anläggningslagen (1973:1149), 5. samfällighet enligt lagen (1998:812) med särskilda bestämmelser om vattenverksamhet. Med delägarfastighet förstås i lagen fastighet som har del i samfällighet och med delägare ägaren av delägarfastighet. I fråga om samfällighet enligt första stycket 5 förstås dock med delägarfastighet fastighet som på annat sätt än genom delaktighet omfattas av samfälligheten och med delägare den som deltar i samfälligheten. Beträffande sådan samfällighet ska vidare vad som sägs i lagen om delägarfastighets andelstal i stället gälla delägares andelstal. Lag (2012:184)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Lagen äger tillämpning endast i den mån det är förenligt med annan lag eller författning. Dock får enligt lagen beslutas om nyttjande av samfällighet i strid mot byggningabalken. Lag (1982:329)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Lagens bestämmelser om fastighet tillämpas även på sådan tomträtt, gruva, byggnad, annan anläggning, naturreservat och kulturreservat som har del i en samfällighet enligt 1 § första stycket 3, 4 eller 5. Den som innehar en fastighet på grund av ett testamentariskt förordnande, utan att någon har äganderätten till den, anses vid tillämpning av lagen som fastighetens ägare. Som ägare av ett naturreservat eller ett kulturreservat anses den som har beslutat om reservatet. En innehavare av en tomträtt i en fastighet som har del i en samfällighet enligt 1 § första stycket 1 eller 2 ska vid tillämpning av lagen anses som delägare i fastighetsägarens ställe. När talan ska föras i fråga om samfälligheter enligt 1 § första stycket 5 tillämpas bestämmelserna om stämningsmål i lagen (1998:812) med särskilda bestämmelser om vattenverksamhet. Lag (2015:374)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "En samfällighet förvaltas antingen direkt av delägarna (delägarförvaltning) eller av en särskilt bildad samfällighetsförening (föreningsförvaltning). Lag (2012:184)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Avstyckas en samfällighet som avses i 1 § första stycket 1 eller 2 eller viss ägovidd av sådan samfällighet utan att ha övergått till en annan ägare och förvaltas samfälligheten av en samfällighetsförening, övergår äganderätten till den sålunda bildade fastigheten genom avstyckningen till föreningen. Lag (2012:184). Delägarförvaltning"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Vid delägarförvaltning beslutar delägarna gemensamt."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Kan delägarna inte enas i fråga om en viss förvaltningsåtgärd, skall, om någon delägare begär det, lantmäterimyndigheten eller den som myndigheten förordnar därtill hålla sammanträde med delägarna för att avgöra frågan eller, om omständigheterna föranleder det, anordna föreningsförvaltning. Lantmäterimyndigheten får, om synnerliga skäl föranleder det, vidta åtgärd som behövs för att säkerställa delägarbeslutet. Lag (1995:1406)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Den som skall hålla sammanträde enligt 7 § skall utreda vilka som är delägare. Lag (1989:727)."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Till sammanträdet ska samtliga kända delägare kallas. Är det ovisst vilken av flera som är delägare, kallas samtliga. Om det kan antas att okända delägare finns, utfärdas kallelse även på dessa. Kallelse ska i god tid före sammanträdet delges delägarna. För sådan delgivning gäller inte 14 § och 49 § första stycket 3 delgivningslagen (2010:1932). Lag (2010:1943)."
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "Kallelse och delgivning enligt 9 § ombesörjs av den som skall hålla sammanträdet. Denne skall vidare göra anmälan hos rätten, när god man enligt 11 kap. 3 § föräldrabalken behöver förordnas. Lag (1988:1259)."
+    },
+    {
+      "provision_ref": "11",
+      "section": "11",
+      "content": "Har delägare infunnit sig till sammanträdet, får det hållas även om han icke fått del av kallelse."
+    },
+    {
+      "provision_ref": "12",
+      "section": "12",
+      "content": "Delägare, som själv eller genom ombud är närvarande vid sammanträdet, har, oavsett om han äger en eller flera delägarfastigheter, en röst. I fråga som har ekonomisk betydelse skall delägarnas röstetal i stället beräknas efter delägarfastigheternas andelstal, om delägare begär det. Dock får delägares röstetal ej överstiga en femtedel av det sammanlagda röstetalet för samtliga närvarande röstberättigade delägare. För beslut att överlåta eller söka inteckning i fast egendom eller att upplåta sådan egendom med nyttjanderätt för längre tid än fem år fordras minst två tredjedelar av de avgivna rösterna. I andra frågor skall som beslut gälla den mening för vilken de flesta rösterna avgivits eller, vid lika röstetal, den mening som ordföranden biträder. Innehavare av rättighet i delägarfastighet får närvara och yttra sig vid behandlingen av fråga som rör hans rätt."
+    },
+    {
+      "provision_ref": "13",
+      "section": "13",
+      "content": "När beslut fattas om överlåtelse eller om upplåtelse av rättighet, kan även bestämmas vem som skall underteckna överlåtelse- eller upplåtelsehandling på delägarnas vägnar. Vad som nu sagts äger motsvarande tillämpning i fråga om ansökan om inteckning."
+    },
+    {
+      "provision_ref": "14",
+      "section": "14",
+      "content": "Vid sammanträdet skall föras protokoll genom ordförandens försorg."
+    },
+    {
+      "provision_ref": "15",
+      "section": "15",
+      "content": "Anser delägare att beslut som fattats vid sammanträdet icke tillkommit i behörig ordning eller att det strider mot denna lag eller annan författning eller att hans enskilda intressen icke i skälig omfattning beaktats i beslutet, får han klandra beslutet genom att väcka talan mot övriga delägare hos mark- och miljödomstolen inom fyra veckor från beslutets dag vid påföljd att rätten till talan annars är förlorad. När talan väckts, kan domstolen förordna att beslutet tills vidare icke skall lända till efterrättelse. Innehavare av rättighet i delägarfastighet får klandra beslut som rör hans rätt. I fråga om sådan talan äger första och andra styckena motsvarande tillämpning. Dom varigenom beslut upphävts eller ändrats gäller även för delägare eller rättighetshavare som ej fört talan. Lag (2010:999)."
+    },
+    {
+      "provision_ref": "16",
+      "section": "16",
+      "content": "Kostnad för sammanträdet förskjutes av sökanden. Leder sammanträdet till beslut om förvaltningsåtgärd, skall kostnaden slutligt betalas av delägarna efter deras delaktighet i samfälligheten. Föreningsförvaltning Allmänna bestämmelser om samfällighetsförening"
+    },
+    {
+      "provision_ref": "17",
+      "section": "17",
+      "content": "Samfällighetsförening är en enligt denna lag bildad sammanslutning, som kan förvärva rättigheter och ikläda sig skyldigheter och vars medlemmar utgöres av delägarna i samfällighet."
+    },
+    {
+      "provision_ref": "18",
+      "section": "18",
+      "content": "En samfällighetsförenings ändamål är att förvalta den samfällighet för vilken den bildats. En samfällighetsförening får inte driva verksamhet som är främmande för det ändamål som samfälligheten ska tillgodose. Lag (2012:184)."
+    },
+    {
+      "provision_ref": "19",
+      "section": "19",
+      "content": "Föreningen skall vid förvaltningen tillgodose medlemmarnas gemensamma bästa. Varje medlems enskilda intressen skall även beaktas i skälig omfattning. En samfällighetsförening som förvaltar en gemensamhetsanläggning skall avsätta medel till en fond för att säkerställa underhåll och förnyelse av gemensamhetsanläggningen, när gemensamhetsanläggningen 1. är av kommunalteknisk natur eller annars av större värde samt inrättad för småhusfastigheter eller för sådana fastigheter tillsammans med hyresfastigheter eller bostadsrättsfastigheter, eller 2. tillförsäkrar en tredimensionell fastighet eller ett tredimensionellt fastighetsutrymme sådana rättigheter som avses i 3 kap. 1 a § första stycket 2 fastighetsbildningslagen (1970:988). I de fall som avses i andra stycket skall föreningens styrelse också upprätta en underhålls- och förnyelseplan. Den skall innehålla de upplysningar som är av betydelse för att fondavsättningarnas storlek skall kunna bedömas. Lag (2003:629)."
+    },
+    {
+      "provision_ref": "19 a",
+      "section": "19 a",
+      "content": "Bestämmelserna i andra-fjärde styckena tillämpas när 1. olika delar av en byggnad eller annan anläggning hör till skilda fastigheter, 2. minst en del av anläggningen hör till en tredimensionell fastighet eller ett tredimensionellt fastighetsutrymme, 3. en del av anläggningen ingår i en samfällighet, och 4. samfälligheten förvaltas av en samfällighetsförening. En medlem i föreningen ska följa de regler som kan finnas i stadgarna för att bevara sundhet, ordning och gott skick inom samfälligheten. Medlemmen ska hålla noggrann tillsyn över att det som sägs i andra stycket fullgörs också av 1. personer som hör till medlemmens hushåll eller som besöker honom eller henne som gäster, 2. personer som medlemmen har inrymt i sin del av anläggningen, eller 3. personer som för medlemmens räkning utför arbete i medlemmens del av anläggningen. Om en medlem åsidosätter sina skyldigheter enligt andra eller tredje stycket eller om en nyttjanderättshavare åsidosätter de skyldigheter som enligt samma stycken åligger en medlem, får föreningen föra talan mot medlemmen. Lag (2009:184). Bildande av samfällighetsförening"
+    },
+    {
+      "provision_ref": "20",
+      "section": "20",
+      "content": "En samfällighetsförening bildas vid sammanträde med delägarna genom att de antar stadgar och utser styrelse. Sammanträde enligt första stycket ska, om någon delägare begär det, hållas av lantmäterimyndigheten eller den som myndigheten förordnat därtill. Dock ska i samband med förrättning enligt fastighetsbildningslagen (1970:988) eller anläggningslagen (1973:1149) lantmäterimyndigheten eller, om särskild förrättningsman förordnats enligt 4 § anläggningslagen, denne hålla sammanträde enligt första stycket beträffande en samfällighet som berörs av förrättningen, om delägare i samfälligheten begär det eller om det är av väsentlig betydelse från allmän synpunkt att en samfällighetsförening bildas. Om det är av väsentlig betydelse från allmän synpunkt att en samfällighetsförening bildas för förvaltningen av en samfällighet enligt 1 § första stycket 5, får lantmäterimyndigheten hålla sammanträde enligt första stycket även om delägare i samfälligheten inte har begärt det. Lag (2012:184)."
+    },
+    {
+      "provision_ref": "20 a",
+      "section": "20 a",
+      "content": "Vid fastighetsbildning enligt 3 kap. 1 b § fastighetsbildningslagen (1970:988) ska lantmäterimyndigheten se till att en samfällighet som tillförsäkrar en ägarlägenhetsfastighet sådana rättigheter som avses i 3 kap. 1 a § första stycket 2 nämnda lag förvaltas av en samfällighetsförening. I fall som avses i första stycket får lantmäterimyndigheten hålla sammanträde enligt 20 § första stycket för bildande av en samfällighetsförening även om delägare i samfälligheten inte har begärt det. Lag (2009:184)."
+    },
+    {
+      "provision_ref": "21",
+      "section": "21",
+      "content": "I fråga om sammanträde för bildande av en samfällighetsförening äger 7 § andra stycket, 8-11 §§, 12 § första stycket första punkten och 14 § motsvarande tillämpning. Hålls sammanträdet i samband med förrättning enligt fastighetsbildningslagen (1970:988) eller anläggningslagen (1973:1149) äger dock i fråga om delgivning av kallelse till sammanträdet vad som gäller om delgivning av kallelse till sammanträde vid förrättningen motsvarande tillämpning. Lag (2012:184)."
+    },
+    {
+      "provision_ref": "22",
+      "section": "22",
+      "content": "Som sammanträdets beslut gäller den mening som fått de flesta rösterna. Vid lika röstetal avgöres val genom lottning. I andra frågor gäller den mening som biträdes av ordföranden."
+    },
+    {
+      "provision_ref": "23",
+      "section": "23",
+      "content": "I fråga om klander av beslut vid sammanträdet äger 15 § motsvarande tillämpning. Har fastighetsbildnings- eller anläggningsbeslut eller tillståndsdom eller tillståndsbeslut enligt miljöbalken meddelats, får sammanträde för bildande av samfällighetsförening hållas innan domen eller beslutet om samfällighetens bildande vunnit laga kraft. Som delägare anses då ägaren av fastigheten och annan som enligt domen eller beslutet ska ha del i samfälligheten. Beslut som fattas vid sammanträdet gäller endast under förutsättning att fastighetsbildnings-, anläggnings- eller tillståndsbeslutet eller tillståndsdomen vinner laga kraft eller, i fråga om anläggningsbeslut, att förordnande meddelas enligt 27 a § anläggningslagen (1973:1149) eller 22 kap. 28 § första stycket miljöbalken. Lag (2012:184)."
+    },
+    {
+      "provision_ref": "24",
+      "section": "24",
+      "content": "Kostnad för sammanträdet skall förskjutas av sökanden men slutligt betalas av föreningen. Registrering, stadgar och företagsnamn"
+    },
+    {
+      "provision_ref": "25",
+      "section": "25",
+      "content": "En samfällighetsförening registreras hos den statliga lantmäterimyndigheten. Hos den statliga lantmäterimyndigheten ska det föras ett samfällighetsföreningsregister för införing av de uppgifter som enligt denna lag eller någon annan författning ska anmälas för registrering eller annars tas in i registret. I registret ska uppgifterna föras separat för varje län. Uppgifter om en samfällighetsförening ska föras i den del av registret som avser det län där föreningens styrelse enligt stadgarna har sitt säte. I fråga om registrering i samfällighetsföreningsregistret tillämpas 19 kap. 3 och 4 §§ lagen (2018:672) om ekonomiska föreningar. Hänvisningen i 4 § i det kapitlet ska då gälla en sådan klandertalan som avses i 23 § första stycket och 53 § andra stycket i denna lag. Ett beslut om en sådan ändring av stadgarna att styrelsens säte ska flyttas från ett län till ett annat får dock inte registreras, om samfällighetsföreningens företagsnamn på grund av 29 § första stycket andra meningen i denna lag inte får föras in i den delen av samfällighetsföreningsregistret. Regeringen får meddela föreskrifter om avgifter i ärenden om registrering enligt denna lag. Regeringen eller den myndighet som regeringen bestämmer kan vidare med stöd av"
+    },
+    {
+      "provision_ref": "8:26",
+      "chapter": "8",
+      "section": "26",
+      "content": "Registrering av en samfällighetsförening görs på ansökan av föreningen. Om ett sammanträde för bildande av föreningen har hållits enligt 20 § andra stycket andra meningen eller 20 a § andra stycket, får registrering också göras på ansökan av den som har hållit sammanträdet. Till ansökan ska bestyrkta kopior av föreningens stadgar och protokollet från sammanträdet enligt 20 § bifogas. Föreningen ska för registrering anmäla uppgifter om föreningens postadress samt styrelseledamöternas fullständiga namn, postadress och personnummer eller, om sådant saknas, något annat identifieringsnummer. Om en styrelsesuppleant eller särskild firmatecknare har utsetts ska motsvarande uppgifter lämnas också om den personen. Lag (2020:369)."
+    },
+    {
+      "provision_ref": "8:27",
+      "chapter": "8",
+      "section": "27",
+      "content": "Innan samfällighetsförening blivit registrerad, kan den ej förvärva rättigheter eller ikläda sig skyldigheter. Handlar medlemmar i samfällighetsförening eller dess styrelse eller annan, som enligt denna lag är ställföreträdare för föreningen, på föreningens vägnar innan den registrerats, skall de som deltagit i åtgärden eller beslut därom svara solidariskt för uppkommande förbindelser."
+    },
+    {
+      "provision_ref": "8:28",
+      "chapter": "8",
+      "section": "28",
+      "content": "En samfällighetsförenings stadgar ska innehålla uppgifter om 1. föreningens företagsnamn, 2. den samfällighet som förvaltas av föreningen och grunderna för förvaltningen, 3. den ort där styrelsen ska ha sitt säte, 4. hur styrelsen ska vara sammansatt och hur den ska utses samt grunderna för dess beslutsförhet, 5. hur revision av styrelsens förvaltning ska ske, 6. föreningens räkenskapsperiod, 7. grunderna för sådan fondavsättning som avses i 19 § andra stycket, 8. hur ofta ordinarie föreningsstämma ska hållas, 9. det sätt på vilket kallelse till föreningsstämma ska ske och hur andra meddelanden ska komma till medlemmarnas kännedom samt den tid före sammanträde då kallelseåtgärd senast ska vidtas. Stadgarna får inte innehålla föreskrifter som strider mot denna lag eller annan författning. Lag (2018:1657)."
+    },
+    {
+      "provision_ref": "8:29",
+      "chapter": "8",
+      "section": "29",
+      "content": "En samfällighetsförenings företagsnamn ska innehålla ordet samfällighetsförening. Företagsnamnet ska tydligt skilja sig från andra registrerade ännu bestående företagsnamn för samfällighetsföreningar i samma län. För registrering av en samfällighetsförenings företagsnamn gäller i övrigt bestämmelserna i lagen (2018:1653) om företagsnamn. Någon annan än en samfällighetsförening får inte använda ordet samfällighetsförening i sitt företagsnamn. Den som bryter mot detta döms till böter. Lag (2018:1657). Styrelse och firmateckning"
+    },
+    {
+      "provision_ref": "8:30",
+      "chapter": "8",
+      "section": "30",
+      "content": "Styrelsen för samfällighetsförening skall bestå av en eller flera ledamöter och ha sitt säte i den ort där medlemmarnas fastigheter eller huvuddelen av dessa ligger. Styrelseledamot får inte vara underårig eller ha förvaltare enligt 11 kap. 7 § föräldrabalken. Lag (1988:1259)."
+    },
+    {
+      "provision_ref": "8:31",
+      "chapter": "8",
+      "section": "31",
+      "content": "När skäl därtill föreligger, får länsstyrelsen förordna att styrelsen skall bestå av flera ledamöter än som anges i stadgarna. Sådant förordnande har samma verkan som beslut om stadgeändring. Länsstyrelsen får vidare i föreningsstämmans ställe utse en ledamot eller, om synnerliga skäl föreligger, flera ledamöter i styrelsen. Kan överenskommelse ej träffas om arvode till sådan ledamot, bestämmer länsstyrelsen arvodet. Om länsstyrelsens beslut enligt första stycket skall anteckning göras i samfällighetsföreningsregistret."
+    },
+    {
+      "provision_ref": "8:32",
+      "chapter": "8",
+      "section": "32",
+      "content": "Styrelseledamot kan av den som utsett honom skiljas från sitt uppdrag före utgången av den tid för vilken han utsetts."
+    },
+    {
+      "provision_ref": "8:33",
+      "chapter": "8",
+      "section": "33",
+      "content": "Har styrelseledamots uppdrag upphört eller är styrelseledamot förhindrad att utöva uppdraget och är styrelsen ej ändå beslutför, får länsstyrelsen förordna syssloman i sådan ledamots ställe. Finns av skäl som nu sagts icke någon styrelseledamot att tillgå, får sysslomannen ensam handha föreningens angelägenheter och företräda föreningen som styrelse. Sysslomannens förordnande gäller till dess beslutför styrelse åter finns. Sysslomannen har rätt till arvode som bestämmes av länsstyrelsen. Arvodet betalas av föreningen."
+    },
+    {
+      "provision_ref": "8:34",
+      "chapter": "8",
+      "section": "34",
+      "content": "Om ej annat följer av stadgarna eller av föreningsstämmobeslut, får styrelsen utse särskild firmatecknare. Bemyndigande att teckna firma kan av styrelsen när som helst återkallas."
+    },
+    {
+      "provision_ref": "8:35",
+      "chapter": "8",
+      "section": "35",
+      "content": "Styrelsen handhar föreningens angelägenheter i överensstämmelse med denna lag, stadgarna och föreningsstämmobeslut, i den mån beslutet ej strider mot denna lag eller annan författning eller mot stadgarna."
+    },
+    {
+      "provision_ref": "8:36",
+      "chapter": "8",
+      "section": "36",
+      "content": "Styrelseledamot får ej taga befattning med angelägenhet i vilken han har ett väsentligt intresse som strider mot föreningens."
+    },
+    {
+      "provision_ref": "8:37",
+      "chapter": "8",
+      "section": "37",
+      "content": "Styrelsen är behörig att företräda föreningen i förhållande till tredje man. Samma behörighet tillkommer firmatecknare. Styrelsen och firmatecknaren får dock ej utan stöd av stadgarna eller föreningsstämmobeslut överlåta eller söka inteckning i fast egendom eller upplåta sådan egendom med nyttjanderätt för länge tid än fem år."
+    },
+    {
+      "provision_ref": "8:38",
+      "chapter": "8",
+      "section": "38",
+      "content": "Som styrelsens beslut gäller den mening om vilken vid styrelsesammanträde de flesta röstande förenar sig. Vid lika röstetal avgöres val genom lottning. I andra frågor gäller den mening som biträdes av ordföranden. Första stycket gäller ej, om annat föreskrives i stadgarna."
+    },
+    {
+      "provision_ref": "8:39",
+      "chapter": "8",
+      "section": "39",
+      "content": "Sker ändring i fråga om sådant förhållande som anges i 26 § tredje stycket, skall detta genom styrelsens försorg genast anmälas för registrering. Uttaxering av bidrag m.m."
+    },
+    {
+      "provision_ref": "8:40",
+      "chapter": "8",
+      "section": "40",
+      "content": "Om samfällighetsförenings medelsbehov ej täckes på annat sätt, skall bidrag i pengar uttaxeras av medlemmarna."
+    },
+    {
+      "provision_ref": "8:41",
+      "chapter": "8",
+      "section": "41",
+      "content": "Innan uttaxering sker, skall styrelsen upprätta utgifts- och inkomststat för föreningen. Staten förelägges föreningsstämman för godkännande. Gäller i fråga om skyldigheten att deltaga i kostnader olika bestämmelser för skilda verksamhetsgrenar, skall inkomsterna och utgifterna för varje verksamhetsgren beräknas för sig. Gemensamma inkomster och utgifter fördelas på verksamhetsgrenarna efter vad som är skäligt. Om föreningen skall göra fondsavsättning enligt 19 § andra stycket skall av utgifts- och inkomststaten framgå de belopp som går åt till fondavsättningen. Lag (1989:727)."
+    },
+    {
+      "provision_ref": "8:42",
+      "chapter": "8",
+      "section": "42",
+      "content": "Om ej annat föreskrives i stadgarna, uttaxeras medlemmarnas bidrag genom att styrelsen upprättar och på föreningsstämma framlägger debiteringslängd. I debiteringslängden anges det belopp som uttaxeras, vad som belöper på varje medlem och när betalning skall ske. I fall som avses i 41 § andra stycket redovisas varje verksamhetsgren för sig i debiteringslängden."
+    },
+    {
+      "provision_ref": "8:43",
+      "chapter": "8",
+      "section": "43",
+      "content": "Räcker ej tillgängliga medel till betalning av klar och förfallen skuld för vilken föreningen svarar, skall styrelsen utan dröjsmål upprätta och på föreningsstämma framlägga särskild debiteringslängd samt omedelbart uttaga vad som fordras. Försummar styrelsens ledamöter vad som åligger dem enligt första stycket, är de solidariskt ansvariga för skulden. Är försummelsen uppenbar, förordnar länsstyrelsen på borgenärens yrkande syssloman att debitera och uttaga vad som fordras. I fråga om ersättning till sådan syssloman äger 33 § andra stycket motsvarande tillämpning."
+    },
+    {
+      "provision_ref": "8:44",
+      "chapter": "8",
+      "section": "44",
+      "content": "Övergår delägarfastighet till ny ägare på annat sätt än genom försäljning på exekutiv auktion, svarar den nye ägaren tillsammans med den förre ägaren gentemot föreningen för oguldet belopp som dessförinnan påförts den förre ägaren enligt 42 eller 43 § och som ej förfallit till betalning tidigare än ett år före den bestämda tillträdesdagen. Mot den nya ägaren anses beloppet förfallet tillträdesdagen, om ej beloppet enligt debiteringslängden förfaller först efter denna dag. I fråga om samfälligheter enligt 1 § första stycket 5 skall vad som i första stycket sägs om ny ägare till en delägarfastighet i stället gälla den på vilken delaktigheten i samfälligheten har övergått på annat sätt än genom övergång av äganderätten till en delägarfastighet. Lag (1983:660)."
+    },
+    {
+      "provision_ref": "8:45",
+      "chapter": "8",
+      "section": "45",
+      "content": "I fall som avses i 41 § andra stycket får medel och andra tillgångar som är att hänföra enbart till viss verksamhetsgren icke användas eller utmätas för ändamål som faller utanför verksamhetsgrenen. Medel som nyss sagts får ej heller sammanblandas med andra medel."
+    },
+    {
+      "provision_ref": "8:46",
+      "chapter": "8",
+      "section": "46",
+      "content": "Anser medlem att uttaxering ej överensstämmer med denna lag, stadgarna eller föreningsstämmobeslut, får han väcka talan mot föreningen om rättelse hos mark- och miljödomstolen inom fyra veckor från den dag då debiteringslängden framlades på föreningsstämma. Debiterat och till betalning förfallet belopp får, om domstolen ej förordnar annat när den prövar talan om rättelse, uttagas enligt bestämmelserna i utsökningsbalken om fordran för vilken betalningsskyldighet ålagts genom dom som äger laga kraft. Lag (2010:999). Föreningsstämma"
+    },
+    {
+      "provision_ref": "8:47",
+      "chapter": "8",
+      "section": "47",
+      "content": "Vid föreningsstämman utövar medlemmarna sin rätt att besluta i föreningens angelägenheter. Oavsett vad som anges i stadgarna får föreningsstämman hållas digitalt, om extraordinära omständigheter kräver det. Styrelsen kallar till föreningsstämma. I kallelsen ska de ärenden som ska behandlas på stämman anges. Om styrelsen inte kallar till ordinarie föreningsstämma i enlighet med stadgarna, ska länsstyrelsen på ansökan av en medlem kalla till föreningsstämma. Om minst en femtedel av samtliga röstberättigade medlemmar eller det mindre antal som kan vara bestämt i stadgarna, hos styrelsen begär att extra föreningsstämma ska hållas och anger de ärenden som ska behandlas, ska styrelsen inom en vecka kalla till en sådan stämma, som ska hållas så snart som möjligt med hänsyn till stadgarnas bestämmelser om tid för kallelse. Om styrelsen inte gör det, ska länsstyrelsen kalla till stämma på ansökan av en medlem. Lag (2023:776)."
+    },
+    {
+      "provision_ref": "8:48",
+      "chapter": "8",
+      "section": "48",
+      "content": "I fall som avses i 41 § andra stycket får vid avgörande av fråga som enbart rör viss verksamhetsgren rösträtt utövas endast av de medlemmar som är bidragsskyldiga till denna verksamhetsgren. Den som underlåtit att i rätt tid fullgöra sin bidragsskyldighet får deltaga i förhandlingarna men ej utöva rösträtt, innan han fullgjort vad han eftersatt. Medlem eller annan får icke, själv eller genom ombud eller som ombud, deltaga i behandlingen av angelägenhet, vari han äger ett väsentligt intresse som strider mot föreningens. Innehavare av rättighet i delägarfastighet får närvara och yttra sig vid behandlingen av fråga som rör hans rätt."
+    },
+    {
+      "provision_ref": "8:49",
+      "chapter": "8",
+      "section": "49",
+      "content": "En röstberättigad medlem som är närvarande vid en föreningsstämma har, oavsett om han eller hon äger en eller flera delägarfastigheter, en röst. I en fråga som har ekonomisk betydelse ska medlemmarnas röstetal i stället beräknas efter delägarfastigheternas andelstal, om en medlem begär det. En medlems röstetal får dock inte överstiga en femtedel av det sammanlagda röstetalet för samtliga närvarande röstberättigade medlemmar. En medlems rösträtt kan utövas genom ombud. Ett ombud får inte företräda mer än en medlem. Föreningsstämmans beslut utgörs av den mening som har fått flest röster. Vid lika röstetal har ordföranden utslagsröst. Val avgörs dock vid lika röstetal genom lottning. Första och andra styckena gäller inte om något annat följer av 51 eller 52 §. Andra stycket gäller inte heller om något annat har bestämts i stadgarna. I 43 a § anläggningslagen (1973:1149) finns en särskild regel om majoritetskrav för beslut om ändring av andelstal enligt den paragrafen. Lag (2022:363)."
+    },
+    {
+      "provision_ref": "8:50",
+      "chapter": "8",
+      "section": "50",
+      "content": "Styrelsen är skyldig att på föreningsstämma lämna de upplysningar om föreningens verksamhet som medlem begär och som kan vara av betydelse för medlemmarna. Över beslut som fattas på föreningsstämma skall genom styrelsens försorg föras protokoll, vilket skall hållas tillgängligt för medlemmarna senast två veckor efter stämman. Överlåtelse av fast egendom m.m."
+    },
+    {
+      "provision_ref": "8:51",
+      "chapter": "8",
+      "section": "51",
+      "content": "För beslut att överlåta eller söka inteckning i fast egendom eller att upplåta sådan egendom med nyttjanderätt för längre tid än fem år fordras minst två tredjedelar av de avgivna rösterna, om ej annat föreskrives i stadgarna. Ändring av föreningens stadgar"
+    },
+    {
+      "provision_ref": "8:52",
+      "chapter": "8",
+      "section": "52",
+      "content": "Vid omröstning i en fråga om ändring av föreningens stadgar har varje röstberättigad medlem, oavsett om han eller hon äger en eller flera delägarfastigheter, en röst. Ett beslut om ändring av stadgarna är giltigt om minst två tredjedelar av de röstande har röstat för det, om inte längre gående villkor har bestämts i stadgarna. Styrelsen ska se till att ett beslut enligt första stycket genast anmäls för registrering. Till anmälan ska bestyrkta kopior av protokollet över beslutet och av de nya stadgarna bifogas. Beslutet får inte tillämpas innan det har registrerats. Lag (2020:369). Talan mot föreningsstämmobeslut"
+    },
+    {
+      "provision_ref": "8:53",
+      "chapter": "8",
+      "section": "53",
+      "content": "Anser styrelseledamot eller sådan medlem eller innehavare av rättighet i delägarfastighet vars rätt beröres att beslut som fattas på föreningsstämma ej tillkommit i behörig ordning eller att det strider mot denna lag eller annan författning eller mot stadgarna, får han klandra beslutet genom att väcka talan mot föreningen hos mark- och miljödomstolen. Grundas talan enligt första stycket på att beslutet ej tillkommit i behörig ordning eller att det eljest kränker endast medlems eller rättighetshavares rätt, skall talan väckas inom fyra veckor från beslutets dag vid påföljd att beslutet annars är gällande. När talan väckts, äger mark- och miljödomstolen förordna att beslutet tills vidare ej får verkställas. Dom varigenom stämmobeslut upphävts eller ändrats gäller även för medlem eller rättighetshavare som ej fört talan. Lag (2010:999). Skadeståndsskyldighet m.m."
+    },
+    {
+      "provision_ref": "8:54",
+      "chapter": "8",
+      "section": "54",
+      "content": "I fråga om skyldigheten för en styrelseledamot, en syssloman enligt denna lag, en revisor eller en medlem att ersätta skada som han eller hon har tillfogat föreningen, en medlem eller en tredje man, och om talan om sådan ersättning, tillämpas 21 kap. lagen (2018:672) om ekonomiska föreningar. En sådan talan ska prövas av mark- och miljödomstolen. Lag (2018:710). Föreningar för förvaltning av flera samfälligheter"
+    },
+    {
+      "provision_ref": "8:55",
+      "chapter": "8",
+      "section": "55",
+      "content": "Samfällighetsförening kan bildas för att handha förvaltningen av flera samfälligheter. 20--24 §§ äger motsvarande tillämpning på sådan föreningsbildning. Föreligger olikhet i fråga om delaktigheten i samfälligheterna, gäller dock de avvikelser som anges i andra stycket. Begäran om sammanträde för bildande av sådan samfällighetsförening som avses i första stycket tredje punkten skall göras av minst en delägare i varje samfällighet. Vid sammanträdet skall särskild omröstning ske bland delägarna i varje samfällighet över yrkandet att bilda gemensam förening. Härvid äger bestämmelserna i 12 § första stycket om omröstning i fråga som har ekonomisk betydelse motsvarande tillämpning. Bifalles yrkandet vid samtliga omröstningar, skall delägarna vid gemensam omröstning utse styrelse och antaga stadgar för föreningen. I annat fall har frågan förfallit. På begäran av delägare skall dock vid sammanträdet behandlas fråga om bildande av annan förening enligt denna paragraf eller 20 §."
+    },
+    {
+      "provision_ref": "8:56",
+      "chapter": "8",
+      "section": "56",
+      "content": "Finner den som enligt 20 § skall hålla sammanträde för bildande av samfällighetsförening att förvaltningen av samfälligheten lämpligen kan handhas av befintlig samfällighetsförening, skall han inhämta yttrande från föreningens styrelse huruvida den förordar att samfälligheten anslutes till föreningen. Om sådant förord lämnas, skall vid sammanträdet omröstning ske i anslutningsfrågan. Härvid äger bestämmelserna i 12 § första stycket om omröstning i fråga som har ekonomisk betydelse motsvarande tillämpning. Fattas beslut om anslutning, skall föreningen upptaga fråga om den ändring av föreningens stadgar som behövs för att anslutning skall ske. Till dess det slutligt avgjorts huruvida anslutning kommer till stånd, skall frågan om bildande av ny samfällighetsförening vila."
+    },
+    {
+      "provision_ref": "8:57",
+      "chapter": "8",
+      "section": "57",
+      "content": "Mellan samfällighetsföreningar får avtalas att den ena föreningen (överlåtande föreningen) skall uppgå i den andra (övertagande föreningen) på så sätt att medlemmarna i den överlåtande föreningen blir medlemmar i den övertagande föreningen och att den överlåtande föreningen upphör att bestå samt alla dess tillgångar och skulder övertages av den övertagande föreningen (fusion)."
+    },
+    {
+      "provision_ref": "8:58",
+      "chapter": "8",
+      "section": "58",
+      "content": "Fusionsavtal är bindande först när det godkänts av föreningsstämma i den överlåtande föreningen och behövlig ändring i den övertagande föreningens stadgar beslutats."
+    },
+    {
+      "provision_ref": "8:59",
+      "chapter": "8",
+      "section": "59",
+      "content": "Den överlåtande föreningens styrelse ska se till att ett fusionsavtal anmäls för registrering. Till anmälan ska bestyrkta kopior av fusionsavtalet och av protokollet över föreningsstämmans beslut att godkänna avtalet bifogas. Fusionsavtalet får endast registreras i samband med registrering av beslutet om ändring av den övertagande föreningens stadgar. När registrering har gjorts är fusionen genomförd. Lag (2020:369)."
+    },
+    {
+      "provision_ref": "8:60",
+      "chapter": "8",
+      "section": "60",
+      "content": "Förvaltar samfällighetsförening flera samfälligheter och föreligger olikhet i fråga om delaktigheten i dessa, äger 41 § andra stycket, 42 § tredje stycket, 45 § och 48 § första stycket motsvarande tillämpning. Upplösning av samfällighetsförening"
+    },
+    {
+      "provision_ref": "8:61",
+      "chapter": "8",
+      "section": "61",
+      "content": "En samfällighetsförening ska upplösas, när den eller de samfälligheter som förvaltas av föreningen upphör att bestå. Upplösning ska vidare ske, om medlemmarna är ense om det och länsstyrelsen medger det. Bestämmelser om rätt för lantmäterimyndigheten att förordna om upplösning av en samfällighetsförening finns i anläggningslagen (1973:1149). Lag (2012:184)."
+    },
+    {
+      "provision_ref": "8:62",
+      "chapter": "8",
+      "section": "62",
+      "content": "Samfällighetsförening får ej upplösas förrän alla dess skulder betalats eller de medel som fordras för betalningen nedsatts hos länsstyrelsen. I samband med upplösningen får kallelse sökas på föreningens okända borgenärer. Bestämmelserna i lagen (1981:131) om kallelse på okända borgenärer äger därvid motsvarande tillämpning. Överstiger vid upplösningen av föreningen dess tillgångar skulderna, skall överskottet skiftas mellan medlemmarna enligt grunder som föreningsstämman beslutat. Vad som nu sagts gäller ej, om annat föreskrives i stadgarna. Lag (1981:136)."
+    },
+    {
+      "provision_ref": "8:63",
+      "chapter": "8",
+      "section": "63",
+      "content": "När en samfällighetsförening har upplösts, ska styrelsen se till att detta anmäls för registrering. Har skifte av tillgångarna gjorts ska en bestyrkt kopia av skifteshandlingen bifogas till anmälan. Lag (2020:369)."
+    },
+    {
+      "provision_ref": "8:64",
+      "chapter": "8",
+      "section": "64",
+      "content": "Förvaltar samfällighetsförening flera samfälligheter och upphör någon av dessa att bestå, skall den verksamhetsgren som samfälligheten utgör avvecklas. Detsamma gäller om delägarna i samfälligheten är ense om att avveckling skall ske och om länsstyrelsen medger det. Om rätt för lantmäterimyndigheten att förordna om avveckling av verksamhetsgren finns bestämmelser i anläggningslagen (1973:1149). 62 och 63 §§ äger motsvarande tillämpning i fråga om avveckling som anges i första stycket. Lag (1995:1406)."
+    },
+    {
+      "provision_ref": "8:65",
+      "chapter": "8",
+      "section": "65",
+      "content": "Framkommer efter upplösning av samfällighetsförening eller avveckling av verksamhetsgren ny skuld eller tillgång, skall länsstyrelsen på begäran av borgenär eller annan som saken rör förordna syssloman att vidtaga de åtgärder som skulle ha ålegat styrelsen, om skulden eller tillgången varit känd tidigare. Bestyrkta kopior"
+    },
+    {
+      "provision_ref": "8:65 a",
+      "chapter": "8",
+      "section": "65 a",
+      "content": "När en handling ges in i bestyrkt kopia får den statliga lantmäterimyndigheten begära att originalhandlingen visas upp. Lag (2020:369). Lantmäterimyndighets och mark- och miljödomstols behörighet"
+    },
+    {
+      "provision_ref": "8:66",
+      "chapter": "8",
+      "section": "66",
+      "content": "Ärenden som enligt denna lag ska prövas av en lantmäterimyndighet tas, med det undantag som anges i 25 §, upp av den lantmäterimyndighet inom vars verksamhetsområde samfälligheten är belägen. Om samfälligheten är belägen inom flera lantmäterimyndigheters verksamhetsområden, prövas ärendet av den statliga lantmäterimyndigheten. Detsamma gäller om ärendet rör flera samfälligheter som är belägna inom skilda lantmäterimyndigheters verksamhetsområden. Ett mål eller ärende som enligt denna lag ska prövas av mark- och miljödomstol tas upp av den mark- och miljödomstol inom vars område samfälligheten är belägen. Om samfälligheten ligger under flera mark- och miljödomstolar, tas talan upp av den domstol under vilken huvuddelen ligger. Detsamma gäller om målet eller ärendet rör flera samfälligheter som ligger under skilda mark- och miljödomstolar. Lag (2010:999). Överklagande av en lantmäterimyndighets eller länsstyrelses beslut"
+    },
+    {
+      "provision_ref": "8:67",
+      "chapter": "8",
+      "section": "67",
+      "content": "Lantmäterimyndighetens beslut får överklagas till allmän förvaltningsdomstol. Ett beslut av den statliga lantmäterimyndigheten att vägra registrering av ett företagsnamn överklagas dock till Patent- och marknadsdomstolen. Ett beslut som gäller avskrivning av en ansökan eller anmälan om registrering eller vägrad registrering får överklagas inom två månader från dagen för beslutet. Länsstyrelsens beslut får överklagas till allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Lag (2018:1657). Övergångsbestämmelser 1989:727 1. Denna lag träder i kraft den 1 januari 1990. 2. Beträffande samfällighetsföreningar som har bildats före ikraftträdandet skall sådana ändringar av föreningens stadgar som föranleds av 19 § andra stycket beslutas på den föreningsstämma som äger rum närmast efter sex månader efter ikraftträdandet. 1990:1498 Denna lag träder i kraft den 1 juli 1991. Bestämmelserna i 67 § första stycket i sin äldre lydelse gäller fortfarande i fråga om beslut som länsstyrelsen meddelat före ikraftträdandet. 1995:32 Denna lag träder i kraft den 1 april 1995. Beslut som har meddelats före ikraftträdandet överklagas enligt äldre bestämmelser. 1995:1406 1. Denna lag träder i kraft den 1 januari 1996. 2. Äldre bestämmelser gäller fortfarande i fråga om fastighetsbildningsmyndigheter och fastighetsregistermyndigheter som inrättats enligt lagen (1971:133) om kommunal fastighetsbildningsmyndighet och fastighetsregistermyndighet. 1998:379 Denna lag träder i kraft den 1 oktober 1998 men tillämpas inte i de fall där det första beslutet i ärendet har meddelats dessförinnan. 1998:837 1. Denna lag träder i kraft den 1 januari 1999. 2. Samfällighet enligt vattenlagen (1983:291) skall vid tillämpningen av denna lag anses som samfällighet enligt lagen (1998:812) med särskilda bestämmelser om vattenverksamhet. 3. Tillståndsdom eller tillståndsbeslut enligt vattenlagen (1983:291) skall vid tillämpningen av den nya lydelsen av 23 § anses som tillståndsdom eller tillståndsbeslut enligt miljöbalken. 2010:1943 1. Denna lag träder i kraft den 1 april 2011. 2. Äldre bestämmelser gäller om ett beslut om delgivning enligt 15-17 §§ delgivningslagen (1970:428) har fattats före den 1 april 2011 eller om en handling har skickats eller lämnats före denna tidpunkt. 2012:184 Denna lag träder i kraft den 1 juli 2012. Äldre föreskrifter gäller fortfarande i fråga om samfälligheter enligt lagen (1987:11) om exploateringssamverkan. 2015:374 1. Denna lag träder i kraft den 1 juli 2015. 2. Äldre föreskrifter gäller för förrättningar som har påbörjats före ikraftträdandet. 2016:196 1. Denna lag träder i kraft den 1 september 2016. 2. Äldre bestämmelser gäller fortfarande för mål som har inletts i allmän förvaltningsdomstol före ikraftträdandet. 2020:369 1. Denna lag träder i kraft den 1 juli 2020. 2. En förening som har registrerats före den 1 juli 2020 behöver inte anmäla de nya uppgifter som anges i 26 § tredje stycket för registrering förrän föreningen anmäler en ändring av något annat förhållande som avses i den bestämmelsen. En sådan förening ska dock senast den 31 december 2021 anmäla samtliga uppgifter som anges i 26 § tredje stycket och som inte redan har anmälts för registrering."
+    }
+  ]
+}

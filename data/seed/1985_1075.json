@@ -1,0 +1,20 @@
+{
+  "id": "1985:1075",
+  "type": "statute",
+  "title": "Lag (1985:1075) om rätt att anlägga enskilda järnvägar m.m.",
+  "status": "in_force",
+  "issued_date": "1985-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1985-1075.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Var och en har rätt att utan särskilt tillstånd (koncession) av regeringen anlägga en enskild järnväg, tunnelbana eller spårväg för allmän trafik. I fråga om elektriska anläggningar finns särskilda föreskrifter."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Tidigare av Kungl. Maj:t eller regeringen beviljade tillstånd (koncessioner) att anlägga sådana anläggningar som avses i 1 § skall alltjämt gälla med undantag för skyldighet att upprätthålla viss trafik (trafikeringsplikt)."
+    }
+  ]
+}

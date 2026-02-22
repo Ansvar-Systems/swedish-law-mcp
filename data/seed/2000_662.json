@@ -1,0 +1,25 @@
+{
+  "id": "2000:662",
+  "type": "statute",
+  "title": "Lag (2000:662) om Vetenskapsrådet",
+  "status": "in_force",
+  "issued_date": "2000-07-06",
+  "url": "https://data.riksdagen.se/dokument/sfs-2000-662.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "För att ge stöd till grundläggande forskning av högsta vetenskapliga kvalitet inom samtliga vetenskapsområden ska det finnas ett forskningsråd, Vetenskapsrådet. Lag (2009:1272)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Fler än hälften av ledamöterna i Vetenskapsrådets styrelse ska utses av elektorer som utses vid de universitet och högskolor som regeringen bestämmer. Lag (2009:1272)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen meddelar närmare föreskrifter om Vetenskapsrådets uppgifter och interna organisation samt om hur ledamöterna i Vetenskapsrådets styrelse ska utses. Lag (2009:1272). 2009:1272 1. Denna lag träder i kraft den 21 december 2009. 2. Regeringen får meddela föreskrifter om att ledamöter som utsetts i enlighet med 2 § i sin äldre lydelse kvarstår som ledamöter i styrelsen, dock längst till och med den 31 mars 2010."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "2003:437",
+  "type": "statute",
+  "title": "Lag (2003:437) om ursprungsgarantier avseende förnybar el",
+  "status": "repealed",
+  "issued_date": "2003-06-12",
+  "url": "https://data.riksdagen.se/dokument/sfs-2003-437.html",
+  "description": "Upphävd 2006-07-01 genom SFS 2006:329",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag innehåller bestämmelser om en rätt för elproducenter att få ursprungsgarantier för el som producerats med användande av förnybara energikällor (förnybar el). Med ursprungsgaranti avses ett dokument som anger att en viss mängd förnybar el har producerats."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den myndighet som enligt 1 kap. 3 § lagen (2003:113) om elcertifikat har utsetts att handlägga de frågor som enligt den lagen ligger på kontoföringsmyndigheten (garantimyndigheten) skall handlägga frågor om ursprungsgarantier."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Tillsynen över efterlevnaden av denna lag och av föreskrifter som har meddelats med stöd av lagen utövas av den myndighet som enligt 1 kap. 3 § lagen (2003:113) om elcertifikat har utsetts att handlägga de frågor som enligt den lagen ligger på tillsynsmyndigheten. Tillsynen omfattar inte garantimyndigheten."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Berättigade att få ursprungsgarantier är 1. den som enligt 2 kap. 1 § 1-4 lagen (2003:113) om elcertifikat är berättigad att bli tilldelad elcertifikat, 2. innehavaren av en produktionsanläggning där el produceras med användande av vattenkraft, och 3. innehavaren av en produktionsanläggning där el produceras med användande av biobränslen. Med biobränslen avses bränslen framställda ur biomassa samt deponigas, gas från avloppsreningsanläggningar och biogas. Med biomassa avses den biologiskt nedbrytbara fraktionen av produkter, avfall och rester av både vegetabiliska och animaliska ämnen från jordbruk, skogsbruk och närstående industrier samt den biologiskt nedbrytbara fraktionen av industriavfall och kommunalt avfall."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Innehavaren av en produktionsanläggning som vill få ursprungsgarantier för framtiden skall anmäla detta till tillsynsmyndigheten. Detta gäller dock inte om anläggningen har godkänts enligt 2 kap. 5 § andra stycket lagen (2003:113) om elcertifikat."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Om el har producerats i en sådan produktionsanläggning som avses i 4 § med användande av såväl sådana energikällor som berättigar anläggningens innehavare att få ursprungsgarantier som andra energikällor, får ursprungsgarantier utfärdas bara för den andel av elen som producerats med användande av den först nämnda typen av energikällor."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Ursprungsgarantier får utfärdas bara för sådan förnybar el vars inmatade mängd och dess fördelning över tiden har mätts och rapporterats till garantimyndigheten enligt de föreskrifter som meddelas av regeringen eller den myndighet regeringen bestämmer. Om den förnybara elen matas in på ett elnät som används utan stöd av nätkoncession skall innehavaren av produktionsanläggningen svara för den mätning och rapportering som anges i första stycket. I de fall som avses i 6 § skall innehavaren av anläggningen särskilt beräkna och rapportera den el som har producerats med användande av sådana energikällor som berättigar anläggningens innehavare att få ursprungsgarantier. Regeringen eller den myndighet som regeringen bestämmer meddelar närmare föreskrifter om beräkning och rapportering enligt tredje stycket."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Garantimyndigheten skall på begäran av någon som är berättigad att få ursprungsgarantier utfärda en sådan garanti. En ursprungsgaranti skall innehålla uppgifter om 1. den förnybara energikälla som har använts vid produktionen av elen, 2. den produktionsanläggning där den förnybara elen har producerats, och 3. den mängd el som har producerats och den tidsperiod under vilken produktionen har ägt rum. Tidsperioden skall vara en eller flera kalendermånader. Om den förnybara elen har producerats med användande av vattenkraft skall dessutom produktionsanläggningens installerade effekt anges."
+    },
+    {
+      "provision_ref": "9",
+      "section": "9",
+      "content": "Regeringen får meddela föreskrifter om avgift för utfärdandet av ursprungsgarantier."
+    },
+    {
+      "provision_ref": "10",
+      "section": "10",
+      "content": "Tillsynsmyndigheten har rätt att på begäran få de upplysningar och ta del av de handlingar som behövs för tillsynen. En begäran får förenas med vite."
+    },
+    {
+      "provision_ref": "11",
+      "section": "11",
+      "content": "En myndighets beslut enligt denna lag eller enligt föreskrifter som har meddelats med stöd av lagen får överklagas hos allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "1994:758",
+  "type": "statute",
+  "title": "Lag (1994:758) om ombildning av landshypoteksinstitutionen",
+  "status": "repealed",
+  "issued_date": "1994-06-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-758.html",
+  "description": "Upphävd 2011-11-01 genom SFS 2011:452",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag innehåller bestämmelser om ombildning av den institution som regleras i lagen (1970:65) om Sveriges allmänna hypoteksbank och om landshypoteksföreningar."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Landshypoteksföreningarna skall gå upp i en av föreningarna bildad ekonomisk förening. Delägarna i landshypoteksföreningarna blir medlemmar i den ekonomiska föreningen. Landshypoteksföreningarna upplöses utan likvidation och deras tillgångar och skulder övertas av den ekonomiska föreningen. Ombildningen skall göras den dag regeringen bestämmer."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Efter ombildningen skall den ekonomiska föreningen tillskjuta sin rörelse som apportegendom till ett av föreningen bildat kreditmarknadsbolag mot att föreningen erhåller samtliga aktier i bolaget. Sveriges allmänna hypoteksbank skall överlåta sin rörelse, utom obligationsskulden och övrig upplåning, till kreditmarknadsbolaget. Regeringen skall besluta om tidpunkt och villkor för överlåtelsen."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "I stället för 4 kap. lagen (1992:1610) om kreditmarknadsbolag gäller för kreditmarknadsbolaget 10--13 §§ lagen (1994:759) om Sveriges allmänna hypoteksbank. Övergångsbestämmelser 1994:758 1. Denna lag träder i kraft den 1 juli 1994. 2. Bestämmelsen i 4 § upphör att gälla den 1 juli 1997."
+    }
+  ]
+}

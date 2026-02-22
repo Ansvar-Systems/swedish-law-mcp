@@ -1,0 +1,40 @@
+{
+  "id": "1979:103",
+  "type": "statute",
+  "title": "Lag (1979:103) om försöksverksamhet med användning av telefon vid rättegång",
+  "status": "in_force",
+  "issued_date": "1979-03-15",
+  "url": "https://data.riksdagen.se/dokument/sfs-1979-103.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Vid de allmänna domstolar som regeringen eller, efter regeringens bemyndigande, domstolsverket bestämmer får vid handläggning av mål försöksvis användas telefon i enlighet med vad som anges i denna lag. Lag (1985:1048)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Vid förhandling enligt 42 kap. 10, 12-14 § eller 20 § andra stycket rättegångsbalken eller 5 § lagen (1974:8) om rättegången i tvistemål om mindre värden får part helt eller delvis utföra sin talan och höras per telefon, i den mån rätten finner det lämpligt och parterna samtycker till det. Detsamma gäller i fråga om huvudför handling i brottmål, vari anledning ej förekommer att ådöma annan brottspåföljd än böter."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Förhör med vittne eller sakkunnig får hållas per telefon, i den mån rätten finner det lämpligt samt parterna och den som skall höras samtycker till det. Detsamma gäller förhör i brottmål med målsägande som hörs i anledning av åklagarens talan."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Vid förhandling då telefon används får även annan åtgärd som står i nära samband med parts utförande av talan eller hörande av part, målsägande, vittne eller sakkunnig vidtas per telefon."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Under försöksverksamheten får kallelse till förhandling eller till förhör per telefon ske i den ordning rätten finner lämpligt. I kallelse till den som skall utföra sin talan eller höras per telefon får ej utsättas påföljd."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "I fråga om rätt till ersättning och förskott på sådan ersättning vid medverkan i rättegång per telefon tillämpas vad som är föreskrivet om ersättning och förskott vid inställelse till förhandling."
+    }
+  ]
+}

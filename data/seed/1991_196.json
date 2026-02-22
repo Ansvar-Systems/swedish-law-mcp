@@ -1,0 +1,41 @@
+{
+  "id": "1991:196",
+  "type": "statute",
+  "title": "Lag (1991:196) om PenningmarknadsCentralen PmC Aktiebolag;",
+  "status": "repealed",
+  "issued_date": "1991-05-02",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-196.html",
+  "description": "Upphävd 1992-12-29 genom SFS 1992:1311",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "PenningmarknadsCentralen PmC Aktiebolag (penningmarknadscentralen) skall fullgöra de uppgifter som anges i lagen (1991:195) om penningmarknadskonton."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Aktiebolagslagen (1975:1385) är tillämplig på penningmarknadscentralen, om något annat inte följer av 3 eller 4 §."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Bolagsordningen för penningmarknadscentralen skall fastställas av regeringen och får inte ändras utan regeringens godkännande."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Penningmarknadscentralen står under tillsyn av bankinspektionen. Bankinspektionen får förelägga vite vid meddelande av villkor eller förbud i samband med tillsynen. Bankinspektionens beslut enligt denna lag får överklagas hos regeringen. Beslut i frågor som rör tillsynen skall verkställas även om beslutet har överklagats, såvida inte regeringen beslutar något annat. Ytterligare föreskrifter om tillsynsverksamheten meddelas av regeringen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Penningmarknadscentralen skall med en årlig avgift bekosta bankinspektionens verksamhet enligt de närmare föreskrifter som regeringen meddelar. Penningmarknadscentralen skall med belopp som bankinspektionen bestämmer betala ersättning till en revisor som bankinspektionen förordnat enligt bolagsordningen."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Styrelseledamot, verkställande direktör eller någon annan tjänsteman hos penningmarknadscentralen som uppsåtligen eller av grov oaktsamhet till bankinspektionen lämnar oriktiga eller vilseledande uppgifter om centralen eller dess verksamhet döms till böter eller fängelse i högst sex månader, om gärningen inte är belagd med straff i brottsbalken."
+    }
+  ]
+}

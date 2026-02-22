@@ -1,0 +1,20 @@
+{
+  "id": "1970:996",
+  "type": "statute",
+  "title": "Lag (1970:996) om förvärv i vissa fall av del av fastighet",
+  "status": "in_force",
+  "issued_date": "1970-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1970-996.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Har vid skifte av bolags, förenings eller liknande sammanslutnings tillgångar fastighet delats så, att två eller flera fått skilda andelar utan att villkor om utbrytning uppställts i den över skiftet upprättade handlingen, innehar andelsägarna fastigheten under samäganderätt. Om i annat fall än i första stycket anges skiftet innebär att del av fastighet kommer i särskild ägares hand, är skiftet ogiltigt i den delen."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Bestämmelserna i 1 § äger motsvarande tillämpning i fråga om tillskott till bolag eller förening. Övergångsbestämmelser 1970:996 Denna lag träder i kraft den 1 januari 1972. Har skifte eller tillskott, som innebär att del av fastighet kommit i särskild ägares hand, skett före ikraftträdandet, äger i fråga om giltigheten härav äldre bestämmelser fortfarande tillämpning."
+    }
+  ]
+}

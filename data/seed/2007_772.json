@@ -1,0 +1,25 @@
+{
+  "id": "2007:772",
+  "type": "statute",
+  "title": "Lag (2007:772) om dokumentation av muntlig bevisning genom ljud- och bildupptagning",
+  "status": "in_force",
+  "issued_date": "2007-11-01",
+  "url": "https://data.riksdagen.se/dokument/sfs-2007-772.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Muntlig bevisning skall vid vissa allmänna domstolar dokumenteras enligt denna lag. Regeringen meddelar föreskrifter om vilka domstolar som omfattas av lagen."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "I tingsrätt skall en berättelse som lämnas i bevissyfte dokumenteras genom en ljud- och bildupptagning, om det inte finns särskilda skäl mot det. En berättelse som lämnas i högre rätt får dokumenteras på samma sätt. Om en berättelse som lämnas i bevissyfte inför domstol inte dokumenteras enligt första stycket, tillämpas 6 kap. 6 § rättegångsbalken."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Det som föreskrivs i 5 kap. 9 § rättegångsbalken om förbud mot fotografering hindrar inte att en ljud- och bildupptagning görs enligt 2 §."
+    }
+  ]
+}

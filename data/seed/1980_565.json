@@ -1,0 +1,25 @@
+{
+  "id": "1980:565",
+  "type": "statute",
+  "title": "Lag (1980:565) om undantag från fastighetsbildningslagen (1970:988) och jordförvärvslagen (1979:230) vid friköp av kronotorp",
+  "status": "in_force",
+  "issued_date": "1980-06-19",
+  "url": "https://data.riksdagen.se/dokument/sfs-1980-565.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Med friköp av kronotorp avses i denna lag att innehavaren av en sådan lägenhet som har upplåtits såsom skogstorp, odlingslägenhet, kolonat, kronotorp eller kronolägenhet och som vid utgången av juni 1992 stod under Domänverkets förvaltning förvärvar lägenheten eller en del av den med äganderätt. Förordning (1992:786)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Vid friköp av kronotorp får fastighetsbildning äga rum utan hinder av villkor som anges i 3 kap. fastighetsbildningslagen (1970:988)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Vid friköp av kronotorp behövs inte förvärvstillstånd enligt jordförvärvslagen (1979:230)."
+    }
+  ]
+}

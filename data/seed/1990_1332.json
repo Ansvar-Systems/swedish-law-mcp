@@ -1,0 +1,20 @@
+{
+  "id": "1990:1332",
+  "type": "statute",
+  "title": "Lag (1990:1332) om avgifter för miljöfarliga batterier",
+  "status": "in_force",
+  "issued_date": "1990-12-13",
+  "url": "https://data.riksdagen.se/dokument/sfs-1990-1332.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag gäller avgifter för hantering och import av sådana miljöfarliga batterier som innehåller kvicksilver, kadmium eller bly."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela de föreskrifter om avgifter som behövs för att täcka samhällets kostnader för att samla in och oskadliggöra batterier som är förbrukade eller som inte längre används. Avgiften får tas ut endast av den som yrkesmässigt hanterar eller importerar batterier."
+    }
+  ]
+}

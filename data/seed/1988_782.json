@@ -1,0 +1,30 @@
+{
+  "id": "1988:782",
+  "type": "statute",
+  "title": "Lag (1988:782) om dubbelbeskattningsavtal mellan Sverige och Turkiet",
+  "status": "in_force",
+  "issued_date": "1988-05-26",
+  "url": "https://data.riksdagen.se/dokument/sfs-1988-782.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning beträffande skatter på inkomst som Sverige och Turkiet undertecknade den 21 januari 1988 skall tillsammans med det protokoll som är fogat till avtalet gälla för Sveriges del. Avtalets och protokollets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en person anser att det vidtagits någon åtgärd som för honom medfört eller kommer att medföra en beskattning som strider mot bestämmelserna i avtalet, kan han ansöka om rättelse enligt artikel 25 punkt 1 i avtalet."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Har upphävts genom lag (2011:1331)."
+    }
+  ]
+}

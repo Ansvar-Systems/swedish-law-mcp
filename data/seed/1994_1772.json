@@ -1,0 +1,26 @@
+{
+  "id": "1994:1772",
+  "type": "statute",
+  "title": "Lag (1994:1772) om tillämpningen av det europeiska miljömärkningssystemet",
+  "status": "repealed",
+  "issued_date": "1994-12-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-1772.html",
+  "description": "Upphävd 2014-01-01 genom SFS 2013:849",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I denna lag finns vissa föreskrifter för tillämpningen av rådets förordning (EEG) nr 880/92 av den 23 mars 1992 om ett gemenskapsprogram för tilldelning av miljömärke./n2/"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Organ som avses i artikel 9.1 i den rådsförordning som anges i 1 § bestäms för Sveriges del av regeringen."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får meddela föreskrifter om vilka kriterier som skall vara uppfyllda för att en produkt skall få märkas med EG:s miljömärke."
+    }
+  ]
+}

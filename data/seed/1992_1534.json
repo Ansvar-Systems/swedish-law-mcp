@@ -1,0 +1,52 @@
+{
+  "id": "1992:1534",
+  "type": "statute",
+  "title": "Lag (1992:1534) om CE-märkning",
+  "status": "repealed",
+  "issued_date": "1992-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1992-1534.html",
+  "description": "Upphävd 2011-08-01 genom SFS 2011:791",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inledande bestämmelser",
+      "content": "Genom denna lag meddelas bestämmelser om den märkning (CE-märkning) som skall ske av vissa produkter enligt de rättsakter som har utformats i enlighet med EG-rådets resolution av den 7 maj 1985 om en ny metod för teknisk harmonisering och standarder. Lag (1994:1588)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "CE-märkning av en produkt får bara ske om 1. märkningen står i överensstämmelse med de i 1 § angivna rättsakterna, och 2. föreskrifter om märkningen finns i lag eller annan författning. Lag (1994:1588). CE-märkningens utformning m. m."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "CE-märkningen skall bestå av bokstäverna \"CE\" i den utformning som framgår av bilaga till denna lag. Vertikalt skall de olika komponenterna i CE-märkningen vara ungefär lika höga och inte lägre än 5 mm. Om CE-märkningen förminskas eller förstoras skall de proportioner som anges i modellen bibehållas. Lag (1994:1588)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "CE-märkningen skall ske på sådant sätt att den blir väl synlig, lättläst och beständig. Lag (1994:1588). Rättelse vid felaktig CE-märkning"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Regeringen eller myndighet som regeringen bestämmer får föreskriva om undantag från bestämmelserna i 3 och 4 §§ såvida detta är påkallat av rättsakt som avses i 1 §."
+    },
+    {
+      "provision_ref": "5 a",
+      "section": "5 a",
+      "content": "Om en produkt har CE-märkts trots att den inte överensstämmer med de krav som gäller för CE-märkning, skall den som ansvarar för CE-märkningen omedelbart vidta rättelse så att överträdelsen upphör. Lag (1994:1588). Förbud mot förväxlingsbara märken"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Märke som lätt kan förväxlas med CE-märkningen får inte användas i näringsverksamhet. Lag (1994:1588). Ansvar"
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Den som med uppsåt eller av oaktsamhet bryter mot 2 eller 6 § döms till böter, om gärningen inte är belagd med straff enligt annan författning. Den som har åsidosatt ett vitesföreläggande eller överträtt ett vitesförbud som meddelats med stöd av annan författning, skall inte dömas till ansvar enligt första stycket för gärning som omfattas av föreläggandet eller förbudet. Bilagan inte med här."
+    }
+  ]
+}

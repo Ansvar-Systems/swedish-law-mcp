@@ -1,0 +1,30 @@
+{
+  "id": "1998:1404",
+  "type": "statute",
+  "title": "Lag (1998:1404) om valutapolitik",
+  "status": "in_force",
+  "issued_date": "1998-11-26",
+  "url": "https://data.riksdagen.se/dokument/sfs-1998-1404.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen har enligt 9 kap. 12 § regeringsformen ansvaret för övergripande valutapolitiska frågor. Lag (2003:843)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen ska besluta om det system som ska gälla för att fastställa kronans värde i förhållande till utländska valutor (växelkurssystem). Vid behov ska regeringen också besluta om centralkurs och bandbredd. Beslut enligt första stycket ska vara förenliga med prisstabilitetsmålet. Lag (2022:1576)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Riksbanken får göra en framställning om att regeringen ska fatta beslut om växelkurssystem, centralkurs eller bandbredd. En sådan framställning ska behandlas skyndsamt. Lag (2022:1576)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Regeringen ska fatta beslut om växelkurssystem, centralkurs eller bandbredd efter att Riksbanken har fått tillfälle att lämna synpunkter. Lag (2022:1576)."
+    }
+  ]
+}

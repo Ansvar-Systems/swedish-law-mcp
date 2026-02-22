@@ -1,0 +1,26 @@
+{
+  "id": "1995:1249",
+  "type": "statute",
+  "title": "Lag (1995:1249) om försöksverksamhet med ökat föräldrainflytande över utvecklingsstörda barns skolgång",
+  "status": "repealed",
+  "issued_date": "1995-11-30",
+  "url": "https://data.riksdagen.se/dokument/sfs-1995-1249.html",
+  "description": "Upphävd 2010-08-01 genom SFS 2010:801",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "I stället för vad som föreskrivs i 3 kap. 3 § andra stycket skollagen (1985:1100) om vilka barn som skall tas emot i särskolan gäller bestämmelserna i denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Barn som bedöms inte kunna nå upp till grundskolans kunskapsmål därför att de är utvecklingsstörda skall tas emot i särskolan. Om vårdnadshavaren inte lämnar sitt medgivande till att barnet tas emot i särskolan, skall barnet fullgöra skolplikten enligt vad som gäller för barn i allmänhet enligt skollagen (1985:1100)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Vad som sägs i 2 § gäller även barn som har fått ett betydande och bestående begåvningsmässigt funktionshinder på grund av hjärnskada, föranledd av yttre våld eller kroppslig sjukdom, samt barn med autism eller autismliknande tillstånd. Övergångsbestämmelser 1995:1249 Denna lag träder i kraft den 1 januari 1996 och gäller till utgången av juni 2000. Lagen tillämpas på utbildning som äger rum från och med läsåret 1996/97."
+    }
+  ]
+}

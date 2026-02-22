@@ -1,0 +1,41 @@
+{
+  "id": "1991:114",
+  "type": "statute",
+  "title": "Lag (1991:114) om användning av viss genteknik vid allmänna hälsoundersökningar",
+  "status": "repealed",
+  "issued_date": "1991-03-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-114.html",
+  "description": "Upphävd 2006-07-01 genom SFS 2006:351",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "För att undersöka människors arvsmassa med utnyttjande av analys av genernas deoxyribonukleinsyra (DNA) eller ribonukleinsyra (RNA) fordras särskilt tillstånd, om undersökningen utgör eller ingår som ett led i en allmän hälsoundersökning."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Ett tillstånd som avses i 1 § får lämnas endast om undersökningen är inriktad på att söka kunskap om sjukdomsförhållanden som är av allvarlig art eller annars av särskild betydelse för hälso- och sjukvården. Vid prövning av tillståndsfrågan skall särskilt beaktas om de som skall leda och utföra undersökningen har den kompetens som behövs för ändamålet och om integritetsskyddet för uppgifter om undersökningsdeltagarnas genetiska förhållanden kan antas bli tillfredsställande."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Ett tillstånd enligt 1 § får förenas med de villkor som behövs för att begränsa undersökningsverksamheten eller kontrollera denna. Ett tillstånd får återkallas om villkor för tillståndet åsidosätts eller om det annars finns särskilda skäl. Tillståndet får återkallas tills vidare i avvaktan på att frågan avgörs slutligt."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Frågor om tillstånd enligt denna lag prövas av socialstyrelsen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "En undersökning enligt 1 § får inte omfatta annan än den som lämnat skriftligt samtycke."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Socialstyrelsens beslut enligt denna lag får överklagas hos allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Lag (1995:81). Övergångsbestämmelser 1991:114 1. Denna lag träder i kraft den 1 oktober 1991. 2. En genetisk undersökning enligt 1 § som har inletts före ikraftträdandet får fortsätta till utgången av december 1991 utan tillstånd enligt denna lag. Har tillstånd sökts får undersökningen fortsätta även efter nämnda tidpunkt i avvaktan på att frågan om tillstånd avgörs slutligt. 1995:81 Denna lag träder i kraft den 1 april 1995. Beslut som har meddelats före ikraftträdandet överklagas enligt äldre bestämmelser."
+    }
+  ]
+}

@@ -88,6 +88,14 @@ interface RiksdagenDocument {
   text?: string;
 }
 
+export interface IngestOptions {
+  documentId?: string;
+  title?: string;
+  issuedDate?: string;
+  htmlUrl?: string;
+  quiet?: boolean;
+}
+
 function extractSfsId(value: string | undefined): string | undefined {
   if (!value) {
     return undefined;
@@ -301,53 +309,81 @@ function delay(ms: number): Promise<void> {
 // Main ingestion
 // ─────────────────────────────────────────────────────────────────────────────
 
-export async function ingest(sfsNumber: string, outputPath: string): Promise<void> {
-  console.log('Riksdagen Data Ingestion');
-  console.log(`  SFS: ${sfsNumber}`);
-  console.log(`  Output: ${outputPath}`);
-  console.log('');
+export async function ingest(sfsNumber: string, outputPath: string, options?: IngestOptions): Promise<void> {
+  const quiet = options?.quiet === true;
+  const log = (...args: unknown[]): void => {
+    if (!quiet) console.log(...args);
+  };
+
+  log('Riksdagen Data Ingestion');
+  log(`  SFS: ${sfsNumber}`);
+  log(`  Output: ${outputPath}`);
+  log('');
+
+  const requestedRaw = sfsNumber.trim();
+  const keepExactId = /[A-Za-z]|\\s/.test(requestedRaw);
+  const requestedSfs = keepExactId
+    ? requestedRaw
+    : (extractSfsId(requestedRaw) ?? requestedRaw);
+  const normalizedRequested = extractSfsId(requestedRaw) ?? requestedRaw;
+  let doc: RiksdagenDocument;
 
   // Step 1: Fetch document metadata from Riksdagen
-  console.log('Fetching document list from Riksdagen...');
-  const listUrl = `${RIKSDAGEN_LIST_URL}/?sok=${encodeURIComponent(sfsNumber)}&doktyp=sfs&format=json&utformat=json`;
+  if (options?.documentId) {
+    doc = {
+      dok_id: options.documentId,
+      rm: requestedSfs.slice(0, 4),
+      beteckning: requestedSfs,
+      typ: 'SFS',
+      doktyp: 'sfs',
+      titel: options.title ?? `SFS ${requestedSfs}`,
+      datum: options.issuedDate ?? '',
+      html_url: options.htmlUrl,
+    };
+    log(`Using pre-fetched document id ${doc.dok_id}`);
+  } else {
+    log('Fetching document list from Riksdagen...');
+    const listUrl = `${RIKSDAGEN_LIST_URL}/?sok=${encodeURIComponent(sfsNumber)}&doktyp=sfs&format=json&utformat=json`;
 
-  const listData = await fetchJson(listUrl) as { dokumentlista?: { dokument?: RiksdagenDocument[] } };
-  const documents = listData?.dokumentlista?.dokument ?? [];
+    const listData = await fetchJson(listUrl) as { dokumentlista?: { dokument?: RiksdagenDocument[] } };
+    const documents = listData?.dokumentlista?.dokument ?? [];
 
-  if (documents.length === 0) {
-    console.error(`No documents found for SFS ${sfsNumber}`);
-    process.exit(1);
+    if (documents.length === 0) {
+      throw new Error(`No documents found for SFS ${sfsNumber}`);
+    }
+
+    doc = documents.find(d => d.beteckning === requestedSfs)
+      ?? documents.find(d => extractSfsId(d.beteckning) === normalizedRequested)
+      ?? documents.find(d => extractSfsId(d.titel) === normalizedRequested)
+      ?? documents[0];
+
+    if (
+      doc.beteckning !== requestedSfs &&
+      (extractSfsId(doc.beteckning) ?? extractSfsId(doc.titel)) !== normalizedRequested
+    ) {
+      log(`  WARNING: Exact SFS match not found; using closest hit ${doc.beteckning}`);
+    }
+
+    log(`  Found: ${doc.titel}`);
+
+    await delay(REQUEST_DELAY_MS);
   }
-
-  const requestedSfs = extractSfsId(sfsNumber) ?? sfsNumber;
-  const doc = documents.find(d => extractSfsId(d.beteckning) === requestedSfs)
-    ?? documents.find(d => extractSfsId(d.titel) === requestedSfs)
-    ?? documents[0];
-
-  if ((extractSfsId(doc.beteckning) ?? extractSfsId(doc.titel)) !== requestedSfs) {
-    console.log(`  WARNING: Exact SFS match not found; using closest hit ${doc.beteckning}`);
-  }
-
-  console.log(`  Found: ${doc.titel}`);
-
-  await delay(REQUEST_DELAY_MS);
 
   // Step 2: Fetch full document text
-  console.log('Fetching document text...');
+  log('Fetching document text...');
   const docUrl = `${RIKSDAGEN_DOC_URL}/${doc.dok_id}.json`;
   const docData = await fetchJson(docUrl) as { dokumentstatus?: { dokument?: RiksdagenDocument } };
   const fullDoc = docData?.dokumentstatus?.dokument;
 
   if (!fullDoc) {
-    console.error('Could not retrieve document details');
-    process.exit(1);
+    throw new Error(`Could not retrieve document details for ${doc.dok_id}`);
   }
 
   const rawText = fullDoc.text || '';
-  console.log(`  Text length: ${rawText.length} chars`);
+  log(`  Text length: ${rawText.length} chars`);
 
   // Step 3: Parse provisions
-  console.log('Parsing provisions...');
+  log('Parsing provisions...');
   const parseResult = parseRiksdagenProvisions(rawText);
   const strictParsed = parseResult.provisions as ProvisionOutput[];
   const strictDeduped = dedupeByProvisionRef(strictParsed);
@@ -367,21 +403,21 @@ export async function ingest(sfsNumber: string, outputPath: string): Promise<voi
   const deduped = shouldUseFallback ? fallbackDeduped : strictDeduped;
   const provisions = deduped.provisions;
   const withTitles = provisions.filter(p => p.title).length;
-  console.log(`  Found ${provisions.length} provisions (${withTitles} with titles)`);
+  log(`  Found ${provisions.length} provisions (${withTitles} with titles)`);
   if (shouldUseFallback) {
-    console.log(
+    log(
       `  Parser fallback activated: strict=${strictDeduped.provisions.length}, ` +
       `fallback=${fallbackDeduped.provisions.length}, suppressed=${parseResult.diagnostics.suppressed_section_candidates}`
     );
   }
   if (parseResult.diagnostics.ignored_chapter_markers > 0 || parseResult.diagnostics.suppressed_section_candidates > 0) {
-    console.log(
+    log(
       `  Parser diagnostics: ignored chapters=${parseResult.diagnostics.ignored_chapter_markers}, ` +
       `suppressed section candidates=${parseResult.diagnostics.suppressed_section_candidates}`
     );
   }
   if (deduped.duplicateRefs > 0) {
-    console.log(
+    log(
       `  De-duplicated ${deduped.duplicateRefs} duplicate refs ` +
       `(replaced ${deduped.replacements} with better candidates)`
     );
@@ -393,9 +429,13 @@ export async function ingest(sfsNumber: string, outputPath: string): Promise<voi
   const status = deriveStatus(known, htmlMetadata);
   const repealDate = normalizeDate(htmlMetadata['Upphävd']);
   const repealedBy = htmlMetadata['Författningen har upphävts genom'];
-  const issuedDate = normalizeDate(htmlMetadata['Utfärdad'] ?? doc.datum);
+  const issuedDate = normalizeDate(htmlMetadata['Utfärdad'] ?? doc.datum ?? options?.issuedDate);
   const inForceDate = normalizeDate(htmlMetadata['Ikraft']) ?? known?.in_force_date;
-  const baseTitle = normalizeWhitespace(doc.titel || `SFS ${requestedSfs}`);
+  const baseTitle = normalizeWhitespace(doc.titel || options?.title || `SFS ${requestedSfs}`);
+  const sourceUrl = fullDoc.html_url
+    || doc.html_url
+    || options?.htmlUrl
+    || `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-${requestedSfs.replace(':', '-')}`;
 
   const seed: SeedOutput = {
     id: requestedSfs,
@@ -406,7 +446,7 @@ export async function ingest(sfsNumber: string, outputPath: string): Promise<voi
     status,
     issued_date: issuedDate,
     in_force_date: inForceDate,
-    url: doc.html_url || `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-${requestedSfs.replace(':', '-')}`,
+    url: sourceUrl,
     description: status === 'repealed'
       ? [repealDate ? `Upphävd ${repealDate}` : 'Upphävd', repealedBy ? `genom ${repealedBy}` : null]
           .filter((part): part is string => part != null)
@@ -425,13 +465,13 @@ export async function ingest(sfsNumber: string, outputPath: string): Promise<voi
   fs.writeFileSync(outputPath, JSON.stringify(seed, null, 2));
 
   const fileSize = fs.statSync(outputPath).size;
-  console.log('');
-  console.log('Ingestion complete:');
-  console.log(`  Document: ${seed.title}`);
-  console.log(`  Provisions: ${provisions.length}`);
-  console.log(`  Output: ${outputPath} (${(fileSize / 1024).toFixed(1)} KB)`);
-  console.log('');
-  console.log('Next step: npm run build:db');
+  log('');
+  log('Ingestion complete:');
+  log(`  Document: ${seed.title}`);
+  log(`  Provisions: ${provisions.length}`);
+  log(`  Output: ${outputPath} (${(fileSize / 1024).toFixed(1)} KB)`);
+  log('');
+  log('Next step: npm run build:db');
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

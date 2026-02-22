@@ -1,0 +1,16 @@
+{
+  "id": "1974:283",
+  "type": "statute",
+  "title": "Lag (1974:283) om handel med arbeten av guld, silver eller platina;",
+  "status": "repealed",
+  "issued_date": "1986-12-04",
+  "url": "https://data.riksdagen.se/dokument/sfs-1974-283.html",
+  "description": "Upphävd 1988-07-01 genom SFS 1986:985",
+  "provisions": [
+    {
+      "provision_ref": "25",
+      "section": "25",
+      "content": "Ett arbete av guld, silver eller platina får inte utan tillstånd av myndighet som regeringen bestämmer tas om hand på sätt som avses i 8 § första stycket tullagen (1987:1065). I övrigt gäller i fråga om rätten att hantera oförtullat sådant arbete lagen (1973:980) om transport, förvaring och förstöring av införselreglerade varor, m.m. Lag (1987:1192)."
+    }
+  ]
+}

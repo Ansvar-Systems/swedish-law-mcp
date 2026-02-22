@@ -1,0 +1,35 @@
+{
+  "id": "1993:1164",
+  "type": "statute",
+  "title": "Lag (1993:1164) om dubbelbeskattningsavtal mellan Sverige och Lettland",
+  "status": "in_force",
+  "issued_date": "1993-11-11",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-1164.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för att undvika dubbelbeskattning och förhindra skatteflykt beträffande skatter på inkomst och på förmögenhet som Sverige och Lettland undertecknade den 5 april 1993, skall tillsammans med det protokoll som är fogat till avtalet och som utgör en del av detta, gälla som lag här i landet. Avtalets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Har upphävts genom lag (2011:1357)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Den angivna begränsningen i artikel 23 punkt 1 d andra meningen beträffande inkomster erhållna från tredje stat skall inte gälla."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Följande författningar skall inte längre tillämpas såvitt avser förhållandet mellan Sverige och Lettland, nämligen -- lagen (1982:708) om dubbelbeskattningsavtal mellan Sverige och Sovjetunionen, -- kungörelsen (1971:130) om tillämpning av protokoll mellan Sverige och Sovjetunionen angående ömsesidig skattebefrielse för luftfartsföretag och deras anställda, -- kungörelsen (1973:563) om tillämpning av protokoll mellan Sverige och Sovjetunionen angående ömsesidig skattebefrielse för sjöfartsföretag."
+    }
+  ]
+}

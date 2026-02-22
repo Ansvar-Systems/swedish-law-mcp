@@ -1,0 +1,35 @@
+{
+  "id": "2000:130",
+  "type": "statute",
+  "title": "Lag (2000:130) om försvarsunderrättelseverksamhet",
+  "status": "in_force",
+  "issued_date": "2000-03-30",
+  "url": "https://data.riksdagen.se/dokument/sfs-2000-130.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Försvarsunderrättelseverksamhet skall bedrivas till stöd för svensk utrikes-, säkerhets- och försvarspolitik samt i övrigt för kartläggning av yttre hot mot landet. I verksamheten ingår att medverka i svenskt deltagande i internationellt säkerhetssamarbete. Försvarsunderrättelseverksamhet får endast avse utländska förhållanden. Regeringen skall bestämma försvarsunderrättelseverksamhetens inriktning. Inom ramen för denna inriktning får de myndigheter som regeringen bestämmer ange en närmare inriktning av verksamheten. Försvarsunderrättelseverksamhet skall bedrivas av den eller de myndigheter som regeringen bestämmer. Lag (2007:664)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Verksamheten enligt 1 § skall fullgöras genom inhämtning, bearbetning och analys av information. Underrättelser skall rapporteras till berörda myndigheter. I verksamheten används teknisk och personbaserad inhämtning. Vissa bestämmelser om teknisk inhämtning finns i lagen (2008:717) om signalspaning i försvarsunderrättelseverksamhet. Lag (2008:718)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Den eller de myndigheter som skall bedriva försvarsunderrättelseverksamhet får, enligt regeringens närmare bestämmande, etablera och upprätthålla samarbete i underrättelsefrågor med andra länder och internationella organisationer. Lag (2007:664)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Inom försvarsunderrättelseverksamheten får det inte vidtas åtgärder som syftar till att lösa uppgifter som enligt lagar eller andra föreskrifter ligger inom ramen för Polismyndighetens, Säkerhetspolisens och andra myndigheters brottsbekämpande och brottsförebyggande verksamhet. Om det inte finns hinder enligt andra bestämmelser, får dock de myndigheter som bedriver försvarsunderrättelseverksamhet lämna stöd till andra myndigheters brottsbekämpande och brottsförebyggande verksamhet. Lag (2014:687)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Den myndighet som regeringen bestämmer skall kontrollera försvarsunderrättelseverksamheten. Lag (2007:664)."
+    }
+  ]
+}

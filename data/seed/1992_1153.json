@@ -1,0 +1,26 @@
+{
+  "id": "1992:1153",
+  "type": "statute",
+  "title": "Lag (1992:1153) om väpnad styrka för tjänstgöring utomlands",
+  "status": "repealed",
+  "issued_date": "1992-12-10",
+  "url": "https://data.riksdagen.se/dokument/sfs-1992-1153.html",
+  "description": "Upphävd 2003-06-01 genom SFS 2003:169",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen får på begäran av Förenta nationerna eller enligt beslut som fattats av Organisationen för säkerhet och samarbete i Europa ställa en väpnad styrka till förfogande för fredsbevarande verksamhet uto mlands. Lag (1995:597)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Personal som skall tjänstgöra i väpnad tjänst för fredsbevarande verksamhet utomlands skall anställas särskilt för denna uppgift. Personalen skall ingå i en utlandsstyrka inom försvarsmakten."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Högst tretusen personer ur utlandsstyrkan får samtidigt tjänstgöra utomlands i väpnad tjänst."
+    }
+  ]
+}

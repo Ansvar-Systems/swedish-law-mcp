@@ -1,0 +1,26 @@
+{
+  "id": "2005:1105",
+  "type": "statute",
+  "title": "Lag (2005:1105) om kreditering på skattekonto av stöd för investering i konvertering från direktverkande elvärme i bostadshus",
+  "status": "repealed",
+  "issued_date": "2005-12-01",
+  "url": "https://data.riksdagen.se/dokument/sfs-2005-1105.html",
+  "description": "Upphävd 2007-01-01 genom SFS 2006:1401",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stöd för investeringar i konvertering från direktverkande elvärme som har beslutats av länsstyrelsen eller Boverket och som avser stödberättigande åtgärder som har påbörjats och slutförts under perioden 1 januari 2006-31 december 2010 får tillgodoföras byggnadsägaren genom kreditering på sådant skattekonto som har upprättats för denne enligt 3 kap. 5 § skattebetalningslagen (1997:483)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet regeringen bestämmer får meddela närmare föreskrifter om det stöd som enligt 1 § får krediteras skattekonto."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Kreditering på skattekonto med stöd av denna lag får inte minska statens inkomst av skatter med ett större belopp än 300 miljoner kronor per år."
+    }
+  ]
+}

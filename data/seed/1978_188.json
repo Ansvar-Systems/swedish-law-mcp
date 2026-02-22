@@ -1,0 +1,26 @@
+{
+  "id": "1978:188",
+  "type": "statute",
+  "title": "Lag (1978:188) om avdrag vid inkomsttaxeringen för avgift för kostnadsutjämning enligt allmän pensionsplan, m.m.",
+  "status": "repealed",
+  "issued_date": "1978-04-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-1978-188.html",
+  "description": "Upphävd 1998-06-30 genom SFS 1998:329",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Har arbetsgivare tryggat åtagande om ålderspension enligt allmän pensionsplan genom att redovisa pensionsskuld under rubriken Avsatt till pensioner och innehåller planen regler om utjämning av pensionskostnaden mellan olika arbetsgivare gäller bestämmelserna i 2 och 3 §§."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avgift som arbetsgivare enligt planens bestämmelser utger till det organ som administrerar planen för att utjämna andra arbetsgivares pensionskostnader utgör avdragsgill kostnad vid beräkning enligt kommunalskattelagen (1928:370) och lagen (1947:576) om statlig inkomstskatt av nettointäkt av den förvärvskälla till vilken pensionsutfästelsen hänför sig."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Medel, som i enlighet med planens bestämmelser tillgodoförs arbetsgivare av det organ som administrerar planen för att utjämna pensionskostnader, utgör skattepliktig intäkt för arbetsgivaren i den förvärvskälla till vilken pensionsutfästelsen hänför sig. Övergångsbestämmelser 1998:329 Den upphävda lagen tillämpas alltjämt vid 2000 och tidigare års taxeringar. Detta gäller dock inte vid 1998, 1999 och 2000 års taxeringar om den skattskyldige har yrkat att de nya bestämmelserna i lagen (1998:328) om ändring i kommunalskattelagen (1928:370) skall tillämpas vid dessa taxeringar."
+    }
+  ]
+}

@@ -9,9 +9,9 @@
 [![CI](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/ci.yml)
 [![Daily Data Check](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/check-updates.yml/badge.svg)](https://github.com/Ansvar-Systems/swedish-law-mcp/actions/workflows/check-updates.yml)
 [![Database](https://img.shields.io/badge/database-pre--built-green)](docs/EU_INTEGRATION_GUIDE.md)
-[![Provisions](https://img.shields.io/badge/provisions-31%2C198-blue)](docs/EU_INTEGRATION_GUIDE.md)
+[![Provisions](https://img.shields.io/badge/provisions-58%2C570-blue)](docs/EU_INTEGRATION_GUIDE.md)
 
-Query **717 Swedish statutes** -- from Dataskyddslagen and Brottsbalken to Aktiebolagslagen, Miljöbalken, and more -- directly from Claude, Cursor, or any MCP-compatible client.
+Query **2,415 Swedish statutes** -- from Dataskyddslagen and Brottsbalken to Aktiebolagslagen, Miljöbalken, and more -- directly from Claude, Cursor, or any MCP-compatible client.
 
 If you're building legal tech, compliance tools, or doing Swedish legal research, this is your verified reference database.
 
@@ -129,12 +129,12 @@ Once connected, just ask naturally:
 
 | Category | Count | Details |
 |----------|-------|---------|
-| **Statutes** | 717 laws | Comprehensive Swedish legislation |
-| **Provisions** | 31,198 sections | Full-text searchable with FTS5 |
-| **Preparatory Works** | 3,625 documents | Propositions (Prop.) and SOUs |
+| **Statutes** | 2,415 statutes | Comprehensive Swedish legislation |
+| **Provisions** | 58,570 sections | Full-text searchable with FTS5 |
+| **Preparatory Works** | 6,735 documents | Propositions (Prop.) and SOUs |
 | **EU Cross-References** | 668 references | 228 EU directives and regulations |
-| **Legal Definitions** | 615 terms | Extracted from statute text |
-| **Database Size** | ~70 MB | Optimized SQLite, portable |
+| **Legal Definitions** | 0 (free tier) | Table reserved, extraction not enabled in current free build |
+| **Database Size** | ~125 MB | Optimized SQLite, portable |
 | **Daily Updates** | Automated | Freshness checks against Riksdagen |
 
 **Verified data only** -- every citation is validated against official sources (Riksdagen, lagen.nu, EUR-Lex). Zero LLM-generated content.
@@ -186,7 +186,7 @@ Riksdagen API → Parse → SQLite → FTS5 snippet() → MCP response
 
 | Tool | Description |
 |------|-------------|
-| `search_legislation` | FTS5 search on 31,198 provisions with BM25 ranking |
+| `search_legislation` | FTS5 search on 58,570 provisions with BM25 ranking |
 | `get_provision` | Retrieve specific provision by SFS + chapter/section |
 | `search_case_law` | FTS5 search on case law with court/date filters |
 | `get_preparatory_works` | Get linked propositions and SOUs for a statute |
@@ -209,13 +209,13 @@ Riksdagen API → Parse → SQLite → FTS5 snippet() → MCP response
 
 ## EU Law Integration
 
-**668 cross-references** linking 49 Swedish statutes to EU law, with bi-directional lookup.
+**668 cross-references** linking 309 Swedish statutes to EU law, with bi-directional lookup.
 
 | Metric | Value |
 |--------|-------|
 | **EU References** | 668 cross-references |
 | **EU Documents** | 228 unique directives and regulations |
-| **Swedish Statutes with EU Refs** | 49 (68% of database) |
+| **Swedish Statutes with EU Refs** | 309 (12.8% of statutes) |
 | **Directives** | 89 |
 | **Regulations** | 139 |
 | **EUR-Lex Integration** | Automated metadata fetching |
@@ -247,7 +247,7 @@ A [daily GitHub Actions workflow](.github/workflows/check-updates.yml) monitors 
 
 | Source | Check | Method |
 |--------|-------|--------|
-| **Statute amendments** | Riksdagen API date comparison | All 717 statutes checked |
+| **Statute amendments** | Riksdagen API date comparison | All 2,415 statutes checked |
 | **New statutes** | Riksdagen SFS publications (90-day window) | Diffed against database |
 | **Case law** | lagen.nu feed entry count | Compared to database |
 | **Preparatory works** | Riksdagen proposition API (30-day window) | New props detected |
@@ -329,6 +329,8 @@ npx @anthropic/mcp-inspector node dist/index.js   # Test with MCP Inspector
 
 ```bash
 npm run ingest -- <sfs-number> <output.json>   # Ingest statute from Riksdagen
+npm run ingest:auto-all -- --scope all-laws --dry-run  # Coverage audit against Riksdagen
+npm run ingest:auto-all -- --scope all-laws   # Ingest full law-like corpus from Riksdagen
 npm run ingest:cases:full-archive              # Ingest case law (full archive)
 npm run sync:cases                             # Ingest case law (incremental)
 npm run sync:prep-works                        # Sync preparatory works
@@ -340,7 +342,7 @@ npm run check-updates                          # Check for amendments
 ### Performance
 
 - **Search Speed:** <100ms for most FTS5 queries
-- **Database Size:** ~70 MB (efficient, portable)
+- **Database Size:** ~125 MB (efficient, portable)
 - **Reliability:** 100% ingestion success rate
 
 ---
@@ -353,7 +355,7 @@ This server is part of **Ansvar's Compliance Suite** -- MCP servers that work to
 **Query 49 EU regulations directly from Claude** -- GDPR, AI Act, DORA, NIS2, MiFID II, eIDAS, and more. Full regulatory text with article-level search. `npx @ansvar/eu-regulations-mcp`
 
 ### @ansvar/swedish-law-mcp (This Project)
-**Query 717 Swedish statutes directly from Claude** -- DSL, BrB, ABL, MB, and more. Full provision text with EU cross-references. `npx @ansvar/swedish-law-mcp`
+**Query 2,415 Swedish statutes directly from Claude** -- DSL, BrB, ABL, MB, and more. Full provision text with EU cross-references. `npx @ansvar/swedish-law-mcp`
 
 ### [@ansvar/us-regulations-mcp](https://github.com/Ansvar-Systems/US_Compliance_MCP)
 **Query US federal and state compliance laws** -- HIPAA, CCPA, SOX, GLBA, FERPA, and more. `npm install @ansvar/us-regulations-mcp`
@@ -404,7 +406,7 @@ If you use this MCP server in academic research:
   title = {Swedish Law MCP Server: Production-Grade Legal Research Tool},
   year = {2025},
   url = {https://github.com/Ansvar-Systems/swedish-law-mcp},
-  note = {Comprehensive Swedish legal database with 717 statutes and EU law cross-references}
+  note = {Comprehensive Swedish legal database with 2,415 statutes and EU law cross-references}
 }
 ```
 
@@ -426,7 +428,7 @@ Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 We build AI-accelerated compliance and legal research tools for the European market. This MCP server started as our internal reference tool for Swedish law -- turns out everyone building for the Swedish market has the same research frustrations.
 
-So we're open-sourcing it. Navigating 717 statutes shouldn't require a law degree.
+So we're open-sourcing it. Navigating 2,415 statutes shouldn't require a law degree.
 
 **[ansvar.eu](https://ansvar.eu)** -- Stockholm, Sweden
 

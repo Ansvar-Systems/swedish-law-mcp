@@ -1,0 +1,46 @@
+{
+  "id": "1985:1061",
+  "type": "statute",
+  "title": "Lag (1985:1061) om avgifter i ärenden om lokala kabelsändningar",
+  "status": "repealed",
+  "issued_date": "1985-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1985-1061.html",
+  "description": "Upphävd 1992-01-01 genom SFS 1991:2027",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den som har fått tillstånd till satellitsändningar enligt lagen (1985:677) om lokala kabelsändningar skall erlägga avgift till staten enligt föreskrifterna i denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För varje påbörjat kalenderhalvår skall tillståndshavaren erlägga en avgift. Denna skall tas ut med tio kronor för varje bostad som kan nås av satellitsändningar från tillståndshavaren vid kalenderhalvårets ingång. Avgiften för första kalenderhalvåret skall betalas senast den 31 mars och avgiften för andra kalenderhalvåret senast den 30 september."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Avgiften skall utan anmaning betalas in till kabelnämnden."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Den som är avgiftsskyldig skall lämna uppgifter till kabelnämnden om antalet bostäder som kan nås av hans satellitsändningar. Om en avgiftsskyldig, trots särskild anmaning av kabelnämnden, inte inom föreskriven tid lämnar sådana uppgifter om antalet bostäder som kan ligga till grund för avgiftsberäkningen, skall nämnden fastställa avgiften efter en uppskattning av antalet bostäder."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Om avgiften för ett kalenderhalvår uppgår till högst 1 000 kronor tas den inte ut. Lag (1987:581)."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Kabelnämndens beslut enligt denna lag får överklagas hos kammarrätten genom besvär."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Den som uppsåtligen eller av grov oaktsamhet lämnar uppgifter som är ägnade att leda till för låg avgift, skall dömas till böter eller fängelse i högst sex månader, om inte gärningen är belagd med straff i brottsbalken. Övergångsbestämmelser 1985:1061 1. Denna lag träder i kraft den 1 januari 1986. 2. Den, som under någon del av andra kalenderhalvåret 1985 bedrivit sändningar med stöd av lagen (1984:115) om försöksverksamhet med särskild trådsändning och som under första kalenderhalvåret 1986 får tillstånd att sända enligt lagen (1985:677) om lokala kabelsändningar, skall betala hel avgift för första kalenderhalvåret 1986 även om sändningar med stöd av tillståndet börjar först under det halvåret."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "1971:1081",
+  "type": "statute",
+  "title": "Lag (1971:1081) om bestämning av volym och vikt",
+  "status": "repealed",
+  "issued_date": "1971-12-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1971-1081.html",
+  "description": "Upphävd 1994-01-01 genom SFS 1992:1514",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag tillämpas på yrkesmässig handel med vara som säljs efter volym eller vikt eller som är märkt med uppgift om sådan kvantitet. Med färdigförpackad vara förstås i denna lag vara som utan omedelbart samband med överlämnande till konsument inneslutits i förpackning, avsedd att brytas först av konsumenten. Med kontrollerat mätdon avses i denna lag mätdon som har godkänts vid obligatorisk kontroll samt försetts med bevis om detta. Regeringen eller den myndighet som regeringen bestämmer meddelar föreskrifter om denna kontroll. Därvid får medges att enskild som utför underhåll eller reparation på mätdon får besluta om godkännande av mätdon. Har typgodkännande uppställts som villkor för godkännande av viss typ av mätdon, får meddelat typgodkännande återkallas, om kontroll visar att typen uppenbarligen inte uppfyller kraven för typgodkännandet. Förordning (1986:983)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Riktigheten av volym- eller viktuppgift på färdigförpackad vara kontrolleras genom stickprovsundersökning. Sådan undersökning göres av myndighet, som regeringen bestämmer, och får företagas hos tillverkare, importör, förpackare, grossist och detaljhandlare."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "När andra än färdigförpackade varor säljs efter volym eller vikt i detaljhandeln eller bränsle säljs efter volym eller vikt för direkt uppvärmning av bostäder eller lokaler, skall kontrollerat mätdon användas. Mätdonet skall därvid användas så att kunden utan svårighet kan avläsa mätningsresultatet. Förordning (1986:983)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "I lokaler för detaljhandel med livsmedel, där varor som säljs i lös vikt vägs av butikspersonal först vid utgångskassa skall finnas en kontrollerad våg som kunderna får använda för den vägning som de vill företa. En sådan våg skall vara lämplig för ändamålet och finnas uppställd för kunderna. I andra lokaler för detaljhandel med livsmedel, där skyldighet finns att ha kontrollerad våg, skall kunderna ha möjlighet att använda en sådan för den vägning som de vill företa. Förordning (1986:983)."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Tillsyn över efterlevnaden av 3 och 4 §§ utövas av myndighet som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "För undersökning enligt 2 § eller tillsyn enligt 5 § äger tillsynsmyndigheten tillträde till område eller lokal, där vara förpackas, förvaras eller säljes eller där mätningsredskap är uppställt. Den hos vilken undersökning eller tillsyn sker är skyldig att därvid lämna erforderligt biträde. Det åligger polismyndighet att lämna den handräckning som behövs med anledning av bestämmelsen i första stycket. Lag (1978:276)."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Förpackare eller importör som uppsåtligen eller av oaktsamhet utbjuder till försäljning färdigförpackad vara med uppgift om större volym eller högre vikt än den har dömes till böter, om ej gärningen är belagd med straff i brottsbalken. Den som uppsåtligen bryter mot 3 eller 4 § dömes till böter. Har flera medverkat till gärning som avses i första stycket, äger 23 kap. 4 och 5 §§ brottsbalken motsvarande tillämpning. Lag (1978:276)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Regeringen eller myndighet som regeringen bestämmer får i visst fall medge undantag från 3 eller 4 § eller för vissa slag av företag föreskriva undantag från 4 §. Lag (1978:276). Övergångsbestämmelser 1986:983 Denna lag träder i kraft den 1 januari 1987. Återkallande av typgodkännande enligt 1 § får ske endast om typgodkännandet har meddelats efter ikraftträdandet av denna lag."
+    }
+  ]
+}

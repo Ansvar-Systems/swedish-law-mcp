@@ -1,0 +1,31 @@
+{
+  "id": "1974:614",
+  "type": "statute",
+  "title": "Lag (1974:614) om beredskapsstyrka för FN-tjänst;",
+  "status": "repealed",
+  "issued_date": "1974-06-28",
+  "url": "https://data.riksdagen.se/dokument/sfs-1974-614.html",
+  "description": "Upphävd 1993-01-01 genom SFS 1992:1153",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Inom försvarsmakten skall en militär styrka finnas organiserad som beredskapsstyrka."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen äger efter framställning av Förenta nationernas generalsekreterare ställa beredskapsstyrkan till Förenta nationernas förfogande för att deltaga i fredsbevarande verksamhet. Regeringen äger vidare besluta att beredskapsstyrkan skall biträda vid hjälpverksamhet utomlands i samband med naturkatastrof eller liknande händelse."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Beredskapsstyrkan får omfatta högst två bataljoner samt specialenheter om tillsammans högst en bataljons styrka."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Beredskapsstyrkan skall bestå av för ändamålet anställd personal."
+    }
+  ]
+}

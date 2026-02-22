@@ -1,0 +1,20 @@
+{
+  "id": "2005:375",
+  "type": "statute",
+  "title": "Lag (2005:375) om kreditering på skattekonto av stöd till kommuner för kompetensutveckling",
+  "status": "in_force",
+  "issued_date": "2005-06-02",
+  "url": "https://data.riksdagen.se/dokument/sfs-2005-375.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stöd till kommuner för kvalitetsutveckling inom vården och omsorgen om äldre genom kompetensutveckling för personalen skall tillgodoföras kommunerna genom kreditering på ett sådant skattekonto som har upprättats för dem enligt 3 kap. 5 § skattebetalningslagen (1997:483)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen meddelar närmare föreskrifter om det stöd som enligt 1 § skall krediteras skattekonto."
+    }
+  ]
+}

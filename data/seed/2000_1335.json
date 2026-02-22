@@ -1,0 +1,21 @@
+{
+  "id": "2000:1335",
+  "type": "statute",
+  "title": "Lag (2000:1335) om kreditering på skattekonto av stöd till kommuner för anläggande av telenät",
+  "status": "repealed",
+  "issued_date": "2000-12-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-2000-1335.html",
+  "description": "Upphävd 2019-01-01 genom SFS 2018:1345",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stöd till kommuner för anläggande av allmänt tillgängliga telenät med hög överföringskapacitet som har beslutats av länsstyrelsen, ett regionalt självstyrelseorgan enligt lagen (1996:1414) om försöksverksamhet med ändrad regional ansvarsfördelning eller samverkansorganet i Kalmar och Gotlands län enligt lagen (2002:34) om samverkansorgan i länen och som avser stödberättigande åtgärder som har utförts under perioden 1 juli 2000-31 december 2007 skall tillgodoföras kommunerna genom kreditering på sådant skattekonto som har upprättats för dem enligt 3 kap. 5 § skattebetalningslagen (1997:483). Lag (2006:1464)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen meddelar närmare föreskrifter om det stöd enligt 1 § som skall krediteras skattekontot."
+    }
+  ]
+}

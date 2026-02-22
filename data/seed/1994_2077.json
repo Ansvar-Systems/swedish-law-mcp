@@ -1,0 +1,41 @@
+{
+  "id": "1994:2077",
+  "type": "statute",
+  "title": "Lag (1994:2077) om arbetsförmedlingstvång",
+  "status": "in_force",
+  "issued_date": "1994-12-15",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-2077.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Förutsättningar för lagens tillämpning",
+      "content": "Om det behövs för att verksamhet som är av särskild vikt för totalförsvaret skall kunna upprätthållas, får regeringen när det råder höjd beredskap föreskriva att 2--4 §§ skall tillämpas. Förbud mot privat arbetsförmedling och uthyrning av arbetskraft"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet som regeringen bestämmer får i den omfattning som det behövs föreskriva om förbud mot annan arbetsförmedling än den offentliga samt om inskränkning i rätten att utöva sådan annan arbetsförmedling. Arbetsförmedlingstvång och företrädesbestämmelser"
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För att tillgodose behovet av arbetskraft inom en viss verksamhet får regeringen eller den myndighet som regeringen bestämmer föreskriva om förbud för arbetsgivare att anställa arbetstagare som inte anvisats av en offentlig arbetsförmedling eller med dess medgivande (arbetsförmedlingstvång). I föreskrifterna skall anges det behov av arbetskraft, åt vilket företräde skall lämnas (företrädesbestämmelse). Så länge det företrädesberättigade behovet inte är fyllt, får den som förmedlar arbete inte lämna en arbetssökande anvisning eller medgivande att ta annat arbete inom den verksamhet för vilken arbetsförmedlingstvång gäller."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Har ett avtal om anställning träffats i strid med vad som föreskrivits om arbetsförmedlingstvång och kan anställningen inte godkännas med hänsyn till en företrädesbestämmelse, får regeringen eller den myndighet som regeringen bestämmer vid vite förelägga arbetstagaren att frånträda anställningen."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Föreskrifterna i 3 och 4 §§ gäller inte, om a) anställningen endast är tillfällig, b) arbetstagaren är under sexton eller över sjuttio år, c) parterna i ett anställningsförhållande är makar eller sambor eller om ena parten eller hans make eller sambo är den andra partens avkomling eller styv- eller fosterbarn eller dess avkomling eller syskon, halvsyskon eller fostersyskon. Straff"
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Den som uppsåtligen bryter mot ett förbud enligt 2 § eller 3 § första stycket första meningen skall dömas till böter eller fängelse i högst sex månader."
+    }
+  ]
+}

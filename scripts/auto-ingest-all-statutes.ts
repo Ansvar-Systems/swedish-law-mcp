@@ -2,23 +2,14 @@
 /**
  * Automated Bulk Ingestion of Swedish Statutes
  *
- * Fetches ALL SFS documents from Riksdagen API, filters for major laws,
- * and automatically ingests them into the database.
- *
- * Strategy:
- * 1. Fetch SFS list from Riksdagen API (all ~11,413 documents)
- * 2. Filter for major laws (heuristics: length, chapters, relevance indicators)
- * 3. Batch ingest with progress tracking
- * 4. Skip already-ingested statutes
- * 5. Generate completion report
+ * Fetches SFS documents from the Riksdagen API, supports multiple scope modes,
+ * and ingests missing statutes into data/seed/.
  *
  * Usage:
- *   tsx scripts/auto-ingest-all-statutes.ts [--limit N] [--year-start YYYY] [--year-end YYYY]
- *
- * Examples:
- *   tsx scripts/auto-ingest-all-statutes.ts --limit 50
- *   tsx scripts/auto-ingest-all-statutes.ts --year-start 2000 --year-end 2024
- *   tsx scripts/auto-ingest-all-statutes.ts --dry-run
+ *   tsx scripts/auto-ingest-all-statutes.ts [--scope major|all-laws|all-laws-no-amendments|all-sfs]
+ *                                          [--start N] [--limit N]
+ *                                          [--year-start YYYY] [--year-end YYYY]
+ *                                          [--dry-run] [--no-skip]
  */
 
 import * as fs from 'fs';
@@ -31,22 +22,31 @@ const __dirname = path.dirname(__filename);
 
 const RIKSDAGEN_LIST_URL = 'https://data.riksdagen.se/dokumentlista';
 const OUTPUT_DIR = path.resolve(__dirname, '../data/seed');
-const REQUEST_DELAY_MS = 600; // 0.6s to be respectful to API
+const LIST_REQUEST_DELAY_MS = 1000;
+const INGEST_REQUEST_DELAY_MS = 1000;
+const DEFAULT_PAGE_SIZE = 500; // API currently caps to 200 entries/page
+
+type IngestionScope = 'major' | 'all-laws' | 'all-laws-no-amendments' | 'all-sfs';
 
 interface CLIOptions {
   limit?: number;
+  start: number;
   yearStart?: number;
   yearEnd?: number;
+  pageSize: number;
+  scope: IngestionScope;
   dryRun: boolean;
   skipExisting: boolean;
 }
 
 interface SFSDocument {
+  dok_id?: string;
   beteckning: string; // e.g., "2018:218"
   titel: string;
   datum: string;
   organ: string;
   summary?: string;
+  html_url?: string;
 }
 
 interface IngestionStats {
@@ -60,6 +60,9 @@ interface IngestionStats {
 function parseArgs(): CLIOptions {
   const args = process.argv.slice(2);
   const options: CLIOptions = {
+    start: 1,
+    scope: 'major',
+    pageSize: DEFAULT_PAGE_SIZE,
     dryRun: false,
     skipExisting: true,
   };
@@ -69,12 +72,27 @@ function parseArgs(): CLIOptions {
       case '--limit':
         options.limit = parseInt(args[++i], 10);
         break;
+      case '--start':
+        options.start = parseInt(args[++i], 10);
+        break;
       case '--year-start':
         options.yearStart = parseInt(args[++i], 10);
         break;
       case '--year-end':
         options.yearEnd = parseInt(args[++i], 10);
         break;
+      case '--page-size':
+        options.pageSize = parseInt(args[++i], 10);
+        break;
+      case '--scope': {
+        const scope = args[++i] as IngestionScope;
+        if (scope === 'major' || scope === 'all-laws' || scope === 'all-laws-no-amendments' || scope === 'all-sfs') {
+          options.scope = scope;
+        } else {
+          throw new Error(`Invalid --scope value: ${scope}`);
+        }
+        break;
+      }
       case '--dry-run':
         options.dryRun = true;
         break;
@@ -84,75 +102,76 @@ function parseArgs(): CLIOptions {
     }
   }
 
+  if (Number.isNaN(options.start) || options.start < 1) {
+    throw new Error(`Invalid --start value: ${options.start}`);
+  }
+
+  if (options.limit != null && (Number.isNaN(options.limit) || options.limit < 1)) {
+    throw new Error(`Invalid --limit value: ${options.limit}`);
+  }
+
+  if (Number.isNaN(options.pageSize) || options.pageSize < 1) {
+    throw new Error(`Invalid --page-size value: ${options.pageSize}`);
+  }
+
   return options;
 }
 
-async function fetchAllSFSDocuments(options: CLIOptions): Promise<SFSDocument[]> {
-  const documents: SFSDocument[] = [];
-  let page = 1;
-  let hasMore = true;
+function decodeXmlEntities(value: string): string {
+  return value
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .trim();
+}
 
-  console.log('Fetching SFS document list from Riksdagen API...\n');
+function extractXMLTag(xml: string, tag: string): string | undefined {
+  const match = xml.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`, 'i'));
+  return match ? decodeXmlEntities(match[1]) : undefined;
+}
 
-  while (hasMore) {
-    const yearFilter = options.yearStart && options.yearEnd
-      ? `&utdatumfrom=${options.yearStart}-01-01&utdatumtom=${options.yearEnd}-12-31`
-      : '';
+function extractXmlAttr(xml: string, attr: string): string | undefined {
+  const match = xml.match(new RegExp(`${attr}="([^"]+)"`, 'i'));
+  return match ? decodeXmlEntities(match[1]) : undefined;
+}
 
-    const url = `${RIKSDAGEN_LIST_URL}/?doktyp=sfs&format=json&p=${page}${yearFilter}`;
-
-    try {
-      const response = await fetch(url);
-      const text = await response.text();
-
-      // API returns XML even when format=json is specified
-      // Parse the XML to extract document list
-      const docs = parseRiksdagenXML(text);
-
-      if (docs.length === 0) {
-        hasMore = false;
-      } else {
-        documents.push(...docs);
-        console.log(`Fetched page ${page}: ${docs.length} documents (total: ${documents.length})`);
-
-        if (options.limit && documents.length >= options.limit) {
-          hasMore = false;
-        } else {
-          page++;
-          await sleep(REQUEST_DELAY_MS);
-        }
-      }
-    } catch (error) {
-      console.error(`Error fetching page ${page}:`, error);
-      hasMore = false;
-    }
-  }
-
-  return documents.slice(0, options.limit);
+function normalizeRiksdagenUrl(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  if (value.startsWith('//')) return `https:${value}`;
+  if (value.startsWith('/')) return `https://data.riksdagen.se${value}`;
+  return value;
 }
 
 function parseRiksdagenXML(xml: string): SFSDocument[] {
   const documents: SFSDocument[] = [];
-
-  // Extract document blocks with regex (lightweight XML parsing)
-  const docMatches = xml.matchAll(/<dokument>.*?<\/dokument>/gs);
+  const docMatches = xml.matchAll(/<dokument>[\s\S]*?<\/dokument>/g);
 
   for (const match of docMatches) {
     const docXml = match[0];
 
+    const dok_id = extractXMLTag(docXml, 'dok_id') || extractXMLTag(docXml, 'id');
     const beteckning = extractXMLTag(docXml, 'beteckning');
     const titel = extractXMLTag(docXml, 'titel');
     const datum = extractXMLTag(docXml, 'datum');
     const organ = extractXMLTag(docXml, 'organ');
     const summary = extractXMLTag(docXml, 'summary');
+    const htmlUrl = normalizeRiksdagenUrl(
+      extractXMLTag(docXml, 'html_url') || extractXMLTag(docXml, 'dokument_url_html')
+    );
 
     if (beteckning && titel) {
       documents.push({
+        dok_id,
         beteckning,
         titel,
         datum: datum || '',
         organ: organ || '',
         summary,
+        html_url: htmlUrl,
       });
     }
   }
@@ -160,66 +179,154 @@ function parseRiksdagenXML(xml: string): SFSDocument[] {
   return documents;
 }
 
-function extractXMLTag(xml: string, tag: string): string | undefined {
-  const match = xml.match(new RegExp(`<${tag}>(.*?)<\/${tag}>`, 's'));
-  return match ? match[1].trim() : undefined;
+function parseDocDate(value: string): number {
+  const match = value.match(/\d{4}-\d{2}-\d{2}/);
+  if (!match) return 0;
+  const ts = Date.parse(`${match[0]}T00:00:00Z`);
+  return Number.isNaN(ts) ? 0 : ts;
+}
+
+function dedupeByBeteckning(documents: SFSDocument[]): SFSDocument[] {
+  const byId = new Map<string, SFSDocument>();
+
+  for (const doc of documents) {
+    const existing = byId.get(doc.beteckning);
+    if (!existing) {
+      byId.set(doc.beteckning, doc);
+      continue;
+    }
+
+    const existingDate = parseDocDate(existing.datum);
+    const nextDate = parseDocDate(doc.datum);
+    if (nextDate > existingDate) {
+      byId.set(doc.beteckning, doc);
+    }
+  }
+
+  return [...byId.values()];
+}
+
+async function fetchAllSFSDocuments(options: CLIOptions): Promise<{ rows: SFSDocument[]; totalRows: number; totalPages: number }> {
+  const rows: SFSDocument[] = [];
+  let page = 1;
+  let totalPages = 1;
+  let totalRows = 0;
+
+  console.log('Fetching SFS document list from Riksdagen API...\n');
+
+  while (page <= totalPages) {
+    const yearFilter = options.yearStart && options.yearEnd
+      ? `&utdatumfrom=${options.yearStart}-01-01&utdatumtom=${options.yearEnd}-12-31`
+      : '';
+
+    const url = `${RIKSDAGEN_LIST_URL}/?doktyp=sfs&format=json&sz=${options.pageSize}&p=${page}${yearFilter}`;
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'Swedish-Law-MCP/1.0 auto-ingest-all-statutes',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch page ${page}: HTTP ${response.status}`);
+    }
+
+    const text = await response.text();
+    if (page === 1) {
+      totalPages = Number(extractXmlAttr(text, 'sidor') ?? '1');
+      totalRows = Number(extractXmlAttr(text, 'traffar') ?? '0');
+      if (Number.isNaN(totalPages) || totalPages < 1) totalPages = 1;
+      if (Number.isNaN(totalRows) || totalRows < 0) totalRows = 0;
+      console.log(`Discovered ${totalRows} SFS rows across ${totalPages} pages\n`);
+    }
+
+    const docs = parseRiksdagenXML(text);
+    rows.push(...docs);
+
+    if (page % 5 === 0 || page === totalPages) {
+      console.log(`Fetched page ${page}/${totalPages}: +${docs.length} rows (total ${rows.length})`);
+    }
+
+    page++;
+    if (page <= totalPages) {
+      await sleep(LIST_REQUEST_DELAY_MS);
+    }
+  }
+
+  return { rows, totalRows, totalPages };
+}
+
+function isAmendmentTitle(title: string): boolean {
+  return /ändr|ändring|upph|upphävande|omtryck/i.test(title);
+}
+
+function isLawLikeTitle(title: string): boolean {
+  const isLaw = /\blag\b|\bbalken?\b/i.test(title);
+  const isConstitutionalOrdinance = /tryckfrihetsförordningen|regeringsformen|successionsordningen|riksdagsordningen/i.test(title);
+  return isLaw || isConstitutionalOrdinance;
 }
 
 function filterMajorLaws(documents: SFSDocument[]): SFSDocument[] {
   return documents.filter(doc => {
-    // Filter out minor amendments and trivial ordinances
-
-    // Exclude documents with "ändr" (amendment) or "upph" (repealed) in title
-    if (doc.titel.match(/ändr|upph|ändring|upphävande|omtryck/i)) {
-      return false;
-    }
-
-    // Exclude very short titles (likely trivial ordinances)
-    if (doc.titel.length < 20) {
-      return false;
-    }
-
-    // Exclude EU notifications/announcements
-    if (doc.titel.match(/tillkännagivande|kungörelse/i)) {
-      return false;
-    }
-
-    // Include only "lag" (law) documents and "balk" (codes), not standalone "förordning" (ordinance)
-    // Exception: Keep constitutional ordinances (Tryckfrihetsförordningen, etc.)
-    const isLaw = doc.titel.match(/\blag\b|\bbalken?\b/i);
-    const isConstitutionalOrdinance = doc.titel.match(/tryckfrihetsförordningen|regeringsformen|successionsordningen|riksdagsordningen/i);
-
-    if (!isLaw && !isConstitutionalOrdinance) {
-      return false;
-    }
-
-    return true;
+    if (isAmendmentTitle(doc.titel)) return false;
+    if (doc.titel.length < 20) return false;
+    if (/tillkännagivande|kungörelse/i.test(doc.titel)) return false;
+    return isLawLikeTitle(doc.titel);
   });
 }
 
-function getExistingSeedFiles(): Set<string> {
+function filterByScope(documents: SFSDocument[], scope: IngestionScope): SFSDocument[] {
+  switch (scope) {
+    case 'all-sfs':
+      return documents;
+    case 'all-laws':
+      return documents.filter(doc => isLawLikeTitle(doc.titel));
+    case 'all-laws-no-amendments':
+      return documents.filter(doc => isLawLikeTitle(doc.titel) && !isAmendmentTitle(doc.titel));
+    case 'major':
+    default:
+      return filterMajorLaws(documents);
+  }
+}
+
+function getExistingStatuteIds(): Set<string> {
   if (!fs.existsSync(OUTPUT_DIR)) {
     return new Set();
   }
 
   const files = fs.readdirSync(OUTPUT_DIR);
-  const sfsNumbers = new Set<string>();
+  const ids = new Set<string>();
 
   for (const file of files) {
-    if (file.endsWith('.json')) {
-      // Convert filename back to SFS number (e.g., "2018_218.json" → "2018:218")
-      const match = file.match(/(\d{4})[-_](\d+)\.json/);
-      if (match) {
-        sfsNumbers.add(`${match[1]}:${match[2]}`);
+    if (!file.endsWith('.json')) continue;
+
+    const fullPath = path.join(OUTPUT_DIR, file);
+    try {
+      const parsed = JSON.parse(fs.readFileSync(fullPath, 'utf8')) as { id?: string; type?: string };
+      if (parsed?.type === 'statute' && typeof parsed.id === 'string') {
+        ids.add(parsed.id);
+        continue;
       }
+    } catch {
+      // Fall back to filename parsing below.
+    }
+
+    const match = file.match(/^(\d{4})[-_](\d+)\.json$/);
+    if (match) {
+      ids.add(`${match[1]}:${match[2]}`);
     }
   }
 
-  return sfsNumbers;
+  return ids;
 }
 
 function safeFileName(sfsNumber: string): string {
-  return sfsNumber.replace(':', '_');
+  return sfsNumber.replace(/[:\s/\\]+/g, '_');
+}
+
+function selectWindow<T>(items: T[], start: number, limit?: number): T[] {
+  const startIndex = Math.max(0, start - 1);
+  const fromStart = items.slice(startIndex);
+  return limit ? fromStart.slice(0, limit) : fromStart;
 }
 
 async function sleep(ms: number): Promise<void> {
@@ -248,30 +355,59 @@ async function ingestBatch(
   for (let i = 0; i < documents.length; i++) {
     const doc = documents[i];
     const sfsNumber = doc.beteckning;
+    const progress = i + 1;
+    const shouldLogProgress = progress % 25 === 0 || progress === documents.length;
 
-    // Skip if already exists
     if (options.skipExisting && existing.has(sfsNumber)) {
-      console.log(`[${i + 1}/${documents.length}] SKIP ${sfsNumber} (already exists)`);
       stats.skipped++;
+      if (shouldLogProgress) {
+        console.log(
+          `[${progress}/${documents.length}] progress: ` +
+          `ok=${stats.succeeded} skipped=${stats.skipped} failed=${stats.failed}`
+        );
+      }
       continue;
     }
 
     const outputPath = path.join(OUTPUT_DIR, `${safeFileName(sfsNumber)}.json`);
 
     if (options.dryRun) {
-      console.log(`[${i + 1}/${documents.length}] DRY RUN: Would ingest ${sfsNumber} - ${doc.titel}`);
       stats.succeeded++;
+      if (shouldLogProgress) {
+        console.log(
+          `[${progress}/${documents.length}] dry-run progress: ` +
+          `would_ingest=${stats.succeeded} skipped=${stats.skipped}`
+        );
+      }
       continue;
     }
 
     try {
-      await ingest(sfsNumber, outputPath);
-      console.log(`[${i + 1}/${documents.length}] ✓ ${sfsNumber} - ${doc.titel.substring(0, 60)}...`);
+      if (doc.dok_id) {
+        await ingest(sfsNumber, outputPath, {
+          documentId: doc.dok_id,
+          title: doc.titel,
+          issuedDate: doc.datum,
+          htmlUrl: doc.html_url,
+          quiet: true,
+        });
+      } else {
+        // Fallback path for legacy records lacking dok_id in list feed.
+        await ingest(sfsNumber, outputPath, { quiet: true });
+      }
+
       stats.succeeded++;
-      await sleep(REQUEST_DELAY_MS);
+      if (shouldLogProgress) {
+        console.log(
+          `[${progress}/${documents.length}] progress: ` +
+          `ok=${stats.succeeded} skipped=${stats.skipped} failed=${stats.failed} ` +
+          `last_ok=${sfsNumber}`
+        );
+      }
+      await sleep(INGEST_REQUEST_DELAY_MS);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      console.error(`[${i + 1}/${documents.length}] ✗ ${sfsNumber} - ${message}`);
+      console.error(`[${progress}/${documents.length}] FAIL ${sfsNumber} - ${message}`);
       stats.failed++;
       stats.errors.push({ id: sfsNumber, error: message });
     }
@@ -281,14 +417,17 @@ async function ingestBatch(
 }
 
 function printStats(stats: IngestionStats, options: CLIOptions): void {
-  console.log('\n' + '='.repeat(70));
+  console.log('\n' + '='.repeat(72));
   console.log('INGESTION COMPLETE');
-  console.log('='.repeat(70));
+  console.log('='.repeat(72));
+  console.log(`Scope:                    ${options.scope}`);
+  console.log(`Window start:             ${options.start}`);
+  console.log(`Window limit:             ${options.limit ?? 'none'}`);
   console.log(`Total statutes processed: ${stats.total}`);
   console.log(`Skipped (already exist):  ${stats.skipped}`);
   console.log(`Successfully ingested:    ${stats.succeeded}`);
   console.log(`Failed:                   ${stats.failed}`);
-  console.log('='.repeat(70));
+  console.log('='.repeat(72));
 
   if (stats.failed > 0) {
     console.log('\nFailed ingestions:');
@@ -307,31 +446,42 @@ async function run(): Promise<void> {
 
   console.log('Automated Swedish Law Ingestion');
   console.log('================================\n');
+  console.log(`Scope: ${options.scope}`);
   console.log(`Year range: ${options.yearStart || 'all'} - ${options.yearEnd || 'all'}`);
+  console.log(`Start: ${options.start}`);
   console.log(`Limit: ${options.limit || 'none'}`);
+  console.log(`Page size: ${options.pageSize}`);
   console.log(`Dry run: ${options.dryRun ? 'YES' : 'NO'}`);
   console.log(`Skip existing: ${options.skipExisting ? 'YES' : 'NO'}\n`);
 
-  // Step 1: Fetch all SFS documents
-  const allDocuments = await fetchAllSFSDocuments(options);
-  console.log(`\nTotal SFS documents fetched: ${allDocuments.length}\n`);
+  const fetched = await fetchAllSFSDocuments(options);
+  const unique = dedupeByBeteckning(fetched.rows);
+  const scoped = filterByScope(unique, options.scope);
+  const selected = selectWindow(scoped, options.start, options.limit);
 
-  // Step 2: Filter for major laws
-  const majorLaws = filterMajorLaws(allDocuments);
-  console.log(`Filtered to major laws: ${majorLaws.length}\n`);
+  console.log(`\nFetched rows: ${fetched.rows.length} (API reported ${fetched.totalRows})`);
+  console.log(`Unique SFS IDs: ${unique.length}`);
+  console.log(`Scoped statutes (${options.scope}): ${scoped.length}`);
+  console.log(`Selected window: ${selected.length}`);
 
-  // Step 3: Get existing seed files
-  const existing = getExistingSeedFiles();
-  console.log(`Existing seed files: ${existing.size}\n`);
+  const existing = getExistingStatuteIds();
+  const scopedCoveredBefore = scoped.filter(doc => existing.has(doc.beteckning)).length;
+  const selectedCoveredBefore = selected.filter(doc => existing.has(doc.beteckning)).length;
+  console.log(`\nExisting statute seeds (all): ${existing.size}`);
+  console.log(`Coverage before (scope): ${scopedCoveredBefore}/${scoped.length}`);
+  console.log(`Coverage before (selected window): ${selectedCoveredBefore}/${selected.length}\n`);
 
-  // Step 4: Ingest batch
-  const stats = await ingestBatch(majorLaws, options, existing);
-
-  // Step 5: Print stats
+  const stats = await ingestBatch(selected, options, existing);
   printStats(stats, options);
 
+  if (!options.dryRun) {
+    const after = getExistingStatuteIds();
+    const scopedCoveredAfter = scoped.filter(doc => after.has(doc.beteckning)).length;
+    console.log(`\nCoverage after (scope): ${scopedCoveredAfter}/${scoped.length}`);
+  }
+
   if (!options.dryRun && stats.succeeded > 0) {
-    console.log('\n✓ Run `npm run build:db` to rebuild database with new statutes');
+    console.log('\nRun `npm run build:db` to rebuild the database with new statutes.');
   }
 }
 

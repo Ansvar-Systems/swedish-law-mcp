@@ -1,0 +1,21 @@
+{
+  "id": "1993:406",
+  "type": "statute",
+  "title": "Lag (1993:406) om kommunalt stöd till boendet",
+  "status": "repealed",
+  "issued_date": "1993-05-27",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-406.html",
+  "description": "Upphävd 2009-03-01 genom SFS 2009:47",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En kommun får lämna enskilda hushåll ekonomiskt stöd i syfte att minska deras kostnader för att anskaffa eller inneha en permanentbostad. En kommun får också ställa säkerhet för att ett avtal om hyra av bostadslägenhet fullgörs i syfte att enskilda hushåll skall få en permanentbostad med hyresrätt som är förenad med rätt till förlängning, om det enskilda hushållets behov av en sådan bostad inte kan tillgodoses på annat sätt. Lag (2007:479)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Denna lag inskränker inte de skyldigheter som en kommun har enligt socialtjänstlagen (2001:453). Lag (2007:479)."
+    }
+  ]
+}

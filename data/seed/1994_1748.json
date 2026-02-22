@@ -1,0 +1,29 @@
+{
+  "id": "1994:1748",
+  "type": "statute",
+  "title": "Lag (1994:1748) om förvaltning av vissa tilläggspensionsavgifter",
+  "status": "repealed",
+  "issued_date": "1994-12-20",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-1748.html",
+  "description": "Upphävd 1999-01-01 genom SFS 1998:675",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag gäller förvaltningen av de penningmedel som enligt"
+    },
+    {
+      "provision_ref": "4:2",
+      "chapter": "4",
+      "section": "2",
+      "title": "Förvaltade medel skall finansiera framtida pensioner.",
+      "content": "Medlen skall placeras på räntebärande konto hos Riksgäldskontoret. Räntan på medlen skall vara marknadsmässig och läggas till kapitalet."
+    },
+    {
+      "provision_ref": "4:3",
+      "chapter": "4",
+      "section": "3",
+      "content": "Riksgäldskontoret skall senast den 31 mars varje år till regeringen lämna uppgift om ställningen på kontot den 31 december året före och den ränta som under det året tillgodoräknats kontot. Övergångsbestämmelser 1998:675 Bestämmelserna i 3 § den upphävda lagen skall fortfarande tillämpas i fråga om redovisning år 1999."
+    }
+  ]
+}

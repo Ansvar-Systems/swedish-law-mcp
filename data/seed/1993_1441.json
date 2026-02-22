@@ -1,0 +1,40 @@
+{
+  "id": "1993:1441",
+  "type": "statute",
+  "title": "Lag (1993:1441) om allmän avgift för finansiering av kontantförmåner vid arbetslöshet",
+  "status": "repealed",
+  "issued_date": "1993-12-16",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-1441.html",
+  "description": "Upphävd 1995-01-01 genom SFS 1994:1676",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Allmän avgift för finansiering av kontantförmåner vid arbetslöshet skall för varje år betalas av den som uppbär sådan inkomst som avses i 2 §. Avgiften utgör för år 1994 en procent av inkomsten och för år 1995 och följande år två procent av inkomsten. Avgiften avrundas till närmaste hela hundratal kronor. Avgift som slutar på 50 kronor avrundas till närmaste lägre hundratal kronor. Avgiften skall användas för finansiering av arbetslöshetsersättning enligt lagen (1973:370) om arbetslöshetsförsäkring och kontant arbetsmarknadsstöd enligt lagen (1973:371) om kontant arbetsmarknadsstöd."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avgiften beräknas på sådan inkomst av anställning som avses i"
+    },
+    {
+      "provision_ref": "11:3",
+      "chapter": "11",
+      "section": "3",
+      "title": "Avgiften beräknas på summan av inkomsterna till den del summan",
+      "content": "Avgift betalas av den som vid årets ingång inte har fyllt 65 år. Avgift betalas dock inte av den som har sådana inkomster som avses i 2 §, om dessa understiger 25 procent av det vid årets ingång gällande basbeloppet enligt lagen (1962:381) om allmän försäkring."
+    },
+    {
+      "provision_ref": "11:4",
+      "chapter": "11",
+      "section": "4",
+      "content": "Avgiftsunderlaget skall för varje år fastställas av skattemyndigheten i samband med taxeringen till statlig och kommunal inkomstskatt."
+    },
+    {
+      "provision_ref": "11:5",
+      "chapter": "11",
+      "section": "5",
+      "content": "Bestämmelserna i taxeringslagen (1990:324) och uppbördslagen (1953:272) gäller för avgift enligt denna lag. Avgiften förs till staten. Övergångsbestämmelser 1993:1441 Denna lag träder i kraft den 1 januari 1994 och tillämpas på avgiftspliktig inkomst som uppbärs från och med den dagen. Omfattar beskattningsåret tid såväl före som efter utgången av år 1993 skall, om den avgiftsskyldige inte visar annat, så stor del av beskattningsårets inkomst anses hänförlig till tiden efter utgången av år 1993 som svarar mot förhållandet mellan den del av beskattningsåret som infaller under denna tid och hela beskattningsåret. Samma sak gäller när beskattningsåret omfattar tid såväl före som efter utgången av år 1994. 1994:1675 Den upphävda lagen gäller dock fortfarande i fråga om avgift som avser tiden före den 1 januari 1995."
+    }
+  ]
+}

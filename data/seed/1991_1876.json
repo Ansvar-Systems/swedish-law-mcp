@@ -1,0 +1,26 @@
+{
+  "id": "1991:1876",
+  "type": "statute",
+  "title": "Lag (1991:1876) om avvikelser från vissa bestämmelser i lagen (1988:589) om ersättning m.m. till riksdagens ledamöter;",
+  "status": "repealed",
+  "issued_date": "1991-12-12",
+  "url": "https://data.riksdagen.se/dokument/sfs-1991-1876.html",
+  "description": "Upphävd 1993-04-01 genom SFS 1993:147",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "För tiden den 1 januari 1992--den 31 mars 1993 skall i stället för bestämmelserna om ledamotsarvode i 3 § första stycket lagen (1988:589) om ersättning m. m. till riksdagens ledamöter gälla vad som föreskrivs i 2 och 3 §§."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För tiden den 1 januari 1992--den 31 mars 1992 skall ledamotsarvodet betalas med 22 230 kronor i månaden."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "För tiden den 1 april 1992--den 31 mars 1993 skall ledamotsarvodet enligt 2 § höjas med det belopp som motsvarar den genomsnittliga höjning av månadslönen som för tid fr. o. m. den 1 april 1992 kan tillkomma de statstjänstemän som anges i 3 § första stycket lagen (1988:589) om ersättning m.m. till riksdagens ledamöter. 1991:1876 Denna lag träder i kraft den 1 januari 1992, då lagen (1990:1417) om avvikelser från vissa bestämmelser i lagen (1988:589) om ersättning m. m. till riksdagens ledamöter skall upphöra att gälla."
+    }
+  ]
+}

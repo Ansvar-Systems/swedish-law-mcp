@@ -1,0 +1,51 @@
+{
+  "id": "1987:24",
+  "type": "statute",
+  "title": "Lag (1987:24) om kommunal parkeringsövervakning m.m.",
+  "status": "in_force",
+  "issued_date": "1987-01-29",
+  "url": "https://data.riksdagen.se/dokument/sfs-1987-24.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Inledande bestämmelse",
+      "content": "Med parkeringsövervakning avses i denna lag övervakning av efterlevnaden av sådana föreskrifter om parkering eller stannande av fordon som omfattas av ett förordnande enligt 1 § lagen (1976:206) om felparkeringsavgift. Beslut om kommunal parkeringsövervakning"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Om det för parkeringsövervakningen i en kommun behövs parkeringsvakter, får kommunen besluta att den själv skall svara för övervakningen. I beslutet skall anges det område som parkeringsövervakningen skall omfatta och det minsta antal parkeringsvakter som behövs där."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Kommunen ska underrätta Polismyndigheten om beslut enligt 2 § och om ändringar i sådana beslut. Lag (2014:724). Samråd"
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Kommunen ska samråda med Polismyndigheten om den allmänna inriktningen och omfattningen av parkeringsövervakningen. Samråd ska också ske, om Polismyndigheten begär det med anledning av en händelse som beräknas kräva särskilda insatser i fråga om parkeringsövervakning. Lag (2014:724). Personal"
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Parkeringsövervakningen skall fullgöras av parkeringsvakter som har genomgått lämplig utbildning för uppgiften. Föreskrifter om personalens utbildning och utrustning meddelas av regeringen eller av den myndighet som regeringen bestämmer."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Parkeringsvakter förordnas av kommunen. Till parkeringsvakter får förordnas arbetstagare hos 1. kommunen, 2. andra kommuner, 3. kommunala parkeringsaktiebolag, 4. sådana kommunala trafikaktiebolag som inom kommunen bedriver linjetrafik enligt yrkestrafiklagen (2012:210), 5. sådana bevakningsföretag som omfattas av lagen (1974:191) om bevakningsföretag. Som ett förordnande enligt första stycket ska också anses ett beslut av kommunen om anställning som parkeringsvakt eller motsvarande. Lag (2012:213). Beslut om utvidgade uppgifter för parkeringsvakter"
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "Kommunen kan efter samråd med Polismyndigheten besluta att parkeringsvakter får tas i anspråk för att biträda polismän vid fullgörande av trafikövervakningsuppgifter. Lag (2014:724)."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Har upphävts genom lag (2004:1168). Övergångsbestämmelser 2004:1168 Ett förordnande som avses i 8 § och som gäller vid utgången av juni 2005 upphör att gälla senast vid utgången av juni 2010."
+    }
+  ]
+}

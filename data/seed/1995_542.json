@@ -1,0 +1,31 @@
+{
+  "id": "1995:542",
+  "type": "statute",
+  "title": "Lag (1995:542) om dubbelbeskattningsavtal mellan Sverige och Malaysia",
+  "status": "repealed",
+  "issued_date": "1995-05-11",
+  "url": "https://data.riksdagen.se/dokument/sfs-1995-542.html",
+  "description": "Upphävd 2005-12-31 genom SFS 2004:874",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för undvikande av dubbelbeskattning och förhindrande av skatteflykt beträffande inkomstskatter som Sverige och Malaysia undertecknade den 21 november 1970 skall, tillsammans med det protokoll som är fogat till avtalet och som utgör en del av detta, gälla som lag här i landet. Avtalet är avfattat på engelska. Avtalets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Om en person som är bosatt i Sverige förvärvar inkomst som enligt bestämmelserna i avtalet beskattas endast i Malaysia, skall sådan inkomst inte tas med vid taxeringen i Sverige."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Vid tillämpning av avtalet skall inte bolag som omfattas av den särskilda skatteordningen på ön Labuan (Labuan Offshore Business Activity Tax Act, 1990) eller av liknande lagstiftning, anses som person med hemvist i Malaysia. Övergångsbestämmelser 1995:542 1. Denna lag träder i kraft den 30 juni 1995 och tillämpas första gången vid 1996 års taxering. I fråga om beskattningsår som påbörjats före ikraftträdandet gäller dock äldre bestämmelser. 2. Genom lagen upphävs kungörelsen (1971:1252) om tillämpning av avtal mellan Sverige och Malaysia för undvikande av dubbelbeskattning och förhindrande av skatteflykt beträffande inkomstskatter, m. m. och kungörelsen (1971:1253) om kupongskatt för person med hemvist i Malaysia, m. m."
+    }
+  ]
+}

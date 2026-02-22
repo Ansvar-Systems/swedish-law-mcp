@@ -1,0 +1,20 @@
+{
+  "id": "2007:73",
+  "type": "statute",
+  "title": "Lag (2007:73) om tingsrätts behörighet i vissa fall",
+  "status": "in_force",
+  "issued_date": "2007-03-01",
+  "url": "https://data.riksdagen.se/dokument/sfs-2007-73.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "När det av lag eller någon annan författning följer att behörig domstol är tingsrätten i den ort där en juridisk person eller dess styrelse har sitt säte gäller, om kommunen där sätet finns ingår i mer än en domkrets, att den tingsrätt inom vars domkrets den juridiska personen har sin postadress ska vara behörig. Saknar den juridiska personen postadress inom någon av de domkretsar som kommunen ingår i, ska i stället den tingsrätt inom vars domkrets kommunens fullmäktige regelmässigt sammanträder vara behörig. Lag (2018:420)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Om den juridiska personen är registrerad i handelsregistret, aktiebolagsregistret eller ett liknande offentligt register, skall den juridiska personen anses ha den postadress som är antecknad i det registret."
+    }
+  ]
+}

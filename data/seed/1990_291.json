@@ -1,0 +1,51 @@
+{
+  "id": "1990:291",
+  "type": "statute",
+  "title": "Lag (1990:291) om obeställbara postförsändelser",
+  "status": "repealed",
+  "issued_date": "1990-05-17",
+  "url": "https://data.riksdagen.se/dokument/sfs-1990-291.html",
+  "description": "Upphävd 1994-03-01 genom SFS 1993:1684",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Denna lag gäller behandlingen hos postverket av obeställbara postförsändelser. En försändelse är obeställbar om 1. den inte kan delas ut till adressaten, 2. den är ofrankerad eller otillräckligt frankerad och adressaten inte löser ut den, 3. den har återsänts till postverket av en utländsk postförvaltning."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "En obeställbar försändelse skall om möjligt återställas till avsändaren."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Tillslutna försändelser som är obeställbara får öppnas av postverket, om kuvertet eller omslaget saknar sådana uppgifter om avsändaren att försändelsen kan återställas till denne."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "En öppnad försändelse får inte undersökas närmare än som behövs för att försändelsen skall kunna återställas till avsändaren och, beträffande försändelser som avses i 1 § 1, delas ut till adressaten."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Tillslutna försändelser skall öppnas vid en särskild enhet hos postverket."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Öppnade försändelser som fortfarande är obeställbara skall förvaras hos postverket. Förvaringstidens längd bestäms av postverket. Innehåll som är utsatt för försämring eller består av trycksaker, reklamblad eller liknande som kan antas sakna värde får omedelbart förstöras."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "En öppnad försändelse som inte har kunnat lämnas ut tillfaller staten vid förvaringstidens utgång. Skriftliga meddelanden skall då omedelbart förstöras. Annan egendom än pengar och frimärken skall säljas, om det lämpligen kan ske och en försäljning inte kan antas medföra kränkning av någons personliga integritet. I annat fall skall egendomen förstöras."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Ett belopp som betalats in till postverket och som postverket varken kan förmedla till mottagaren eller återställa till inbetalaren tillfaller staten två år efter det att inbetalningen gjordes."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1985:349",
+  "type": "statute",
+  "title": "Lag (1985:349) om överlämnande av förvaltningsuppgifter inom Utrikesdepartementets verksamhetsområde",
+  "status": "repealed",
+  "issued_date": "1985-05-15",
+  "url": "https://data.riksdagen.se/dokument/sfs-1985-349.html",
+  "description": "Upphävd 2009-01-01 genom SFS 2008:1297",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stiftelsen Svenska institutet prövar 1. frågor om statliga stipendier för att främja journalistutbyte, internationellt kulturutbyte, internationellt utbyte inom studier och forskning samt internationellt erfarenhetsutbyte, 2. frågor om statsbidrag till internationellt kulturutbyte inklusive kulturutbyte med utvecklingsländer, svensk litteratur i utlandet, internationellt utbyte inom studier och forskning samt internationellt erfarenhetsutbyte."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Institutet får, i fråga om vid institutet anställd personal, fatta sådana beslut som avser myndighetsutövning i den mån inte annat är föreskrivet."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Förvaltningsuppgifter som avses i denna lag utövas enligt föreskrifter som regeringen beslutar. Regeringen kan besluta om undantag från föreskrifterna i denna lag."
+    }
+  ]
+}

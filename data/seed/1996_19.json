@@ -1,0 +1,20 @@
+{
+  "id": "1996:19",
+  "type": "statute",
+  "title": "Lag (1996:19) om begränsning av rätten att bedriva linjesjöfart på Gotland",
+  "status": "in_force",
+  "issued_date": "1996-01-11",
+  "url": "https://data.riksdagen.se/dokument/sfs-1996-19.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Regeringen bemyndigas att meddela föreskrifter om begränsning av rätten att utföra regelbundna sjötransporter mellan Gotland och svensk hamn utanför Gotland."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den som bryter mot föreskrift som har meddelats med stöd av 1 § döms till böter."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1988:1555",
+  "type": "statute",
+  "title": "Lag (1988:1555) om landgille och städja förvissa församlings- kyrkors fastigheter i Lunds och Göteborgs stift",
+  "status": "repealed",
+  "issued_date": "1988-12-15",
+  "url": "https://data.riksdagen.se/dokument/sfs-1988-1555.html",
+  "description": "Upphävd 2000-01-01 genom SFS 1999:292",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Lagens tillämpningsområde",
+      "content": "Denna lag innehåller bestämmelser om avgifter för sådana församlings- kyrkors fastigheter i Lunds stift och Göteborgs stift som skall brukas under en prästgård eller något annat visst hemman. Lagen skall tillämpas när landgillet eller städjan vid ett åbobyte inte har fastställts av kammarkollegiet efter skattläggning. Fastställande av avgifter"
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Frågor om storleken av den avgift som skall betalas till församlingskyrkan skall prövas av egendomsnämnden. Överklagande"
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Egendomsnämndens beslut får överklagas hos kammarkollegiet. Kammarkollegiets beslut får inte överklagas."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2004:1385",
+  "type": "statute",
+  "title": "Lag (2004:1385) om kreditering på skattekonto av stöd för investeringar i källsorteringsutrymmen",
+  "status": "repealed",
+  "issued_date": "2004-12-22",
+  "url": "https://data.riksdagen.se/dokument/sfs-2004-1385.html",
+  "description": "Upphävd 2016-08-01 genom SFS 2016:790",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Stöd för investeringar i källsorteringsutrymmen som länsstyrelsen beviljat en fastighetsägare och som avser stödberättigande åtgärder som har utförts under perioden 1 januari 2005-31 december 2006 får tillgodoföras fastighetsägaren genom kreditering på sådant skattekonto som har upprättats för denne enligt 3 kap. 5 § skattebetalningslagen (1997:483)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen eller den myndighet regeringen bestämmer får meddela närmare föreskrifter om det stöd som enligt 1 § får krediteras skattekonto."
+    }
+  ]
+}

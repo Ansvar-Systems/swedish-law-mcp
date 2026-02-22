@@ -1,0 +1,26 @@
+{
+  "id": "2004:1225",
+  "type": "statute",
+  "title": "Lag (2004:1225) om vissa kommunala befogenheter i fråga om sjuktransporter",
+  "status": "repealed",
+  "issued_date": "2004-12-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-2004-1225.html",
+  "description": "Upphävd 2009-03-01 genom SFS 2009:47",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En kommun får ingå avtal med ett landsting om att utföra sådana transporter som avses i 6 § hälso- och sjukvårdslagen (1982:763). En kommun får även ingå avtal med ett landsting om att utföra hälso- och sjukvård i väntan på sådana transporter."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Den verksamhet avtalet gäller får drivas utan sådan anknytning till kommunens område eller dess medlemmar som avses i 2 kap. 1 § kommunallagen (1991:900)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Verksamheten skall drivas på affärsmässiga grunder."
+    }
+  ]
+}

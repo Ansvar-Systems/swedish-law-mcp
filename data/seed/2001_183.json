@@ -1,0 +1,210 @@
+{
+  "id": "2001:183",
+  "type": "statute",
+  "title": "Lag (2001:183) om behandling av personuppgifter i verksamhet med val och folkomröstningar",
+  "status": "in_force",
+  "issued_date": "2001-04-19",
+  "url": "https://data.riksdagen.se/dokument/sfs-2001-183.html",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "title": "Lagens tillämpningsområde",
+      "content": "Denna lag tillämpas vid behandling av personuppgifter 1. i den centrala valmyndighetens och länsstyrelsernas verksamhet med val och folkomröstningar enligt vallagen (2005:837), folkomröstningslagen (1979:369) och lagen (1994:692) om kommunala folkomröstningar, samt 2. i den centrala valmyndighetens, Sametingets och länsstyrelsens verksamhet med val enligt sametingslagen (1992:1433), om behandlingen är helt eller delvis automatiserad eller om uppgifterna ingår i eller är avsedda att ingå i en strukturerad samling av personuppgifter som är tillgängliga för sökning eller sammanställning enligt särskilda kriterier. Lag (2005:846). Förhållandet till annan reglering"
+    },
+    {
+      "provision_ref": "1:2",
+      "chapter": "1",
+      "section": "2",
+      "content": "Denna lag kompletterar Europaparlamentets och rådets förordning (EU) 2016/679 av den 27 april 2016 om skydd för fysiska personer med avseende på behandling av personuppgifter och om det fria flödet av sådana uppgifter och om upphävande av direktiv 95/46/EG (allmän dataskyddsförordning), här benämnd EU:s dataskyddsförordning. Lag (2018:221)."
+    },
+    {
+      "provision_ref": "1:3",
+      "chapter": "1",
+      "section": "3",
+      "content": "Vid behandling av personuppgifter enligt denna lag gäller lagen (2018:218) med kompletterande bestämmelser till EU:s dataskyddsförordning och föreskrifter som har meddelats i anslutning till den lagen, om inte annat följer av denna lag eller föreskrifter som har meddelats i anslutning till lagen. Lag (2018:221). Ändamål"
+    },
+    {
+      "provision_ref": "1:4",
+      "chapter": "1",
+      "section": "4",
+      "content": "Uppgifter får behandlas för tillhandahållande av information som behövs för 1. framställning av röstlängder och röstkort inför ett val eller en folkomröstning, 2. framställning av valsedlar och sammanräkning av valresultat, och 3. tillsyn, kontroll, uppföljning och planering av verksamheten."
+    },
+    {
+      "provision_ref": "1:5",
+      "chapter": "1",
+      "section": "5",
+      "content": "Uppgifter får behandlas i databasen för att tillgodose samhällets behov av uppgifter i samband med val och folkomröstningar."
+    },
+    {
+      "provision_ref": "1:5 a",
+      "chapter": "1",
+      "section": "5 a",
+      "content": "Personuppgifter som behandlas enligt 4 eller 5 § får behandlas även för andra ändamål, under förutsättning att uppgifterna inte behandlas på ett sätt som är oförenligt med det ändamål för vilket uppgifterna samlades in. Lag (2018:221). Personuppgiftsansvar"
+    },
+    {
+      "provision_ref": "1:6",
+      "chapter": "1",
+      "section": "6",
+      "content": "Den centrala valmyndigheten, Sametinget och länsstyrelserna är var för sig personuppgiftsansvariga för den behandling av personuppgifter som respektive myndighet skall utföra. Lag (2004:539). Behandling av känsliga personuppgifter m.m."
+    },
+    {
+      "provision_ref": "1:7",
+      "chapter": "1",
+      "section": "7",
+      "content": "Personuppgifter som avses i artikel 9.1 i EU:s dataskyddsförordning (känsliga personuppgifter) och personuppgifter som avses i artikel 10 i förordningen får behandlas endast om uppgifterna har lämnats i ett ärende eller är nödvändiga för handläggningen av det. Uppgifter som avses i första stycket får i annat fall behandlas endast om det särskilt anges i 2 kap. Lag (2018:221). Rätten att göra invändningar"
+    },
+    {
+      "provision_ref": "1:8",
+      "chapter": "1",
+      "section": "8",
+      "content": "Artikel 21.1 i EU:s dataskyddsförordning om rätten att göra invändningar gäller inte vid sådan behandling som är tillåten enligt denna lag eller föreskrifter som har meddelats i anslutning till lagen. Lag (2018:221)."
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Val- och folkomröstningsdatabas",
+      "content": "I den centrala valmyndighetens och länsstyrelsernas verksamhet med val och folkomröstningar enligt 1 kap. 1 § 1 skall det finnas en samling personuppgifter som med hjälp av automatiserad behandling används gemensamt i verksamheten för de i 1 kap. 4 och 5 §§ angivna ändamålen (val- och folkomröstningsdatabas). Lag (2004:539). Innehåll"
+    },
+    {
+      "provision_ref": "2:2",
+      "chapter": "2",
+      "section": "2",
+      "content": "I databasen får uppgifter behandlas om personer som 1. kan antas komma att vara röstberättigade den dag som ett val eller en folkomröstning skall hållas, eller 2. är kandidater i val. Uppgifter om andra personer än dem som anges i första stycket får behandlas om det behövs för handläggningen av ett ärende."
+    },
+    {
+      "provision_ref": "2:3",
+      "chapter": "2",
+      "section": "3",
+      "content": "När det gäller en person som avses i 2 § 1 får i databasen behandlas uppgifter om födelsetid, personnummer, namn, adress, folkbokföringsort, fastighetsbeteckning, valdistrikt, medborgarskap samt tidpunkt för invandring. För en person som inte är folkbokförd i Sverige får dessutom uppgift om tidpunkt för utvandring och för anmälan enligt 5 kap. 2 § vallagen (2005:837) behandlas. Lag (2013:1158)."
+    },
+    {
+      "provision_ref": "2:4",
+      "chapter": "2",
+      "section": "4",
+      "content": "När det gäller en person som avses i 2 § 2 får i databasen behandlas uppgifter om födelsetid, personnummer, namn, adress, folkbokföringsort, medborgarskap, födelseort samt partibeteckning och övriga uppgifter som avses i 6 kap. 1-3 §§ vallagen (2005:837) på valsedlar där personen är upptagen. Lag (2013:1158)."
+    },
+    {
+      "provision_ref": "2:5",
+      "chapter": "2",
+      "section": "5",
+      "content": "I databasen får behandlas uppgifter om yrkanden, grunder och beslut i ett ärende."
+    },
+    {
+      "provision_ref": "2:6",
+      "chapter": "2",
+      "section": "6",
+      "content": "En handling som har kommit in i ett ärende får behandlas i databasen och får innehålla uppgifter som avses i 1 kap. 7 §. En handling som upprättats i ett ärende får behandlas i databasen och får innehålla sådana uppgifter om de är nödvändiga för ärendets handläggning. Utlämnande av uppgifter till enskilda på medium för automatiserad behandling"
+    },
+    {
+      "provision_ref": "2:7",
+      "chapter": "2",
+      "section": "7",
+      "content": "Uppgifter i databasen får lämnas ut till en enskild på medium för automatiserad behandling endast om regeringen har meddelat föreskrifter om det. Direktåtkomst"
+    },
+    {
+      "provision_ref": "2:8",
+      "chapter": "2",
+      "section": "8",
+      "content": "Den centrala valmyndigheten och länsstyrelserna får ha direktåtkomst till uppgifter som avses i 3-6 §§. De kommunala valnämnderna får ha direktåtkomst till uppgifter som avses i 3-5 §§. Lag (2008:1275)."
+    },
+    {
+      "provision_ref": "2:9",
+      "chapter": "2",
+      "section": "9",
+      "content": "En enskild får ha direktåtkomst till sådana uppgifter om sig själv i databasen som får lämnas ut till honom, om regeringen har meddelat föreskrifter om det. Om regeringen eller den myndighet regeringen bestämmer meddelat föreskrifter om det får enskilda ha direktåtkomst till de uppgifter om kandidater som finns på valsedlar och uppgifter om valresultat. Sökbegrepp"
+    },
+    {
+      "provision_ref": "2:10",
+      "chapter": "2",
+      "section": "10",
+      "content": "Vid sökning i databasen får uppgift om medborgarskap inte användas som sökbegrepp annat än i fråga om medborgarskap i ett land inom Europeiska unionen eller i Island eller Norge."
+    },
+    {
+      "provision_ref": "2:11",
+      "chapter": "2",
+      "section": "11",
+      "content": "Vid sökning efter handlingar som avses i 6 § får endast uppgift om namn och personnummer samt uppgifter som avses i 5 kap. 2 § offentlighets- och sekretesslagen (2009:400) användas som sökbegrepp. Som sökbegrepp får dock inte uppgift som avses i 1 kap. 7 § användas. Lag (2009:493). Längsta tid för behandling"
+    },
+    {
+      "provision_ref": "2:12",
+      "chapter": "2",
+      "section": "12",
+      "content": "Uppgifter om en person som avses i 2 § 1 får inte behandlas under längre tid än en månad efter det att det val eller den folkomröstning som uppgifterna hänför sig till har fått laga kraft. Om flera val hålls samtidigt får uppgifterna inte behandlas under längre tid än en månad efter det att samtliga val har fått laga kraft. Uppgifter om en person som avses i 2 § 2 får inte behandlas under längre tid än en månad efter utgången av den valperiod som uppgifterna hänför sig till. Begränsningarna av hur länge personuppgifter får behandlas hindrar inte att en myndighet arkiverar och bevarar allmänna handlingar eller att arkivmaterial lämnas till en arkivmyndighet. Lag (2024:524)."
+    },
+    {
+      "provision_ref": "2:13",
+      "chapter": "2",
+      "section": "13",
+      "content": "Har upphävts genom lag (2024:524). Avgifter"
+    },
+    {
+      "provision_ref": "2:14",
+      "chapter": "2",
+      "section": "14",
+      "content": "Den centrala valmyndigheten och länsstyrelserna får ta ut avgifter för att lämna ut uppgifter ur databasen. Regeringen kan med stöd av 8 kap. 7 § regeringsformen meddela föreskrifter om sådana avgifter. Rätten att ta ut avgifter får inte innebära en inskränkning i 1. rätten att ta del av och mot fastställd avgift få kopia eller utskrift av en allmän handling enligt tryckfrihetsförordningen, eller 2. en registrerads rätt enligt artikel 12.5 i EU:s dataskyddsförordning. Lag (2018:221). Databas för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:15",
+      "chapter": "2",
+      "section": "15",
+      "content": "I den centrala valmyndighetens, Sametingets och länsstyrelsens verksamhet med val enligt 1 kap. 1 § 2 skall det finnas en samling personuppgifter som med hjälp av automatiserad behandling används gemensamt i verksamheten för de ändamål som anges i 1 kap. 4 och 5 §§ (databas för sametingsvalet). Lag (2004:539). Innehåll i databasen för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:16",
+      "chapter": "2",
+      "section": "16",
+      "content": "I databasen får uppgifter behandlas om personer som 1. har tagits upp i sameröstlängden, eller 2. är kandidater till Sametinget. Uppgifter om andra personer än dem som anges i första stycket får behandlas om det behövs för handläggningen av ett ärende. Lag (2004:539)."
+    },
+    {
+      "provision_ref": "2:17",
+      "chapter": "2",
+      "section": "17",
+      "content": "De uppgifter som i databasen får behandlas om en person som avses i 16 § första stycket 1 är personnummer, namn, adress, födelsetid, folkbokföringsort, medborgarskap, tidpunkt för invandring och tidpunkt för utvandring. Lag (2024:524)."
+    },
+    {
+      "provision_ref": "2:18",
+      "chapter": "2",
+      "section": "18",
+      "content": "De uppgifter som i databasen får behandlas om en person som avses i 16 § första stycket 2 är personnummer, namn, adress, födelsetid, folkbokföringsort, medborgarskap, tidpunkt för invandring, tidpunkt för utvandring, beteckning för gruppen, partiet eller den liknande sammanslutningen och övriga uppgifter som enligt 3 kap. 10 § sametingslagen (1992:1433) ska finnas på valsedlar där personen är upptagen. Lag (2024:524)."
+    },
+    {
+      "provision_ref": "2:19",
+      "chapter": "2",
+      "section": "19",
+      "content": "Vad som sägs i 5-7 §§ om behandling av uppgifter i ett ärende, behandling av handlingar i ett ärende och utlämnande av uppgifter till enskilda gäller även databasen för sametingsvalet. Lag (2004:539). Direktåtkomst till databasen för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:20",
+      "chapter": "2",
+      "section": "20",
+      "content": "Den centrala valmyndigheten, länsstyrelsen och Sametinget får ha direktåtkomst till de uppgifter som avses i 17-19 §§. Lag (2004:539)."
+    },
+    {
+      "provision_ref": "2:21",
+      "chapter": "2",
+      "section": "21",
+      "content": "Vad som sägs i 9 § om en enskilds rätt till direktåtkomst gäller även databasen för sametingsvalet. Lag (2004:539). Sökbegrepp vid sökning i databasen för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:22",
+      "chapter": "2",
+      "section": "22",
+      "content": "Vad som sägs i 10 och 11 §§ om sökbegrepp gäller på motsvarande sätt vid sökning i databasen för sametingsvalet. Lag (2004:539). Längsta tid för behandling i databasen för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:23",
+      "chapter": "2",
+      "section": "23",
+      "content": "Uppgifter om en person som avses i 16 § första stycket 1 och 2 får inte behandlas längre än en månad efter utgången av den valperiod som uppgifterna hänför sig till. Begränsningarna av hur länge personuppgifter får behandlas hindrar inte att en myndighet arkiverar och bevarar allmänna handlingar eller att arkivmaterial lämnas till en arkivmyndighet. Lag (2024:524). Avgifter för utlämnande av uppgifter ur databasen för sametingsvalet"
+    },
+    {
+      "provision_ref": "2:24",
+      "chapter": "2",
+      "section": "24",
+      "content": "Den centrala valmyndigheten, Sametinget och länsstyrelsen får ta ut avgifter för att lämna ut uppgifter ur databasen för sametingsvalet. Regeringen kan med stöd av 8 kap. 7 § regeringsformen meddela föreskrifter om sådana avgifter. Rätten att ta ut avgifter får inte innebära en inskränkning i 1. rätten att ta del av och mot fastställd avgift få kopia eller utskrift av en allmän handling enligt tryckfrihetsförordningen, eller 2. en registrerads rätt enligt artikel 12.5 i EU:s dataskyddsförordning. Lag (2018:221)."
+    }
+  ]
+}

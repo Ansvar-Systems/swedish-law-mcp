@@ -1,0 +1,30 @@
+{
+  "id": "1992:17",
+  "type": "statute",
+  "title": "Lag (1992:17) om dubbelbeskattningsavtal mellan Sverige och Nederländerna",
+  "status": "in_force",
+  "issued_date": "1992-01-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1992-17.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Det avtal för undvikande av dubbelbeskattning och förhindrande av skatteflykt beträffande skatter på inkomst och på förmögenhet som Sverige och Nederländerna undertecknade den 18 juni 1991 skall tillsammans med det protokoll som är fogat till avtalet gälla som lag här i landet. Avtalets och protokollets innehåll framgår av bilaga till denna lag."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Avtalets beskattningsregler skall tillämpas endast i den mån dessa medför inskränkning av den skattskyldighet i Sverige som annars skulle föreligga."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Har upphävts genom lag (2011:1349)."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Har upphävts genom lag (2008:1352)."
+    }
+  ]
+}

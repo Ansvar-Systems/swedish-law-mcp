@@ -162,6 +162,8 @@ function buildPaidTier(): void {
   updateMeta();
 
   db.pragma('wal_checkpoint(TRUNCATE)');
+  // Runtime/test DB access uses node-sqlite3-wasm; keep final artifact in non-WAL mode.
+  db.pragma('journal_mode = DELETE');
   db.exec('ANALYZE');
   db.close();
 

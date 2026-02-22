@@ -1,0 +1,30 @@
+{
+  "id": "1994:791",
+  "type": "statute",
+  "title": "Lag (1994:791) med bemyndigande att meddela vissa föreskrifter på energiområdet",
+  "status": "in_force",
+  "issued_date": "1994-06-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-791.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Föreskrifterna i denna lag meddelas för att Sverige skall uppfylla sina förpliktelser enligt avtalet om Europeiska ekonomiska samarbetsområdet (EES-avtalet)."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Regeringen får meddela föreskrifter om krav på tillstånd för att uppföra kraftverk som huvudsakligen skall drivas med oljebränslen och för att ändra kraftverk till ett utförande för sådan drift."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Regeringen får också meddela föreskrifter om skyldighet för näringsidkare att lämna uppgifter om 1. investeringsprojekt på petroleum-, naturgas- och elektricitetsområdena, och 2. priser på råolja och oljeprodukter."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Beslut av en myndighet om att en viss näringsidkare skall lämna uppgift som avses i 3 § 2 får överklagas till allmän förvaltningsdomstol. Prövningstillstånd krävs vid överklagande till kammarrätten. Övergångsbestämmelser 1994:791 Denna lag träder i kraft den 1 juli 1994. Överklagande av myndighets beslut enligt 4 § som meddelats före den 1 oktober 1994 skall ske till länsrätt. Prövningstillstånd krävs inte vid överklagande till kammarrätt av länsrätts beslut som meddelats före den dagen."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1998:281",
+  "type": "statute",
+  "title": "Lag (1998:281) om skydd för beteckningen Svensk författningssamling",
+  "status": "in_force",
+  "issued_date": "1998-05-14",
+  "url": "https://data.riksdagen.se/dokument/sfs-1998-281.html",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Beteckningen Svensk författningssamling och dess förkortning SFS får inte användas offentligt som beteckning på någon annan samling av författningar än den som avses i 4 § lagen (1976:633) om kungörande av lagar och andra författningar eller ingå i någon sådan beteckning. Detsamma gäller böjningsformer av beteckningen och förkortningen."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Om beteckningen eller förkortningen används i strid med 1 § kan allmän domstol vid vite förbjuda fortsatt användning av den. Justitiekanslern skall föra eller låta föra talan om sådant förbud."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Den som uppsåtligen eller av oaktsamhet använder beteckningen eller förkortningen i strid med 1 § skall betala ersättning för den skada som användandet har medfört. Övergångsbestämmelser 1998:281 1. Denna lag träder i kraft den 1 januari 1999. 2. Lagen gäller inte samlingar av författningar som har framställts före ikraftträdandet."
+    }
+  ]
+}

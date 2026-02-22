@@ -1,0 +1,36 @@
+{
+  "id": "1994:1064",
+  "type": "statute",
+  "title": "Lag (1994:1064) om folkomröstning om EU-medlemskap",
+  "status": "repealed",
+  "issued_date": "1994-06-09",
+  "url": "https://data.riksdagen.se/dokument/sfs-1994-1064.html",
+  "description": "Upphävd 2006-01-01 genom SFS 2005:848",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Den 13 november 1994 skall folkomröstning hållas i hela landet om svenskt medlemskap i Europeiska unionen. Omröstningen gäller ja eller nej till följande fråga: \"Riksdagen har beslutat att det skall hållas en folkomröstning om svenskt medlemskap i Europeiska unionen (EU). Omröstningen gäller om Sverige skall bli medlem i EU i enlighet med det avtal som förhandlats fram mellan Sverige och EU:s medlemsstater. Anser Du att Sverige bör bli medlem i EU i enlighet med avtalet mellan Sverige och EU:s medlemsstater?\""
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "För folkomröstningen gäller folkomröstningslagen (1979:369) och de föreskrifter som finns i 3--5 §§."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Röstsedlarna skall vara försedda med rubriken \"Folkomröstning om EU-medlemskap\". På röstsedlarna skall efter rubriken återges den i 1 § angivna frågan. Därefter skall anges något av svarsalternativen \"Ja'' eller \"Nej\". På de blanka röstsedlarna skall dock förutom rubriken endast finnas orden \"Blank röstsedel\"."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "En röstsedel för svarsalternativet ja och en för svarsalternativet nej skall sändas till varje röstberättigad. Partier som är representerade i riksdagen och kampanjorganisationer som verkar för något av svarsalternativen ja eller nej och som får statsbidrag för sin verksamhet kan hos Riksskatteverket beställa röstsedlar till det antal partiet eller organisationen önskar. Staten svarar därvid för kostnaderna till ett antal som för varje beställare motsvarar högst två gånger antalet röstberättigade i landet. Varje parti och organisation får dessutom på begäran kostnadsfritt röstkuvert och ytterkuvert för röstsedelsförsändelse i den utsträckning som Riksskatteverket anser behövlig. De lantbrevbärare som tar emot röstsedelsförsändelser bör medföra röstsedlar för de två svarsalternativen och blanka röstsedlar."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Riksskatteverket bestämmer den sista dag då beställning av röstsedlar skall ha gjorts för att leverans skall kunna ske 30 dagar före dagen för omröstningen. I övrigt tillämpas 6 kap. 8 § vallagen (1972:620)."
+    }
+  ]
+}

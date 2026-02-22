@@ -1,0 +1,51 @@
+{
+  "id": "1993:963",
+  "type": "statute",
+  "title": "Lag (1993:963) om kommunal riksfärdtjänst;",
+  "status": "repealed",
+  "issued_date": "1993-06-24",
+  "url": "https://data.riksdagen.se/dokument/sfs-1993-963.html",
+  "description": "Upphävd 1998-01-01 genom SFS 1997:735",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "En kommun skall på de villkor som anges i denna lag lämna ersättning för reskostnader för personer som till följd av ett stort och varaktigt funktionshinder måste resa på ett särskilt kostsamt sätt."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Riksfärdtjänst får anlitas av den som efter ansökan har fått tillstånd till det. Frågor om tillstånd prövas av kommunen eller, efter överenskommelse mellan en kommun och ett landsting, landstinget i det län där den sökande är folkbokförd (tillståndsmyndigheten)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Tillstånd skall meddelas under förutsättning att 1. resan till följd av den sökandes funktionshinder inte till normala reskostnader kan göras med allmänna kommunikationer eller inte kan göras utan ledsagare, 2. ändamålet med resan är rekreation eller fritidsverksamhet eller någon annan enskild angelägenhet, 3. resan görs inom Sverige och från en kommun till en annan kommun eller, om samtliga kommuner i ett län överlåtit rätten att meddela tillstånd till landstinget, resan görs till eller från ett annat län, 4. resan görs med allmänna kommunikationer, taxi eller ett för ändamålet särskilt anpassat fordon, 5. resan inte av någon annan anledning bekostas av staten, en kommun eller ett landsting."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "Om den som söker tillstånd till riksfärdtjänst behöver ledsagare under resan, skall tillståndet gälla även ledsagaren."
+    },
+    {
+      "provision_ref": "5",
+      "section": "5",
+      "content": "Tillstånd till riksfärdtjänst får förenas med villkor om färdsätt."
+    },
+    {
+      "provision_ref": "6",
+      "section": "6",
+      "content": "Vid resa med riksfärdtjänsten skall tillståndshavaren betala en avgift (egenavgift) som motsvarar normala reskostnader med allmänna färdmedel. Regeringen meddelar närmare föreskrifter om dessa avgifter. Ersättning för en riksfärdtjänstresa lämnas med ett belopp som motsvarar skillnaden mellan reskostnaden och avgiften. Ersättning för ledsagares resa skall dock motsvara reskostnaden för denne. Ersättningen betalas ut till den som har utfört transporten eller till den som har betalat transporten. Beslut om ersättning meddelas av tillståndsmyndigheten."
+    },
+    {
+      "provision_ref": "7",
+      "section": "7",
+      "content": "En tillståndsmyndighet får återkalla ett tillstånd att anlita riksfärdtjänst om förutsättningarna för tillståndet inte längre finns eller om ändrade förhållanden medför att tillståndets villkor bör ändras. Ett tillstånd får också återkallas om tillståndshavaren gjort sig skyldig till allvarliga eller upprepade överträdelser av de föreskrifter som gäller för riksfärdtjänsten."
+    },
+    {
+      "provision_ref": "8",
+      "section": "8",
+      "content": "Tillståndsmyndighetens beslut enligt denna lag får överklagas hos länsrätten. Övergångsbestämmelser 1993:963 1. Denna lag träder i kraft den 1 november 1993 och tillämpas i fråga om resor som görs fr. o. m. den 1 januari 1994. 2. Förordningen (1989:340) om riksfärdstjänst och med stöd därav meddelade tillstånd upphör att gälla den 1 januari 1994. Förordningen tillämpas dock fortfarande i fråga om resor för vilka tillstånd har meddelats före den tidpunkten och som görs före utgången av januari 1994."
+    }
+  ]
+}

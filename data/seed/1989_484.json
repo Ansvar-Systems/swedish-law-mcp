@@ -1,0 +1,37 @@
+{
+  "id": "1989:484",
+  "type": "statute",
+  "title": "Lag (1989:484) om arbetsmiljöavgift;",
+  "status": "repealed",
+  "issued_date": "1989-06-08",
+  "url": "https://data.riksdagen.se/dokument/sfs-1989-484.html",
+  "description": "Upphävd 1996-01-01 genom SFS 1995:710",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "content": "Arbetsgivare skall betala arbetsmiljöavgift för ersättning som utges under perioden september 1989--december 1990. Arbetsmiljöavgiften beräknas på det underlag som gäller för arbetsgivaravgift till folkpensioneringen enligt lagen (1981:691) om socialavgifter."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Arbetsmiljöavgift utgår med 1,5 procent av avgiftsunderlaget och förs till en fond, benämnd arbetslivsfonden, vars tillgångar skall utgöra bidrag till arbetsgivare för 1. utgifter för rehabiliteringsåtgärder för anställda med långvarigt nedsatt hälsa, 2. utgifter för åtgärder för att nedbringa anställdas sjukfrånvaro samt 3. utgifter för investeringar för bättre arbetsmiljö i den mån det inte enligt lag eller annan författning åligger arbetsgivaren att göra sådan investering. I fråga om sjömän skall arbetsmiljöavgift beräknas efter den lägre procentsats som regeringen eller myndighet som regeringen bestämmer årligen fastställer. Procentsatsen skall sättas ned enligt de grunder som anges i 2 kap. 2 § andra stycket lagen (1981:691) om socialavgifter."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "Arbetslivsfonden förvaltas enligt grunder som riksdagen fastställer särskilt."
+    },
+    {
+      "provision_ref": "4",
+      "section": "4",
+      "content": "I fråga om arbetsmiljöavgift gäller bestämmelserna i 2 kap. 6 § och"
+    },
+    {
+      "provision_ref": "5:5",
+      "chapter": "5",
+      "section": "5",
+      "content": "I årsuppgift som avses i 11 § lagen (1984:668) om uppbörd av socialavgifter från arbetsgivare skall en arbetsgivare för utgiftsåret 1989 -- utöver de uppgifter som skall lämnas enligt 12 § första stycket nämnda lag -- uppge hur stor andel av beloppen som avser tid före respektive efter utgången av augusti 1989. Övergångsbestämmelser 1989:484 Övergångsbestämmelserna har upphävts genom lag (1990:164)."
+    }
+  ]
+}
