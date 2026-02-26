@@ -168,14 +168,31 @@ jobs:
       # SBOM RELEASE ATTACHMENT
       # ─────────────────────────────────────────────────────────────────────
 
-      - name: Attach SBOM to GitHub Release
+      # ─────────────────────────────────────────────────────────────────────
+      # DATABASE ARTIFACT
+      # ─────────────────────────────────────────────────────────────────────
+      # Build DB from seeds, compress, and upload to GitHub Release.
+      # Downstream Docker builds use scripts/download-db.sh to fetch this
+      # instead of re-running slow Riksdagen API ingestion.
+      # ─────────────────────────────────────────────────────────────────────
+
+      - name: Build database from seeds
+        run: npm run build:db
+
+      - name: Compress database
+        run: gzip -k data/database.db
+
+      - name: Upload artifacts to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: sbom.cdx.json
+          files: |
+            sbom.cdx.json
+            data/database.db.gz
           append_body: true
           body: |
-            ### Supply Chain Artifacts
-            - `sbom.cdx.json` — CycloneDX SBOM for this release
+            ### Artifacts
+            - `database.db.gz` — Pre-built SQLite database (download for Docker builds)
+            - `sbom.cdx.json` — CycloneDX SBOM
 
       # ─────────────────────────────────────────────────────────────────────
       # DEPLOYMENT SUMMARY

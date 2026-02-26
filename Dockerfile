@@ -74,7 +74,8 @@ COPY data/database.db ./data/database.db
 # Create and use non-root user
 # ───────────────────────────────────────────────────────────────────────────
 
-RUN addgroup -S nodejs && adduser -S nodejs -G nodejs
+RUN addgroup -S nodejs && adduser -S nodejs -G nodejs \
+    && chown -R nodejs:nodejs /app/data
 USER nodejs
 
 # ───────────────────────────────────────────────────────────────────────────
@@ -83,6 +84,8 @@ USER nodejs
 
 # Production mode
 ENV NODE_ENV=production
+# WASM SQLite loads the entire DB into memory — 122MB DB needs extra heap
+ENV NODE_OPTIONS="--max-old-space-size=512"
 
 # Database path (matches the COPY destination above)
 ENV SWEDISH_LAW_DB_PATH=/app/data/database.db
@@ -93,4 +96,4 @@ ENV SWEDISH_LAW_DB_PATH=/app/data/database.db
 # MCP servers use stdio, so we run node directly
 # ───────────────────────────────────────────────────────────────────────────
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/http-server.js"]
