@@ -1,41 +1,15 @@
+/**
+ * about — Server metadata, dataset statistics, and provenance.
+ */
+
 import type Database from '@ansvar/mcp-sqlite';
+import { detectCapabilities, readDbMetadata } from '../capabilities.js';
+import { SERVER_NAME, SERVER_VERSION, REPOSITORY_URL } from '../constants.js';
 
 export interface AboutContext {
   version: string;
   fingerprint: string;
   dbBuilt: string;
-}
-
-export interface AboutResult {
-  server: {
-    name: string;
-    package: string;
-    version: string;
-    suite: string;
-    repository: string;
-  };
-  dataset: {
-    fingerprint: string;
-    built: string;
-    jurisdiction: string;
-    content_basis: string;
-    counts: Record<string, number>;
-    freshness: {
-      last_checked: string | null;
-      check_method: string;
-    };
-  };
-  provenance: {
-    sources: string[];
-    license: string;
-    authenticity_note: string;
-  };
-  security: {
-    access_model: string;
-    network_access: boolean;
-    filesystem_access: boolean;
-    arbitrary_execution: boolean;
-  };
 }
 
 function safeCount(db: InstanceType<typeof Database>, sql: string): number {
@@ -47,60 +21,45 @@ function safeCount(db: InstanceType<typeof Database>, sql: string): number {
   }
 }
 
-export function getAbout(
-  db: InstanceType<typeof Database>,
-  context: AboutContext
-): AboutResult {
-  const counts: Record<string, number> = {
-    legal_documents: safeCount(db, 'SELECT COUNT(*) as count FROM legal_documents'),
-    legal_provisions: safeCount(db, 'SELECT COUNT(*) as count FROM legal_provisions'),
-    case_law: safeCount(db, 'SELECT COUNT(*) as count FROM case_law'),
-    preparatory_works: safeCount(db, 'SELECT COUNT(*) as count FROM preparatory_works'),
+export function getAbout(db: InstanceType<typeof Database>, context: AboutContext) {
+  const caps = detectCapabilities(db);
+  const meta = readDbMetadata(db);
+
+  const euRefs = safeCount(db, 'SELECT COUNT(*) as count FROM eu_references');
+
+  const stats: Record<string, number> = {
+    documents: safeCount(db, 'SELECT COUNT(*) as count FROM legal_documents'),
+    provisions: safeCount(db, 'SELECT COUNT(*) as count FROM legal_provisions'),
     definitions: safeCount(db, 'SELECT COUNT(*) as count FROM definitions'),
-    eu_documents: safeCount(db, 'SELECT COUNT(*) as count FROM eu_documents'),
-    eu_references: safeCount(db, 'SELECT COUNT(*) as count FROM eu_references'),
-    cross_references: safeCount(db, 'SELECT COUNT(*) as count FROM cross_references'),
   };
 
+  if (euRefs > 0) {
+    stats.eu_documents = safeCount(db, 'SELECT COUNT(*) as count FROM eu_documents');
+    stats.eu_references = euRefs;
+  }
+
   return {
-    server: {
-      name: 'Swedish Law MCP',
-      package: '@ansvar/swedish-law-mcp',
-      version: context.version,
-      suite: 'Ansvar Compliance Suite',
-      repository: 'https://github.com/Ansvar-Systems/Swedish-Law-MCP',
-    },
-    dataset: {
-      fingerprint: context.fingerprint,
-      built: context.dbBuilt,
-      jurisdiction: 'Sweden (SE)',
-      content_basis:
-        'Swedish statute text from riksdagen.se and lagen.nu. Case law from lagen.nu ' +
-        '(CC-BY Domstolsverket). Not an official legal publication.',
-      counts,
-      freshness: {
-        last_checked: null,
-        check_method: 'Manual review',
+    name: 'Swedish Law MCP',
+    version: context.version,
+    jurisdiction: 'SE',
+    description: 'Swedish Law MCP — legislation via Model Context Protocol',
+    stats,
+    data_sources: [
+      {
+        name: 'Riksdagen (Swedish Parliament Open Data)',
+        url: 'https://data.riksdagen.se',
+        authority: 'Riksdagen (Swedish Parliament)',
       },
+    ],
+    freshness: {
+      database_built: context.dbBuilt,
     },
-    provenance: {
-      sources: [
-        'riksdagen.se (statutes)',
-        'lagen.nu (case law, CC-BY)',
-        'EUR-Lex (EU directive references)',
-      ],
-      license:
-        'Apache-2.0 (server code). Swedish law is not subject to copyright ' +
-        'per 1 \u00a7 upphovsr\u00e4ttslagen (1960:729). Case law data licensed CC-BY from lagen.nu.',
-      authenticity_note:
-        'Statute text is derived from riksdagen.se and lagen.nu. Case law from lagen.nu. ' +
-        'Verify against official publications (Svensk F\u00f6rfattningssamling).',
-    },
-    security: {
-      access_model: 'read-only',
-      network_access: false,
-      filesystem_access: false,
-      arbitrary_execution: false,
+    disclaimer:
+      'This is a research tool, not legal advice. Verify critical citations against official sources.',
+    network: {
+      name: 'Ansvar MCP Network',
+      open_law: 'https://ansvar.eu/open-law',
+      directory: 'https://ansvar.ai/mcp',
     },
   };
 }
