@@ -7,7 +7,7 @@
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "1.2.3",
+  "version": "1.2.2",
   "license": "Apache-2.0",
   "keywords": [
     "swedish-law",
@@ -25,7 +25,7 @@
     {
       "registryType": "npm",
       "identifier": "@ansvar/swedish-law-mcp",
-      "version": "1.2.3",
+      "version": "1.2.2",
       "transport": {
         "type": "stdio"
       }
@@ -33,9 +33,9 @@
     {
       "registryType": "npm",
       "identifier": "@ansvar/swedish-law-mcp",
-      "version": "1.2.3",
+      "version": "1.2.2",
       "transport": {
-        "type": "streamableHttp",
+        "type": "streamable-http",
         "url": "https://swedish-law-mcp.vercel.app/mcp"
       }
     }
