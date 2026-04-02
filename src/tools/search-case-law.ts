@@ -96,10 +96,13 @@ export async function searchCaseLaw(
     }));
   };
 
-  const primaryResults = runQuery(queryVariants.primary);
-  const results = (primaryResults.length > 0 || !queryVariants.fallback)
-    ? primaryResults
-    : runQuery(queryVariants.fallback);
+  let results = runQuery(queryVariants.primary);
+  if (results.length === 0 && queryVariants.stemmed) {
+    results = runQuery(queryVariants.stemmed);
+  }
+  if (results.length === 0 && queryVariants.fallback) {
+    results = runQuery(queryVariants.fallback);
+  }
 
   return {
     results,

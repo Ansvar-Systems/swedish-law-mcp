@@ -171,6 +171,19 @@ export async function searchLegislation(
     };
   }
 
+  if (queryVariants.stemmed) {
+    const stemmedResults = runQuery(queryVariants.stemmed);
+    if (stemmedResults.length > 0) {
+      return {
+        results: deduplicateResults(stemmedResults, limit),
+        _metadata: {
+          ...generateResponseMetadata(db),
+          query_strategy: 'stemmed',
+        },
+      };
+    }
+  }
+
   if (queryVariants.fallback) {
     const fallbackResults = runQuery(queryVariants.fallback);
     if (fallbackResults.length > 0) {

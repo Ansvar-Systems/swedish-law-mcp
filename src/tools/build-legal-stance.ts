@@ -197,6 +197,10 @@ export async function buildLegalStance(
     return db.prepare(provSql).all(...bound) as ProvisionHit[];
   };
   let provisions = runProvisionQuery(queryVariants.primary);
+  if (provisions.length === 0 && queryVariants.stemmed) {
+    provisions = runProvisionQuery(queryVariants.stemmed);
+    if (provisions.length > 0) usedFallback = true;
+  }
   if (provisions.length === 0 && queryVariants.fallback) {
     provisions = runProvisionQuery(queryVariants.fallback);
     if (provisions.length > 0) usedFallback = true;
@@ -231,6 +235,9 @@ export async function buildLegalStance(
       db.prepare(clSql).all(ftsQuery, ...clParams) as CaseLawHit[];
 
     caseLaw = runCaseLawQuery(queryVariants.primary);
+    if (caseLaw.length === 0 && queryVariants.stemmed) {
+      caseLaw = runCaseLawQuery(queryVariants.stemmed);
+    }
     if (caseLaw.length === 0 && queryVariants.fallback) {
       caseLaw = runCaseLawQuery(queryVariants.fallback).filter(hit =>
         hasMinimumTokenCoverage(`${hit.title} ${hit.summary_snippet}`, queryTokens)
@@ -264,6 +271,9 @@ export async function buildLegalStance(
       db.prepare(pwSql).all(ftsQuery, ...pwParams) as PrepWorkHit[];
 
     prepWorks = runPrepQuery(queryVariants.primary);
+    if (prepWorks.length === 0 && queryVariants.stemmed) {
+      prepWorks = runPrepQuery(queryVariants.stemmed);
+    }
     if (prepWorks.length === 0 && queryVariants.fallback) {
       prepWorks = runPrepQuery(queryVariants.fallback).filter(hit =>
         hasMinimumTokenCoverage(`${hit.title || ''} ${hit.summary_snippet}`, queryTokens)

@@ -31,8 +31,29 @@ function buildPrefixOrQuery(tokens: string[]): string {
   return tokens.map(token => `${token}*`).join(' OR ');
 }
 
+/**
+ * Trim inflectional suffixes to broaden prefix matching.
+ *
+ * European languages add 1-3 character suffixes for case, number, and
+ * tense (e.g. Swedish: personliga/personligen share stem "personlig").
+ * FTS5 prefix `personliga*` misses `personligen` — trimming to
+ * `personlig*` catches both.  Only trims tokens longer than 6 chars
+ * to avoid over-broadening short roots.
+ */
+function trimToStem(token: string): string {
+  if (token.length > 6) {
+    return token.slice(0, token.length - 2);
+  }
+  return token;
+}
+
+function buildStemmedPrefixAndQuery(tokens: string[]): string {
+  return tokens.map(token => `${trimToStem(token)}*`).join(' ');
+}
+
 export interface FtsQueryVariants {
   primary: string;
+  stemmed?: string;
   fallback?: string;
 }
 
@@ -56,8 +77,12 @@ export function buildFtsQueryVariants(query: string): FtsQueryVariants {
     return { primary };
   }
 
+  const stemmed = buildStemmedPrefixAndQuery(tokens);
+  const hasStemmedDiff = stemmed !== primary;
+
   return {
     primary,
+    stemmed: hasStemmedDiff ? stemmed : undefined,
     fallback: buildPrefixOrQuery(tokens),
   };
 }
