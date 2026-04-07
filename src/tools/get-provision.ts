@@ -5,6 +5,7 @@
 import type { Database } from '@ansvar/mcp-sqlite';
 import { normalizeAsOfDate } from '../utils/as-of-date.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
+import { buildProvisionCitation } from '../utils/citation.js';
 
 export interface GetProvisionInput {
   document_id: string;
@@ -39,6 +40,8 @@ interface ProvisionRow {
   document_id: string;
   document_title: string;
   document_status: string;
+  document_url: string | null;
+  document_short_name: string | null;
   provision_ref: string;
   chapter: string | null;
   section: string;
@@ -88,6 +91,8 @@ export async function getProvision(
         lpv.document_id,
         ld.title as document_title,
         ld.status as document_status,
+        ld.url as document_url,
+        ld.short_name as document_short_name,
         lpv.provision_ref,
         lpv.chapter,
         lpv.section,
@@ -112,6 +117,8 @@ export async function getProvision(
         lp.document_id,
         ld.title as document_title,
         ld.status as document_status,
+        ld.url as document_url,
+        ld.short_name as document_short_name,
         lp.provision_ref,
         lp.chapter,
         lp.section,
@@ -146,7 +153,16 @@ export async function getProvision(
       metadata: row.metadata ? JSON.parse(row.metadata) : null,
       cross_references: crossRefs,
     },
-    _metadata: generateResponseMetadata(db)
+    _metadata: generateResponseMetadata(db),
+    _citation: buildProvisionCitation(
+      row.document_id,
+      row.document_title,
+      row.provision_ref,
+      input.document_id,
+      provisionRef,
+      row.document_url,
+      row.document_short_name,
+    ),
   };
 }
 

@@ -181,4 +181,11 @@ export interface ToolResponse<T> {
 
   /** Professional-use metadata and warnings */
   _metadata: ResponseMetadata;
+
+  /** Citation metadata for deterministic citation pipeline (optional) */
+  _citation?: import('./citation.js').CitationMetadata;
+
+  /** Truncation hint (optional) */
+  _truncated?: boolean;
+  _hint?: string;
 }
