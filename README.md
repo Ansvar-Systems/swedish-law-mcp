@@ -39,12 +39,12 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
 
 > Connect directly to the hosted version — zero dependencies, nothing to install.
 
-**Endpoint:** `https://mcp.ansvar.eu/law-swedish-law-mcp/mcp`
+**Endpoint:** `https://mcp.ansvar.eu/law-se/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add swedish-law --transport http https://mcp.ansvar.eu/law-swedish-law-mcp/mcp` |
+| **Claude Code** | `claude mcp add swedish-law --transport http https://mcp.ansvar.eu/law-se/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -55,7 +55,7 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
   "mcpServers": {
     "swedish-law": {
       "type": "url",
-      "url": "https://mcp.ansvar.eu/law-swedish-law-mcp/mcp"
+      "url": "https://mcp.ansvar.eu/law-se/mcp"
     }
   }
 }
@@ -68,7 +68,7 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
   "github.copilot.chat.mcp.servers": {
     "swedish-law": {
       "type": "http",
-      "url": "https://mcp.ansvar.eu/law-swedish-law-mcp/mcp"
+      "url": "https://mcp.ansvar.eu/law-se/mcp"
     }
   }
 }
