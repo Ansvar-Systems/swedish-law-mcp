@@ -1,0 +1,1040 @@
+{
+  "id": "2011:338",
+  "type": "statute",
+  "title": "Plan- och byggförordning (2011:338)",
+  "title_en": "Planning and Building Ordinance",
+  "short_name": "PBF",
+  "status": "in_force",
+  "issued_date": "2011-03-31",
+  "in_force_date": "2011-05-02",
+  "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2011-338",
+  "provisions": [
+    {
+      "provision_ref": "1:1",
+      "chapter": "1",
+      "section": "1",
+      "content": "Denna förordning innehåller bestämmelser om 1. innehåll och definitioner (1 kap.), 2. planer och områdesbestämmelser (2 kap.), 3. krav på byggnadsverk (3 kap.), 4. krav på byggprodukter m.m. (4 kap.), 5. funktions- och säkerhetsåtgärder (5 kap.), 6. anmälan (6 kap.), 7. kontrollplan, funktionskontrollanter, certifierade byggprojekteringsföretag, kontrollansvariga och sakkunniga (7 kap.), 8. tillsyn, vägledning och uppföljning (8 kap.), 9. byggsanktionsavgifter (9 kap.), och 10. bemyndiganden (10 kap.). Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "1:2",
+      "chapter": "1",
+      "section": "2",
+      "content": "I denna förordning avses med EU:s byggproduktförordning 1. Europaparlamentets och rådets förordning (EU) 2024/3110 av den 27 november 2024 om fastställande av harmoniserade regler för saluföring av byggprodukter och om upphävande av förordning (EU) nr 305/2011, och 2. Europaparlamentets och rådets förordning (EU) nr 305/2011 av den 9 mars 2011 om fastställande av harmoniserade villkor för saluföring av byggprodukter och om upphävande av rådets direktiv 89/106/EEG, i den utsträckning som följer av artikel 94 i förordning (EU) 2024/3110. När det i denna förordning hänvisas till en bestämmelse i EU:s byggproduktförordning avses förordning (EU) 2024/3110, om det inte särskilt anges att hänvisningen avser förordning (EU) nr 305/2011. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "1:2 a",
+      "chapter": "1",
+      "section": "2 a",
+      "content": "I denna förordning avses med EU:s ackrediteringsförordning: Europaparlamentets och rådets förordning (EG) nr 765/2008 av den 9 juli 2008 om krav för ackreditering och marknadskontroll i samband med saluföring av produkter och upphävande av förordning (EEG) nr 339/93, EU:s hissdirektiv: Europaparlamentets och rådets direktiv 2014/33/EU av den 26 februari 2014 om harmonisering av medlemsstaternas lagstiftning om hissar och säkerhetskomponenter till hissar, i den ursprungliga lydelsen, EU:s linbaneförordning: Europaparlamentets och rådets förordning (EU) 2016/424 av den 9 mars 2016 om linbaneanläggningar och om upphävande av direktiv 2000/9/EG, och EU:s marknadskontrollförordning: Europaparlamentets och rådets förordning (EU) 2019/1020 av den 20 juni 2019 om marknadskontroll och överensstämmelse för produkter och om ändring av direktiv 2004/42/EG och förordningarna (EG) nr 765/2008 och (EU) nr 305/2011. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "1:3",
+      "chapter": "1",
+      "section": "3",
+      "content": "Med byggnadshöjd avses i denna förordning den höjd som byggnaden har enligt andra och tredje styckena. Vid beräkningen får byggnaden delas upp i flera byggnadskroppar och höjden beräknas för varje del för sig, om det finns särskilda skäl. Byggnadshöjden ska räknas från den medelnivå som marken har invid byggnaden. Om byggnaden ligger mindre än sex meter från allmän plats, ska dock beräkningen utgå från den allmänna platsens medelnivå invid tomten, om inte särskilda skäl föranleder annat. Byggnadshöjden ska räknas upp till skärningen mellan fasadplanet och ett plan som med 45 graders lutning inåt byggnaden berör byggnadens tak."
+    },
+    {
+      "provision_ref": "1:3 a",
+      "chapter": "1",
+      "section": "3 a",
+      "content": "I denna förordning avses med energiprestanda: den mängd levererad energi som behövs för uppvärmning, kylning, ventilation, varmvatten och belysning vid ett normalt bruk av en byggnad, undantaget sådan energi från sol, vind, mark, luft eller vatten som alstras och används i byggnaden eller på dess tomt, klimatskärm: en byggdel bestående av ett eller flera skikt som isolerar det inre av en byggnad från omvärlden när det gäller sådant som temperatur, ljud och fuktighet, primärenergi: energi som inte har genomgått någon omvandling, och system för fastighetsautomation och fastighetsstyrning: ett system som är driftskompatibelt med anslutna installationssystem och anordningar i byggnaden och omfattar alla produkter, all programvara och allt tekniskt underhåll som kan stödja en energieffektiv, ekonomisk och säker drift av byggnadens installationssystem genom automatisk styrning och genom att underlätta den manuella hanteringen av byggnadens installationssystem och som fortlöpande övervakar, registrerar, analyserar och gör det möjligt att anpassa energianvändningen samt fastställer riktmärken för energieffektivitet, upptäcker effektivitetsförluster, informerar om möjligheter till förbättrad energieffektivitet och möjliggör kommunikation. Förordning (2020:433)."
+    },
+    {
+      "provision_ref": "1:3 b",
+      "chapter": "1",
+      "section": "3 b",
+      "content": "Med tillfälligt anläggningsboende avses i denna förordning en byggnad eller en del av en byggnad som under en begränsad tid används som ett sådant asylboende som avses i 2 § första stycket lagen (1994:137) om mottagande av asylsökande m.fl. Förordning (2025:63)."
+    },
+    {
+      "provision_ref": "1:4",
+      "chapter": "1",
+      "section": "4",
+      "content": "Med våning avses i denna förordning ett utrymme i en byggnad där utrymmet avgränsas åt sidorna av byggnadens ytterväggar, uppåt av ett tak eller bjälklag och nedåt av ett golv. En vind ska anses vara en våning endast om 1. ett bostadsrum eller en arbetslokal kan inredas i utrymmet, och 2. byggnadshöjden är mer än 0,7 meter högre än nivån för vindsbjälklagets översida. En källare ska anses vara en våning endast om golvets översida i våningen närmast ovanför källaren ligger mer än 1,5 meter över markens medelnivå invid byggnaden."
+    },
+    {
+      "provision_ref": "1:5",
+      "chapter": "1",
+      "section": "5",
+      "content": "Med motordrivna anordningar avses i denna förordning motordrivna 1. hissar med tillhörande säkerhetskomponenter och andra motordrivna anordningar som är avsedda för transport av personer eller gods, med undantag för sådana anordningar som avses i 2 kap. 13 § ordningslagen (1993:1617), 2. portar, dörrar, galler, grindar och liknande anordningar som är avsedda för passage av personer eller av mark- eller spårbundna fordon, och 3. anordningar som är avsedda att ta hand om och forsla bort avfall från byggnader som har försetts med en sådan anordning. Med motordrivna anordningar avses i denna förordning inte anordningar som är avsedda att användas endast yrkesmässigt av särskilt instruerad personal."
+    },
+    {
+      "provision_ref": "1:6",
+      "chapter": "1",
+      "section": "6",
+      "content": "Med tillsyn avses i denna förordning 1. tillsyn som utövas a) direkt gentemot den som bedriver en verksamhet eller vidtar en åtgärd, eller b) i enlighet med bestämmelserna om tillsyn över kommunala beslut och planförelägganden i 11 kap. 10-12, 15 och 16 §§ plan- och bygglagen (2010:900), eller 2. marknadskontroll enligt EU:s marknadskontrollförordning, EU:s byggproduktförordning eller EU:s linbaneförordning. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "1:7",
+      "chapter": "1",
+      "section": "7",
+      "content": "Med sanktionsarea avses i denna förordning den area som i fråga om 1. en lov- eller anmälningspliktig åtgärd motsvarar brutto- eller öppenarean eller en kombination av dessa minskad med 15 kvadratmeter, eller 2. en markåtgärd motsvarar den area som åtgärden avser. Förordning (2013:308)."
+    },
+    {
+      "provision_ref": "1:7 a",
+      "chapter": "1",
+      "section": "7 a",
+      "content": "Vid tillämpning av 4 kap. 11-11 f §§, 9 kap. 25 § andra stycket och 10 kap. 26 § 3-5 avses med: hiss: en lyftanordning som betjänar fasta stannplan och som har en lastbärare som styrs längs fasta gejder med en lutning större än 15 grader mot horisontalplanet, eller en lyftanordning som rör sig längs en fast rörelsebana trots att den inte är styrd längs fasta gejder, tillhandahållande på marknaden: leverans av säkerhetskomponenter till hissar för distribution eller användning på unionsmarknaden i samband med kommersiell verksamhet, mot betalning eller kostnadsfritt, utsläppande på marknaden: första gången en säkerhetskomponent till hissar tillhandahålls på marknaden, eller tillhandahållande av en hiss för användning på unionsmarknaden i samband med kommersiell verksamhet, mot betalning eller kostnadsfritt, installatör: fysisk eller juridisk person som åtar sig ansvaret för konstruktion, tillverkning, installation och utsläppande på marknaden av en hiss, tillverkare: fysisk eller juridisk person som tillverkar eller som låter konstruera eller tillverka en säkerhetskomponent till hissar och saluför denna produkt, i eget namn eller under eget varumärke, tillverkarens representant: fysisk eller juridisk person som är etablerad inom unionen och som enligt skriftlig fullmakt från installatören eller tillverkaren har rätt att i dennes ställe utföra särskilda uppgifter, importör: fysisk eller juridisk person som är etablerad inom unionen och släpper ut en säkerhetskomponent till hissar från tredjeland på unionsmarknaden, distributör: fysisk eller juridisk person i leveranskedjan, förutom tillverkaren eller importören, som tillhandahåller en säkerhetskomponent till hissar på marknaden, ekonomisk aktör: installatör, tillverkare, tillverkarens representant, importör och distributör, bedömning av överensstämmelse: process där det visas om de grundläggande hälso- och säkerhetskraven som följer av föreskrifter meddelade med stöd av 10 kap. 15 § 3 för en hiss eller en säkerhetskomponent till hissar har uppfyllts, återkallelse av en hiss: åtgärd för att montera ner en hiss och forsla bort den under säkra former, återkallelse av en säkerhetskomponent till hissar: åtgärd för att dra tillbaka en säkerhetskomponent till hissar som redan har tillhandahållits en installatör eller en slutanvändare, tillbakadragande: åtgärd för att förhindra att en säkerhetskomponent till hissar i leveranskedjan tillhandahålls på marknaden, och CE-märkning: märkning genom vilken installatören eller tillverkaren visar att hissen eller säkerhetskomponenten till hissar överensstämmer med de till-lämpliga kraven i harmoniserad unionslagstiftning som föreskriver CE-märkning. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "1:7 b",
+      "chapter": "1",
+      "section": "7 b",
+      "content": "Har upphävts genom förordning (2025:979). 7 b § /Träder i kraft I:2026-12-31/ Vid tillämpning av 4 kap. 12-14 §§ har termer och uttryck samma betydelse som i kommissionens delegerade förordning (EU) 2024/370 av den 23 januari 2024 om komplettering av Europaparlamentets och rådets direktiv (EU) 2020/2184 genom fastställande av förfaranden för bedömning av överensstämmelse för produkter som kommer i kontakt med dricksvatten och regler för utseende av organ för bedömning av överensstämmelse som deltar i dessa förfaranden. Förordning (2026:22)."
+    },
+    {
+      "provision_ref": "1:8",
+      "chapter": "1",
+      "section": "8",
+      "content": "Med prisbasbelopp avses prisbasbeloppet enligt 2 kap. 6 och 7 §§ socialförsäkringsbalken."
+    },
+    {
+      "provision_ref": "1:9",
+      "chapter": "1",
+      "section": "9",
+      "content": "När det i beslut som meddelas med stöd av plan- och bygglagen (2010:900) eller denna förordning eller i föreskrifter som meddelas med stöd av denna förordning används termer och uttryck som definieras i 3-7 §§, ska dessa ha samma betydelse som i denna förordning om inte annat är särskilt angivet."
+    },
+    {
+      "provision_ref": "1:10",
+      "chapter": "1",
+      "section": "10",
+      "content": "I övrigt har ord och uttryck i denna förordning samma betydelse som i plan- och bygglagen (2010:900). Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "1:11",
+      "chapter": "1",
+      "section": "11",
+      "content": "Bestämmelser om riktvärden för buller utomhus för spårtrafik, vägar och flygplatser vid bostadsbyggnader och bestämmelser om beräkning av bullervärden vid bostadsbyggnader finns i förordningen (2015:216) om trafikbuller vid bostadsbyggnader. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "2:1",
+      "chapter": "2",
+      "section": "1",
+      "title": "Samordning av statens intressen",
+      "content": "Under ett samråd om ett förslag att anta, ändra eller upphäva en regionplan, en översiktsplan, en detaljplan eller områdesbestämmelser ska länsstyrelsen på lämpligt sätt hålla andra berörda statliga myndigheter underrättade om planarbetet. Om förslaget rör skogsmark, ska länsstyrelsen inhämta Skogsstyrelsens yttrande. Om förslaget avser en detaljplan eller områdesbestämmelser, behöver länsstyrelsen dock inte underrätta 1. lantmäterimyndigheten och myndigheter som är sakägare och som kommunen ska samråda med enligt 5 kap. 11 § plan- och bygglagen (2010:900), eller 2. andra myndigheter än de som har invänt mot översiktsplanen, utom när förslaget saknar stöd i översiktsplanen eller särskilt berör myndigheten."
+    },
+    {
+      "provision_ref": "2:2",
+      "chapter": "2",
+      "section": "2",
+      "content": "När ett förslag till en regionplan eller en översiktsplan ställs ut eller på annat sätt görs tillgängligt för granskning, ska länsstyrelsen underrätta de statliga myndigheter som kan väntas ha synpunkter i sådana frågor som länsstyrelsen ska ta ställning till i sitt granskningsyttrande."
+    },
+    {
+      "provision_ref": "2:2 a",
+      "chapter": "2",
+      "section": "2 a",
+      "content": "När ett planeringsbesked begärs ska länsstyrelsen underrätta de statliga myndigheter som berörs av de frågor som begäran avser. Förordning (2017:423)."
+    },
+    {
+      "provision_ref": "2:3",
+      "chapter": "2",
+      "section": "3",
+      "content": "Om en statlig myndighet har synpunkter på ett planförslag under samrådet enligt 1 § eller på de frågor som en begäran om planeringsbesked avser efter underrättelse enligt 2 a §, ska myndigheten framföra synpunkterna till länsstyrelsen. Förordning (2017:423)."
+    },
+    {
+      "provision_ref": "2:3 a",
+      "chapter": "2",
+      "section": "3 a",
+      "content": "Om en detaljplan antas, ändras eller upphävs, ska länsstyrelsen så snart som möjligt underrätta de statliga myndigheter som på grund av sitt särskilda miljöansvar kan antas bli berörda av beslutet. Förordning (2021:786)."
+    },
+    {
+      "provision_ref": "2:4",
+      "chapter": "2",
+      "section": "4",
+      "content": "Om en regionplan eller översiktsplan antas, ändras eller upphävs, ska länsstyrelsen underrätta de statliga myndigheter som har haft synpunkter på planförslaget eller som särskilt berörs av beslutet. Förordning (2020:78). Samråd med annat land"
+    },
+    {
+      "provision_ref": "2:4 a",
+      "chapter": "2",
+      "section": "4 a",
+      "content": "Om det i fråga om en regionplan, översiktsplan eller detaljplan krävs samråd med ett annat land enligt 6 kap. 13 § miljöbalken, ska länsstyrelsen underrätta Naturvårdsverket om detta. Underrättelseskyldigheten gäller också när en sådan plan antas, ändras eller upphävs, om den har varit föremål för samråd med ett annat land. Om samrådet avser en detaljplan, ska underrättelsen göras senast i samband med att kommunen samråder enligt 5 kap. 11 b § första stycket plan- och bygglagen (2010:900). Förordning (2021:786). Åtgärder som inte ska antas medföra en betydande miljöpåverkan"
+    },
+    {
+      "provision_ref": "2:4 b",
+      "chapter": "2",
+      "section": "4 b",
+      "content": "En åtgärd som avses i 4 kap. 2 § första stycket 3 a plan- och bygglagen (2010:900) ska inte antas medföra en betydande miljöpåverkan om 1. åtgärden avser - ett industriområde, - ett köpcentrum, en parkeringsanläggning eller något annat stadsbyggnadsprojekt, - ett hotellkomplex eller en fritidsby med tillhörande anläggningar, utanför sammanhållen bebyggelse, eller - en campingplats, och 2. ytan på det område som berörs av den åtgärd som avses i 1 understiger 5 000 kvadratmeter. Första stycket gäller inte i följande fall: 1. Åtgärden strider mot den översiktsplan eller de områdesbestämmelser som gäller för området. 2. Åtgärden kan antas medföra olägenheter eller risker för omgivningen som är mer omfattande än vad som normalt kan förväntas från bostadshus, kontor, detaljhandel eller liknande verksamhet. 3. Åtgärden kan antas påtagligt skada a) ett område av riksintresse för naturvården, kulturmiljövården eller friluftslivet enligt 3 kap. 6 § miljöbalken, eller b) ett område av riksintresse enligt 4 kap. 2, 4 eller 5 § miljöbalken. 4. Åtgärden förvanskar en byggnad eller ett bebyggelseområde som är särskilt värdefull respektive särskilt värdefullt från historisk, kulturhistorisk, miljömässig eller konstnärlig synpunkt enligt 8 kap. 13 § plan- och bygglagen. 5. Åtgärden skadar ett område som är upptaget på världsarvslistan i enlighet med Unescos konvention av den 16 november 1972 om skydd för världens kultur- och naturarv. 6. Åtgärden har betydelse för möjligheten att följa en miljökvalitetsnorm. 7. Åtgärden ska utföras i ett område som omfattas av strandskydd eller något annat skydd enligt 7 kap. miljöbalken. Dessutom ska åtgärden inte omfattas av en dispens från strandskyddet och det ska inte heller finnas skäl att anta att en sådan kommer att kunna ges. 8. Det område där åtgärden ska utföras a) är ett mark- eller vattenområde som inte alls eller endast obetydligt är påverkat av exploateringsföretag eller andra ingrepp i miljön enligt 3 kap. 2 § miljöbalken, b) är ett mark- eller vattenområde som är särskilt känsligt från ekologisk synpunkt enligt 3 kap. 3 § miljöbalken, c) består av brukningsvärd jordbruksmark enligt 3 kap. 4 § miljöbalken, eller d) är en nationalstadspark enligt 4 kap. 7 § miljöbalken. Förordning (2021:786)."
+    },
+    {
+      "provision_ref": "2:4 c",
+      "chapter": "2",
+      "section": "4 c",
+      "content": "En åtgärd som innebär att en sådan skidbacke, skidlift eller linbana med tillhörande anläggningar som avses i 4 kap. 2 § första stycket 3 a plan- och bygglagen (2010:900) antingen anläggs inom ett område som redan har tagits i anspråk för ett sådant byggnadsverk eller ändras, ska inte antas medföra en betydande miljöpåverkan om 1. det nya eller ändrade byggnadsverket är av begränsad omfattning i förhållande till de byggnadsverk som sedan tidigare finns på platsen, 2. åtgärden inte är en sådan som avses i någon av bestämmelserna i 4 b § andra stycket 1-7, och 3. det område där åtgärden ska vidtas inte är ett sådant som avses i någon av bestämmelserna i 4 b § andra stycket 8. Förordning (2021:786)."
+    },
+    {
+      "provision_ref": "2:4 d",
+      "chapter": "2",
+      "section": "4 d",
+      "content": "Trots det som föreskrivs i 4 b och 4 c §§ får byggnadsnämnden i enskilda fall besluta att en bedömning ska göras av om en sådan åtgärd som avses i 4 b § första stycket eller 4 c § kan antas medföra en betydande miljöpåverkan. Ett sådant beslut får endast fattas om det finns behov av att pröva åtgärdens miljöpåverkan tillsammans med miljöpåverkan från åtgärder som sedan tidigare är beslutade eller genomförda. Förordning (2021:786). Betydande miljöpåverkan"
+    },
+    {
+      "provision_ref": "2:5",
+      "chapter": "2",
+      "section": "5",
+      "content": "När kommunen tar fram en detaljplan som medger att planområdet får tas i anspråk på ett sådant sätt som avses i"
+    },
+    {
+      "provision_ref": "2:13",
+      "chapter": "2",
+      "section": "13",
+      "content": "§ miljöbedömningsförordningen (2017:966). Om bedömningen avser en åtgärd som kräver tillstånd enligt"
+    },
+    {
+      "provision_ref": "2:39",
+      "chapter": "2",
+      "section": "39",
+      "title": "Förordning (2023:50).",
+      "content": "eller 7 kap. 10 § plan- och bygglagen (2010:900) ska skickas till Boverket, länsstyrelsen och lantmäterimyndigheten ska vara lämpliga för arkivering. Förordning (2018:1872). Redovisning av planer 7 § Har upphävts genom förordning (2020:78). 8 § Kommunen behöver inte skicka handlingar om detaljplaner eller områdesbestämmelser till länsstyrelsen enligt 5 kap. 32 eller 39 § plan- och bygglagen (2010:900), om länsstyrelsen har rutiner för att ta del av handlingarna på annat sätt och därför beslutat att handlingarna inte behöver skickas."
+    },
+    {
+      "provision_ref": "3:1",
+      "chapter": "3",
+      "section": "1",
+      "title": "Utformningskrav avseende lämplighet",
+      "content": "För att uppfylla det krav på lämplighet för sitt ändamål som anges i 8 kap. 1 § 1 plan- och bygglagen (2010:900) ska en byggnad som innehåller bostäder vara utförd på ett sådant sätt att bostäderna i skälig utsträckning har avskiljbara utrymmen för sömn och vila, samvaro, matlagning, måltider, hygien och förvaring. Bostäderna ska med hänsyn till användningen ha inredning och utrustning för matlagning och hygien."
+    },
+    {
+      "provision_ref": "3:2",
+      "chapter": "3",
+      "section": "2",
+      "content": "Det som gäller för en byggnads lämplighet enligt 8 kap. 1 § 1 plan- och bygglagen (2010:900) ska gälla också för andra anläggningar än byggnader. Utformningskrav avseende form-, färg- och materialverkan"
+    },
+    {
+      "provision_ref": "3:3",
+      "chapter": "3",
+      "section": "3",
+      "content": "Det som gäller för en byggnads form-, färg- och materialverkan enligt 8 kap. 1 § 2 plan- och bygglagen (2010:900) ska gälla också för en annan anläggning än en byggnad, om anläggningen omfattas av krav på bygglov enligt"
+    },
+    {
+      "provision_ref": "3:6",
+      "chapter": "3",
+      "section": "6",
+      "title": "För lovpliktiga upplag, materialgårdar, tunnlar och bergrum",
+      "content": "första stycket 1 plan- och bygglagen. Förordning (2025:979). Utformningskrav avseende tillgänglighet och användbarhet 4 § Om det behövs för att en byggnad enligt 8 kap. 1 § 3 plan- och bygglagen (2010:900) ska vara tillgänglig och användbar för personer med nedsatt rörelse- eller orienteringsförmåga, ska byggnaden vara försedd med en eller flera hissar eller andra lyftanordningar. Trots första stycket behöver en bostad inte vara tillgänglig genom en hiss eller annan lyftanordning, om byggnaden har färre än tre våningar. Om bostaden inte kan nås från marken, ska byggnaden dock vara projekterad och utförd på ett sådant sätt att en hiss eller annan lyftanordning kan installeras utan svårighet. Vid tillämpningen av detta stycke ska med våning jämställas vind där det finns en bostad eller huvuddelen av en bostad. 5 § Det som gäller för en byggnads tillgänglighet och användbarhet enligt 8 kap. 1 § 3 plan- och bygglagen (2010:900) ska gälla också för en annan anläggning än en byggnad, om anläggningen omfattas av krav på bygglov enligt"
+    },
+    {
+      "provision_ref": "3:7",
+      "chapter": "3",
+      "section": "7",
+      "title": "Egenskapskrav avseende bärförmåga, stadga och beständighet",
+      "content": "För att uppfylla det krav på bärförmåga, stadga och beständighet som anges i 8 kap. 4 § första stycket 1 plan- och bygglagen (2010:900) ska ett byggnadsverk vara projekterat och utfört på ett sådant sätt att den påverkan som byggnadsverket sannolikt utsätts för när det byggs eller används inte leder till 1. att byggnadsverket helt eller delvis rasar, 2. oacceptabla större deformationer, 3. skada på andra delar av byggnadsverket, dess installationer eller fasta utrustning till följd av större deformationer i den bärande konstruktionen, eller 4. skada som inte står i proportion till den händelse som orsakat skadan. Egenskapskrav avseende säkerhet i händelse av brand"
+    },
+    {
+      "provision_ref": "3:8",
+      "chapter": "3",
+      "section": "8",
+      "content": "För att uppfylla det krav på säkerhet i händelse av brand som anges i 8 kap. 4 § första stycket 2 plan- och bygglagen (2010:900) ska ett byggnadsverk vara projekterat och utfört på ett sätt som innebär att 1. byggnadsverkets bärförmåga vid brand kan antas bestå under en bestämd tid, 2. utveckling och spridning av brand och rök inom byggnadsverket begränsas, 3. spridning av brand till närliggande byggnadsverk begränsas, 4. personer som befinner sig i byggnadsverket vid brand kan lämna det eller räddas på annat sätt, och 5. hänsyn har tagits till räddningsmanskapets säkerhet vid brand. Egenskapskrav avseende skydd med hänsyn till hygien, hälsa och miljö"
+    },
+    {
+      "provision_ref": "3:9",
+      "chapter": "3",
+      "section": "9",
+      "content": "För att uppfylla det krav på skydd med hänsyn till hygien, hälsa och miljö som anges i 8 kap. 4 § första stycket 3 plan- och bygglagen (2010:900) ska ett byggnadsverk vara projekterat och utfört på ett sådant sätt att det inte medför en oacceptabel risk för användarnas eller grannarnas hygien eller hälsa, särskilt inte som följd av 1. utsläpp av giftig gas, 2. förekomst av farliga partiklar eller gaser i luften, 3. farlig strålning, 4. förorening eller förgiftning av vatten eller mark, 5. bristfällig hantering av avloppsvatten, rök eller fast eller flytande avfall, eller 6. förekomst av fukt i delar av byggnadsverket eller på ytor inom byggnadsverket. Egenskapskrav avseende säkerhet vid användning"
+    },
+    {
+      "provision_ref": "3:10",
+      "chapter": "3",
+      "section": "10",
+      "content": "För att uppfylla det krav på säkerhet vid användning som anges i 8 kap. 4 § första stycket 4 plan- och bygglagen (2010:900) ska ett byggnadsverk vara projekterat och utfört på ett sådant sätt att det vid användning eller drift inte innebär en oacceptabel risk för halkning, fall, sammanstötning, brännskador, elektriska stötar, skador av explosioner eller andra olyckor. Särskilda säkerhetskrav avseende redan uppförda byggnader"
+    },
+    {
+      "provision_ref": "3:11",
+      "chapter": "3",
+      "section": "11",
+      "content": "För att uppfylla rimliga säkerhetskrav vid användning ska 1. en byggnad som har uppförts eller omfattas av ett bygglov före den 1 juli 1960 vara försedd eller utrustad med de anordningar som behövs för uppstigning på byggnadens tak och till skydd mot olycksfall genom nedstörtning från taket, 2. portar och liknande anordningar i en byggnad som har uppförts eller omfattas av en bygglovsansökan före den 1 juli 1974 vara utförda så att risk för olycksfall inte uppkommer, 3. en byggnad som har uppförts eller omfattas av ett bygglov före den 1 juli 1977 vara försedd eller utrustad med de anordningar som skäligen kan krävas för att skapa godtagbara arbetsförhållanden för dem som hämtar avfall från byggnaden, 4. en hiss som är installerad i en byggnad och avsedd för persontransport alltid vara försedd med a) en korgdörr eller ett annat lämpligt skydd i korgöppningen, om byggnaden huvudsakligen innehåller arbetslokaler, eller b) en skylt som varnar för risken att klämmas av föremål som fastnar i schaktväggen, om byggnaden inte huvudsakligen innehåller arbetslokaler och hissen inte är försedd med en korgdörr eller annat sådant lämpligt skydd som avses i a, 5. en hiss som är installerad i en byggnad och avsedd för persontransport senast den 1 oktober 2031 vara försedd med lämpligt skydd i utrymmet mellan schaktdörren och korgdörren eller korggrinden, om det finns risk för innestängning i det utrymmet, och 6. i skälig utsträckning de åtgärder vidtas som är nödvändiga för att höja säkerheten vid användningen av en hiss som är installerad i en byggnad. Förordning (2023:533)."
+    },
+    {
+      "provision_ref": "3:12",
+      "chapter": "3",
+      "section": "12",
+      "content": "Kraven i 11 § 1-3 ska alltid vara uppfyllda genom att 1. en byggnad som avses i 11 § 1 har sådana anordningar som skäligen kunde krävas av en ny byggnad den 1 juli 1960, 2. portar och anordningar som avses i 11 § 2 är utförda på det sätt som skäligen kunde krävas av en ny port eller anordning den 1 juli 1974, och 3. en byggnad som avses i 11 § 3 har sådana anordningar som skäligen kunde krävas av en ny byggnad den 1 juli 1977. Förordning (2025:627)."
+    },
+    {
+      "provision_ref": "3:12 a",
+      "chapter": "3",
+      "section": "12 a",
+      "content": "Kravet i 11 § 6 ska uppfyllas senast när hissen genomgår en större ändring eller en väsentlig del i hissen byts ut. Förordning (2025:627). Egenskapskrav avseende skydd mot buller"
+    },
+    {
+      "provision_ref": "3:13",
+      "chapter": "3",
+      "section": "13",
+      "content": "För att uppfylla det krav på skydd mot buller som anges i"
+    },
+    {
+      "provision_ref": "3:14",
+      "chapter": "3",
+      "section": "14",
+      "title": "Egenskapskrav avseende energihushållning och värmeisolering",
+      "content": "För att uppfylla det krav på energihushållning och värmeisolering som anges i 8 kap. 4 § första stycket 6 plan- och bygglagen (2010:900) ska en byggnad 1. ha en mycket hög energiprestanda där den energi som tillförs i mycket hög grad kommer från förnybara energikällor (nära-nollenergibyggnad) uttryckt som primärenergi beräknad med en viktningsfaktor per energibärare som ska bidra till teknikneutralitet mellan hållbara uppvärmningssystem som inte är fossilbränslebaserade, 2. ha särskilt goda egenskaper när det gäller hushållning med el, och 3. vara utrustad med en klimatskärm som säkerställer god värmeisolering. Första stycket gäller dock inte byggnader som är avsedda för totalförsvaret eller som annars är av betydelse för Sveriges säkerhet och för vilka det finns särskilda skäl för undantag från kraven. Förordning (2020:433). Särskilda krav avseende system för fastighetsautomation och fastighetsstyrning i nya och redan uppförda byggnader"
+    },
+    {
+      "provision_ref": "3:15",
+      "chapter": "3",
+      "section": "15",
+      "content": "För att uppfylla det krav på energihushållning och värmeisolering som anges i 8 kap. 4 § första stycket 6 plan- och bygglagen (2010:900) ska andra byggnader än bostadshus vara utrustade med ett system för fastighetsautomation och fastighetsstyrning, om byggnadens 1. uppvärmningssystem eller kombinerade rumsuppvärmningssystem och ventilationssystem har en nominell effekt på över 290 kilowatt, eller 2. luftkonditioneringssystem eller kombinerade luftkonditioneringssystem och ventilationssystem har en nominell effekt på över 290 kilowatt. Första stycket gäller dock inte byggnader som är avsedda för totalförsvaret eller som annars är av betydelse för Sveriges säkerhet. Kravet enligt första stycket ska annars alltid uppfyllas. Förordning (2020:274). Egenskapskrav avseende lämplighet för det avsedda ändamålet"
+    },
+    {
+      "provision_ref": "3:16",
+      "chapter": "3",
+      "section": "16",
+      "content": "Ett byggnadsverk ska ha de tekniska egenskaper som behövs för att göra byggnadsverket lämpligt för sitt ändamål."
+    },
+    {
+      "provision_ref": "3:17",
+      "chapter": "3",
+      "section": "17",
+      "content": "För att uppfylla det krav på lämplighet för det avsedda ändamålet som anges i 8 kap. 4 § första stycket 7 plan- och bygglagen (2010:900) ska en byggnad som innehåller bostäder vara projekterad och utförd på ett sådant sätt att bostäderna i skälig utsträckning har avskiljbara utrymmen för sömn och vila, samvaro, matlagning, måltider, hygien och förvaring. Bostäderna ska med hänsyn till användningen ha inredning och utrustning för matlagning och hygien. Egenskapskrav avseende tillgänglighet och användbarhet"
+    },
+    {
+      "provision_ref": "3:18",
+      "chapter": "3",
+      "section": "18",
+      "content": "För att uppfylla det krav på tillgänglighet och användbarhet som anges i 8 kap. 4 § första stycket 8 plan- och bygglagen (2010:900) ska en byggnad vara projekterad och utförd på ett sådant sätt att byggnaden är tillgänglig och användbar för personer med nedsatt rörelse- eller orienteringsförmåga. Om det behövs för att en byggnad enligt 8 kap. 4 § första stycket 8 plan- och bygglagen ska vara tillgänglig och användbar för personer med nedsatt rörelse- eller orienteringsförmåga, ska byggnaden vara försedd med en eller flera hissar eller andra lyftanordningar. Trots andra stycket behöver en bostad inte vara tillgänglig genom en hiss eller annan lyftanordning, om byggnaden har färre än tre våningar. Om bostaden inte kan nås från marken, ska byggnaden dock vara projekterad och utförd på ett sådant sätt att en hiss eller annan lyftanordning kan installeras utan svårighet. Vid tillämpningen av detta stycke ska med våning jämställas vind där det finns en bostad eller huvuddelen av en bostad."
+    },
+    {
+      "provision_ref": "3:19",
+      "chapter": "3",
+      "section": "19",
+      "content": "Det som gäller för en byggnads tillgänglighet och användbarhet enligt 8 kap. 4 § första stycket 8 plan- och bygglagen (2010:900) ska gälla också för en annan anläggning än en byggnad, om anläggningen omfattas av krav på bygglov enligt 9 kap. plan- och bygglagen. Kravet på tillgänglighet och användbarhet gäller dock endast i den utsträckning det behövs med hänsyn till anläggningens syfte och behovet av tillträde för allmänheten. Kravet på tillgänglighet och användbarhet gäller inte 1. en mur eller ett plank, 2. en transformatorstation, 3. en skorsten eller ett vindkraftverk, eller 4. en fast förvaringsanläggning. Förordning (2025:979). Egenskapskrav avseende tillgänglighet och användbarhet för studentbostäder"
+    },
+    {
+      "provision_ref": "3:19 a",
+      "chapter": "3",
+      "section": "19 a",
+      "content": "En studentbostad som ska kunna besökas av en person med nedsatt rörelse- eller orienteringsförmåga enligt 8 kap. 6 § andra stycket plan- och bygglagen (2010:900) ska vara utformad så att 1. besökaren kan nå den våning där bostaden finns och komma in i bostaden, 2. det i bostaden finns ett utrymme för samvaro med besökaren, och 3. det i byggnaden och i närheten av bostaden finns minst ett tillgängligt och användbart toalettrum för besökaren. Kravet i första stycket 1 ska, i fråga om en studentbostad som består av en del som är gemensam för flera bostäder och en annan del som är avsedd som enskild bostad, uppfyllas för såväl den gemensamma delen som den enskilda delen. Förordning (2025:627)."
+    },
+    {
+      "provision_ref": "3:19 b",
+      "chapter": "3",
+      "section": "19 b",
+      "content": "För en byggnad som innehåller studentbostäder gäller undantaget i 18 § tredje stycket endast om man från marken kan nå de studentbostäder som enligt 8 kap. 6 § första stycket 4 plan- och bygglagen (2010:900) ska vara tillgängliga och användbara för personer med nedsatt rörelse- eller orienteringsförmåga. I så fall behöver endast de studentbostäder som kan nås från marken kunna besökas av en person med nedsatt rörelse- eller orienteringsförmåga. Förordning (2025:627). Egenskapskrav avseende hushållning med vatten"
+    },
+    {
+      "provision_ref": "3:20",
+      "chapter": "3",
+      "section": "20",
+      "content": "För att uppfylla det krav på hushållning med vatten som anges i 8 kap. 4 § första stycket 9 plan- och bygglagen (2010:900) ska en byggnad vara projekterad och utförd på sådant sätt att den medger god hushållning med vatten. Inom områden där det är eller kan uppkomma brist på vatten får kommunen i detaljplan eller områdesbestämmelser meddela de hushållningsbestämmelser som situationen inom området kräver. Om byggnaden är ett fritidshus med högst två bostäder som på grund av sin standard eller sitt läge inte är lämplig för boende under längre perioder, ska första stycket tillämpas endast i den utsträckning som det är skäligt med hänsyn till vattensituationen och till i vilken omfattning byggnaden används. Egenskapskrav avseende bredbandsanslutning"
+    },
+    {
+      "provision_ref": "3:20 a",
+      "chapter": "3",
+      "section": "20 a",
+      "content": "För att uppfylla det krav på bredbandsanslutning som anges i 8 kap. 4 § första stycket 10 plan- och bygglagen (2010:900) ska 1. en byggnad som innehåller bostäder eller arbetslokaler vara projekterad och utförd på ett sådant sätt att lägenheterna lätt kan anslutas till ett höghastighetsnät för elektronisk kommunikation, och 2. ett flerbostadshus vara utrustat med en accesspunkt i eller utanför byggnaden. Första stycket gäller dock inte byggnader som är avsedda för totalförsvaret eller som annars är av betydelse för Sveriges säkerhet. Första stycket 1 gäller inte heller fritidshus, komplementbyggnader, komplementbostadshus eller arbetslokaler, om kraven är obefogade med hänsyn till arten av den verksamhet som arbetslokalerna är avsedd för, eller ekonomibyggnader för jordbruk, skogsbruk eller annan liknande näring. Förordning (2020:274). Egenskapskrav avseende laddning av elfordon"
+    },
+    {
+      "provision_ref": "3:20 b",
+      "chapter": "3",
+      "section": "20 b",
+      "content": "För att uppfylla det krav på laddning av elfordon som anges i 8 kap. 4 § första stycket 11 plan- och bygglagen (2010:900) ska varje parkeringsplats på parkeringar med fler än tio parkeringsplatser som finns i, eller på tomten till, bostadshus vara utrustad med ledningsinfrastruktur för laddning av elfordon. Parkeringar med fler än tio parkeringsplatser som finns i, eller på tomten till, andra byggnader än bostadshus ska vara utrustade med minst en laddningspunkt för laddning av elfordon samt ledningsinfrastruktur för sådan laddning till minst en femtedel av parkeringsplatserna. Första och andra styckena gäller dock endast byggnader för vilka energi används för att påverka inomhusklimatet. Kraven gäller inte byggnader som är avsedda för totalförsvaret eller som annars är av betydelse för Sveriges säkerhet. Förordning (2020:274). Särskilda krav avseende laddning av elfordon i redan uppförda byggnader"
+    },
+    {
+      "provision_ref": "3:20 c",
+      "chapter": "3",
+      "section": "20 c",
+      "content": "För att uppfylla det krav på laddning av elfordon som anges i 8 kap. 4 § första stycket 11 plan- och bygglagen (2010:900) ska parkeringar med fler än tjugo parkeringsplatser alltid vara utrustade med minst en laddningspunkt för laddning av elfordon, om platserna finns i eller på tomten till en annan byggnad än ett bostadshus och energi används för att påverka inomhusklimatet i byggnaden. Första stycket gäller inte om byggnaden 1. är avsedd för totalförsvaret eller annars är av betydelse för Sveriges säkerhet, eller 2. ägs och används av en ideell organisation som är ett litet eller medelstort företag i den mening som avses i artikel 2.1 i bilagan till kommissionens rekommendation 2003/361/EG av den 6 maj 2003 om definitionen av mikroföretag samt små och medelstora företag. Med ideell organisation avses även trossamfund och en registrerad organisatorisk del av ett trossamfund i den mening som avses i lagen (1998:1593) om trossamfund. Förordning (2024:1249). Genomförande av egenskapskraven vid senare tidpunkt"
+    },
+    {
+      "provision_ref": "3:21",
+      "chapter": "3",
+      "section": "21",
+      "content": "Om en ombyggnad ska genomföras i etapper och egenskapskraven i 8 kap. 4 § plan- och bygglagen (2010:900) medför krav på omfattande ändringar av andra delar av byggnaden än den direkt berörda delen, får byggnadsnämnden i kontrollplanen enligt 10 kap. plan- och bygglagen eller i ett särskilt beslut bestämma att en sådan ändring inte behöver utföras förrän vid en viss senare tidpunkt, om detta av tekniska, sociala eller ekonomiska skäl är lämpligare. Uppfyllandet av egenskapskraven"
+    },
+    {
+      "provision_ref": "3:22",
+      "chapter": "3",
+      "section": "22",
+      "content": "Det som sägs om att uppfylla kraven på tekniska egenskaper i 8 kap. 5 § plan- och bygglagen (2010:900) ska gälla för uppfyllandet av egenskapskraven i 7-10, 13, 14 och 16-20 b §§ detta kapitel. De krav som gäller bredbandsanslutning i 8 kap. 4 § första stycket 10 plan- och bygglagen och 20 a § detta kapitel behöver dock inte uppfyllas vid annan ändring av en byggnad än ombyggnad. De krav som gäller laddning av elfordon i 8 kap. 4 § första stycket 11 plan- och bygglagen och 20 b § detta kapitel behöver inte uppfyllas vid annan ändring av en byggnad än 1. ombyggnad som omfattar byggnadens elektriska infrastruktur i fall då parkeringen är belägen i byggnaden, och 2. ombyggnad som sker i samband med att ändringsåtgärder vidtas på parkeringen i fall då parkeringen är belägen på tomten till byggnaden. Förordning (2020:274). Undantag från utformnings- och egenskapskraven på byggnadsverk"
+    },
+    {
+      "provision_ref": "3:23",
+      "chapter": "3",
+      "section": "23",
+      "content": "I fråga om tillgänglighet och användbarhet för personer med nedsatt rörelse- eller orienteringsförmåga ska 8 kap. 7 § första stycket andra meningen plan- och bygglagen (2010:900) tillämpas på så sätt att det är möjligt att anpassa eller göra avsteg från kraven i 8 kap. 1 § 3 och 4 § första stycket 8 plan- och bygglagen med hänsyn till plan- och bygglagens bestämmelser om varsamhet och förbud mot förvanskning och därutöver 1. vid ombyggnad endast om det är uppenbart oskäligt att uppfylla kraven, och 2. vid annan ändring av en byggnad eller vid flyttning av en byggnad i den utsträckning det är lämpligt med hänsyn till byggnadens förutsättningar. Dispens"
+    },
+    {
+      "provision_ref": "3:24",
+      "chapter": "3",
+      "section": "24",
+      "content": "Trots utformnings- och egenskapskraven i 8 kap. 1 och 4 §§ plan- och bygglagen (2010:900) och kraven på hissar i denna förordning får Boverket i det enskilda fallet ge dispens från bestämmelserna i 1 och 4 §§, 14 § 2 och 17, 18 och 20 §§, om det finns särskilda skäl och dispensen 1. avser uppförande eller ändring av en byggnad i experimentsyfte, och 2. inte medför en oacceptabel risk för människors hälsa eller säkerhet. Förordning (2016:1249). Vissa byggnaders tillgänglighet och användbarhet"
+    },
+    {
+      "provision_ref": "3:25",
+      "chapter": "3",
+      "section": "25",
+      "content": "Bestämmelser om vissa byggnaders tillgänglighet och användbarhet för personer med nedsatt rörelse- eller orienteringsförmåga finns i förordningen (2011:339) om handikappanpassning av vissa byggnader. El-, vatten- och värmemätare"
+    },
+    {
+      "provision_ref": "3:26",
+      "chapter": "3",
+      "section": "26",
+      "content": "Särskilda bestämmelser om el-, vatten- och värmemätare finns i förordningen (1994:99) om vatten- och värmemätare. Särskilda undantag för tillfälligt anläggningsboende"
+    },
+    {
+      "provision_ref": "3:27",
+      "chapter": "3",
+      "section": "27",
+      "content": "Kraven som gäller energihushållning, hushållning med vatten och avfall och bredbandsanslutning i 8 kap. 4 § första stycket 6, 9 och 10 plan- och bygglagen (2010:900) och 14, 20 och 20 a §§ detta kapitel samt de föreskrifter som Boverket har meddelat i anslutning till de paragraferna behöver inte uppfyllas vid nybyggnad, ombyggnad eller annan ändring än ombyggnad avseende ett tillfälligt anläggningsboende. Förordning (2016:1249)."
+    },
+    {
+      "provision_ref": "3:28",
+      "chapter": "3",
+      "section": "28",
+      "content": "I fråga om nybyggnad, ombyggnad eller annan ändring än ombyggnad avseende ett tillfälligt anläggningsboende ska kraven i 8 kap. 1 § och 4 § första stycket 2-5, 7 och 8 plan- och bygglagen (2010:900) och 8-10, 13 och 16 §§ och 18 § första stycket detta kapitel samt de föreskrifter som Boverket har meddelat i anslutning till de paragraferna anpassas och avsteg från kraven göras i den utsträckning som är skälig i förhållande till åtgärdens art, omfattning och varaktighet. Anpassningar och avsteg som görs enligt första stycket får inte medföra en oacceptabel risk för människors hälsa och säkerhet. Förordning (2016:539)."
+    },
+    {
+      "provision_ref": "3:29",
+      "chapter": "3",
+      "section": "29",
+      "content": "Trots 4 § första stycket och 18 § andra stycket behöver ett tillfälligt anläggningsboende inte vara försett med hiss eller annan lyftanordning. Förordning (2015:934)."
+    },
+    {
+      "provision_ref": "4:1",
+      "chapter": "4",
+      "section": "1",
+      "title": "Kontaktpunkts- och samordningsansvar",
+      "content": "Boverket ska vara samordningspunkt för byggprodukter enligt artikel 64.2 och kontaktpunkt för byggprodukter enligt artikel 72.1 i EU:s byggproduktförordning och artikel 10 i förordning (EU) nr 305/2011. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "4:2",
+      "chapter": "4",
+      "section": "2",
+      "content": "Boverket ska samordna information och vägledning om byggprodukter som kommer i kontakt med dricksvatten och om material och produkter som ingår i eller är avsedda att ingå i sådana byggprodukter. Förordning (2024:134)."
+    },
+    {
+      "provision_ref": "4:3",
+      "chapter": "4",
+      "section": "3",
+      "content": "Boverket ska fullgöra de skyldigheter som följer av artikel 71.5 i EU:s byggproduktförordning om att uppdatera och förvalta det informationssystem som avses i artikeln. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "4:4",
+      "chapter": "4",
+      "section": "4",
+      "content": "Har upphävts genom förordning (2013:308). Tekniska bedömningsorgan"
+    },
+    {
+      "provision_ref": "4:5",
+      "chapter": "4",
+      "section": "5",
+      "content": "Styrelsen för ackreditering och teknisk kontroll 1. prövar frågor om att utse tekniska bedömningsorgan enligt artikel 39.1 i EU:s byggproduktförordning, och 2. ska bedöma om sökanden uppfyller de krav som anges i tabellen i bilaga VIII i EU:s byggproduktförordning. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "4:6",
+      "chapter": "4",
+      "section": "6",
+      "content": "Styrelsen för ackreditering och teknisk kontroll prövar frågor om återkallelse av ett tekniskt bedömningsorgans behörighet för relevant produktområde enligt artikel 39.6 i EU:s byggproduktförordning. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "4:7",
+      "chapter": "4",
+      "section": "7",
+      "content": "Tekniska bedömningsorgan som utses enligt 5 § ska ingå i den organisation för teknisk bedömning som beskrivs i artikel 41 i EU:s byggproduktförordning. Förordning (2026:197). Anmälan av organ"
+    },
+    {
+      "provision_ref": "4:8",
+      "chapter": "4",
+      "section": "8",
+      "content": "Av 1 § andra stycket 1 lagen (2011:791) om ackreditering och teknisk kontroll följer att den lagen ska tillämpas beträffande organ som anmäls enligt artikel 42 i EU:s byggproduktförordning, artikel 39 i förordning (EU) nr 305/2011 eller artikel 22 i EU:s linbaneförordning. Förordning (2026:197). Typgodkännande och tillverkningskontroll"
+    },
+    {
+      "provision_ref": "4:9",
+      "chapter": "4",
+      "section": "9",
+      "content": "Av ett beslut om typgodkännande enligt 8 kap. 22 § plan- och bygglagen (2010:900) ska det framgå i vilka avseenden och under vilka förutsättningar materialet, konstruktionen eller anordningen uppfyller kraven i 8 kap. 4 § samma lag och anslutande föreskrifter. Typgodkännandet ska vara tidsbegränsat. Det får förenas med villkor om tillverkningskontroll."
+    },
+    {
+      "provision_ref": "4:10",
+      "chapter": "4",
+      "section": "10",
+      "content": "Av ett beslut om tillverkningskontroll utan samband med typgodkännande enligt 8 kap. 23 § plan- och bygglagen (2010:900) ska det framgå hur det ska kontrolleras att materialet, konstruktionen eller anordningen uppfyller kraven i 8 kap. 4 § samma lag och anslutande föreskrifter. Beslutet ska avse en begränsad tidsperiod och får förenas med villkor. Hissar"
+    },
+    {
+      "provision_ref": "4:11",
+      "chapter": "4",
+      "section": "11",
+      "content": "En hiss eller säkerhetskomponent som avses i föreskrifter meddelade med stöd av 10 kap. 15 § 4 får släppas ut på marknaden bara om den uppfyller de krav som följer av denna förordning eller av föreskrifter som har meddelats med stöd av 10 kap. 15 § 3. En hiss eller säkerhetskomponent som inte uppfyller de krav som avses i första stycket får visas på mässor, utställningar och liknande, om 1. det tydligt anges att kraven inte är uppfyllda och att hissen eller säkerhetskomponenten inte får tillhandahållas förrän den uppfyller kraven, och 2. de åtgärder vidtas som behövs till skydd mot olycksfall under visningen. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 a",
+      "chapter": "4",
+      "section": "11 a",
+      "content": "En installatör ska se till att en hiss har konstruerats, tillverkats, installerats och provats enligt de krav som avses i 11 § första stycket när hissen släpps ut på marknaden. En installatör ska upprätta teknisk dokumentation och utföra, eller låta utföra, bedömning av överensstämmelse. Om bedömningen visar att hissen uppfyller tillämpliga krav, ska installatören upprätta en EU-försäkran om överensstämmelse och se till att försäkran åtföljer hissen och att hissen CE-märks. En installatör som har anledning att tro att en hiss som installatören har släppt ut på marknaden inte överensstämmer med de krav som avses i 11 § första stycket ska omedelbart vidta de åtgärder som krävs för att få hissen att överensstämma med kraven. Om hissen utgör en risk, ska installatören dessutom omedelbart underrätta de behöriga myndigheterna i de medlemsstater på vars marknad installatören har släppt ut hissen. Underrättelsen ska innehålla uppgift om den bristande överensstämmelsen och om vilka åtgärder som har vidtagits. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 b",
+      "chapter": "4",
+      "section": "11 b",
+      "content": "En tillverkare ska se till att en säkerhetskomponent till hissar har konstruerats och tillverkats enligt de krav som avses i 11 § första stycket när säkerhetskomponenten släpps ut på marknaden. En tillverkare ska upprätta teknisk dokumentation och utföra, eller låta utföra, bedömning av överensstämmelse. Om bedömningen visar att säkerhetskomponenten uppfyller tillämpliga krav, ska tillverkaren upprätta en EU-försäkran om överensstämmelse och se till att försäkran åtföljer säkerhetskomponenten och att komponenten CE-märks. En tillverkare som har anledning att tro att en säkerhetskomponent som tillverkaren har släppt ut på marknaden inte överensstämmer med de krav som avses i 11 § första stycket ska omedelbart vidta de åtgärder som krävs för att få komponenten att överensstämma med kraven eller, om så är lämpligt, dra tillbaka eller återkalla komponenten. Om säkerhetskomponenten utgör en risk, ska tillverkaren dessutom omedelbart underrätta de behöriga myndigheterna i de medlemsstater på vars marknad tillverkaren har tillhandahållit komponenten. Underrättelsen ska innehålla uppgift om den bristande överensstämmelsen och om vilka åtgärder som har vidtagits. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 c",
+      "chapter": "4",
+      "section": "11 c",
+      "content": "En installatör eller en tillverkare får genom skriftlig fullmakt utse en representant som ska utföra de uppgifter som anges i fullmakten. Uppgifter enligt 11 a § första stycket och 11 b § första stycket och uppgiften att upprätta teknisk dokumentation enligt samma paragrafer får inte överlämnas till representanten. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 d",
+      "chapter": "4",
+      "section": "11 d",
+      "content": "En importör får släppa ut en säkerhetskomponent till hissar på marknaden bara om den överensstämmer med kraven enligt 11 § första stycket. Importören ska, så länge importören har ansvar för komponenten, se till att den förvaras och transporteras på så sätt att kraven fortsätter vara uppfyllda. En importör ska även se till att tillverkaren har uppfyllt sina skyldigheter enligt 11 b § andra stycket. Om en importör har anledning att tro att en säkerhetskomponent inte överensstämmer med kraven enligt 11 § första stycket, får importören inte släppa ut komponenten på marknaden förrän den överensstämmer med kraven. Om säkerhetskomponenten utgör en risk, ska importören dessutom underrätta tillverkaren och marknadskontrollmyndigheten. En importör som har anledning att tro att en säkerhetskomponent som importören har släppt ut på marknaden inte överensstämmer med de krav som avses i 11 § första stycket ska omedelbart vidta de åtgärder som krävs för att få komponenten att överensstämma med kraven eller, om så är lämpligt, dra tillbaka eller återkalla komponenten. Om säkerhetskomponenten utgör en risk, ska importören dessutom omedelbart underrätta de behöriga myndigheterna i de medlemsstater på vars marknad importören har tillhandahållit komponenten. Underrättelsen ska innehålla uppgift om den bristande överensstämmelsen och om vilka åtgärder som har vidtagits. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 e",
+      "chapter": "4",
+      "section": "11 e",
+      "content": "En distributör får tillhandahålla en säkerhetskomponent till hissar på marknaden bara om distributören iakttagit vederbörlig omsorg för att se till att komponenten överensstämmer med kraven enligt 11 § första stycket. Distributören ska, så länge distributören har ansvar för komponenten, se till att den förvaras och transporteras på så sätt att kraven fortsätter att vara uppfyllda. Innan en distributör tillhandahåller en säkerhetskomponent ska distributören kontrollera att komponenten är CE-märkt och åtföljs av en EU-försäkran om överensstämmelse. Om en distributör har anledning att tro att en säkerhetskomponent inte överensstämmer med kraven enligt 11 § första stycket, får distributören inte tillhandahålla komponenten på marknaden förrän den överensstämmer med kraven. Om säkerhetskomponenten utgör en risk, ska distributören dessutom underrätta tillverkaren och marknadskontrollmyndigheten. En distributör som har anledning att tro att en säkerhetskomponent som distributören har tillhandahållit på marknaden inte överensstämmer med de krav som avses i 11 § första stycket ska försäkra sig om att de åtgärder som krävs för att få komponenten att överensstämma med kraven vidtas eller, om så är lämpligt, dra tillbaka eller återkalla komponenten. Om säkerhetskomponenten utgör en risk, ska distributören dessutom omedelbart underrätta de behöriga myndigheterna i de medlemsstater på vars marknad distributören har tillhandahållit komponenten. Underrättelsen ska innehålla uppgift om den bristande överensstämmelsen och om vilka åtgärder som har vidtagits. Förordning (2016:141)."
+    },
+    {
+      "provision_ref": "4:11 f",
+      "chapter": "4",
+      "section": "11 f",
+      "content": "En importör eller distributör ska anses vara tillverkare och ha samma skyldigheter som en tillverkare om importören eller distributören släpper ut en säkerhetskomponent till hissar på marknaden i eget namn eller under eget varumärke. Samma sak gäller om importören eller distributören ändrar en komponent som redan har släppts ut på marknaden på ett sätt som kan påverka överensstämmelsen med kraven enligt 11 § första stycket. Förordning (2016:141). Byggprodukter som kommer i kontakt med dricksvatten"
+    },
+    {
+      "provision_ref": "4:12",
+      "chapter": "4",
+      "section": "12",
+      "content": "/Upphör att gälla U:2026-12-31/ En byggprodukt som kommer i kontakt med dricksvatten och är avsedd att användas i installationer för uttag, beredning, lagring eller distribution av dricksvatten får inte 1. direkt eller indirekt äventyra skyddet av människors hälsa, 2. ha en negativ inverkan på vattnets färg, lukt eller smak, 3. främja mikrobiell tillväxt, eller 4. läcka föroreningar till vattnet i högre grad än vad som är nödvändigt för det avsedda syftet med byggprodukten. Förordning (2024:134). 12 § /Träder i kraft I:2026-12-31/ En byggprodukt som kommer i kontakt med dricksvatten och är avsedd att användas i installationer för uttag, beredning, lagring eller distribution av dricksvatten får inte 1. direkt eller indirekt äventyra skyddet av människors hälsa, 2. ha en negativ inverkan på vattnets färg, lukt eller smak, 3. främja mikrobiell tillväxt, eller 4. läcka föroreningar till vattnet i högre grad än vad som är nödvändigt för det avsedda syftet med byggprodukten. En byggprodukt som kommer i kontakt med dricksvatten ska anses uppfylla kraven i första stycket om produkten är tillverkad av slutmaterial som är testade och godkända i enlighet med kommissionens genomförandebeslut (EU) 2024/368 av den 23 januari 2024 om tillämpningsföreskrifter för Europaparlamentets och rådets direktiv (EU) 2020/2184 vad gäller förfaranden och metoder för testning och godkännande av slutmaterial som används i produkter som kommer i kontakt med dricksvatten. Förordning (2026:22)."
+    },
+    {
+      "provision_ref": "4:13",
+      "chapter": "4",
+      "section": "13",
+      "content": "/Upphör att gälla U:2026-12-31/ En tillverkare, importör, distributör eller annan ekonomisk aktör som på marknaden släpper ut eller tillhandahåller byggprodukter som kommer i kontakt med dricksvatten ska se till att produkterna uppfyller kraven i 12 §. Förordning (2024:134). 13 § /Träder i kraft I:2026-12-31/ En tillverkare får släppa ut en byggprodukt som kommer i kontakt med dricksvatten på marknaden, endast om tillverkaren har 1. säkerställt att produkten är tillverkad av slutmaterial som har testats och godkänts i enlighet med kommissionens genomförandebeslut (EU) 2024/368, 2. utfört, eller låtit utföra, en bedömning av överensstämmelse i enlighet med kommissionens delegerade förordning (EU) 2024/370, 3. upprättat en EU-försäkran om överensstämmelse i enlighet med artikel 2.5 i kommissionens delegerade förordning (EU) 2024/370, och 4. märkt produkten i enlighet med artikel 1 i kommissionens delegerade förordning (EU) 2024/371 av den 23 januari 2024 om komplettering av Europaparlamentets och rådets direktiv (EU) 2020/2184 genom fastställande av harmoniserade specifikationer för märkning av produkter som kommer i kontakt med dricksvatten. Förordning (2026:22)."
+    },
+    {
+      "provision_ref": "4:14",
+      "chapter": "4",
+      "section": "14",
+      "content": "/Träder i kraft I:2026-12-31/ En importör får släppa ut en byggprodukt som kommer i kontakt med dricksvatten på marknaden, endast om importören säkerställer att tillverkaren har uppfyllt kraven om överensstämmelse och märkning i 13 § 2-4. Förordning (2026:22)."
+    },
+    {
+      "provision_ref": "5:1",
+      "chapter": "5",
+      "section": "1",
+      "title": "Funktionskontroll av ventilationssystem",
+      "content": "För att säkerställa ett tillfredsställande inomhusklimat enligt 8 kap. 25 § plan- och bygglagen (2010:900) ska en byggnads ägare se till att funktionen hos ventilationssystemet i byggnaden kontrolleras innan systemet tas i bruk för första gången (första besiktning) och därefter regelbundet vid återkommande tillfällen (återkommande besiktning). En- och tvåbostadshus omfattas inte av kravet på återkommande besiktning."
+    },
+    {
+      "provision_ref": "5:2",
+      "chapter": "5",
+      "section": "2",
+      "content": "Vid den första besiktningen ska det kontrolleras att 1. funktionen och egenskaperna hos ventilationssystemet överensstämmer med gällande föreskrifter, 2. systemet inte innehåller föroreningar som kan spridas i byggnaden, 3. instruktioner och skötselanvisningar finns lätt tillgängliga för dem som ska sköta systemet, och 4. systemet i övrigt fungerar på det sätt som är avsett."
+    },
+    {
+      "provision_ref": "5:3",
+      "chapter": "5",
+      "section": "3",
+      "content": "Vid varje återkommande besiktning ska det 1. kontrolleras att funktionen och egenskaperna hos ventilationssystemet i huvudsak överensstämmer med de föreskrifter som gällde när systemet togs i bruk samt att kraven enligt 2 § 2-4 är uppfyllda, och 2. undersökas vilka åtgärder som kan vidtas för att förbättra energihushållningen i ventilationssystemet och som inte medför ett försämrat inomhusklimat."
+    },
+    {
+      "provision_ref": "5:4",
+      "chapter": "5",
+      "section": "4",
+      "content": "Vid varje besiktning ska den som utför besiktningen föra protokoll och i protokollet anteckna 1. resultatet av kontrollen, 2. resultatet av undersökningen enligt 3 § 2, om besiktningen är en återkommande besiktning, och 3. sådana uppgifter om luftflöden och om ventilationssystemets drifttider och installerade eleffekt som behövs för att kunna beräkna den mängd energi som används för ventilation av byggnaden."
+    },
+    {
+      "provision_ref": "5:5",
+      "chapter": "5",
+      "section": "5",
+      "content": "Den som har utfört besiktningen ska 1. lämna ett exemplar av protokollet till byggnadens ägare och skicka ett exemplar till byggnadsnämnden, och 2. utfärda ett intyg om att besiktningen har gjorts med uppgift om datum för besiktningen, resultatet av kontrollen och datum för nästa besiktning."
+    },
+    {
+      "provision_ref": "5:6",
+      "chapter": "5",
+      "section": "6",
+      "content": "Byggnadens ägare ska anslå besiktningsintyget på en väl synlig plats i byggnaden."
+    },
+    {
+      "provision_ref": "5:7",
+      "chapter": "5",
+      "section": "7",
+      "content": "Om byggnadens ägare har anledning att misstänka att ventilationssystemet inte uppfyller de krav som avses i 2 § 1 eller 3 § 1, ska ägaren snarast möjligt vidta de åtgärder som behövs för att kraven ska vara uppfyllda. Kontroll av motordrivna anordningar i byggnadsverk"
+    },
+    {
+      "provision_ref": "5:8",
+      "chapter": "5",
+      "section": "8",
+      "content": "Om Boverket med stöd av 10 kap. 19 § har meddelat föreskrifter om det, ska den som äger eller annars ansvarar för en motordriven anordning som är installerad i ett byggnadsverk se till att anordningen kontrolleras 1. innan anordningen tas i bruk första gången (första besiktning), 2. med intervaller på minst sex månader och högst sex år (återkommande besiktning), eller 3. innan anordningen för första gången tas i bruk efter att ha ändrats (revisionsbesiktning). Vid besiktningen ska det kontrolleras att anordningen uppfyller de krav på skydd för säkerhet och hälsa som avses i"
+    },
+    {
+      "provision_ref": "5:9",
+      "chapter": "5",
+      "section": "9",
+      "content": "Om tillsynsmyndigheten med stöd av 8 kap. 6 eller 7 § har beslutat om det, ska den som äger eller annars ansvarar för en motordriven anordning som är installerad i ett byggnadsverk se till att anordningen kontrolleras (särskild besiktning) i enlighet med det som anges i tillsynsmyndighetens beslut. Förordning (2016:773)."
+    },
+    {
+      "provision_ref": "5:10",
+      "chapter": "5",
+      "section": "10",
+      "content": "En besiktning enligt 8 eller 9 § ska utföras av någon vars kompetens för uppgiften har styrkts genom ackreditering enligt lagen (2011:791) om ackreditering och teknisk kontroll och EU:s ackrediteringsförordning, eller av någon som uppfyller motsvarande krav enligt bestämmelser i ett annat land i Europeiska unionen eller Europeiska ekonomiska samarbetsområdet. Bestämmelser om tillfällig yrkesutövning och erkännande av yrkeskvalifikationer som har förvärvats eller erkänts i en annan stat än Sverige inom Europeiska ekonomiska samarbetsområdet eller i Schweiz finns i lagen (2016:145) om erkännande av yrkeskvalifikationer och i de föreskrifter som meddelas i anslutning till den lagen. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "5:11",
+      "chapter": "5",
+      "section": "11",
+      "content": "Den som har utfört besiktningen ska 1. utfärda ett protokoll om att besiktningen har gjorts och vad den omfattat, 2. i protokollet ange om anordningen har sådana brister som avses i 10 kap. 20 § andra stycket 1 eller 2 och vilka bristerna i så fall är, och 3. lämna ett exemplar av protokollet till den som äger eller annars ansvarar för anordningen. Om anordningen har sådana brister som avses i 10 kap. 20 § andra stycket 1 ska den som har utfört besiktningen omedelbart underrätta den som äger eller annars ansvarar för anordningen om detta samt skicka ett exemplar av protokollet till byggnadsnämnden. Användning av motordrivna anordningar i byggnadsverk"
+    },
+    {
+      "provision_ref": "5:12",
+      "chapter": "5",
+      "section": "12",
+      "content": "En motordriven anordning som är installerad i ett byggnadsverk får användas endast för det ändamål och med den belastning och hastighet som anordningen är avsedd för och endast om den uppfyller kraven på skydd för säkerhet och hälsa."
+    },
+    {
+      "provision_ref": "5:13",
+      "chapter": "5",
+      "section": "13",
+      "content": "Om en motordriven anordning ska kontrolleras enligt 8 eller 9 § och kontrollen inte har gjorts inom föreskriven tid, får anordningen inte användas förrän kontrollen är gjord."
+    },
+    {
+      "provision_ref": "5:14",
+      "chapter": "5",
+      "section": "14",
+      "content": "En motordriven anordning får inte användas om den som äger eller annars ansvarar för anordningen inte kan visa med ett protokoll enligt 11 § att anordningen uppfyller de krav på skydd för säkerhet och hälsa som avses i 10 kap. 20 § andra stycket 1."
+    },
+    {
+      "provision_ref": "5:15",
+      "chapter": "5",
+      "section": "15",
+      "content": "Om det vid användningen av en motordriven anordning i ett byggnadsverk inträffar ett olycksfall eller olyckstillbud, får anordningen inte användas innan nödvändiga skyddsåtgärder har vidtagits."
+    },
+    {
+      "provision_ref": "5:16",
+      "chapter": "5",
+      "section": "16",
+      "content": "Vid ett olycksfall eller tillbud som avses i 15 §, ska den som äger eller annars ansvarar för anordningen omedelbart rapportera olycksfallet eller tillbudet till tillsynsmyndigheten."
+    },
+    {
+      "provision_ref": "5:17",
+      "chapter": "5",
+      "section": "17",
+      "content": "Har upphävts genom förordning (2024:944)."
+    },
+    {
+      "provision_ref": "6:1",
+      "chapter": "6",
+      "section": "1",
+      "title": "Anmälningsplikt",
+      "content": "För en åtgärd som inte omfattas av krav på bygglov, rivningslov eller marklov enligt plan- och bygglagen (2010:900) krävs det en anmälan vid 1. rivning av en byggnad eller en del av en byggnad, om byggnaden har en byggnadsarea som är större än 50,0 kvadratmeter, 2. en ändring av en byggnad, om ändringen innebär att konstruktionen av byggnadens bärande delar påverkas väsentligt, 3. en ändring av en byggnad, om ändringen innebär att byggnadens brandskydd påverkas väsentligt, 4. en installation eller väsentlig ändring av en hiss, eldstad, rökkanal eller anordning för ventilation i en byggnad, 5. en installation eller väsentlig ändring av en anläggning för vattenförsörjning eller avlopp i en byggnad, eller 6. nybyggnad eller väsentlig ändring av ett vindkraftverk. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "6:2",
+      "chapter": "6",
+      "section": "2",
+      "content": "Trots 1 § krävs det inte en anmälan för 1. en åtgärd som är nödvändig för att följa ett föreläggande enligt 11 kap. plan- och bygglagen (2010:900), 2. en åtgärd med ett byggnadsverk som är avsett för totalförsvaret och som innefattar uppgifter för vilka sekretess gäller enligt 15 kap. 2 § offentlighets- och sekretesslagen (2009:400), eller 3. en åtgärd som avses i 1 § 2, 3, 4 eller 5 i fråga om a) en byggnad eller tomt som tillhör staten eller en region, eller b) en ekonomibyggnad i ett område som inte omfattas av en detaljplan. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "6:3",
+      "chapter": "6",
+      "section": "3",
+      "content": "/Upphör att gälla U:2027-12-01 genom förordning (2025:980)./ En anmälan krävs för en sådan nybyggnad eller tillbyggnad som omfattas av krav på bygglov enligt plan- och bygglagen (2010:900) men har undantagits från krav på bygglov enligt bestämmelser i en detaljplan eller i områdesbestämmelser. Förordning (2025:979). Förutsättningar för att få påbörja en anmälningspliktig åtgärd"
+    },
+    {
+      "provision_ref": "6:4",
+      "chapter": "6",
+      "section": "4",
+      "content": "Bestämmelser om förutsättningar för att få påbörja en åtgärd som omfattas av krav på anmälan finns i 10 kap. 23 c § plan- och bygglagen (2010:900). Förordning (2025:979). En anmälans innehåll och handläggning"
+    },
+    {
+      "provision_ref": "6:5",
+      "chapter": "6",
+      "section": "5",
+      "content": "Det som enligt 9 kap. 85, 86, 90, 91, 99-101 och 107 §§ plan- och bygglagen (2010:900) gäller för en ansökan gäller också för en anmälan. Vid tillämpningen av 9 kap. 99 § första stycket plan- och bygglagen är tidsfristen för handläggning av en anmälan fyra veckor. Vid tillämpningen av 9 kap. 99 § andra stycket plan- och bygglagen får tidsfristen för handläggning av en anmälan förlängas högst en gång med högst fyra veckor. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "6:6",
+      "chapter": "6",
+      "section": "6",
+      "content": "Utöver det som anges i 9 kap. 86 och 90 §§ plan- och bygglagen (2010:900) ska en anmälan innehålla de handlingar som krävs för beslut om startbesked enligt 10 kap. plan- och bygglagen. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "7:1",
+      "chapter": "7",
+      "section": "1",
+      "title": "Kontrollplan",
+      "content": "Om en ombyggnad ska genomföras i etapper, ska de tidpunkter som avses i 3 kap. 21 § framgå av kontrollplanen enligt 10 kap. plan- och bygglagen (2010:900). Funktionskontrollanter, certifierade byggprojekteringsföretag, kontrollansvariga och sakkunniga"
+    },
+    {
+      "provision_ref": "7:2",
+      "chapter": "7",
+      "section": "2",
+      "content": "När byggnadsnämnden prövar behovet av att en åtgärd eller ett byggnadsverk kontrolleras av någon som är sakkunnig enligt"
+    },
+    {
+      "provision_ref": "7:3",
+      "chapter": "7",
+      "section": "3",
+      "content": "Sådana funktionskontrollanter som avses i 8 kap. 25 § och sakkunniga enligt 10 kap. 8 § 2 plan- och bygglagen (2010:900) ska ha den kunskap, erfarenhet och lämplighet som behövs för uppgiften och kunna styrka detta med ett intyg om certifiering. Sådana certifierade byggprojekteringsföretag som avses i"
+    },
+    {
+      "provision_ref": "7:4",
+      "chapter": "7",
+      "section": "4",
+      "title": "Certifieringen ska vara tidsbegränsad och avse ett visst slag",
+      "content": "Byggnadsnämnden ska godta certifierade kontrollansvariga och funktionskontrollanter samt utlåtanden från sakkunniga vars kompetens har styrkts genom certifiering. Nämnden ska även godta kontrollansvariga, funktionskontrollanter och utlåtanden från sakkunniga som har styrkt sin kompetens på annat motsvarande sätt enligt bestämmelser i ett annat land inom Europeiska unionen eller Europeiska ekonomiska samarbetsområdet. Bestämmelser om tillfällig yrkesutövning och erkännande av yrkeskvalifikationer som har förvärvats eller erkänts i en annan stat än Sverige inom Europeiska ekonomiska samarbetsområdet eller i Schweiz finns i lagen (2016:145) om erkännande av yrkeskvalifikationer och i de föreskrifter som meddelas i anslutning till den lagen. Förordning (2016:169)."
+    },
+    {
+      "provision_ref": "7:5",
+      "chapter": "7",
+      "section": "5",
+      "content": "Utöver det som följer av 10 kap. 10 § 1 plan- och bygglagen (2010:900) krävs det inte en kontrollansvarig för 1. en åtgärd som inte omfattas av krav på lov eller anmälan, 2. en åtgärd som omfattas av krav på anmälan, 3. en åtgärd avseende en komplementbyggnad eller ett komplementbostadshus, 4. att inreda ytterligare en bostad i ett enbostadshus, 5. en åtgärd avseende en skylt eller ljusanordning, 6. att uppföra eller utöka en mur, ett plank eller en altan, 7. en åtgärd avseende en liten begravningsplats, 8. en åtgärd avseende en transformatorstation, 9. en åtgärd som omfattas av krav på rivningslov efter beslut i detaljplan eller områdesbestämmelser, 10. en åtgärd som omfattas av krav på marklov enligt 9 kap. plan- och bygglagen, om åtgärden är liten, eller 11. en annan liten ändring än de som avses i 10 kap. 10 § 1 plan- och bygglagen. Trots det som sägs i första stycket 2-11 får byggnadsnämnden besluta att det krävs en kontrollansvarig. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "8:1",
+      "chapter": "8",
+      "section": "1",
+      "content": "Statliga myndigheters och byggnadsnämndens ansvar för tillsyn över att plan- och bygglagen (2010:900) och EU- förordningar i frågor inom lagens tillämpningsområde samt föreskrifter, domar och andra beslut som har meddelats i anslutning till lagen eller en sådan EU-förordning följs, framgår av bestämmelserna i 11 kap. plan- och bygglagen och detta kapitel. Byggnadsnämndens tillsyn"
+    },
+    {
+      "provision_ref": "8:2",
+      "chapter": "8",
+      "section": "2",
+      "content": "Om inte annat anges i detta kapitel eller annan författning, ansvarar byggnadsnämnden för tillsynen över att 1. byggherren fullgör sina skyldigheter enligt plan- och bygglagen (2010:900) och enligt föreskrifter i anslutning till lagen, och 2. bestämmelserna i 8 kap. 1-18 och 24-26 §§ samt 9 och"
+    },
+    {
+      "provision_ref": "8:3",
+      "chapter": "8",
+      "section": "3",
+      "title": "Marknadskontroll av byggprodukter",
+      "content": "Boverket är marknadskontrollmyndighet och utövar marknadskontroll enligt EU:s marknadskontrollförordning över att produkter överensstämmer med kraven i EU:s byggproduktförordning, EU:s hissdirektiv, EU:s linbaneförordning och Europaparlamentets och rådets direktiv (EU) 2020/2184 av den 16 december 2020 om kvaliteten på dricksvatten, i den ursprungliga lydelsen. Bestämmelser om en marknadskontrollmyndighets befogenhet att besluta om åtgärder enligt EU:s marknadskontrollförordning finns i plan- och bygglagen (2010:900). Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "8:4",
+      "chapter": "8",
+      "section": "4",
+      "content": "Kemikalieinspektionen ska ge råd och hjälp till Boverket vid marknadskontrollen när det gäller kemiska egenskaper hos sådana produkter som avses i 3 § första stycket 4. Förordning (2024:134)."
+    },
+    {
+      "provision_ref": "8:5",
+      "chapter": "8",
+      "section": "5",
+      "content": "Har upphävts genom förordning (2021:691). Tillsyn över vissa byggprodukters lämplighet"
+    },
+    {
+      "provision_ref": "8:5 a",
+      "chapter": "8",
+      "section": "5 a",
+      "content": "I fråga om byggprodukter som inte omfattas av EU:s byggproduktförordning eller EU:s linbaneförordning ansvarar Boverket för tillsynen över att bestämmelserna om krav på byggprodukters lämplighet i 8 kap. 19 § plan- och bygglagen (2010:900) och i föreskrifter meddelade i anslutning till lagen följs. Förordning (2026:197). Övervakning och utvärdering av tekniska bedömningsorgan"
+    },
+    {
+      "provision_ref": "8:5 b",
+      "chapter": "8",
+      "section": "5 b",
+      "content": "Styrelsen för ackreditering och teknisk kontroll ska fullgöra de uppgifter i fråga om övervakning och utvärdering av tekniska bedömningsorgan som anges i artikel 39 i EU:s byggproduktförordning. Förordning (2026:197). Tillsyn över motordrivna anordningar i byggnadsverk"
+    },
+    {
+      "provision_ref": "8:6",
+      "chapter": "8",
+      "section": "6",
+      "content": "Om det behövs för att säkerställa att en motordriven anordning som är installerad i ett byggnadsverk uppfyller de krav som gäller för anordningen enligt 8 kap. 4 § plan- och bygglagen (2010:900) och anslutande föreskrifter eller för att säkerställa att en linbaneanläggning uppfyller de krav som gäller för anläggningen enligt EU:s linbaneförordning, ska byggnadsnämnden förelägga den som äger eller annars ansvarar för anordningen att se till att anordningen kontrolleras. Myndigheten ska i beslutet om föreläggande ange vad som ska kontrolleras. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "8:7",
+      "chapter": "8",
+      "section": "7",
+      "content": "I den mån en motordriven anordning som är installerad i ett byggnadsverk omfattas av tillsyn enligt arbetsmiljölagen (1977:1160) ansvarar Arbetsmiljöverket även för tillsynen över att bestämmelserna om kontroll av motordrivna anordningar i"
+    },
+    {
+      "provision_ref": "8:8",
+      "chapter": "8",
+      "section": "8",
+      "title": "Samordning och utvärdering m.m.",
+      "content": "En tillsynsmyndighet ska regelbundet följa upp och utvärdera tillsynsarbetet."
+    },
+    {
+      "provision_ref": "8:9",
+      "chapter": "8",
+      "section": "9",
+      "content": "En tillsynsmyndighet ska på begäran lämna den information som en tillsynsvägledande myndighet behöver för sin tillsynsvägledning."
+    },
+    {
+      "provision_ref": "8:10",
+      "chapter": "8",
+      "section": "10",
+      "content": "Om en tillsynsmyndighet uppmärksammar en omständighet som kan föranleda tillsynsåtgärder med stöd av plan- och bygglagen (2010:900) och anslutande föreskrifter men som omfattas av en annan myndighets ansvarsområde, ska tillsynsmyndigheten anmäla denna omständighet till den ansvariga myndigheten."
+    },
+    {
+      "provision_ref": "8:11",
+      "chapter": "8",
+      "section": "11",
+      "content": "Om ett tillsynsobjekt omfattas av krav på tillsyn enligt lagar och förordningar som har ett nära samband med varandra ska de ansvariga tillsynsmyndigheterna samordna tillsynen."
+    },
+    {
+      "provision_ref": "8:12",
+      "chapter": "8",
+      "section": "12",
+      "content": "Skyldigheterna i 8-11 §§ gäller inte regeringen och Boverket. Tillsynsvägledning"
+    },
+    {
+      "provision_ref": "8:13",
+      "chapter": "8",
+      "section": "13",
+      "content": "Boverket och länsstyrelsen ska ge tillsynsvägledning när det gäller tillsynen enligt plan- och bygglagen (2010:900) och denna förordning på det sätt som närmare framgår av 14 och"
+    },
+    {
+      "provision_ref": "8:15",
+      "chapter": "8",
+      "section": "15",
+      "content": "§. Myndigheterna ska aktivt verka för samordning och samverkan i tillsynsvägledningen. 14 § Länsstyrelsen ska 1. ge tillsynsvägledning i länet genom att ge byggnadsnämnden råd och stöd i nämndens tillsynsarbete, 2. följa upp och utvärdera byggnadsnämndens tillsynsarbete, och 3. lämna uppgifter till Boverket om länsstyrelsens tillsynsvägledning och utvecklingen av byggnadsnämndens tillsynsarbete senast den 31 januari varje år. Förordning (2025:267). 15 § Boverket ska ge tillsynsvägledning till 1. länsstyrelsen i plan- och byggfrågor, och 2. byggnadsnämnden genom råd och stöd i dess tillsynsarbete."
+    },
+    {
+      "provision_ref": "8:16",
+      "chapter": "8",
+      "section": "16",
+      "content": "Både Boverket och länsstyrelsen ska ha en plan för sin tillsynsvägledning. Planerna ska omfatta en period av tre år och vid behov revideras."
+    },
+    {
+      "provision_ref": "8:17",
+      "chapter": "8",
+      "section": "17",
+      "content": "Boverket ska regelbundet sammanställa erfarenheterna från 1. kommunens tillsynsarbete, och 2. länsstyrelsens och verkets tillsynsarbete och tillsynsvägledning. Sammanställningen ska lämnas till Regeringskansliet senast den 30 april varje år. Förordning (2025:267). Uppföljning av tillämpningen av plan- och bygglagen och anslutande föreskrifter"
+    },
+    {
+      "provision_ref": "8:18",
+      "chapter": "8",
+      "section": "18",
+      "content": "Länsstyrelsen ska 1. följa upp byggnadsnämndens tillämpning av plan- och bygglagen (2010:900) och föreskrifter som har meddelats i anslutning till lagen och vid behov ge byggnadsnämnden råd och stöd, 2. lämna uppgifter till Boverket om byggnadsnämndens tillämpning av plan- och bygglagen och föreskrifter som har meddelats i anslutning till lagen senast den 31 januari varje år, och 3. på Boverkets begäran lämna sådana redovisningar av detaljplaner och områdesbestämmelser samt av planeringsunderlag för regionplaner, översiktsplaner, detaljplaner och områdesbestämmelser som behövs för att Boverket ska få kännedom om aktuella utvecklingstendenser inom verkets ansvarsområde. Förordning (2025:267)."
+    },
+    {
+      "provision_ref": "8:19",
+      "chapter": "8",
+      "section": "19",
+      "content": "Boverket ska ge råd och stöd om tillämpningen av plan- och bygglagen (2010:900) och föreskrifter som har meddelats i anslutning till lagen samt följa upp, analysera och regelbundet sammanställa erfarenheterna från tillämpningen. Sammanställningen ska lämnas till Regeringskansliet senast den 30 april varje år. Förordning (2025:267)."
+    },
+    {
+      "provision_ref": "9:1",
+      "chapter": "9",
+      "section": "1",
+      "title": "Allmänna bestämmelser",
+      "content": "En byggsanktionsavgift enligt 11 kap. plan- och bygglagen (2010:900) ska tas ut för de överträdelser och med det belopp som följer av detta kapitel. Avgiften fastställs med tillämpning av det prisbasbelopp som gäller för det år som beslutet om avgiften fattas. Avgiften får uppgå till högst 50 prisbasbelopp. Förordning (2013:308)."
+    },
+    {
+      "provision_ref": "9:2",
+      "chapter": "9",
+      "section": "2",
+      "content": "Om en byggsanktionsavgift har beslutats för en överträdelse och den avgiftsskyldige därefter inte vidtar rättelse, ska en ny avgift för överträdelsen tas ut. Varje sådan ny avgift tas ut med dubbla det belopp som togs ut senast i enlighet med detta kapitel. Den sammanlagda avgiften för överträdelsen får dock uppgå till högst 50 prisbasbelopp. En ny avgift får beslutas endast om den avgiftsskyldige har fått skälig tid att vidta rättelse. Förordning (2013:308)."
+    },
+    {
+      "provision_ref": "9:3",
+      "chapter": "9",
+      "section": "3",
+      "content": "Om en byggsanktionsavgift har beslutats för en överträdelse och den avgiftsskyldige därefter på nytt gör sig skyldig till en överträdelse av samma slag, ska en avgift för den nya överträdelsen tas ut med dubbla det belopp som följer av detta kapitel, dock högst 50 prisbasbelopp. Första stycket gäller endast överträdelser som begås inom två år från det tidigare beslutet om byggsanktionsavgift."
+    },
+    {
+      "provision_ref": "9:3 a",
+      "chapter": "9",
+      "section": "3 a",
+      "content": "Om en byggsanktionsavgift ska tas ut på grund av att den avgiftsskyldige har påbörjat en åtgärd eller en del av en åtgärd innan byggnadsnämnden har gett ett startbesked som omfattar den åtgärden eller delen, eller innan den tidpunkt som byggnadsnämnden enligt 10 kap. 24 § 6 plan- och bygglagen (2010:900) i ett startbesked har angett att åtgärden får påbörjas, ska avgiften bestämmas till hälften av det belopp som annars följer av detta kapitel om den avgiftsskyldige när åtgärden eller delen påbörjades 1. hade fått bygglov för åtgärden, eller 2. hade fullgjort skyldigheten att anmäla åtgärden. Förordning (2022:910)."
+    },
+    {
+      "provision_ref": "9:4",
+      "chapter": "9",
+      "section": "4",
+      "content": "Tillsynsmyndigheten ansvarar för indrivning av byggsanktionsavgifter. Bestämmelser om begäran om indrivning m.m. finns i 4-9 §§ indrivningsförordningen (1993:1229). Att den betalningsskyldige ska uppmanas att betala fordringen innan ansökan om indrivning görs framgår av 3 § nämnda förordning. Indrivning behöver inte begäras för en fordran som understiger 100 kronor, om indrivning inte krävs från allmän synpunkt. Användning av motordrivna anordningar i byggnadsverk"
+    },
+    {
+      "provision_ref": "9:5",
+      "chapter": "9",
+      "section": "5",
+      "content": "Byggsanktionsavgiften för användning av en motordriven anordning i ett byggnadsverk i strid mot 5 kap. 12, 13, 14 eller 15 § är 2 prisbasbelopp. Startbesked Nybyggnad och tillbyggnad"
+    },
+    {
+      "provision_ref": "9:6",
+      "chapter": "9",
+      "section": "6",
+      "content": "För att påbörja en lovpliktig nybyggnad eller del av en sådan nybyggnad före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot 10 kap. 3, 3 a § eller 24 § 6 plan- och bygglagen (2010:900) är byggsanktionsavgiften när åtgärden avser 1. ett en- eller tvåbostadshus: 1,5 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av byggnadens sanktionsarea, 2. en komplementbyggnad, ett komplementbostadshus eller en annan liten byggnad: 0,25 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av byggnadens sanktionsarea, 3. ett flerbostadshus, en kontorsbyggnad, en handelsbyggnad eller en byggnad för kultur- eller idrottsevenemang: 3 prisbasbelopp med ett tillägg av 0,02 prisbasbelopp per kvadratmeter av byggnadens sanktionsarea, eller 4. en annan byggnad än de som omfattas av 1-3: 3 prisbasbelopp med ett tillägg av 0,01 prisbasbelopp per kvadratmeter av byggnadens sanktionsarea. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:7",
+      "chapter": "9",
+      "section": "7",
+      "content": "För att påbörja en lovpliktig tillbyggnad eller del av en sådan tillbyggnad före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot 10 kap. 3, 3 a § eller 24 § 6 plan- och bygglagen (2010:900) är byggsanktionsavgiften när åtgärden vidtas på 1. ett en- eller tvåbostadshus: 0,5 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av tillbyggnadens sanktionsarea, 2. en komplementbyggnad, ett komplementbostadshus eller en annan liten byggnad: 0,08 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av tillbyggnadens sanktionsarea, 3. ett flerbostadshus, en kontorsbyggnad, en handelsbyggnad eller en byggnad för kultur- eller idrottsevenemang: 1 prisbasbelopp med ett tillägg av 0,02 prisbasbelopp per kvadratmeter av tillbyggnadens sanktionsarea, eller 4. en annan byggnad än de som omfattas av 1-3: 1 prisbasbelopp med ett tillägg av 0,01 prisbasbelopp per kvadratmeter av tillbyggnadens sanktionsarea. Om tillbyggnaden endast avser en eller flera takkupor, är byggsanktionsavgiften 0,25 prisbasbelopp per takkupa i stället för den avgift som följer av första stycket. Förordning (2025:979). Annan ändring av en byggnad än tillbyggnad"
+    },
+    {
+      "provision_ref": "9:8",
+      "chapter": "9",
+      "section": "8",
+      "content": "För att påbörja en lovpliktig ändring av en byggnad som avser ändrad användning eller påbörja en del av en sådan ändring före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot 10 kap. 3, 3 a § eller 24 § 6 plan- och bygglagen (2010:900) är byggsanktionsavgiften när ändringen avser 1. ett en- eller tvåbostadshus: 0,125 prisbasbelopp med ett tillägg av 0,003 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser, 2. en komplementbyggnad, ett komplementbostadshus eller en annan liten byggnad: 0,0625 prisbasbelopp med ett tillägg av 0,003 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser, 3. ett flerbostadshus, en kontorsbyggnad, en handelsbyggnad eller en byggnad för kultur- eller idrottsevenemang: 0,25 prisbasbelopp med ett tillägg av 0,0125 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser, eller 4. en annan byggnad än de som omfattas av 1-3: 0,25 prisbasbelopp med ett tillägg av 0,00625 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:9",
+      "chapter": "9",
+      "section": "9",
+      "content": "För att påbörja en lovpliktig ändring av en byggnad som avser inredning av ytterligare en bostad eller påbörja en del av en sådan ändring före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot 10 kap. 3, 3 a § eller 24 § 6 plan- och bygglagen (2010:900) är byggsanktionsavgiften 0,125 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:10",
+      "chapter": "9",
+      "section": "10",
+      "content": "För att påbörja en lovpliktig ändring av en byggnad som avser fasadändring eller påbörja en del av en sådan ändring före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot 10 kap. 3, 3 a § eller"
+    },
+    {
+      "provision_ref": "9:24",
+      "chapter": "9",
+      "section": "24",
+      "content": "6 plan- och bygglagen (2010:900) är byggsanktionsavgiften när ändringen avser 1. ett en- eller tvåbostadshus: 0,125 prisbasbelopp med ett tillägg av 0,0005 prisbasbelopp per kvadratmeter av den area som ändringen avser, 2. för en komplementbyggnad, ett komplementbostadshus eller en annan liten byggnad: 0,0625 prisbasbelopp med ett tillägg av 0,0005 prisbasbelopp per kvadratmeter av den area som ändringen avser, 3. ett flerbostadshus, en kontorsbyggnad, en handelsbyggnad eller en byggnad för kultur- eller idrottsevenemang: 0,25 prisbasbelopp med ett tillägg av 0,002 prisbasbelopp per kvadratmeter av den area som ändringen avser, eller 4. en annan byggnad än de som omfattas av 1-3: 0,25 prisbasbelopp med ett tillägg av 0,001 prisbasbelopp per kvadratmeter av den area som ändringen avser. Om ändringen avser endast ett fönster eller en dörr, är byggsanktionsavgiften 0,125 prisbasbelopp per fönster eller dörr som berörs i stället för den avgift som följer av första stycket. Om ändringen avser endast en balkong eller entré, är byggsanktionsavgiften 0,25 prisbasbelopp per balkong eller entré i stället för den avgift som följer av första stycket. Förordning (2025:979). 11 § För att påbörja en sådan ändring av en byggnad som kräver lov i en detaljplan eller i områdesbestämmelser eller kräver anmälan enligt 6 kap. 1 § första stycket 2 eller påbörja en del av en sådan ändring före startbesked, eller före den tidpunkt som anges i ett startbesked, och därigenom bryta mot"
+    },
+    {
+      "provision_ref": "9:25",
+      "chapter": "9",
+      "section": "25",
+      "title": "Byggprodukter",
+      "content": "/Upphör att gälla U:2027-01-08/ Byggsanktionsavgiften för att underlåta att upprätta en prestandadeklaration trots att det krävs enligt artikel 4.1 i Europaparlamentets och rådets förordning (EU) nr 305/2011 av den 9 mars 2011 om fastställande av harmoniserade villkor för saluföring av byggprodukter och om upphävande av rådets direktiv 89/106/EG eller för att tillhandahålla en produkt på marknaden utan prestandadeklaration enligt artikel 7.1 i samma förordning är 1 prisbasbelopp. Byggsanktionsavgiften för en ekonomisk aktör som inte fullgör sina skyldigheter enligt 4 kap. 11-11 e §§ är 1 prisbasbelopp. Byggsanktionsavgiften för en ekonomisk aktör som inte fullgör sina skyldigheter enligt artiklarna 11.1, 11.2, 11.8, 12.1, 13.1, 13.2, 13.5, 13.7, 14.1-14.4 i Europaparlamentets och rådets förordning (EU) nr 2016/424 av den 9 mars 2016 om linbaneanläggningar och om upphävande av direktiv 2000/9/EG är 1 prisbasbelopp. Förordning (2018:103). 25 § /Träder i kraft I:2027-01-08/ Byggsanktionsavgiften är 1 prisbasbelopp för att 1. underlåta att upprätta den dokumentation som krävs enligt artikel 13.1 i EU:s byggproduktförordning eller artikel 4.1 i förordning (EU) nr 305/2011, eller 2. tillhandahålla en produkt på marknaden utan sådan dokumentation enligt artikel 16.1 i EU:s byggproduktförordning eller artikel 7.1 i förordning (EU) nr 305/2011. Förordning (2026:197)."
+    },
+    {
+      "provision_ref": "9:25 a",
+      "chapter": "9",
+      "section": "25 a",
+      "content": "/Träder i kraft I:2027-01-08/ Byggsanktionsavgiften är 1 prisbasbelopp för en ekonomisk aktör som inte fullgör sina skyldigheter 1. enligt 4 kap. 11-11 e §§, eller 2. enligt artiklarna 11.1, 11.2, 11.8, 12.1, 13.1, 13.2, 13.5, 13.7 eller 14.1-14.4 i EU:s linbaneförordning. Förordning (2026:197). Tidsbegränsade bygglov"
+    },
+    {
+      "provision_ref": "9:26",
+      "chapter": "9",
+      "section": "26",
+      "content": "För att inte återställa en plats eller ett byggnadsverk innan tiden för ett tidsbegränsat bygglov har gått ut, och därigenom bryta mot 9 kap. 73 § plan- och bygglagen (2010:900) är byggsanktionsavgiften när åtgärden avser 1. en nybyggnad: 1 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per kvadratmeter av byggnadens sanktionsarea, 2. en tillbyggnad: 0,3 prisbasbelopp med ett tillägg av 0,005 prisbas-belopp per kvadratmeter av tillbyggnadens sanktionsarea, 3. en ändring av en byggnad genom ändrad användning: 0,125 prisbasbelopp med ett tillägg av 0,003 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser, 4. en ändring av en byggnad genom att en ytterligare bostad inreds: 0,125 prisbasbelopp med ett tillägg av 0,0025 prisbasbelopp per kvadratmeter av den sanktionsarea som ändringen avser, 5. en fasadändring som avser ett fönster eller en dörr: 0,0625 prisbasbelopp per fönster eller dörr som berörs, 6. en fasadändring som avser en balkong eller entré: 0,125 prisbasbelopp per balkong eller entré, 7. en fasadändring som inte omfattas av 5 och 6: 0,125 prisbasbelopp med ett tillägg av 0,0005 prisbasbelopp per kvadratmeter av den area som ändringen avser, 8. en anläggning för en grundvattentäkt: 0,75 prisbasbelopp, 9. en linbana: 2,5 prisbasbelopp, 10. en nöjespark, en djurpark, en idrottsanläggning, en skidbacke, en skidlift, en campingplats eller en hamn för fritidsbåtar: 0,25 prisbasbelopp med ett tillägg av 0,0025 prisbasbelopp per kvadratmeter av berörd area, 11. ett upplag, en materialgård, en tunnel, ett bergrum, en parkeringsplats eller en begravningsplats: 0,125 prisbasbelopp med ett tillägg av 0,0025 prisbasbelopp per kvadratmeter av berörd area, 12. en fast förvaringsanläggning: 2,5 prisbasbelopp, 13. en mast, ett torn, en skorsten eller ett vindkraftverk: 1,25 prisbasbelopp, 14. en mur eller ett plank: 0,0125 prisbasbelopp med ett tillägg av 0,005 prisbasbelopp per löpmeter, 15. en altan: 0,125 prisbasbelopp, 16. en transformatorstation: 0,25 prisbasbelopp med ett tillägg av 0,0125 prisbasbelopp av anläggningens area, 17. en skylt: 0,05 prisbasbelopp med ett tillägg av 0,0125 prisbasbelopp per kvadratmeter av skyltens area, eller 18. en ljusanordning: 0,03 prisbasbelopp. Förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:27",
+      "chapter": "9",
+      "section": "27",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:28",
+      "chapter": "9",
+      "section": "28",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:29",
+      "chapter": "9",
+      "section": "29",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:30",
+      "chapter": "9",
+      "section": "30",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:31",
+      "chapter": "9",
+      "section": "31",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "9:32",
+      "chapter": "9",
+      "section": "32",
+      "content": "Har upphävts genom förordning (2025:979)."
+    },
+    {
+      "provision_ref": "10:1",
+      "chapter": "10",
+      "section": "1",
+      "title": "Byggnadsverks utformning",
+      "content": "Boverket får meddela de föreskrifter som behövs för tillämpningen av bestämmelserna om 1. utformning av byggnader i 2 kap. 6, 8 och 9 §§ plan- och bygglagen (2010:900), 2. utformningskrav avseende lämplighet i 3 kap. 1 §, 3. utformningskrav avseende tillgänglighet och användbarhet i"
+    },
+    {
+      "provision_ref": "10:2",
+      "chapter": "10",
+      "section": "2",
+      "content": "Boverket får meddela föreskrifter om vilka hinder mot tillgänglighet och användbarhet som enligt 8 kap. 2 § andra stycket plan- och bygglagen (2010:900) ska anses enkla att avhjälpa samt de övriga föreskrifter som behövs för tillämpningen av bestämmelserna om enkelt avhjälpta hinder och om undantag från sådana krav. Byggnadsverks tekniska egenskaper"
+    },
+    {
+      "provision_ref": "10:3",
+      "chapter": "10",
+      "section": "3",
+      "content": "Boverket får meddela de föreskrifter som behövs för tillämpningen av bestämmelserna om 1. egenskapskrav avseende bärförmåga, stadga och beständighet i 3 kap. 7 §, 2. egenskapskrav avseende säkerhet i händelse av brand i"
+    },
+    {
+      "provision_ref": "10:10",
+      "chapter": "10",
+      "section": "10",
+      "content": ", 5. särskilda säkerhetskrav avseende redan uppförda byggnader i"
+    },
+    {
+      "provision_ref": "10:20",
+      "chapter": "10",
+      "section": "20",
+      "content": ", 11. egenskapskrav avseende hushållning med avfall i 8 kap. 4 § första stycket 9 plan- och bygglagen, 12. egenskapskrav avseende bredbandsanslutning i 3 kap."
+    },
+    {
+      "provision_ref": "10:20 a",
+      "chapter": "10",
+      "section": "20 a",
+      "content": ", 13. egenskapskrav avseende laddning av elfordon i 3 kap. 20 b och 20 c §§, och 14. genomförande av egenskapskraven vid senare tidpunkt i"
+    },
+    {
+      "provision_ref": "10:21",
+      "chapter": "10",
+      "section": "21",
+      "title": "Handläggningen av ärenden om lov, förhandsbesked eller anmälan",
+      "content": "Boverket får meddela de föreskrifter som behövs för tillämpningen av bestämmelserna om innehåll i ansökan i ärenden om lov och förhandsbesked i 9 kap. 86-90 §§ plan- och bygglagen (2010:900) och innehåll i anmälan i 6 kap. 5 och 6 §§. Förordning (2025:979). Kontrollplan"
+    },
+    {
+      "provision_ref": "10:22",
+      "chapter": "10",
+      "section": "22",
+      "content": "Boverket får meddela de föreskrifter som behövs om utformningen av en kontrollplan enligt 10 kap. 6, 7 och 8 §§ plan- och bygglagen (2010:900). Förordning (2025:979). Funktionskontrollanter, certifierade byggprojekteringsföretag, kontrollansvariga och sakkunniga"
+    },
+    {
+      "provision_ref": "10:23",
+      "chapter": "10",
+      "section": "23",
+      "content": "Boverket får meddela 1. de föreskrifter om funktionskontrollanter, certifierade byggprojekteringsföretag, kontrollansvariga och sakkunniga som behövs för tillämpningen av 7 kap. 2-4 §§, och 2. föreskrifter om vilka bostadshus som ska omfattas av 9 kap. 67 och 68 §§ och 10 kap. 23 a § plan- och bygglagen (2010:900). Förordning (2025:979). Aktsamhet och ansvar vid bygg-, rivnings- och markåtgärder"
+    },
+    {
+      "provision_ref": "10:24",
+      "chapter": "10",
+      "section": "24",
+      "content": "Boverket får meddela 1. föreskrifter om vad som krävs för att uppfylla kravet på aktsamhet vid bygg-, rivnings- och markåtgärder enligt 10 kap. 2 c § plan- och bygglagen (2010:900), och 2. närmare föreskrifter om byggherrens ansvar enligt 10 kap. 5 § plan- och bygglagen. Förordning (2025:979). Tillsyn"
+    },
+    {
+      "provision_ref": "10:25",
+      "chapter": "10",
+      "section": "25",
+      "content": "Boverket får inom sitt vägledningsområde meddela föreskrifter om vilken information en tillsynsmyndighet enligt"
+    },
+    {
+      "provision_ref": "10:26",
+      "chapter": "10",
+      "section": "26",
+      "title": "Språkkrav",
+      "content": "Boverket får meddela föreskrifter om på vilket eller vilka språk 1. prestanda- och överensstämmelsedeklarationer, allmän produktinformation, bruksanvisningar och säkerhetsinformation enligt artiklarna 16.4, 22.6, 24.2 och 25.2 b i EU:s byggproduktförordning ska tillhandahållas, 2. tillverkarna, importörerna och distributörerna ska förse tillsynsmyndigheten med information och dokumentation enligt artiklarna 20.2-20.4 i EU:s byggproduktförordning, 3. bruksanvisningar och annan information och dokumentation avseende hissar och säkerhetskomponenter till hissar ska tillhandahållas, 4. kontaktuppgifter till installatörer av hissar och till tillverkare och importörer av säkerhetskomponenter till hissar ska hållas tillgängliga, 5. en EU-försäkran om överensstämmelse avseende en hiss eller en säkerhetskomponent till hissar ska tillhandahållas, 6. en EU-försäkran om överensstämmelse, bruksanvisningar och säkerhetsföreskrifter enligt artiklarna 11.7, 13.4, 14.2, 19.2 samt punkt 7.1.1 i bilaga II i EU:s linbaneförordning ska tillhandahållas, 7. tillverkarna och importörerna ska förse tillsynsmyndigheten med information och dokumentation enligt artiklarna 11.9 och 13.9 i EU:s linbaneförordning, och 8. kontaktuppgifter till tillverkare och importörer enligt artiklarna 11.6 och 13.3 i EU:s linbaneförordning ska hållas tillgängliga. Förordning (2026:197). Ersättning för provningskostnader m.m."
+    },
+    {
+      "provision_ref": "10:27",
+      "chapter": "10",
+      "section": "27",
+      "content": "Boverket får meddela föreskrifter om ersättning för 1. kostnader vid provtagning och undersökning av prov enligt"
+    },
+    {
+      "provision_ref": "10:28",
+      "chapter": "10",
+      "section": "28",
+      "title": "Avgift vid tillsyn",
+      "content": "Styrelsen för ackreditering och teknisk kontroll får meddela föreskrifter om de avgifter för övervakning och utvärdering av tekniska bedömningsorgan som avses i 11 kap. 66 § plan- och bygglagen (2010:900). Förordning (2013:308). Standarder för utformning av detaljplaner och grundkartor"
+    },
+    {
+      "provision_ref": "10:29",
+      "chapter": "10",
+      "section": "29",
+      "content": "Boverket får, efter att ha gett Lantmäteriet tillfälle att yttra sig, meddela ytterligare föreskrifter om standarder för utformning av detaljplaner och planbeskrivningar enligt"
+    },
+    {
+      "provision_ref": "10:30",
+      "chapter": "10",
+      "section": "30",
+      "content": "Lantmäteriet får, efter att ha gett Boverket tillfälle att yttra sig, meddela ytterligare föreskrifter om standarder för utformning av grundkartor enligt 5 kap. 8 § plan- och bygglagen (2010:900) och undantag från kravet i 2 kap. 5 b §. Förordning (2019:207). Standarder för utformning av översiktsplaner och regionplaner"
+    },
+    {
+      "provision_ref": "10:31",
+      "chapter": "10",
+      "section": "31",
+      "content": "Boverket får, efter att ha gett Lantmäteriet tillfälle att yttra sig, meddela ytterligare föreskrifter om standarder för utformning av översiktsplaner och regionplaner enligt 3 och 7 kap. plan- och bygglagen (2010:900) och undantag från kravet i 2 kap. 5 c §. Förordning (2023:50). Övergångsbestämmelser 2011:338 1. Denna förordning träder i kraft den 2 maj 2011. 2. Genom förordningen upphävs a) plan- och byggförordningen (1987:383), b) förordningen (1991:1273) om funktionskontroll av ventilationssystem, c) förordningen (1994:1215) om tekniska egenskapskrav på byggnadsverk, m.m., d) förordningen (1999:371) om kontroll av hissar och vissa andra motordrivna anordningar i byggnadsverk. 3. Äldre föreskrifter gäller fortfarande för mål och ärenden som har påbörjats före den 2 maj 2011 och mål och ärenden som avser överklagande av beslut i ett sådant mål eller ärende till dess målet eller ärendet är slutligt avgjort. 4. Det särskilda säkerhetskravet på en korgdörr eller ett annat lämpligt skydd i 3 kap. 11 § 4 a behöver inte uppfyllas före den 31 december 2012, om hissen är försedd med en skylt som varnar för risken att klämmas av föremål som fastnar i schaktväggen. 2013:308 1. Denna förordning träder i kraft den 1 juli 2013. 2. Genom förordningen upphävs förordningen (2012:976) om harmoniserade villkor för saluföring av byggprodukter. 3. Äldre föreskrifter gäller fortfarande för överträdelser som har ägt rum före den 1 juli 2013. De nya föreskrifterna ska dock tillämpas om de leder till lindrigare påföljd. 4. De nya föreskrifterna tillämpas även för ansökningar om att utses till tekniskt bedömningsorgan som inkommit före ikraftträdandet. 2014:471 1. Denna förordning träder i kraft den 2 juli 2014. 2. Äldre föreskrifter gäller fortfarande för överträdelser som har ägt rum före den 2 juli 2014. De nya föreskrifterna ska dock tillämpas om de leder till lindrigare påföljd. 2015:837 1. Denna förordning träder i kraft den 1 juli 2016 i fråga om"
+    }
+  ]
+}

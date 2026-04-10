@@ -63,6 +63,20 @@ const KNOWN_STATUTES: Record<string, StatuteMetadata> = {
     title_en: 'Electrical Safety Act',
     in_force_date: '2017-07-01',
   },
+  '1997:857': {
+    title_en: 'Electricity Act',
+    in_force_date: '1998-01-01',
+  },
+  '1977:1166': {
+    short_name: 'AMF',
+    title_en: 'Work Environment Ordinance',
+    in_force_date: '1978-07-01',
+  },
+  '2011:338': {
+    short_name: 'PBF',
+    title_en: 'Planning and Building Ordinance',
+    in_force_date: '2011-05-02',
+  },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
