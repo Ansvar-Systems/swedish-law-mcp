@@ -77,6 +77,32 @@ const KNOWN_STATUTES: Record<string, StatuteMetadata> = {
     title_en: 'Planning and Building Ordinance',
     in_force_date: '2011-05-02',
   },
+  '1998:899': {
+    short_name: 'FMH',
+    title_en: 'Ordinance on Environmentally Hazardous Activities and Health Protection',
+    in_force_date: '1999-01-01',
+  },
+  '2004:660': {
+    title_en: 'Water Management Ordinance',
+    in_force_date: '2004-12-22',
+  },
+  '2010:1075': {
+    short_name: 'FBE',
+    title_en: 'Ordinance on Flammable and Explosive Goods',
+    in_force_date: '2010-09-01',
+  },
+  '2013:250': {
+    title_en: 'Industrial Emissions Ordinance',
+    in_force_date: '2013-06-07',
+  },
+  '2013:251': {
+    title_en: 'Environmental Assessment Ordinance',
+    in_force_date: '2013-06-18',
+  },
+  '2015:236': {
+    title_en: 'Seveso Ordinance',
+    in_force_date: '2015-06-01',
+  },
 };
 
 // ─────────────────────────────────────────────────────────────────────────────

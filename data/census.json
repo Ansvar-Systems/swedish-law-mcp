@@ -6,12 +6,12 @@
   "census_date": "2026-02-22",
   "agent": "claude-opus-4-6",
   "summary": {
-    "total_laws": 6045,
-    "ingestable": 6045,
+    "total_laws": 6051,
+    "ingestable": 6051,
     "ocr_needed": 0,
     "inaccessible": 0,
     "excluded": 0,
-    "total_provisions": 59208
+    "total_provisions": 59888
   },
   "laws": [
     {
@@ -28589,6 +28589,20 @@
       "ingestion_date": "2026-02-22"
     },
     {
+      "id": "1998:899",
+      "title": "Förordning (1998:899) om miljöfarlig verksamhet och hälsoskydd",
+      "title_en": "Ordinance on Environmentally Hazardous Activities and Health Protection",
+      "identifier": "1998:899",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-1998-899",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 103,
+      "ingestion_date": "2026-04-11"
+    },
+    {
       "id": "1998:1214",
       "title": "Lag (1998:1214) om överlämnande av vissa förvaltningsuppgifter till Hjälpmedelsinstitutet, ideell förening",
       "title_en": null,
@@ -37351,6 +37365,20 @@
       "ingested": true,
       "provision_count": 0,
       "ingestion_date": "2026-02-22"
+    },
+    {
+      "id": "2004:660",
+      "title": "Vattenförvaltningsförordning (2004:660)",
+      "title_en": "Water Management Ordinance",
+      "identifier": "2004:660",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2004-660",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 68,
+      "ingestion_date": "2026-04-11"
     },
     {
       "id": "2004:1006",
@@ -49715,6 +49743,20 @@
       "ingestion_date": "2026-02-22"
     },
     {
+      "id": "2010:1075",
+      "title": "Förordning (2010:1075) om brandfarliga och explosiva varor",
+      "title_en": "Ordinance on Flammable and Explosive Goods",
+      "identifier": "2010:1075",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2010-1075",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 40,
+      "ingestion_date": "2026-04-11"
+    },
+    {
       "id": "2010:1333",
       "title": "Lag (2010:1333) om avtal mellan Sverige och Bahamas om utbyte av upplysningar i skatteärenden",
       "title_en": null,
@@ -56015,6 +56057,34 @@
       "ingestion_date": "2026-02-22"
     },
     {
+      "id": "2013:250",
+      "title": "Industriutsläppsförordning (2013:250)",
+      "title_en": "Industrial Emissions Ordinance",
+      "identifier": "2013:250",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2013-250",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 118,
+      "ingestion_date": "2026-04-11"
+    },
+    {
+      "id": "2013:251",
+      "title": "Miljöprövningsförordning (2013:251)",
+      "title_en": "Environmental Assessment Ordinance",
+      "identifier": "2013:251",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2013-251",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 330,
+      "ingestion_date": "2026-04-11"
+    },
+    {
       "id": "2013:1051",
       "title": "Lag (2013:1051) om avgifter enligt EU:s förordning om tillsynskrav för kreditinstitut och värdepappersföretag",
       "title_en": null,
@@ -60045,6 +60115,20 @@
       "ingested": true,
       "provision_count": 0,
       "ingestion_date": "2026-02-22"
+    },
+    {
+      "id": "2015:236",
+      "title": "Förordning (2015:236) om åtgärder för att förebygga och begränsa följderna av allvarliga kemikalieolyckor",
+      "title_en": "Seveso Ordinance",
+      "identifier": "2015:236",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2015-236",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 21,
+      "ingestion_date": "2026-04-11"
     },
     {
       "id": "2015:1016",

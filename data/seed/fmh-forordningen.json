@@ -1,0 +1,636 @@
+{
+  "id": "1998:899",
+  "type": "statute",
+  "title": "Förordning (1998:899) om miljöfarlig verksamhet och hälsoskydd",
+  "title_en": "Ordinance on Environmentally Hazardous Activities and Health Protection",
+  "short_name": "FMH",
+  "status": "in_force",
+  "issued_date": "1998-06-25",
+  "in_force_date": "1999-01-01",
+  "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-1998-899",
+  "provisions": [
+    {
+      "provision_ref": "1",
+      "section": "1",
+      "title": "Allmänna bestämmelser",
+      "content": "Denna förordning gäller miljöfarlig verksamhet och hälsoskydd enligt 9 kap. miljöbalken."
+    },
+    {
+      "provision_ref": "2",
+      "section": "2",
+      "content": "Har upphävts genom förordning (2013:262)."
+    },
+    {
+      "provision_ref": "3",
+      "section": "3",
+      "content": "I denna förordning avses med den kommunala nämnden: den kommunala nämnd som ska fullgöra kommunens uppgifter inom miljö- och hälsoskyddsområdet, kyltorn: en anordning som används för att avlägsna överskottsvärme från en kylprocess där kylningen sker genom att det tillförs vatten till ett luftflöde på ett sätt som gör att aerosoler bildas, och miljörapport: en miljörapport enligt 26 kap. 20 § miljöbalken eller enligt föreskrifter som har meddelats med stöd av"
+    },
+    {
+      "provision_ref": "26:3 a",
+      "chapter": "26",
+      "section": "3 a",
+      "content": "Har upphävts genom förordning (2023:932)."
+    },
+    {
+      "provision_ref": "26:4",
+      "chapter": "26",
+      "section": "4",
+      "content": "Om det i ett mål eller ärende enligt 9 kap. miljöbalken är fråga om tillstånd till en miljöfarlig verksamhet vars tillåtlighet enligt Naturvårdsverket eller Havs- och vattenmyndigheten bör prövas av regeringen enligt 17 kap. 3 § miljöbalken, ska verket eller myndigheten i god tid innan målet sätts ut till huvudförhandling eller tillståndsbeslut meddelas anmäla saken till regeringen. Förordning (2011:625). Tillståndsprövning av miljöfarlig verksamhet Obligatorisk prövning enligt 9 kap. 6 § miljöbalken"
+    },
+    {
+      "provision_ref": "26:5",
+      "chapter": "26",
+      "section": "5",
+      "content": "Det är förbjudet att utan tillstånd enligt miljöbalken anlägga eller driva en miljöfarlig verksamhet i de fall farliga ämnen, som enligt vad som anges i avdelning 4 i bilagan innebär en miljöfarlig hantering, ingår eller avses ingå i verksamheten. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:6",
+      "chapter": "26",
+      "section": "6",
+      "content": "En verksamhet eller åtgärd som beskrivs under rubriken \"Farliga ämnen som innebär en miljöfarlig hantering som ska tillståndsprövas enligt 9 kap. 6 § miljöbalken\" i avdelning 4 i bilagan får inte bedrivas utan ett sådant tillstånd som avses i 9 kap. 6 § miljöbalken. Om verksamheten eller åtgärden också är tillståndspliktig enligt miljöprövningsförordningen (2013:251), gäller det som i den förordningen sägs om prövningen också i fråga om tillstånd för hantering av de farliga ämnena. Om verksamheten eller åtgärden inte är tillståndspliktig enligt miljöprövningsförordningen, ska frågan om tillstånd för hantering av de farliga ämnena prövas av länsstyrelsen. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:6 a",
+      "chapter": "26",
+      "section": "6 a",
+      "content": "Har upphävts genom förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:6 b",
+      "chapter": "26",
+      "section": "6 b",
+      "content": "En länsstyrelse får lämna över ett tillståndsärende till en annan länsstyrelse, om 1. det vid den andra länsstyrelsen förekommer eller har förekommit ett tillståndsärende som har ett nära samband med det förstnämnda ärendet, 2. överlämnandet sker för gemensam handläggning eller för att det är lämpligt att den länsstyrelse som har prövat ett tidigare ärende också prövar det nya ärendet, och 3. överlämnandet kan ske utan avsevärd olägenhet för någon part. Förordning (2008:690). Prövning i andra fall"
+    },
+    {
+      "provision_ref": "26:7",
+      "chapter": "26",
+      "section": "7",
+      "content": "En sådan ansökan om tillstånd som avses i 9 kap. 6 a eller 6 b § miljöbalken ska prövas av länsstyrelsen. Om verksamheten omfattas av 17 kap. 1 § miljöbalken, ska ansökan i stället prövas av mark- och miljödomstol. Förordning (2013:262). Tid för omprövning av tillståndsbeslut"
+    },
+    {
+      "provision_ref": "26:8",
+      "chapter": "26",
+      "section": "8",
+      "content": "Naturvårdsverket, Havs- och vattenmyndigheten och Myndigheten för civilt försvar får, inom sina ansvarsområden, meddela sådana föreskrifter som avses i 24 kap. 5 § första stycket 1 miljöbalken. Förordning (2025:1104). Förfarandet"
+    },
+    {
+      "provision_ref": "26:9",
+      "chapter": "26",
+      "section": "9",
+      "content": "Länsstyrelsen ska i ett ärende om tillstånd skicka ett meddelande om ansökan och kungörelsen till den kommunala nämnden samt till Naturvårdsverket, Havs- och vattenmyndigheten och Myndigheten för civilt försvar. Om länsstyrelsen har beslutat att enligt 24 kap. 11 § miljöbalken på eget initiativ ta upp frågan om omprövning av ett tillståndsbeslut, ska länsstyrelsen informera den kommunala nämnden om beslutet. Förordning (2025:1104)."
+    },
+    {
+      "provision_ref": "26:10",
+      "chapter": "26",
+      "section": "10",
+      "content": "När länsstyrelsen är tillståndsmyndighet ska besked om tid och plats för annat sammanträde än muntlig förberedelse meddelas genom kungörelse i ortstidning. Naturvårdsverket, Havs- och vattenmyndigheten, Myndigheten för civilt försvar, sökanden och andra som har yttrat sig i ärendet ska på lämpligt sätt underrättas. Bestämmelser om kallelse till muntlig förberedelse finns i"
+    },
+    {
+      "provision_ref": "26:11",
+      "chapter": "26",
+      "section": "11",
+      "title": "Förordning (2025:1104).",
+      "content": "Den som i en dom eller ett beslut har avgjort en fråga om tillstånd som avses i 9 kap. 6, 6 a eller 6 b § miljöbalken ska skicka domen eller beslutet till 1. Naturvårdsverket, Havs- och vattenmyndigheten, länsstyrelsen och den kommunala nämnden, 2. Statens jordbruksverk, om domen eller beslutet rör en verksamhet som beskrivs i 2 kap. miljöprövningsförordningen (2013:251), och 3. Myndigheten för civilt försvar, om domen eller beslutet rör en verksamhet som omfattas av lagen (1999:381) om åtgärder för att förebygga och begränsa följderna av allvarliga kemikalieolyckor. Om samråd har skett med någon annan myndighet i ett ärende, ska beslutet skickas också till den myndigheten. Förordning (2025:1104). Särskilda bestämmelser om utsläpp"
+    },
+    {
+      "provision_ref": "26:11 a",
+      "chapter": "26",
+      "section": "11 a",
+      "content": "För verksamheter och åtgärder med utsläpp till mark, luft, ytvatten eller grundvatten som är tillståndspliktiga enligt avdelning 4 i bilagan eller enligt miljöprövningsförordningen (2013:251), ska man vid bedömning av behovet av försiktighetsmått och villkor särskilt ta hänsyn till om det i utsläppen förekommer ämnen som anges i avdelning 5 i bilagan. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:11 b",
+      "chapter": "26",
+      "section": "11 b",
+      "content": "När ett tillstånd till miljöfarlig verksamhet innehåller villkor om begränsningsvärde för utsläpp, ska med ett sådant begränsningsvärde avses den mängd, koncentration eller nivå på utsläppet som inte får överskridas eller underskridas under en eller flera angivna tidsperioder eller på annat sätt som närmare anges i tillståndet. Värdet ska normalt avse den punkt där utsläppet lämnar anläggningen, utan hänsyn till eventuell utspädning. Förordning (2013:262). Särskilda bestämmelser om inrättande av avloppsanläggningar och värmepumpar m.m."
+    },
+    {
+      "provision_ref": "26:12",
+      "chapter": "26",
+      "section": "12",
+      "content": "Det är förbjudet att i vattenområde släppa ut avloppsvatten från vattentoalett eller tätbebyggelse, om avloppsvattnet inte har genomgått längre gående rening än slamavskiljning. Vad som sägs i första stycket gäller dock inte om det är uppenbart att sådant utsläpp kan göras utan risk för olägenhet för människors hälsa eller miljön."
+    },
+    {
+      "provision_ref": "26:13",
+      "chapter": "26",
+      "section": "13",
+      "content": "Det krävs tillstånd för att 1. inrätta en avloppsanordning som en eller flera vattentoaletter ska anslutas till, eller 2. ansluta en vattentoalett till en befintlig avloppsanordning. Det krävs en anmälan till den kommunala nämnden för att inrätta en annan avloppsanordning än den som avses i första stycket. En ansökan om tillstånd enligt första stycket ska prövas av den kommunala nämnden. Ansökan prövas dock av försvarsinspektören för hälsa och miljö i de fall inspektören har tillsyn över anläggningen. En kommun får meddela föreskrifter om att det i stället för en anmälan krävs tillstånd för att inom vissa delar av kommunen inrätta en sådan anordning som avses i andra stycket. Sådana föreskrifter får endast avse tillståndsplikt som behövs för att skydda människors hälsa eller miljön. Förordning (2017:793)."
+    },
+    {
+      "provision_ref": "26:14",
+      "chapter": "26",
+      "section": "14",
+      "content": "Det är förbjudet att utan anmälan till den kommunala nämnden ändra sådana avloppsanordningar som avses i 13 §, om åtgärden kan medföra väsentlig ändring av avloppsvattnets mängd eller sammansättning."
+    },
+    {
+      "provision_ref": "26:15",
+      "chapter": "26",
+      "section": "15",
+      "content": "Bestämmelserna i 13 § första och andra styckena ska inte tillämpas på en avloppsanordning som kräver tillstånd eller anmälan enligt miljöprövningsförordningen (2013:251) eller om avloppsanordningen är avsedd att föra avloppsvattnet till enbart en allmän avloppsanläggning. Förordning (2013:769)."
+    },
+    {
+      "provision_ref": "26:16",
+      "chapter": "26",
+      "section": "16",
+      "content": "Ledningarna för en avloppsanordning som avses i 13 § skall vara slutna, om inte den kommunala nämnden medger något annat."
+    },
+    {
+      "provision_ref": "26:17",
+      "chapter": "26",
+      "section": "17",
+      "content": "Det är förbjudet att utan anmälan till den kommunala nämnden inrätta en värmepumpsanläggning för utvinning av värme ur mark, ytvatten eller grundvatten. Kommunen får föreskriva att det ska fordras tillstånd av nämnden för att inrätta en sådan anläggning inom kommunen eller inom vissa delar av denna, om det behövs för att skydda människors hälsa eller miljön. Första stycket ska inte tillämpas på värmepumpsanläggning som kräver tillstånd eller anmälan enligt miljöprövningsförordningen (2013:251).Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:18",
+      "chapter": "26",
+      "section": "18",
+      "content": "I beslut om tillstånd att inrätta en avloppsanordning som avses i 13 § får den kommunala nämnden föreskriva att anordningen inte får tas i bruk förrän den har besiktigats och godkänts av nämnden. Detsamma gäller ett beslut om tillstånd att inrätta en värmepumpsanläggning som avses i 17 §."
+    },
+    {
+      "provision_ref": "26:19",
+      "chapter": "26",
+      "section": "19",
+      "content": "Ett tillstånd enligt 13 eller 17 § gäller i fem år men förfaller om arbetet med anordningen eller anläggningen inte har påbörjats inom två år."
+    },
+    {
+      "provision_ref": "26:20",
+      "chapter": "26",
+      "section": "20",
+      "content": "Det som sägs i 13 § andra stycket och 14, 16 och 17 §§ om anmälan till och medgivande av den kommunala nämnden ska, i de fall försvarsinspektören för hälsa och miljö har tillsyn över inrättningen eller åtgärden, i stället gälla inspektören. Föreskrifter enligt 17 § första stycket som kommunen har meddelat gäller inte för de inrättningar eller åtgärder som försvarsinspektören för hälsa och miljö har tillsyn över. Förordning (2019:575). Särskilda bestämmelser för lagring som en del av insamling, återvinning eller bortskaffande av farligt avfall"
+    },
+    {
+      "provision_ref": "26:20 a",
+      "chapter": "26",
+      "section": "20 a",
+      "content": "En ansökan om tillstånd till lagring som en del av insamling, återvinning eller bortskaffande av farligt avfall ska, utöver det som anges i 22 kap. 1 § miljöbalken, alltid innehålla 1. uppgifter om art och mängd av det farliga avfall som sökanden avser att lagra, återvinna eller bortskaffa, 2. uppgifter om varifrån avfallet kommer, och 3. uppgifter om var och på vilket sätt avfallet ska lagras, återvinnas eller bortskaffas. Förordning (2016:1193)."
+    },
+    {
+      "provision_ref": "26:20 b",
+      "chapter": "26",
+      "section": "20 b",
+      "content": "Tillståndsmyndigheten ska inhämta kommunens yttrande över en sådan ansökan om tillstånd som avses i 20 a §. Om ansökan avser en anläggning som har stor betydelse från nationell synpunkt och rör Naturvårdsverkets, Havs- och vattenmyndighetens, Folkhälsomyndighetens, Socialstyrelsens, Statens jordbruksverks eller Sveriges geologiska undersöknings ansvarsområde, ska tillståndsmyndigheten inhämta yttrande också från den berörda myndigheten. Förordning (2013:893). Särskilda bestämmelser om täkter"
+    },
+    {
+      "provision_ref": "26:20 c",
+      "chapter": "26",
+      "section": "20 c",
+      "content": "Tillsynsmyndigheten ska besluta att en täkt är avslutad, om verksamhetsutövaren begär det och det område där verksamheten har bedrivits har efterbehandlats på ett från hälso- och miljösynpunkt godtagbart sätt. Ett beslut enligt första stycket får meddelas även om inte hela området har efterbehandlats, om det område som återstår att efterbehandla inte är större än 2 hektar och det på detta område inte bedrivs någon verksamhet som är tillstånds- eller anmälningspliktig enligt miljöprövningsförordningen (2013:251). Upplag av massor som uppkommit i verksamheten får finnas kvar på området i högst fem år från beslutet. Förordning (2018:1458)."
+    },
+    {
+      "provision_ref": "26:20 d",
+      "chapter": "26",
+      "section": "20 d",
+      "content": "Om tillsynsmyndigheten får kännedom om att en täktverksamhet som är tillståndspliktig enligt denna förordning bedrivs av någon annan än den som har fått tillstånd för verksamheten, ska myndigheten underrätta Skatteverket om vem som bedriver verksamheten. Förordning (2010:953)."
+    },
+    {
+      "provision_ref": "26:20 e",
+      "chapter": "26",
+      "section": "20 e",
+      "content": "Länsstyrelsen får förelägga den som ansöker om tillstånd till täkt enligt denna förordning att lägga fram en utredning som belyser behovet av täkten samt en täktplan av den omfattning som behövs. Om föreläggandet inte följs, får länsstyrelsen avvisa ansökan. Föreläggandet ska innehålla en upplysning om detta. Förordning (2010:953)."
+    },
+    {
+      "provision_ref": "26:20 f",
+      "chapter": "26",
+      "section": "20 f",
+      "content": "Om länsstyrelsen överväger att meddela föreskrifter om skydd för grundvattnet enligt 7 kap. 22 § miljöbalken för ett område som avses med en ansökan om tillstånd till täkt enligt denna förordning, får frågan om tillstånd prövas först när frågan om skyddet för grundvattnet har avgjorts. Länsstyrelsen får dock pröva frågan om tillstånd omedelbart, om det finns särskilda skäl. Förordning (2010:953)."
+    },
+    {
+      "provision_ref": "26:20 g",
+      "chapter": "26",
+      "section": "20 g",
+      "content": "Den som ger, vägrar, ändrar eller upphäver ett tillstånd till täkt enligt denna förordning ska snarast skicka beslutet till Naturvårdsverket och till kommunen. Beslutet ska skickas också till Havs- och vattenmyndigheten, väghållningsmyndigheten och lantmäterimyndigheten, om det inte är uppenbart att myndigheten saknar behov av att få information om beslutet. Förordning (2011:625)."
+    },
+    {
+      "provision_ref": "26:20 h",
+      "chapter": "26",
+      "section": "20 h",
+      "content": "En ansökan om tillstånd eller anmälan som avser täkt av torv ska, utöver det som följer av 19 kap. 5 § miljöbalken, innehålla uppgift om huruvida torven ska användas för att utvinna energi. Om ansökan avser torv som ska användas för att utvinna energi, ska ansökan innehålla uppgifter om innehåll av ämnen som kan medföra skada på människors hälsa eller miljön. Förordning (2016:997)."
+    },
+    {
+      "provision_ref": "26:20 i",
+      "chapter": "26",
+      "section": "20 i",
+      "content": "Tillståndsmyndigheten ska inhämta yttrande från Sveriges geologiska undersökning över en sådan ansökan som avses i 20 h §. Förordning (2016:997). Försvarsverksamheter"
+    },
+    {
+      "provision_ref": "26:20 j",
+      "chapter": "26",
+      "section": "20 j",
+      "content": "I förordningen (2024:1212) med särskilda bestämmelser om anmälan av vissa försvarsverksamheter finns bestämmelser som avviker från denna förordning. Förordning (2024:1213). /Rubriken upphör att gälla U:2031-01-01/ Försvarsverksamheter 20 j § /Upphör att gälla U:2031-01-01 genom förordning (2024:1214)./ I förordningen (2024:1212) med särskilda bestämmelser om anmälan av vissa försvarsverksamheter finns bestämmelser som avviker från denna förordning. Förordning (2024:1213). Anmälningsplikt enligt 9 kap. 6 § miljöbalken"
+    },
+    {
+      "provision_ref": "26:21",
+      "chapter": "26",
+      "section": "21",
+      "content": "Har upphävts genom förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:22",
+      "chapter": "26",
+      "section": "22",
+      "content": "En anmälan som avses i 1 kap. 10 eller 11 § miljöprövningsförordningen (2013:251) ska vara skriftlig och ges in till den myndighet eller kommun som enligt miljötillsynsförordningen (2011:13) utövar tillsyn över verksamheten eller åtgärden. Om en anmälan som avses i 19 kap. 3 § miljöbalken gäller ett ärende som ska handläggas av en miljöprövningsdelegation enligt 3 § förordningen (2011:1237) om miljöprövningsdelegationer, ska vad som sägs i 19 kap. 3 § miljöbalken om länsstyrelse gälla en länsstyrelse som har en miljöprövningsdelegation. Förordning (2024:975)."
+    },
+    {
+      "provision_ref": "26:22 a",
+      "chapter": "26",
+      "section": "22 a",
+      "content": "Har upphävts genom förordning (2008:690)."
+    },
+    {
+      "provision_ref": "26:23",
+      "chapter": "26",
+      "section": "23",
+      "content": "Om tillstånd enligt 9 kap. 6 § miljöbalken söks till en verksamhet eller åtgärd som avses i 1 kap. 3 § miljöprövningsförordningen (2013:251) behöver anmälan inte göras. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:24",
+      "chapter": "26",
+      "section": "24",
+      "content": "Om det finns särskilda skäl, får den kommunala nämnden överlämna anmälningsärendet till länsstyrelsen. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:24 a",
+      "chapter": "26",
+      "section": "24 a",
+      "content": "Ny beteckning 26 a § genom förordning (2008:690)."
+    },
+    {
+      "provision_ref": "26:24 b",
+      "chapter": "26",
+      "section": "24 b",
+      "content": "Har upphävts genom förordning (2008:690)."
+    },
+    {
+      "provision_ref": "26:25",
+      "chapter": "26",
+      "section": "25",
+      "content": "/Upphör att gälla U:2026-07-01/ En anmälan som avses i 9 kap. 6 § miljöbalken ska innehålla de uppgifter, ritningar och tekniska beskrivningar som behövs för att tillsynsmyndigheten ska kunna bedöma den miljöfarliga verksamhetens eller åtgärdens art, omfattning och miljöeffekter. En anmälan ska även innehålla de uppgifter som anges i 8 § och 9 § 1 miljöbedömningsförordningen (2017:966), om den avser en verksamhet eller åtgärd som avses i - 2 kap. 3 eller 4 §, - 3 kap. 2 §, - 4 kap. 4, 5, 10 eller 17 §, - 5 kap., - 6 kap. 3 §, - 7 kap. 3 §, - 12 kap. 40, 41, 44, 46 eller 47 §, - 13 kap. 2, 4 eller 6 §, - 14 kap. 4, 5, 8 eller 20 §, - 15 kap. 10 eller 18 §, - 16 kap. 3 eller 10 §, - 18 kap. 1, 2, 4, 5, 8 eller 10 §, - 19 kap. 4 §, - 20 kap. 2 eller 4 §, - 21 kap. 11, 12 eller 15 §, - 24 kap. 2 eller 5 §, - 28 kap. 4 §, - 29 kap. med undantag för verksamheter och åtgärder som avses i 29 kap. 26, 49, 51 och 56 b §§, eller - 30 kap. 3 § miljöprövningsförordningen (2013:251). Förordning (2025:769). 25 § /Träder i kraft I:2026-07-01/ En anmälan som avses i 9 kap. 6 § miljöbalken ska innehålla de uppgifter, ritningar och tekniska beskrivningar som behövs för att tillsynsmyndigheten ska kunna bedöma den miljöfarliga verksamhetens eller åtgärdens art, omfattning och miljöeffekter. En anmälan ska även innehålla de uppgifter som anges i 8 § och 9 § 1 miljöbedömningsförordningen (2017:966), om den avser en verksamhet eller åtgärd som avses i - 2 kap. 3 eller 4 §, - 3 kap. 4 §, - 4 kap. 4, 5, 10 eller 17 §, - 5 kap., - 6 kap. 3 §, - 7 kap. 3 §, - 12 kap. 40, 41, 44, 46 eller 47 §, - 13 kap. 2, 4 eller 6 §, - 14 kap. 4, 5, 8 eller 20 §, - 15 kap. 10 eller 18 §, - 16 kap. 3 eller 10 §, - 18 kap. 1, 2, 4, 5, 8 eller 10 §, - 19 kap. 4 §, - 20 kap. 2 eller 4 §, - 21 kap. 11, 12 eller 15 §, - 24 kap. 2 eller 5 §, - 28 kap. 4 §, - 29 kap. med undantag för verksamheter och åtgärder som avses i 29 kap. 26, 49, 51 och 56 b §§, eller - 30 kap. 3 § miljöprövningsförordningen (2013:251). Förordning (2025:1015)."
+    },
+    {
+      "provision_ref": "26:25 a",
+      "chapter": "26",
+      "section": "25 a",
+      "content": "En anmälan som avser en verksamhet med vindkraftverk ska, utöver det som anges i 25 §, innehålla 1. ett kartunderlag som visar verksamhetens lokalisering, 2. en teknisk specifikation som för varje vindkraftverk innehåller uppgift om höjden inklusive rotorblad, navhöjden och rotordiametern samt övriga tekniska uppgifter av betydelse, 3. en beskrivning av vindförhållandena på platsen och det förväntade energiutbytet från verksamheten, 4. en beskrivning av hur verksamheten påverkar natur- och kulturmiljöer, särskilt områden som är reglerade i 3, 4 och 7 kap. miljöbalken, 5. en uppgift om huruvida det eller de vindkraftverk som omfattas av anmälan ska stå tillsammans med redan uppförda vindkraftverk, 6. en redogörelse för förekomsten av vindkraftverk inom en radie på 2 kilometer från varje vindkraftverk som omfattas av anmälan, 7. en redogörelse för de vägar som behövs för uppförande och drift av anläggningen och verksamheten, 8. en redogörelse för dragningen fram till elnätet av de kraftledningar som behövs för uppförande och drift av anläggningen och verksamheten, 9. en landskapsanalys som med ett fotomontage eller på annat sätt visar hur anläggningen syns i landskapet, 10. en beräkning av bullret från anläggningen vid berörda byggnader, och 11. en beräkning av skuggning och reflexer från anläggningen vid berörda byggnader. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:25 b",
+      "chapter": "26",
+      "section": "25 b",
+      "content": "Den myndighet som handlägger ett anmälningsärende som avser en verksamhet med vindkraftverk 1. får medge undantag från kraven i 25 a §, om undantaget avser sådant som inte behövs för handläggningen, och 2. ska i lämplig omfattning samordna handläggningen av anmälningsärendet med handläggningen av ett ärende enligt plan- och bygglagen (2010:900) som avser samma vindkraftverk. Förordning (2011:368)."
+    },
+    {
+      "provision_ref": "26:25 c",
+      "chapter": "26",
+      "section": "25 c",
+      "content": "En anmälan som avser en anläggning där en kostnads-nyttoanalys ska utföras enligt 3 § lagen (2014:268) om vissa kostnads-nyttoanalyser på energiområdet, ska utöver det som anges i 25 § innehålla 1. en redovisning av slutsatserna i en kostnads-nyttoanalys som godkänts enligt den lagen, och 2. beslutet om godkännande av analysen enligt samma lag. Förordning (2014:355)."
+    },
+    {
+      "provision_ref": "26:25 d",
+      "chapter": "26",
+      "section": "25 d",
+      "content": "En anmälan som avser en sådan verksamhet med behandling av avfall som omfattas av 29 kap. miljöprövningsförordningen (2013:251) ska utöver det som anges i 25 § innehålla 1. uppgifter om de typer av avfall och mängder avfall som ska behandlas, 2. uppgifter om de metoder för att behandla avfall som ska användas, 3. uppgifter om de största mängder avfall som vid något tillfälle ska lagras inför och efter behandlingen, 4. förslag till skyddsåtgärder och andra försiktighetsmått som behövs med hänsyn till verksamheten, den plats som verksamheten bedrivs på och andra omständigheter, 5. förslag till åtgärder för övervakning och kontroll av verksamheten, och 6. förslag till åtgärder som behövs i fråga om avslutning av verksamheten och efterbehandling. Förordning (2022:1301)."
+    },
+    {
+      "provision_ref": "26:25 e",
+      "chapter": "26",
+      "section": "25 e",
+      "content": "En anmälan som avser en sådan verksamhet som innebär att avfall lagras som en del av att samla in det och som omfattas av 29 kap. miljöprövningsförordningen (2013:251) ska, utöver det som anges i 25 §, innehålla 1. uppgifter om de typer av avfall och mängder avfall som ska lagras, 2. uppgifter om hur avfallet ska lagras, 3. uppgifter om de största mängder avfall som vid något tillfälle ska lagras, 4. förslag till skyddsåtgärder och andra försiktighetsmått som behövs med hänsyn till verksamheten, den plats som verksamheten bedrivs på och andra omständigheter, 5. förslag till åtgärder för övervakning och kontroll av verksamheten, och 6. förslag till åtgärder som behövs i fråga om avslutning av verksamheten och efterbehandling. Förordning (2025:659)."
+    },
+    {
+      "provision_ref": "26:25 f",
+      "chapter": "26",
+      "section": "25 f",
+      "content": "En anmälan som avses i 9 kap. 6 § miljöbalken ska ges in i tre exemplar, om den avser en verksamhet eller åtgärd som enligt miljöprövningsförordningen (2013:251) omfattas av \"tillståndsplikt A\", och i två exemplar i övriga fall. Förordning (2025:659)."
+    },
+    {
+      "provision_ref": "26:25 g",
+      "chapter": "26",
+      "section": "25 g",
+      "content": "När en anmälan som avses i 9 kap. 6 § miljöbalken har getts in ska 1. den kommunala nämnden genast skicka ett exemplar av handlingarna till länsstyrelsen, om anmälan har getts in till nämnden, och 2. länsstyrelsen genast skicka ett exemplar av handlingarna till den kommunala nämnden, om anmälan har getts in till länsstyrelsen. Om anmälan avser en verksamhet som enligt miljöprövningsförordningen (2013:251) omfattas av \"tillståndsplikt A\", ska nämnden eller länsstyrelsen också skicka ett exemplar av anmälan till Naturvårdsverket och Havs- och vattenmyndigheten. Förordning (2025:659)."
+    },
+    {
+      "provision_ref": "26:25 h",
+      "chapter": "26",
+      "section": "25 h",
+      "content": "Har upphävts genom förordning (2022:1606)."
+    },
+    {
+      "provision_ref": "26:25 i",
+      "chapter": "26",
+      "section": "25 i",
+      "content": "En anmälan som avser en verksamhet enligt 28 kap. 5 § miljöprövningsförordningen (2013:251) ska utöver det som anges i 25 § 1 innehålla en riskhanteringsplan enligt 9 § förordningen (2024:161) om återanvändning av vatten för bevattning inom jordbruket. Förordning (2024:163)."
+    },
+    {
+      "provision_ref": "26:25 j",
+      "chapter": "26",
+      "section": "25 j",
+      "content": "Har upphävts genom förordning (2020:531)."
+    },
+    {
+      "provision_ref": "26:26",
+      "chapter": "26",
+      "section": "26",
+      "content": "De statliga och kommunala myndigheter samt organisationer och enskilda som kan ha ett särskilt intresse i saken skall på lämpligt sätt och i skälig omfattning ges tillfälle att yttra sig över en anmälan."
+    },
+    {
+      "provision_ref": "26:26 a",
+      "chapter": "26",
+      "section": "26 a",
+      "content": "/Upphör att gälla U:2026-07-01/ Tillsynsmyndigheten ska i ett beslut bedöma om en anmälningspliktig verksamhet eller åtgärd kan antas medföra en betydande miljöpåverkan, om det är fråga om en verksamhet eller åtgärd som avses i - 2 kap. 3 eller 4 §, - 3 kap. 2 §, - 4 kap. 4, 5, 10 eller 17 §, - 5 kap., - 6 kap. 3 §, - 7 kap. 3 §, - 12 kap. 40, 41, 44, 46 eller 47 §, - 13 kap. 2, 4 eller 6 §, - 14 kap. 4, 5, 8 eller 20 §, - 15 kap. 10 eller 18 §, - 16 kap. 3 eller 10 §, - 18 kap. 1, 2, 4, 5, 8 eller 10 §, - 19 kap. 4 §, - 20 kap. 2 eller 4 §, - 21 kap. 11, 12 eller 15 §, - 24 kap. 2 eller 5 §, - 28 kap. 4 §, - 29 kap. med undantag för verksamheter och åtgärder som avses i 29 kap. 26, 49, 51 och 56 b §§, eller - 30 kap. 3 § miljöprövningsförordningen (2013:251). Vid bedömningen ska hänsyn tas till de omständigheter som anges i 10-13 §§ miljöbedömningsförordningen (2017:966). Förordning (2025:769). 26 a § /Träder i kraft I:2026-07-01/ Tillsynsmyndigheten ska i ett beslut bedöma om en anmälningspliktig verksamhet eller åtgärd kan antas medföra en betydande miljöpåverkan, om det är fråga om en verksamhet eller åtgärd som avses i - 2 kap. 3 eller 4 §, - 3 kap. 4 §, - 4 kap. 4, 5, 10 eller 17 §, - 5 kap., - 6 kap. 3 §, - 7 kap. 3 §, - 12 kap. 40, 41, 44, 46 eller 47 §, - 13 kap. 2, 4 eller 6 §, - 14 kap. 4, 5, 8 eller 20 §, - 15 kap. 10 eller 18 §, - 16 kap. 3 eller 10 §, - 18 kap. 1, 2, 4, 5, 8 eller 10 §, - 19 kap. 4 §, - 20 kap. 2 eller 4 §, - 21 kap. 11, 12 eller 15 §, - 24 kap. 2 eller 5 §, - 28 kap. 4 §, - 29 kap. med undantag för verksamheter och åtgärder som avses i 29 kap. 26, 49, 51 och 56 b §§, eller - 30 kap. 3 § miljöprövningsförordningen (2013:251). Vid bedömningen ska hänsyn tas till de omständigheter som anges i 10-13 §§ miljöbedömningsförordningen (2017:966). Förordning (2025:1015)."
+    },
+    {
+      "provision_ref": "26:26 b",
+      "chapter": "26",
+      "section": "26 b",
+      "content": "Ett beslut enligt 26 a § ska innehålla en redovisning av de omständigheter som talar för eller emot att verksamheten eller åtgärden kan antas medföra en betydande miljöpåverkan. Beslutet ska göras tillgängligt för allmänheten. Detta gäller dock inte om 1. beslutet gäller en verksamhet eller åtgärd som enbart avser totalförsvaret, och 2. ett tillgängliggörande bedöms påverka totalförsvaret negativt. Förordning (2025:751)."
+    },
+    {
+      "provision_ref": "26:26 c",
+      "chapter": "26",
+      "section": "26 c",
+      "content": "Ett beslut enligt 26 a § ska fattas så snart som möjligt och senast sex veckor från den dag då anmälan gjordes. Tidsfristen får förlängas om det finns skäl för detta på grund av verksamhetens eller åtgärdens art, komplexitet, lokalisering eller omfattning. Om tidsfristen förlängs ska myndigheten informera den som har gjort anmälan om skälen till detta och när beslut senast kommer att meddelas. Förordning (2025:751)."
+    },
+    {
+      "provision_ref": "26:26 d",
+      "chapter": "26",
+      "section": "26 d",
+      "content": "Om tillsynsmyndigheten i ett beslut enligt 26 a § bedömer att verksamheten eller åtgärden kan antas medföra en betydande miljöpåverkan, ska myndigheten förelägga den som har gjort anmälan att ansöka om tillstånd. Om en sådan miljöpåverkan inte kan antas ska myndigheten, om det behövs, förelägga om försiktighetsmått eller förbud enligt miljöbalken. Om tillsynsmyndigheten inte förelägger om försiktighetsmått eller förbud enligt första stycket, ska myndigheten underrätta den som har gjort anmälan om att ärendet inte kommer att leda till någon åtgärd från myndighetens sida. I 27 a § finns bestämmelser om skyldighet för tillsynsmyndigheten att förelägga om försiktighetsmått eller förbud i ett ärende som avses i 25 d §. Förordning (2025:751)."
+    },
+    {
+      "provision_ref": "26:26 e",
+      "chapter": "26",
+      "section": "26 e",
+      "content": "En anmälningspliktig verksamhet eller åtgärd som omfattas av 26 a § får tidigast påbörjas efter det att tillsynsmyndigheten i ett beslut bedömt att verksamheten eller åtgärden inte kan antas medföra en betydande miljöpåverkan. Om en sådan verksamhet omfattas av 25 d § får den dock tidigast påbörjas efter det att myndigheten har meddelat ett föreläggande om försiktighetsmått enligt 27 a §. Förordning (2025:751)."
+    },
+    {
+      "provision_ref": "26:26 f",
+      "chapter": "26",
+      "section": "26 f",
+      "content": "Tillsynsmyndigheten får, med de begränsningar som följer av 26 e §, i ett enskilt fall bestämma när en anmälningspliktig verksamhet tidigast får påbörjas. Förordning (2025:751)."
+    },
+    {
+      "provision_ref": "26:27",
+      "chapter": "26",
+      "section": "27",
+      "content": "När ett anmälningsärende som inte omfattas av 26 a §, är tillräckligt utrett och om det behövs, ska tillsynsmyndigheten i ett föreläggande till verksamhetsutövaren besluta om försiktighetsmått eller förbud enligt miljöbalken eller förelägga verksamhetsutövaren att ansöka om tillstånd enligt"
+    },
+    {
+      "provision_ref": "26:27 a",
+      "chapter": "26",
+      "section": "27 a",
+      "title": "Förordning (2025:751).",
+      "content": "Den myndighet som handlägger ett anmälningsärende som avses i 25 d § ska, när ärendet är tillräckligt utrett, förelägga om försiktighetsmått eller förbud om ärendet avser en sådan verksamhet som behandlar avfall och verksamhetsutövaren inte föreläggs att ansöka om tillstånd. Ett föreläggande om försiktighetsmått ska innehålla uppgifter om de 1. typer av avfall och mängder avfall som får behandlas, 2. metoder för att behandla avfall som får användas, 3. största mängder avfall som vid något tillfälle får lagras inför och efter behandlingen, 4. tekniska krav och eventuella övriga krav som är relevanta för platsen i fråga, 5. skyddsåtgärder och andra försiktighetsmått som behövs med hänsyn till verksamheten, den plats som verksamheten bedrivs på och andra omständigheter, 6. åtgärder som behövs för att övervaka och kontrollera verksamheten, och 7. åtgärder som behövs i fråga om avslutning av verksamheten och efterbehandling. Förordning (2022:1301)."
+    },
+    {
+      "provision_ref": "26:27 b",
+      "chapter": "26",
+      "section": "27 b",
+      "content": "Den myndighet som handlägger ett anmälningsärende som avses i 25 e § ska, när ärendet är tillräckligt utrett, besluta om försiktighetsmått eller förbud för verksamhetsutövaren eller förelägga verksamhetsutövaren att ansöka om tillstånd. Ett föreläggande om försiktighetsmått ska i den utsträckning det bedöms lämpligt innehålla uppgifter om de 1. typer av avfall och mängder avfall som får lagras, 2. sätt som avfallet får lagras på, 3. största mängder avfall som vid något tillfälle får lagras, 4. tekniska krav och eventuella övriga krav som är relevanta för platsen i fråga, 5. skyddsåtgärder och andra försiktighetsmått som behövs med hänsyn till verksamheten, den plats som verksamheten bedrivs på och andra omständigheter, 6. åtgärder som behövs för att övervaka och kontrollera verksamheten, och 7. åtgärder som behövs i fråga om avslutning av verksamheten och efterbehandling. Förordning (2025:659)."
+    },
+    {
+      "provision_ref": "26:27 c",
+      "chapter": "26",
+      "section": "27 c",
+      "content": "Den myndighet som handlägger ett anmälningsärende som avser en verksamhet enligt 28 kap. 5 § miljöprövningsförordningen (2013:251) ska, när ärendet är tillräckligt utrett, förelägga om försiktighetsmått eller förbud enligt miljöbalken, om verksamhetsutövaren inte föreläggs att ansöka om tillstånd enligt 9 kap. 6 a § miljöbalken. Ett föreläggande om försiktighetsmått ska innehålla de uppgifter som framgår av artikel 6.3 i Europaparlamentets och rådets förordning (EU) 2020/741 av den 25 maj 2020 om minimikrav för återanvändning av vatten, i den ursprungliga lydelsen. Förordning (2024:163)."
+    },
+    {
+      "provision_ref": "26:28",
+      "chapter": "26",
+      "section": "28",
+      "content": "Det är förbjudet att utan anmälan till tillsynsmyndigheten vidta en avhjälpandeåtgärd med anledning av en föroreningsskada i ett mark- eller vattenområde, grundvatten, en byggnad eller en anläggning enligt 10 kap. miljöbalken, om åtgärden kan medföra ökad risk för spridning eller exponering av föroreningarna och denna risk inte bedöms som ringa. Första stycket gäller inte i fråga om områden som förklarats som miljöriskområden enligt 10 kap. 15 § miljöbalken. Vad gäller anmälan enligt första stycket tillämpas bestämmelserna i 22-25 §§. Förordning (2025:751). Säkerheter för anmälningspliktiga miljöfarliga verksamheter"
+    },
+    {
+      "provision_ref": "26:28 a",
+      "chapter": "26",
+      "section": "28 a",
+      "content": "En kommun får, inom ramen för tillsynen av en sådan verksamhet med behandling eller insamling av avfall som är anmälningspliktig enligt 29 kap. miljöprövningsförordningen (2013:251), om det finns särskilda skäl, besluta att verksamheten endast får bedrivas om länsstyrelsen har gjort en bedömning i fråga om säkerhet enligt 28 c §. Ett sådant beslut får inte meddelas när staten, en kommun, en region eller ett kommunalförbund bedriver eller avser att bedriva verksamhet. Förordning (2022:1301)."
+    },
+    {
+      "provision_ref": "26:28 b",
+      "chapter": "26",
+      "section": "28 b",
+      "content": "Den som mottagit ett beslut enligt 28 a § och vill begära länsstyrelsens bedömning i fråga om säkerhet med anledning av kommunens beslut ska ge in en begäran till länsstyrelsen i det län där verksamheten bedrivs eller ska bedrivas. Förordning (2022:1301)."
+    },
+    {
+      "provision_ref": "26:28 c",
+      "chapter": "26",
+      "section": "28 c",
+      "content": "En länsstyrelse som har mottagit en ansökan enligt 28 b § ska bedöma om en säkerhet behövs för kostnaderna för de återställningsåtgärder som verksamheten kan leda till. Om länsstyrelsen bedömer att en säkerhet behövs ska länsstyrelsen besluta att verksamheten får bedrivas endast om verksamhetsutövaren ställer säkerhet med det belopp som länsstyrelsen anger. En säkerhet ska godtas om den visas vara betryggande för sitt ändamål. Säkerheten får ställas efter hand enligt en plan som vid varje tid tillgodoser det aktuella behovet av säkerhet. Säkerheten ska prövas av länsstyrelsen. Förordning (2022:1301). Rättelse enligt 26 kap. 18 § miljöbalken"
+    },
+    {
+      "provision_ref": "26:29",
+      "chapter": "26",
+      "section": "29",
+      "content": "Innan ett förordnande om rättelse enligt 26 kap. 18 § miljöbalken meddelas eller handräckning enligt 17 § samma kapitel begärs i fråga om en miljöfarlig verksamhet som rör Naturvårdsverkets eller Havs- och vattenmyndighetens ansvarsområde ska samråd ske med den berörda myndigheten, om det kan befaras att kostnaden inte kan tas ut av den som åtgärden riktas mot. Detta gäller dock inte, om saken är så brådskande att samråd inte hinner ske. Förordning (2011:625)."
+    },
+    {
+      "provision_ref": "26:30",
+      "chapter": "26",
+      "section": "30",
+      "content": "Har en tillsynsmyndighet förordnat om rättelse enligt 26 kap. 18 § miljöbalken, får kostnaderna för åtgärderna förskotteras av allmänna medel. Miljörapport m.m."
+    },
+    {
+      "provision_ref": "26:31",
+      "chapter": "26",
+      "section": "31",
+      "content": "En miljörapport ska innehålla 1. uppgift om verksamhetsutövarens namn och organisationsnummer, och 2. de uppgifter i övrigt som följer av föreskrifter som Naturvårdsverket har meddelat med stöd av 47 a §. Förordning (2010:953)."
+    },
+    {
+      "provision_ref": "26:31 a",
+      "chapter": "26",
+      "section": "31 a",
+      "content": "I fråga om en anläggning för sortering eller krossning av berg, naturgrus eller andra jordarter som omfattas av"
+    },
+    {
+      "provision_ref": "26:31 b",
+      "chapter": "26",
+      "section": "31 b",
+      "title": "Förordning (2013:262).",
+      "content": "En verksamhet som inte omfattas av tillståndsplikt enligt miljöprövningsförordningen (2013:251) eller av ett föreläggande att ansöka om tillstånd enligt 9 kap. 6 a § miljöbalken ska omfattas av kravet på miljörapportering enligt"
+    },
+    {
+      "provision_ref": "26:31 c",
+      "chapter": "26",
+      "section": "31 c",
+      "title": "Förordning (2023:443).",
+      "content": "En verksamhet som inte omfattas av tillståndsplikt enligt miljöprövningsförordningen (2013:251) eller av ett föreläggande att ansöka om tillstånd enligt 9 kap. 6 a § miljöbalken ska omfattas av kravet på miljörapportering enligt"
+    },
+    {
+      "provision_ref": "26:32",
+      "chapter": "26",
+      "section": "32",
+      "title": "Förordning (2024:163).",
+      "content": "Om en verksamhet som är tillstånds- eller anmälningspliktig enligt denna förordning eller enligt miljöprövningsförordningen (2013:251) bedrivs av någon annan än den som har fått tillstånd för verksamheten eller anmält den, ska den nya verksamhetsutövaren snarast möjligt upplysa tillsynsmyndigheten om det ändrade förhållandet. Förordning (2013:262). Särskilda bestämmelser till skydd mot olägenheter för människors hälsa"
+    },
+    {
+      "provision_ref": "26:33",
+      "chapter": "26",
+      "section": "33",
+      "content": "I syfte att hindra uppkomst av olägenhet för människors hälsa skall en bostad särskilt; 1. ge betryggande skydd mot värme, kyla, drag, fukt, buller, radon, luftföroreningar och andra liknande störningar, 2. ha tillfredsställande luftväxling genom anordning för ventilation eller på annat sätt, 3. medge tillräckligt dagsljus, 4. hållas tillfredsställande uppvärmd, 5. ge möjlighet att upprätthålla en god personlig hygien, 6. ha tillgång till vatten i erforderlig mängd och av godtagbar beskaffenhet till dryck, matlagning, personlig hygien och andra hushållsgöromål."
+    },
+    {
+      "provision_ref": "26:34",
+      "chapter": "26",
+      "section": "34",
+      "content": "Utöver vad som anges i 9 kap. 9 § miljöbalken skall byggnader, lokaler för annat än allmänna ändamål och anläggningar hållas fria från ohyra. Åtgärder skall vidtas mot skadedjur som kan orsaka olägenhet för människors hälsa. Är det av särskild betydelse med hänsyn till hälsoskyddet, skall kommunen sörja för att åtgärderna vidtas."
+    },
+    {
+      "provision_ref": "26:35",
+      "chapter": "26",
+      "section": "35",
+      "content": "Det skall finnas tillräckligt med toaletter i eller i anslutning till byggnader där människor vistas under en längre tid av dygnet."
+    },
+    {
+      "provision_ref": "26:36",
+      "chapter": "26",
+      "section": "36",
+      "content": "Husdjur och andra djur som hålls i fångenskap skall förvaras och skötas så att olägenheter för människors hälsa inte uppkommer."
+    },
+    {
+      "provision_ref": "26:37",
+      "chapter": "26",
+      "section": "37",
+      "content": "Den som avser att anordna en gödselstad eller annan upplagsplats för djurspillning inom ett område med detaljplan, ska anmäla detta till den kommunala nämnden eller till försvarsinspektören för hälsa och miljö, om inspektören har tillsyn över verksamheten. Förordning (2017:793)."
+    },
+    {
+      "provision_ref": "26:38",
+      "chapter": "26",
+      "section": "38",
+      "content": "Det är förbjudet att utan anmälan driva eller arrangera 1. verksamhet där allmänheten yrkesmässigt erbjuds hygieniska behandlingar som innebär risk för blodsmitta eller annan smitta på grund av användningen av skalpeller, akupunkturnålar, piercningsverktyg eller andra liknande skärande eller stickande verktyg, 2. bassängbad för allmänheten eller som på annat sätt används av många människor, eller 3. förskola, öppen förskola, fritidshem, öppen fritidsverksamhet, förskoleklass, grundskola, anpassad grundskola, gymnasieskola, anpassad gymnasieskola, specialskola, sameskola eller internationell skola. Anmälan ska göras till den kommunala nämnden i den kommun där verksamheten ska drivas eller arrangeras. Om försvarsinspektören för hälsa och miljö har tillsyn över verksamheten ska anmälan göras till denne. En anmälningspliktig verksamhet får påbörjas tidigast sex veckor efter det att anmälan har gjorts, om inte tillsynsmyndigheten bestämmer något annat. Verksamhet som omfattas av lagen (2021:363) om estetiska kirurgiska ingrepp och estetiska injektionsbehandlingar är inte anmälningspliktig enligt denna förordning. Förordning (2022:1611)."
+    },
+    {
+      "provision_ref": "26:38 a",
+      "chapter": "26",
+      "section": "38 a",
+      "content": "Det är förbjudet att utan anmälan uppföra eller använda ett kyltorn. Om en anmälan avseende samma kyltorn har gjorts tidigare behövs ingen ytterligare anmälan. Anmälan ska göras till den kommunala nämnden i den kommun där kyltornet ska uppföras eller användas. Om försvarsinspektören för hälsa och miljö har tillsyn över verksamheten som kyltornet ska uppföras eller användas i, ska anmälan i stället göras till inspektören. Uppförandet eller användandet får påbörjas tidigast sex veckor efter det att anmälan har gjorts, om inte tillsynsmyndigheten bestämmer något annat. Förordning (2023:932)."
+    },
+    {
+      "provision_ref": "26:38 b",
+      "chapter": "26",
+      "section": "38 b",
+      "content": "Om något förhållande som har anmälts avseende ett kyltorn ändras, ska verksamhetsutövaren genast underrätta tillsynsmyndigheten om ändringen. Förordning (2023:932)."
+    },
+    {
+      "provision_ref": "26:38 c",
+      "chapter": "26",
+      "section": "38 c",
+      "content": "Bestämmelserna i 38 a och 38 b §§ ska inte tillämpas på kyltorn som ingår i en verksamhet som är tillstånds- eller anmälningspliktig enligt miljöprövningsförordningen (2013:251). Förordning (2023:932). Kommunala föreskrifter m.m."
+    },
+    {
+      "provision_ref": "26:39",
+      "chapter": "26",
+      "section": "39",
+      "content": "Om det behövs för att hindra att olägenheter för människors hälsa uppkommer, får kommunen föreskriva att 1. nötkreatur, häst, get, får eller svin, 2. pälsdjur eller fjäderfä som inte är sällskapsdjur, eller 3. orm inte får hållas inom område med detaljplan eller områdesbestämmelser utan särskilt tillstånd av den kommunala nämnden. Ett sådant tillstånd får förenas med särskilda villkor."
+    },
+    {
+      "provision_ref": "26:40",
+      "chapter": "26",
+      "section": "40",
+      "content": "Om det behövs för att hindra att olägenheter för människors hälsa uppkommer i en kommun, får kommunen meddela föreskrifter om 1. tomgångskörning med motordrivna fordon, 2. spridande av naturligt gödsel, slam och annan orenlighet inom område med detaljplan eller intill sådant område, 3. inrättande av annat slag av toalett än vattentoalett, 4. hantering av mjölk i utrymme för mjölkprodukter, på vilken livsmedelslagen (2006:804) inte tillämpas, 5. skydd för ytvattentäkter och enskilda grundvattentäkter, 6. tillfälligt förbud mot småskalig eldning med vissa fasta bränslen inom särskilt angivna områden, 7. skötsel och tillsyn av eldningsanordning för vissa fasta bränslen, 8. bränning av halm på åkermark, och 9. luftvärmepumpar. Om det i en kommun förekommer camping i betydande omfattning, får kommunen meddela föreskrifter för eller förbjuda sådan camping inom särskilt utsatta områden om det behövs för att förhindra att olägenheter för människors hälsa uppkommer. Kommunen får i ett enskilt fall meddela föreskrifter om begränsningar av eller villkor för utövande av gatumusik på viss offentlig plats om det behövs för att hindra att olägenheter för människors hälsa uppkommer. Förordning (2025:17)."
+    },
+    {
+      "provision_ref": "26:41",
+      "chapter": "26",
+      "section": "41",
+      "content": "Försvarsmakten får meddela de ytterligare föreskrifter för Försvarsmakten, Fortifikationsverket, Försvarets materielverk och Försvarets radioanstalt som behövs till skydd mot olägenheter för människors hälsa. Innan föreskrifter meddelas ska Naturvårdsverket, Havs- och vattenmyndigheten och Folkhälsomyndigheten ges tillfälle att yttra sig inom respektive myndighets ansvarsområde. Förordning (2017:793)."
+    },
+    {
+      "provision_ref": "26:42",
+      "chapter": "26",
+      "section": "42",
+      "content": "Om det i en kommun finns tätbebyggt område som inte omfattas av detaljplan, får kommunen, om särskilda skäl föranleder det, föreskriva att en bestämmelse som avses i 37 eller 40 § första stycket 2 skall gälla även sådant tätbebyggt område."
+    },
+    {
+      "provision_ref": "26:43",
+      "chapter": "26",
+      "section": "43",
+      "content": "På en särskild karta skall märkas ut områden som avses i 13 § tredje stycket andra meningen, 17 § första stycket andra meningen, 40 samt 42 §§. Kartan skall fogas till kommunens övriga föreskrifter om hälsoskyddet i kommunen."
+    },
+    {
+      "provision_ref": "26:44",
+      "chapter": "26",
+      "section": "44",
+      "content": "Kommunen ska skyndsamt underrätta 1. länsstyrelsen om de föreskrifter som kommunen har meddelat med stöd av denna förordning, och 2. lantmäterimyndigheten om de föreskrifter som kommunen har meddelat med stöd av 40 § första stycket 5. Bestämmelser om kungörande och tillgängliggörande av kommunala föreskrifter finns i 8 kap. 13 § kommunallagen (2017:725). Förordning (2017:1048)."
+    },
+    {
+      "provision_ref": "26:45",
+      "chapter": "26",
+      "section": "45",
+      "content": "Kommunen ska utöver vad som framgår av miljötillsynsförordningen (2011:13) ägna särskild uppmärksamhet åt följande byggnader, lokaler och anläggningar: 1. byggnader som innehåller en eller flera bostäder och tillhörande utrymmen, 2. lokaler för undervisning, vård eller annat omhändertagande, 3. samlingslokaler där många människor brukar samlas, 4. hotell, pensionat och liknande lokaler där allmänheten yrkesmässigt erbjuds tillfällig bostad, 5. idrottsanläggningar, campinganläggningar, badanläggningar, strandbad och andra liknande anläggningar som är upplåtna för allmänheten eller som annars utnyttjas av många människor, 6. lokaler där allmänheten yrkesmässigt erbjuds hygienisk behandling och där verksamheten inte endast omfattas av lagen (2021:363) om estetiska kirurgiska ingrepp och estetiska injektionsbehandlingar, och 7. lokaler för förvaring av djur. Förordning (2021:368). Ansökningar och anmälningar"
+    },
+    {
+      "provision_ref": "26:46",
+      "chapter": "26",
+      "section": "46",
+      "content": "En ansökan, anmälan eller underrättelse till den kommunala nämnden eller försvarsinspektören för hälsa och miljö enligt 37, 38, 38 a eller 38 b § eller enligt en föreskrift som har meddelats med stöd av 39, 40 eller 42 § ska vara skriftlig och innehålla de uppgifter som behövs för ärendet samt de ritningar och tekniska beskrivningar som behövs för att bedöma de anordningar, lokaler eller anläggningar som avses i ansökan, anmälan eller underrättelsen. Förordning (2023:932). Bemyndiganden för Naturvårdsverket"
+    },
+    {
+      "provision_ref": "26:47",
+      "chapter": "26",
+      "section": "47",
+      "content": "Naturvårdsverket får meddela närmare föreskrifter om vilka försiktighetsmått som ska gälla vid 1. träskyddsbehandling genom doppning, 2. träskyddsbehandling genom tryck- eller vakuumimpregnering, 3. oorganisk ytbehandling genom fosfatering, 4. utsläpp av industriellt avloppsvatten, 5. rening av avloppsvatten från tätbebyggelse, 6. utsläpp till luft från anläggningar för förbränning av kommunalt avfall som har beviljats tillstånd enligt miljöskyddslagen (1969:387) eller miljöbalken, 7. användning av avloppsslam i jordbruk, 8. lagring, tömning, demontering och annat omhändertagande av skrotbilar, och 9. lagring, förbehandling, återvinning och bortskaffande av avfall som utgörs av elektriska och elektroniska produkter. Förordning (2013:262)."
+    },
+    {
+      "provision_ref": "26:47 a",
+      "chapter": "26",
+      "section": "47 a",
+      "content": "Naturvårdsverket får 1. i fråga om verksamheter som omfattas av tillståndsplikt enligt denna förordning eller miljöprövningsförordningen (2013:251) eller av ett föreläggande att ansöka om tillstånd enligt 9 kap. 6 a § miljöbalken meddela föreskrifter om att en miljörapport ska innehålla en redovisning av verksamhetens miljöpåverkan även i andra avseenden än vad som omfattas av villkoren i ett tillståndsbeslut liksom av andra uppgifter som är relaterade till miljöbalkens tillämpningsområde och mål, 2. i fråga om verksamheter som avses i 31 b § meddela föreskrifter om att det i en miljörapport ska lämnas sådana uppgifter som följer av Europaparlamentets och rådets förordning (EG) nr 166/2006, 3. i fråga om avloppsledningsnät som är anslutna till en avloppsreningsanläggning som är tillståndspliktig enligt miljöprövningsförordningen meddela föreskrifter om att det i en miljörapport ska lämnas uppgifter om a) det antal bräddningar av avloppsvatten som har skett under året, b) de platser där bräddning har skett, och c) bräddad volym, redovisat som kubikmeter per plats och år, 4. meddela föreskrifter om vilka uppgifter om produktionen av naturgrus, morän och berg som en miljörapport enligt 31 a § ska innehålla, 5. i fråga om verksamheter som avses i 31 c § meddela föreskrifter om att det i en miljörapport ska lämnas sådana uppgifter som följer av artiklarna 10 och 11 i Europaparlamentets och rådets förordning (EU) 2020/741, i den ursprungliga lydelsen, och 6. meddela föreskrifter om hur uppgifterna i en miljörapport ska redovisas. Förordning (2024:163). Bemyndigande för Havs- och vattenmyndigheten"
+    },
+    {
+      "provision_ref": "26:47 b",
+      "chapter": "26",
+      "section": "47 b",
+      "content": "Havs- och vattenmyndigheten får meddela föreskrifter om vilka försiktighetsmått som ska gälla vid utsläpp av avloppsvatten från avloppsanläggningar som tar emot avloppsvatten med en föroreningsmängd som motsvarar högst 200 personekvivalenter. Förordning (2024:25). Expediering av dom m.m. i miljöskademål"
+    },
+    {
+      "provision_ref": "26:48",
+      "chapter": "26",
+      "section": "48",
+      "content": "När mark- och miljödomstolen har meddelat en dom eller ett beslut med anledning av en talan enligt 32 kap. miljöbalken som rör Naturvårdsverkets eller Havs- och vattenmyndighetens ansvarsområde, ska domstolen underrätta den berörda myndigheten om domen eller beslutet. Förordning (2011:625). Miljöbok"
+    },
+    {
+      "provision_ref": "26:48 a",
+      "chapter": "26",
+      "section": "48 a",
+      "content": "En mark- och miljödomstol ska i den miljöbok som avses i 8 § förordningen (1998:1388) om vattenverksamhet m.m. föra en förteckning över avgöranden om miljöfarlig verksamhet enligt miljöbalken. Domstolsverket får meddela föreskrifter om förteckningen. Förordning (2018:252). Tillsyn och avgifter"
+    },
+    {
+      "provision_ref": "26:49",
+      "chapter": "26",
+      "section": "49",
+      "content": "Bestämmelser om tillsyn finns i 26 kap. miljöbalken och i miljötillsynsförordningen (2011:13). Bestämmelser om det tillsynsansvar som hör samman med denna förordning finns i"
+    },
+    {
+      "provision_ref": "26:49 a",
+      "chapter": "26",
+      "section": "49 a",
+      "title": "Rapportering till Europeiska kommissionen och lämnande av",
+      "content": "Naturvårdsverket är den behöriga myndighet som avses i förordning (EG) nr 166/2006. Förordning (2023:443)."
+    },
+    {
+      "provision_ref": "26:49 b",
+      "chapter": "26",
+      "section": "49 b",
+      "content": "Naturvårdsverket ska fullgöra de uppgifter i fråga om rapportering till Europeiska kommissionen som framgår av artikel 7.2 i förordning (EG) 166/2006. Förordning (2023:443)."
+    },
+    {
+      "provision_ref": "26:49 c",
+      "chapter": "26",
+      "section": "49 c",
+      "content": "Tillsynsmyndigheten ska till Naturvårdsverket lämna sådana uppgifter om produktionsvolym som verksamhetsutövaren lämnat i en miljörapport och som behövs för att Naturvårdsverket ska kunna fullgöra rapporteringen till Europeiska kommissionen enligt 49 b §. Naturvårdsverket får medges direktåtkomst till uppgifterna. Förordning (2023:443). Överklagande"
+    },
+    {
+      "provision_ref": "26:50",
+      "chapter": "26",
+      "section": "50",
+      "content": "Bestämmelser om överklagande finns i 18 kap. 1 § och"
+    },
+    {
+      "provision_ref": "26:51",
+      "chapter": "26",
+      "section": "51",
+      "title": "Straff och förverkande",
+      "content": "I 29 kap. miljöbalken finns bestämmelser om straff och förverkande. Övergångsbestämmelser 1998:899 1. Denna förordning träder i kraft den 1 januari 1999, då miljöskyddsförordningen (1989:364) och hälsoskyddsförordningen (1983:616) skall upphöra att gälla. 2. Den som vid ikraftträdandet bedriver miljöfarlig verksamhet för vilken krav på tillstånd till driften införs genom 5 §, skall senast den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt senast den 31 december 2007 ha kommit in till tillståndsmyndigheten med en ansökan om sådant tillstånd. Vad som sägs i första stycket om tillstånd gäller även den som bedriver miljöfarlig verksamhet för vilken Naturvårdsverket eller länsstyrelsen med stöd av 10 § andra stycket miljöskyddslagen (1969:387), i dess lydelse före den 1 juli 1981, medgivit undantag från skyldigheten att ansöka om tillstånd. Förordning (2006:1162). 3. Den som vid ikraftträdandet bedriver miljöfarlig verksamhet för vilken krav på anmälan av driften införs genom 21 §, skall senast den 31 december 2002 ha kommit in till tillsynsmyndigheten med en sådan anmälan. Vad som sägs i första stycket om anmälan gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. Förordning (2001:748). 2001:513 Denna förordning träder i kraft den 16 juli 2001. För sådana deponier som avses i 38 § förordningen (2001:512) om deponering av avfall, för vilka tillståndsplikt införs till följd av denna förordning, krävs tillstånd fr.o.m. den 1 januari 2009. Bestämmelser om anpassningsplaner för sådana deponier finns i 38-42 §§ nämnda förordning. Förordning (2001:748). 2001:748 1. Denna förordning träder i kraft den 1 december 2001. 2. Följande gäller för verksamheter som påbörjats före den 1 december 2002 och som inte omfattas av tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om tillståndsplikt införs till följd av denna förordning. Verksamheten får fortsätta att bedrivas till och med den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt till och med den 31 december 2007 trots att tillståndsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt senast den 31 december 2007 och tillståndsmyndigheten inte beslutar något annat. Förordning (2006:1162). 3. Följande gäller för verksamheter som påbörjats före den 1 december 2001 och som inte har tillstånd eller har anmälts enligt 5 § respektive 21 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om anmälningsplikt införs till följd av denna förordning. Verksamheten får fortsätta att bedrivas till och med den 31 december 2002 utan hinder av att anmälningsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten senast den 31 december 2002 gjort en anmälan till tillsynsmyndigheten. 4. Det som sägs i punkt 2 och 3 gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 2001:1064 1. Denna förordning träder i kraft den 1 januari 2002. Förordning (2002:557). 2. Följande gäller för verksamheter som påbörjats före den 1 januari 2002 och som inte omfattas av tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om verksamheten har blivit tillståndspliktig till följd av att visst avfall enligt avfallsförordningen (2001:1063) skall anses som farligt avfall. Verksamheten får fortsätta att bedrivas till och med den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt till och med den 31 december 2007 trots att tillståndsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt senast den 31 december 2007 och tillståndsmyndigheten inte beslutar något annat. Förordning (2006:1162). 3. Följande gäller för verksamheter som påbörjats före den 1 januari 2002 och som inte har tillstånd eller har anmälts enligt 5 § respektive 21 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om verksamheten har blivit anmälningspliktig till följd av att visst avfall enligt avfallsförordningen (2001:1063) skall anses som farligt avfall. Verksamheten får fortsätta att bedrivas till och med den 31 december 2002 trots att anmälningsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten senast den 31 december 2002 gjort en anmälan till tillsynsmyndigheten. Förordning (2002:557). 4. Följande gäller för verksamheter som enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd eller förordningen (1996:971) om farligt avfall vid utgången av år 2001 hade tillstånd att hantera eller vidta andra åtgärder med sådant avfall som enligt äldre bestämmelser inte utgjorde farligt avfall men som enligt avfallsförordningen (2001:1063) skall anses som farligt avfall. Verksamheten får fortsätta att bedrivas enligt tillståndet så länge som tillståndet gäller, dock längst till och med den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt till och med den 31 december 2007. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten lämnat in en ny ansökan om tillstånd till tillståndsmyndigheten senast den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt senast den 31 december 2007 och tillståndsmyndigheten inte beslutar något annat. Förordning (2006:1162). 5. Följande gäller för verksamheter som enligt 21 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd eller förordningen (1996:971) om farligt avfall vid utgången av år 2001 hade anmälts för att hantera eller vidta andra åtgärder med sådant avfall som enligt äldre bestämmelser inte utgjorde farligt avfall men som enligt avfallsförordningen (2001:1063) skall anses som farligt avfall. Verksamheten får fortsätta att bedrivas till och med den 31 december 2002. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten senast den 31 december 2002 gjort en anmälan till tillsynsmyndigheten. Förordning (2002:557). 6. Det som sägs i punkterna 2, 3 och 5 gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. Förordning (2002:557). 2002:557 Denna förordning träder i kraft den 1 juli 2002. De nya bestämmelserna skall dock tillämpas för tid från och med den 1 januari 2002. 2002:619 1. Denna förordning träder i kraft den 30 juli 2002. 2. Följande gäller för verksamheter som har påbörjats före den 30 juli 2002 och som inte omfattas av tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om tillståndsplikt införs genom denna förordning. Verksamheten får fortsätta att bedrivas till och med den 30 juni 2006 trots att tillståndsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 30 juni 2006 och tillståndsmyndigheten inte beslutar något annat. Förordning (2005:358). 3. Det som sägs i punkten 2 gäller inte om tillståndsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 2003:80 För verksamhet där kärnkraftverk eller annan kärnreaktor nedmonteras eller avvecklas och där reaktorn har stängts av före den 1 maj 2003 gäller de nya bestämmelserna de åtgärder för nedmontering eller avveckling som efter avstängningen påbörjas den 1 maj 2003 eller senare. Förordning (2003:210). 2003:210 Denna förordning träder i kraft den 1 juli 2003 men tillämpas från och med den 1 maj 2003. 2003:1052 1. Denna förordning träder i kraft den 1 januari 2004. 2. Följande gäller för verksamheter som har påbörjats före den 1 januari 2004 och som inte omfattas av tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om tillståndsplikt införs genom denna förordning. Verksamheten får fortsätta att bedrivas till och med den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt till och med den 31 december 2007 trots att tillståndsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 31 december 2005, om verksamheten finns angiven i bilagan till förordningen (2004:989) om översyn av vissa miljöfarliga verksamheter, och i övrigt senast den 31 december 2007 och tillståndsmyndigheten inte beslutar något annat. Förordning (2006:1162). 3. Verksamheter som blir anmälningspliktiga genom denna förordning får fortsätta att bedrivas till och med den 31 december 2004 trots att anmälningsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten senast den 31 december 2004 gjort en anmälan till tillsynsmyndigheten. 4. Det som sägs i punkterna 2 och 3 gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 2005:15 1. Denna förordning träder i kraft den 15 februari 2005 och får tillämpas från och med den 1 januari 2005. 2. Lagring som med tillämpning av 22 a § har påbörjats före den 15 februari 2005 skall anmälas senast den 29 mars 2005. 2005:180 Denna förordning träder i kraft den 3 maj 2005 och får tillämpas från och med den 1 januari 2005. 2005:354 1. Denna förordning träder i kraft den 30 juni 2005. 2. Följande gäller för verksamheter som har påbörjats före den 30 juni 2005 och som inte omfattas av tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om tillståndsplikt införs genom denna förordning. Verksamheterna får fortsätta att bedrivas till och med den 30 juni 2006 även om tillståndsplikt införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten givit in en ansökan om tillstånd till tillståndsmyndigheten senast den 30 juni 2006 och tillståndsmyndigheten inte beslutar annat. 3. Det som sägs i punkten 2 gäller inte om tillståndsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 2005:623 1. Denna förordning träder i kraft den 1 augusti 2005. 2. Tillstånd till täkt skall fortsätta att gälla om det har meddelats med stöd av 12 kap. 1 § miljöbalken eller enligt föreskrifter som har meddelats med stöd av miljöbalken. Tillstånden skall anses meddelade enligt 9 kap. 6 § miljöbalken. 2006:1142 1. Denna förordning träder i kraft den 1 december 2006. 2. Äldre bestämmelser gäller för prövningen och handläggningen av mål och ärenden om tillstånd som inletts före den 1 december 2006. 2007:674 1. Denna förordning träder i kraft den 1 augusti 2007 i fråga om 28 § och den 1 januari 2008 i övrigt. 2. Följande gäller för verksamheter som påbörjats före den 1 januari 2008 och som inte har tillstånd enligt 5 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om tillståndsplikt införs till följd av denna förordning eller om verksamheten omfattas av punkten 2 i övergångsbestämmelserna till förordningen om miljöfarlig verksamhet och hälsoskydd, punkten 2 i övergångsbestämmelserna till förordningen (2001:748) om ändring i förordningen om miljöfarlig verksamhet och hälsoskydd, punkten 2 eller 4 i övergångsbestämmelserna till förordningen (2001:1064) om ändring i förordningen om miljöfarlig verksamhet och hälsoskydd eller punkten 2 i övergångsbestämmelserna till förordningen (2003:1052) om ändring i förordningen om miljöfarlig verksamhet och hälsoskydd. Verksamheten får fortsätta att bedrivas utan tillstånd till och med den 30 juni 2008. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten har lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 30 juni 2008 och tillståndsmyndigheten inte beslutar något annat. Förordning (2007:1373). 3. Följande gäller för verksamheter som påbörjats före den 1 januari 2008 och som inte har tillstånd eller har anmälts enligt 5 § respektive 21 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd, om anmälningsplikt införs till följd av denna förordning. Verksamheten får fortsätta att bedrivas till och med den 30 juni 2008 trots att anmälningsplikten införs. Därefter får verksamheten bedrivas endast om den som bedriver verksamheten har gjort en anmälan till tillsynsmyndigheten senast den 30 juni 2008. 4. Det som sägs i punkterna 2 och 3 gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 5. Äldre bestämmelser gäller för prövningen och handläggningen av mål och ärenden som inletts före den 1 januari 2008. 2008:690 1. Denna förordning träder i kraft den 1 augusti 2008. 2. Bestämmelser i denna förordning som jämförda med äldre bestämmelser innebär mindre stränga krav för en verksamhet ska tillämpas från och med den 30 juni 2008. 3. I fråga om verksamheter som har påbörjats före den 1 augusti 2008 och som inte har tillstånd enligt 5 § och som inte heller har behövt söka tillstånd förrän den 30 juni 2008 gäller följande. Om denna förordning jämförd med äldre bestämmelser innebär att en verksamhet blir anmälningspliktig i stället för tillståndspliktig får verksamheten bedrivas utan att anmälan har gjorts till och med den 31 december 2008. Därefter får verksamheten bedrivas endast om verksamhetsutövaren har gjort en anmälan till tillsynsmyndigheten senast den 31 december 2008 och tillsynsmyndigheten inte beslutar något annat. 4. Om denna förordning jämförd med äldre bestämmelser innebär strängare krav i fråga om anmälningsplikt för en verksamhet som har påbörjats före den 1 augusti 2008, får verksamheten fortsätta att bedrivas utan att anmälan har gjorts till och med den 31 december 2008. Därefter får verksamheten bedrivas endast om verksamhetsutövaren har gjort en anmälan till tillsynsmyndigheten senast den 31 december 2008 och tillsynsmyndigheten inte beslutar något annat. 5. Om denna förordning jämförd med äldre bestämmelser innebär strängare krav i fråga om tillståndsplikt för en verksamhet som har påbörjats före den 1 augusti 2008, får verksamheten fortsätta att bedrivas utan tillstånd till och med den 31 december 2008. Därefter får verksamheten bedrivas endast om verksamhetsutövaren har lämnat in en ansökan om tillstånd till tillståndsmyndigheten senast den 31 december 2008 och tillståndsmyndigheten inte beslutar något annat. 6. Det som sägs i punkterna 3-5 gäller inte om tillsynsmyndigheten enligt 9 kap. 6 § andra stycket miljöbalken har förelagt verksamhetsutövaren att ansöka om tillstånd. 7. Äldre bestämmelser gäller för prövningen och handläggningen av mål och ärenden som har inletts före den 1 augusti 2008. Bestämmelserna i 6 b § får dock tillämpas även på ärenden som har inletts före den 1 augusti 2008. 2008:727 1. Denna förordning träder i kraft den 1 september 2008 och tillämpas på verksamheter som inte är i drift eller omfattas av ett tillstånd enligt miljöbalken detta datum. 2. Äldre bestämmelser gäller för prövningen och handläggningen av mål och ärenden som inletts före den 1 september 2008. 2009:863 1. Denna förordning träder i kraft den 1 augusti 2009. 2. En verksamhet som enligt äldre bestämmelser är anmälningspliktig får fortsätta att bedrivas enligt de äldre bestämmelserna trots att verksamheten blir tillståndspliktig med denna förordning, om verksamheten är anmäld den 1 augusti 2009. 3. En verksamhet som bedrivs den 1 augusti 2009 och som enligt äldre bestämmelser inte är anmälnings- eller tillståndpliktig men som blir anmälningspliktig med denna förordning får fortsätta att bedrivas enligt äldre bestämmelser. 4. Äldre bestämmelser gäller för prövningen och handläggningen av mål och ärenden som inletts före den 1 augusti 2009. 2017:972 1. Denna förordning träder i kraft den 1 januari 2018. 2. Äldre föreskrifter gäller fortfarande för handläggningen och bedömningen av ärenden som har inletts före ikraftträdandet. 2018:2005 1. Denna förordning träder i kraft den 5 januari 2019. 2. En sådan verksamhet med behandling av avfall som omfattas av 29 kap. miljöprövningsförordningen (2013:251) och som har anmälts enligt äldre bestämmelser ska ge in en ny anmälan som uppfyller kraven i 25 d § senast a) den 1 januari 2022, om verksamheten omfattas av 29 kap. 35, 37, 41 eller 43 § miljöprövningsförordningen (2013:251), och b) den 1 januari 2020 i andra fall. Förordning (2019:1309). 2020:530 1. Denna förordning träder i kraft den 25 juni 2020. 2. Bestämmelserna i 25 g-25 j, 26 a, 27 och 27 b §§ tillämpas även på anmälningar som gjorts före ikraftträdandet. 2021:368 1. Denna förordning träder i kraft den 1 juli 2021. 2. Den som före ikraftträdandet bedriver verksamhet som efter den 30 juni 2021 är anmälningspliktig enligt 38 § får, trots vad som anges i 38 § tredje stycket, fortsätta att bedriva verksamheten i det fall en anmälan enligt 38 § andra stycket görs senast den 1 september 2021. 2022:113 1. Denna förordning träder i kraft den 15 mars 2022. 2. Förordningen tillämpas även på anmälningar som gjorts före ikraftträdandet. 2022:1605 1. Denna förordning träder i kraft den 1 januari 2023. 2. Bestämmelserna i 25 h och 27 c §§ tillämpas även på anmälningar som har gjorts före ikraftträdandet. 2023:291 1. Denna förordning träder i kraft den 13 juni 2023. 2. Bestämmelsen i 27 b § i den nya lydelsen tillämpas även på anmälningar som har gjorts före ikraftträdandet. 2023:932 1. Denna förordning träder i kraft den 1 februari 2024. 2. Bestämmelserna tillämpas första gången i fråga om kyltorn som uppförs eller används efter utgången av juli 2024. 3. Den som före ikraftträdandet har påbörjat uppförandet eller användandet av ett kyltorn som ska anmälas enligt 38 a § får dock fortsätta uppförandet eller användandet till utgången av 2024. Därefter får uppförandet eller användandet fortsätta endast om det har anmälts. 2024:975 1. Denna förordning träder i kraft den 1 januari 2025. 2. Äldre föreskrifter gäller fortfarande för mål och ärenden som har inletts hos en prövningsmyndighet före ikraftträdandet. Bilaga Verksamheter och farliga ämnen Denna bilaga innehåller en förteckning med beskrivningar av verksamheter och åtgärder som är tillståndspliktiga enligt 5 § och en förteckning över sådana farliga ämnen i utsläpp som avses i 11 a §. AVDELNING 4 VERKSAMHETER MED HANTERING AV KEMISKA ÄMNEN Farliga ämnen som innebär en miljöfarlig hantering som ska tillståndsprövas enligt 9 kap. 6 § miljöbalken Denna avdelning består av Del 1 som innehåller en förteckning av särskilda farokategorier och Del 2 som innehåller en förteckning av farliga ämnen. Följande gäller för tillämpningen av denna avdelning. 1. I Europaparlamentets och rådets förordning (EG) nr 1272/2008 av den 16 december 2008 om klassificering, märkning och förpackning av ämnen och blandningar, ändring och upphävande av direktiven 67/548/EEG och 1999/45/EG samt ändring av förordning (EG) nr 1907/2006, finns bestämmelser om klassificering och märkning av ämnen och blandningar. 2. Blandningar ska jämställas med rena ämnen förutsatt att de hålls inom de koncentrationsgränser som på grund av ämnenas egenskaper fastställs i förordning (EG) nr 1272/2008, eller dess senaste anpassning till den tekniska utvecklingen, utom om en procentsammansättning eller annan beskrivning anges specifikt. 3. Farliga ämnen som inte omfattas av förordning (EG) nr 1272/2008, inklusive avfall, men som förekommer eller sannolikt förekommer vid en verksamhet och vid de förhållanden som råder vid verksamheten har eller sannolikt har motsvarande egenskaper när det gäller möjligheter att orsaka allvarliga olyckshändelser, ska provisoriskt hänföras till den farokategori i Del 1 som är mest analog eller det farliga ämne i Del 2 som är mest analogt. 4. Om ett farligt ämne uppvisar egenskaper som medför flera klassificeringar enligt förordning (EG) nr 1272/2008, ska den klassificering som motsvarar den lägsta mängden farligt ämne gälla. I de fall ett farligt ämne omfattas av Del 1 och även förtecknas i Del 2, ska de mängder som anges i Del 2 tillämpas. 5. Om något av de ämnen som anges i Del 2 punkterna 42-48 ingår i en brandfarlig vätska som avses i Del 1 punkterna P5a eller P5b ska de mängder som anges i de sistnämnda punkterna tillämpas. 6. Den mängd farligt ämne som ska beaktas vid tillämpningen av föreskrifterna är den maximala mängd som förekommer eller kan förekomma. Farliga ämnen som förekommer i en verksamhet endast i mängder som är lika med eller understiger 2 procent av den angivna mängden i Del 1 och Del 2 ska inte tas med i beräkningen av den totala mängd som förekommer om de är placerade inom verksamheten så att de inte kan utlösa en allvarlig olyckshändelse någon annanstans inom den. 7. Om det inom en verksamhet förekommer eller kan förekomma flera farliga ämnen som anges i denna bilaga i mängder som understiger de gränsmängder som anges för varje ämne ska en summering göras för att fastställa om verksamheten omfattas av bestämmelserna. Vid tillämpning av summeringen ska det valda gränsvärdet alltid motsvara den aktuella klassificeringen. Summeringen görs enligt formeln Sqx/Qx=q1/Q1+q2/Q2+....+qn/Qn där qx betecknar den förekommande mängden farligt ämne x för \"ämne 1\" t.o.m. \"ämne n\" i förteckningarna över ämne och kategorier av ämnen i denna bilaga och Qx betecknar den i denna bilaga angivna gränsmängden för respektive ämne eller kategori av ämnen. Denna formel tillämpas för: a) summering av farliga ämnen som är förtecknade i Del 2 och som ingår i akut toxicitet kategori 1, 2 eller 3 (via inhalation) eller STOT SE kategori 1, tillsammans med farliga ämnen som ingår i avsnitt H: posterna H1 till H3 i Del 1, b) summering av farliga ämnen som är förtecknade i Del 2 och som är explosiva ämnen, blandningar eller föremål, brandfarliga gaser, brandfarliga aerosoler, oxiderande gaser, brandfarliga vätskor, självreagerande ämnen och blandningar, organiska peroxider, pyrofora vätskor och fasta ämnen, oxiderande vätskor och fasta ämnen tillsammans med de farliga ämnen som ingår i avsnitt P posterna P1 till P8 i Del 1, och c) summering av farliga ämnen som anges i Del 2 och som ingår i farliga för vattenmiljön, akut kategori 1, kronisk kategori 1 eller kronisk kategori 2 tillsammans med de farliga ämnen som ingår i avsnitt E posterna E1 och E2 i Del 1. Om någon av summorna under a, b eller c är lika med eller större än ett (1) ska verksamheten omfattas av bestämmelserna. 8. Undantaget från denna avdelning är: a) faror som har samband med joniserande strålning som utgår från ämnen, b) sådan hantering av farliga ämnen som omfattas av lagen (2006:263) om transport av farligt gods och som sker utanför verksamheten, c) transport av farliga ämnen som sker som bulklast i fartyg när transporten sker i fartygets fasta tankar, eller farliga ämnen som används som drivmedel i fartyg utanför de verksamheter som omfattas av lagen (1999:381) om åtgärder för att förebygga och begränsa följderna av allvarliga kemikalieolyckor, d) transport av farliga ämnen i rörledningar utanför de verksamheter som omfattas av lagen (1999:381) om åtgärder för att förebygga och begränsa följderna av allvarliga kemikalieolyckor, eller e) militär verksamhet. 9. Om ändring i ett ämnes klassificering som avses i Del 1 medför att en verksamhet som omfattas av denna avdelning blir tillståndspliktig gäller följande. a) Om verksamheten påbörjats före ändringen får den trots tillståndskravet fortsätta att bedrivas i två år från ändringen. Därefter får den bedrivas endast om det finns tillstånd för den eller verksamhetsutövaren inom tvåårsfristen har ansökt om tillstånd och tillståndsmyndigheten inte beslutar annat. b) Det som sägs i a gäller inte om tillsynsmyndigheten enligt"
+    }
+  ]
+}
