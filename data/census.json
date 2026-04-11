@@ -6,12 +6,12 @@
   "census_date": "2026-02-22",
   "agent": "claude-opus-4-6",
   "summary": {
-    "total_laws": 6041,
-    "ingestable": 6041,
+    "total_laws": 6045,
+    "ingestable": 6045,
     "ocr_needed": 0,
     "inaccessible": 0,
     "excluded": 0,
-    "total_provisions": 58570
+    "total_provisions": 59208
   },
   "laws": [
     {
@@ -4325,6 +4325,20 @@
       "ingested": true,
       "provision_count": 0,
       "ingestion_date": "2026-02-22"
+    },
+    {
+      "id": "1977:1166",
+      "title": "Arbetsmiljöförordning (1977:1166)",
+      "title_en": "Work Environment Ordinance",
+      "identifier": "1977:1166",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-1977-1166",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 29,
+      "ingestion_date": "2026-04-10"
     },
     {
       "id": "1978:144",
@@ -27313,6 +27327,20 @@
       "ingested": true,
       "provision_count": 0,
       "ingestion_date": "2026-02-22"
+    },
+    {
+      "id": "1997:857",
+      "title": "Ellag (1997:857)",
+      "title_en": "Electricity Act",
+      "identifier": "1997:857",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-1997-857",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 381,
+      "ingestion_date": "2026-04-10"
     },
     {
       "id": "1997:1024",
@@ -51535,6 +51563,20 @@
       "ingestion_date": "2026-02-22"
     },
     {
+      "id": "2011:338",
+      "title": "Plan- och byggförordning (2011:338)",
+      "title_en": "Planning and Building Ordinance",
+      "identifier": "2011:338",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2011-338",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 168,
+      "ingestion_date": "2026-04-10"
+    },
+    {
       "id": "2011:1029",
       "title": "Lag (2011:1029) om upphandling på försvars- och säkerhetsområdet",
       "title_en": null,
@@ -62579,6 +62621,20 @@
       "ingested": true,
       "provision_count": 0,
       "ingestion_date": "2026-02-22"
+    },
+    {
+      "id": "2016:732",
+      "title": "Elsäkerhetslag (2016:732)",
+      "title_en": "Electrical Safety Act",
+      "identifier": "2016:732",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sfs-2016-732",
+      "status": "in_force",
+      "category": "general",
+      "classification": "ingestable",
+      "classification_reason": "Full structured HTML available from Riksdagen",
+      "ingested": true,
+      "provision_count": 60,
+      "ingestion_date": "2026-04-10"
     },
     {
       "id": "2016:1013",
