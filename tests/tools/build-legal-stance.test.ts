@@ -96,6 +96,37 @@ describe('build_legal_stance', () => {
     expect(response.results.total_citations).toBe(0);
   });
 
+  // Regression: parallel coverage to search-case-law.test.ts. The case_law
+  // branch of build-legal-stance previously used the same INNER JOIN against
+  // legal_documents that hid every production case_law row whose document_id
+  // is not in legal_documents. Without this test, a future revert of the
+  // LEFT JOIN in build-legal-stance.ts would slip through CI.
+  it('should aggregate case_law rows whose document_id is not in legal_documents', async () => {
+    db.pragma('foreign_keys = OFF');
+    db.prepare(
+      `INSERT INTO case_law (document_id, court, case_number, decision_date, summary, keywords)
+       VALUES (?, ?, ?, ?, ?, ?)`
+    ).run(
+      'NJA_2024_s200',
+      'HD',
+      'B 8888-23',
+      '2024-04-15',
+      'Avgörande om juristkonsultationsplikt utan motsvarande post i legal_documents.',
+      'juristkonsultationsplikt regression case_law join'
+    );
+    db.pragma('foreign_keys = ON');
+
+    const response = await buildLegalStance(db, {
+      query: 'juristkonsultationsplikt',
+      include_provisions: false,
+      include_preparatory_works: false,
+    });
+    const orphan = response.results.case_law.find(c => c.document_id === 'NJA_2024_s200');
+    expect(orphan).toBeDefined();
+    expect(orphan?.court).toBe('HD');
+    expect(orphan?.title).toBeTruthy();
+  });
+
   it('should apply as_of_date to historical retrieval', async () => {
     const response = await buildLegalStance(db, {
       query: 'Datainspektionen',
