@@ -1,6 +1,6 @@
 {
   "name": "@ansvar/swedish-law-mcp",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "Production-grade Swedish legal research MCP server with comprehensive statute coverage and EU law cross-references",
   "type": "module",
   "main": "dist/index.js",

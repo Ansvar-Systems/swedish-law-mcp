@@ -39,12 +39,12 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
 
 > Connect directly to the hosted version — zero dependencies, nothing to install.
 
-**Endpoint:** `https://mcp.ansvar.eu/law-se/mcp`
+**Endpoint:** `https://swedish-law-mcp.vercel.app/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add swedish-law --transport http https://mcp.ansvar.eu/law-se/mcp` |
+| **Claude Code** | `claude mcp add swedish-law --transport http https://swedish-law-mcp.vercel.app/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -55,7 +55,7 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
   "mcpServers": {
     "swedish-law": {
       "type": "url",
-      "url": "https://mcp.ansvar.eu/law-se/mcp"
+      "url": "https://swedish-law-mcp.vercel.app/mcp"
     }
   }
 }
@@ -68,7 +68,7 @@ This MCP server makes Swedish law **searchable, cross-referenceable, and AI-read
   "github.copilot.chat.mcp.servers": {
     "swedish-law": {
       "type": "http",
-      "url": "https://mcp.ansvar.eu/law-se/mcp"
+      "url": "https://swedish-law-mcp.vercel.app/mcp"
     }
   }
 }
@@ -307,18 +307,6 @@ Queries go through the Claude API. For privileged or confidential matters, use o
 ---
 
 ## Development
-
-### Branching Strategy
-
-This repository uses a `dev` integration branch. **Do not push directly to `main`.**
-
-```
-feature-branch → PR to dev → verify on dev → PR to main → deploy
-```
-
-- `main` is production-ready. Only receives merges from `dev` via PR.
-- `dev` is the integration branch. All changes land here first.
-- Feature branches are created from `dev`.
 
 ### Setup
 

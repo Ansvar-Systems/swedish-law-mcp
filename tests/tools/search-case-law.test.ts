@@ -69,4 +69,33 @@ describe('search_case_law', () => {
       expect(result._metadata.attribution).toContain('CC-BY Domstolsverket');
     }
   });
+
+  // Regression: production case_law rows often have document_id values
+  // (e.g. "NJA_2020_s45") that do not appear in legal_documents. The
+  // INNER JOIN previously dropped every such row, returning empty results
+  // for every query against the live premium DB even though FTS matched
+  // hundreds of cases. Search must surface these rows; title falls back
+  // to case_number or document_id when no legal_document is linked.
+  it('should return case_law rows whose document_id is not in legal_documents', async () => {
+    db.pragma('foreign_keys = OFF');
+    db.prepare(
+      `INSERT INTO case_law (document_id, court, case_number, decision_date, summary, keywords)
+       VALUES (?, ?, ?, ?, ?, ?)`
+    ).run(
+      'NJA_2024_s100',
+      'HD',
+      'B 9999-23',
+      '2024-04-15',
+      'Avgörande om regressionsstämning utan motsvarande post i legal_documents.',
+      'regression case_law join'
+    );
+    db.pragma('foreign_keys = ON');
+
+    const response = await searchCaseLaw(db, { query: 'regressionsstämning' });
+    const orphan = response.results.find(r => r.document_id === 'NJA_2024_s100');
+    expect(orphan).toBeDefined();
+    expect(orphan?.court).toBe('HD');
+    expect(orphan?.case_number).toBe('B 9999-23');
+    expect(orphan?.title).toBeTruthy();
+  });
 });
