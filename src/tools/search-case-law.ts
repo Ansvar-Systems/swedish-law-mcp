@@ -46,10 +46,14 @@ export async function searchCaseLaw(
   const limit = Math.min(Math.max(input.limit ?? DEFAULT_LIMIT, 1), MAX_LIMIT);
   const queryVariants = buildFtsQueryVariants(input.query);
 
+  // LEFT JOIN: production case_law rows often have document_id values
+  // (e.g. "NJA_2020_s45") that are not present in legal_documents. An
+  // INNER JOIN drops every such row and silently returns empty results.
+  // Title falls back to case_number or document_id when no link exists.
   let sql = `
     SELECT
       cl.document_id,
-      ld.title,
+      COALESCE(ld.title, cl.case_number, cl.document_id) as title,
       cl.court,
       cl.case_number,
       cl.decision_date,
@@ -58,7 +62,7 @@ export async function searchCaseLaw(
       bm25(case_law_fts) as relevance
     FROM case_law_fts
     JOIN case_law cl ON cl.id = case_law_fts.rowid
-    JOIN legal_documents ld ON ld.id = cl.document_id
+    LEFT JOIN legal_documents ld ON ld.id = cl.document_id
     WHERE case_law_fts MATCH ?
   `;
 

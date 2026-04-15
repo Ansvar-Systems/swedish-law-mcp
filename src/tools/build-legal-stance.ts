@@ -209,14 +209,14 @@ export async function buildLegalStance(
     let clSql = `
       SELECT
         cl.document_id,
-        ld.title,
+        COALESCE(ld.title, cl.case_number, cl.document_id) as title,
         cl.court,
         cl.decision_date,
         snippet(case_law_fts, 0, '>>>', '<<<', '...', 32) as summary_snippet,
         bm25(case_law_fts) as relevance
       FROM case_law_fts
       JOIN case_law cl ON cl.id = case_law_fts.rowid
-      JOIN legal_documents ld ON ld.id = cl.document_id
+      LEFT JOIN legal_documents ld ON ld.id = cl.document_id
       WHERE case_law_fts MATCH ?
     `;
     const clParams: (string | number)[] = [];
