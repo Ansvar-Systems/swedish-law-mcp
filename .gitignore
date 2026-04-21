@@ -102,3 +102,5 @@ temp/
 .vercel
 database.db
 reports/
+*-e
+*.bak
