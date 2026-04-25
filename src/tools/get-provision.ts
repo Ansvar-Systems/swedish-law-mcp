@@ -6,6 +6,7 @@ import type { Database } from '@ansvar/mcp-sqlite';
 import { normalizeAsOfDate } from '../utils/as-of-date.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 import { buildProvisionCitation } from '../utils/citation.js';
+import { resolveDocumentId, normalizeProvisionRef } from '../utils/statute-id.js';
 
 export interface GetProvisionInput {
   document_id: string;
@@ -60,8 +61,19 @@ export async function getProvision(
     throw new Error('document_id is required');
   }
 
-  // If provision_ref is directly provided, use it
-  let provisionRef = input.provision_ref;
+  const resolvedId = resolveDocumentId(db, input.document_id);
+  if (!resolvedId) {
+    return {
+      results: null,
+      _metadata: generateResponseMetadata(db),
+    };
+  }
+  input = { ...input, document_id: resolvedId };
+
+  // If provision_ref is directly provided, normalize it
+  let provisionRef = input.provision_ref
+    ? normalizeProvisionRef(input.provision_ref)
+    : undefined;
   if (!provisionRef) {
     if (input.chapter && input.section) {
       provisionRef = `${input.chapter}:${input.section}`;
