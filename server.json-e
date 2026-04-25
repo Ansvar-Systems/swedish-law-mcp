@@ -36,7 +36,7 @@
       "version": "1.2.2",
       "transport": {
         "type": "streamable-http",
-        "url": "https://mcp.ansvar.eu/law-se/mcp"
+        "url": "https://swedish-law-mcp.vercel.app/mcp"
       }
     }
   ]

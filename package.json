@@ -1,6 +1,6 @@
 {
   "name": "@ansvar/swedish-law-mcp",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "Production-grade Swedish legal research MCP server with comprehensive statute coverage and EU law cross-references",
   "type": "module",
   "main": "dist/index.js",
@@ -59,6 +59,13 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
+  },
+  "overrides": {
+    "path-to-regexp": "^8.4.2",
+    "minimatch": "^10.2.5",
+    "undici": "^8.0.2",
+    "ajv": "^8.18.0",
+    "smol-toml": "^1.6.1"
   },
   "engines": {
     "node": ">=18"

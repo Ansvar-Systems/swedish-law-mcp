@@ -2,8 +2,8 @@
  * Utilities for building robust FTS5 queries from natural-language input.
  *
  * If the user provides explicit FTS syntax (quotes, boolean operators, wildcards),
- * we preserve it. Otherwise we convert tokens to prefix terms so inflections like
- * "make" -> "maken" can match.
+ * we preserve it. Otherwise we convert tokens to stemmed prefix terms so
+ * inflections like "personliga" / "personligen" both match via "personlig*".
  */
 
 const EXPLICIT_FTS_SYNTAX_PATTERN = /["*():^]|\bAND\b|\bOR\b|\bNOT\b/iu;
@@ -23,12 +23,28 @@ function escapeExplicitQuery(query: string): string {
   return query.replace(/[()^:]/g, (char) => `"${char}"`);
 }
 
+/**
+ * Trim inflectional suffixes to broaden prefix matching.
+ *
+ * European languages add 1-3 character suffixes for case, number, and
+ * tense (e.g. Swedish: personliga/personligen share stem "personlig").
+ * FTS5 prefix `personliga*` misses `personligen` — trimming to
+ * `personlig*` catches both.  Only trims tokens longer than 6 chars
+ * to avoid over-broadening short roots.
+ */
+function trimToStem(token: string): string {
+  if (token.length > 6) {
+    return token.slice(0, token.length - 2);
+  }
+  return token;
+}
+
 function buildPrefixAndQuery(tokens: string[]): string {
-  return tokens.map(token => `${token}*`).join(' ');
+  return tokens.map(token => `${trimToStem(token)}*`).join(' ');
 }
 
 function buildPrefixOrQuery(tokens: string[]): string {
-  return tokens.map(token => `${token}*`).join(' OR ');
+  return tokens.map(token => `${trimToStem(token)}*`).join(' OR ');
 }
 
 export interface FtsQueryVariants {
@@ -61,4 +77,3 @@ export function buildFtsQueryVariants(query: string): FtsQueryVariants {
     fallback: buildPrefixOrQuery(tokens),
   };
 }
-
