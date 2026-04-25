@@ -23,7 +23,7 @@ export interface CaseLawResult {
   summary_snippet: string;
   keywords: string | null;
   relevance: number;
-  _metadata: {
+  _meta: {
     source: string;
     attribution: string;
   };
@@ -39,7 +39,7 @@ export async function searchCaseLaw(
   if (!input.query || input.query.trim().length === 0) {
     return {
       results: [],
-      _metadata: generateResponseMetadata(db)
+      _meta: generateResponseMetadata(db)
     };
   }
 
@@ -88,12 +88,12 @@ export async function searchCaseLaw(
 
   const runQuery = (ftsQuery: string): CaseLawResult[] => {
     const bound = [ftsQuery, ...params];
-    const results = db.prepare(sql).all(...bound) as Omit<CaseLawResult, '_metadata'>[];
+    const results = db.prepare(sql).all(...bound) as Omit<CaseLawResult, '_meta'>[];
 
     // Add attribution metadata to each result
     return results.map(result => ({
       ...result,
-      _metadata: {
+      _meta: {
         source: 'lagen.nu',
         attribution: 'Data from lagen.nu, licensed CC-BY Domstolsverket',
       },
@@ -107,6 +107,6 @@ export async function searchCaseLaw(
 
   return {
     results,
-    _metadata: generateResponseMetadata(db)
+    _meta: generateResponseMetadata(db)
   };
 }

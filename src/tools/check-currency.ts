@@ -65,7 +65,7 @@ export async function checkCurrency(
   if (!doc) {
     return {
       results: null,
-      _metadata: generateResponseMetadata(db)
+      _meta: generateResponseMetadata(db)
     };
   }
 
@@ -156,6 +156,6 @@ export async function checkCurrency(
       warnings,
       case_law_stats: caseLawStats,
     },
-    _metadata: generateResponseMetadata(db)
+    _meta: generateResponseMetadata(db)
   };
 }

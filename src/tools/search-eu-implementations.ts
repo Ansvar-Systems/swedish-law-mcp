@@ -165,6 +165,6 @@ export async function searchEUImplementations(
       total_results: results.length,
       query_info: input,
     },
-    _metadata: generateResponseMetadata(db),
+    _meta: generateResponseMetadata(db),
   };
 }

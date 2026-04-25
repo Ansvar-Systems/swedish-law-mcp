@@ -65,7 +65,7 @@ export async function getProvision(
   if (!resolvedId) {
     return {
       results: null,
-      _metadata: generateResponseMetadata(db),
+      _meta: generateResponseMetadata(db),
     };
   }
   input = { ...input, document_id: resolvedId };
@@ -92,7 +92,7 @@ export async function getProvision(
     return {
       results: truncated ? all.slice(0, MAX_ALL_PROVISIONS) : all,
       ...(truncated && { _truncated: true, _hint: `Only first ${MAX_ALL_PROVISIONS} provisions returned. Use chapter+section to retrieve specific provisions.` }),
-      _metadata: generateResponseMetadata(db)
+      _meta: generateResponseMetadata(db)
     };
   }
 
@@ -149,7 +149,7 @@ export async function getProvision(
   if (!row) {
     return {
       results: null,
-      _metadata: generateResponseMetadata(db)
+      _meta: generateResponseMetadata(db)
     };
   }
 
@@ -165,7 +165,7 @@ export async function getProvision(
       metadata: row.metadata ? JSON.parse(row.metadata) : null,
       cross_references: crossRefs,
     },
-    _metadata: generateResponseMetadata(db),
+    _meta: generateResponseMetadata(db),
     _citation: buildProvisionCitation(
       row.document_id,
       row.document_title,

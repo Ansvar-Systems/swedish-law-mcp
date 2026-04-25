@@ -148,6 +148,18 @@ describe('get_provision', () => {
     expect(prov.document_id).toBe('1998:204');
   });
 
+  it('should resolve document by colloquial name', async () => {
+    const response = await getProvision(db, {
+      document_id: 'dataskyddslagen',
+      provision_ref: '1:1',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.document_id).toBe('2018:218');
+    expect(prov.provision_ref).toBe('1:1');
+  });
+
   it('should normalize Swedish provision_ref format', async () => {
     const response = await getProvision(db, {
       document_id: '2018:218',

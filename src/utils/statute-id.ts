@@ -8,6 +8,29 @@
 
 import type { Database } from '@ansvar/mcp-sqlite';
 
+const COLLOQUIAL_NAMES: Record<string, string> = {
+  'dataskyddslagen': '2018:218',
+  'gdpr-lagen': '2018:218',
+  'personuppgiftslagen': '1998:204',
+  'brottsbalken': '1962:700',
+  'miljöbalken': '1998:808',
+  'skollagen': '2010:800',
+  'regeringsformen': '1974:152',
+  'tryckfrihetsförordningen': '1949:105',
+  'yttrandefrihetsgrundlagen': '1991:1469',
+  'successionsordningen': '1810:0926',
+  'riksdagsordningen': '2014:801',
+  'arbetsmiljölagen': '1977:1160',
+  'diskrimineringslagen': '2008:567',
+  'förvaltningslagen': '2017:900',
+  'kommunallagen': '2017:725',
+  'offentlighets- och sekretesslagen': '2009:400',
+  'plan- och bygglagen': '2010:900',
+  'socialtjänstlagen': '2001:453',
+  'utlänningslagen': '2005:716',
+  'aktiebolagslagen': '2005:551',
+};
+
 /**
  * Resolve a document_id that may be:
  *  1. An exact internal ID (e.g. "1998:808") — returned as-is if it exists
@@ -27,6 +50,16 @@ export function resolveDocumentId(db: Database, input: string): string | null {
     'SELECT id FROM legal_documents WHERE title = ? LIMIT 1'
   ).get(input) as { id: string } | undefined;
   if (byTitle) return byTitle.id;
+
+  // 2.5. Try colloquial name lookup (before fuzzy — "dataskyddslagen" has
+  //      no substring match in the formal title)
+  const colloquial = COLLOQUIAL_NAMES[input.toLowerCase()];
+  if (colloquial) {
+    const byColloquial = db.prepare(
+      'SELECT id FROM legal_documents WHERE id = ? LIMIT 1'
+    ).get(colloquial) as { id: string } | undefined;
+    if (byColloquial) return byColloquial.id;
+  }
 
   // 3. Try exact match on short_name (before fuzzy — "DSL" must not
   //    lose to a LIKE hit on "dataskyddslag" in a different document)
