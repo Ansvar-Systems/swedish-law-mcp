@@ -2,6 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { Database } from '@ansvar/mcp-sqlite';
 import DatabaseConstructor from '@ansvar/mcp-sqlite';
 import { getProvision } from '../../src/tools/get-provision.js';
+import { normalizeProvisionRef } from '../../src/utils/statute-id.js';
 import { createTestDatabase, closeTestDatabase } from '../fixtures/test-db.js';
 
 describe('get_provision', () => {
@@ -111,6 +112,96 @@ describe('get_provision', () => {
     });
 
     expect(response.results).toBeNull();
+  });
+
+  it('should resolve document by short_name', async () => {
+    const response = await getProvision(db, {
+      document_id: 'DSL',
+      provision_ref: '1:1',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.document_id).toBe('2018:218');
+    expect(prov.provision_ref).toBe('1:1');
+  });
+
+  it('should resolve document by SFS prefix', async () => {
+    const response = await getProvision(db, {
+      document_id: 'SFS 2018:218',
+      provision_ref: '1:1',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.document_id).toBe('2018:218');
+  });
+
+  it('should resolve document by partial title match', async () => {
+    const response = await getProvision(db, {
+      document_id: 'Personuppgiftslag',
+      provision_ref: '1',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.document_id).toBe('1998:204');
+  });
+
+  it('should normalize Swedish provision_ref format', async () => {
+    const response = await getProvision(db, {
+      document_id: '2018:218',
+      provision_ref: '1 kap. 1 §',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.provision_ref).toBe('1:1');
+    expect(prov.content).toContain('dataskyddsförordning');
+  });
+
+  it('should normalize flat provision_ref format', async () => {
+    const response = await getProvision(db, {
+      document_id: '1998:204',
+      provision_ref: '5 a §',
+    });
+
+    expect(response.results).not.toBeNull();
+    const prov = response.results as Exclude<typeof response.results, null | Array<unknown>>;
+    expect(prov.provision_ref).toBe('5 a');
+  });
+
+  it('should return null for unresolvable document_id', async () => {
+    const response = await getProvision(db, {
+      document_id: 'nonexistent-law',
+    });
+
+    expect(response.results).toBeNull();
+  });
+});
+
+describe('normalizeProvisionRef', () => {
+  it('should pass through canonical format', () => {
+    expect(normalizeProvisionRef('3:5')).toBe('3:5');
+    expect(normalizeProvisionRef('1:1')).toBe('1:1');
+    expect(normalizeProvisionRef('5')).toBe('5');
+    expect(normalizeProvisionRef('5 a')).toBe('5 a');
+  });
+
+  it('should convert chaptered Swedish format', () => {
+    expect(normalizeProvisionRef('1 kap. 1 §')).toBe('1:1');
+    expect(normalizeProvisionRef('3 kap. 5 §')).toBe('3:5');
+    expect(normalizeProvisionRef('3 kap. 5 a §')).toBe('3:5 a');
+  });
+
+  it('should convert flat Swedish format', () => {
+    expect(normalizeProvisionRef('5 §')).toBe('5');
+    expect(normalizeProvisionRef('5 a §')).toBe('5 a');
+  });
+
+  it('should handle whitespace', () => {
+    expect(normalizeProvisionRef('  3 kap. 5 §  ')).toBe('3:5');
+    expect(normalizeProvisionRef('  5 §  ')).toBe('5');
   });
 });
 

@@ -91,10 +91,10 @@ export const TOOLS: Tool[] = [
     inputSchema: {
       type: 'object',
       properties: {
-        document_id: { type: 'string', pattern: '^\\d{4}:\\d+$', description: 'SFS number (e.g., "2018:218")' },
+        document_id: { type: 'string', description: 'SFS number (e.g., "2018:218") or statute name (e.g., "dataskyddslagen")' },
         chapter: { type: 'string', description: 'Chapter number (e.g., "3").' },
         section: { type: 'string', description: 'Section number (e.g., "5", "5 a")' },
-        provision_ref: { type: 'string', description: 'Direct provision reference (e.g., "3:5"). Alternative to chapter+section.' },
+        provision_ref: { type: 'string', description: 'Provision reference: canonical "3:5" or Swedish "3 kap. 5 §". Alternative to chapter+section.' },
         as_of_date: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$', description: 'Historical date (YYYY-MM-DD).' },
       },
       required: ['document_id'],
