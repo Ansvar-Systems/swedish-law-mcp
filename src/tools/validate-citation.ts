@@ -40,7 +40,7 @@ export async function validateCitationTool(
         provision_exists: false,
         warnings: ['Empty citation'],
       },
-      _metadata: generateResponseMetadata(db)
+      _meta: generateResponseMetadata(db)
     };
   }
 
@@ -58,6 +58,6 @@ export async function validateCitationTool(
       status: result.status,
       warnings: result.warnings,
     },
-    _metadata: generateResponseMetadata(db)
+    _meta: generateResponseMetadata(db)
   };
 }

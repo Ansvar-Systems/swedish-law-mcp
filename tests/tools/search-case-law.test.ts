@@ -62,11 +62,11 @@ describe('search_case_law', () => {
     expect(response.results.length).toBeGreaterThan(0);
 
     for (const result of response.results) {
-      expect(result).toHaveProperty('_metadata');
-      expect(result._metadata).toHaveProperty('source');
-      expect(result._metadata).toHaveProperty('attribution');
-      expect(result._metadata.source).toBe('lagen.nu');
-      expect(result._metadata.attribution).toContain('CC-BY Domstolsverket');
+      expect(result).toHaveProperty('_meta');
+      expect(result._meta).toHaveProperty('source');
+      expect(result._meta).toHaveProperty('attribution');
+      expect(result._meta.source).toBe('lagen.nu');
+      expect(result._meta.attribution).toContain('CC-BY Domstolsverket');
     }
   });
 
