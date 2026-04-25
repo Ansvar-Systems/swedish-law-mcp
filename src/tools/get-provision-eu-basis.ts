@@ -243,6 +243,6 @@ export async function getProvisionEUBasis(
 
   return {
     results: result,
-    _metadata: generateResponseMetadata(db),
+    _meta: generateResponseMetadata(db),
   };
 }

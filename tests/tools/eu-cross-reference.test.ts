@@ -404,10 +404,10 @@ describe('EU Cross-Reference Tools', () => {
     it('should include metadata in all tool responses', async () => {
       const result = await getEUBasis(db, { sfs_number: '2018:218' });
 
-      expect(result._metadata).toBeDefined();
-      expect(result._metadata.disclaimer).toContain('NOT LEGAL ADVICE');
-      expect(result._metadata.data_freshness).toBeDefined();
-      expect(result._metadata.source_authority).toBeDefined();
+      expect(result._meta).toBeDefined();
+      expect(result._meta.disclaimer).toContain('NOT LEGAL ADVICE');
+      expect(result._meta.data_freshness).toBeDefined();
+      expect(result._meta.source_authority).toBeDefined();
     });
   });
 

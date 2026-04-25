@@ -49,6 +49,6 @@ export async function getPreparatoryWorks(
 
   return {
     results,
-    _metadata: generateResponseMetadata(db)
+    _meta: generateResponseMetadata(db)
   };
 }

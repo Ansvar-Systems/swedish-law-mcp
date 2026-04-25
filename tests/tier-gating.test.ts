@@ -114,7 +114,7 @@ describe('Tier gating', () => {
         search_case_law: { capability: 'expanded_case_law', feature: 'Full case law archive' },
       };
 
-      let result: unknown = { results: [], _metadata: {} };
+      let result: unknown = { results: [], _meta: {} };
       const tierInfo = TIER_SENSITIVE_TOOLS['search_case_law'];
 
       if (tierInfo && !capabilities.has(tierInfo.capability)) {
@@ -136,7 +136,7 @@ describe('Tier gating', () => {
         search_case_law: { capability: 'expanded_case_law', feature: 'Full case law archive' },
       };
 
-      const result: Record<string, unknown> = { results: [], _metadata: {} };
+      const result: Record<string, unknown> = { results: [], _meta: {} };
       const tierInfo = TIER_SENSITIVE_TOOLS['search_case_law'];
 
       if (tierInfo && !capabilities.has(tierInfo.capability)) {

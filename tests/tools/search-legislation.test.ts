@@ -20,8 +20,8 @@ describe('search_legislation', () => {
     expect(response.results[0]).toHaveProperty('document_id');
     expect(response.results[0]).toHaveProperty('provision_ref');
     expect(response.results[0]).toHaveProperty('snippet');
-    expect(response._metadata).toHaveProperty('disclaimer');
-    expect(response._metadata).toHaveProperty('data_freshness');
+    expect(response._meta).toHaveProperty('disclaimer');
+    expect(response._meta).toHaveProperty('data_freshness');
   });
 
   it('should filter by document_id', async () => {

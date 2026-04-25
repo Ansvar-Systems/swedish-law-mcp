@@ -180,7 +180,7 @@ export interface ToolResponse<T> {
   results: T;
 
   /** Professional-use metadata and warnings */
-  _metadata: ResponseMetadata;
+  _meta: ResponseMetadata;
 
   /** Citation metadata for deterministic citation pipeline (optional) */
   _citation?: import('./citation.js').CitationMetadata;
